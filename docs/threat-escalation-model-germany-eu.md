@@ -86,13 +86,13 @@ The paper develops an integrated threat escalation and operational readiness mod
 This version strengthens the model by adding democratic safeguards early, distinguishing rights-preserving digital sovereignty from state and industrial digital control, mapping laws to operational controls, adding trigger thresholds and owners to the scenarios, replacing fine-grained maturity scores with half-step scores and confidence levels, and presenting a 12/24/36-month roadmap for Germany and the EU.
 
 <p class="keywords">
-  <strong>Keywords:</strong> AI-cyber; post-quantum cryptography; hybrid warfare; Physical AI; cyber-physical resilience; digital sovereignty; Germany; European Union; threat escalation; scenario planning; operational readiness; trust infrastructure; critical infrastructure; digital identity; frontier AI.
+  <strong>Keywords:</strong> AI-cyber; post-quantum cryptography; hybrid warfare; Physical AI; cyber-physical resilience; digital sovereignty; Germany; European Union; threat escalation; scenario planning; operational readiness; trust infrastructure; critical infrastructure; digital identity; frontier AI; superintelligent AI.
 </p>
 </section>
 <h2 id="central-thesis">Central thesis</h2>
 
 <div class="paper-thesis">
-  <strong>Central thesis.</strong> Germany and the EU should treat AI-enabled cyber operations, hybrid warfare, post-quantum cryptography, digital identity, software supply chains, Physical AI, cyber-physical autonomy, and frontier AI as one coupled escalation problem. The next systemic crisis is unlikely to be caused by one isolated technology. It is more likely to arise from interacting failures across digital trust, public administration, finance, industrial systems, critical infrastructure, public communication, and security policy. The policy priority is therefore not only new law. It is tested readiness: cross-domain scenarios, measurable implementation dashboards, secure trust infrastructure, and rehearsed escalation paths.
+  <strong>Central thesis.</strong> Germany and the EU should treat AI-enabled cyber operations, hybrid warfare, post-quantum cryptography, digital identity, software supply chains, Physical AI, cyber-physical autonomy, and frontier AI including the emergence of superintelligent AI as one coupled escalation problem. The next systemic crisis is unlikely to be caused by one isolated technology. It is more likely to arise from interacting failures across digital trust, public administration, finance, industrial systems, critical infrastructure, public communication, and security policy. The policy priority is therefore not only new law. It is tested readiness: cross-domain scenarios, measurable implementation dashboards, secure trust infrastructure, and rehearsed escalation paths.
 </div>
 
 <h2 id="key-policy-messages">Key policy messages</h2>
