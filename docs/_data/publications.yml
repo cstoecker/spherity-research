@@ -1,0 +1,89 @@
+- title: "The European Business Wallet as a Legal Control Plane for Zero-Trust AI Agents"
+  type: "Featured paper"
+  date_label: "2026"
+  date_iso: "2026"
+  description: "How organizational identity, verifiable authority, and policy-bound credentials can govern agentic interactions across companies and regulated ecosystems."
+  topics:
+    - "European Business Wallet"
+    - "Zero-Trust AI"
+    - "Organizational identity"
+  filters: "wallets identity ai"
+  search: "european business wallet legal control plane zero trust ai agents organisational identity verifiable credentials pdf"
+  image: "/assets/Spherity_Research_EBW_as_Legal_Control_Plane_for_Zero_Trust_AI_Agents.png"
+  image_alt: "Cover of The European Business Wallet as a Legal Control Plane for Zero-Trust AI Agents"
+  image_width: 1626
+  image_height: 1763
+  media_class: "card-media-tall"
+  format: "PDF"
+  featured: true
+  links:
+    - label: "Download PDF"
+      url: "/Spherity_Research_EBW_as_Legal_Control_Plane_for_Zero_Trust_AI_Agents.pdf"
+      arrow: "↓"
+
+- title: "Securing Digital Identity and Verifiable Credential Wallets against Quantum Vulnerabilities"
+  type: "Research paper"
+  date_label: "14 May 2026"
+  date_iso: "2026-05-14"
+  description: "An attack taxonomy, macro-economic risk model, and migration strategy for post-quantum identity corridors."
+  topics:
+    - "Post-quantum cryptography"
+    - "Digital identity"
+    - "Verifiable credentials"
+  filters: "identity resilience"
+  search: "securing digital identity verifiable credential wallets quantum vulnerabilities post quantum cryptography pqc"
+  image: "/assets/Infochart-Securing-Legal-Person-Digital-Identity-Against-Quantum-Vulnerabilities-Spherity-GmbH-05-2026.png"
+  image_alt: "Visual summary of post-quantum risks for legal-person digital identity"
+  image_width: 1088
+  image_height: 1856
+  format: "HTML"
+  links:
+    - label: "Read paper"
+      url: "/Securing-Digital-Identity-Quantum-Vulnerabilities.html"
+      arrow: "→"
+
+- title: "Legal and Operational EBW Roadmap Toward EU-Wide Acceptance"
+  type: "Roadmap"
+  date_label: "18 May 2026"
+  date_iso: "2026-05-18"
+  description: "Milestones, dependencies, standards, and adoption gates for the European Business Wallet under eIDAS 2.0."
+  topics:
+    - "European Business Wallet"
+    - "eIDAS 2.0"
+    - "EU adoption"
+  filters: "wallets identity"
+  search: "legal operational ebw roadmap eu wide acceptance eidas european business wallet compliance data exchange"
+  image: "/assets/Europen%20Business%20Wallet%20%28EBW%29%20Roadmap%20-%20Spherity%20GmbH.png"
+  image_alt: "European Business Wallet roadmap from 2026 to 2030"
+  image_width: 2824
+  image_height: 1592
+  media_class: "card-media-wide"
+  format: "HTML"
+  links:
+    - label: "Read roadmap"
+      url: "/ebw-roadmap.html"
+      arrow: "→"
+
+- title: "AI-Cyber, Quantum Risk, Hybrid Warfare, and Physical AI"
+  type: "Policy paper"
+  date_label: "18 May 2026"
+  date_iso: "2026-05-18"
+  description: "A cross-domain escalation and operational-readiness model for German and European decision-makers."
+  topics:
+    - "AI risk"
+    - "Cyber resilience"
+    - "Hybrid warfare"
+  filters: "resilience ai identity"
+  search: "ai cyber quantum risk hybrid warfare physical ai germany europe resilience policy trust infrastructure"
+  graphic_kicker: "Integrated threat model"
+  graphic_title: "AI × Cyber<br>× Quantum"
+  graphic_caption: "Germany + Europe"
+  media_class: "card-media-graphic"
+  format: "HTML"
+  links:
+    - label: "Read paper"
+      url: "/threat-escalation-model-germany-eu.html"
+      arrow: "→"
+    - label: "Explore visual"
+      url: "/Spherity-Research-AI-Cyber-Quantum-Risk-Hybrid-Warfare-Superintelligent-AI-Physical-AI-Infographic.html"
+      secondary: true

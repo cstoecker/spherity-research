@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ page.lang | default: 'en' }}">
 <head>
 {% assign page_title = page.title | default: site.title %}
@@ -7,6 +7,8 @@
 {% assign publisher_name = page.affiliation | default: "Spherity GmbH" %}
 {% assign modified_date = page.last_modified_at | default: page.date %}
 {% assign logo_path = site.logo | default: "/assets/Spherity-logo-horiz-blue-rgb.png" %}
+{% assign page_image = page.image | default: site.image | default: site.logo %}
+{% assign og_type = page.og_type | default: "article" %}
 
 {% if page.canonical_url %}
   {% assign canonical_url = page.canonical_url %}
@@ -14,14 +16,10 @@
   {% assign canonical_url = page.url | absolute_url %}
 {% endif %}
 
-{% assign page_image = page.image | default: site.image | default: site.logo %}
-
-{% if page_image %}
-  {% if page_image contains "://" %}
-    {% assign image_url = page_image %}
-  {% else %}
-    {% assign image_url = page_image | absolute_url %}
-  {% endif %}
+{% if page_image contains "://" %}
+  {% assign image_url = page_image %}
+{% else %}
+  {% assign image_url = page_image | absolute_url %}
 {% endif %}
 
 {% if logo_path contains "://" %}
@@ -32,58 +30,104 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#061827">
 
-  <title>{{ page_title | escape }} | {{ site.title | escape }}</title>
-
+  <title>{% if page.url == "/" %}{{ site.title | escape }} — Identity, Infrastructure, Resilience{% else %}{{ page_title | escape }} | {{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page_description | escape }}">
+  <meta name="author" content="{{ author_name | escape }}">
   <meta name="robots" content="{{ page.robots | default: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' }}">
 
   <link rel="canonical" href="{{ canonical_url | escape }}">
+  <link rel="icon" type="image/png" sizes="336x336" href="{{ '/assets/spherity_logo_336x336_centered_margins.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/spherity_logo_336x336_centered_margins.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
 
-  <!-- Open Graph / LinkedIn / Facebook -->
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="{{ og_type }}">
   <meta property="og:title" content="{{ page_title | escape }}">
   <meta property="og:description" content="{{ page_description | escape }}">
   <meta property="og:url" content="{{ canonical_url | escape }}">
   <meta property="og:site_name" content="{{ site.title | escape }}">
-
-  {% if page.lang %}
-  <meta property="og:locale" content="{{ page.lang | replace: '-', '_' | escape }}">
-  {% endif %}
-
-  {% if image_url %}
+  <meta property="og:locale" content="{{ page.lang | default: 'en' | replace: '-', '_' | escape }}">
   <meta property="og:image" content="{{ image_url | escape }}">
   <meta property="og:image:secure_url" content="{{ image_url | escape }}">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:alt" content="{{ page.image_alt | default: page_title | escape }}">
-  {% endif %}
 
   {% if page.date %}
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
   {% endif %}
-
   {% if modified_date %}
   <meta property="article:modified_time" content="{{ modified_date | date_to_xmlschema }}">
   {% endif %}
-
-  <meta property="article:author" content="{{ author_name | escape }}">
-
   {% for tag in page.tags %}
   <meta property="article:tag" content="{{ tag | escape }}">
   {% endfor %}
 
-  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page_title | escape }}">
   <meta name="twitter:description" content="{{ page_description | escape }}">
-  <meta name="twitter:url" content="{{ canonical_url | escape }}">
-
-  {% if image_url %}
   <meta name="twitter:image" content="{{ image_url | escape }}">
   <meta name="twitter:image:alt" content="{{ page.image_alt | default: page_title | escape }}">
-  {% endif %}
 
-  <!-- Structured data -->
+  {% if page.schema_type == "CollectionPage" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.spherity.com/#organization",
+        "name": "Spherity GmbH",
+        "url": "https://www.spherity.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ logo_url | escape }}"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{ '/' | absolute_url }}#website",
+        "url": "{{ '/' | absolute_url }}",
+        "name": "Spherity Research",
+        "description": {{ page_description | jsonify }},
+        "publisher": { "@id": "https://www.spherity.com/#organization" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "{{ canonical_url | escape }}#collection",
+        "url": "{{ canonical_url | escape }}",
+        "name": {{ page_title | jsonify }},
+        "description": {{ page_description | jsonify }},
+        "isPartOf": { "@id": "{{ '/' | absolute_url }}#website" },
+        "about": [
+          "Decentralized identity",
+          "European Business Wallet",
+          "Verifiable credentials",
+          "Post-quantum cryptography",
+          "Trusted AI"
+        ],
+        "mainEntity": {
+          "@type": "ItemList",
+          "numberOfItems": {{ site.data.publications | size }},
+          "itemListElement": [
+            {% for publication in site.data.publications %}
+            {% assign primary_link = publication.links | first %}
+            {
+              "@type": "ListItem",
+              "position": {{ forloop.index }},
+              "url": "{{ primary_link.url | absolute_url }}",
+              "name": {{ publication.title | jsonify }}
+            }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+  {% else %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -95,17 +139,9 @@
     },
     "headline": {{ page_title | jsonify }},
     "description": {{ page_description | jsonify }},
-    {% if image_url %}
-    "image": [
-      "{{ image_url | escape }}"
-    ],
-    {% endif %}
-    {% if page.date %}
-    "datePublished": "{{ page.date | date_to_xmlschema }}",
-    {% endif %}
-    {% if modified_date %}
-    "dateModified": "{{ modified_date | date_to_xmlschema }}",
-    {% endif %}
+    "image": ["{{ image_url | escape }}"],
+    {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
+    {% if modified_date %}"dateModified": "{{ modified_date | date_to_xmlschema }}",{% endif %}
     "author": {
       "@type": "Person",
       "name": {{ author_name | jsonify }},
@@ -128,13 +164,14 @@
     "isAccessibleForFree": true
   }
   </script>
+  {% endif %}
 
   {% if page.css %}
   <link rel="stylesheet" href="{{ page.css | relative_url }}">
   {% endif %}
 </head>
-
-<body>
+<body class="{% if page.schema_type == 'CollectionPage' %}portal-body{% else %}article-body{% endif %}">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   {{ content }}
 </body>
 </html>
