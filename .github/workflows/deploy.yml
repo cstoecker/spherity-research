@@ -44,8 +44,6 @@ jobs:
           destination: ./_site
 
       - name: Generate complete sitemap
-        env:
-          SITE_URL: ${{ steps.pages.outputs.base_url }}
         run: pnpm run sitemap
 
       - name: Validate SEO, answer content, structured data, links, and assets
