@@ -43,6 +43,9 @@ jobs:
           source: ./docs
           destination: ./_site
 
+      - name: Restore build output ownership
+        run: sudo chown -R "$USER":"$USER" _site
+
       - name: Generate complete sitemap
         run: pnpm run sitemap
 
