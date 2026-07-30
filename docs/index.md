@@ -13,7 +13,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
 <header class="portal-header">
   <div class="portal-shell portal-nav">
     <a class="portal-brand" href="{{ '/' | relative_url }}" aria-label="Spherity Research home">
-      <img src="{{ '/assets/Spherity-logo-horiz-blue-rgb.png' | relative_url }}"
+      <img src="{{ '/assets/spherity-logo-horizontal-800.webp' | relative_url }}"
            alt="Spherity"
            width="8000"
            height="2391">
@@ -132,6 +132,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
                width="{{ publication.image_width }}"
                height="{{ publication.image_height }}"
                loading="{% if publication.featured %}eager{% else %}lazy{% endif %}"
+               decoding="async"
                {% if publication.featured %}fetchpriority="high"{% endif %}>
           {% else %}
           <span class="graphic-grid" aria-hidden="true"></span>
@@ -229,10 +230,12 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
 
 <footer class="portal-footer">
   <div class="portal-shell footer-inner">
-    <img src="{{ '/assets/Spherity-logo-horiz-blue-rgb.png' | relative_url }}"
+    <img src="{{ '/assets/spherity-logo-horizontal-800.webp' | relative_url }}"
          alt="Spherity"
-         width="8000"
-         height="2391">
+         width="800"
+         height="239"
+         loading="lazy"
+         decoding="async">
     <p>Independent research on identity, infrastructure, and resilience.</p>
     <p>© 2026 Spherity GmbH</p>
   </div>

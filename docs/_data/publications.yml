@@ -9,10 +9,10 @@
     - "Organizational identity"
   filters: "wallets identity ai"
   search: "european business wallet legal control plane zero trust ai agents organisational identity verifiable credentials pdf"
-  image: "/assets/Spherity_Research_EBW_as_Legal_Control_Plane_for_Zero_Trust_AI_Agents.png"
+  image: "/assets/preview-ebw-zero-trust-ai-agents.webp"
   image_alt: "Cover of European Business Wallets as the Legal Control Plane for Zero Trust AI Agents"
-  image_width: 1626
-  image_height: 1763
+  image_width: 922
+  image_height: 1000
   media_class: "card-media-tall"
   format: "HTML + PDF"
   featured: true
@@ -36,10 +36,11 @@
     - "Verifiable credentials"
   filters: "identity resilience"
   search: "securing digital identity verifiable credential wallets quantum vulnerabilities post quantum cryptography pqc"
-  image: "/assets/Infochart-Securing-Legal-Person-Digital-Identity-Against-Quantum-Vulnerabilities-Spherity-GmbH-05-2026.png"
+  image: "/assets/preview-quantum-identity.webp"
   image_alt: "Visual summary of post-quantum risks for legal-person digital identity"
-  image_width: 1088
-  image_height: 1856
+  image_width: 586
+  image_height: 1000
+  media_class: "card-media-tall"
   format: "HTML"
   links:
     - label: "Read paper"
@@ -57,10 +58,10 @@
     - "EU adoption"
   filters: "wallets identity"
   search: "legal operational ebw roadmap eu wide acceptance eidas european business wallet compliance data exchange"
-  image: "/assets/Europen%20Business%20Wallet%20%28EBW%29%20Roadmap%20-%20Spherity%20GmbH.png"
+  image: "/assets/preview-ebw-roadmap.webp"
   image_alt: "European Business Wallet roadmap from 2026 to 2030"
-  image_width: 2824
-  image_height: 1592
+  image_width: 1100
+  image_height: 620
   media_class: "card-media-wide"
   format: "HTML"
   links:

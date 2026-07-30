@@ -20,7 +20,7 @@ canonical_url: "https://spherity.github.io/spherity-research/publication-slug.ht
 latest_version: "https://spherity.github.io/spherity-research/publication-slug.html"
 
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-image: "/assets/publication-slug-thumbnail.png"
+image: "/assets/publication-slug-thumbnail.webp"
 image_alt: "Plain-language description of the publication thumbnail."
 
 answer_summary: "In two or three sentences, answer the publication's primary question and state its evidence boundary."

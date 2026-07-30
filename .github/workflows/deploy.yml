@@ -49,7 +49,7 @@ jobs:
       - name: Generate complete sitemap
         run: pnpm run sitemap
 
-      - name: Validate SEO, answer content, structured data, links, and assets
+      - name: Enforce SEO, AEO, GEO, performance, links, and asset requirements
         run: pnpm run check
 
       - name: Upload GitHub Pages artifact

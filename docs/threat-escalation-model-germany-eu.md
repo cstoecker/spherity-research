@@ -21,7 +21,7 @@ latest_version: "https://spherity.github.io/spherity-research/threat-escalation-
 
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 
-logo: "/assets/Spherity-logo-horiz-blue-rgb.png"
+logo: "/assets/spherity-logo-horizontal-800.webp"
 image: "/assets/spherity-research-og.png"
 image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
 

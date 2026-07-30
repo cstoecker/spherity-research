@@ -1,4 +1,4 @@
-import { access, readFile } from "node:fs/promises";
+import { access, readFile, stat } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import { glob } from "glob";
@@ -40,18 +40,46 @@ const sourcePathFromPublicUrl = (url) => {
   return path.join(sourceDirectory, pathname.replace(/^\/+/, ""));
 };
 
-const pngDimensions = async (file) => {
+const imageDimensions = async (file) => {
   const buffer = await readFile(file);
   if (
-    buffer.length < 24 ||
-    buffer.toString("hex", 0, 8) !== "89504e470d0a1a0a"
+    buffer.length >= 24 &&
+    buffer.toString("hex", 0, 8) === "89504e470d0a1a0a"
   ) {
-    return null;
+    return {
+      width: buffer.readUInt32BE(16),
+      height: buffer.readUInt32BE(20)
+    };
   }
-  return {
-    width: buffer.readUInt32BE(16),
-    height: buffer.readUInt32BE(20)
-  };
+
+  if (
+    buffer.length >= 30 &&
+    buffer.toString("ascii", 0, 4) === "RIFF" &&
+    buffer.toString("ascii", 8, 12) === "WEBP"
+  ) {
+    const chunkType = buffer.toString("ascii", 12, 16);
+    if (chunkType === "VP8X") {
+      return {
+        width: buffer.readUIntLE(24, 3) + 1,
+        height: buffer.readUIntLE(27, 3) + 1
+      };
+    }
+    if (chunkType === "VP8 ") {
+      return {
+        width: buffer.readUInt16LE(26) & 0x3fff,
+        height: buffer.readUInt16LE(28) & 0x3fff
+      };
+    }
+    if (chunkType === "VP8L" && buffer[20] === 0x2f) {
+      const dimensions = buffer.readUInt32LE(21);
+      return {
+        width: (dimensions & 0x3fff) + 1,
+        height: ((dimensions >> 14) & 0x3fff) + 1
+      };
+    }
+  }
+
+  return null;
 };
 
 const requiredFiles = [
@@ -127,7 +155,12 @@ for (const markdownFile of markdownFiles) {
     "answer_summary",
     "key_takeaways",
     "about",
-    "questions_answered"
+    "mentions",
+    "citations",
+    "questions_answered",
+    "related_publications",
+    "toc_items",
+    "tags"
   ];
 
   for (const field of requiredFields) {
@@ -180,6 +213,10 @@ for (const markdownFile of markdownFiles) {
     errors.push(`${markdownFile}: image does not exist: ${data.image}`);
   }
 
+  if (data.pdf_url && !(await exists(sourcePathFromPublicUrl(data.pdf_url)))) {
+    errors.push(`${markdownFile}: PDF does not exist: ${data.pdf_url}`);
+  }
+
   if (!content.includes('id="questions-answered"')) {
     const tocHasQuestions = data.toc_items?.some(
       (item) => item.href === "#questions-answered"
@@ -219,20 +256,66 @@ for (const publication of publications) {
   }
   publicationTitles.add(publication.title);
 
-  if (!publication.description || !publication.topics?.length || !publication.links?.length) {
-    errors.push(`Publication catalog: incomplete entry "${publication.title}".`);
+  const requiredCatalogFields = [
+    "title",
+    "type",
+    "date_label",
+    "date_iso",
+    "description",
+    "topics",
+    "filters",
+    "search",
+    "format",
+    "links"
+  ];
+  for (const field of requiredCatalogFields) {
+    const value = publication[field];
+    if (
+      value === undefined ||
+      value === null ||
+      value === "" ||
+      (Array.isArray(value) && value.length === 0)
+    ) {
+      errors.push(
+        `Publication catalog: "${publication.title || "untitled entry"}" is missing ${field}.`
+      );
+    }
+  }
+
+  if (
+    String(publication.description || "").length < 90 ||
+    String(publication.description || "").length > 180
+  ) {
+    errors.push(
+      `Publication catalog: description for "${publication.title}" should be 90–180 characters.`
+    );
+  }
+
+  if (!Array.isArray(publication.topics) || publication.topics.length < 3) {
+    errors.push(
+      `Publication catalog: "${publication.title}" requires at least three topic labels.`
+    );
+  }
+
+  if (Number.isNaN(Date.parse(publication.date_iso))) {
+    errors.push(`Publication catalog: invalid date_iso for "${publication.title}".`);
   }
 
   const primaryLink = publication.links?.[0]?.url;
   if (!primaryLink) continue;
 
+  if (!primaryLink.endsWith(".html")) {
+    errors.push(
+      `Publication catalog: "${publication.title}" must use an indexable HTML landing page as its primary link.`
+    );
+  }
+
   const matchingPage = researchPages.find(
     ({ data }) => data.permalink === primaryLink
   );
-  const directSource = sourcePathFromPublicUrl(primaryLink);
-  if (!matchingPage && !(await exists(directSource))) {
+  if (!matchingPage) {
     errors.push(
-      `Publication catalog: primary link for "${publication.title}" has no source page or file.`
+      `Publication catalog: primary link for "${publication.title}" has no research landing page.`
     );
   }
 
@@ -247,19 +330,42 @@ for (const publication of publications) {
     if (!(await exists(imageFile))) {
       errors.push(`Publication catalog: missing image ${publication.image}.`);
     } else {
-      const dimensions = await pngDimensions(imageFile);
+      const dimensions = await imageDimensions(imageFile);
       if (
-        dimensions &&
-        (Number(publication.image_width) !== dimensions.width ||
-          Number(publication.image_height) !== dimensions.height)
+        !dimensions ||
+        Number(publication.image_width) !== dimensions.width ||
+        Number(publication.image_height) !== dimensions.height
       ) {
         errors.push(
-          `Publication catalog: declared dimensions for ${publication.image} do not match ${dimensions.width}×${dimensions.height}.`
+          `Publication catalog: declared dimensions for ${publication.image} do not match the image file.`
+        );
+      }
+      const imageStats = await stat(imageFile);
+      if (imageStats.size > 250 * 1024) {
+        errors.push(
+          `Publication catalog: ${publication.image} is ${Math.ceil(imageStats.size / 1024)} KB; homepage previews must not exceed 250 KB.`
         );
       }
     }
     if (!publication.image_alt) {
       errors.push(`Publication catalog: missing image_alt for "${publication.title}".`);
+    }
+  }
+
+  for (const link of publication.links || []) {
+    if (!link?.url?.toLowerCase().endsWith(".pdf")) continue;
+    if (!(await exists(sourcePathFromPublicUrl(link.url)))) {
+      errors.push(`Publication catalog: missing PDF ${link.url}.`);
+    }
+    if (!String(publication.format).includes("PDF")) {
+      errors.push(
+        `Publication catalog: "${publication.title}" links a PDF but its format does not include PDF.`
+      );
+    }
+    if (matchingPage?.data.pdf_url !== link.url) {
+      errors.push(
+        `Publication catalog: PDF link for "${publication.title}" must match pdf_url on its HTML landing page.`
+      );
     }
   }
 }
@@ -269,9 +375,21 @@ const favicon = path.join(
   decodeURIComponent(config.favicon.replace(/^\/+/, ""))
 );
 if (await exists(favicon)) {
-  const dimensions = await pngDimensions(favicon);
+  const dimensions = await imageDimensions(favicon);
   if (!dimensions || dimensions.width !== dimensions.height || dimensions.width < 48) {
     errors.push("Configured favicon must be a square PNG at least 48×48 pixels.");
+  }
+}
+
+const configuredLogo = sourcePathFromPublicUrl(config.logo || "");
+if (!(await exists(configuredLogo))) {
+  errors.push(`Configured logo does not exist: ${config.logo}`);
+} else {
+  const logoStats = await stat(configuredLogo);
+  if (logoStats.size > 100 * 1024) {
+    errors.push(
+      `Configured site logo is ${Math.ceil(logoStats.size / 1024)} KB; keep it at or below 100 KB.`
+    );
   }
 }
 

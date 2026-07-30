@@ -14,10 +14,13 @@ The publication cards on the homepage are generated from one catalog:
 metadata from drifting apart.
 
 Every pull request is built and checked for broken local links, missing assets,
-unrendered template code, incomplete social and citation metadata, invalid
-JSON-LD, inconsistent catalog data, and missing answer content. A merge to
-`main` creates a fresh sitemap and deploys the verified site through GitHub
-Pages. See `AEO-GEO-IMPLEMENTATION.md` for the evidence and editorial policy.
+unrendered template code, incomplete SEO/AEO/GEO metadata, invalid JSON-LD,
+inconsistent catalog data, missing answer content, absent PDF landing pages,
+and oversized homepage previews. A merge to `main` creates a fresh sitemap and
+deploys the verified site through GitHub Pages. The workflow enforces these
+requirements deterministically; it does not use AI to rewrite research claims
+or silently change approved copy. See `AEO-GEO-IMPLEMENTATION.md` for the
+evidence and editorial policy.
 
 ## Add a new HTML research paper
 
@@ -25,8 +28,8 @@ Pages. See `AEO-GEO-IMPLEMENTATION.md` for the evidence and editorial policy.
 2. Replace every example value in the front matter at the top of the new file.
 3. Add the paper text below the front matter. Keep every heading `id` aligned
    with its matching entry in `toc_items`.
-4. Export a landscape thumbnail, ideally 1200 × 630 pixels, and save it in
-   `docs/assets/` using a short, descriptive filename.
+4. Export a WebP thumbnail, ideally 1200 × 630 pixels and no larger than
+   250 KB, and save it in `docs/assets/` using a short, descriptive filename.
 5. Add one entry to `docs/_data/publications.yml`. Copy a nearby entry and
    update its title, description, topics, image, dates, search terms, and links.
 6. Run the local checks described below, then open a pull request.
@@ -39,9 +42,10 @@ characters.
 
 1. Put the final PDF in `docs/`. Use a stable, descriptive filename; avoid
    replacing a published filename unless the document is a true revision.
-2. Add its 1200 × 630 thumbnail or cover image to `docs/assets/`.
-3. Create a concise HTML landing page when an indexable summary can faithfully
-   state the paper's answer, authorship, findings, boundaries, and citation.
+2. Add its 1200 × 630 WebP thumbnail or cover image (maximum 250 KB) to
+   `docs/assets/`.
+3. Create a concise HTML landing page that faithfully states the paper's
+   answer, authorship, findings, boundaries, and citation.
 4. Add an entry to `docs/_data/publications.yml`. Put the canonical HTML page
    first and the PDF download second; use `format: "HTML + PDF"`.
 5. Open both links in the local preview and confirm that the HTML page does not
