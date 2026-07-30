@@ -7,6 +7,7 @@
 {% assign publisher_name = page.affiliation | default: "Spherity GmbH" %}
 {% assign modified_date = page.last_modified_at | default: page.date %}
 {% assign logo_path = site.logo | default: "/assets/Spherity-logo-horiz-blue-rgb.png" %}
+{% assign favicon_path = site.favicon | default: "/assets/spherity_logo_336x336_centered_margins.png" %}
 {% assign page_image = page.image | default: site.image | default: site.logo %}
 {% assign og_type = page.og_type | default: "article" %}
 
@@ -39,8 +40,9 @@
   <meta name="robots" content="{{ page.robots | default: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' }}">
 
   <link rel="canonical" href="{{ canonical_url | escape }}">
-  <link rel="icon" type="image/png" sizes="336x336" href="{{ '/assets/spherity_logo_336x336_centered_margins.png' | relative_url }}">
-  <link rel="apple-touch-icon" href="{{ '/assets/spherity_logo_336x336_centered_margins.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="336x336" href="{{ favicon_path | relative_url }}">
+  <link rel="shortcut icon" type="image/png" href="{{ favicon_path | relative_url }}">
+  <link rel="apple-touch-icon" sizes="336x336" href="{{ favicon_path | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
 
   <meta property="og:type" content="{{ og_type }}">

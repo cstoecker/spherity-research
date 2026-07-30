@@ -27,6 +27,7 @@ const requiredFiles = [
   "sitemap.xml",
   "assets/site.css",
   "assets/research-portal.js",
+  "assets/spherity_logo_336x336_centered_margins.png",
   "assets/spherity-research-og.png",
   "Spherity_Research_EBW_as_Legal_Control_Plane_for_Zero_Trust_AI_Agents.pdf",
   "Securing-Digital-Identity-Quantum-Vulnerabilities.html",
@@ -90,6 +91,8 @@ if (await exists(path.join(siteDirectory, "index.html"))) {
   const homepageChecks = [
     ['name="description"', "meta description"],
     ['rel="canonical"', "canonical URL"],
+    ['rel="icon"', "favicon"],
+    ['sizes="336x336"', "square favicon dimensions"],
     ['property="og:image"', "Open Graph image"],
     ['name="twitter:card"', "Twitter card"],
     ['"@type":"CollectionPage"', "CollectionPage structured data"],
