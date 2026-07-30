@@ -14,9 +14,10 @@ The publication cards on the homepage are generated from one catalog:
 metadata from drifting apart.
 
 Every pull request is built and checked for broken local links, missing assets,
-unrendered template code, incomplete social metadata, and missing image
-descriptions. A merge to `main` creates a fresh sitemap and deploys the verified
-site through GitHub Pages.
+unrendered template code, incomplete social and citation metadata, invalid
+JSON-LD, inconsistent catalog data, and missing answer content. A merge to
+`main` creates a fresh sitemap and deploys the verified site through GitHub
+Pages. See `AEO-GEO-IMPLEMENTATION.md` for the evidence and editorial policy.
 
 ## Add a new HTML research paper
 
@@ -39,11 +40,12 @@ characters.
 1. Put the final PDF in `docs/`. Use a stable, descriptive filename; avoid
    replacing a published filename unless the document is a true revision.
 2. Add its 1200 × 630 thumbnail or cover image to `docs/assets/`.
-3. Add an entry to `docs/_data/publications.yml` with `format: "PDF"`.
-4. Set the primary link to the PDF path. The sitemap generator discovers the
-   PDF automatically after the site build.
-5. Open the PDF link in the local preview and confirm that it downloads or opens
-   correctly.
+3. Create a concise HTML landing page when an indexable summary can faithfully
+   state the paper's answer, authorship, findings, boundaries, and citation.
+4. Add an entry to `docs/_data/publications.yml`. Put the canonical HTML page
+   first and the PDF download second; use `format: "HTML + PDF"`.
+5. Open both links in the local preview and confirm that the HTML page does not
+   present itself as the full paper.
 
 If an HTML version is available, list “Read paper” first and “Download PDF”
 second in the publication’s `links` block. Search engines should see the HTML
@@ -135,7 +137,10 @@ history and deploys only the build that passed validation.
 
 ## Publication review checklist
 
-- Title, author, publication date, and abstract are final.
+- Title, author, publication date, modification date, and abstract are final.
+- The answer summary, takeaways, and direct answers are traceable to the paper.
+- Regulations and standards are labelled accurately as adopted, proposed, or
+  projected.
 - Canonical URL and filename are stable.
 - Thumbnail is legible at small size and has useful alt text.
 - HTML and PDF links work in the staging site.

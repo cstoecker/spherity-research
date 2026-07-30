@@ -1,7 +1,7 @@
-- title: "The European Business Wallet as a Legal Control Plane for Zero-Trust AI Agents"
+- title: "European Business Wallets as the Legal Control Plane for Zero Trust AI Agents"
   type: "Featured paper"
-  date_label: "2026"
-  date_iso: "2026"
+  date_label: "1 June 2026"
+  date_iso: "2026-06-01"
   description: "How organizational identity, verifiable authority, and policy-bound credentials can govern agentic interactions across companies and regulated ecosystems."
   topics:
     - "European Business Wallet"
@@ -10,16 +10,20 @@
   filters: "wallets identity ai"
   search: "european business wallet legal control plane zero trust ai agents organisational identity verifiable credentials pdf"
   image: "/assets/Spherity_Research_EBW_as_Legal_Control_Plane_for_Zero_Trust_AI_Agents.png"
-  image_alt: "Cover of The European Business Wallet as a Legal Control Plane for Zero-Trust AI Agents"
+  image_alt: "Cover of European Business Wallets as the Legal Control Plane for Zero Trust AI Agents"
   image_width: 1626
   image_height: 1763
   media_class: "card-media-tall"
-  format: "PDF"
+  format: "HTML + PDF"
   featured: true
   links:
+    - label: "Read summary"
+      url: "/ebw-zero-trust-ai-agents.html"
+      arrow: "→"
     - label: "Download PDF"
       url: "/Spherity_Research_EBW_as_Legal_Control_Plane_for_Zero_Trust_AI_Agents.pdf"
       arrow: "↓"
+      secondary: true
 
 - title: "Securing Digital Identity and Verifiable Credential Wallets against Quantum Vulnerabilities"
   type: "Research paper"
@@ -42,7 +46,7 @@
       url: "/Securing-Digital-Identity-Quantum-Vulnerabilities.html"
       arrow: "→"
 
-- title: "Legal and Operational EBW Roadmap Toward EU-Wide Acceptance"
+- title: "Legal & Operational EBW Roadmap Toward EU-Wide Acceptance"
   type: "Roadmap"
   date_label: "18 May 2026"
   date_iso: "2026-05-18"

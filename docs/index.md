@@ -65,6 +65,28 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
     </div>
   </section>
 
+  <section class="portal-explainer portal-shell" aria-labelledby="research-answers-title">
+    <div>
+      <p class="eyebrow eyebrow-dark"><span></span>Research scope</p>
+      <h2 id="research-answers-title">What questions does Spherity Research answer?</h2>
+    </div>
+    <div class="portal-explainer-copy">
+      <p>
+        Spherity Research examines how organizations can establish identity,
+        authority, and trustworthy evidence across regulated digital systems.
+        The current library connects European Business Wallet policy,
+        AI-agent authorization, post-quantum migration, and operational
+        resilience without treating them as interchangeable problems.
+      </p>
+      <ul>
+        <li><a href="{{ '/ebw-zero-trust-ai-agents.html' | relative_url }}">How can an enterprise prove an AI agent’s legal authority for a specific action?</a></li>
+        <li><a href="{{ '/Securing-Digital-Identity-Quantum-Vulnerabilities.html' | relative_url }}">Which digital-identity dependencies must migrate for post-quantum readiness?</a></li>
+        <li><a href="{{ '/ebw-roadmap.html' | relative_url }}">Which legal and operational gates shape European Business Wallet adoption?</a></li>
+        <li><a href="{{ '/threat-escalation-model-germany-eu.html' | relative_url }}">How can Germany and the EU test readiness across coupled technology risks?</a></li>
+      </ul>
+    </div>
+  </section>
+
   <section class="publication-section portal-shell" id="publications" aria-labelledby="publications-title">
     <div class="section-heading">
       <div>

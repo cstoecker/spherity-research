@@ -4,13 +4,15 @@ css: "/assets/spherity-research-respec.css"
 
 title: "AI-Cyber, Quantum Risk, Hybrid Warfare, and Physical AI"
 subtitle: "A threat escalation and operational readiness model for Germany and Europe"
-description: "A policy and risk paper for German and EU decision-makers on coupled escalation across AI-enabled cyber operations, hybrid warfare, post-quantum cryptography, trust infrastructure, cyber-physical systems, financial resilience, and frontier AI horizon risk."
+description: "Policy model for Germany and the EU linking AI-enabled cyber operations, hybrid warfare, quantum risk, trust infrastructure, and operational readiness."
 
 paper_status: "Spherity Research Paper"
 author: "Dr. Carsten Stöcker"
+authors:
+  - "Dr. Carsten Stöcker"
 affiliation: "Spherity GmbH"
 date: "2026-05-18"
-last_modified_at: "2026-05-18"
+last_modified_at: "2026-07-30"
 lang: "en"
 
 permalink: /threat-escalation-model-germany-eu.html
@@ -20,8 +22,50 @@ latest_version: "https://spherity.github.io/spherity-research/threat-escalation-
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 
 logo: "/assets/Spherity-logo-horiz-blue-rgb.png"
-image: "/assets/Spherity-logo-horiz-blue-rgb.png"
-image_alt: "Spherity logo."
+image: "/assets/spherity-research-og.png"
+image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
+
+answer_summary: "The paper finds that Germany and the European Union have broad legal and strategic coverage but lack a sufficiently integrated, tested operating model for escalation across AI-enabled cyber operations, hybrid warfare, quantum risk, digital trust, and cyber-physical systems."
+key_takeaways:
+  - "Cross-domain failures can amplify one another faster than sector-specific governance can respond."
+  - "Legal coverage is not equivalent to operational readiness; scenarios require owners, thresholds, exercises, and measurable closure."
+  - "Identity, authorization, revocation, provenance, and cryptographic agility form a shared trust layer across public administration, industry, software, machines, and AI agents."
+  - "The proposed operating model uses integrated scenarios and 12/24/36-month roadmaps rather than an undifferentiated policy wish list."
+about:
+  - "AI-enabled cyber operations"
+  - "Hybrid warfare"
+  - "Post-quantum cryptography"
+  - "Cyber-physical resilience"
+  - "Operational readiness"
+mentions:
+  - "European Union"
+  - "Germany"
+  - "AI Act"
+  - "NIS2 Directive"
+  - "Cyber Resilience Act"
+  - "eIDAS 2.0"
+citations:
+  - "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+  - "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive"
+  - "https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act"
+  - "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"
+questions_answered:
+  - question: "Why should AI-cyber, hybrid warfare, quantum risk, and Physical AI be planned together?"
+    answer: "Because a single incident can move across domains: compromised identity can enable a cyber intrusion, manipulated information can deepen a trust crisis, fragile cryptography can undermine evidence, and compromised autonomous systems can translate digital failure into physical harm."
+  - question: "What does operational readiness mean in this model?"
+    answer: "Operational readiness means that institutions have defined owners, measurable indicators, trigger thresholds, secure authority controls, rehearsed escalation paths, cross-domain exercises, and a process for closing after-action findings."
+  - question: "Why is trust infrastructure a cross-cutting security layer?"
+    answer: "Identity, authentication, authorization, signatures, credentials, revocation, provenance, software signing, timestamps, and audit evidence determine who acted, with what authority, under which rules, and whether that action can be trusted after an incident."
+related_publications:
+  - title: "European Business Wallets as the Legal Control Plane for Zero Trust AI Agents"
+    url: "/ebw-zero-trust-ai-agents.html"
+    context: "Defines an authority and evidence layer for high-impact autonomous actions across organizations."
+  - title: "Securing Digital Identity and Verifiable Credential Wallets against Quantum Vulnerabilities"
+    url: "/Securing-Digital-Identity-Quantum-Vulnerabilities.html"
+    context: "Provides the detailed attack taxonomy and migration model for the cryptographic trust layer."
+  - title: "Legal & Operational EBW Roadmap Toward EU-Wide Acceptance"
+    url: "/ebw-roadmap.html"
+    context: "Maps a proposed European legal-person identity framework to standards, pilots, conformance, and adoption gates."
 
 toc_items:
   - title: "Abstract"
@@ -58,6 +102,8 @@ toc_items:
     href: "#appendix-a-maturity-scoring-rubric"
   - title: "Appendix B"
     href: "#appendix-b-suggested-readiness-metrics"
+  - title: "Questions answered"
+    href: "#questions-answered"
 
 tags:
   - ai-cyber

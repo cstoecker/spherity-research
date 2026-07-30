@@ -6,7 +6,11 @@ layout: default
 {% assign paper_status = page.paper_status | default: "Spherity Research Paper" %}
 {% assign this_version = page.canonical_url | default: page.url %}
 {% assign latest_version = page.latest_version | default: page.canonical_url %}
-{% assign author_name = page.author | default: "Dr. Carsten Stöcker" %}
+{% if page.authors %}
+  {% assign author_name = page.authors | join: ", " %}
+{% else %}
+  {% assign author_name = page.author | default: "Dr. Carsten Stöcker" %}
+{% endif %}
 {% assign affiliation = page.affiliation | default: "Spherity GmbH" %}
 
 <div class="srespec-page">
@@ -37,9 +41,12 @@ layout: default
 
     <header class="srespec-header">
       <div class="srespec-header-top">
-        <a class="article-home-link" href="{{ '/' | relative_url }}">
-          <span aria-hidden="true">←</span> All research
-        </a>
+        <nav class="article-breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a class="article-home-link" href="{{ '/' | relative_url }}">Research</a></li>
+            <li aria-current="page">{{ page.title }}</li>
+          </ol>
+        </nav>
         <img class="srespec-header-logo"
              src="{{ logo_path | relative_url }}"
              alt="Spherity"
@@ -55,8 +62,14 @@ layout: default
 
       <dl class="srespec-meta">
         <div>
-          <dt>Author</dt>
-          <dd itemprop="author">{{ author_name }}</dd>
+          <dt>{% if page.authors and page.authors.size > 1 %}Authors{% else %}Author{% endif %}</dt>
+          <dd itemprop="author">
+            {% if page.authors %}
+              {% for author in page.authors %}{{ author }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+            {% else %}
+              {{ author_name }}
+            {% endif %}
+          </dd>
         </div>
         <div>
           <dt>Affiliation</dt>
@@ -102,7 +115,55 @@ layout: default
       {% endif %}
     </header>
 
+    {% if page.answer_summary %}
+    <section class="answer-summary" id="answer-summary" aria-labelledby="answer-summary-title">
+      <p class="answer-summary-label">In brief</p>
+      <h2 id="answer-summary-title">What does this research establish?</h2>
+      <p class="answer-summary-copy">{{ page.answer_summary }}</p>
+      {% if page.key_takeaways %}
+      <div class="answer-takeaways">
+        <h3>Key takeaways</h3>
+        <ul>
+          {% for takeaway in page.key_takeaways %}
+          <li>{{ takeaway }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </section>
+    {% endif %}
+
     {{ content }}
+
+    {% if page.questions_answered %}
+    <section class="questions-answered" id="questions-answered" aria-labelledby="questions-answered-title">
+      <p class="answer-summary-label">Direct answers</p>
+      <h2 id="questions-answered-title">Questions this research answers</h2>
+      <div class="question-list">
+        {% for item in page.questions_answered %}
+        <article>
+          <h3>{{ item.question }}</h3>
+          <p>{{ item.answer }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    {% if page.related_publications %}
+    <section class="related-research" aria-labelledby="related-research-title">
+      <p class="answer-summary-label">Connected evidence</p>
+      <h2 id="related-research-title">Related Spherity research</h2>
+      <ul>
+        {% for item in page.related_publications %}
+        <li>
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {% if item.context %}<p>{{ item.context }}</p>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
 
     <footer class="article-footer">
       <p class="article-footer-label">Continue exploring</p>

@@ -4,10 +4,12 @@ css: "/assets/spherity-research-respec.css"
 
 title: "Full publication title"
 subtitle: "One-sentence subtitle"
-description: "A concise 150–160 character summary for search results and link previews."
+description: "A specific 100–180 character summary that states the subject, method, and practical value of this publication."
 
 paper_status: "Spherity Research Paper"
 author: "Author name"
+authors:
+  - "Author name"
 affiliation: "Spherity GmbH"
 date: "YYYY-MM-DD"
 last_modified_at: "YYYY-MM-DD"
@@ -21,6 +23,27 @@ robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-previ
 image: "/assets/publication-slug-thumbnail.png"
 image_alt: "Plain-language description of the publication thumbnail."
 
+answer_summary: "In two or three sentences, answer the publication's primary question and state its evidence boundary."
+key_takeaways:
+  - "First evidence-supported takeaway."
+  - "Second evidence-supported takeaway."
+  - "Third evidence-supported takeaway."
+about:
+  - "Primary entity or subject"
+mentions:
+  - "Relevant regulation, standard, threat, or use case"
+citations:
+  - "https://authoritative.example/source"
+questions_answered:
+  - question: "What precise question does this publication answer?"
+    answer: "Give a concise, self-contained answer that is supported by the publication."
+  - question: "What is the main implementation or policy implication?"
+    answer: "Answer directly and preserve every qualification in the underlying research."
+related_publications:
+  - title: "Related Spherity publication"
+    url: "/related-publication.html"
+    context: "Explain the evidence-based relationship in one sentence."
+
 toc_items:
   - title: "Abstract"
     href: "#abstract"
@@ -30,6 +53,8 @@ toc_items:
     href: "#2-findings"
   - title: "References"
     href: "#references"
+  - title: "Questions answered"
+    href: "#questions-answered"
 
 tags:
   - digital-identity
@@ -39,7 +64,7 @@ tags:
 <section class="abstract-box" markdown="1">
 <h2 id="abstract">Abstract</h2>
 
-Write the abstract here.
+Write the evidence-led abstract here. State whether regulations or standards are adopted, proposed, or projected.
 
 <p class="keywords"><strong>Keywords:</strong> keyword one; keyword two; keyword three</p>
 </section>
@@ -50,7 +75,7 @@ Write the introduction here.
 
 <h2 id="2-findings">2. Findings</h2>
 
-Write the findings here.
+Write the findings here and link claims to authoritative sources or the paper's reference list.
 
 <h2 id="references">References</h2>
 

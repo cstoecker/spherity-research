@@ -48,7 +48,7 @@ jobs:
           SITE_URL: ${{ steps.pages.outputs.base_url }}
         run: pnpm run sitemap
 
-      - name: Validate pages, assets, links, and metadata
+      - name: Validate SEO, answer content, structured data, links, and assets
         run: pnpm run check
 
       - name: Upload GitHub Pages artifact

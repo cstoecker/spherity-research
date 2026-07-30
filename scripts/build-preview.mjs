@@ -114,7 +114,7 @@ for (const file of markdownFiles) {
   await writeFile(outputPath, output, "utf8");
 }
 
-for (const file of ["robots.txt", "sitemap.xml"]) {
+for (const file of ["robots.txt", "sitemap.xml", "llms.txt"]) {
   const source = await readFile(path.join(sourceDirectory, file), "utf8");
   const { content } = splitFrontMatter(source);
   const output = await liquid.parseAndRender(content, { site, page: { url: `/${file}` } });
