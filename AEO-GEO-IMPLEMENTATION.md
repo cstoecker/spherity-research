@@ -15,7 +15,8 @@ data.
 | Answer-first summaries and key findings | Inconsistent | Add | Data-driven blocks in `docs/_layouts/research-respec.html` |
 | Direct questions and answers | Missing | Add | Visible, publication-supported answers; no FAQPage markup |
 | Internal research relationships | Limited | Add | Contextual related-publication cards on every research page |
-| PDF discoverability | PDF only | Add | Faithful HTML summary at `docs/ebw-zero-trust-ai-agents.md`; PDF remains authoritative |
+| PDF discoverability | PDF only | Add | Faithful HTML summaries for both control-plane and data-plane papers; PDFs remain authoritative |
+| Trusted AI architecture | Control plane only | Expand | Interlink legal authority and verifiable evidence as separate, complementary trust planes |
 | Machine-readable publication index | Missing | Add | Catalog-generated `docs/llms.txt`; no ranking claim |
 | Contributor safeguards | Good baseline | Improve | Source, catalog, schema, citation, heading, image, sitemap, and answer-content checks |
 | Topic hubs for DPP/DBP, DSCSA, data spaces, and sector pages | Insufficient source material | Defer | Add only after approved original research supports a substantial page |
@@ -27,6 +28,8 @@ data.
 ```text
 /
 ├── research homepage and publication library
+├── evidence-graphs-industrial-ai-data-plane.html
+│   └── authoritative 33-page PDF
 ├── ebw-zero-trust-ai-agents.html
 │   └── authoritative 30-page PDF
 ├── ebw-roadmap.html
@@ -46,14 +49,20 @@ catalog remains the single source for publication discovery.
 
 | Primary entity | Related authority or risk | Supported operational context |
 | --- | --- | --- |
+| Evidence graphs and Verifiable Linked Knowledge Graphs | Provenance; SHACL validation; issuer status; freshness; uncertainty | Traceable evidence paths for Industrial AI, supply chains, critical infrastructure, and B2G exchange |
+| Asset Administration Shell and linked data | Heterogeneous industrial sources; semantic mapping; transformation lineage | AAS as source model and adapter within a wider evidence graph |
 | European Business Wallet and legal-person identity | Current European Commission EBW proposal; eIDAS 2.0 trust framework | Cross-company identity, mandates, authorization, and evidence |
 | AI-agent identity and delegated authority | Zero Trust Architecture; revocation; policy enforcement | Accountable regulated agent actions |
 | Post-quantum identity and crypto-agility | NIST post-quantum standards; Harvest Now, Decrypt Later risk | Migration of wallets, credentials, and trust infrastructure |
 | AI, cyber, quantum, hybrid, and physical threats | German and European resilience requirements | Escalation analysis and operational readiness |
 
-The implementation does not imply that the EBW proposal is adopted law or that
-wallet infrastructure replaces runtime security, model assurance, human
-oversight, or incident response.
+The implementation treats the two Trusted AI research planes as complementary:
+the data plane establishes the provenance and fitness of supporting evidence,
+while the control plane establishes legal-person identity and bounded authority
+for an action. Neither plane proves the other. The implementation also does not
+imply that the EBW proposal is adopted law or that wallet infrastructure
+replaces runtime security, model assurance, human oversight, or incident
+response.
 
 ## Editorial and contributor rules
 

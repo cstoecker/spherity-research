@@ -82,7 +82,7 @@ const imageDimensions = async (file) => {
   return null;
 };
 
-const requiredFiles = [
+const requiredInfrastructureFiles = [
   "index.html",
   "robots.txt",
   "sitemap.xml",
@@ -90,12 +90,33 @@ const requiredFiles = [
   "assets/site.css",
   "assets/research-portal.js",
   "assets/spherity_logo_336x336_centered_margins.png",
-  "assets/spherity-research-og.png",
-  "Spherity_Research_EBW_as_Legal_Control_Plane_for_Zero_Trust_AI_Agents.pdf",
-  "ebw-zero-trust-ai-agents.html",
-  "Securing-Digital-Identity-Quantum-Vulnerabilities.html",
-  "ebw-roadmap.html",
-  "threat-escalation-model-germany-eu.html"
+  "assets/spherity-research-og.png"
+];
+
+const config = parseYaml(
+  await readFile(path.join(sourceDirectory, "_config.yml"), "utf8")
+);
+const publications = parseYaml(
+  await readFile(path.join(sourceDirectory, "_data", "publications.yml"), "utf8")
+);
+const requiredPublicationOutputs = [
+  ...new Set(
+    publications.flatMap((publication) =>
+      (publication.links || [])
+        .map((link) => link?.url)
+        .filter(
+          (url) =>
+            typeof url === "string" &&
+            url.startsWith("/") &&
+            /\.(?:html|pdf)$/i.test(url)
+        )
+        .map((url) => decodeURIComponent(url.replace(/^\/+/, "")))
+    )
+  )
+];
+const requiredFiles = [
+  ...requiredInfrastructureFiles,
+  ...requiredPublicationOutputs
 ];
 
 for (const requiredFile of requiredFiles) {
@@ -104,12 +125,6 @@ for (const requiredFile of requiredFiles) {
   }
 }
 
-const config = parseYaml(
-  await readFile(path.join(sourceDirectory, "_config.yml"), "utf8")
-);
-const publications = parseYaml(
-  await readFile(path.join(sourceDirectory, "_data", "publications.yml"), "utf8")
-);
 const markdownFiles = await glob("*.md", {
   cwd: sourceDirectory,
   nodir: true,
@@ -213,8 +228,35 @@ for (const markdownFile of markdownFiles) {
     errors.push(`${markdownFile}: image does not exist: ${data.image}`);
   }
 
-  if (data.pdf_url && !(await exists(sourcePathFromPublicUrl(data.pdf_url)))) {
-    errors.push(`${markdownFile}: PDF does not exist: ${data.pdf_url}`);
+  if (data.pdf_url) {
+    if (!(await exists(sourcePathFromPublicUrl(data.pdf_url)))) {
+      errors.push(`${markdownFile}: PDF does not exist: ${data.pdf_url}`);
+    }
+
+    for (const field of ["cover_image", "cover_image_alt"]) {
+      if (!data[field]) {
+        errors.push(`${markdownFile}: PDF landing page requires "${field}".`);
+      }
+    }
+
+    if (data.cover_image && !(await exists(sourcePathFromPublicUrl(data.cover_image)))) {
+      errors.push(`${markdownFile}: cover image does not exist: ${data.cover_image}`);
+    }
+
+    if (await exists(imagePath)) {
+      const dimensions = await imageDimensions(imagePath);
+      if (!dimensions || dimensions.width !== 1200 || dimensions.height !== 630) {
+        errors.push(
+          `${markdownFile}: PDF landing-page social image must be exactly 1200×630 pixels.`
+        );
+      }
+      const imageStats = await stat(imagePath);
+      if (imageStats.size > 250 * 1024) {
+        errors.push(
+          `${markdownFile}: social image is ${Math.ceil(imageStats.size / 1024)} KB; keep it at or below 250 KB.`
+        );
+      }
+    }
   }
 
   if (!content.includes('id="questions-answered"')) {
@@ -250,6 +292,7 @@ for (const markdownFile of markdownFiles) {
 }
 
 const publicationTitles = new Set();
+const publicationPrimaryLinks = new Map();
 for (const publication of publications) {
   if (publicationTitles.has(publication.title)) {
     errors.push(`Publication catalog: duplicate title "${publication.title}".`);
@@ -303,6 +346,14 @@ for (const publication of publications) {
 
   const primaryLink = publication.links?.[0]?.url;
   if (!primaryLink) continue;
+
+  if (publicationPrimaryLinks.has(primaryLink)) {
+    errors.push(
+      `Publication catalog: primary link ${primaryLink} is shared by "${publication.title}" and "${publicationPrimaryLinks.get(primaryLink)}".`
+    );
+  } else {
+    publicationPrimaryLinks.set(primaryLink, publication.title);
+  }
 
   if (!primaryLink.endsWith(".html")) {
     errors.push(
@@ -530,9 +581,12 @@ if (await exists(path.join(siteDirectory, "robots.txt"))) {
 if (await exists(path.join(siteDirectory, "llms.txt"))) {
   const llms = await readFile(path.join(siteDirectory, "llms.txt"), "utf8");
   for (const publication of publications) {
-    const primaryUrl = `${canonicalOrigin}${publication.links[0].url}`;
-    if (!llms.includes(primaryUrl)) {
-      errors.push(`llms.txt: missing primary publication URL ${primaryUrl}.`);
+    for (const [index, link] of (publication.links || []).entries()) {
+      if (!link?.url || (index !== 0 && !/\.pdf$/i.test(link.url))) continue;
+      const publicationUrl = `${canonicalOrigin}${link.url}`;
+      if (!llms.includes(publicationUrl)) {
+        errors.push(`llms.txt: missing publication URL ${publicationUrl}.`);
+      }
     }
   }
 }
@@ -542,6 +596,15 @@ if (await exists(path.join(siteDirectory, "sitemap.xml"))) {
   for (const researchPage of researchPages) {
     if (!sitemap.includes(researchPage.data.canonical_url)) {
       errors.push(`sitemap.xml: missing ${researchPage.data.canonical_url}.`);
+    }
+  }
+  for (const publication of publications) {
+    for (const link of publication.links || []) {
+      if (!link?.url || !/\.(?:html|pdf)$/i.test(link.url)) continue;
+      const publicationUrl = `${canonicalOrigin}${link.url}`;
+      if (!sitemap.includes(publicationUrl)) {
+        errors.push(`sitemap.xml: missing publication URL ${publicationUrl}.`);
+      }
     }
   }
 }

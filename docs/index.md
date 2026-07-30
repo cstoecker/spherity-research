@@ -15,8 +15,8 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
     <a class="portal-brand" href="{{ '/' | relative_url }}" aria-label="Spherity Research home">
       <img src="{{ '/assets/spherity-logo-horizontal-800.webp' | relative_url }}"
            alt="Spherity"
-           width="8000"
-           height="2391">
+           width="800"
+           height="239">
     </a>
     <nav aria-label="Primary navigation">
       <a href="#publications">Publications</a>
@@ -52,7 +52,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
         <span class="node node-d"></span>
         <span class="node node-e"></span>
         <div class="hero-signal">
-          <span class="signal-value">04</span>
+          <span class="signal-value">{{ site.data.publications | size }}</span>
           <span class="signal-label">Current<br>publications</span>
         </div>
       </div>
@@ -75,16 +75,41 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
         Spherity Research examines how organizations can establish identity,
         authority, and trustworthy evidence across regulated digital systems.
         The current library connects European Business Wallet policy,
-        AI-agent authorization, post-quantum migration, and operational
-        resilience without treating them as interchangeable problems.
+        AI-agent authorization, Industrial AI evidence graphs, post-quantum
+        migration, and operational resilience without treating them as
+        interchangeable problems.
       </p>
       <ul>
+        <li><a href="{{ '/evidence-graphs-industrial-ai-data-plane.html' | relative_url }}">How can Industrial AI trace provenance, validation, freshness, and conflicting evidence across organizations?</a></li>
         <li><a href="{{ '/ebw-zero-trust-ai-agents.html' | relative_url }}">How can an enterprise prove an AI agent’s legal authority for a specific action?</a></li>
         <li><a href="{{ '/Securing-Digital-Identity-Quantum-Vulnerabilities.html' | relative_url }}">Which digital-identity dependencies must migrate for post-quantum readiness?</a></li>
         <li><a href="{{ '/ebw-roadmap.html' | relative_url }}">Which legal and operational gates shape European Business Wallet adoption?</a></li>
         <li><a href="{{ '/threat-escalation-model-germany-eu.html' | relative_url }}">How can Germany and the EU test readiness across coupled technology risks?</a></li>
       </ul>
     </div>
+  </section>
+
+  <section class="trust-planes portal-shell" aria-labelledby="trust-planes-title">
+    <div class="trust-planes-heading">
+      <p class="eyebrow eyebrow-dark"><span></span>Trusted Industrial AI</p>
+      <h2 id="trust-planes-title">Two trust planes. One accountable system.</h2>
+      <p>Regulated AI needs separate, interoperable evidence for legal authority and for the facts supporting a decision.</p>
+    </div>
+    <div class="trust-plane-grid">
+      <article>
+        <span class="trust-plane-number">01 · Control plane</span>
+        <h3>Who is authorized to act?</h3>
+        <p>European Business Wallets connect legal-person identity, agent identity, bounded mandates, current status, policy decisions, and action receipts.</p>
+        <a href="{{ '/ebw-zero-trust-ai-agents.html' | relative_url }}">Read the control-plane paper <span aria-hidden="true">→</span></a>
+      </article>
+      <article>
+        <span class="trust-plane-number">02 · Data plane</span>
+        <h3>What evidence supports the action?</h3>
+        <p>Evidence graphs connect provenance, validation, freshness, transformations, conflicts, uncertainty, issuer status, and auditable evidence paths.</p>
+        <a href="{{ '/evidence-graphs-industrial-ai-data-plane.html' | relative_url }}">Read the data-plane paper <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+    <p class="trust-planes-boundary">A valid mandate does not prove that an AI output is factually supported. Reliable evidence does not prove that an AI agent was legally authorized to act. Regulated AI systems require both layers.</p>
   </section>
 
   <section class="publication-section portal-shell" id="publications" aria-labelledby="publications-title">
@@ -203,7 +228,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
         <article>
           <span class="topic-number">04</span>
           <h3>Trusted AI</h3>
-          <p>Identity, authorization, and evidence for governed agentic ecosystems.</p>
+          <p>Legal authorization and evidence provenance for governed Industrial AI and agentic ecosystems.</p>
         </article>
       </div>
     </div>

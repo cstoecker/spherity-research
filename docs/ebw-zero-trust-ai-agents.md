@@ -22,8 +22,10 @@ pdf_url: "/Spherity_Research_EBW_as_Legal_Control_Plane_for_Zero_Trust_AI_Agents
 
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 
-image: "/assets/Spherity_Research_EBW_as_Legal_Control_Plane_for_Zero_Trust_AI_Agents.png"
-image_alt: "Cover of European Business Wallets as the Legal Control Plane for Zero Trust AI Agents."
+image: "/assets/control-plane-social.png"
+image_alt: "Social preview for European Business Wallets as the Legal Control Plane for Zero Trust AI Agents."
+cover_image: "/assets/Spherity_Research_EBW_as_Legal_Control_Plane_for_Zero_Trust_AI_Agents.png"
+cover_image_alt: "First page of European Business Wallets as the Legal Control Plane for Zero Trust AI Agents."
 
 answer_summary: "The whitepaper argues that technical agent identity and runtime security do not prove which legal person authorized an autonomous action. It proposes European Business Wallet identity, digital mandates, status verification, and signed action evidence as a cross-company legal authority layer for Zero Trust AI agents."
 key_takeaways:
@@ -57,7 +59,12 @@ questions_answered:
     answer: "The paper maps legal-person identification, electronic attestations, digital mandates, trust and status services, revocation, wallet attestations, and signed evidence to the authorization and audit requirements of regulated autonomous actions."
   - question: "Does the proposed control plane replace MCP, A2A, dataspace connectors, or API gateways?"
     answer: "No. Those technologies remain interaction and enforcement surfaces. The proposed wallet layer supplies external evidence about legal identity, delegated authority, current status, and accountability before a material action is permitted."
+  - question: "Does legal authority prove that an AI agent used reliable data?"
+    answer: "No. The control plane establishes identity, mandate, scope, status, and accountability for an action. A complementary data plane must establish the provenance, validation, freshness, uncertainty, and evidence path supporting the agent's conclusion."
 related_publications:
+  - title: "Evidence Graphs for Industrial AI"
+    url: "/evidence-graphs-industrial-ai-data-plane.html"
+    context: "Provides the complementary data-plane architecture for provenance, validation, freshness, conflicts, and auditable AI evidence paths."
   - title: "Securing Digital Identity and Verifiable Credential Wallets against Quantum Vulnerabilities"
     url: "/Securing-Digital-Identity-Quantum-Vulnerabilities.html"
     context: "Extends the authority model with an end-to-end post-quantum migration and crypto-agility analysis."
@@ -75,6 +82,8 @@ toc_items:
     href: "#reference-architecture"
   - title: "Control-plane comparison"
     href: "#control-plane-comparison"
+  - title: "Two complementary trust planes"
+    href: "#two-complementary-trust-planes"
   - title: "Boundary conditions"
     href: "#boundary-conditions"
   - title: "How to cite"
@@ -99,8 +108,8 @@ tags:
 </div>
 
 <figure class="paper-figure centered-figure">
-  <img src="{{ page.image | relative_url }}"
-       alt="{{ page.image_alt }}"
+  <img src="{{ page.cover_image | relative_url }}"
+       alt="{{ page.cover_image_alt }}"
        width="1626"
        height="1763">
   <figcaption><strong>Whitepaper cover.</strong> European Business Wallets as the Legal Control Plane for Zero Trust AI Agents, published 1 June 2026.</figcaption>
@@ -141,6 +150,14 @@ Model Context Protocol (MCP), Agent2Agent (A2A), dataspace connectors, and conve
 | How is cryptographic migration handled? | Depends on each local identity and logging component. | Calls for algorithm identifiers, hybrid or post-quantum profiles, rollover policy, and long-term evidence preservation across the authority chain. |
 
 The two columns are complementary rather than mutually exclusive. The proposed EBW layer does not replace workload identity, sandboxing, service meshes, data-loss prevention, runtime monitoring, or incident response.
+
+<h2 id="two-complementary-trust-planes">Two complementary trust planes</h2>
+
+The legal control plane addresses **who may act**: the accountable legal person, the agent identity, the delegated mandate, the action scope, the relying party, the current status, and the evidence retained after execution.
+
+The complementary data-plane architecture in <a href="{{ '/evidence-graphs-industrial-ai-data-plane.html' | relative_url }}">Evidence Graphs for Industrial AI</a> addresses **what evidence supports the action or conclusion**: provenance, source attribution, validation, freshness, transformations, conflicts, uncertainty, and traversable evidence paths.
+
+A valid mandate does not prove that an AI output is factually supported. Reliable evidence does not prove that an AI agent was legally authorized to act. Regulated AI systems require both layers.
 
 <h2 id="boundary-conditions">Boundary conditions</h2>
 

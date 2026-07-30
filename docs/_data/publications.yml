@@ -1,21 +1,47 @@
+- title: "Evidence Graphs for Industrial AI"
+  type: "Research perspective"
+  date_label: "9 July 2026"
+  date_iso: "2026-07-09"
+  description: "A data-plane architecture for Industrial AI that links provenance, validation, freshness, and issuer-bound claims into auditable evidence paths."
+  topics:
+    - "Evidence graphs"
+    - "Industrial AI"
+    - "Data provenance"
+  filters: "ai infrastructure identity"
+  search: "evidence graphs industrial ai data plane verifiable linked knowledge graph vlkg provenance json ld yaml ld cbor ld rdf owl shacl aas asset administration shell know your data data risk scoring"
+  image: "/assets/preview-evidence-graphs-industrial-ai-data-plane.webp"
+  image_alt: "Preview of Evidence Graphs for Industrial AI"
+  image_width: 1200
+  image_height: 630
+  media_class: "card-media-wide"
+  format: "HTML + PDF"
+  featured: true
+  links:
+    - label: "Read summary"
+      url: "/evidence-graphs-industrial-ai-data-plane.html"
+      arrow: "→"
+    - label: "Download PDF"
+      url: "/Spherity_Research_Evidence_Graphs_for_Industrial_AI_Data_Plane_Architectures.pdf"
+      arrow: "↓"
+      secondary: true
+
 - title: "European Business Wallets as the Legal Control Plane for Zero Trust AI Agents"
   type: "Featured paper"
   date_label: "1 June 2026"
   date_iso: "2026-06-01"
-  description: "How organizational identity, verifiable authority, and policy-bound credentials can govern agentic interactions across companies and regulated ecosystems."
+  description: "The control-plane architecture for proving who an AI agent represents, which mandate applies, and whether each cross-company action is permitted."
   topics:
     - "European Business Wallet"
     - "Zero-Trust AI"
     - "Organizational identity"
   filters: "wallets identity ai"
   search: "european business wallet legal control plane zero trust ai agents organisational identity verifiable credentials pdf"
-  image: "/assets/preview-ebw-zero-trust-ai-agents.webp"
+  image: "/assets/preview-ebw-zero-trust-ai-agents-final.webp"
   image_alt: "Cover of European Business Wallets as the Legal Control Plane for Zero Trust AI Agents"
-  image_width: 922
-  image_height: 1000
-  media_class: "card-media-tall"
+  image_width: 1200
+  image_height: 630
+  media_class: "card-media-wide"
   format: "HTML + PDF"
-  featured: true
   links:
     - label: "Read summary"
       url: "/ebw-zero-trust-ai-agents.html"
