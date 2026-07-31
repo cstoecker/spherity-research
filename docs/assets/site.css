@@ -217,7 +217,7 @@ a {
   font-family: var(--font-serif);
   font-size: clamp(3rem, 7vw, 6.4rem);
   font-weight: 500;
-  letter-spacing: -0.055em;
+  letter-spacing: -0.045em;
   line-height: 0.98;
 }
 
@@ -301,13 +301,26 @@ a {
 .orbit::after {
   content: "";
   position: absolute;
-  top: 8%;
-  left: 23%;
   width: 0.5rem;
   height: 0.5rem;
   background: var(--mint-400);
   border-radius: 50%;
   box-shadow: 0 0 0 7px rgba(35, 230, 182, 0.08);
+}
+
+.orbit-one::after {
+  top: 79%;
+  left: 9%;
+}
+
+.orbit-two::after {
+  top: 12%;
+  left: 80%;
+}
+
+.orbit-three::after {
+  top: 72%;
+  left: 94%;
 }
 
 .node {
@@ -320,11 +333,15 @@ a {
   box-shadow: 0 0 0 8px rgba(34, 166, 237, 0.08);
 }
 
-.node-a { top: 14%; right: 21%; }
+.node-a { top: 13.5%; right: 26.5%; }
 .node-b { top: 42%; left: 8%; }
-.node-c { right: 7%; bottom: 22%; }
-.node-d { bottom: 9%; left: 28%; }
-.node-e { top: 31%; left: 47%; background: var(--mint-400); }
+.node-c { top: 71%; right: 13%; }
+.node-d { bottom: 9.5%; left: 38%; }
+.node-e {
+  top: calc(50% - 5.25rem - 0.36rem);
+  left: calc(50% - 0.36rem);
+  background: var(--mint-400);
+}
 
 .hero-signal {
   position: absolute;
@@ -363,7 +380,7 @@ a {
   z-index: 2;
   min-height: 5.5rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   align-items: center;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
@@ -768,7 +785,18 @@ a {
 }
 
 .card-media-wide img {
-  object-position: 50% center;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0.45rem;
+  box-shadow: 0 10px 28px rgba(6, 24, 39, 0.12);
+}
+
+.card-media-wide {
+  padding: clamp(0.85rem, 1.8vw, 1.35rem);
+  background: #e6ecef;
 }
 
 .media-format {
@@ -944,7 +972,7 @@ a {
 
 .topic-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   margin-top: 4rem;
   border-top: 1px solid rgba(255, 255, 255, 0.14);
 }
@@ -1064,7 +1092,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .topic-grid article:nth-child(3) {
+  .topic-grid article:nth-child(odd) {
     border-left: 1px solid rgba(255, 255, 255, 0.14);
   }
 
@@ -1194,7 +1222,7 @@ a {
 
   .topic-grid article,
   .topic-grid article:first-child,
-  .topic-grid article:nth-child(3) {
+  .topic-grid article:nth-child(odd) {
     min-height: auto;
     padding: 1.5rem 0;
     border-right: 0;

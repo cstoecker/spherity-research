@@ -1,7 +1,21 @@
 ---
 layout: default
 title: "Spherity Research"
-description: "Independent research from Spherity GmbH on decentralized identity, European Business Wallets, verifiable credentials, trusted AI, and post-quantum resilience."
+description: "Evidence-led Spherity research on DPPs and DBPs, organizational identity, business wallets, data sharing, data spaces, digital corridors, trusted AI, and post-quantum trust."
+keywords:
+  - "Digital Product Passports"
+  - "DPP"
+  - "Digital Battery Passports"
+  - "DBP"
+  - "Data Sharing"
+  - "Data Spaces"
+  - "Digital Corridors"
+  - "Digital Data Sharing Corridors"
+  - "Organizational Identity"
+  - "European Business Wallets"
+  - "Verifiable Credentials"
+  - "Trusted AI"
+  - "Post-Quantum Cryptography"
 permalink: /
 schema_type: "CollectionPage"
 og_type: "website"
@@ -33,9 +47,9 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
         <p class="eyebrow"><span></span>Spherity Research</p>
         <h1>Research for the systems we need to trust.</h1>
         <p class="hero-lede">
-          Evidence-led work on organizational identity, verifiable credentials,
-          European Business Wallets, trusted AI, and the cryptographic
-          infrastructure behind the real economy.
+          Evidence-led work on Digital Product Passports (DPPs), organizational
+          identity, verifiable credentials, European Business Wallets, trusted
+          AI, and the cryptographic infrastructure behind the real economy.
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#publications">Explore publications <span aria-hidden="true">↓</span></a>
@@ -58,10 +72,11 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
       </div>
     </div>
     <div class="portal-shell trust-strip" aria-label="Research focus areas">
+      <span>Product passports</span>
       <span>Identity</span>
-      <span>Infrastructure</span>
+      <span>Data sharing</span>
       <span>Resilience</span>
-      <span>Policy</span>
+      <span>Trusted AI</span>
     </div>
   </section>
 
@@ -72,12 +87,15 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
     </div>
     <div class="portal-explainer-copy">
       <p>
-        Spherity Research examines how organizations can establish identity,
-        authority, and trustworthy evidence across regulated digital systems.
-        The current library connects European Business Wallet policy,
-        AI-agent authorization, Industrial AI evidence graphs, post-quantum
-        organizational-identity corridors, and operational resilience without
-        treating them as interchangeable problems.
+        Spherity Research examines how organizations and products can establish
+        identity, authority, provenance, and trustworthy evidence across
+        regulated digital systems. The research agenda includes Digital Product
+        Passports (DPPs), Digital Battery Passports (DBPs), trusted data sharing
+        across Data Spaces and Digital Data Sharing Corridors, European Business
+        Wallet policy, AI-agent authorization, Industrial AI evidence graphs,
+        post-quantum organizational-identity corridors, and operational
+        resilience. Dedicated DPP and DBP publications are part of the agenda
+        but are not yet listed in the current library.
       </p>
       <ul>
         <li><a href="{{ '/evidence-graphs-industrial-ai-data-plane.html' | relative_url }}">How can Industrial AI trace provenance, validation, freshness, and conflicting evidence across organizations?</a></li>
@@ -172,7 +190,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
       <div class="filter-list" aria-label="Filter by topic">
         <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
         <button class="filter-button" type="button" data-filter="identity" aria-pressed="false">Identity</button>
-        <button class="filter-button" type="button" data-filter="wallets" aria-pressed="false">Business wallets</button>
+        <button class="filter-button" type="button" data-filter="wallets" aria-pressed="false">Wallets &amp; data sharing</button>
         <button class="filter-button" type="button" data-filter="resilience" aria-pressed="false">Resilience</button>
         <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">Trusted AI</button>
       </div>
@@ -238,31 +256,37 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
       <div class="section-heading section-heading-light">
         <div>
           <p class="eyebrow"><span></span>Research agenda</p>
-          <h2 id="topics-title">One trust layer. Four perspectives.</h2>
+          <h2 id="topics-title">One trust layer. Five perspectives.</h2>
         </div>
         <p>
-          The research connects technology, law, policy, and operations instead
-          of treating them as separate systems.
+          The agenda connects product data, identity, data sharing, technology,
+          law, policy, and operations instead of treating them as separate
+          systems.
         </p>
       </div>
       <div class="topic-grid">
         <article>
           <span class="topic-number">01</span>
+          <h3>Digital Product Passports</h3>
+          <p>Trust architectures for DPPs and Digital Battery Passports (DBPs), including identifiers, provenance, lifecycle claims, access rights, and compliance evidence.</p>
+        </article>
+        <article>
+          <span class="topic-number">02</span>
           <h3>Organizational identity</h3>
           <p>Verifiable legal existence, representation, mandates, and accountability for companies, machines, and autonomous agents.</p>
         </article>
         <article>
-          <span class="topic-number">02</span>
-          <h3>Business wallets</h3>
-          <p>Legal and operational infrastructure for trusted cross-border business processes.</p>
+          <span class="topic-number">03</span>
+          <h3>Business Wallets &amp; Data Sharing</h3>
+          <p>Legal and operational infrastructure for trusted cross-border processes, interoperable Data Spaces, and Digital Data Sharing Corridors.</p>
         </article>
         <article>
-          <span class="topic-number">03</span>
+          <span class="topic-number">04</span>
           <h3>Cryptographic resilience</h3>
           <p>PQC Corridors and crypto-agile migration paths for identity, trust anchors, registries, and long-lived evidence.</p>
         </article>
         <article>
-          <span class="topic-number">04</span>
+          <span class="topic-number">05</span>
           <h3>Trusted AI</h3>
           <p>Legal authorization and evidence provenance for governed Industrial AI and agentic ecosystems.</p>
         </article>

@@ -14,6 +14,7 @@
 {% assign favicon_path = site.favicon | default: "/assets/spherity_logo_336x336_centered_margins.png" %}
 {% assign page_image = page.image | default: site.image | default: site.logo %}
 {% assign og_type = page.og_type | default: "article" %}
+{% assign page_keywords = page.keywords | default: page.tags %}
 
 {% if page.canonical_url %}
   {% assign canonical_url = page.canonical_url %}
@@ -41,6 +42,9 @@
   <title>{% if page.url == "/" %}{{ site.title | escape }} — Identity, Infrastructure, Resilience{% else %}{{ page_title | escape }} | {{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page_description | escape }}">
   <meta name="author" content="{{ author_name | escape }}">
+  {% if page_keywords %}
+  <meta name="keywords" content="{{ page_keywords | join: ', ' | escape }}">
+  {% endif %}
   <meta name="robots" content="{{ page.robots | default: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' }}">
 
   <link rel="canonical" href="{{ canonical_url | escape }}">
@@ -125,8 +129,19 @@
         "url": "{{ canonical_url | escape }}",
         "name": {{ page_title | jsonify }},
         "description": {{ page_description | jsonify }},
+        "keywords": {{ page.keywords | jsonify }},
         "isPartOf": { "@id": "{{ '/' | absolute_url }}#website" },
         "about": [
+          "Digital Product Passports",
+          "DPP",
+          "Digital Battery Passports",
+          "DBP",
+          "Data Sharing",
+          "Data Spaces",
+          "Digital Corridors",
+          "Digital Data Sharing Corridors",
+          "Organizational identity",
+          "Business wallets",
           "Decentralized identity",
           "European Business Wallet",
           "Verifiable credentials",

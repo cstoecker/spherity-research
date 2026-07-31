@@ -21,7 +21,7 @@ data.
 | PQC Corridor implementation | Limited homepage explanation | Add | Explain organizational authority, trust-fabric inventories, bounded corridor governance, migration controls, and evidence-led scaling |
 | Machine-readable publication index | Missing | Add | Catalog-generated `docs/llms.txt`; no ranking claim |
 | Contributor safeguards | Good baseline | Improve | Source, catalog, schema, citation, heading, image, sitemap, and answer-content checks |
-| Topic hubs for DPP/DBP, DSCSA, data spaces, and sector pages | Insufficient source material | Defer | Add only after approved original research supports a substantial page |
+| Topic hubs for DPP/DBP, DSCSA, data spaces, and sector pages | Insufficient source material | Agenda only | Include DPP, DBP, data sharing, data spaces, and digital corridors in the research agenda and homepage metadata; add dedicated topic pages only after approved original research supports them |
 | “Market leader” and similar superlatives | Unsupported | Defer | Require independent, citable evidence and author approval |
 | Training-crawler permissions | Governance decision | Keep | No change without explicit approval |
 

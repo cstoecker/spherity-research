@@ -3,7 +3,7 @@ layout: null
 ---
 # Spherity Research
 
-> Evidence-led publications on organizational identity, European Business Wallets, verifiable credentials, trusted AI, public-key trust infrastructure, and PQC Corridors.
+> Evidence-led publications and research agenda topics spanning Digital Product Passports (DPPs), Digital Battery Passports (DBPs), organizational identity, European Business Wallets, verifiable credentials, Data Spaces, Digital Data Sharing Corridors, trusted AI, public-key trust infrastructure, and PQC Corridors.
 
 Canonical library: {{ "/" | absolute_url }}
 
