@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Spherity Research"
-description: "Evidence-led Spherity research on DPPs and DBPs, organizational identity, European Business Wallets (EBW), data sharing, data spaces, digital corridors, trusted AI, and post-quantum trust."
+description: "Spherity research on DPPs, DBPs, European Business Wallets (EBW), AI Service Passports (AISP), Trusted AI, Physical AI, data sharing, and post-quantum trust."
 keywords:
   - "Digital Product Passports"
   - "DPP"
@@ -12,10 +12,16 @@ keywords:
   - "Digital Corridors"
   - "Digital Data Sharing Corridors"
   - "Organizational Identity"
+  - "European Business Wallet"
   - "European Business Wallets"
   - "EBW"
   - "Verifiable Credentials"
+  - "AI Service Passport"
+  - "AI Service Passports"
+  - "AISP"
+  - "AI Agent Authorization"
   - "Trusted AI"
+  - "Physical AI"
   - "Post-Quantum Cryptography"
 permalink: /
 schema_type: "CollectionPage"
@@ -93,10 +99,10 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
         regulated digital systems. The research agenda includes Digital Product
         Passports (DPPs), Digital Battery Passports (DBPs), trusted data sharing
         across Data Spaces and Digital Data Sharing Corridors, European Business
-        Wallet policy, AI-agent authorization, Industrial AI evidence graphs,
+        Wallet (EBW) policy, Trusted AI, AI-agent authorization, AI Service
+        Passports (AISP), Industrial AI evidence graphs, Physical AI,
         post-quantum organizational-identity corridors, and operational
-        resilience. Dedicated DPP and DBP publications are part of the agenda
-        but are not yet listed in the current library.
+        resilience.
       </p>
       <ul>
         <li><a href="{{ '/evidence-graphs-industrial-ai-data-plane.html' | relative_url }}">How can Industrial AI trace provenance, validation, freshness, and conflicting evidence across organizations?</a></li>
