@@ -19,6 +19,7 @@ permalink: /sitemap.xml
 {% endfor %}
 {% for file in site.static_files %}
 {% if file.extname == ".html" or file.extname == ".pdf" %}
+{% unless file.path contains "/google" %}
 {% assign file_modified = file.modified_time | default: site.time %}
   <url>
     <loc>{{ file.path | absolute_url | xml_escape }}</loc>
@@ -26,6 +27,7 @@ permalink: /sitemap.xml
     <changefreq>monthly</changefreq>
     <priority>{% if file.extname == ".pdf" %}0.7{% else %}0.8{% endif %}</priority>
   </url>
+{% endunless %}
 {% endif %}
 {% endfor %}
 </urlset>
