@@ -53,6 +53,9 @@ questions_answered:
   - question: "What is a post-quantum identity corridor?"
     answer: "It is a bounded end-to-end identity exchange in which issuance, wallet storage, holder binding, verifier authentication, trust and status lists, registries, transport, semantics, audit, and long-term validation are migrated and tested together."
 related_publications:
+  - title: "Quantum-Resilient Organizational Identity"
+    url: "/quantum-resilient-organizational-identity.html"
+    context: "Turns the attack taxonomy and migration case into a multi-actor governance and systems architecture for business wallets, trust infrastructure, and repeatable PQC Corridors."
   - title: "European Business Wallets as the Legal Control Plane for Zero Trust AI Agents"
     url: "/ebw-zero-trust-ai-agents.html"
     context: "Applies legal-person identity, mandates, revocation, and cryptographic agility to governed AI-agent actions."

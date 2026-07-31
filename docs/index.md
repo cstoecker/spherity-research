@@ -76,12 +76,13 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
         authority, and trustworthy evidence across regulated digital systems.
         The current library connects European Business Wallet policy,
         AI-agent authorization, Industrial AI evidence graphs, post-quantum
-        migration, and operational resilience without treating them as
-        interchangeable problems.
+        organizational-identity corridors, and operational resilience without
+        treating them as interchangeable problems.
       </p>
       <ul>
         <li><a href="{{ '/evidence-graphs-industrial-ai-data-plane.html' | relative_url }}">How can Industrial AI trace provenance, validation, freshness, and conflicting evidence across organizations?</a></li>
         <li><a href="{{ '/ebw-zero-trust-ai-agents.html' | relative_url }}">How can an enterprise prove an AI agent’s legal authority for a specific action?</a></li>
+        <li><a href="{{ '/quantum-resilient-organizational-identity.html' | relative_url }}">How can organizations establish a governed, PQC-resilient digital corridor?</a></li>
         <li><a href="{{ '/Securing-Digital-Identity-Quantum-Vulnerabilities.html' | relative_url }}">Which digital-identity dependencies must migrate for post-quantum readiness?</a></li>
         <li><a href="{{ '/ebw-roadmap.html' | relative_url }}">Which legal and operational gates shape European Business Wallet adoption?</a></li>
         <li><a href="{{ '/threat-escalation-model-germany-eu.html' | relative_url }}">How can Germany and the EU test readiness across coupled technology risks?</a></li>
@@ -110,6 +111,41 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
       </article>
     </div>
     <p class="trust-planes-boundary">A valid mandate does not prove that an AI output is factually supported. Reliable evidence does not prove that an AI agent was legally authorized to act. Regulated AI systems require both layers.</p>
+  </section>
+
+  <section class="corridor-section portal-shell" aria-labelledby="corridor-title">
+    <div class="corridor-heading">
+      <div>
+        <p class="eyebrow eyebrow-dark"><span></span>Quantum-resilient trust</p>
+        <h2 id="corridor-title">Organizational identity is infrastructure.</h2>
+      </div>
+      <p>
+        B2B, B2G, G2G, machine, and AI-agent ecosystems depend on proving which
+        organization is acting, under which authority, and whether the complete
+        trust chain remains valid as cryptography changes.
+      </p>
+    </div>
+    <div class="corridor-path">
+      <article>
+        <span class="corridor-step">01 · Establish authority</span>
+        <h3>Prove the organization and its mandate.</h3>
+        <p>Bind legal existence, representation rights, roles, licenses, delegated authority, purpose, and validity periods into reusable organizational credentials.</p>
+      </article>
+      <article>
+        <span class="corridor-step">02 · Map the trust fabric</span>
+        <h3>Inventory every dependency that makes the proof reliable.</h3>
+        <p>Cover issuers, wallets, verifiers, trust anchors, status, revocation, registries, qVDR functions, DNSSEC, WebPKI, semantics, vendors, and long-term evidence.</p>
+      </article>
+      <article>
+        <span class="corridor-step">03 · Launch a PQC Corridor</span>
+        <h3>Migrate a bounded high-value ecosystem together.</h3>
+        <p>Align actors, assurance, evidence horizons, trust boundaries, hybrid or post-quantum profiles, downgrade rules, lifecycle controls, and reusable conformance evidence.</p>
+      </article>
+    </div>
+    <div class="corridor-outcome">
+      <p>Algorithm replacement alone cannot preserve legal reliance when counterparties, trust anchors, status services, lifecycle controls, and evidence do not migrate coherently.</p>
+      <a href="{{ '/quantum-resilient-organizational-identity.html' | relative_url }}">Read the PQC Corridor paper <span aria-hidden="true">→</span></a>
+    </div>
   </section>
 
   <section class="publication-section portal-shell" id="publications" aria-labelledby="publications-title">
@@ -213,7 +249,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
         <article>
           <span class="topic-number">01</span>
           <h3>Organizational identity</h3>
-          <p>Verifiable authority for companies, products, machines, and autonomous agents.</p>
+          <p>Verifiable legal existence, representation, mandates, and accountability for companies, machines, and autonomous agents.</p>
         </article>
         <article>
           <span class="topic-number">02</span>
@@ -223,7 +259,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
         <article>
           <span class="topic-number">03</span>
           <h3>Cryptographic resilience</h3>
-          <p>Migration paths for identity and trust systems in a post-quantum world.</p>
+          <p>PQC Corridors and crypto-agile migration paths for identity, trust anchors, registries, and long-lived evidence.</p>
         </article>
         <article>
           <span class="topic-number">04</span>

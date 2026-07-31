@@ -51,6 +51,32 @@
       arrow: "↓"
       secondary: true
 
+- title: "Quantum-Resilient Organizational Identity"
+  type: "Research paper"
+  date_label: "21 May 2026"
+  date_iso: "2026-05-21"
+  description: "A governance and systems architecture for organizational identity, quantum-safe trust infrastructure, business wallets, and repeatable PQC Corridors."
+  topics:
+    - "Organizational identity"
+    - "PQC Corridors"
+    - "Trust infrastructure"
+  filters: "identity resilience wallets infrastructure"
+  search: "quantum resilient organisational organizational identity governance business wallets pqc corridors public key trust fabric qdpi qvdr verifiable lei vlei b2b b2g g2g m2m agent to agent cryptographic agility"
+  image: "/assets/preview-quantum-resilient-organizational-identity.webp"
+  image_alt: "Preview of Quantum-Resilient Organizational Identity"
+  image_width: 1200
+  image_height: 630
+  media_class: "card-media-wide"
+  format: "HTML + PDF"
+  links:
+    - label: "Read summary"
+      url: "/quantum-resilient-organizational-identity.html"
+      arrow: "→"
+    - label: "Download PDF"
+      url: "/Spherity_Research_Quantum_Resilient_Organizational_Identity_final.pdf"
+      arrow: "↓"
+      secondary: true
+
 - title: "Securing Digital Identity and Verifiable Credential Wallets against Quantum Vulnerabilities"
   type: "Research paper"
   date_label: "14 May 2026"
