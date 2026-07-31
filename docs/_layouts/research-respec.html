@@ -2,14 +2,18 @@
 layout: default
 ---
 
-{% assign logo_path = page.logo | default: "/assets/Spherity-logo-horiz-blue-rgb.png" %}
+{% assign logo_path = page.logo | default: "/assets/spherity-logo-horizontal-800.webp" %}
 {% assign paper_status = page.paper_status | default: "Spherity Research Paper" %}
 {% assign this_version = page.canonical_url | default: page.url %}
 {% assign latest_version = page.latest_version | default: page.canonical_url %}
-{% assign author_name = page.author | default: "Dr. Carsten Stöcker" %}
+{% if page.authors %}
+  {% assign author_name = page.authors | join: ", " %}
+{% else %}
+  {% assign author_name = page.author | default: "Dr. Carsten Stöcker" %}
+{% endif %}
 {% assign affiliation = page.affiliation | default: "Spherity GmbH" %}
 
-<main class="srespec-page">
+<div class="srespec-page">
   <aside class="srespec-sidebar" aria-label="Document navigation">
     <a class="srespec-logo-link" href="{{ '/' | relative_url }}" aria-label="Spherity Research home">
       <img class="srespec-logo"
@@ -19,14 +23,11 @@ layout: default
     </a>
 
     <nav class="srespec-toc" aria-labelledby="srespec-toc-heading">
-      <h2 id="srespec-toc-heading">Contents</h2>
-
+      <h2 id="srespec-toc-heading">On this page</h2>
       {% if page.toc_items %}
       <ol>
         {% for item in page.toc_items %}
-        <li>
-          <a href="{{ item.href }}">{{ item.title }}</a>
-        </li>
+        <li><a href="{{ item.href }}">{{ item.title }}</a></li>
         {% endfor %}
       </ol>
       {% endif %}
@@ -34,83 +35,139 @@ layout: default
   </aside>
 
   <article class="srespec-main research-article"
+           id="main-content"
            itemscope
            itemtype="https://schema.org/ScholarlyArticle">
 
     <header class="srespec-header">
       <div class="srespec-header-top">
+        <nav class="article-breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a class="article-home-link" href="{{ '/' | relative_url }}">Research</a></li>
+            <li aria-current="page">{{ page.title }}</li>
+          </ol>
+        </nav>
         <img class="srespec-header-logo"
              src="{{ logo_path | relative_url }}"
              alt="Spherity"
              width="160">
-
         <p class="srespec-kicker">{{ paper_status }}</p>
       </div>
 
-      <h1 class="srespec-title" itemprop="headline">
-        {{ page.title }}
-      </h1>
+      <h1 class="srespec-title" itemprop="headline">{{ page.title }}</h1>
 
       {% if page.subtitle %}
-      <p class="srespec-subtitle">
-        {{ page.subtitle }}
-      </p>
+      <p class="srespec-subtitle">{{ page.subtitle }}</p>
       {% endif %}
 
       <dl class="srespec-meta">
         <div>
-          <dt>Author</dt>
-          <dd itemprop="author">{{ author_name }}</dd>
+          <dt>{% if page.authors and page.authors.size > 1 %}Authors{% else %}Author{% endif %}</dt>
+          <dd itemprop="author">
+            {% if page.authors %}
+              {% for author in page.authors %}{{ author }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+            {% else %}
+              {{ author_name }}
+            {% endif %}
+          </dd>
         </div>
-
         <div>
           <dt>Affiliation</dt>
           <dd>{{ affiliation }}</dd>
         </div>
-
         {% if page.date %}
         <div>
           <dt>Published</dt>
-          <dd>
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-              {{ page.date | date: "%Y-%m-%d" }}
-            </time>
-          </dd>
+          <dd><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time></dd>
         </div>
         {% endif %}
-
         {% if page.last_modified_at %}
         <div>
           <dt>Updated</dt>
-          <dd>
-            <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">
-              {{ page.last_modified_at | date: "%Y-%m-%d" }}
-            </time>
-          </dd>
+          <dd><time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time></dd>
         </div>
         {% endif %}
-
         {% if this_version %}
         <div>
           <dt>This version</dt>
-          <dd>
-            <a href="{{ this_version }}">{{ this_version }}</a>
-          </dd>
+          <dd><a href="{{ this_version }}">{{ this_version }}</a></dd>
         </div>
         {% endif %}
-
         {% if latest_version %}
         <div>
           <dt>Latest version</dt>
-          <dd>
-            <a href="{{ latest_version }}">{{ latest_version }}</a>
-          </dd>
+          <dd><a href="{{ latest_version }}">{{ latest_version }}</a></dd>
         </div>
         {% endif %}
       </dl>
+
+      {% if page.toc_items %}
+      <details class="mobile-article-nav">
+        <summary>Browse this paper</summary>
+        <nav aria-label="Mobile document navigation">
+          <ol>
+            {% for item in page.toc_items %}
+            <li><a href="{{ item.href }}">{{ item.title }}</a></li>
+            {% endfor %}
+          </ol>
+        </nav>
+      </details>
+      {% endif %}
     </header>
+
+    {% if page.answer_summary %}
+    <section class="answer-summary" id="answer-summary" aria-labelledby="answer-summary-title">
+      <p class="answer-summary-label">In brief</p>
+      <h2 id="answer-summary-title">What does this research establish?</h2>
+      <p class="answer-summary-copy">{{ page.answer_summary }}</p>
+      {% if page.key_takeaways %}
+      <div class="answer-takeaways">
+        <h3>Key takeaways</h3>
+        <ul>
+          {% for takeaway in page.key_takeaways %}
+          <li>{{ takeaway }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </section>
+    {% endif %}
 
     {{ content }}
 
+    {% if page.questions_answered %}
+    <section class="questions-answered" id="questions-answered" aria-labelledby="questions-answered-title">
+      <p class="answer-summary-label">Direct answers</p>
+      <h2 id="questions-answered-title">Questions this research answers</h2>
+      <div class="question-list">
+        {% for item in page.questions_answered %}
+        <article>
+          <h3>{{ item.question }}</h3>
+          <p>{{ item.answer }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    {% if page.related_publications %}
+    <section class="related-research" aria-labelledby="related-research-title">
+      <p class="answer-summary-label">Connected evidence</p>
+      <h2 id="related-research-title">Related Spherity research</h2>
+      <ul>
+        {% for item in page.related_publications %}
+        <li>
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {% if item.context %}<p>{{ item.context }}</p>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    <footer class="article-footer">
+      <p class="article-footer-label">Continue exploring</p>
+      <a href="{{ '/' | relative_url }}">Browse all Spherity research <span aria-hidden="true">→</span></a>
+    </footer>
   </article>
-</main>
+</div>

@@ -4,13 +4,15 @@ css: "/assets/spherity-research-respec.css"
 
 title: "Securing Digital Identity and Verifiable Credential Wallets against Quantum Vulnerabilities"
 subtitle: "Attack taxonomy, macro-economic risk, and post-quantum migration corridors"
-description: "This review paper analyses how quantum risks to elliptic-curve cryptography extend beyond Bitcoin and blockchains to digital identity systems, including VCs, VPs, wallets, trust lists, VDRs, status services, semantic registries, legal persons, supply chains, Industry 4.0, critical infrastructure, and Trusted AI."
+description: "Review of quantum risk across verifiable credentials, identity wallets, trust lists, legal-person identity, and post-quantum migration corridors."
 
 paper_status: "Spherity Research Paper"
 author: "Dr. Carsten Stöcker"
+authors:
+  - "Dr. Carsten Stöcker"
 affiliation: "Spherity GmbH"
 date: "2026-05-14"
-last_modified_at: "2026-05-16"
+last_modified_at: "2026-07-30"
 lang: "en"
 
 permalink: /Securing-Digital-Identity-Quantum-Vulnerabilities.html
@@ -21,6 +23,48 @@ robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-previ
 
 image: "/assets/Infochart-Securing-Legal-Person-Digital-Identity-Against-Quantum-Vulnerabilities-Spherity-GmbH-05-2026.png"
 image_alt: "Infochart showing how quantum-risk preparation shifts from HNDL and Bitcoin to legal person identity, with migration urgency, a US–Germany PQC-resilient digital corridor, crypto-agile identity infrastructure, and the regulatory role of Business Wallets and the European Business Wallet."
+
+answer_summary: "The paper argues that quantum risk to digital identity is an end-to-end public-key trust-fabric problem. Migration must cover credentials, wallets, trust and status lists, registries, semantics, and long-term evidence—not only transport encryption."
+key_takeaways:
+  - "Long-lived issuer, holder, verifier, registry, and trust-anchor keys create distinct quantum attack surfaces."
+  - "Channel-level post-quantum protection does not secure stored credentials, trust lists, status data, schemas, or audit evidence."
+  - "Legal-person identity is a control layer for onboarding, trade, regulated supply chains, product passports, critical infrastructure, and AI-agent authority."
+  - "Bounded post-quantum identity corridors provide a testable migration path without requiring an ecosystem-wide big-bang transition."
+about:
+  - "Post-quantum cryptography"
+  - "Digital identity"
+  - "Verifiable credentials"
+  - "Legal-person identity"
+  - "Identity wallets"
+mentions:
+  - "European Business Wallet"
+  - "Digital Product Passport"
+  - "Trusted AI"
+  - "NIST post-quantum cryptography standards"
+citations:
+  - "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"
+  - "https://www.w3.org/TR/vc-data-model-2.0/"
+  - "https://www.w3.org/TR/did-core/"
+questions_answered:
+  - question: "What is the quantum threat to digital identity?"
+    answer: "A cryptographically relevant quantum computer could undermine the public-key assumptions used by issuer keys, wallet keys, verifier authentication, trust lists, status services, decentralized identifiers, WebPKI, DNSSEC, and registry signatures. The resulting risk includes forged identity evidence and false authority, not only loss of confidentiality."
+  - question: "Why is post-quantum TLS insufficient for identity systems?"
+    answer: "Hybrid or post-quantum transport protects a communication channel, but it does not retroactively protect credentials, presentations, trust anchors, revocation data, schemas, or audit records that were signed with quantum-vulnerable algorithms."
+  - question: "What is a post-quantum identity corridor?"
+    answer: "It is a bounded end-to-end identity exchange in which issuance, wallet storage, holder binding, verifier authentication, trust and status lists, registries, transport, semantics, audit, and long-term validation are migrated and tested together."
+related_publications:
+  - title: "Quantum-Resilient Organizational Identity"
+    url: "/quantum-resilient-organizational-identity.html"
+    context: "Turns the attack taxonomy and migration case into a multi-actor governance and systems architecture for business wallets, trust infrastructure, and repeatable PQC Corridors."
+  - title: "European Business Wallets as the Legal Control Plane for Zero Trust AI Agents"
+    url: "/ebw-zero-trust-ai-agents.html"
+    context: "Applies legal-person identity, mandates, revocation, and cryptographic agility to governed AI-agent actions."
+  - title: "Legal & Operational EBW Roadmap Toward EU-Wide Acceptance"
+    url: "/ebw-roadmap.html"
+    context: "Maps the proposed wallet framework to legal, standards, conformance, pilot, and adoption gates."
+  - title: "AI-Cyber, Quantum Risk, Hybrid Warfare, and Physical AI"
+    url: "/threat-escalation-model-germany-eu.html"
+    context: "Places post-quantum trust migration inside a wider operational-readiness model."
 
 toc_items:
   - title: "Abstract"
@@ -53,6 +97,8 @@ toc_items:
     href: "#appendix-b-minimal-pqc-corridor-checklist"
   - title: "References"
     href: "#references"
+  - title: "Questions answered"
+    href: "#questions-answered"
 
 tags:
   - post-quantum-cryptography

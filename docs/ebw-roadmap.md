@@ -4,13 +4,18 @@ css: "/assets/spherity-research-respec.css"
 
 title: "Legal & Operational EBW Roadmap Toward EU-Wide Acceptance"
 subtitle: "European Business Wallet roadmap under eIDAS 2.0, with legal, operational, conformance, and adoption milestones toward EU-wide acceptance by 2029"
-description: "Legal and operational roadmap for the European Business Wallet under eIDAS 2.0, covering regulation, standardisation, pilots, KYC, KYB, KYS, data spaces, DPPs, Industry 4.0, supply chains, payments, embedded finance, critical infrastructure, B2G, B2B, G2G, Trusted AI, and EU-wide adoption."
+description: "Roadmap for European Business Wallet adoption, covering the proposed EU regulation, standards, pilots, conformance, dependencies, and projected rollout."
 
 paper_status: "Spherity Research Paper"
 author: "Dr. Carsten Stöcker, Ronald Koenig, Ricky Thiermann, Dr. Martin Westerkamp"
+authors:
+  - "Dr. Carsten Stöcker"
+  - "Ronald Koenig"
+  - "Ricky Thiermann"
+  - "Dr. Martin Westerkamp"
 affiliation: "Spherity GmbH"
 date: "2026-05-18"
-last_modified_at: "2026-05-18"
+last_modified_at: "2026-07-30"
 lang: "en"
 
 permalink: /ebw-roadmap.html
@@ -21,6 +26,45 @@ robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-previ
 
 image: "/assets/Europen%20Business%20Wallet%20%28EBW%29%20Roadmap%20-%20Spherity%20GmbH.png"
 image_alt: "European Business Wallet roadmap timeline showing legal, regulatory, standardisation, conformance, pilot, and adoption milestones from 2026 to 2029."
+
+answer_summary: "The roadmap treats European Business Wallet adoption as a gated legal and operational transition. The Commission proposal starts the legislative path, while standards, conformance, authentic-source credentials, pilots, national implementation, and wallet availability determine when cross-border use can work at scale."
+key_takeaways:
+  - "The European Business Wallet remains a European Commission proposal; projected dates must be read as scenarios until the legislative text is adopted."
+  - "EU-wide acceptance depends on legislation, technical standards, conformance capacity, national integration, wallet availability, and authoritative business credentials."
+  - "Early pilots can test mature identity, attribute, mandate, and interoperability components before mandatory acceptance."
+  - "The paper projects a 2028–2029 acceptance window, conditional on the final entry-into-force date and the proposed implementation period."
+about:
+  - "European Business Wallet"
+  - "Legal-person identity"
+  - "Cross-border business identity"
+  - "Digital trust infrastructure"
+mentions:
+  - "eIDAS 2.0"
+  - "European Digital Identity Wallet"
+  - "Digital Product Passport"
+  - "Data spaces"
+  - "Trusted AI"
+citations:
+  - "https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-establishment-european-business-wallets"
+  - "https://digital-strategy.ec.europa.eu/en/policies/business-wallets"
+  - "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32024R1183"
+questions_answered:
+  - question: "What is the European Business Wallet?"
+    answer: "In the European Commission proposal, the European Business Wallet is a harmonised digital solution for businesses and public-sector bodies to identify, authenticate, exchange data, manage attributes, and perform legally relevant digital interactions across the European Union."
+  - question: "When could European Business Wallet acceptance become mandatory?"
+    answer: "The paper projects a 2028–2029 window, but the operative date depends on adoption and entry into force of the final regulation. The roadmap therefore presents conditional milestones rather than an enacted deadline."
+  - question: "Why pilot EBW-ready services before the final regulation?"
+    answer: "Pilots can test mature identity, credential, mandate, trust-service, and interoperability components, produce implementation evidence, and expose conformance or integration gaps before the mandatory phase."
+related_publications:
+  - title: "European Business Wallets as the Legal Control Plane for Zero Trust AI Agents"
+    url: "/ebw-zero-trust-ai-agents.html"
+    context: "Examines how legal-person identity and digital mandates can govern autonomous enterprise actions."
+  - title: "Securing Digital Identity and Verifiable Credential Wallets against Quantum Vulnerabilities"
+    url: "/Securing-Digital-Identity-Quantum-Vulnerabilities.html"
+    context: "Explains the crypto-agility and end-to-end trust dependencies that wallet ecosystems must migrate."
+  - title: "AI-Cyber, Quantum Risk, Hybrid Warfare, and Physical AI"
+    url: "/threat-escalation-model-germany-eu.html"
+    context: "Connects identity and trust infrastructure to wider German and EU operational readiness."
 
 toc_items:
   - title: "Abstract"
@@ -39,6 +83,8 @@ toc_items:
     href: "#key-risks-and-dependencies"
   - title: "References"
     href: "#references"
+  - title: "Questions answered"
+    href: "#questions-answered"
 
 tags:
   - european-business-wallet

@@ -2,12 +2,17 @@ url: "https://spherity.github.io"
 baseurl: "/spherity-research"
 
 title: "Spherity Research"
-description: "Research papers by Spherity GmbH on decentralized identity, european business wallet (EBW), verifiable credentials, cyber-security, trust infrastructure, post quantum cryptography (PQC), standardisation, adoption strategies, regulated data ecosystems and trusted AI."
+description: "Spherity research on DPPs, DBPs, European Business Wallets (EBW), AI Service Passports (AISP), Trusted AI, Physical AI, data sharing, and post-quantum trust."
 
 author:
   name: "Dr. Carsten Stöcker"
   email: "carsten.stoecker@spherity.com"
 
-logo: "/assets/Spherity-logo-horiz-blue-rgb.png"
-favicon: "/spherity-research/assets/spherity_logo_336x336_centered_margins.png"
+logo: "/assets/spherity-logo-horizontal-800.webp"
+image: "/assets/spherity-research-og.png"
+favicon: "/assets/spherity_logo_336x336_centered_margins.png"
 timezone: "Europe/Berlin"
+
+exclude:
+  - node_modules
+  - vendor

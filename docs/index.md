@@ -1,417 +1,336 @@
 ---
 layout: default
 title: "Spherity Research"
-description: "Research papers by Spherity GmbH on decentralized identity, verifiable credentials, trust infrastructure, and regulated data ecosystems."
+description: "Spherity research on DPPs, DBPs, European Business Wallets (EBW), AI Service Passports (AISP), Trusted AI, Physical AI, data sharing, and post-quantum trust."
+keywords:
+  - "Digital Product Passports"
+  - "DPP"
+  - "Digital Battery Passports"
+  - "DBP"
+  - "Data Sharing"
+  - "Data Spaces"
+  - "Digital Corridors"
+  - "Digital Data Sharing Corridors"
+  - "Organizational Identity"
+  - "European Business Wallet"
+  - "European Business Wallets"
+  - "EBW"
+  - "Verifiable Credentials"
+  - "AI Service Passport"
+  - "AI Service Passports"
+  - "AISP"
+  - "AI Agent Authorization"
+  - "Trusted AI"
+  - "Physical AI"
+  - "Post-Quantum Cryptography"
 permalink: /
+schema_type: "CollectionPage"
+og_type: "website"
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-image: "/assets/Spherity-logo-horiz-blue-rgb.png"
-image_alt: "Spherity logo."
+image: "/assets/spherity-research-og.png"
+image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
 ---
 
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
+<header class="portal-header">
+  <div class="portal-shell portal-nav">
+    <a class="portal-brand" href="{{ '/' | relative_url }}" aria-label="Spherity Research home">
+      <img src="{{ '/assets/spherity-logo-horizontal-800.webp' | relative_url }}"
+           alt="Spherity"
+           width="800"
+           height="239">
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#publications">Publications</a>
+      <a href="#topics">Topics</a>
+      <a class="nav-cta" href="https://www.spherity.com/" rel="external">Spherity.com <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>
 
-  body {
-    margin: 0;
-    background: #f6f8fa;
-  }
-
-  .research-page,
-  .research-page * {
-    box-sizing: border-box;
-  }
-
-  .research-page {
-    width: min(100% - 3rem, 1180px);
-    margin: 0 auto;
-    padding: clamp(1.5rem, 3vw, 3.5rem) clamp(1rem, 2.5vw, 2rem) clamp(2.5rem, 5vw, 5rem);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    color: #24292f;
-  }
-
-  .research-header {
-    margin: 0 0 2.5rem 0;
-    padding: 1.5rem 0 2rem 0;
-    border-bottom: 1px solid #d8dee4;
-  }
-
-  .research-logo {
-    display: block;
-    width: 170px;
-    max-width: 55vw;
-    height: auto;
-    margin: 0 0 1.4rem 0;
-  }
-
-  .research-kicker {
-    margin: 0 0 0.45rem 0;
-    font-size: 0.82rem;
-    font-weight: 650;
-    line-height: 1.4;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #57606a;
-  }
-
-  .research-title {
-    max-width: 920px;
-    margin: 0;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(2rem, 4vw, 3.1rem);
-    font-weight: 700;
-    line-height: 1.12;
-    color: #111827;
-  }
-
-  .research-subtitle {
-    max-width: 850px;
-    margin: 1rem 0 0 0;
-    font-size: clamp(1rem, 1.6vw, 1.15rem);
-    line-height: 1.65;
-    color: #57606a;
-  }
-
-  .research-section {
-    margin: 2.75rem 0 0 0;
-  }
-
-  .research-section-header {
-    max-width: 880px;
-    margin: 0 0 1.15rem 0;
-  }
-
-  .research-section-title {
-    margin: 0;
-    padding: 0 0 0.55rem 0;
-    border-bottom: 1px solid #d8dee4;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.45rem, 2.4vw, 2rem);
-    line-height: 1.25;
-    color: #111827;
-  }
-
-  .research-section-intro {
-    margin: 0.85rem 0 0 0;
-    font-size: 1rem;
-    line-height: 1.65;
-    color: #57606a;
-  }
-
-  .research-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-    margin: 1.25rem 0 0 0;
-  }
-
-  .research-card {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(220px, 340px);
-    gap: clamp(1rem, 2.5vw, 1.75rem);
-    align-items: stretch;
-    padding: clamp(1rem, 2.5vw, 1.45rem);
-    border: 1px solid #d8dee4;
-    border-radius: 16px;
-    background: #ffffff;
-    box-shadow: 0 10px 26px rgba(17, 24, 39, 0.06);
-  }
-
-  .research-card-content {
-    min-width: 0;
-  }
-
-  .research-card-title {
-    margin: 0;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.25rem, 2vw, 1.55rem);
-    line-height: 1.28;
-    color: #111827;
-  }
-
-  .research-card-title a {
-    color: inherit;
-    text-decoration-thickness: 0.08em;
-    text-underline-offset: 0.16em;
-  }
-
-  .research-card-title a:hover {
-    color: #0969da;
-  }
-
-  .research-card-description {
-    max-width: 720px;
-    margin: 0.75rem 0 0 0;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #57606a;
-  }
-
-  .research-card-meta {
-    margin: 1rem 0 0 0;
-    font-size: 0.92rem;
-    line-height: 1.45;
-    color: #6e7781;
-  }
-
-  .research-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.45rem;
-    margin: 1rem 0 0 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .research-tag {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.24rem 0.55rem;
-    border: 1px solid #d8dee4;
-    border-radius: 999px;
-    background: #f6f8fa;
-    font-size: 0.78rem;
-    line-height: 1.35;
-    color: #57606a;
-  }
-
-  .research-card-image-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 190px;
-    padding: 0.75rem;
-    border: 1px solid #d8dee4;
-    border-radius: 12px;
-    background: #fbfbfc;
-    overflow: hidden;
-  }
-
-  .research-card-image-link img {
-    display: block;
-    width: 100%;
-    max-height: 240px;
-    height: auto;
-    object-fit: contain;
-  }
-
-  .research-card-image-link:hover {
-    border-color: #0969da;
-  }
-
-  @media (max-width: 900px) {
-    .research-page {
-      width: min(100% - 2rem, 100%);
-    }
-
-    .research-card {
-      grid-template-columns: 1fr;
-    }
-
-    .research-card-image-link {
-      min-height: 160px;
-    }
-  }
-
-  @media (max-width: 600px) {
-    .research-page {
-      width: 100%;
-      padding-inline: 1rem;
-    }
-
-    .research-header {
-      padding-top: 1rem;
-    }
-
-    .research-card {
-      border-radius: 12px;
-    }
-  }
-
-  @media print {
-    body {
-      background: #ffffff;
-    }
-
-    .research-page {
-      width: auto;
-      max-width: none;
-      padding: 0;
-    }
-
-    .research-card {
-      break-inside: avoid;
-      box-shadow: none;
-    }
-  }
-</style>
-
-<main class="research-page">
-  <header class="research-header">
-    <img class="research-logo"
-         src="{{ '/assets/Spherity-logo-horiz-blue-rgb.png' | relative_url }}"
-         alt="Spherity"
-         width="170">
-
-    <p class="research-kicker">Spherity Research</p>
-
-    <h1 class="research-title">Spherity Research Papers</h1>
-
-    <p class="research-subtitle">
-      Research on decentralized identity, verifiable credentials, trust infrastructure,
-      regulated data ecosystems, and post-quantum migration.
-    </p>
-  </header>
-
-  <section class="research-section" aria-labelledby="post-quantum-heading">
-    <div class="research-section-header">
-      <h2 class="research-section-title" id="post-quantum-heading">
-        Post-Quantum Digital Identity
-      </h2>
-    </div>
-
-    <div class="research-list">
-      <article class="research-card">
-        <div class="research-card-content">
-          <h3 class="research-card-title">
-            <a href="{{ '/Securing-Digital-Identity-Quantum-Vulnerabilities.html' | relative_url }}">
-              Securing Digital Identity and Verifiable Credential Wallets against Quantum Vulnerabilities
-            </a>
-          </h3>
-
-          <p class="research-card-description">
-            Public-key trust fabric risk, attack taxonomy, macro-economic exposure,
-            and post-quantum identity corridors.
-          </p>
-
-          <p class="research-card-meta">
-            Dr. Carsten Stöcker, Spherity GmbH ·
-            <time datetime="2026-05-14">2026-05-14</time>
-          </p>
-
-          <ul class="research-tags" aria-label="Topics">
-            <li class="research-tag">Post-quantum cryptography</li>
-            <li class="research-tag">Digital identity</li>
-            <li class="research-tag">Verifiable credentials</li>
-            <li class="research-tag">Legal-person identity</li>
-          </ul>
+<main id="main-content">
+  <section class="portal-hero">
+    <div class="portal-shell hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span>Spherity Research</p>
+        <h1>Research for the systems we need to trust.</h1>
+        <p class="hero-lede">
+          Evidence-led work on Digital Product Passports (DPPs), organizational
+          identity, verifiable credentials, European Business Wallets (EBW),
+          trusted AI, and the cryptographic infrastructure behind the real economy.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#publications">Explore publications <span aria-hidden="true">↓</span></a>
+          <a class="button button-ghost" href="https://github.com/spherity/spherity-research">View source on GitHub <span aria-hidden="true">↗</span></a>
         </div>
-
-        <a class="research-card-image-link"
-           href="{{ '/Securing-Digital-Identity-Quantum-Vulnerabilities.html' | relative_url }}"
-           aria-label="Open research paper: Securing Digital Identity and Verifiable Credential Wallets against Quantum Vulnerabilities">
-          <img src="{{ '/assets/Infochart-Securing-Legal-Person-Digital-Identity-Against-Quantum-Vulnerabilities-Spherity-GmbH-05-2026.png' | relative_url }}"
-               alt="Preview of the infochart about legal person digital identity and post-quantum cryptography."
-               loading="lazy">
-        </a>
-      </article>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+        <span class="node node-a"></span>
+        <span class="node node-b"></span>
+        <span class="node node-c"></span>
+        <span class="node node-d"></span>
+        <span class="node node-e"></span>
+        <div class="hero-signal">
+          <span class="signal-value">{{ site.data.publications | size }}</span>
+          <span class="signal-label">Current<br>publications</span>
+        </div>
+      </div>
+    </div>
+    <div class="portal-shell trust-strip" aria-label="Research focus areas">
+      <span>Product passports</span>
+      <span>Identity</span>
+      <span>Data sharing</span>
+      <span>Resilience</span>
+      <span>Trusted AI</span>
     </div>
   </section>
 
-  <section class="research-section" aria-labelledby="ebw-heading">
-    <div class="research-section-header">
-      <h2 class="research-section-title" id="ebw-heading">
-        European Business Wallet (EBW)
-      </h2>
+  <section class="portal-explainer portal-shell" aria-labelledby="research-answers-title">
+    <div>
+      <p class="eyebrow eyebrow-dark"><span></span>Research scope</p>
+      <h2 id="research-answers-title">What questions does Spherity Research answer?</h2>
+    </div>
+    <div class="portal-explainer-copy">
+      <p>
+        Spherity Research examines how organizations and products can establish
+        identity, authority, provenance, and trustworthy evidence across
+        regulated digital systems. The research agenda includes Digital Product
+        Passports (DPPs), Digital Battery Passports (DBPs), trusted data sharing
+        across Data Spaces and Digital Data Sharing Corridors, European Business
+        Wallet (EBW) policy, Trusted AI, AI-agent authorization, AI Service
+        Passports (AISP), Industrial AI evidence graphs, Physical AI,
+        post-quantum organizational-identity corridors, and operational
+        resilience.
+      </p>
+      <ul>
+        <li><a href="{{ '/evidence-graphs-industrial-ai-data-plane.html' | relative_url }}">How can Industrial AI trace provenance, validation, freshness, and conflicting evidence across organizations?</a></li>
+        <li><a href="{{ '/ebw-zero-trust-ai-agents.html' | relative_url }}">How can an enterprise prove an AI agent’s legal authority for a specific action?</a></li>
+        <li><a href="{{ '/quantum-resilient-organizational-identity.html' | relative_url }}">How can organizations establish a governed, PQC-resilient digital corridor?</a></li>
+        <li><a href="{{ '/Securing-Digital-Identity-Quantum-Vulnerabilities.html' | relative_url }}">Which digital-identity dependencies must migrate for post-quantum readiness?</a></li>
+        <li><a href="{{ '/ebw-roadmap.html' | relative_url }}">Which legal and operational gates shape European Business Wallet adoption?</a></li>
+        <li><a href="{{ '/threat-escalation-model-germany-eu.html' | relative_url }}">How can Germany and the EU test readiness across coupled technology risks?</a></li>
+      </ul>
+    </div>
+  </section>
 
-      <p class="research-section-intro">
-        The European Business Wallet (EBW) is a core building block for
-        organisational identity, verifiable credentials, and compliance-driven
-        data exchange under eIDAS 2.0.
+  <section class="trust-planes portal-shell" aria-labelledby="trust-planes-title">
+    <div class="trust-planes-heading">
+      <p class="eyebrow eyebrow-dark"><span></span>Trusted Industrial AI</p>
+      <h2 id="trust-planes-title">Two trust planes. One accountable system.</h2>
+      <p>Regulated AI needs separate, interoperable evidence for legal authority and for the facts supporting a decision.</p>
+    </div>
+    <div class="trust-plane-grid">
+      <article>
+        <span class="trust-plane-number">01 · Control plane</span>
+        <h3>Who is authorized to act?</h3>
+        <p>European Business Wallets connect legal-person identity, agent identity, bounded mandates, current status, policy decisions, and action receipts.</p>
+        <a href="{{ '/ebw-zero-trust-ai-agents.html' | relative_url }}">Read the control-plane paper <span aria-hidden="true">→</span></a>
+      </article>
+      <article>
+        <span class="trust-plane-number">02 · Data plane</span>
+        <h3>What evidence supports the action?</h3>
+        <p>Evidence graphs connect provenance, validation, freshness, transformations, conflicts, uncertainty, issuer status, and auditable evidence paths.</p>
+        <a href="{{ '/evidence-graphs-industrial-ai-data-plane.html' | relative_url }}">Read the data-plane paper <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+    <p class="trust-planes-boundary">A valid mandate does not prove that an AI output is factually supported. Reliable evidence does not prove that an AI agent was legally authorized to act. Regulated AI systems require both layers.</p>
+  </section>
+
+  <section class="corridor-section portal-shell" aria-labelledby="corridor-title">
+    <div class="corridor-heading">
+      <div>
+        <p class="eyebrow eyebrow-dark"><span></span>Quantum-resilient trust</p>
+        <h2 id="corridor-title">Organizational identity is infrastructure.</h2>
+      </div>
+      <p>
+        B2B, B2G, G2G, machine, and AI-agent ecosystems depend on proving which
+        organization is acting, under which authority, and whether the complete
+        trust chain remains valid as cryptography changes.
+      </p>
+    </div>
+    <div class="corridor-path">
+      <article>
+        <span class="corridor-step">01 · Establish authority</span>
+        <h3>Prove the organization and its mandate.</h3>
+        <p>Bind legal existence, representation rights, roles, licenses, delegated authority, purpose, and validity periods into reusable organizational credentials.</p>
+      </article>
+      <article>
+        <span class="corridor-step">02 · Map the trust fabric</span>
+        <h3>Inventory every dependency that makes the proof reliable.</h3>
+        <p>Cover issuers, wallets, verifiers, trust anchors, status, revocation, registries, qVDR functions, DNSSEC, WebPKI, semantics, vendors, and long-term evidence.</p>
+      </article>
+      <article>
+        <span class="corridor-step">03 · Launch a PQC Corridor</span>
+        <h3>Migrate a bounded high-value ecosystem together.</h3>
+        <p>Align actors, assurance, evidence horizons, trust boundaries, hybrid or post-quantum profiles, downgrade rules, lifecycle controls, and reusable conformance evidence.</p>
+      </article>
+    </div>
+    <div class="corridor-outcome">
+      <p>Algorithm replacement alone cannot preserve legal reliance when counterparties, trust anchors, status services, lifecycle controls, and evidence do not migrate coherently.</p>
+      <a href="{{ '/quantum-resilient-organizational-identity.html' | relative_url }}">Read the PQC Corridor paper <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="publication-section portal-shell" id="publications" aria-labelledby="publications-title">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow eyebrow-dark"><span></span>Research library</p>
+        <h2 id="publications-title">Current publications</h2>
+      </div>
+      <p>
+        Long-form papers, roadmaps, and visual explainers for decision-makers
+        building trustworthy digital ecosystems.
       </p>
     </div>
 
-    <div class="research-list">
-      <article class="research-card">
-        <div class="research-card-content">
-          <h3 class="research-card-title">
-            <a href="{{ '/ebw-roadmap.html' | relative_url }}">
-              Legal and Operational EBW Roadmap Toward EU-Wide Acceptance
-            </a>
-          </h3>
+    <div class="publication-tools" role="search" aria-label="Filter publications">
+      <label class="search-field">
+        <span class="sr-only">Search publications</span>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="m20 20-4-4"></path>
+        </svg>
+        <input type="search" id="publication-search" placeholder="Search titles, themes, or keywords" autocomplete="off">
+      </label>
+      <div class="filter-list" aria-label="Filter by topic">
+        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-filter="identity" aria-pressed="false">Identity</button>
+        <button class="filter-button" type="button" data-filter="wallets" aria-pressed="false">Wallets &amp; data sharing</button>
+        <button class="filter-button" type="button" data-filter="resilience" aria-pressed="false">Resilience</button>
+        <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">Trusted AI</button>
+      </div>
+    </div>
 
-          <p class="research-card-description">
-            A roadmap for legal, operational, and ecosystem acceptance of the
-            European Business Wallet across EU member states and regulated
-            business processes.
-          </p>
-
-          <p class="research-card-meta">
-            Spherity GmbH · European Business Wallet
-          </p>
-
-          <ul class="research-tags" aria-label="Topics">
-            <li class="research-tag">European Business Wallet</li>
-            <li class="research-tag">eIDAS 2.0</li>
-            <li class="research-tag">Organisational identity</li>
-            <li class="research-tag">Compliance data exchange</li>
-          </ul>
-        </div>
-
-        <a class="research-card-image-link"
-           href="{{ '/ebw-roadmap.html' | relative_url }}"
-           aria-label="Open research paper: Legal and Operational EBW Roadmap Toward EU-Wide Acceptance">
-          <img src="{{ '/assets/Europen%20Business%20Wallet%20%28EBW%29%20Roadmap%20-%20Spherity%20GmbH.png' | relative_url }}"
-               alt="Preview image for the European Business Wallet roadmap paper."
-               loading="lazy">
+    <div class="publication-grid" id="publication-grid">
+      {% for publication in site.data.publications %}
+      {% assign primary_link = publication.links | first %}
+      <article class="publication-card{% if publication.featured %} publication-card-featured{% endif %}"
+               data-topics="{{ publication.filters }}"
+               data-search="{{ publication.search }}">
+        <a class="card-media {{ publication.media_class }}"
+           href="{{ primary_link.url | relative_url }}"
+           aria-label="{{ primary_link.label }}: {{ publication.title }}">
+          {% if publication.image %}
+          <img src="{{ publication.image | relative_url }}"
+               alt="{{ publication.image_alt }}"
+               width="{{ publication.image_width }}"
+               height="{{ publication.image_height }}"
+               loading="{% if publication.featured %}eager{% else %}lazy{% endif %}"
+               decoding="async"
+               {% if publication.featured %}fetchpriority="high"{% endif %}>
+          {% else %}
+          <span class="graphic-grid" aria-hidden="true"></span>
+          <span class="graphic-kicker">{{ publication.graphic_kicker }}</span>
+          <strong>{{ publication.graphic_title }}</strong>
+          <span class="graphic-caption">{{ publication.graphic_caption }}</span>
+          {% endif %}
+          <span class="media-format">{{ publication.format }}</span>
         </a>
+        <div class="card-body">
+          <div class="card-topline">
+            <span class="card-type">{{ publication.type }}</span>
+            <time datetime="{{ publication.date_iso }}">{{ publication.date_label }}</time>
+          </div>
+          <h3>{{ publication.title }}</h3>
+          <p>{{ publication.description }}</p>
+          <ul class="topic-tags" aria-label="Topics">
+            {% for topic in publication.topics %}
+            <li>{{ topic }}</li>
+            {% endfor %}
+          </ul>
+          <div class="card-actions{% if publication.links.size > 1 %} card-actions-split{% endif %}">
+            {% for link in publication.links %}
+            <a class="{% if link.secondary %}secondary-link{% else %}text-link{% endif %}"
+               href="{{ link.url | relative_url }}">
+              {{ link.label }} {% if link.arrow %}<span aria-hidden="true">{{ link.arrow }}</span>{% endif %}
+            </a>
+            {% endfor %}
+          </div>
+        </div>
       </article>
+      {% endfor %}
+    </div>
+
+    <p class="no-results" id="no-results" hidden>
+      No publications match this search. Try a broader topic or clear the search field.
+    </p>
+  </section>
+
+  <section class="topics-section" id="topics" aria-labelledby="topics-title">
+    <div class="portal-shell">
+      <div class="section-heading section-heading-light">
+        <div>
+          <p class="eyebrow"><span></span>Research agenda</p>
+          <h2 id="topics-title">One trust layer. Five perspectives.</h2>
+        </div>
+        <p>
+          The agenda connects product data, identity, data sharing, technology,
+          law, policy, and operations instead of treating them as separate
+          systems.
+        </p>
+      </div>
+      <div class="topic-grid">
+        <article>
+          <span class="topic-number">01</span>
+          <h3>Digital Product Passports</h3>
+          <p>Trust architectures for DPPs and Digital Battery Passports (DBPs), including identifiers, provenance, lifecycle claims, access rights, and compliance evidence.</p>
+        </article>
+        <article>
+          <span class="topic-number">02</span>
+          <h3>Organizational identity</h3>
+          <p>Verifiable legal existence, representation, mandates, and accountability for companies, machines, and autonomous agents.</p>
+        </article>
+        <article>
+          <span class="topic-number">03</span>
+          <h3>Business Wallets &amp; Data Sharing</h3>
+          <p>Legal and operational infrastructure for trusted cross-border processes, interoperable Data Spaces, and Digital Data Sharing Corridors.</p>
+        </article>
+        <article>
+          <span class="topic-number">04</span>
+          <h3>Cryptographic resilience</h3>
+          <p>PQC Corridors and crypto-agile migration paths for identity, trust anchors, registries, and long-lived evidence.</p>
+        </article>
+        <article>
+          <span class="topic-number">05</span>
+          <h3>Trusted AI</h3>
+          <p>Legal authorization and evidence provenance for governed Industrial AI and agentic ecosystems.</p>
+        </article>
+      </div>
     </div>
   </section>
-  <section class="research-section" aria-labelledby="policy-risk-heading">
-  <div class="research-section-header">
-    <h2 class="research-section-title" id="policy-risk-heading">
-      Policy, Technology and Risk
-    </h2>
 
-    <p class="research-section-intro">
-      Research on systemic technology risk, digital sovereignty, trust infrastructure,
-      AI-enabled cyber operations, hybrid warfare, and resilience policy.
-    </p>
-  </div>
-
-  <div class="research-list">
-    <article class="research-card">
-      <div class="research-card-content">
-        <h3 class="research-card-title">
-          <a href="{{ '/threat-escalation-model-germany-eu.html' | relative_url }}">
-            Superintelligent AI, Quantum Risk, Hybrid Warfare, and Robotic Autonomy
-          </a>
-        </h3>
-
-        <p class="research-card-description">
-          A threat escalation and scenario planning model for Germany and Europe,
-          covering AI-enabled cyber operations, post-quantum cryptography,
-          trust infrastructure, hybrid warfare, robotic autonomy, and frontier AI risk.
-        </p>
-
-        <p class="research-card-meta">
-          Dr. Carsten Stöcker, Spherity GmbH ·
-          <time datetime="2026-05-18">2026-05-18</time>
-        </p>
-
-        <ul class="research-tags" aria-label="Topics">
-          <li class="research-tag">AI risk</li>
-          <li class="research-tag">Superintelligent AI</li>
-          <li class="research-tag">Hybrid warfare</li>
-          <li class="research-tag">Quantum Threat</li>
-          <li class="research-tag">PQC</li>
-          <li class="research-tag">Trust infrastructure</li>
-          <li class="research-tag">Germany and EU</li>
-          <li class="research-tag">Cyber-security</li>
-          <li class="research-tag">Systemic risk</li>
-        </ul>
+  <section class="portal-cta">
+    <div class="portal-shell cta-inner">
+      <div>
+        <p class="eyebrow eyebrow-dark"><span></span>Open research</p>
+        <h2>Read it. Test it. Build on it.</h2>
       </div>
-
-      <a class="research-card-image-link"
-         href="{{ '/threat-escalation-model-germany-eu.html' | relative_url }}"
-         aria-label="Open research paper: Superintelligent AI, Quantum Risk, Hybrid Warfare, and Robotic Autonomy">
-        <img src="{{ '/assets/Spherity-logo-horiz-blue-rgb.png' | relative_url }}"
-             alt="Spherity logo."
-             loading="lazy">
-      </a>
-    </article>
-  </div>
-</section>
+      <div>
+        <p>
+          The publication source is maintained openly on GitHub for stable
+          linking, transparent revision, and long-term discoverability.
+        </p>
+        <a class="button button-dark" href="https://github.com/spherity/spherity-research">
+          Open the repository <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="portal-footer">
+  <div class="portal-shell footer-inner">
+    <img src="{{ '/assets/spherity-logo-horizontal-800.webp' | relative_url }}"
+         alt="Spherity"
+         width="800"
+         height="239"
+         loading="lazy"
+         decoding="async">
+    <p>Independent research on identity, infrastructure, and resilience.</p>
+    <p>© 2026 Spherity GmbH</p>
+  </div>
+</footer>
+
+<script src="{{ '/assets/research-portal.js' | relative_url }}" defer></script>

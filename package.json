@@ -1,0 +1,28 @@
+{
+  "name": "spherity-research",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build and quality tooling for the Spherity Research GitHub Pages portal.",
+  "type": "module",
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "bundle exec jekyll build --source docs --destination _site",
+    "build:preview": "node scripts/build-preview.mjs",
+    "build:sites": "pnpm run test:preview && node scripts/build-sites-preview.mjs",
+    "start": "bundle exec jekyll serve --source docs --livereload",
+    "preview": "npx serve _site",
+    "sitemap": "node scripts/generate-sitemap.mjs --site-dir _site",
+    "check": "node scripts/validate-site.mjs --site-dir _site",
+    "test": "pnpm run build && pnpm run sitemap && pnpm run check",
+    "test:preview": "pnpm run build:preview && pnpm run sitemap && pnpm run check"
+  },
+  "devDependencies": {
+    "glob": "^11.0.3",
+    "liquidjs": "^10.27.2",
+    "marked": "^18.0.7",
+    "yaml": "^2.9.0"
+  }
+}
