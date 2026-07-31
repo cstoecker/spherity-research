@@ -340,6 +340,7 @@ a {
 .node-e {
   top: calc(50% - 5.25rem - 0.36rem);
   left: calc(50% - 0.36rem);
+  z-index: 1;
   background: var(--mint-400);
 }
 

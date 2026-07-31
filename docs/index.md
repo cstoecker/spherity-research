@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Spherity Research"
-description: "Evidence-led Spherity research on DPPs and DBPs, organizational identity, business wallets, data sharing, data spaces, digital corridors, trusted AI, and post-quantum trust."
+description: "Evidence-led Spherity research on DPPs and DBPs, organizational identity, European Business Wallets (EBW), data sharing, data spaces, digital corridors, trusted AI, and post-quantum trust."
 keywords:
   - "Digital Product Passports"
   - "DPP"
@@ -13,6 +13,7 @@ keywords:
   - "Digital Data Sharing Corridors"
   - "Organizational Identity"
   - "European Business Wallets"
+  - "EBW"
   - "Verifiable Credentials"
   - "Trusted AI"
   - "Post-Quantum Cryptography"
@@ -48,8 +49,8 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
         <h1>Research for the systems we need to trust.</h1>
         <p class="hero-lede">
           Evidence-led work on Digital Product Passports (DPPs), organizational
-          identity, verifiable credentials, European Business Wallets, trusted
-          AI, and the cryptographic infrastructure behind the real economy.
+          identity, verifiable credentials, European Business Wallets (EBW),
+          trusted AI, and the cryptographic infrastructure behind the real economy.
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#publications">Explore publications <span aria-hidden="true">↓</span></a>
