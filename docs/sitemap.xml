@@ -1,34 +1,31 @@
 ---
 layout: null
+permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for item in site.pages %}
+{% if item.url == "/" or item.url contains ".html" %}
+{% unless item.url == "/404.html" %}
+{% assign item_modified = item.last_modified_at | default: item.date | default: site.time %}
   <url>
-    <loc>{{ "/Securing-Digital-Identity-Quantum-Vulnerabilities.html" | absolute_url }}</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>{{ item.url | absolute_url | xml_escape }}</loc>
+    <lastmod>{{ item_modified | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <priority>{% if item.url == "/" %}1.0{% else %}0.8{% endif %}</priority>
   </url>
-
+{% endunless %}
+{% endif %}
+{% endfor %}
+{% for file in site.static_files %}
+{% if file.extname == ".html" or file.extname == ".pdf" %}
+{% assign file_modified = file.modified_time | default: site.time %}
   <url>
-    <loc>{{ "/ebw-roadmap.html" | absolute_url }}</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>{{ file.path | absolute_url | xml_escape }}</loc>
+    <lastmod>{{ file_modified | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>{% if file.extname == ".pdf" %}0.7{% else %}0.8{% endif %}</priority>
   </url>
-
-  <url>
-  <loc>{{ "/threat-escalation-model-germany-eu.html" | absolute_url }}</loc>
-  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-
-<url>
-    <loc>{{ "/Spherity-Research-AI-Cyber-Quantum-Risk-Hybrid-Warfare-Superintelligent-AI-Physical-AI-Infographic.html" | absolute_url }}</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
+{% endif %}
+{% endfor %}
 </urlset>
