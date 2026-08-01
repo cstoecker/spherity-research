@@ -82,6 +82,7 @@ Open the local URL printed by Jekyll. For a production-style preview:
 ```bash
 pnpm run build
 pnpm run sitemap
+pnpm run optimize
 pnpm run check
 pnpm run preview
 ```
@@ -139,6 +140,20 @@ GitHub’s current artifact-based Pages deployment is used instead of committing
 generated files to a `gh-pages` branch. It keeps compiled output out of source
 history and deploys only the build that passed validation.
 
+### Optional IndexNow notification
+
+The deployment can notify participating IndexNow search engines after the new
+Pages version is live. Generate a random key (a 32-character hexadecimal value
+is suitable), then add it in **Repository Settings → Secrets and variables →
+Actions** as a repository secret named `INDEXNOW_KEY`. The workflow publishes
+the required key proof at `/<key>.txt` and submits URLs extracted from the
+locally generated `_site/sitemap.xml` only after a successful deployment.
+
+If the secret is absent, deployment still succeeds and the notification is
+skipped. IndexNow is a discovery signal, not an indexing guarantee, and it does
+not directly notify ChatGPT or replace Google Search Console. Google discovery
+continues through `sitemap.xml`, internal links, and Search Console.
+
 ## Publication review checklist
 
 - Title, author, publication date, modification date, and abstract are final.
@@ -153,3 +168,21 @@ history and deploys only the build that passed validation.
 - Heading order is logical and tables are usable by keyboard.
 - No draft notes, placeholders, or private references remain.
 - The automated build, sitemap, and validation checks pass.
+
+## License
+
+Except where otherwise noted, the written research content, whitepapers,
+research data, diagrams, visual explainers, and policy roadmaps in this
+repository are licensed under the [Creative Commons Attribution 4.0
+International License](https://creativecommons.org/licenses/by/4.0/) (CC BY
+4.0). Copyright remains with the author or co-authors named on each
+publication. Reuse must provide appropriate attribution, a link to the
+canonical work and license, and an indication of changes.
+
+[![Creative Commons Attribution 4.0 International License](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
+
+Source code, build scripts, templates, stylesheets, and configuration files are
+licensed under the [MIT License](LICENSE). See
+[LICENSE-CONTENT.md](LICENSE-CONTENT.md) for the complete repository licensing
+scope and attribution guidance. Spherity names and logos are not licensed for
+reuse.

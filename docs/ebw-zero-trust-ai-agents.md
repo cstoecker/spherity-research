@@ -21,6 +21,7 @@ latest_version: "https://spherity.github.io/spherity-research/ebw-zero-trust-ai-
 pdf_url: "/Spherity_Research_EBW_as_Legal_Control_Plane_for_Zero_Trust_AI_Agents.pdf"
 
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+license: "https://creativecommons.org/licenses/by/4.0/"
 
 image: "/assets/control-plane-social.png"
 image_alt: "Social preview for European Business Wallets as the Legal Control Plane for Zero Trust AI Agents."
@@ -89,8 +90,8 @@ toc_items:
     href: "#two-complementary-trust-planes"
   - title: "Boundary conditions"
     href: "#boundary-conditions"
-  - title: "How to cite"
-    href: "#how-to-cite"
+  - title: "License and citation"
+    href: "#license-and-citation"
   - title: "Questions answered"
     href: "#questions-answered"
 
@@ -167,10 +168,6 @@ A valid mandate does not prove that an AI output is factually supported. Reliabl
 An EBW-backed authority layer does not establish that a model output is true, eliminate prompt injection, guarantee safe autonomous behavior, or replace human oversight. Its narrower purpose is to make legal identity, delegation, revocation, cross-domain attribution, and audit evidence machine-verifiable. Model quality and runtime security remain separate control domains.
 
 The proposal also depends on final European Business Wallet legislation, implementing rules, standards, trustworthy wallet and credential providers, interoperable status infrastructure, privacy-preserving data minimization, and operational conformance. The paper therefore presents a reference architecture and standardization agenda, not a claim that the complete infrastructure is already available.
-
-<h2 id="how-to-cite">How to cite</h2>
-
-Stöcker, Carsten. “European Business Wallets as the Legal Control Plane for Zero Trust AI Agents: An action and policy whitepaper on trusted AI and the role of business wallets for AI adoption in regulated industries.” Spherity GmbH, 1 June 2026.
 
 <div class="paper-download">
   <a href="{{ page.pdf_url | relative_url }}">Read or download the full paper</a>

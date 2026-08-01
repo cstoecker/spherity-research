@@ -165,6 +165,7 @@ for (const markdownFile of markdownFiles) {
     "permalink",
     "canonical_url",
     "robots",
+    "license",
     "image",
     "image_alt",
     "answer_summary",
@@ -217,6 +218,10 @@ for (const markdownFile of markdownFiles) {
     errors.push(
       `${markdownFile}: canonical_url must equal ${expectedCanonical}.`
     );
+  }
+
+  if (data.license !== "https://creativecommons.org/licenses/by/4.0/") {
+    errors.push(`${markdownFile}: research content must declare the CC BY 4.0 license URL.`);
   }
 
   if (new Date(data.last_modified_at) < new Date(data.date)) {
@@ -272,6 +277,7 @@ for (const markdownFile of markdownFiles) {
     if (
       item.href?.startsWith("#") &&
       item.href !== "#questions-answered" &&
+      item.href !== "#license-and-citation" &&
       !content.includes(`id="${item.href.slice(1)}"`)
     ) {
       errors.push(`${markdownFile}: ToC target is missing: ${item.href}`);
@@ -477,6 +483,10 @@ for (const htmlFile of htmlFiles) {
     errors.push(`${htmlFile}: contains unrendered Liquid markup.`);
   }
 
+  if (/https:\/\/[^\s"']+https:\/\//i.test(html)) {
+    errors.push(`${htmlFile}: contains a duplicated absolute URL origin.`);
+  }
+
   for (const imageTag of html.matchAll(/<img\b[^>]*>/gi)) {
     if (!/\balt\s*=\s*["'][^"']*["']/i.test(imageTag[0])) {
       errors.push(`${htmlFile}: image is missing an alt attribute.`);
@@ -519,6 +529,10 @@ for (const htmlFile of htmlFiles) {
       ['id="questions-answered"', "direct questions and answers"],
       ['name="citation_title"', "citation title metadata"],
       ['name="citation_author"', "citation author metadata"],
+      ['name="citation_license"', "citation license metadata"],
+      ['rel="license"', "machine-readable license link"],
+      ['class="research-license"', "paper license and citation block"],
+      ["data-share", "share control"],
       ['"@type": "BreadcrumbList"', "BreadcrumbList structured data"],
       ['"@type": "ScholarlyArticle"', "ScholarlyArticle structured data"]
     ];
@@ -560,6 +574,8 @@ if (await exists(path.join(siteDirectory, "index.html"))) {
     ['name="twitter:card"', "Twitter card"],
     ['"@type":"CollectionPage"', "CollectionPage structured data"],
     ['id="publication-search"', "publication search"],
+    ["data-share", "share control"],
+    ["licensebuttons.net/l/by/4.0/88x31.png", "CC BY 4.0 badge"],
     ['id="research-answers-title"', "question-led research summary"],
     ["publication-card", "publication cards"]
   ];
@@ -576,6 +592,11 @@ if (await exists(path.join(siteDirectory, "robots.txt"))) {
   if (!/User-agent:\s*\*\s*[\s\S]*Allow:\s*\/(?:\s|$)/i.test(robots)) {
     errors.push("robots.txt: public crawling is not explicitly allowed.");
   }
+  for (const crawler of ["OAI-SearchBot", "ClaudeBot", "PerplexityBot"]) {
+    if (!new RegExp(`User-agent:\\s*${crawler}\\s*[\\s\\S]*?Allow:\\s*\\/`, "i").test(robots)) {
+      errors.push(`robots.txt: ${crawler} is not explicitly allowed.`);
+    }
+  }
 }
 
 if (await exists(path.join(siteDirectory, "llms.txt"))) {
@@ -589,13 +610,47 @@ if (await exists(path.join(siteDirectory, "llms.txt"))) {
       }
     }
   }
+  if (!llms.includes("https://creativecommons.org/licenses/by/4.0/")) {
+    errors.push("llms.txt: missing the research-content license URL.");
+  }
+}
+
+for (const [asset, maximumKilobytes] of [
+  ["assets/site.css", 60],
+  ["assets/spherity-research-respec.css", 60],
+  ["assets/research-portal.js", 25]
+]) {
+  const target = path.join(siteDirectory, asset);
+  if (!(await exists(target))) continue;
+  const assetStats = await stat(target);
+  if (assetStats.size > maximumKilobytes * 1024) {
+    errors.push(`${asset}: exceeds the ${maximumKilobytes} KB performance budget.`);
+  }
+}
+
+if (await exists(path.join(siteDirectory, "assets/research-portal.js"))) {
+  const script = await readFile(path.join(siteDirectory, "assets/research-portal.js"), "utf8");
+  if (/document\.write|core-js|polyfill\.io/i.test(script)) {
+    errors.push("research-portal.js: avoid document.write and broad legacy polyfills.");
+  }
 }
 
 if (await exists(path.join(siteDirectory, "sitemap.xml"))) {
   const sitemap = await readFile(path.join(siteDirectory, "sitemap.xml"), "utf8");
+  const sitemapEntries = new Map(
+    [...sitemap.matchAll(/<url>\s*<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/gi)].map(
+      (match) => [match[1].replaceAll("&amp;", "&"), match[2]]
+    )
+  );
   for (const researchPage of researchPages) {
     if (!sitemap.includes(researchPage.data.canonical_url)) {
       errors.push(`sitemap.xml: missing ${researchPage.data.canonical_url}.`);
+    }
+    const sitemapLastModified = sitemapEntries.get(researchPage.data.canonical_url);
+    if (sitemapLastModified !== String(researchPage.data.last_modified_at)) {
+      errors.push(
+        `sitemap.xml: ${researchPage.data.canonical_url} lastmod must equal ${researchPage.data.last_modified_at}.`
+      );
     }
   }
   for (const publication of publications) {

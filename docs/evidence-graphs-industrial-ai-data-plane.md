@@ -21,6 +21,7 @@ latest_version: "https://spherity.github.io/spherity-research/evidence-graphs-in
 pdf_url: "/Spherity_Research_Evidence_Graphs_for_Industrial_AI_Data_Plane_Architectures.pdf"
 
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+license: "https://creativecommons.org/licenses/by/4.0/"
 
 image: "/assets/evidence-graphs-industrial-ai-data-plane-social.png"
 image_alt: "Social preview for Evidence Graphs for Industrial AI."
@@ -95,8 +96,8 @@ toc_items:
     href: "#two-complementary-trust-planes"
   - title: "Boundary conditions"
     href: "#boundary-conditions"
-  - title: "How to cite"
-    href: "#how-to-cite"
+  - title: "License and citation"
+    href: "#license-and-citation"
   - title: "Questions answered"
     href: "#questions-answered"
 
@@ -184,10 +185,6 @@ A valid mandate does not prove that an AI output is factually supported. Reliabl
 The paper does not report a direct head-to-head performance benchmark between AAS JSON/XML and JSON-LD. The cited KG-RAG and GraphRAG results indicate potential benefits for grounded retrieval, contradiction handling, evidence paths, and token use, but they remain proxy evidence for the proposed industrial architecture.
 
 The proposal also depends on implementation quality, semantic governance, identifier policy, usable validation rules, trustworthy issuers, maintained status infrastructure, privacy controls, and incentives for cross-company adoption. Knowledge graphs cannot resolve organizational disagreement or poor source data merely by representing it. They can make provenance, conflicts, and missing evidence more explicit.
-
-<h2 id="how-to-cite">How to cite</h2>
-
-Stöcker, Carsten. “Evidence Graphs for Industrial AI: Data-plane architectures for global supply chains, Industry 4.0, critical infrastructure, and B2G data exchange from a German perspective.” Spherity GmbH, July 2026.
 
 <div class="paper-download">
   <a href="{{ page.pdf_url | relative_url }}">Read or download the full paper</a>

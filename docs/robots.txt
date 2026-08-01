@@ -1,6 +1,17 @@
 ---
 layout: null
 ---
+# Search and answer-engine crawlers. These explicit rules make the site's
+# open-access discovery policy unambiguous; the wildcard rule covers all others.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
 User-agent: *
 Allow: /
 

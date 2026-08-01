@@ -27,6 +27,7 @@ permalink: /
 schema_type: "CollectionPage"
 og_type: "website"
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+last_modified_at: "2026-08-01"
 image: "/assets/spherity-research-og.png"
 image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
 ---
@@ -61,6 +62,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
         <div class="hero-actions">
           <a class="button button-primary" href="#publications">Explore publications <span aria-hidden="true">↓</span></a>
           <a class="button button-ghost" href="https://github.com/spherity/spherity-research">View source on GitHub <span aria-hidden="true">↗</span></a>
+          {% include share.html id="homepage-share" title=page.title text=page.description url=page.url %}
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
@@ -194,7 +196,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
         </svg>
         <input type="search" id="publication-search" placeholder="Search titles, themes, or keywords" autocomplete="off">
       </label>
-      <div class="filter-list" aria-label="Filter by topic">
+      <div class="filter-list" role="group" aria-label="Filter by topic">
         <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
         <button class="filter-button" type="button" data-filter="identity" aria-pressed="false">Identity</button>
         <button class="filter-button" type="button" data-filter="wallets" aria-pressed="false">Wallets &amp; data sharing</button>
@@ -253,7 +255,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
       {% endfor %}
     </div>
 
-    <p class="no-results" id="no-results" hidden>
+    <p class="no-results" id="no-results" role="status" aria-live="polite" hidden>
       No publications match this search. Try a broader topic or clear the search field.
     </p>
   </section>
@@ -328,9 +330,18 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
          height="239"
          loading="lazy"
          decoding="async">
-    <p>Independent research on identity, infrastructure, and resilience.</p>
-    <p>© 2026 Spherity GmbH</p>
+    <div class="footer-license">
+      <a href="https://creativecommons.org/licenses/by/4.0/" rel="license external" aria-label="Creative Commons Attribution 4.0 International license">
+        <img src="https://licensebuttons.net/l/by/4.0/88x31.png"
+             alt="Creative Commons Attribution 4.0 International"
+             width="88"
+             height="31"
+             loading="lazy"
+             decoding="async">
+      </a>
+      <p>Except where otherwise noted, this site's research content and data are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license external">CC BY 4.0</a> by the named author or co-authors.</p>
+    </div>
+    <p>Source code is available under the <a href="https://github.com/spherity/spherity-research/blob/main/LICENSE">MIT License</a>. Spherity names and logos are excluded.</p>
+    <p class="footer-copyright">© 2026 Spherity GmbH</p>
   </div>
 </footer>
-
-<script src="{{ '/assets/research-portal.js' | relative_url }}" defer></script>

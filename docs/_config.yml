@@ -12,6 +12,10 @@ logo: "/assets/spherity-logo-horizontal-800.webp"
 image: "/assets/spherity-research-og.png"
 favicon: "/assets/spherity_logo_336x336_centered_margins.png"
 timezone: "Europe/Berlin"
+content_license: "https://creativecommons.org/licenses/by/4.0/"
+content_license_name: "Creative Commons Attribution 4.0 International"
+code_license: "https://opensource.org/license/mit"
+copyright_holder: "The author or co-authors named on each publication"
 
 exclude:
   - node_modules

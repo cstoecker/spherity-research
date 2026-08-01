@@ -15,12 +15,16 @@
     "start": "bundle exec jekyll serve --source docs --livereload",
     "preview": "npx serve _site",
     "sitemap": "node scripts/generate-sitemap.mjs --site-dir _site",
+    "optimize": "node scripts/optimize-site.mjs --site-dir _site",
     "check": "node scripts/validate-site.mjs --site-dir _site",
-    "test": "pnpm run build && pnpm run sitemap && pnpm run check",
-    "test:preview": "pnpm run build:preview && pnpm run sitemap && pnpm run check"
+    "indexnow:dry-run": "node scripts/notify-indexnow.mjs --sitemap _site/sitemap.xml --dry-run",
+    "test": "pnpm run build && pnpm run sitemap && pnpm run optimize && pnpm run check",
+    "test:preview": "pnpm run build:preview && pnpm run sitemap && pnpm run optimize && pnpm run check"
   },
   "devDependencies": {
-    "glob": "^11.0.3",
+    "glob": "^13.0.6",
+    "html-minifier-terser": "^7.2.0",
+    "lightningcss": "^1.33.0",
     "liquidjs": "^10.27.2",
     "marked": "^18.0.7",
     "yaml": "^2.9.0"

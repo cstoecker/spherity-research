@@ -20,6 +20,7 @@ canonical_url: "https://spherity.github.io/spherity-research/Securing-Digital-Id
 latest_version: "https://spherity.github.io/spherity-research/Securing-Digital-Identity-Quantum-Vulnerabilities.html"
 
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+license: "https://creativecommons.org/licenses/by/4.0/"
 
 image: "/assets/Infochart-Securing-Legal-Person-Digital-Identity-Against-Quantum-Vulnerabilities-Spherity-GmbH-05-2026.png"
 image_alt: "Infochart showing how quantum-risk preparation shifts from HNDL and Bitcoin to legal person identity, with migration urgency, a US–Germany PQC-resilient digital corridor, crypto-agile identity infrastructure, and the regulatory role of Business Wallets and the European Business Wallet."
@@ -97,6 +98,8 @@ toc_items:
     href: "#appendix-b-minimal-pqc-corridor-checklist"
   - title: "References"
     href: "#references"
+  - title: "License and citation"
+    href: "#license-and-citation"
   - title: "Questions answered"
     href: "#questions-answered"
 

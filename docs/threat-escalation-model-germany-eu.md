@@ -20,6 +20,7 @@ canonical_url: "https://spherity.github.io/spherity-research/threat-escalation-m
 latest_version: "https://spherity.github.io/spherity-research/threat-escalation-model-germany-eu.html"
 
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+license: "https://creativecommons.org/licenses/by/4.0/"
 
 logo: "/assets/spherity-logo-horizontal-800.webp"
 image: "/assets/spherity-research-og.png"
@@ -102,6 +103,8 @@ toc_items:
     href: "#appendix-a-maturity-scoring-rubric"
   - title: "Appendix B"
     href: "#appendix-b-suggested-readiness-metrics"
+  - title: "License and citation"
+    href: "#license-and-citation"
   - title: "Questions answered"
     href: "#questions-answered"
 

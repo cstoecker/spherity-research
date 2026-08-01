@@ -1,0 +1,31 @@
+{% assign share_id = include.id | default: "page-share" %}
+{% assign share_title = include.title | default: page.title | default: site.title %}
+{% assign share_text = include.text | default: page.description | default: site.description %}
+{% assign share_path = include.url | default: page.canonical_url | default: page.url %}
+{% if share_path contains "://" %}
+  {% assign share_url = share_path %}
+{% else %}
+  {% assign share_url = share_path | absolute_url %}
+{% endif %}
+<div class="share-control"
+     data-share
+     data-share-title="{{ share_title | escape }}"
+     data-share-text="{{ share_text | escape }}"
+     data-share-url="{{ share_url | escape }}">
+  <button class="share-button"
+          type="button"
+          data-share-button
+          aria-expanded="false"
+          aria-controls="{{ share_id }}-menu">
+    Share <span aria-hidden="true">↗</span>
+  </button>
+  <div class="share-menu" id="{{ share_id }}-menu" data-share-menu hidden>
+    <p class="share-menu-title">Share this page</p>
+    <button class="share-option" type="button" data-native-share hidden>Share via device</button>
+    <a class="share-option" data-share-link="linkedin" href="https://www.linkedin.com/sharing/share-offsite/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a class="share-option" data-share-link="x" href="https://x.com/intent/post" target="_blank" rel="noopener noreferrer">X</a>
+    <a class="share-option" data-share-link="email" href="mailto:">Email</a>
+    <button class="share-option" type="button" data-copy-link>Copy link</button>
+    <p class="share-feedback" data-share-feedback aria-live="polite"></p>
+  </div>
+</div>

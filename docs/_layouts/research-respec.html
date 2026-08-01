@@ -101,6 +101,10 @@ layout: default
         {% endif %}
       </dl>
 
+      <div class="article-share">
+        {% include share.html id="paper-share" title=page.title text=page.description url=page.canonical_url %}
+      </div>
+
       {% if page.toc_items %}
       <details class="mobile-article-nav">
         <summary>Browse this paper</summary>
@@ -134,6 +138,8 @@ layout: default
     {% endif %}
 
     {{ content }}
+
+    {% include research-license.html %}
 
     {% if page.questions_answered %}
     <section class="questions-answered" id="questions-answered" aria-labelledby="questions-answered-title">

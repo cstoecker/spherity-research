@@ -16,6 +16,12 @@ const splitFrontMatter = (source) => {
   return { data: parseYaml(match[1]) ?? {}, content: match[2] };
 };
 
+const normalizeJekyllIncludes = (source) =>
+  source.replace(
+    /{%\s*include\s+([A-Za-z0-9_./-]+)(?=\s|%})/g,
+    '{% include "$1"'
+  );
+
 const config = parseYaml(await readFile(path.join(sourceDirectory, "_config.yml"), "utf8"));
 const publications = parseYaml(
   await readFile(path.join(sourceDirectory, "_data", "publications.yml"), "utf8")
@@ -30,7 +36,11 @@ const site = {
 };
 
 const liquid = new Liquid({
-  root: [path.join(sourceDirectory, "_layouts"), sourceDirectory],
+  root: [
+    path.join(sourceDirectory, "_includes"),
+    path.join(sourceDirectory, "_layouts"),
+    sourceDirectory
+  ],
   extname: ".html",
   strictFilters: false,
   strictVariables: false
@@ -63,7 +73,11 @@ const renderLayout = async (layoutName, page, content) => {
     "utf8"
   );
   const layout = splitFrontMatter(layoutSource);
-  const rendered = await liquid.parseAndRender(layout.content, { page, site, content });
+  const rendered = await liquid.parseAndRender(normalizeJekyllIncludes(layout.content), {
+    page,
+    site,
+    content
+  });
 
   if (layout.data.layout) {
     return renderLayout(layout.data.layout, page, rendered);
@@ -98,7 +112,7 @@ for (const file of markdownFiles) {
   const { data, content } = splitFrontMatter(source);
   const permalink = data.permalink || `/${file.replace(/\.md$/i, ".html")}`;
   const page = { ...data, url: permalink };
-  const liquidContent = await liquid.parseAndRender(content, { page, site });
+  const liquidContent = await liquid.parseAndRender(normalizeJekyllIncludes(content), { page, site });
   const htmlContent =
     data.schema_type === "CollectionPage" ? liquidContent : marked.parse(liquidContent);
   const output = data.layout

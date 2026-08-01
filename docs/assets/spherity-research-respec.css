@@ -437,15 +437,7 @@ body {
   }
 
   .srespec-sidebar {
-    order: 2;
-    position: static;
-    max-height: none;
-    margin: 1.5rem 0 0 0;
-    padding: 1rem;
-    border: 1px solid var(--border-soft);
-    border-radius: 12px;
-    background: #ffffff;
-    box-shadow: var(--shadow-soft);
+    display: none;
   }
 
   .srespec-logo-link {

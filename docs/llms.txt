@@ -23,4 +23,8 @@ Canonical library: {{ "/" | absolute_url }}
 - [Crawler policy]({{ "/robots.txt" | absolute_url }})
 - [Source repository](https://github.com/spherity/spherity-research)
 
+## Reuse license
+
+Written research, datasets, diagrams, visual explainers, and policy roadmaps are available under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Credit every named author, link to the canonical work and license, and indicate changes. Repository source code is available under the MIT License.
+
 This file is a machine-readable index generated from the same publication catalog as the website. It does not replace the HTML pages, their citations, or the PDF source documents.

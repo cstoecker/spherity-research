@@ -20,6 +20,7 @@ canonical_url: "https://spherity.github.io/spherity-research/publication-slug.ht
 latest_version: "https://spherity.github.io/spherity-research/publication-slug.html"
 
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+license: "https://creativecommons.org/licenses/by/4.0/"
 image: "/assets/publication-slug-thumbnail.webp"
 image_alt: "Plain-language description of the publication thumbnail."
 
@@ -53,6 +54,8 @@ toc_items:
     href: "#2-findings"
   - title: "References"
     href: "#references"
+  - title: "License and citation"
+    href: "#license-and-citation"
   - title: "Questions answered"
     href: "#questions-answered"
 

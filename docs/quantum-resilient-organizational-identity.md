@@ -22,6 +22,7 @@ latest_version: "https://spherity.github.io/spherity-research/quantum-resilient-
 pdf_url: "/Spherity_Research_Quantum_Resilient_Organizational_Identity_final.pdf"
 
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+license: "https://creativecommons.org/licenses/by/4.0/"
 
 image: "/assets/quantum-resilient-organizational-identity-social.png"
 image_alt: "Social preview for Quantum-Resilient Organizational Identity."
@@ -108,8 +109,8 @@ toc_items:
     href: "#research-relationship"
   - title: "Boundary conditions"
     href: "#boundary-conditions"
-  - title: "How to cite"
-    href: "#how-to-cite"
+  - title: "License and citation"
+    href: "#license-and-citation"
   - title: "Questions answered"
     href: "#questions-answered"
 
@@ -241,10 +242,6 @@ The paper does not claim that a cryptographically relevant quantum computer exis
 PQC standards also do not eliminate implementation risk. Key custody, side channels, hardware constraints, lifecycle procedures, fallback behavior, semantic integrity, privacy-preserving credentials, long-term validation, and cross-jurisdiction legal recognition remain active engineering and governance concerns.
 
 A corridor is not merely a technical pilot. It requires an economically justified use case, defined legal or organizational assurance, accountable governance, measurable exit criteria, real status and revocation operations, incident and rollover testing, and reusable evidence. Without those elements, it cannot demonstrate that the trust fabric will remain reliable during migration.
-
-<h2 id="how-to-cite">How to cite</h2>
-
-Couzens, Brian; Stöcker, Carsten; and Vasiliu-Feltes, Ingrid. “Quantum-Resilient Organizational Identity: Governance, Business Wallets, and PQC Corridors.” May 2026.
 
 <div class="paper-download">
   <a href="{{ page.pdf_url | relative_url }}">Read or download the full paper</a>

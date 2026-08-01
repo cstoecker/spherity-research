@@ -1,15 +1,121 @@
 (() => {
+  const writeClipboard = async (text) => {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(text);
+      return;
+    }
+
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.setAttribute("readonly", "");
+    textarea.style.position = "fixed";
+    textarea.style.opacity = "0";
+    document.body.append(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    textarea.remove();
+  };
+
+  const closeShareMenu = (control) => {
+    const button = control.querySelector("[data-share-button]");
+    const menu = control.querySelector("[data-share-menu]");
+    if (!button || !menu) return;
+    button.setAttribute("aria-expanded", "false");
+    menu.hidden = true;
+  };
+
+  const shareControls = [...document.querySelectorAll("[data-share]")];
+
+  shareControls.forEach((control) => {
+    const button = control.querySelector("[data-share-button]");
+    const menu = control.querySelector("[data-share-menu]");
+    const copyButton = control.querySelector("[data-copy-link]");
+    const nativeButton = control.querySelector("[data-native-share]");
+    const feedback = control.querySelector("[data-share-feedback]");
+    const title = control.dataset.shareTitle || document.title;
+    const text = control.dataset.shareText || "";
+    const url = control.dataset.shareUrl || window.location.href;
+
+    if (!button || !menu) return;
+
+    const encodedUrl = encodeURIComponent(url);
+    const encodedTitle = encodeURIComponent(title);
+    const encodedText = encodeURIComponent(`${title}${text ? ` — ${text}` : ""}`);
+    const linkedin = control.querySelector('[data-share-link="linkedin"]');
+    const x = control.querySelector('[data-share-link="x"]');
+    const email = control.querySelector('[data-share-link="email"]');
+
+    if (linkedin) linkedin.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
+    if (x) x.href = `https://x.com/intent/post?url=${encodedUrl}&text=${encodedTitle}`;
+    if (email) email.href = `mailto:?subject=${encodedTitle}&body=${encodedText}%0A%0A${encodedUrl}`;
+
+    button.addEventListener("click", () => {
+      const isOpen = button.getAttribute("aria-expanded") === "true";
+      shareControls.forEach(closeShareMenu);
+      button.setAttribute("aria-expanded", String(!isOpen));
+      menu.hidden = isOpen;
+      if (!isOpen) menu.querySelector("a, button")?.focus();
+    });
+
+    if (navigator.share && nativeButton) {
+      nativeButton.hidden = false;
+      nativeButton.addEventListener("click", async () => {
+        try {
+          await navigator.share({ title, text, url });
+          closeShareMenu(control);
+        } catch (error) {
+          if (error?.name !== "AbortError" && feedback) {
+            feedback.textContent = "Sharing is unavailable. Use one of the links below.";
+          }
+        }
+      });
+    }
+
+    copyButton?.addEventListener("click", async () => {
+      try {
+        await writeClipboard(url);
+        if (feedback) feedback.textContent = "Link copied.";
+      } catch {
+        if (feedback) feedback.textContent = "Copy failed. Select the address from your browser.";
+      }
+    });
+
+    control.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape") return;
+      closeShareMenu(control);
+      button.focus();
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    shareControls.forEach((control) => {
+      if (!control.contains(event.target)) closeShareMenu(control);
+    });
+  });
+
+  document.querySelectorAll("[data-copy-citation]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const container = button.closest(".citation-copy");
+      const citation = container?.querySelector("[data-citation-text]")?.textContent?.trim();
+      const feedback = container?.querySelector("[data-citation-feedback]");
+      if (!citation) return;
+      try {
+        await writeClipboard(citation);
+        if (feedback) feedback.textContent = "Citation copied.";
+      } catch {
+        if (feedback) feedback.textContent = "Copy failed. Select the citation manually.";
+      }
+    });
+  });
+
   const searchInput = document.querySelector("#publication-search");
   const filterButtons = [...document.querySelectorAll("[data-filter]")];
   const cards = [...document.querySelectorAll(".publication-card")];
   const noResults = document.querySelector("#no-results");
 
-  if (!searchInput || !filterButtons.length || !cards.length || !noResults) {
-    return;
-  }
+  if (!searchInput || !filterButtons.length || !cards.length || !noResults) return;
 
   let activeFilter = "all";
-
   const normalize = (value) =>
     value.toLocaleLowerCase("en").normalize("NFKD").replace(/\p{Diacritic}/gu, "");
 
@@ -23,7 +129,6 @@
       const matchesTopic = activeFilter === "all" || topics.includes(activeFilter);
       const matchesSearch = !query || haystack.includes(query);
       const isVisible = matchesTopic && matchesSearch;
-
       card.hidden = !isVisible;
       if (isVisible) visibleCount += 1;
     });

@@ -1,0 +1,41 @@
+{% assign content_license = page.license | default: site.content_license | default: "https://creativecommons.org/licenses/by/4.0/" %}
+{% if page.authors %}
+  {% assign citation_authors = page.authors | join: "; " %}
+{% else %}
+  {% assign citation_authors = page.author | default: site.author.name %}
+{% endif %}
+{% assign citation_date = page.date | date: "%Y-%m-%d" %}
+{% assign citation_path = page.canonical_url | default: page.url %}
+{% if citation_path contains "://" %}
+  {% assign citation_url = citation_path %}
+{% else %}
+  {% assign citation_url = citation_path | absolute_url %}
+{% endif %}
+<section class="research-license" id="license-and-citation" aria-labelledby="license-and-citation-title">
+  <div class="research-license-heading">
+    <a class="cc-badge" href="{{ content_license }}" rel="license external" aria-label="Creative Commons Attribution 4.0 International license">
+      <img src="https://licensebuttons.net/l/by/4.0/88x31.png"
+           alt="Creative Commons Attribution 4.0 International"
+           width="88"
+           height="31"
+           loading="lazy"
+           decoding="async">
+    </a>
+    <div>
+      <p class="answer-summary-label">Open research</p>
+      <h2 id="license-and-citation-title">License and citation</h2>
+    </div>
+  </div>
+  <p>
+    <strong>{{ page.title }}</strong> is licensed by its named author{% if page.authors and page.authors.size > 1 %}s{% endif %}
+    under the <a href="{{ content_license }}" rel="license external">Creative Commons Attribution 4.0 International License (CC BY 4.0)</a>.
+    Reuse must credit every named author, link to this canonical version and the
+    license, and indicate whether changes were made.
+  </p>
+  <div class="citation-copy">
+    <h3>How to cite this work</h3>
+    <p data-citation-text>{{ citation_authors }} ({{ citation_date }}). “{{ page.title }}{% if page.subtitle %}: {{ page.subtitle }}{% endif %}.” {{ page.affiliation | default: "Spherity GmbH" }}. {{ citation_url }}. Licensed CC BY 4.0.</p>
+    <button type="button" class="citation-copy-button" data-copy-citation>Copy citation</button>
+    <p class="share-feedback" data-citation-feedback aria-live="polite"></p>
+  </div>
+</section>
