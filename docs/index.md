@@ -7,6 +7,17 @@ keywords:
   - "DPP"
   - "Digital Battery Passports"
   - "DBP"
+  - "DPP Registry"
+  - "Legal-Person Identity"
+  - "Product-Linked Identity"
+  - "Authorization"
+  - "Authorisation"
+  - "Evidence Graph"
+  - "BESS"
+  - "Battery Energy Storage Systems"
+  - "Industrial AI"
+  - "Supply-Chain Compliance"
+  - "Cyber-Physical Products"
   - "Data Sharing"
   - "Data Spaces"
   - "Digital Corridors"
@@ -81,7 +92,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
       </div>
     </div>
     <div class="portal-shell trust-strip" aria-label="Research focus areas">
-      <span>Product passports</span>
+      <span>DPP &amp; DBP</span>
       <span>Identity</span>
       <span>Data sharing</span>
       <span>Resilience</span>
@@ -107,6 +118,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
         resilience.
       </p>
       <ul>
+        <li><a href="{{ '/verifiable-access-controlled-digital-product-passports.html' | relative_url }}">How can DPP and DBP transactions verify both product evidence and the legal authority to act?</a></li>
         <li><a href="{{ '/evidence-graphs-industrial-ai-data-plane.html' | relative_url }}">How can Industrial AI trace provenance, validation, freshness, and conflicting evidence across organizations?</a></li>
         <li><a href="{{ '/ebw-zero-trust-ai-agents.html' | relative_url }}">How can an enterprise prove an AI agent’s legal authority for a specific action?</a></li>
         <li><a href="{{ '/quantum-resilient-organizational-identity.html' | relative_url }}">How can organizations establish a governed, PQC-resilient digital corridor?</a></li>
@@ -199,6 +211,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
       <div class="filter-list" role="group" aria-label="Filter by topic">
         <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
         <button class="filter-button" type="button" data-filter="identity" aria-pressed="false">Identity</button>
+        <button class="filter-button" type="button" data-filter="dpp" aria-pressed="false">DPP &amp; DBP</button>
         <button class="filter-button" type="button" data-filter="wallets" aria-pressed="false">Wallets &amp; data sharing</button>
         <button class="filter-button" type="button" data-filter="resilience" aria-pressed="false">Resilience</button>
         <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">Trusted AI</button>

@@ -1,3 +1,30 @@
+- title: "Verifiable, Access-Controlled Digital Product Passports"
+  type: "Research article"
+  date_label: "1 August 2026"
+  date_iso: "2026-08-01"
+  description: "A two-plane architecture for authorized DPP and DBP transactions, decentralized product evidence, BESS, and European Business Wallets."
+  topics:
+    - "DPP & DBP"
+    - "DPP Registry"
+    - "Evidence graphs"
+  filters: "dpp identity wallets ai infrastructure"
+  search: "digital product passport digital product passports dpp digital battery passport digital battery passports dbp dpp registry european business wallet european business wallets ebw legal person identity legal-person identity product linked identity product-linked identity verifiable credentials authorization authorisation evidence graph evidence graphs bess battery energy storage system trusted ai industrial ai supply chain compliance supply-chain compliance cyber physical products cyber-physical products cirpass cirpass-2 risk study control plane data plane energy data-x ai service passport physical ai"
+  image: "/assets/preview-dpp-verifiable-access-controlled.webp"
+  image_alt: "Preview of Verifiable, Access-Controlled Digital Product Passports"
+  image_width: 1200
+  image_height: 630
+  media_class: "card-media-wide"
+  format: "HTML + PDF"
+  featured: true
+  links:
+    - label: "Read summary"
+      url: "/verifiable-access-controlled-digital-product-passports.html"
+      arrow: "→"
+    - label: "Download PDF"
+      url: "/Spherity_Research_DPP_Verifiable_Access_Controlled_Digital_Product_Passports.pdf"
+      arrow: "↓"
+      secondary: true
+
 - title: "Evidence Graphs for Industrial AI"
   type: "Research perspective"
   date_label: "9 July 2026"
