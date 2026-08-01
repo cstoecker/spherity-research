@@ -90,6 +90,14 @@ const requiredInfrastructureFiles = [
   "assets/site.css",
   "assets/research-portal.js",
   "assets/cc-by.svg",
+  "assets/share-icons/bluesky.svg",
+  "assets/share-icons/link.svg",
+  "assets/share-icons/linkedin.svg",
+  "assets/share-icons/mail.svg",
+  "assets/share-icons/reddit.svg",
+  "assets/share-icons/share.svg",
+  "assets/share-icons/threads.svg",
+  "assets/share-icons/x.svg",
   "assets/spherity_logo_336x336_centered_margins.png",
   "assets/spherity-research-og.png"
 ];
@@ -534,6 +542,9 @@ for (const htmlFile of htmlFiles) {
       ['rel="license"', "machine-readable license link"],
       ['class="research-license"', "paper license and citation block"],
       ["data-share", "share control"],
+      ['data-share-link="bluesky"', "Bluesky share action"],
+      ['data-share-link="threads"', "Threads share action"],
+      ['data-share-link="reddit"', "Reddit share action"],
       ['"@type": "BreadcrumbList"', "BreadcrumbList structured data"],
       ['"@type": "ScholarlyArticle"', "ScholarlyArticle structured data"]
     ];
@@ -576,6 +587,9 @@ if (await exists(path.join(siteDirectory, "index.html"))) {
     ['"@type":"CollectionPage"', "CollectionPage structured data"],
     ['id="publication-search"', "publication search"],
     ["data-share", "share control"],
+    ['data-share-link="bluesky"', "Bluesky share action"],
+    ['data-share-link="threads"', "Threads share action"],
+    ['data-share-link="reddit"', "Reddit share action"],
     ["assets/cc-by.svg", "CC BY 4.0 vector badge"],
     ['id="research-answers-title"', "question-led research summary"],
     ["publication-card", "publication cards"]

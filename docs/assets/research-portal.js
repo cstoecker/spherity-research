@@ -41,20 +41,33 @@
     const encodedUrl = encodeURIComponent(url);
     const encodedTitle = encodeURIComponent(title);
     const encodedText = encodeURIComponent(`${title}${text ? ` — ${text}` : ""}`);
+    const postSuffix = `\n${url}`;
+    const postTitleLimit = Math.max(0, 300 - [...postSuffix].length);
+    const postText = `${[...title].slice(0, postTitleLimit).join("")}${postSuffix}`;
+    const encodedPostText = encodeURIComponent(postText);
+    const bluesky = control.querySelector('[data-share-link="bluesky"]');
     const linkedin = control.querySelector('[data-share-link="linkedin"]');
+    const threads = control.querySelector('[data-share-link="threads"]');
+    const reddit = control.querySelector('[data-share-link="reddit"]');
     const x = control.querySelector('[data-share-link="x"]');
     const email = control.querySelector('[data-share-link="email"]');
 
+    if (bluesky) bluesky.href = `https://bsky.app/intent/compose?text=${encodedPostText}`;
     if (linkedin) linkedin.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
+    if (threads) threads.href = `https://www.threads.com/intent/post?text=${encodedPostText}`;
+    if (reddit) reddit.href = `https://www.reddit.com/submit?url=${encodedUrl}&title=${encodedTitle}`;
     if (x) x.href = `https://x.com/intent/post?url=${encodedUrl}&text=${encodedTitle}`;
     if (email) email.href = `mailto:?subject=${encodedTitle}&body=${encodedText}%0A%0A${encodedUrl}`;
 
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (event) => {
       const isOpen = button.getAttribute("aria-expanded") === "true";
       shareControls.forEach(closeShareMenu);
       button.setAttribute("aria-expanded", String(!isOpen));
       menu.hidden = isOpen;
-      if (!isOpen) menu.querySelector("a, button")?.focus();
+      if (!isOpen) {
+        if (feedback) feedback.textContent = "";
+        if (event.detail === 0) menu.querySelector("a, button")?.focus();
+      }
     });
 
     if (navigator.share && nativeButton) {
@@ -75,6 +88,9 @@
       try {
         await writeClipboard(url);
         if (feedback) feedback.textContent = "Link copied.";
+        window.setTimeout(() => {
+          if (feedback?.textContent === "Link copied.") feedback.textContent = "";
+        }, 2500);
       } catch {
         if (feedback) feedback.textContent = "Copy failed. Select the address from your browser.";
       }

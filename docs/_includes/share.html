@@ -19,13 +19,43 @@
           aria-controls="{{ share_id }}-menu">
     Share <span aria-hidden="true">↗</span>
   </button>
-  <div class="share-menu" id="{{ share_id }}-menu" data-share-menu hidden>
-    <p class="share-menu-title">Share this page</p>
-    <button class="share-option" type="button" data-native-share hidden>Share via device</button>
-    <a class="share-option" data-share-link="linkedin" href="https://www.linkedin.com/sharing/share-offsite/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    <a class="share-option" data-share-link="x" href="https://x.com/intent/post" target="_blank" rel="noopener noreferrer">X</a>
-    <a class="share-option" data-share-link="email" href="mailto:">Email</a>
-    <button class="share-option" type="button" data-copy-link>Copy link</button>
+  <div class="share-menu"
+       id="{{ share_id }}-menu"
+       data-share-menu
+       aria-label="Share this page"
+       hidden>
+    <button class="share-option" type="button" data-copy-link>
+      <span class="share-option-icon share-icon-link" aria-hidden="true"></span>
+      <span>Copy link</span>
+    </button>
+    <a class="share-option" data-share-link="bluesky" href="https://bsky.app/intent/compose" target="_blank" rel="noopener noreferrer">
+      <span class="share-option-icon share-icon-bluesky" aria-hidden="true"></span>
+      <span>Share on Bluesky</span>
+    </a>
+    <a class="share-option" data-share-link="linkedin" href="https://www.linkedin.com/sharing/share-offsite/" target="_blank" rel="noopener noreferrer">
+      <span class="share-option-icon share-icon-linkedin" aria-hidden="true"></span>
+      <span>Share on LinkedIn</span>
+    </a>
+    <a class="share-option" data-share-link="threads" href="https://www.threads.com/intent/post" target="_blank" rel="noopener noreferrer">
+      <span class="share-option-icon share-icon-threads" aria-hidden="true"></span>
+      <span>Share on Threads</span>
+    </a>
+    <a class="share-option" data-share-link="reddit" href="https://www.reddit.com/submit" target="_blank" rel="noopener noreferrer">
+      <span class="share-option-icon share-icon-reddit" aria-hidden="true"></span>
+      <span>Share on Reddit</span>
+    </a>
+    <a class="share-option" data-share-link="x" href="https://x.com/intent/post" target="_blank" rel="noopener noreferrer">
+      <span class="share-option-icon share-icon-x" aria-hidden="true"></span>
+      <span>Share on X</span>
+    </a>
+    <button class="share-option" type="button" data-native-share hidden>
+      <span class="share-option-icon share-icon-share" aria-hidden="true"></span>
+      <span>Share via device</span>
+    </button>
+    <a class="share-option share-option-last" data-share-link="email" href="mailto:">
+      <span class="share-option-icon share-icon-mail" aria-hidden="true"></span>
+      <span>Share by email</span>
+    </a>
     <p class="share-feedback" data-share-feedback aria-live="polite"></p>
   </div>
 </div>
