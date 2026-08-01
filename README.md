@@ -179,7 +179,7 @@ International License](https://creativecommons.org/licenses/by/4.0/) (CC BY
 publication. Reuse must provide appropriate attribution, a link to the
 canonical work and license, and an indication of changes.
 
-[![Creative Commons Attribution 4.0 International License](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
+[![Creative Commons Attribution 4.0 International License](docs/assets/cc-by.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 Source code, build scripts, templates, stylesheets, and configuration files are
 licensed under the [MIT License](LICENSE). See

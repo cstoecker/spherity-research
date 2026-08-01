@@ -332,7 +332,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
          decoding="async">
     <div class="footer-license">
       <a href="https://creativecommons.org/licenses/by/4.0/" rel="license external" aria-label="Creative Commons Attribution 4.0 International license">
-        <img src="https://licensebuttons.net/l/by/4.0/88x31.png"
+        <img src="{{ '/assets/cc-by.svg' | relative_url }}"
              alt="Creative Commons Attribution 4.0 International"
              width="88"
              height="31"

@@ -89,6 +89,7 @@ const requiredInfrastructureFiles = [
   "llms.txt",
   "assets/site.css",
   "assets/research-portal.js",
+  "assets/cc-by.svg",
   "assets/spherity_logo_336x336_centered_margins.png",
   "assets/spherity-research-og.png"
 ];
@@ -575,7 +576,7 @@ if (await exists(path.join(siteDirectory, "index.html"))) {
     ['"@type":"CollectionPage"', "CollectionPage structured data"],
     ['id="publication-search"', "publication search"],
     ["data-share", "share control"],
-    ["licensebuttons.net/l/by/4.0/88x31.png", "CC BY 4.0 badge"],
+    ["assets/cc-by.svg", "CC BY 4.0 vector badge"],
     ['id="research-answers-title"', "question-led research summary"],
     ["publication-card", "publication cards"]
   ];
