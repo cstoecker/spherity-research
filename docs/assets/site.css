@@ -229,6 +229,22 @@ a {
   line-height: 1.7;
 }
 
+.hero-author {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.9rem 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.9rem;
+  letter-spacing: 0.015em;
+}
+
+.hero-author strong {
+  color: var(--white);
+  font-weight: 750;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;

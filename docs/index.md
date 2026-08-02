@@ -1,8 +1,15 @@
 ---
 layout: default
 title: "Spherity Research"
-description: "Spherity research on DPPs, DBPs, European Business Wallets (EBW), AI Service Passports (AISP), Trusted AI, Physical AI, data sharing, and post-quantum trust."
+description: "Open-access Spherity research by Dr. Carsten Stöcker on DPPs, DBPs, European Business Wallets, Trusted AI, data sharing, and quantum-resilient trust."
+author: "Dr. Carsten Stöcker"
+affiliation: "Spherity GmbH"
 keywords:
+  - "Dr. Carsten Stöcker"
+  - "Carsten Stöcker"
+  - "Dr. Carsten Stoecker"
+  - "Carsten Stoecker"
+  - "Spherity GmbH"
   - "Digital Product Passports"
   - "DPP"
   - "Digital Battery Passports"
@@ -38,7 +45,7 @@ permalink: /
 schema_type: "CollectionPage"
 og_type: "website"
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-last_modified_at: "2026-08-01"
+last_modified_at: "2026-08-02"
 image: "/assets/spherity-research-og.png"
 image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
 ---
@@ -69,6 +76,9 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
           Evidence-led work on Digital Product Passports (DPPs), organizational
           identity, verifiable credentials, European Business Wallets (EBW),
           trusted AI, and the cryptographic infrastructure behind the real economy.
+        </p>
+        <p class="hero-author" id="dr-carsten-stoecker">
+          Research by <strong>Dr. Carsten Stöcker</strong><span aria-hidden="true">·</span> Spherity GmbH
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#publications">Explore publications <span aria-hidden="true">↓</span></a>

@@ -2,10 +2,11 @@ url: "https://spherity.github.io"
 baseurl: "/spherity-research"
 
 title: "Spherity Research"
-description: "Spherity research on DPPs, DBPs, European Business Wallets (EBW), AI Service Passports (AISP), Trusted AI, Physical AI, data sharing, and post-quantum trust."
+description: "Open-access Spherity research by Dr. Carsten Stöcker on DPPs, DBPs, European Business Wallets, Trusted AI, data sharing, and quantum-resilient trust."
 
 author:
   name: "Dr. Carsten Stöcker"
+  affiliation: "Spherity GmbH"
   email: "carsten.stoecker@spherity.com"
 
 logo: "/assets/spherity-logo-horizontal-800.webp"

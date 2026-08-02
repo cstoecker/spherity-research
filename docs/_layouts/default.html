@@ -43,6 +43,9 @@
   <title>{% if page.url == "/" %}{{ site.title | escape }} — Identity, Infrastructure, Resilience{% else %}{{ page_title | escape }} | {{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page_description | escape }}">
   <meta name="author" content="{{ author_name | escape }}">
+  <meta name="author-affiliation" content="{{ publisher_name | escape }}">
+  <meta name="DC.creator" content="{{ author_name | escape }}">
+  <meta name="DC.publisher" content="{{ publisher_name | escape }}">
   {% if page_keywords %}
   <meta name="keywords" content="{{ page_keywords | join: ', ' | escape }}">
   {% endif %}
@@ -122,11 +125,24 @@
         }
       },
       {
+        "@type": "Person",
+        "@id": "{{ '/' | absolute_url }}#dr-carsten-stoecker",
+        "name": "Dr. Carsten Stöcker",
+        "honorificPrefix": "Dr.",
+        "givenName": "Carsten",
+        "familyName": "Stöcker",
+        "url": "{{ '/' | absolute_url }}#dr-carsten-stoecker",
+        "affiliation": { "@id": "https://www.spherity.com/#organization" },
+        "worksFor": { "@id": "https://www.spherity.com/#organization" }
+      },
+      {
         "@type": "WebSite",
         "@id": "{{ '/' | absolute_url }}#website",
         "url": "{{ '/' | absolute_url }}",
         "name": "Spherity Research",
         "description": {{ page_description | jsonify }},
+        "author": { "@id": "{{ '/' | absolute_url }}#dr-carsten-stoecker" },
+        "creator": { "@id": "{{ '/' | absolute_url }}#dr-carsten-stoecker" },
         "publisher": { "@id": "https://www.spherity.com/#organization" },
         "inLanguage": "en"
       },
@@ -137,6 +153,9 @@
         "name": {{ page_title | jsonify }},
         "description": {{ page_description | jsonify }},
         "license": {{ content_license | jsonify }},
+        "author": { "@id": "{{ '/' | absolute_url }}#dr-carsten-stoecker" },
+        "creator": { "@id": "{{ '/' | absolute_url }}#dr-carsten-stoecker" },
+        "publisher": { "@id": "https://www.spherity.com/#organization" },
         {% if modified_date %}"dateModified": "{{ modified_date | date_to_xmlschema }}",{% endif %}
         "isAccessibleForFree": true,
         "keywords": {{ page.keywords | jsonify }},
