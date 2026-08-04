@@ -1,3 +1,31 @@
+- title: "Top 10 German Technology Companies Building Industrial AI, Physical AI and Agentic Commerce"
+  type: "Technology outlook"
+  date_label: "3 August 2026"
+  date_iso: "2026-08-03"
+  description: "An evidence-led 2026 outlook on ten German companies spanning Industrial AI, Physical AI, agentic commerce, and cross-company trust infrastructure."
+  topics:
+    - "Identity"
+    - "Wallets & data sharing"
+    - "Resilience"
+    - "Trusted AI"
+  filters: "identity wallets resilience ai"
+  search: "top 10 german technology companies top german tech companies 2026 german ai companies industrial ai germany physical ai companies germany agentic ai germany agentic commerce germany trusted agentic commerce 1komma5 heartbeat ai black forest labs celonis helsing n8n neura robotics parloa quantum systems sereact spherity ai agent identity legal entity identity ai agent authorization verifiable intent declarations european business wallet ebw digital product passport dpp digital battery passport dbp ai system passport aisp hardware attestation bom sbom runtime assurance continuous mission assurance post quantum cryptography pqc cyber physical systems sovereign industrial ai data sharing evidence graphs identity wallets resilience trusted ai"
+  image: "/assets/preview-top-german-technology-companies-industrial-ai-2026.webp"
+  image_alt: "Preview of the Spherity Technology Outlook on ten German companies building Industrial AI, Physical AI, and agentic commerce"
+  image_width: 1200
+  image_height: 630
+  media_class: "card-media-wide"
+  format: "HTML + PDF"
+  featured: true
+  links:
+    - label: "Read outlook"
+      url: "/top-german-technology-companies-industrial-ai-agentic-commerce-2026.html"
+      arrow: "→"
+    - label: "Download PDF"
+      url: "/Spherity_Research_Top_10_German_Technology_Companies_Industrial_AI_Physical_AI_Agentic_Commerce_Technology_Outlook_2026.pdf"
+      arrow: "↓"
+      secondary: true
+
 - title: "Verifiable, Access-Controlled Digital Product Passports"
   type: "Research article"
   date_label: "1 August 2026"

@@ -10,6 +10,13 @@ keywords:
   - "Dr. Carsten Stoecker"
   - "Carsten Stoecker"
   - "Spherity GmbH"
+  - "Top German Technology Companies 2026"
+  - "German AI Companies"
+  - "Industrial AI Germany"
+  - "Physical AI Companies Germany"
+  - "Agentic AI Germany"
+  - "Agentic Commerce Germany"
+  - "Trusted Agentic Commerce"
   - "Digital Product Passports"
   - "DPP"
   - "Digital Battery Passports"
@@ -45,7 +52,7 @@ permalink: /
 schema_type: "CollectionPage"
 og_type: "website"
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-last_modified_at: "2026-08-02"
+last_modified_at: "2026-08-04"
 image: "/assets/spherity-research-og.png"
 image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
 ---
@@ -128,6 +135,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
         resilience.
       </p>
       <ul>
+        <li><a href="{{ '/top-german-technology-companies-industrial-ai-agentic-commerce-2026.html' | relative_url }}">Which German companies form a strategic stack for Industrial AI, Physical AI, and trusted agentic commerce?</a></li>
         <li><a href="{{ '/verifiable-access-controlled-digital-product-passports.html' | relative_url }}">How can DPP and DBP transactions verify both product evidence and the legal authority to act?</a></li>
         <li><a href="{{ '/evidence-graphs-industrial-ai-data-plane.html' | relative_url }}">How can Industrial AI trace provenance, validation, freshness, and conflicting evidence across organizations?</a></li>
         <li><a href="{{ '/ebw-zero-trust-ai-agents.html' | relative_url }}">How can an enterprise prove an AI agent’s legal authority for a specific action?</a></li>
@@ -320,7 +328,7 @@ image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
         <article>
           <span class="topic-number">05</span>
           <h3>Trusted AI</h3>
-          <p>Legal authorization and evidence provenance for governed Industrial AI and agentic ecosystems.</p>
+          <p>Legal authorization, evidence provenance, and accountable action receipts for governed Industrial AI, Physical AI, and agentic commerce.</p>
         </article>
       </div>
     </div>

@@ -3,6 +3,9 @@
 <head>
 {% assign page_title = page.title | default: site.title %}
 {% assign page_description = page.description | default: site.description %}
+{% assign browser_title = page.seo_title | default: page_title %}
+{% assign social_title = page.og_title | default: page_title %}
+{% assign social_description = page.og_description | default: page_description %}
 {% if page.authors %}
   {% assign author_name = page.authors | join: ", " %}
 {% else %}
@@ -40,7 +43,7 @@
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#061827">
 
-  <title>{% if page.url == "/" %}{{ site.title | escape }} — Identity, Infrastructure, Resilience{% else %}{{ page_title | escape }} | {{ site.title | escape }}{% endif %}</title>
+  <title>{% if page.url == "/" %}{{ site.title | escape }} — Identity, Infrastructure, Resilience{% elsif page.seo_title %}{{ browser_title | escape }}{% else %}{{ page_title | escape }} | {{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page_description | escape }}">
   <meta name="author" content="{{ author_name | escape }}">
   <meta name="author-affiliation" content="{{ publisher_name | escape }}">
@@ -61,8 +64,8 @@
   <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
 
   <meta property="og:type" content="{{ og_type }}">
-  <meta property="og:title" content="{{ page_title | escape }}">
-  <meta property="og:description" content="{{ page_description | escape }}">
+  <meta property="og:title" content="{{ social_title | escape }}">
+  <meta property="og:description" content="{{ social_description | escape }}">
   <meta property="og:url" content="{{ canonical_url | escape }}">
   <meta property="og:site_name" content="{{ site.title | escape }}">
   <meta property="og:locale" content="{{ page.lang | default: 'en' | replace: '-', '_' | escape }}">
@@ -84,8 +87,8 @@
   {% endfor %}
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ page_title | escape }}">
-  <meta name="twitter:description" content="{{ page_description | escape }}">
+  <meta name="twitter:title" content="{{ social_title | escape }}">
+  <meta name="twitter:description" content="{{ social_description | escape }}">
   <meta name="twitter:image" content="{{ image_url | escape }}">
   <meta name="twitter:image:alt" content="{{ page.image_alt | default: page_title | escape }}">
 
@@ -233,6 +236,7 @@
           "@id": "{{ canonical_url | escape }}"
         },
         "headline": {{ page_title | jsonify }},
+        {% if page.seo_title %}"alternativeHeadline": {{ page.seo_title | jsonify }},{% endif %}
         "description": {{ page_description | jsonify }},
         "abstract": {{ page.answer_summary | default: page_description | jsonify }},
         "image": [
@@ -296,7 +300,45 @@
             "item": "{{ canonical_url | escape }}"
           }
         ]
-      }
+      }{% if page.ranked_companies %},
+      {
+        "@type": "ItemList",
+        "@id": "{{ canonical_url | escape }}#top-10-list",
+        "name": {{ page_title | jsonify }},
+        "description": {{ page.ranking_description | default: page_description | jsonify }},
+        "numberOfItems": {{ page.ranked_companies | size }},
+        "itemListOrder": "https://schema.org/ItemListUnordered",
+        "itemListElement": [
+          {% for company in page.ranked_companies %}
+          {
+            "@type": "ListItem",
+            "position": {{ forloop.index }},
+            "item": {
+              "@type": "Organization",
+              "name": {{ company.name | jsonify }},
+              "description": {{ company.description | jsonify }},
+              "url": {{ company.url | jsonify }}
+            }
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }{% endif %}{% if page.faq_schema and page.questions_answered %},
+      {
+        "@type": "FAQPage",
+        "@id": "{{ canonical_url | escape }}#questions-answered",
+        "mainEntity": [
+          {% for item in page.questions_answered %}
+          {
+            "@type": "Question",
+            "name": {{ item.question | jsonify }},
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": {{ item.answer | jsonify }}
+            }
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }{% endif %}
     ]
   }
   </script>

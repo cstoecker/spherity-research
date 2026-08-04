@@ -415,6 +415,22 @@ body {
 .maturity-table { min-width: 840px; }
 .recommendation-table { min-width: 1120px; }
 .inventory-table { min-width: 880px; }
+.top10-summary-table { min-width: 1080px; }
+
+.top-company-list {
+  columns: 2 280px;
+  column-gap: 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.top-company-list li {
+  break-inside: avoid;
+  margin-bottom: 0.55rem;
+}
+
+.paper-figure.technology-stack-figure img {
+  max-width: min(100%, 1200px);
+}
 
 /* References */
 
