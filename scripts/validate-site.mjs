@@ -621,23 +621,70 @@ if (await exists(path.join(siteDirectory, "index.html"))) {
 
 if (await exists(path.join(siteDirectory, "robots.txt"))) {
   const robots = await readFile(path.join(siteDirectory, "robots.txt"), "utf8");
+  const normalizedRobots = robots.replace(/\r\n/g, "\n");
   if (robots.charCodeAt(0) === 0xfeff || robots.includes("\u00a0")) {
     errors.push("robots.txt: remove the UTF-8 BOM and non-breaking spaces.");
   }
-  if (!/User-agent:\s*\*\s*[\s\S]*Allow:\s*\/(?:\s|$)/i.test(robots)) {
+  if (!/^User-agent:\s*\*\s*\nAllow:\s*\/$/im.test(normalizedRobots)) {
     errors.push("robots.txt: public crawling is not explicitly allowed.");
   }
-  for (const crawler of [
+  const requiredCrawlerAgents = [
     "Googlebot",
+    "Googlebot-Image",
+    "Googlebot-Video",
+    "Googlebot-News",
+    "Google-InspectionTool",
+    "GoogleOther",
+    "Google-CloudVertexBot",
+    "Google-Extended",
     "Bingbot",
+    "DuckDuckBot",
+    "Baiduspider",
+    "YandexBot",
+    "Slurp",
+    "Applebot",
+    "Bravebot",
     "OAI-SearchBot",
     "ChatGPT-User",
+    "Claude-SearchBot",
+    "Claude-User",
     "ClaudeBot",
-    "PerplexityBot"
-  ]) {
-    if (!new RegExp(`User-agent:\\s*${crawler}\\s*[\\s\\S]*?Allow:\\s*\\/`, "i").test(robots)) {
+    "PerplexityBot",
+    "Perplexity-User",
+    "GPTBot",
+    "CCBot",
+    "Amazonbot",
+    "Meta-ExternalAgent",
+    "AI2Bot",
+    "cohere-ai",
+    "InternetArchiveBot",
+    "SemanticScholarBot",
+    "Twitterbot",
+    "facebookexternalhit",
+    "LinkedInBot",
+    "Discordbot",
+    "Slackbot-LinkExpanding",
+    "redditbot"
+  ];
+  for (const crawler of requiredCrawlerAgents) {
+    const escapedCrawler = crawler.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const allowedGroup = new RegExp(
+      `^User-agent:\\s*${escapedCrawler}\\s*\\nAllow:\\s*\\/$`,
+      "im"
+    );
+    if (!allowedGroup.test(normalizedRobots)) {
       errors.push(`robots.txt: ${crawler} is not explicitly allowed.`);
     }
+  }
+  const wildcardPosition = normalizedRobots.indexOf("User-agent: *");
+  const agentAfterWildcard = normalizedRobots
+    .slice(wildcardPosition + "User-agent: *".length)
+    .match(/^User-agent:/im);
+  if (wildcardPosition < 0 || agentAfterWildcard) {
+    errors.push("robots.txt: the wildcard crawler group must remain the final User-agent group.");
+  }
+  if (!/^Sitemap:\s*https:\/\/spherity\.github\.io\/spherity-research\/sitemap\.xml$/im.test(normalizedRobots)) {
+    errors.push("robots.txt: the canonical absolute sitemap URL is missing.");
   }
 }
 
