@@ -2,7 +2,9 @@
 layout: null
 permalink: /sitemap.xml
 ---
-<?xml version="1.0" encoding="UTF-8"?>
+{%- comment -%}The post-build generator replaces this rendered template with a
+deterministic sitemap. Liquid whitespace control keeps this fallback XML
+declaration at byte zero without invalidating Jekyll front matter.{%- endcomment -%}<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {% for item in site.pages %}
 {% if item.url == "/" or item.url contains ".html" %}

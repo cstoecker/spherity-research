@@ -54,7 +54,7 @@ og_type: "website"
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 last_modified_at: "2026-08-04"
 image: "/assets/spherity-research-og.png"
-image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
+image_alt: "Spherity Research — research for the systems we need to trust, with the portal's orbital trust-system motif."
 ---
 
 <header class="portal-header">

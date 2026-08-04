@@ -135,4 +135,11 @@ for (const file of ["robots.txt", "sitemap.xml", "llms.txt"]) {
   await writeFile(path.join(outputDirectory, file), output, "utf8");
 }
 
+// Mirror Jekyll's `include: [".well-known"]` behavior in the dependency-light
+// local/Sites preview so security.txt is tested exactly where it is deployed.
+const wellKnownDirectory = path.join(sourceDirectory, ".well-known");
+await cp(wellKnownDirectory, path.join(outputDirectory, ".well-known"), {
+  recursive: true
+});
+
 console.log(`Built local preview with ${markdownFiles.length} rendered Markdown pages.`);

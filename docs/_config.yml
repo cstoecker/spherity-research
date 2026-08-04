@@ -21,3 +21,8 @@ copyright_holder: "The author or co-authors named on each publication"
 exclude:
   - node_modules
   - vendor
+
+# Jekyll excludes dot-directories by default. Publish the RFC 9116 security
+# contact at the project site's well-known path.
+include:
+  - ".well-known"

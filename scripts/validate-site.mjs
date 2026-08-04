@@ -86,6 +86,7 @@ const requiredInfrastructureFiles = [
   "index.html",
   "robots.txt",
   "sitemap.xml",
+  ".well-known/security.txt",
   "llms.txt",
   "assets/site.css",
   "assets/research-portal.js",
@@ -604,13 +605,47 @@ if (await exists(path.join(siteDirectory, "index.html"))) {
 
 if (await exists(path.join(siteDirectory, "robots.txt"))) {
   const robots = await readFile(path.join(siteDirectory, "robots.txt"), "utf8");
+  if (robots.charCodeAt(0) === 0xfeff || robots.includes("\u00a0")) {
+    errors.push("robots.txt: remove the UTF-8 BOM and non-breaking spaces.");
+  }
   if (!/User-agent:\s*\*\s*[\s\S]*Allow:\s*\/(?:\s|$)/i.test(robots)) {
     errors.push("robots.txt: public crawling is not explicitly allowed.");
   }
-  for (const crawler of ["OAI-SearchBot", "ClaudeBot", "PerplexityBot"]) {
+  for (const crawler of [
+    "Googlebot",
+    "Bingbot",
+    "OAI-SearchBot",
+    "ChatGPT-User",
+    "ClaudeBot",
+    "PerplexityBot"
+  ]) {
     if (!new RegExp(`User-agent:\\s*${crawler}\\s*[\\s\\S]*?Allow:\\s*\\/`, "i").test(robots)) {
       errors.push(`robots.txt: ${crawler} is not explicitly allowed.`);
     }
+  }
+}
+
+if (await exists(path.join(siteDirectory, ".well-known", "security.txt"))) {
+  const security = await readFile(
+    path.join(siteDirectory, ".well-known", "security.txt"),
+    "utf8"
+  );
+  if (security.charCodeAt(0) === 0xfeff || security.includes("\u00a0")) {
+    errors.push("security.txt: remove the UTF-8 BOM and non-breaking spaces.");
+  }
+  if (!/^Contact:\s+mailto:security@spherity\.com$/im.test(security)) {
+    errors.push("security.txt: missing the security contact URI.");
+  }
+  const expires = security.match(/^Expires:\s+(.+)$/im)?.[1]?.trim();
+  if (!expires || Number.isNaN(Date.parse(expires)) || Date.parse(expires) <= Date.now()) {
+    errors.push("security.txt: Expires must be a valid future RFC 3339 date.");
+  }
+  const expectedCanonical = `${canonicalOrigin}/.well-known/security.txt`;
+  if (!security.includes(`Canonical: ${expectedCanonical}`)) {
+    errors.push(`security.txt: missing canonical URI ${expectedCanonical}.`);
+  }
+  if (!/^Preferred-Languages:\s+en,\s*de$/im.test(security)) {
+    errors.push("security.txt: preferred languages must declare en and de.");
   }
 }
 
@@ -651,7 +686,20 @@ if (await exists(path.join(siteDirectory, "assets/research-portal.js"))) {
 }
 
 if (await exists(path.join(siteDirectory, "sitemap.xml"))) {
-  const sitemap = await readFile(path.join(siteDirectory, "sitemap.xml"), "utf8");
+  const sitemapBuffer = await readFile(path.join(siteDirectory, "sitemap.xml"));
+  const sitemap = sitemapBuffer.toString("utf8");
+  if (sitemapBuffer.subarray(0, 3).equals(Buffer.from([0xef, 0xbb, 0xbf]))) {
+    errors.push("sitemap.xml: UTF-8 BOM must not precede the XML declaration.");
+  }
+  if (!sitemap.startsWith('<?xml version="1.0" encoding="UTF-8"?>')) {
+    errors.push("sitemap.xml: the XML declaration must start at byte zero.");
+  }
+  if (sitemap.includes("\u00a0")) {
+    errors.push("sitemap.xml: replace non-breaking spaces with ordinary whitespace.");
+  }
+  if (!/^<\?xml[^>]+\?>\n<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">[\s\S]*<\/urlset>\n?$/.test(sitemap)) {
+    errors.push("sitemap.xml: malformed XML sitemap envelope.");
+  }
   const sitemapEntries = new Map(
     [...sitemap.matchAll(/<url>\s*<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/gi)].map(
       (match) => [match[1].replaceAll("&amp;", "&"), match[2]]

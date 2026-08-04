@@ -1,0 +1,7 @@
+# Spherity vulnerability disclosure contact
+# Please report suspected security vulnerabilities privately.
+
+Contact: mailto:security@spherity.com
+Expires: 2027-08-03T23:59:59Z
+Preferred-Languages: en, de
+Canonical: https://spherity.github.io/spherity-research/.well-known/security.txt
