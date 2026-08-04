@@ -460,6 +460,22 @@ if (!(await exists(configuredLogo))) {
   }
 }
 
+const configuredSocialImage = sourcePathFromPublicUrl(config.image || "");
+if (!(await exists(configuredSocialImage))) {
+  errors.push(`Configured homepage social image does not exist: ${config.image}`);
+} else {
+  const dimensions = await imageDimensions(configuredSocialImage);
+  if (!dimensions || dimensions.width !== 1200 || dimensions.height !== 630) {
+    errors.push("Configured homepage social image must be exactly 1200×630 pixels.");
+  }
+  const socialImageStats = await stat(configuredSocialImage);
+  if (socialImageStats.size > 250 * 1024) {
+    errors.push(
+      `Configured homepage social image is ${Math.ceil(socialImageStats.size / 1024)} KB; keep it at or below 250 KB.`
+    );
+  }
+}
+
 const htmlFiles = await glob("**/*.html", {
   cwd: siteDirectory,
   nodir: true,
