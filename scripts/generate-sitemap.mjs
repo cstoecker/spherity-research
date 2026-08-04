@@ -43,6 +43,48 @@ const priorityFor = (pathname) => {
   return "0.5";
 };
 
+const attributeFromTag = (tag, attribute) =>
+  tag?.match(new RegExp(`\\b${attribute}=["']([^"']+)["']`, "i"))?.[1];
+
+const metadataFromHtml = (html) => {
+  const canonicalTag = html.match(
+    /<link\b[^>]*\brel=["']canonical["'][^>]*>/i
+  )?.[0];
+  const robotsTag = html.match(
+    /<meta\b[^>]*\bname=["']robots["'][^>]*>/i
+  )?.[0];
+  const modifiedTag = html.match(
+    /<meta\b[^>]*\bproperty=["']article:modified_time["'][^>]*>/i
+  )?.[0];
+  const publishedTag = html.match(
+    /<meta\b[^>]*\bproperty=["']article:published_time["'][^>]*>/i
+  )?.[0];
+  const pdfTag = html.match(
+    /<meta\b[^>]*\bname=["']citation_pdf_url["'][^>]*>/i
+  )?.[0];
+
+  return {
+    canonical: attributeFromTag(canonicalTag, "href"),
+    robots: attributeFromTag(robotsTag, "content") || "",
+    modified: attributeFromTag(modifiedTag, "content"),
+    published: attributeFromTag(publishedTag, "content"),
+    pdfUrl: attributeFromTag(pdfTag, "content")
+  };
+};
+
+const assertCanonicalSiteUrl = (location) => {
+  const expected = new URL(siteUrl);
+  const actual = new URL(location);
+  const basePath = expected.pathname.replace(/\/+$/, "");
+  if (
+    actual.protocol !== "https:" ||
+    actual.origin !== expected.origin ||
+    (actual.pathname !== `${basePath}/` && !actual.pathname.startsWith(`${basePath}/`))
+  ) {
+    throw new Error(`Refusing non-canonical sitemap URL: ${location}`);
+  }
+};
+
 const files = await glob("**/*.{html,pdf}", {
   cwd: siteDirectory,
   nodir: true,
@@ -50,39 +92,51 @@ const files = await glob("**/*.{html,pdf}", {
   windowsPathsNoEscape: true
 });
 
+const htmlMetadataByFile = new Map();
 const lastModifiedByUrl = new Map();
 for (const file of files.filter((candidate) => candidate.toLowerCase().endsWith(".html"))) {
   const html = await readFile(path.join(siteDirectory, file), "utf8");
-  const modified = html.match(
-    /<meta\b[^>]*property=["']article:modified_time["'][^>]*content=["']([^"']+)["'][^>]*>/i
-  )?.[1];
-  const published = html.match(
-    /<meta\b[^>]*property=["']article:published_time["'][^>]*content=["']([^"']+)["'][^>]*>/i
-  )?.[1];
-  const date = modified || published;
+  const metadata = metadataFromHtml(html);
+  htmlMetadataByFile.set(file, metadata);
+  const date = metadata.modified || metadata.published;
   if (!date || Number.isNaN(Date.parse(date))) continue;
 
-  lastModifiedByUrl.set(`${siteUrl}${encodePublicPath(toPublicPath(file))}`, date.slice(0, 10));
-  const pdfUrl = html.match(
-    /<meta\b[^>]*name=["']citation_pdf_url["'][^>]*content=["']([^"']+)["'][^>]*>/i
-  )?.[1];
-  if (pdfUrl) lastModifiedByUrl.set(pdfUrl, date.slice(0, 10));
+  const pageUrl = metadata.canonical || `${siteUrl}${encodePublicPath(toPublicPath(file))}`;
+  lastModifiedByUrl.set(pageUrl, date.slice(0, 10));
+  if (metadata.pdfUrl) lastModifiedByUrl.set(metadata.pdfUrl, date.slice(0, 10));
 }
 
-const entries = await Promise.all(
-  files
-    .sort((left, right) => toPublicPath(left).localeCompare(toPublicPath(right)))
-    .map(async (file) => {
-      const pathname = encodePublicPath(toPublicPath(file));
-      const metadata = await stat(path.join(siteDirectory, file));
-      const location = `${siteUrl}${pathname}`;
-      return {
-        location,
-        modified: lastModifiedByUrl.get(location) || metadata.mtime.toISOString().slice(0, 10),
-        priority: priorityFor(pathname)
-      };
-    })
+const entriesByLocation = new Map();
+for (const file of files) {
+  const pathname = encodePublicPath(toPublicPath(file));
+  const htmlMetadata = htmlMetadataByFile.get(file);
+  if (htmlMetadata && /(?:^|,)\s*noindex\b/i.test(htmlMetadata.robots)) continue;
+
+  const location = htmlMetadata?.canonical || `${siteUrl}${pathname}`;
+  assertCanonicalSiteUrl(location);
+  if (entriesByLocation.has(location)) {
+    throw new Error(
+      `Duplicate canonical sitemap URL ${location} from ${entriesByLocation.get(location).file} and ${file}`
+    );
+  }
+
+  const fileMetadata = await stat(path.join(siteDirectory, file));
+  entriesByLocation.set(location, {
+    file,
+    location,
+    modified:
+      lastModifiedByUrl.get(location) || fileMetadata.mtime.toISOString().slice(0, 10),
+    priority: priorityFor(new URL(location).pathname)
+  });
+}
+
+const entries = [...entriesByLocation.values()].sort((left, right) =>
+  left.location.localeCompare(right.location)
 );
+
+if (!entries.some(({ location }) => location === `${siteUrl}/`)) {
+  throw new Error(`The sitemap is missing the site root ${siteUrl}/`);
+}
 
 const body = entries
   .map(
@@ -102,4 +156,8 @@ ${body}
 `;
 
 await writeFile(path.join(siteDirectory, "sitemap.xml"), sitemap, "utf8");
-console.log(`Generated sitemap.xml with ${entries.length} public URLs.`);
+const htmlCount = entries.filter(({ file }) => file.toLowerCase().endsWith(".html")).length;
+const pdfCount = entries.filter(({ file }) => file.toLowerCase().endsWith(".pdf")).length;
+console.log(
+  `Generated sitemap.xml with ${entries.length} canonical URLs (${htmlCount} HTML pages and ${pdfCount} PDFs).`
+);

@@ -106,6 +106,9 @@ const requiredInfrastructureFiles = [
 const config = parseYaml(
   await readFile(path.join(sourceDirectory, "_config.yml"), "utf8")
 );
+if (!Array.isArray(config.include) || !config.include.includes(".well-known")) {
+  errors.push('_config.yml: include must contain ".well-known".');
+}
 const publications = parseYaml(
   await readFile(path.join(sourceDirectory, "_data", "publications.yml"), "utf8")
 );
@@ -539,6 +542,17 @@ for (const htmlFile of htmlFiles) {
   const canonical = html.match(
     /<link\b[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["'][^>]*>/i
   )?.[1];
+  if (!/^google[^/]*\.html$/i.test(htmlFile) && htmlFile !== "404.html") {
+    const robotsMeta = html.match(
+      /<meta\b[^>]*name=["']robots["'][^>]*content=["']([^"']+)["'][^>]*>/i
+    )?.[1];
+    if (!robotsMeta || !/\bindex\b/i.test(robotsMeta) || !/\bfollow\b/i.test(robotsMeta)) {
+      errors.push(`${htmlFile}: Google indexing requires index, follow robots metadata.`);
+    }
+    if (/\bnoindex\b|\bnofollow\b/i.test(robotsMeta || "")) {
+      errors.push(`${htmlFile}: public page must not contain noindex or nofollow.`);
+    }
+  }
   if (canonical) {
     if (generatedCanonicals.has(canonical)) {
       errors.push(
@@ -710,6 +724,29 @@ if (await exists(path.join(siteDirectory, ".well-known", "security.txt"))) {
   if (!/^Preferred-Languages:\s+en,\s*de$/im.test(security)) {
     errors.push("security.txt: preferred languages must declare en and de.");
   }
+  if (!security.endsWith("\n")) {
+    errors.push("security.txt: file must end with a newline.");
+  }
+  for (const requiredField of ["Contact", "Expires", "Preferred-Languages", "Canonical"]) {
+    const occurrences = [...security.matchAll(new RegExp(`^${requiredField}:`, "gim"))].length;
+    if (occurrences !== 1) {
+      errors.push(`security.txt: ${requiredField} must appear exactly once.`);
+    }
+  }
+}
+
+const deployWorkflowPath = path.join(projectDirectory, ".github", "workflows", "deploy.yml");
+if (await exists(deployWorkflowPath)) {
+  const deployWorkflow = await readFile(deployWorkflowPath, "utf8");
+  if (
+    !/uses:\s*actions\/upload-pages-artifact@[^\n]+[\s\S]{0,500}?include-hidden-files:\s*true/i.test(
+      deployWorkflow
+    )
+  ) {
+    errors.push(
+      "deploy.yml: upload-pages-artifact must include hidden files so .well-known/security.txt is deployed."
+    );
+  }
 }
 
 if (await exists(path.join(siteDirectory, "llms.txt"))) {
@@ -763,11 +800,66 @@ if (await exists(path.join(siteDirectory, "sitemap.xml"))) {
   if (!/^<\?xml[^>]+\?>\n<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">[\s\S]*<\/urlset>\n?$/.test(sitemap)) {
     errors.push("sitemap.xml: malformed XML sitemap envelope.");
   }
+  const sitemapMatches = [
+    ...sitemap.matchAll(/<url>\s*<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/gi)
+  ];
   const sitemapEntries = new Map(
-    [...sitemap.matchAll(/<url>\s*<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/gi)].map(
-      (match) => [match[1].replaceAll("&amp;", "&"), match[2]]
-    )
+    sitemapMatches.map((match) => [match[1].replaceAll("&amp;", "&"), match[2]])
   );
+  if (sitemapMatches.length !== sitemapEntries.size) {
+    errors.push("sitemap.xml: duplicate <loc> entries are not allowed.");
+  }
+  for (const [location, lastModified] of sitemapEntries) {
+    if (!location.startsWith(`${canonicalOrigin}/`)) {
+      errors.push(`sitemap.xml: non-canonical or non-HTTPS URL ${location}.`);
+    }
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(lastModified) || Number.isNaN(Date.parse(lastModified))) {
+      errors.push(`sitemap.xml: invalid lastmod ${lastModified} for ${location}.`);
+    }
+  }
+
+  const expectedSitemapUrls = new Set();
+  const sitemapFiles = await glob("**/*.{html,pdf}", {
+    cwd: siteDirectory,
+    nodir: true,
+    ignore: ["404.html", "google*.html"],
+    windowsPathsNoEscape: true
+  });
+  for (const sitemapFile of sitemapFiles) {
+    const normalizedFile = sitemapFile.split(path.sep).join("/");
+    let expectedUrl = `${canonicalOrigin}/${normalizedFile}`;
+    if (normalizedFile === "index.html") expectedUrl = `${canonicalOrigin}/`;
+    if (normalizedFile.endsWith("/index.html")) {
+      expectedUrl = `${canonicalOrigin}/${normalizedFile.slice(0, -"index.html".length)}`;
+    }
+    if (normalizedFile.toLowerCase().endsWith(".html")) {
+      const html = await readFile(path.join(siteDirectory, sitemapFile), "utf8");
+      const robotsMeta = html.match(
+        /<meta\b[^>]*name=["']robots["'][^>]*content=["']([^"']+)["'][^>]*>/i
+      )?.[1];
+      if (/\bnoindex\b/i.test(robotsMeta || "")) continue;
+      expectedUrl =
+        html.match(/<link\b[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["'][^>]*>/i)?.[1] ||
+        expectedUrl;
+    }
+    expectedSitemapUrls.add(expectedUrl);
+  }
+
+  for (const expectedUrl of expectedSitemapUrls) {
+    if (!sitemapEntries.has(expectedUrl)) {
+      errors.push(`sitemap.xml: missing indexable build output ${expectedUrl}.`);
+    }
+  }
+  for (const sitemapUrl of sitemapEntries.keys()) {
+    if (!expectedSitemapUrls.has(sitemapUrl)) {
+      errors.push(`sitemap.xml: unexpected or non-indexable URL ${sitemapUrl}.`);
+    }
+  }
+  if (sitemapEntries.size !== expectedSitemapUrls.size) {
+    errors.push(
+      `sitemap.xml: expected ${expectedSitemapUrls.size} complete URLs but found ${sitemapEntries.size}.`
+    );
+  }
   for (const researchPage of researchPages) {
     if (!sitemap.includes(researchPage.data.canonical_url)) {
       errors.push(`sitemap.xml: missing ${researchPage.data.canonical_url}.`);
