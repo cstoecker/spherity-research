@@ -82,6 +82,9 @@ questions_answered:
   - question: "How do evidence graphs support Trusted AI and Industrial AI?"
     answer: "Evidence graphs link claims to issuers, sources, transformations, validation results, timestamps, conflicts, uncertainty, and lifecycle events. Bounded AI agents can use those paths to retrieve and assess product evidence without silently replacing authoritative sources or inventing unsupported authority."
 related_publications:
+  - title: "Spherity Strategy and Market Positioning Update"
+    url: "/spherity-dpp-dbp-strategy-market-positioning.html"
+    context: "Connects the detailed two-plane DPP architecture to Spherity's Gartner Pioneers position, battery-first execution, and 2026–2029 strategy."
   - title: "Evidence Graphs for Industrial AI"
     url: "/evidence-graphs-industrial-ai-data-plane.html"
     context: "Provides the complementary data-plane model for provenance, validation, freshness, conflicting evidence, and auditable evidence paths."

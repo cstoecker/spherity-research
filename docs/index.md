@@ -48,11 +48,15 @@ keywords:
   - "Trusted AI"
   - "Physical AI"
   - "Post-Quantum Cryptography"
+  - "Spherity Gartner Emerging Market Quadrant Digital Product Passport"
+  - "Gartner Digital Product Passport Established Vendors"
+  - "Spherity sole vendor Pioneers quadrant"
+  - "Gartner document 8098797"
 permalink: /
 schema_type: "CollectionPage"
 og_type: "website"
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-last_modified_at: "2026-08-04"
+last_modified_at: "2026-08-05"
 image: "/assets/spherity-research-og.png"
 image_alt: "Spherity Research — research for the systems we need to trust, with the portal's orbital trust-system motif."
 ---
@@ -135,6 +139,7 @@ image_alt: "Spherity Research — research for the systems we need to trust, wit
         resilience.
       </p>
       <ul>
+        <li><a href="{{ '/spherity-dpp-dbp-strategy-market-positioning.html' | relative_url }}">How does Spherity connect its Gartner Pioneers position to DPP, DBP, EBW, and Trusted AI execution?</a></li>
         <li><a href="{{ '/top-german-technology-companies-industrial-ai-agentic-commerce-2026.html' | relative_url }}">Which German companies form a strategic stack for Industrial AI, Physical AI, and trusted agentic commerce?</a></li>
         <li><a href="{{ '/verifiable-access-controlled-digital-product-passports.html' | relative_url }}">How can DPP and DBP transactions verify both product evidence and the legal authority to act?</a></li>
         <li><a href="{{ '/evidence-graphs-industrial-ai-data-plane.html' | relative_url }}">How can Industrial AI trace provenance, validation, freshness, and conflicting evidence across organizations?</a></li>
@@ -144,6 +149,20 @@ image_alt: "Spherity Research — research for the systems we need to trust, wit
         <li><a href="{{ '/ebw-roadmap.html' | relative_url }}">Which legal and operational gates shape European Business Wallet adoption?</a></li>
         <li><a href="{{ '/threat-escalation-model-germany-eu.html' | relative_url }}">How can Germany and the EU test readiness across coupled technology risks?</a></li>
       </ul>
+    </div>
+  </section>
+
+  <section class="market-position-spotlight portal-shell" aria-labelledby="market-position-title">
+    <div class="market-position-heading">
+      <p class="eyebrow eyebrow-dark"><span></span>Market position</p>
+      <h2 id="market-position-title">Spherity in the Gartner Digital Product Passport Emerging Market Quadrant</h2>
+      <a href="{{ '/spherity-dpp-dbp-strategy-market-positioning.html' | relative_url }}">Read the strategy paper <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="market-position-copy">
+      <p>Gartner® published the Emerging Market Quadrant for Digital Product Passport — Established Vendors on 6 July 2026. Spherity is positioned as the sole vendor in the Pioneers quadrant. [1]</p>
+      <p>Spherity sees this identity-first position as the foundation for a wider trust architecture that can extend from physical-product DPPs to AI Service Passports for AI systems and services. This extension is Spherity's strategic outlook and was not part of Gartner's DPP evaluation.</p>
+      <p>Spherity treats the Gartner placement as one independent market perspective. Spherity's own view is that its technology leadership in identity-first and cyber-secure DPP infrastructure rests on its architecture, regulated production experience and partner ecosystem. The strategic objective is to make product data trustworthy, usable across company boundaries and suitable for automated decisions.</p>
+      <p class="market-position-source">[1] <a href="https://www.gartner.com/en/documents/8098797" rel="external"><em>Emerging Market Quadrant for Digital Product Passport — Established Vendors</em></a>, 6 July 2026, Gartner document 8098797.</p>
     </div>
   </section>
 

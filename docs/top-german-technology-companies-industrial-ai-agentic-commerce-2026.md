@@ -91,6 +91,9 @@ questions_answered:
   - question: "What role does Spherity play in trusted agentic commerce?"
     answer: "Spherity provides complementary, model- and platform-agnostic trust infrastructure across organizational and agent identity, European Business Wallets, Digital Product Passports, verifiable credentials, evidence provenance, authorization, action receipts, and crypto-agility. Roadmap capabilities extend toward hardware and runtime assurance without replacing certified control systems."
 related_publications:
+  - title: "Spherity Strategy and Market Positioning Update"
+    url: "/spherity-dpp-dbp-strategy-market-positioning.html"
+    context: "Connects Spherity's Gartner Pioneers position to DPP and DBP execution, EBW convergence, agent-ready evidence, and the AI Service Passport outlook."
   - title: "European Business Wallets as the Legal Control Plane for Zero Trust AI Agents"
     url: "/ebw-zero-trust-ai-agents.html"
     context: "Develops the control-plane model for organizational identity, delegated agent authority, policy, status, and accountable action evidence."

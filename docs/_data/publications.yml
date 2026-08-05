@@ -1,3 +1,30 @@
+- title: "Spherity Strategy and Market Positioning Update"
+  type: "Strategy paper"
+  date_label: "5 August 2026"
+  date_iso: "2026-08-05"
+  description: "Spherity's identity-first DPP and DBP strategy, Gartner Pioneers position, EBW convergence, cyber-secure product data, and Trusted AI outlook."
+  topics:
+    - "DPP & DBP"
+    - "Wallets & data sharing"
+    - "Trusted AI"
+  filters: "dpp identity wallets ai infrastructure"
+  search: "spherity strategy market positioning gartner emerging market quadrant digital product passport established vendors sole vendor pioneers quadrant gartner emq dpp gartner document 8098797 digital product passport digital product passports dpp digital battery passport digital battery passports dbp european business wallet ebw vera eida caro dpp registry identity first cyber secure dpp legal person identity verifiable credentials authorization authorisation batteries battery energy storage systems bess micro erp product centric execution layer agentic internet agentic commerce ai service passport aisp trusted ai industrial ai physical ai cirpass 2 risk study regulatory compliance product safety cyber resilience act artificial intelligence act data sharing data spaces"
+  image: "/assets/preview-dpp-dbp-strategy-market-positioning.webp"
+  image_alt: "Spherity strategy paper on its sole-vendor Pioneers position in Gartner's Digital Product Passport Emerging Market Quadrant, DPP and DBP execution, EBW convergence, and Trusted AI."
+  image_width: 1200
+  image_height: 630
+  media_class: "card-media-wide"
+  format: "HTML + PDF"
+  featured: true
+  links:
+    - label: "Read strategy"
+      url: "/spherity-dpp-dbp-strategy-market-positioning.html"
+      arrow: "→"
+    - label: "Download PDF"
+      url: "/Spherity_Strategy_Digital_Product_Passports_DPP_DBP_Market_Positioning_And_Outlook.pdf"
+      arrow: "↓"
+      secondary: true
+
 - title: "Top 10 German Technology Companies Building Industrial AI, Physical AI and Agentic Commerce"
   type: "Technology outlook"
   date_label: "3 August 2026"
