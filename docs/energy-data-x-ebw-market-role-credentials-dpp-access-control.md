@@ -27,6 +27,8 @@ author_entities:
     affiliation: "Fraunhofer IOSB-AST"
   - name: "Carsten Stöcker"
     affiliation: "Spherity GmbH"
+    same_as:
+      - "https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/"
 author_affiliations:
   - "Jan-Niklas Gößling — Amprion GmbH"
   - "René Hoffmann — Westnetz GmbH"

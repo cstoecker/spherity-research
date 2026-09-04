@@ -16,6 +16,13 @@ const basePath = "/spherity-research";
 const canonicalOrigin = "https://spherity.github.io/spherity-research";
 const indexNowKey = "ae12be17912040a1bceb67f0efcc1cf3";
 const errors = [];
+const authorIdentityUrls = new Map([
+  ["Dr. Carsten Stöcker", "https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/"],
+  ["Carsten Stöcker", "https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/"],
+  ["Bo Harald", "https://www.linkedin.com/in/bo-harald-4768b51/"],
+  ["Brian Couzens", "https://www.linkedin.com/in/bcouzens/"],
+  ["Prof. Dr. Ingrid Vasiliu-Feltes", "https://www.linkedin.com/in/ingrid-vasiliu-feltes-mdmba/"]
+]);
 
 const exists = async (target) => {
   try {
@@ -779,6 +786,33 @@ for (const htmlFile of htmlFiles) {
     const articleSchema = parsedSchemas.find(
       (schema) => schema?.["@type"] === "ScholarlyArticle"
     );
+    const articleAuthors = Array.isArray(articleSchema?.author)
+      ? articleSchema.author
+      : articleSchema?.author
+        ? [articleSchema.author]
+        : [];
+    for (const author of articleAuthors) {
+      const expectedIdentityUrl = authorIdentityUrls.get(author?.name);
+      if (!expectedIdentityUrl) continue;
+      const sameAs = Array.isArray(author.sameAs)
+        ? author.sameAs
+        : author.sameAs
+          ? [author.sameAs]
+          : [];
+      if (!sameAs.includes(expectedIdentityUrl)) {
+        errors.push(
+          `${htmlFile}: author ${author.name} must include the verified LinkedIn URL in sameAs.`
+        );
+      }
+      if (
+        author.name.includes("Carsten Stöcker") &&
+        author.url !== `${canonicalOrigin}/#dr-carsten-stoecker`
+      ) {
+        errors.push(
+          `${htmlFile}: Carsten Stöcker must retain the Spherity Research homepage profile as author.url.`
+        );
+      }
+    }
     const articleMediaReferences = [
       ...(Array.isArray(articleSchema?.encoding)
         ? articleSchema.encoding
@@ -870,6 +904,19 @@ if (await exists(path.join(siteDirectory, "index.html"))) {
     if (!topLevelSchemaTypes.has(type)) {
       errors.push(`index.html: ${type} must be exposed as a top-level JSON-LD block.`);
     }
+  }
+
+  const homepageWebsite = homepageSchemas.find((schema) => schema?.["@type"] === "WebSite");
+  const homepageAuthorSameAs = Array.isArray(homepageWebsite?.author?.sameAs)
+    ? homepageWebsite.author.sameAs
+    : homepageWebsite?.author?.sameAs
+      ? [homepageWebsite.author.sameAs]
+      : [];
+  if (homepageWebsite?.author?.url !== `${canonicalOrigin}/#dr-carsten-stoecker`) {
+    errors.push("index.html: Carsten Stöcker must retain the homepage profile as author.url.");
+  }
+  if (!homepageAuthorSameAs.includes(authorIdentityUrls.get("Dr. Carsten Stöcker"))) {
+    errors.push("index.html: Carsten Stöcker must include the verified LinkedIn URL in sameAs.");
   }
 
   const faqSchema = homepageSchemas.find((schema) => schema?.["@type"] === "FAQPage");

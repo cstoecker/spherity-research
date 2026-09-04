@@ -14,8 +14,12 @@ authors:
 author_entities:
   - name: "Bo Harald"
     affiliation: "Why Advisory Oy"
+    same_as:
+      - "https://www.linkedin.com/in/bo-harald-4768b51/"
   - name: "Carsten Stöcker"
     affiliation: "Spherity GmbH"
+    same_as:
+      - "https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/"
 author_affiliations:
   - "Bo Harald — Why Advisory Oy"
   - "Carsten Stöcker — Spherity GmbH"

@@ -14,10 +14,16 @@ authors:
 author_entities:
   - name: "Brian Couzens"
     affiliation: "SITG Consulting"
+    same_as:
+      - "https://www.linkedin.com/in/bcouzens/"
   - name: "Dr. Carsten Stöcker"
     affiliation: "Spherity GmbH"
+    same_as:
+      - "https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/"
   - name: "Prof. Dr. Ingrid Vasiliu-Feltes"
     affiliation: "University of Miami, Herbert Business School"
+    same_as:
+      - "https://www.linkedin.com/in/ingrid-vasiliu-feltes-mdmba/"
 affiliation: "SITG Consulting; Spherity GmbH; University of Miami, Herbert Business School"
 date: "2026-05-21"
 last_modified_at: "2026-07-30"

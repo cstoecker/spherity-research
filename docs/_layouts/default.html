@@ -166,6 +166,7 @@
       "givenName": "Carsten",
       "familyName": "Stöcker",
       "url": "{{ '/' | absolute_url }}#dr-carsten-stoecker",
+      "sameAs": ["https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/"],
       "affiliation": { "@id": "https://www.spherity.com/#organization" },
       "worksFor": { "@id": "https://www.spherity.com/#organization" },
       "knowsAbout": [
@@ -424,6 +425,7 @@
         "@type": "Person",
         "name": {{ author.name | jsonify }},
         {% if author.url %}"url": {{ author.url | jsonify }},{% elsif author.name contains "Carsten Stöcker" %}"url": "{{ '/' | absolute_url }}#dr-carsten-stoecker",{% endif %}
+        {% if author.same_as %}"sameAs": {{ author.same_as | jsonify }},{% elsif author.name contains "Carsten Stöcker" %}"sameAs": ["https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/"],{% endif %}
         "affiliation": {
           "@type": "Organization",
           "name": {{ author.affiliation | jsonify }}
@@ -436,6 +438,7 @@
         "@type": "Person",
         "name": {{ author | jsonify }},
         {% if author contains "Carsten Stöcker" %}"url": "{{ '/' | absolute_url }}#dr-carsten-stoecker",{% endif %}
+        {% if author contains "Carsten Stöcker" %}"sameAs": ["https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/"],{% endif %}
         "affiliation": {
           "@type": "Organization",
           "name": {{ page.affiliation | default: "Spherity GmbH" | jsonify }}
@@ -447,6 +450,7 @@
         "@type": "Person",
         "name": {{ author_name | jsonify }},
         {% if author_name contains "Carsten Stöcker" %}"url": "{{ '/' | absolute_url }}#dr-carsten-stoecker",{% endif %}
+        {% if author_name contains "Carsten Stöcker" %}"sameAs": ["https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/"],{% endif %}
         "affiliation": {
           "@type": "Organization",
           "name": {{ page.affiliation | default: "Spherity GmbH" | jsonify }}
