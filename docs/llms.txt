@@ -12,9 +12,20 @@ Canonical library: {{ "/" | absolute_url }}
 {% for publication in site.data.publications %}
 {% assign primary_link = publication.links | first %}
 - [{{ publication.title }}]({{ primary_link.url | absolute_url }}): {{ publication.description }}
-{% for link in publication.links %}{% if link.url contains ".pdf" %}
-  - [Full PDF]({{ link.url | absolute_url }})
-{% endif %}{% endfor %}
+{% endfor %}
+
+## PDF editions
+
+{% assign paper_pages = site.pages | where: "layout", "research-respec" | sort: "date" | reverse %}
+{% for paper in paper_pages %}
+{% if paper.associated_media %}
+### {{ paper.title }}
+{% for media in paper.associated_media %}
+- [{{ media.name }}]({{ media.url | absolute_url }})
+{% endfor %}
+{% elsif paper.pdf_url %}
+- [{{ paper.title }} — PDF]({{ paper.pdf_url | absolute_url }})
+{% endif %}
 {% endfor %}
 
 ## Site resources

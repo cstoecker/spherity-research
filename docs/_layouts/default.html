@@ -11,7 +11,8 @@
 {% else %}
   {% assign author_name = page.author | default: site.author.name | default: "Dr. Carsten Stöcker" %}
 {% endif %}
-{% assign publisher_name = page.affiliation | default: "Spherity GmbH" %}
+{% assign author_affiliation = page.affiliation | default: "Spherity GmbH" %}
+{% assign publisher_name = page.publisher | default: "Spherity GmbH" %}
 {% assign modified_date = page.last_modified_at | default: page.date %}
 {% assign logo_path = site.logo | default: "/assets/spherity-logo-horizontal-800.webp" %}
 {% assign favicon_path = site.favicon | default: "/assets/spherity_logo_336x336_centered_margins.png" %}
@@ -46,7 +47,7 @@
   <title>{% if page.url == "/" %}{{ site.title | escape }} — Identity, Infrastructure, Resilience{% elsif page.seo_title %}{{ browser_title | escape }}{% else %}{{ page_title | escape }} | {{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page_description | escape }}">
   <meta name="author" content="{{ author_name | escape }}">
-  <meta name="author-affiliation" content="{{ publisher_name | escape }}">
+  <meta name="author-affiliation" content="{{ author_affiliation | escape }}">
   <meta name="DC.creator" content="{{ author_name | escape }}">
   <meta name="DC.publisher" content="{{ publisher_name | escape }}">
   {% if page_keywords %}
@@ -59,6 +60,13 @@
   <link rel="canonical" href="{{ canonical_url | escape }}">
   <link rel="sitemap" type="application/xml" title="Spherity Research sitemap" href="{{ '/sitemap.xml' | absolute_url }}">
   <link rel="license" href="{{ content_license | escape }}">
+  {% if page.associated_media %}
+    {% for media in page.associated_media %}
+  <link rel="alternate" type="application/pdf" href="{{ media.url | absolute_url | escape }}" title="{{ media.name | escape }}">
+    {% endfor %}
+  {% elsif page.pdf_url %}
+  <link rel="alternate" type="application/pdf" href="{{ page.pdf_url | absolute_url | escape }}" title="{{ page_title | escape }} — PDF">
+  {% endif %}
   <link rel="icon" type="image/png" sizes="336x336" href="{{ favicon_path | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="{{ favicon_path | relative_url }}">
   <link rel="apple-touch-icon" sizes="336x336" href="{{ favicon_path | relative_url }}">
@@ -95,12 +103,19 @@
 
   {% if page.layout == "research-respec" %}
   <meta name="citation_title" content="{{ page_title | escape }}">
-  {% if page.authors %}
+  {% if page.author_entities %}
+    {% for author in page.author_entities %}
+  <meta name="citation_author" content="{{ author.name | escape }}">
+  <meta name="citation_author_institution" content="{{ author.affiliation | escape }}">
+    {% endfor %}
+  {% elsif page.authors %}
     {% for author in page.authors %}
   <meta name="citation_author" content="{{ author | escape }}">
+  <meta name="citation_author_institution" content="{{ author_affiliation | escape }}">
     {% endfor %}
   {% else %}
   <meta name="citation_author" content="{{ author_name | escape }}">
+  <meta name="citation_author_institution" content="{{ author_affiliation | escape }}">
   {% endif %}
   {% if page.citation_publication_date %}
   <meta name="citation_publication_date" content="{{ page.citation_publication_date | escape }}">
@@ -123,6 +138,10 @@
   <meta name="citation_lastpage" content="{{ page.page_end | escape }}">
   {% endif %}
   <meta name="citation_abstract" content="{{ page.answer_summary | default: page_description | escape }}">
+  <meta name="citation_language" content="{{ page.lang | default: 'en' | escape }}">
+  {% if page_keywords %}
+  <meta name="citation_keywords" content="{{ page_keywords | join: '; ' | escape }}">
+  {% endif %}
   <meta name="citation_fulltext_html_url" content="{{ canonical_url | escape }}">
   <meta name="citation_license" content="{{ content_license | escape }}">
   {% if page.pdf_url %}
@@ -353,195 +372,265 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
+    "@type": "WebSite",
+    "@id": "{{ '/' | absolute_url }}#website",
+    "url": "{{ '/' | absolute_url }}",
+    "name": "Spherity Research",
+    "description": {{ site.description | jsonify }},
+    "publisher": { "@id": "https://www.spherity.com/#organization" },
+    "inLanguage": ["en", "de"],
+    "license": {{ site.content_license | jsonify }},
+    "hasPart": { "@id": "{{ canonical_url | escape }}#article" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "@id": "{{ canonical_url | escape }}#article",
+    "url": "{{ canonical_url | escape }}",
+    "identifier": "{{ canonical_url | escape }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ canonical_url | escape }}"
+    },
+    "headline": {{ page_title | jsonify }},
+    {% if page.seo_title %}"alternativeHeadline": {{ page.seo_title | jsonify }},{% endif %}
+    "description": {{ page_description | jsonify }},
+    {% if page.abstract_de %}"abstract": [
       {
-        "@type": "Organization",
-        "@id": "https://www.spherity.com/#organization",
-        "name": "Spherity GmbH",
-        "url": "https://www.spherity.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": {{ logo_url | jsonify }}
+        "@value": {{ page.answer_summary | default: page_description | jsonify }},
+        "@language": {{ page.lang | default: "en" | jsonify }}
+      },
+      {
+        "@value": {{ page.abstract_de | jsonify }},
+        "@language": "de"
+      }
+    ],{% else %}"abstract": {{ page.answer_summary | default: page_description | jsonify }},{% endif %}
+    "image": {
+      "@type": "ImageObject",
+      "url": {{ image_url | jsonify }},
+      "contentUrl": {{ image_url | jsonify }},
+      "caption": {{ page.image_alt | default: page_title | jsonify }},
+      "width": {{ page.image_width | default: 1200 }},
+      "height": {{ page.image_height | default: 630 }}
+    },
+    {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
+    {% if modified_date %}"dateModified": "{{ modified_date | date_to_xmlschema }}",{% endif %}
+    "author": [
+      {% if page.author_entities %}
+        {% for author in page.author_entities %}
+      {
+        "@type": "Person",
+        "name": {{ author.name | jsonify }},
+        {% if author.url %}"url": {{ author.url | jsonify }},{% elsif author.name contains "Carsten Stöcker" %}"url": "{{ '/' | absolute_url }}#dr-carsten-stoecker",{% endif %}
+        "affiliation": {
+          "@type": "Organization",
+          "name": {{ author.affiliation | jsonify }}
+        }
+      }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      {% elsif page.authors %}
+        {% for author in page.authors %}
+      {
+        "@type": "Person",
+        "name": {{ author | jsonify }},
+        {% if author contains "Carsten Stöcker" %}"url": "{{ '/' | absolute_url }}#dr-carsten-stoecker",{% endif %}
+        "affiliation": {
+          "@type": "Organization",
+          "name": {{ page.affiliation | default: "Spherity GmbH" | jsonify }}
+        }
+      }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      {% else %}
+      {
+        "@type": "Person",
+        "name": {{ author_name | jsonify }},
+        {% if author_name contains "Carsten Stöcker" %}"url": "{{ '/' | absolute_url }}#dr-carsten-stoecker",{% endif %}
+        "affiliation": {
+          "@type": "Organization",
+          "name": {{ page.affiliation | default: "Spherity GmbH" | jsonify }}
+        }
+      }
+      {% endif %}
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://www.spherity.com/#organization",
+      "name": "Spherity GmbH",
+      "url": "https://www.spherity.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": {{ logo_url | jsonify }}
+      }
+    },
+    "isPartOf": {% if page.journal_title %}[
+      {
+        "@type": "PublicationIssue",
+        "issueNumber": {{ page.issue | default: "" | jsonify }},
+        "isPartOf": {
+          "@type": "PublicationVolume",
+          "volumeNumber": {{ page.volume | default: "" | jsonify }},
+          "isPartOf": {
+            "@type": "Periodical",
+            "name": {{ page.journal_title | jsonify }}
+          }
         }
       },
+      { "@id": "{{ '/' | absolute_url }}#website" }
+    ]{% else %}{ "@id": "{{ '/' | absolute_url }}#website" }{% endif %},
+    {% if page.page_start %}"pageStart": {{ page.page_start | jsonify }},{% endif %}
+    {% if page.page_end %}"pageEnd": {{ page.page_end | jsonify }},{% endif %}
+    {% if page.secondary_language %}"inLanguage": [{{ page.lang | default: "en" | jsonify }}, {{ page.secondary_language | jsonify }}],{% else %}"inLanguage": {{ page.lang | default: "en" | jsonify }},{% endif %}
+    "keywords": {{ page_keywords | join: ", " | jsonify }},
+    "genre": {{ page.paper_status | default: "Spherity Research Paper" | jsonify }},
+    {% if page.audiences %}"audience": [
+      {% for audience in page.audiences %}{
+        "@type": "Audience",
+        "audienceType": {{ audience | jsonify }}
+      }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ],{% endif %}
+    {% if page.spatial_coverage %}"spatialCoverage": [
+      {% for place in page.spatial_coverage %}{
+        "@type": "Place",
+        "name": {{ place | jsonify }}
+      }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ],{% endif %}
+    "encodingFormat": "text/html",
+    "isAccessibleForFree": true,
+    "license": {{ content_license | jsonify }},
+    "copyrightNotice": {{ site.copyright_holder | default: "The author or co-authors named on this publication" | jsonify }}{% if page.about %},
+    "about": {{ page.about | jsonify }}{% endif %}{% if page.mentions %},
+    "mentions": {{ page.mentions | jsonify }}{% endif %}{% if page.citations %},
+    "citation": {{ page.citations | jsonify }}{% endif %}{% if page.associated_media %},
+    "encoding": [
+      {% for media in page.associated_media %}{ "@id": "{{ media.url | absolute_url }}#media-object" }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ],
+    "associatedMedia": [
+      {% for media in page.associated_media %}{ "@id": "{{ media.url | absolute_url }}#media-object" }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ]{% elsif page.pdf_url %},
+    "encoding": { "@id": "{{ page.pdf_url | absolute_url }}#media-object" },
+    "associatedMedia": { "@id": "{{ page.pdf_url | absolute_url }}#media-object" }{% endif %}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "{{ canonical_url | escape }}#breadcrumbs",
+    "itemListElement": [
       {
-        "@type": "WebSite",
-        "@id": "{{ '/' | absolute_url }}#website",
-        "url": "{{ '/' | absolute_url }}",
+        "@type": "ListItem",
+        "position": 1,
         "name": "Spherity Research",
-        "publisher": { "@id": "https://www.spherity.com/#organization" },
-        "inLanguage": "en"
+        "item": "{{ '/' | absolute_url }}"
       },
       {
-        "@type": "ScholarlyArticle",
-        "@id": "{{ canonical_url | escape }}#article",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "{{ canonical_url | escape }}"
-        },
-        "headline": {{ page_title | jsonify }},
-        {% if page.seo_title %}"alternativeHeadline": {{ page.seo_title | jsonify }},{% endif %}
-        "description": {{ page_description | jsonify }},
-        {% if page.abstract_de %}"abstract": [
-          {
-            "@value": {{ page.answer_summary | default: page_description | jsonify }},
-            "@language": {{ page.lang | default: "en" | jsonify }}
-          },
-          {
-            "@value": {{ page.abstract_de | jsonify }},
-            "@language": "de"
-          }
-        ],{% else %}"abstract": {{ page.answer_summary | default: page_description | jsonify }},{% endif %}
-        "image": [
-          {
-            "@type": "ImageObject",
-            "url": {{ image_url | jsonify }},
-            "caption": {{ page.image_alt | default: page_title | jsonify }}
-          }
-        ],
-        {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
-        {% if modified_date %}"dateModified": "{{ modified_date | date_to_xmlschema }}",{% endif %}
-        "author": [
-          {% if page.author_entities %}
-            {% for author in page.author_entities %}
-          {
-            "@type": "Person",
-            "name": {{ author.name | jsonify }},
-            "affiliation": {
-              "@type": "Organization",
-              "name": {{ author.affiliation | jsonify }}
-            }
-          }{% unless forloop.last %},{% endunless %}
-            {% endfor %}
-          {% elsif page.authors %}
-            {% for author in page.authors %}
-          {
-            "@type": "Person",
-            "name": {{ author | jsonify }},
-            "affiliation": { "@id": "https://www.spherity.com/#organization" }
-          }{% unless forloop.last %},{% endunless %}
-            {% endfor %}
-          {% else %}
-          {
-            "@type": "Person",
-            "name": {{ author_name | jsonify }},
-            "affiliation": { "@id": "https://www.spherity.com/#organization" }
-          }
-          {% endif %}
-        ],
-        "publisher": { "@id": "https://www.spherity.com/#organization" },
-        "isPartOf": {% if page.journal_title %}[
-          {
-            "@type": "PublicationIssue",
-            "issueNumber": {{ page.issue | default: "" | jsonify }},
-            "isPartOf": {
-              "@type": "PublicationVolume",
-              "volumeNumber": {{ page.volume | default: "" | jsonify }},
-              "isPartOf": {
-                "@type": "Periodical",
-                "name": {{ page.journal_title | jsonify }}
-              }
-            }
-          },
-          { "@id": "{{ '/' | absolute_url }}#website" }
-        ]{% else %}{ "@id": "{{ '/' | absolute_url }}#website" }{% endif %},
-        {% if page.page_start %}"pageStart": {{ page.page_start | jsonify }},{% endif %}
-        {% if page.page_end %}"pageEnd": {{ page.page_end | jsonify }},{% endif %}
-        {% if page.secondary_language %}"inLanguage": [{{ page.lang | default: "en" | jsonify }}, {{ page.secondary_language | jsonify }}],{% else %}"inLanguage": {{ page.lang | default: "en" | jsonify }},{% endif %}
-        "keywords": {{ page.tags | join: ", " | jsonify }},
-        "genre": {{ page.paper_status | default: "Spherity Research Paper" | jsonify }},
-        {% if page.audiences %}"audience": [
-          {% for audience in page.audiences %}{
-            "@type": "Audience",
-            "audienceType": {{ audience | jsonify }}
-          }{% unless forloop.last %},{% endunless %}{% endfor %}
-        ],{% endif %}
-        {% if page.spatial_coverage %}"spatialCoverage": [
-          {% for place in page.spatial_coverage %}{
-            "@type": "Place",
-            "name": {{ place | jsonify }}
-          }{% unless forloop.last %},{% endunless %}{% endfor %}
-        ],{% endif %}
-        "encodingFormat": "text/html",
-        "isAccessibleForFree": true,
-        "license": {{ content_license | jsonify }},
-        "copyrightNotice": {{ site.copyright_holder | default: "The author or co-authors named on this publication" | jsonify }}{% if page.about %},
-        "about": {{ page.about | jsonify }}{% endif %}{% if page.mentions %},
-        "mentions": {{ page.mentions | jsonify }}{% endif %}{% if page.citations %},
-        "citation": {{ page.citations | jsonify }}{% endif %}{% if page.associated_media %},
-        "associatedMedia": [
-          {% for media in page.associated_media %}{
-            "@type": "MediaObject",
-            "name": {{ media.name | jsonify }},
-            "contentUrl": {{ media.url | absolute_url | jsonify }},
-            "encodingFormat": "application/pdf"
-          }{% unless forloop.last %},{% endunless %}{% endfor %}
-        ]{% elsif page.pdf_url %},
-        "associatedMedia": {
-          "@type": "MediaObject",
-          "contentUrl": "{{ page.pdf_url | absolute_url }}",
-          "encodingFormat": "application/pdf"
-        }{% endif %}
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "{{ canonical_url | escape }}#breadcrumbs",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Spherity Research",
-            "item": "{{ '/' | absolute_url }}"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": {{ page_title | jsonify }},
-            "item": "{{ canonical_url | escape }}"
-          }
-        ]
-      }{% if page.ranked_companies %},
-      {
-        "@type": "ItemList",
-        "@id": "{{ canonical_url | escape }}#top-10-list",
+        "@type": "ListItem",
+        "position": 2,
         "name": {{ page_title | jsonify }},
-        "description": {{ page.ranking_description | default: page_description | jsonify }},
-        "numberOfItems": {{ page.ranked_companies | size }},
-        "itemListOrder": "https://schema.org/ItemListUnordered",
-        "itemListElement": [
-          {% for company in page.ranked_companies %}
-          {
-            "@type": "ListItem",
-            "position": {{ forloop.index }},
-            "item": {
-              "@type": "Organization",
-              "name": {{ company.name | jsonify }},
-              "description": {{ company.description | jsonify }},
-              "url": {{ company.url | jsonify }}
-            }
-          }{% unless forloop.last %},{% endunless %}
-          {% endfor %}
-        ]
-      }{% endif %}{% if page.faq_schema and page.questions_answered %},
-      {
-        "@type": "FAQPage",
-        "@id": "{{ canonical_url | escape }}#questions-answered",
-        "mainEntity": [
-          {% for item in page.questions_answered %}
-          {
-            "@type": "Question",
-            "name": {{ item.question | jsonify }},
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": {{ item.answer | jsonify }}
-            }
-          }{% unless forloop.last %},{% endunless %}
-          {% endfor %}
-        ]
-      }{% endif %}
+        "item": "{{ canonical_url | escape }}"
+      }
     ]
   }
   </script>
+  {% if page.ranked_companies %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": "{{ canonical_url | escape }}#top-10-list",
+    "name": {{ page_title | jsonify }},
+    "description": {{ page.ranking_description | default: page_description | jsonify }},
+    "numberOfItems": {{ page.ranked_companies | size }},
+    "itemListOrder": "https://schema.org/ItemListUnordered",
+    "itemListElement": [
+      {% for company in page.ranked_companies %}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "item": {
+          "@type": "Organization",
+          "name": {{ company.name | jsonify }},
+          "description": {{ company.description | jsonify }},
+          "url": {{ company.url | jsonify }}
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
+  {% if page.questions_answered %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "{{ canonical_url | escape }}#questions-answered",
+    "url": "{{ canonical_url | escape }}#questions-answered",
+    "name": {{ page_title | append: " — questions answered" | jsonify }},
+    "isPartOf": { "@id": "{{ canonical_url | escape }}#article" },
+    "inLanguage": {{ page.lang | default: "en" | jsonify }},
+    "mainEntity": [
+      {% for item in page.questions_answered %}
+      {
+        "@type": "Question",
+        "@id": "{{ canonical_url | escape }}#question-{{ forloop.index }}",
+        "url": "{{ canonical_url | escape }}#questions-answered",
+        "name": {{ item.question | jsonify }},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": {{ item.answer | jsonify }}
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
+  {% if page.associated_media %}
+    {% for media in page.associated_media %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MediaObject",
+    "@id": "{{ media.url | absolute_url }}#media-object",
+    "url": {{ media.url | absolute_url | jsonify }},
+    "contentUrl": {{ media.url | absolute_url | jsonify }},
+    "name": {{ media.name | jsonify }},
+    "description": {{ page_description | jsonify }},
+    "encodingFormat": "application/pdf",
+    "isAccessibleForFree": true,
+    {% if media.license %}"license": {{ media.license | jsonify }},{% elsif page.license_exclusions %}"copyrightNotice": {{ page.license_exclusions | jsonify }},{% else %}"license": {{ content_license | jsonify }},{% endif %}
+    "inLanguage": {{ page.lang | default: "en" | jsonify }},
+    {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
+    "thumbnailUrl": {{ image_url | jsonify }},
+    {% if media.publisher %}"publisher": { "@type": "Organization", "name": {{ media.publisher | jsonify }} },{% elsif page.license_exclusions %}{% else %}"publisher": { "@id": "https://www.spherity.com/#organization" },{% endif %}
+    "isPartOf": { "@id": "{{ canonical_url | escape }}#article" }
+  }
+  </script>
+    {% endfor %}
+  {% elsif page.pdf_url %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MediaObject",
+    "@id": "{{ page.pdf_url | absolute_url }}#media-object",
+    "url": {{ page.pdf_url | absolute_url | jsonify }},
+    "contentUrl": {{ page.pdf_url | absolute_url | jsonify }},
+    "name": {{ page_title | append: " — PDF" | jsonify }},
+    "description": {{ page_description | jsonify }},
+    "encodingFormat": "application/pdf",
+    "isAccessibleForFree": true,
+    {% if page.pdf_license %}"license": {{ page.pdf_license | jsonify }},{% elsif page.license_exclusions %}"copyrightNotice": {{ page.license_exclusions | jsonify }},{% else %}"license": {{ content_license | jsonify }},{% endif %}
+    "inLanguage": {{ page.lang | default: "en" | jsonify }},
+    {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
+    "thumbnailUrl": {{ image_url | jsonify }},
+    {% if page.pdf_publisher %}"publisher": { "@type": "Organization", "name": {{ page.pdf_publisher | jsonify }} },{% elsif page.license_exclusions %}{% else %}"publisher": { "@id": "https://www.spherity.com/#organization" },{% endif %}
+    "isPartOf": { "@id": "{{ canonical_url | escape }}#article" }
+  }
+  </script>
+  {% endif %}
   {% endif %}
 
   {% if page.css %}

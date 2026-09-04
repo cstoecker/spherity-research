@@ -110,6 +110,14 @@ const markdownFiles = await glob("*.md", {
   windowsPathsNoEscape: true
 });
 
+site.pages = [];
+for (const file of markdownFiles) {
+  const source = await readFile(path.join(sourceDirectory, file), "utf8");
+  const { data } = splitFrontMatter(source);
+  const permalink = data.permalink || `/${file.replace(/\.md$/i, ".html")}`;
+  site.pages.push({ ...data, url: permalink });
+}
+
 for (const file of markdownFiles) {
   const source = await readFile(path.join(sourceDirectory, file), "utf8");
   const { data, content } = splitFrontMatter(source);

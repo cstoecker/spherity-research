@@ -358,6 +358,30 @@ for (const markdownFile of markdownFiles) {
     }
   }
 
+  if (data.associated_media !== undefined) {
+    if (!Array.isArray(data.associated_media) || data.associated_media.length === 0) {
+      errors.push(`${markdownFile}: associated_media must be a non-empty list.`);
+    } else {
+      const mediaUrls = new Set();
+      for (const [index, media] of data.associated_media.entries()) {
+        if (!media?.name || !media?.url || !/\.pdf$/i.test(media.url)) {
+          errors.push(`${markdownFile}: associated_media item ${index + 1} requires a name and PDF URL.`);
+          continue;
+        }
+        if (mediaUrls.has(media.url)) {
+          errors.push(`${markdownFile}: duplicate associated PDF ${media.url}.`);
+        }
+        mediaUrls.add(media.url);
+        if (!(await exists(sourcePathFromPublicUrl(media.url)))) {
+          errors.push(`${markdownFile}: associated PDF does not exist: ${media.url}`);
+        }
+      }
+      if (data.pdf_url && !mediaUrls.has(data.pdf_url)) {
+        errors.push(`${markdownFile}: associated_media must include the primary pdf_url.`);
+      }
+    }
+  }
+
   if (!content.includes('id="questions-answered"')) {
     const tocHasQuestions = data.toc_items?.some(
       (item) => item.href === "#questions-answered"
@@ -388,6 +412,26 @@ for (const markdownFile of markdownFiles) {
     } else {
       uniqueFields[field].set(value, markdownFile);
     }
+  }
+}
+
+const declaredPdfUrls = new Set(
+  researchPages.flatMap(({ data }) => {
+    if (Array.isArray(data.associated_media)) {
+      return data.associated_media.map((media) => media?.url).filter(Boolean);
+    }
+    return data.pdf_url ? [data.pdf_url] : [];
+  })
+);
+const sourcePdfFiles = await glob("*.pdf", {
+  cwd: sourceDirectory,
+  nodir: true,
+  windowsPathsNoEscape: true
+});
+for (const pdfFile of sourcePdfFiles) {
+  const publicUrl = `/${pdfFile.split(path.sep).join("/")}`;
+  if (!declaredPdfUrls.has(publicUrl)) {
+    errors.push(`${pdfFile}: PDF has no research landing-page MediaObject declaration.`);
   }
 }
 
@@ -610,11 +654,12 @@ for (const htmlFile of htmlFiles) {
     }
   }
 
+  const parsedSchemas = [];
   for (const script of html.matchAll(
     /<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi
   )) {
     try {
-      JSON.parse(script[1]);
+      parsedSchemas.push(JSON.parse(script[1]));
     } catch (error) {
       errors.push(`${htmlFile}: invalid JSON-LD (${error.message}).`);
     }
@@ -644,7 +689,7 @@ for (const htmlFile of htmlFiles) {
     }
   }
 
-  if (html.includes('class="research-article"')) {
+  if (/<article\b[^>]*class=["'][^"']*\bresearch-article\b[^"']*["'][^>]*>/i.test(html)) {
     const checks = [
       ['class="answer-summary"', "answer-first summary"],
       ['id="questions-answered"', "direct questions and answers"],
@@ -664,6 +709,94 @@ for (const htmlFile of htmlFiles) {
     for (const [needle, label] of checks) {
       if (!html.includes(needle)) {
         errors.push(`${htmlFile}: missing ${label}.`);
+      }
+    }
+
+    const topLevelSchemaTypes = new Set(
+      parsedSchemas.flatMap((schema) => {
+        const type = schema?.["@type"];
+        return Array.isArray(type) ? type : type ? [type] : [];
+      })
+    );
+    for (const type of ["WebSite", "ScholarlyArticle", "BreadcrumbList", "FAQPage"]) {
+      if (!topLevelSchemaTypes.has(type)) {
+        errors.push(`${htmlFile}: ${type} must be exposed as a top-level JSON-LD block.`);
+      }
+    }
+
+    const questionsSection = html.match(
+      /<section\b[^>]*class=["'][^"']*questions-answered[^"']*["'][^>]*>([\s\S]*?)<\/section>/i
+    )?.[1];
+    const renderedQuestionCount = questionsSection
+      ? [...questionsSection.matchAll(/<h3\b/gi)].length
+      : 0;
+    const faqSchema = parsedSchemas.find((schema) => schema?.["@type"] === "FAQPage");
+    if (faqSchema && faqSchema.mainEntity?.length !== renderedQuestionCount) {
+      errors.push(
+        `${htmlFile}: FAQPage schema contains ${faqSchema.mainEntity?.length || 0} questions; ` +
+          `the visible direct-answer section contains ${renderedQuestionCount}.`
+      );
+    }
+
+    const pdfAlternates = [
+      ...html.matchAll(
+        /<link\b[^>]*rel=["']alternate["'][^>]*type=["']application\/pdf["'][^>]*href=["']([^"']+)["'][^>]*>/gi
+      )
+    ].map((match) => match[1]);
+    const pdfMediaUrls = new Set(
+      parsedSchemas
+        .filter((schema) => schema?.["@type"] === "MediaObject")
+        .map((schema) => schema.contentUrl)
+    );
+    const pdfMediaSchemas = parsedSchemas.filter(
+      (schema) => schema?.["@type"] === "MediaObject"
+    );
+    for (const media of pdfMediaSchemas) {
+      if (
+        !media?.["@id"] ||
+        !media?.contentUrl ||
+        !/\.pdf$/i.test(media.contentUrl) ||
+        media.encodingFormat !== "application/pdf" ||
+        media.isAccessibleForFree !== true
+      ) {
+        errors.push(`${htmlFile}: incomplete PDF MediaObject structured data.`);
+      }
+      if (media.license && media.copyrightNotice) {
+        errors.push(`${htmlFile}: PDF MediaObject must not mix a license with an exclusion notice.`);
+      }
+    }
+    for (const pdfUrl of pdfAlternates) {
+      if (!pdfMediaUrls.has(pdfUrl)) {
+        errors.push(`${htmlFile}: PDF alternate ${pdfUrl} has no top-level MediaObject schema.`);
+      }
+    }
+    if (pdfAlternates.length !== pdfMediaUrls.size) {
+      errors.push(
+        `${htmlFile}: PDF alternate links and top-level MediaObject declarations must match one-to-one.`
+      );
+    }
+
+    const articleSchema = parsedSchemas.find(
+      (schema) => schema?.["@type"] === "ScholarlyArticle"
+    );
+    const articleMediaReferences = [
+      ...(Array.isArray(articleSchema?.encoding)
+        ? articleSchema.encoding
+        : articleSchema?.encoding
+          ? [articleSchema.encoding]
+          : []),
+      ...(Array.isArray(articleSchema?.associatedMedia)
+        ? articleSchema.associatedMedia
+        : articleSchema?.associatedMedia
+          ? [articleSchema.associatedMedia]
+          : [])
+    ];
+    const referencedMediaIds = new Set(
+      articleMediaReferences.map((media) => media?.["@id"]).filter(Boolean)
+    );
+    for (const media of pdfMediaSchemas) {
+      if (!referencedMediaIds.has(media["@id"])) {
+        errors.push(`${htmlFile}: PDF MediaObject is not linked from the ScholarlyArticle.`);
       }
     }
 
