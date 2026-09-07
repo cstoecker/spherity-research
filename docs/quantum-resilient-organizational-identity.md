@@ -26,7 +26,7 @@ author_entities:
       - "https://www.linkedin.com/in/ingrid-vasiliu-feltes-mdmba/"
 affiliation: "SITG Consulting; Spherity GmbH; University of Miami, Herbert Business School"
 date: "2026-05-21"
-last_modified_at: "2026-07-30"
+last_modified_at: "2026-09-07"
 lang: "en"
 
 permalink: /quantum-resilient-organizational-identity.html
@@ -37,8 +37,11 @@ pdf_url: "/Spherity_Research_Quantum_Resilient_Organizational_Identity_final.pdf
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 license: "https://creativecommons.org/licenses/by/4.0/"
 
-image: "/assets/quantum-resilient-organizational-identity-social.png"
+image: "/assets/preview-quantum-resilient-organizational-identity.webp"
 image_alt: "Social preview for Quantum-Resilient Organizational Identity."
+image_mime: "image/webp"
+image_width: 1200
+image_height: 630
 cover_image: "/assets/quantum-resilient-organizational-identity-cover.png"
 cover_image_alt: "First page of Quantum-Resilient Organizational Identity."
 

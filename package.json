@@ -12,14 +12,15 @@
     "build": "bundle exec jekyll build --source docs --destination _site",
     "build:preview": "node scripts/build-preview.mjs",
     "build:sites": "pnpm run test:preview && node scripts/build-sites-preview.mjs",
+    "social-cards": "node scripts/generate-social-cards.mjs",
     "start": "bundle exec jekyll serve --source docs --livereload",
     "preview": "npx serve _site",
     "sitemap": "node scripts/generate-sitemap.mjs --site-dir _site",
     "optimize": "node scripts/optimize-site.mjs --site-dir _site",
     "check": "node scripts/validate-site.mjs --site-dir _site",
     "indexnow:dry-run": "node scripts/notify-indexnow.mjs --sitemap _site/sitemap.xml --key-file docs/ae12be17912040a1bceb67f0efcc1cf3.txt --dry-run",
-    "test": "pnpm run build && pnpm run sitemap && pnpm run optimize && pnpm run check",
-    "test:preview": "pnpm run build:preview && pnpm run sitemap && pnpm run optimize && pnpm run check"
+    "test": "pnpm run social-cards && pnpm run build && pnpm run sitemap && pnpm run optimize && pnpm run check",
+    "test:preview": "pnpm run social-cards && pnpm run build:preview && pnpm run sitemap && pnpm run optimize && pnpm run check"
   },
   "devDependencies": {
     "glob": "^13.0.6",
@@ -27,6 +28,7 @@
     "lightningcss": "^1.33.0",
     "liquidjs": "^10.27.2",
     "marked": "^18.0.7",
+    "sharp": "^0.35.4",
     "yaml": "^2.9.0"
   }
 }

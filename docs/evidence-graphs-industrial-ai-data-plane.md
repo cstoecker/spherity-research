@@ -12,7 +12,7 @@ authors:
   - "Dr. Carsten Stöcker"
 affiliation: "Spherity GmbH"
 date: "2026-07-09"
-last_modified_at: "2026-07-30"
+last_modified_at: "2026-09-07"
 lang: "en"
 
 permalink: /evidence-graphs-industrial-ai-data-plane.html
@@ -23,8 +23,11 @@ pdf_url: "/Spherity_Research_Evidence_Graphs_for_Industrial_AI_Data_Plane_Archit
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 license: "https://creativecommons.org/licenses/by/4.0/"
 
-image: "/assets/evidence-graphs-industrial-ai-data-plane-social.png"
+image: "/assets/preview-evidence-graphs-industrial-ai-data-plane.webp"
 image_alt: "Social preview for Evidence Graphs for Industrial AI."
+image_mime: "image/webp"
+image_width: 1200
+image_height: 630
 cover_image: "/assets/evidence-graphs-industrial-ai-data-plane-cover.png"
 cover_image_alt: "First page of Evidence Graphs for Industrial AI."
 

@@ -14,7 +14,7 @@ authors:
   - "Dr. Carsten Stöcker"
 affiliation: "Spherity GmbH"
 date: "2026-08-03"
-last_modified_at: "2026-08-04"
+last_modified_at: "2026-09-07"
 research_cutoff: "2026-08-02"
 research_cutoff_label: "Company and regulatory facts reviewed to this date"
 lang: "en"
@@ -27,7 +27,8 @@ pdf_url: "/Spherity_Research_Top_10_German_Technology_Companies_Industrial_AI_Ph
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 license: "https://creativecommons.org/licenses/by/4.0/"
 
-image: "/assets/top-german-technology-companies-industrial-ai-2026-social.png"
+image: "/assets/preview-top-german-technology-companies-industrial-ai-2026.webp"
+image_mime: "image/webp"
 image_alt: "Social preview of the Spherity Technology Outlook on ten German companies building Industrial AI, Physical AI, and agentic commerce."
 image_width: 1200
 image_height: 630

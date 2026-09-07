@@ -12,7 +12,7 @@ authors:
   - "Dr. Carsten Stöcker"
 affiliation: "Spherity GmbH"
 date: "2026-06-01"
-last_modified_at: "2026-07-30"
+last_modified_at: "2026-09-07"
 lang: "en"
 
 permalink: /ebw-zero-trust-ai-agents.html
@@ -23,8 +23,11 @@ pdf_url: "/Spherity_Research_EBW_as_Legal_Control_Plane_for_Zero_Trust_AI_Agents
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 license: "https://creativecommons.org/licenses/by/4.0/"
 
-image: "/assets/control-plane-social.png"
+image: "/assets/preview-ebw-zero-trust-ai-agents-final.webp"
 image_alt: "Social preview for European Business Wallets as the Legal Control Plane for Zero Trust AI Agents."
+image_mime: "image/webp"
+image_width: 1200
+image_height: 630
 cover_image: "/assets/Spherity_Research_EBW_as_Legal_Control_Plane_for_Zero_Trust_AI_Agents.png"
 cover_image_alt: "First page of European Business Wallets as the Legal Control Plane for Zero Trust AI Agents."
 

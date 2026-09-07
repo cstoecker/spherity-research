@@ -19,6 +19,7 @@ author_entities:
     # Add this author to docs/_data/authors.yml with identity_reviewed: true.
     # These fields may override that reviewed profile for this publication.
     url: "https://authoritative.example/author-profile"
+    orcid: "https://orcid.org/0000-0000-0000-0001"
     same_as:
       - "https://www.linkedin.com/in/verified-author-profile/"
 author_affiliations:

@@ -107,17 +107,23 @@
   <meta name="citation_title" content="{{ page_title | escape }}">
   {% if page.author_entities %}
     {% for author in page.author_entities %}
+    {% assign citation_author_profile = site.data.authors[author.name] %}
   <meta name="citation_author" content="{{ author.name | escape }}">
   <meta name="citation_author_institution" content="{{ author.affiliation | escape }}">
+    {% if author.orcid %}<meta name="citation_author_orcid" content="{{ author.orcid | escape }}">{% elsif citation_author_profile.orcid %}<meta name="citation_author_orcid" content="{{ citation_author_profile.orcid | escape }}">{% endif %}
     {% endfor %}
   {% elsif page.authors %}
     {% for author in page.authors %}
+    {% assign citation_author_profile = site.data.authors[author] %}
   <meta name="citation_author" content="{{ author | escape }}">
   <meta name="citation_author_institution" content="{{ author_affiliation | escape }}">
+    {% if citation_author_profile.orcid %}<meta name="citation_author_orcid" content="{{ citation_author_profile.orcid | escape }}">{% endif %}
     {% endfor %}
   {% else %}
+  {% assign citation_author_profile = site.data.authors[author_name] %}
   <meta name="citation_author" content="{{ author_name | escape }}">
   <meta name="citation_author_institution" content="{{ author_affiliation | escape }}">
+  {% if citation_author_profile.orcid %}<meta name="citation_author_orcid" content="{{ citation_author_profile.orcid | escape }}">{% endif %}
   {% endif %}
   {% if page.citation_publication_date %}
   <meta name="citation_publication_date" content="{{ page.citation_publication_date | escape }}">
@@ -169,6 +175,7 @@
       "familyName": "Stöcker",
       "url": {{ homepage_author_profile.url | jsonify }},
       "sameAs": {{ homepage_author_profile.same_as | jsonify }},
+      "identifier": {{ homepage_author_profile.orcid | jsonify }},
       "affiliation": { "@id": "https://www.spherity.com/#organization" },
       "worksFor": { "@id": "https://www.spherity.com/#organization" },
       "knowsAbout": [
@@ -424,11 +431,19 @@
       {% if page.author_entities %}
         {% for author in page.author_entities %}
         {% assign author_profile = site.data.authors[author.name] %}
+        {% if author.same_as and author_profile.same_as %}
+          {% assign author_same_as = author.same_as | concat: author_profile.same_as | uniq %}
+        {% elsif author.same_as %}
+          {% assign author_same_as = author.same_as %}
+        {% else %}
+          {% assign author_same_as = author_profile.same_as %}
+        {% endif %}
       {
         "@type": "Person",
         "name": {{ author.name | jsonify }},
         {% if author.url %}"url": {{ author.url | jsonify }},{% elsif author_profile.url %}"url": {{ author_profile.url | jsonify }},{% endif %}
-        {% if author.same_as %}"sameAs": {{ author.same_as | jsonify }},{% elsif author_profile.same_as %}"sameAs": {{ author_profile.same_as | jsonify }},{% endif %}
+        {% if author_same_as %}"sameAs": {{ author_same_as | jsonify }},{% endif %}
+        {% if author.orcid %}"identifier": {{ author.orcid | jsonify }},{% elsif author_profile.orcid %}"identifier": {{ author_profile.orcid | jsonify }},{% endif %}
         "affiliation": {
           "@type": "Organization",
           "name": {{ author.affiliation | jsonify }}
@@ -443,6 +458,7 @@
         "name": {{ author | jsonify }},
         {% if author_profile.url %}"url": {{ author_profile.url | jsonify }},{% endif %}
         {% if author_profile.same_as %}"sameAs": {{ author_profile.same_as | jsonify }},{% endif %}
+        {% if author_profile.orcid %}"identifier": {{ author_profile.orcid | jsonify }},{% endif %}
         "affiliation": {
           "@type": "Organization",
           "name": {{ page.affiliation | default: "Spherity GmbH" | jsonify }}
@@ -456,6 +472,7 @@
         "name": {{ author_name | jsonify }},
         {% if author_profile.url %}"url": {{ author_profile.url | jsonify }},{% endif %}
         {% if author_profile.same_as %}"sameAs": {{ author_profile.same_as | jsonify }},{% endif %}
+        {% if author_profile.orcid %}"identifier": {{ author_profile.orcid | jsonify }},{% endif %}
         "affiliation": {
           "@type": "Organization",
           "name": {{ page.affiliation | default: "Spherity GmbH" | jsonify }}

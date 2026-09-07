@@ -97,7 +97,7 @@
   image_width: 1200
   image_height: 630
   media_class: "card-media-wide"
-  format: "HTML + PDF"
+  format: "HTML + 2 PDFs"
   featured: true
   links:
     - label: "Read topic page"
@@ -307,10 +307,10 @@
   filters: "identity resilience"
   search: "securing digital identity verifiable credential wallets quantum vulnerabilities post quantum cryptography pqc"
   image: "/assets/preview-quantum-identity.webp"
-  image_alt: "Visual summary of post-quantum risks for legal-person digital identity"
-  image_width: 586
-  image_height: 1000
-  media_class: "card-media-tall"
+  image_alt: "Spherity Research preview for securing digital identity and verifiable credential wallets against quantum risk."
+  image_width: 1200
+  image_height: 630
+  media_class: "card-media-wide"
   format: "HTML"
   links:
     - label: "Read paper"
@@ -329,9 +329,9 @@
   filters: "wallets identity"
   search: "legal operational ebw roadmap eu wide acceptance eidas european business wallet compliance data exchange"
   image: "/assets/preview-ebw-roadmap.webp"
-  image_alt: "European Business Wallet roadmap from 2026 to 2030"
-  image_width: 1100
-  image_height: 620
+  image_alt: "Spherity Research preview for the legal and operational European Business Wallet roadmap toward EU-wide acceptance by 2029."
+  image_width: 1200
+  image_height: 630
   media_class: "card-media-wide"
   format: "HTML"
   links:
@@ -350,10 +350,11 @@
     - "Hybrid warfare"
   filters: "resilience ai identity"
   search: "ai cyber quantum risk hybrid warfare physical ai germany europe resilience policy trust infrastructure"
-  graphic_kicker: "Integrated threat model"
-  graphic_title: "AI × Cyber<br>× Quantum"
-  graphic_caption: "Germany + Europe"
-  media_class: "card-media-graphic"
+  image: "/assets/preview-threat-escalation-model-germany-eu.webp"
+  image_alt: "Spherity Research preview for the cross-domain AI, cyber, quantum, hybrid-warfare and Physical AI risk model for Germany and Europe."
+  image_width: 1200
+  image_height: 630
+  media_class: "card-media-wide"
   format: "HTML"
   links:
     - label: "Read paper"

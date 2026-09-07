@@ -12,7 +12,7 @@ authors:
   - "Dr. Carsten Stöcker"
 affiliation: "Spherity GmbH"
 date: "2026-05-14"
-last_modified_at: "2026-07-30"
+last_modified_at: "2026-09-07"
 lang: "en"
 
 permalink: /Securing-Digital-Identity-Quantum-Vulnerabilities.html
@@ -22,8 +22,11 @@ latest_version: "https://spherity.github.io/spherity-research/Securing-Digital-I
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 license: "https://creativecommons.org/licenses/by/4.0/"
 
-image: "/assets/Infochart-Securing-Legal-Person-Digital-Identity-Against-Quantum-Vulnerabilities-Spherity-GmbH-05-2026.png"
-image_alt: "Infochart showing how quantum-risk preparation shifts from HNDL and Bitcoin to legal person identity, with migration urgency, a US–Germany PQC-resilient digital corridor, crypto-agile identity infrastructure, and the regulatory role of Business Wallets and the European Business Wallet."
+image: "/assets/preview-quantum-identity.webp"
+image_alt: "Spherity Research preview for securing digital identity and verifiable credential wallets against quantum risk."
+image_mime: "image/webp"
+image_width: 1200
+image_height: 630
 
 answer_summary: "The paper argues that quantum risk to digital identity is an end-to-end public-key trust-fabric problem. Migration must cover credentials, wallets, trust and status lists, registries, semantics, and long-term evidence—not only transport encryption."
 key_takeaways:

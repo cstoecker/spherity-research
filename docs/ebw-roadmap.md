@@ -15,7 +15,7 @@ authors:
   - "Dr. Martin Westerkamp"
 affiliation: "Spherity GmbH"
 date: "2026-05-18"
-last_modified_at: "2026-07-30"
+last_modified_at: "2026-09-07"
 lang: "en"
 
 permalink: /ebw-roadmap.html
@@ -25,8 +25,11 @@ latest_version: "https://spherity.github.io/spherity-research/ebw-roadmap.html"
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 license: "https://creativecommons.org/licenses/by/4.0/"
 
-image: "/assets/Europen%20Business%20Wallet%20%28EBW%29%20Roadmap%20-%20Spherity%20GmbH.png"
-image_alt: "European Business Wallet roadmap timeline showing legal, regulatory, standardisation, conformance, pilot, and adoption milestones from 2026 to 2029."
+image: "/assets/preview-ebw-roadmap.webp"
+image_alt: "Spherity Research preview for the legal and operational European Business Wallet roadmap toward EU-wide acceptance."
+image_mime: "image/webp"
+image_width: 1200
+image_height: 630
 
 answer_summary: "The roadmap treats European Business Wallet adoption as a gated legal and operational transition. The Commission proposal starts the legislative path, while standards, conformance, authentic-source credentials, pilots, national implementation, and wallet availability determine when cross-border use can work at scale."
 key_takeaways:

@@ -37,7 +37,7 @@ author_affiliations:
   - "Carsten Stöcker — Spherity GmbH"
 affiliation: "Amprion GmbH; Westnetz GmbH; TenneT TSO GmbH; Fraunhofer IOSB-AST; Spherity GmbH"
 date: "2026-08-11"
-last_modified_at: "2026-08-12"
+last_modified_at: "2026-09-07"
 research_cutoff: "2026-08-11"
 research_cutoff_label: "Regulatory and project status verified to this date"
 lang: "en"
@@ -59,8 +59,8 @@ license: "https://creativecommons.org/licenses/by/4.0/"
 license_scope: "The original web analysis on this page"
 license_exclusions: "The journal PDF, journal layout, credited source figures, photograph and other third-party material retain their respective rights and are not relicensed by this webpage."
 
-image: "/assets/energy-data-x-ebw-market-role-credentials-social.jpg"
-image_mime: "image/jpeg"
+image: "/assets/preview-energy-data-x-ebw-market-role-credentials.webp"
+image_mime: "image/webp"
 image_alt: "Social preview of the energy data-X article on European Business Wallets, market-role credentials, BESS data exchange, and controlled Digital Product Passport access."
 image_width: 1200
 image_height: 630

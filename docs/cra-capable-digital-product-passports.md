@@ -12,7 +12,7 @@ authors:
   - "Dr. Carsten Stöcker"
 affiliation: "Spherity GmbH"
 date: "2026-08-23"
-last_modified_at: "2026-08-24"
+last_modified_at: "2026-09-07"
 research_cutoff: "2026-08-23"
 research_cutoff_label: "Management brief status checked to this date; full research evidence cut-off: 2026-08-15"
 lang: "en"

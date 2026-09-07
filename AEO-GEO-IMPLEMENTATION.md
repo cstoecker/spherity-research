@@ -20,9 +20,10 @@ data.
 | Quantum-resilient organizational identity | Attack analysis only | Expand | Add the distinct multi-author governance paper and relate it to the existing attack taxonomy without duplicate entries |
 | PQC Corridor implementation | Limited homepage explanation | Add | Explain organizational authority, trust-fabric inventories, bounded corridor governance, migration controls, and evidence-led scaling |
 | Machine-readable publication index | Complete | Enforce | Catalog- and page-generated `docs/llms.txt`; no ranking claim |
-| Author identity | Complete for verified profiles | Enforce | Central `docs/_data/authors.yml` registry supplies author `url` and `sameAs`; new template publications must register or provide a verified HTTPS identity |
+| Author identity | Complete for verified profiles | Enforce | Central `docs/_data/authors.yml` registry supplies author `url`, LinkedIn and ORCID identities; new template publications require reviewed profiles and valid ORCID check digits where supplied |
 | Search-language research | Previously informal | Add | Version 2 template records Google Trends comparisons, authority terms, discovery terms, audience questions, evidence notes, and editorial decisions |
 | Contributor safeguards | Complete | Enforce | Source, template, catalog, author, schema, citation, FAQ, heading, image, PDF, sitemap, and search-research checks |
+| Social-preview consistency | Mixed legacy designs | Enforce | Shared research-grid generator, 1200 × 630 output, catalog/page alignment, size checks, and a checksum-protected Gartner-approved exception |
 | Topical discovery for DPP/DBP, data spaces, Trusted AI, resilience, and identity | Complete | Enforce | Homepage filters, research-scope sections, FAQ answers, publication relationships, catalog metadata, and authority keywords provide evidence-backed discovery without thin doorway pages |
 | “Market leader” and similar superlatives | Unsupported | Defer | Require independent, citable evidence and author approval |
 | Training-crawler permissions | Governance decision | Keep | No change without explicit approval |

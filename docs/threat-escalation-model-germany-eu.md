@@ -12,7 +12,7 @@ authors:
   - "Dr. Carsten Stöcker"
 affiliation: "Spherity GmbH"
 date: "2026-05-18"
-last_modified_at: "2026-07-30"
+last_modified_at: "2026-09-07"
 lang: "en"
 
 permalink: /threat-escalation-model-germany-eu.html
@@ -23,8 +23,11 @@ robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-previ
 license: "https://creativecommons.org/licenses/by/4.0/"
 
 logo: "/assets/spherity-logo-horizontal-800.webp"
-image: "/assets/spherity-research-og.png"
-image_alt: "Spherity Research — Identity. Infrastructure. Resilience."
+image: "/assets/preview-threat-escalation-model-germany-eu.webp"
+image_alt: "Spherity Research preview for the cross-domain AI, cyber, quantum, hybrid-warfare and Physical AI risk model for Germany and Europe."
+image_mime: "image/webp"
+image_width: 1200
+image_height: 630
 
 answer_summary: "The paper finds that Germany and the European Union have broad legal and strategic coverage but lack a sufficiently integrated, tested operating model for escalation across AI-enabled cyber operations, hybrid warfare, quantum risk, digital trust, and cyber-physical systems."
 key_takeaways:

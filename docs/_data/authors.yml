@@ -2,16 +2,20 @@
   canonical_name: "Dr. Carsten Stöcker"
   affiliation: "Spherity GmbH"
   url: "https://spherity.github.io/spherity-research/#dr-carsten-stoecker"
+  orcid: "https://orcid.org/0009-0003-7417-8872"
   same_as:
     - "https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/"
+    - "https://orcid.org/0009-0003-7417-8872"
   identity_reviewed: true
 
 "Carsten Stöcker":
   canonical_name: "Dr. Carsten Stöcker"
   affiliation: "Spherity GmbH"
   url: "https://spherity.github.io/spherity-research/#dr-carsten-stoecker"
+  orcid: "https://orcid.org/0009-0003-7417-8872"
   same_as:
     - "https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/"
+    - "https://orcid.org/0009-0003-7417-8872"
   identity_reviewed: true
 
 "Bo Harald":
@@ -24,13 +28,17 @@
 "Brian Couzens":
   canonical_name: "Brian Couzens"
   affiliation: "SITG Consulting"
+  orcid: "https://orcid.org/0009-0003-9552-2361"
   same_as:
     - "https://www.linkedin.com/in/bcouzens/"
+    - "https://orcid.org/0009-0003-9552-2361"
   identity_reviewed: true
 
 "Prof. Dr. Ingrid Vasiliu-Feltes":
   canonical_name: "Prof. Dr. Ingrid Vasiliu-Feltes"
   affiliation: "University of Miami, Herbert Business School"
+  orcid: "https://orcid.org/0000-0001-7276-354X"
   same_as:
     - "https://www.linkedin.com/in/ingrid-vasiliu-feltes-mdmba/"
+    - "https://orcid.org/0000-0001-7276-354X"
   identity_reviewed: true

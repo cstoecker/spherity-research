@@ -1,0 +1,193 @@
+- publication_url: "/europes-fundamental-ai-opportunity.html"
+  output: "/assets/preview-europes-fundamental-ai-opportunity.webp"
+  style: "research-grid-v1"
+  mode: "preserve"
+
+- publication_url: "/deutschland-ag-2-0-industrial-ai-federated-transformation.html"
+  output: "/assets/preview-deutschland-ag-2-0.webp"
+  style: "research-grid-v1"
+  mode: "preserve"
+
+- publication_url: "/trusted-agentic-ai-china-eu-us-comparative-analysis.html"
+  output: "/assets/preview-trusted-agentic-ai-china-eu-us.webp"
+  style: "research-grid-v1"
+  mode: "preserve"
+
+- publication_url: "/cra-capable-digital-product-passports.html"
+  output: "/assets/preview-cra-capable-digital-product-passports.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "MANAGEMENT BRIEF + FULL RESEARCH · 2 PDFs"
+  title_lines:
+    - "From Static Compliance"
+    - "to Continuous Cyber"
+    - "Assurance"
+  deck_lines:
+    - "CRA-capable Digital Product Passports for"
+    - "SBOM, VEX and lifecycle evidence."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  visual: "/assets/cra-capable-dpp-management-brief-cover.jpg"
+  visual_fit: "contain"
+
+- publication_url: "/energy-data-x-ebw-market-role-credentials-dpp-access-control.html"
+  output: "/assets/preview-energy-data-x-ebw-market-role-credentials.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "JOURNAL ARTICLE · INDUSTRY CASE STUDY"
+  title_lines:
+    - "European Business Wallet"
+    - "& Market Role Credentials"
+  subtitle_lines:
+    - "The energy data-X reference case"
+  deck_lines:
+    - "Governed DPP, DBP and BESS data access"
+    - "across trusted European data spaces."
+  byline: "Five-author industry case study · 2026"
+  visual: "/assets/energy-data-x-ebw-market-role-credentials-cover-v2.jpg"
+  visual_fit: "contain"
+
+- publication_url: "/spherity-dpp-dbp-strategy-market-positioning.html"
+  output: "/assets/preview-dpp-dbp-strategy-market-positioning.webp"
+  style: "approved-gartner-2026"
+  mode: "approved-exception"
+  protected_assets:
+    - path: "/assets/preview-dpp-dbp-strategy-market-positioning.webp"
+      sha256: "3add2d48302aeb671cf46e48bae5b3b3f10f952c3f6476a2fe0073ceff37f09d"
+    - path: "/assets/dpp-dbp-strategy-market-positioning-social.png"
+      sha256: "97dec357b9e3d67670e5b04805b85fa79242d532d0564ce9b4d6e49e26b24b8b"
+
+- publication_url: "/top-german-technology-companies-industrial-ai-agentic-commerce-2026.html"
+  output: "/assets/preview-top-german-technology-companies-industrial-ai-2026.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "TECHNOLOGY OUTLOOK · 2026"
+  title_lines:
+    - "Top 10 German"
+    - "Technology Companies"
+  subtitle_lines:
+    - "Industrial AI · Physical AI · Agentic Commerce"
+  deck_lines:
+    - "A strategic stack for Germany’s agentic"
+    - "industrial economy."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  visual: "/assets/top-german-technology-companies-industrial-ai-2026-cover.png"
+  visual_fit: "contain"
+
+- publication_url: "/verifiable-access-controlled-digital-product-passports.html"
+  output: "/assets/preview-dpp-verifiable-access-controlled.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "RESEARCH ARTICLE · DPP & DBP"
+  title_size: 44
+  title_lines:
+    - "Verifiable,"
+    - "Access-Controlled"
+    - "Digital Product Passports"
+  subtitle_lines:
+    - "Control plane + evidence-graph data plane"
+  deck_lines:
+    - "Authorised product-data transactions for"
+    - "batteries, BESS and Industrial AI."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  visual: "/assets/dpp-verifiable-access-controlled-cover.png"
+  visual_fit: "contain"
+
+- publication_url: "/evidence-graphs-industrial-ai-data-plane.html"
+  output: "/assets/preview-evidence-graphs-industrial-ai-data-plane.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "RESEARCH PERSPECTIVE · INDUSTRIAL AI"
+  title_lines:
+    - "Evidence Graphs"
+    - "for Industrial AI"
+  subtitle_lines:
+    - "A data plane for trustworthy evidence"
+  deck_lines:
+    - "Provenance, validation and freshness across"
+    - "supply chains and critical infrastructure."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  visual: "/assets/evidence-graphs-industrial-ai-data-plane-cover.png"
+  visual_fit: "contain"
+
+- publication_url: "/ebw-zero-trust-ai-agents.html"
+  output: "/assets/preview-ebw-zero-trust-ai-agents-final.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "FEATURED PAPER · TRUSTED AI"
+  title_size: 43
+  title_lines:
+    - "European Business Wallets"
+    - "as the Legal Control Plane"
+    - "for Zero Trust AI Agents"
+  deck_lines:
+    - "Legal-person identity, delegated authority and"
+    - "policy-bound actions across companies."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  visual: "/assets/Spherity_Research_EBW_as_Legal_Control_Plane_for_Zero_Trust_AI_Agents.png"
+  visual_fit: "contain"
+
+- publication_url: "/quantum-resilient-organizational-identity.html"
+  output: "/assets/preview-quantum-resilient-organizational-identity.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "RESEARCH PAPER · QUANTUM RESILIENCE"
+  title_lines:
+    - "Quantum-Resilient"
+    - "Organizational Identity"
+  subtitle_lines:
+    - "Governance, Business Wallets & PQC Corridors"
+  deck_lines:
+    - "A governed trust fabric for cross-border"
+    - "identity and authorised digital action."
+  byline: "Brian Couzens · Carsten Stöcker · Ingrid Vasiliu-Feltes"
+  visual: "/assets/quantum-resilient-organizational-identity-cover.png"
+  visual_fit: "contain"
+
+- publication_url: "/Securing-Digital-Identity-Quantum-Vulnerabilities.html"
+  output: "/assets/preview-quantum-identity.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "RESEARCH PAPER · POST-QUANTUM IDENTITY"
+  title_size: 42
+  title_lines:
+    - "Securing Digital Identity"
+    - "and Credential Wallets"
+    - "against Quantum Risk"
+  deck_lines:
+    - "Attack taxonomy, economic risk and"
+    - "PQC-resilient digital corridors."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  visual: "/assets/Infochart-Securing-Legal-Person-Digital-Identity-Against-Quantum-Vulnerabilities-Spherity-GmbH-05-2026.png"
+  visual_fit: "contain"
+
+- publication_url: "/ebw-roadmap.html"
+  output: "/assets/preview-ebw-roadmap.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "POLICY ROADMAP · EUROPEAN BUSINESS WALLET"
+  title_size: 44
+  title_lines:
+    - "Legal & Operational"
+    - "EBW Roadmap Toward"
+    - "EU-Wide Acceptance"
+  deck_lines:
+    - "Legal, standards, conformance and adoption"
+    - "gates from 2026 to 2029."
+  byline: "Spherity Research · European policy roadmap"
+  visual_type: "ebw-timeline"
+
+- publication_url: "/threat-escalation-model-germany-eu.html"
+  output: "/assets/preview-threat-escalation-model-germany-eu.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "POLICY PAPER · SYSTEMIC RESILIENCE"
+  title_size: 43
+  title_lines:
+    - "AI-Cyber, Quantum Risk,"
+    - "Hybrid Warfare"
+    - "and Physical AI"
+  deck_lines:
+    - "A cross-domain escalation and readiness model"
+    - "for Germany and Europe."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  visual_type: "risk-orbits"

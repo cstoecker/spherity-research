@@ -11,7 +11,7 @@ authors:
   - "Carsten Stöcker"
 affiliation: "Spherity GmbH, Germany"
 date: "2026-08-01"
-last_modified_at: "2026-08-01"
+last_modified_at: "2026-09-07"
 lang: "en"
 
 permalink: /verifiable-access-controlled-digital-product-passports.html
@@ -22,8 +22,11 @@ pdf_url: "/Spherity_Research_DPP_Verifiable_Access_Controlled_Digital_Product_Pa
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 license: "https://creativecommons.org/licenses/by/4.0/"
 
-image: "/assets/dpp-verifiable-access-controlled-social.png"
+image: "/assets/preview-dpp-verifiable-access-controlled.webp"
 image_alt: "Social preview for Verifiable, Access-Controlled Digital Product Passports."
+image_mime: "image/webp"
+image_width: 1200
+image_height: 630
 cover_image: "/assets/dpp-verifiable-access-controlled-cover.png"
 cover_image_alt: "First page of Verifiable, Access-Controlled Digital Product Passports."
 
