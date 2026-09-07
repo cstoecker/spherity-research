@@ -90,10 +90,12 @@ const topicPills = async (topics) => {
 const prepareCardLayout = async (card, publication) => {
   const titleSize = Number(card.title_size || 48);
   const titleLineHeight = Math.round(titleSize * 1.16);
+  const subtitleSize = Number(card.subtitle_size || 30);
+  const subtitleLineHeight = Math.round(subtitleSize * 1.2);
   const titleY = 194;
   const titleBottom = titleY + (card.title_lines.length - 1) * titleLineHeight;
   const subtitleY = titleBottom + 48;
-  const subtitleBottom = subtitleY + Math.max(0, (card.subtitle_lines?.length || 0) - 1) * 36;
+  const subtitleBottom = subtitleY + Math.max(0, (card.subtitle_lines?.length || 0) - 1) * subtitleLineHeight;
   const deckY = (card.subtitle_lines?.length ? subtitleBottom : titleBottom) + 45;
   const deckBottom = deckY + Math.max(0, (card.deck_lines?.length || 0) - 1) * 28;
   const pills = await topicPills(publication.topics || []);
@@ -102,10 +104,12 @@ const prepareCardLayout = async (card, publication) => {
   const assertLinesFit = async (label, lines, style, portableCharacterLimit) => {
     for (const line of lines || []) {
       const width = await measureTextWidth(line, style);
-      const right = LEFT_TEXT_X + width;
+      const fallbackFactor =
+        process.platform !== "linux" && style.family.startsWith("Georgia") ? 1.16 : 1;
+      const right = LEFT_TEXT_X + Math.ceil(width * fallbackFactor);
       if (right > LEFT_SAFE_RIGHT) {
         problems.push(
-          `${label} “${line}” reaches x=${right}px; maximum is x=${LEFT_SAFE_RIGHT}px`
+          `${label} “${line}” reaches portable x=${right}px; maximum is x=${LEFT_SAFE_RIGHT}px`
         );
       }
       const characterCount = Array.from(line).length;
@@ -130,7 +134,7 @@ const prepareCardLayout = async (card, publication) => {
   }, 30);
   await assertLinesFit("Subtitle line", card.subtitle_lines, {
     family: "Georgia, serif",
-    size: 30
+    size: subtitleSize
   }, 42);
   await assertLinesFit("Description line", card.deck_lines, {
     family: "Arial, sans-serif",
@@ -165,6 +169,8 @@ const prepareCardLayout = async (card, publication) => {
   return {
     titleSize,
     titleLineHeight,
+    subtitleSize,
+    subtitleLineHeight,
     titleY,
     titleBottom,
     subtitleY,
@@ -219,6 +225,8 @@ const renderGeneratedCard = async (card, publication, layout) => {
   const {
     titleSize,
     titleLineHeight,
+    subtitleSize,
+    subtitleLineHeight,
     titleY,
     titleBottom,
     subtitleY,
@@ -246,7 +254,7 @@ const renderGeneratedCard = async (card, publication, layout) => {
         .brand { font: 700 18px Arial, sans-serif; letter-spacing: .5px; fill: #7be0bd; }
         .format { font: 700 15px Arial, sans-serif; letter-spacing: .7px; fill: #b9c6ce; }
         .title { font-family: Georgia, serif; font-size: ${titleSize}px; font-weight: 700; fill: #f7f9fa; }
-        .subtitle { font: 30px Georgia, serif; fill: #f7f9fa; }
+        .subtitle { font: ${subtitleSize}px Georgia, serif; fill: #f7f9fa; }
         .deck { font: 20px Arial, sans-serif; fill: #bcc7ce; }
         .byline { font: 16px Arial, sans-serif; fill: #b9c6ce; }
         .pill { font-family: Arial, sans-serif; font-weight: 700; fill: #102333; }
@@ -256,7 +264,7 @@ const renderGeneratedCard = async (card, publication, layout) => {
       <g clip-path="url(#left-safe-area)">
         <text class="format" x="72" y="132">${escapeXml(card.format_label)}</text>
         ${textLines({ lines: card.title_lines, x: 72, y: titleY, lineHeight: titleLineHeight, className: "title" })}
-        ${textLines({ lines: card.subtitle_lines, x: 72, y: subtitleY, lineHeight: 36, className: "subtitle" })}
+        ${textLines({ lines: card.subtitle_lines, x: 72, y: subtitleY, lineHeight: subtitleLineHeight, className: "subtitle" })}
         ${textLines({ lines: card.deck_lines, x: 72, y: deckY, lineHeight: 28, className: "deck" })}
         <text class="byline" x="72" y="${BYLINE_Y}">${escapeXml(card.byline)}</text>
         ${pills.markup}
@@ -284,6 +292,9 @@ const renderGeneratedCard = async (card, publication, layout) => {
     .toBuffer();
 };
 
+const generatedCards = [];
+const preflightErrors = [];
+
 for (const card of manifest) {
   const publication = publicationsByUrl.get(card.publication_url);
   if (!publication) throw new Error(`No publication catalog entry for ${card.publication_url}.`);
@@ -303,7 +314,21 @@ for (const card of manifest) {
   }
   if (card.mode === "preserve") continue;
 
-  const layout = await prepareCardLayout(card, publication);
+  try {
+    const layout = await prepareCardLayout(card, publication);
+    generatedCards.push({ card, publication, layout });
+  } catch (error) {
+    preflightErrors.push(error instanceof Error ? error.message : String(error));
+  }
+}
+
+if (preflightErrors.length) {
+  throw new Error(
+    `Social-card preflight found ${preflightErrors.length} invalid card(s):\n\n${preflightErrors.join("\n\n")}`
+  );
+}
+
+for (const { card, publication, layout } of generatedCards) {
   if (checkOnly) {
     console.log(`Validated safe area for ${card.publication_url}.`);
     continue;

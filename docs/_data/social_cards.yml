@@ -18,6 +18,7 @@
   style: "research-grid-v1"
   mode: "generated"
   format_label: "MANAGEMENT BRIEF + FULL RESEARCH · 2 PDFs"
+  title_size: 45
   title_lines:
     - "From Static Compliance"
     - "to Continuous Cyber"
@@ -63,6 +64,7 @@
   style: "research-grid-v1"
   mode: "generated"
   format_label: "TECHNOLOGY OUTLOOK · 2026"
+  title_size: 46
   title_lines:
     - "Top 10 German"
     - "Technology Companies"
@@ -81,11 +83,12 @@
   style: "research-grid-v1"
   mode: "generated"
   format_label: "RESEARCH ARTICLE · DPP & DBP"
-  title_size: 44
+  title_size: 42
   title_lines:
     - "Verifiable,"
     - "Access-Controlled"
     - "Digital Product Passports"
+  subtitle_size: 27
   subtitle_lines:
     - "Control plane + evidence-graph data plane"
   deck_lines:
@@ -117,7 +120,7 @@
   style: "research-grid-v1"
   mode: "generated"
   format_label: "FEATURED PAPER · TRUSTED AI"
-  title_size: 43
+  title_size: 39
   title_lines:
     - "European Business Wallets"
     - "as the Legal Control Plane"
@@ -134,6 +137,7 @@
   style: "research-grid-v1"
   mode: "generated"
   format_label: "RESEARCH PAPER · QUANTUM RESILIENCE"
+  title_size: 45
   title_lines:
     - "Quantum-Resilient"
     - "Organizational Identity"
