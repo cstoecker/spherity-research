@@ -18,7 +18,9 @@ rendered by `scripts/generate-social-cards.mjs`. The shared 1200 × 630 research
 grid style is regenerated before local checks and deployment. A mandatory
 preflight measures every title, subtitle, description, byline, and topic row
 against the left-column safe area; generation and deployment fail if text
-enters the 60-pixel gutter before the document visual. The Gartner-
+enters the 60-pixel gutter before the document visual. Portable line-length
+limits also prevent operating-system font substitutions from passing locally
+but overflowing in GitHub Actions. The Gartner-
 approved strategy card is a checksum-protected exception and must not be
 changed without a new approval.
 

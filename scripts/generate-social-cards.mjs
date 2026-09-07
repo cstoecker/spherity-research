@@ -99,13 +99,19 @@ const prepareCardLayout = async (card, publication) => {
   const pills = await topicPills(publication.topics || []);
   const problems = [];
 
-  const assertLinesFit = async (label, lines, style) => {
+  const assertLinesFit = async (label, lines, style, portableCharacterLimit) => {
     for (const line of lines || []) {
       const width = await measureTextWidth(line, style);
       const right = LEFT_TEXT_X + width;
       if (right > LEFT_SAFE_RIGHT) {
         problems.push(
           `${label} “${line}” reaches x=${right}px; maximum is x=${LEFT_SAFE_RIGHT}px`
+        );
+      }
+      const characterCount = Array.from(line).length;
+      if (portableCharacterLimit && characterCount > portableCharacterLimit) {
+        problems.push(
+          `${label} “${line}” contains ${characterCount} characters; portable limit is ${portableCharacterLimit}`
         );
       }
     }
@@ -116,24 +122,24 @@ const prepareCardLayout = async (card, publication) => {
     size: 15,
     weight: 700,
     letterSpacing: 0.7
-  });
+  }, 50);
   await assertLinesFit("Title line", card.title_lines, {
     family: "Georgia, serif",
     size: titleSize,
     weight: 700
-  });
+  }, 30);
   await assertLinesFit("Subtitle line", card.subtitle_lines, {
     family: "Georgia, serif",
     size: 30
-  });
+  }, 42);
   await assertLinesFit("Description line", card.deck_lines, {
     family: "Arial, sans-serif",
     size: 20
-  });
+  }, 48);
   await assertLinesFit("Byline", [card.byline], {
     family: "Arial, sans-serif",
     size: 16
-  });
+  }, 64);
 
   if (pills.right > LEFT_SAFE_RIGHT) {
     problems.push(
