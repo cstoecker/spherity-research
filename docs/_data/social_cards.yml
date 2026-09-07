@@ -34,9 +34,11 @@
   style: "research-grid-v1"
   mode: "generated"
   format_label: "JOURNAL ARTICLE · INDUSTRY CASE STUDY"
+  title_size: 44
   title_lines:
-    - "European Business Wallet"
-    - "& Market Role Credentials"
+    - "European Business"
+    - "Wallet & Market Role"
+    - "Credentials"
   subtitle_lines:
     - "The energy data-X reference case"
   deck_lines:
@@ -135,7 +137,8 @@
     - "Quantum-Resilient"
     - "Organizational Identity"
   subtitle_lines:
-    - "Governance, Business Wallets & PQC Corridors"
+    - "Governance, Business Wallets"
+    - "& PQC Corridors"
   deck_lines:
     - "A governed trust fabric for cross-border"
     - "identity and authorised digital action."

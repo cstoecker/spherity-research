@@ -33,7 +33,7 @@ jobs:
       - name: Install build dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Generate consistent social cards
+      - name: Generate and preflight social-card safe areas
         run: pnpm run social-cards
 
       - name: Configure GitHub Pages

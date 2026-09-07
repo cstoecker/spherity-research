@@ -15,7 +15,10 @@ metadata from drifting apart.
 
 Social-card art direction is recorded in `docs/_data/social_cards.yml` and
 rendered by `scripts/generate-social-cards.mjs`. The shared 1200 × 630 research
-grid style is regenerated before local checks and deployment. The Gartner-
+grid style is regenerated before local checks and deployment. A mandatory
+preflight measures every title, subtitle, description, byline, and topic row
+against the left-column safe area; generation and deployment fail if text
+enters the 60-pixel gutter before the document visual. The Gartner-
 approved strategy card is a checksum-protected exception and must not be
 changed without a new approval.
 
@@ -48,8 +51,9 @@ evidence and editorial policy.
    with its matching entry in `toc_items`.
 5. Add a `research-grid-v1` entry to `docs/_data/social_cards.yml`, using short,
    pre-wrapped title and description lines plus a suitable paper cover or
-   code-native subject visual. Run `pnpm run social-cards`; it exports the WebP
-   card at 1200 × 630 pixels.
+   code-native subject visual. Run `pnpm run social-cards`; it measures the
+   complete left column, rejects overflow into the document gutter, and exports
+   the WebP card at 1200 × 630 pixels.
 6. Add one entry to `docs/_data/publications.yml`. Copy a nearby entry and
    update its title, description, topics, image, dates, search terms, and links.
 7. Add a homepage FAQ entry only when the paper answers a distinct research
@@ -205,6 +209,8 @@ continues through `sitemap.xml`, internal links, and Search Console.
 - Open Graph and X previews use the intended image.
 - The publication page and homepage catalog use the same generated social card;
   approved exceptions remain checksum-identical.
+- Every social-card text line and topic row clears the document visual by the
+  enforced 60-pixel safety gutter; no text is clipped or hidden behind imagery.
 - Version 2 search research records the Google Trends filters, findings,
   authority terms, discovery terms, and resulting editorial decisions.
 - Every author has an `identity_reviewed` profile in `docs/_data/authors.yml`;

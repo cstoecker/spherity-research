@@ -15,6 +15,17 @@ const publications = parseYaml(await readFile(publicationsPath, "utf8"));
 const publicationsByUrl = new Map(
   publications.map((publication) => [publication.links?.[0]?.url, publication])
 );
+const checkOnly = process.argv.includes("--check");
+
+const CARD_WIDTH = 1200;
+const CARD_HEIGHT = 630;
+const LEFT_TEXT_X = 72;
+const LEFT_SAFE_RIGHT = 720;
+const VISUAL_X = 780;
+const VISUAL_WIDTH = 360;
+const BYLINE_Y = 486;
+const TOPIC_Y = 520;
+const textWidthCache = new Map();
 
 const escapeXml = (value) =>
   String(value)
@@ -27,6 +38,27 @@ const escapeXml = (value) =>
 const publicFile = (url) =>
   path.join(sourceDirectory, decodeURIComponent(String(url)).replace(/^\/+/, ""));
 
+const measureTextWidth = async (
+  value,
+  { family, size, weight = 400, letterSpacing = 0 }
+) => {
+  const key = JSON.stringify([value, family, size, weight, letterSpacing]);
+  if (textWidthCache.has(key)) return textWidthCache.get(key);
+
+  const baseline = Math.ceil(size * 1.6);
+  const svg = Buffer.from(`
+    <svg xmlns="http://www.w3.org/2000/svg" width="2400" height="${baseline + 24}">
+      <text x="4" y="${baseline}" fill="#ffffff"
+        font-family="${escapeXml(family)}" font-size="${size}px"
+        font-weight="${weight}" letter-spacing="${letterSpacing}px">${escapeXml(value)}</text>
+    </svg>`);
+  const measured = await sharp(svg).trim().png().toBuffer();
+  const metadata = await sharp(measured).metadata();
+  const width = metadata.width || 0;
+  textWidthCache.set(key, width);
+  return width;
+};
+
 const textLines = ({ lines, x, y, lineHeight, className }) => {
   if (!Array.isArray(lines) || lines.length === 0) return "";
   return `<text class="${className}" x="${x}" y="${y}">${lines
@@ -37,16 +69,104 @@ const textLines = ({ lines, x, y, lineHeight, className }) => {
     .join("")}</text>`;
 };
 
-const topicPills = (topics) => {
+const topicPills = async (topics) => {
   let x = 72;
-  return topics.slice(0, 3).map((topic) => {
+  const pills = [];
+  for (const topic of topics.slice(0, 3)) {
     const fontSize = topic.length > 21 ? 13 : 14;
-    const width = Math.max(68, Math.round(topic.length * (fontSize * 0.56) + 28));
-    const pill = `<rect x="${x}" y="520" width="${width}" height="38" rx="19" fill="#f4f7f8" />
-      <text x="${x + width / 2}" y="544" text-anchor="middle" class="pill" style="font-size:${fontSize}px">${escapeXml(topic)}</text>`;
+    const textWidth = await measureTextWidth(topic, {
+      family: "Arial, sans-serif",
+      size: fontSize,
+      weight: 700
+    });
+    const width = Math.max(68, Math.ceil(textWidth + 28));
+    pills.push(`<rect x="${x}" y="${TOPIC_Y}" width="${width}" height="38" rx="19" fill="#f4f7f8" />
+      <text x="${x + width / 2}" y="544" text-anchor="middle" class="pill" style="font-size:${fontSize}px">${escapeXml(topic)}</text>`);
     x += width + 10;
-    return pill;
-  }).join("");
+  }
+  return { markup: pills.join(""), right: x - 10 };
+};
+
+const prepareCardLayout = async (card, publication) => {
+  const titleSize = Number(card.title_size || 48);
+  const titleLineHeight = Math.round(titleSize * 1.16);
+  const titleY = 194;
+  const titleBottom = titleY + (card.title_lines.length - 1) * titleLineHeight;
+  const subtitleY = titleBottom + 48;
+  const subtitleBottom = subtitleY + Math.max(0, (card.subtitle_lines?.length || 0) - 1) * 36;
+  const deckY = (card.subtitle_lines?.length ? subtitleBottom : titleBottom) + 45;
+  const deckBottom = deckY + Math.max(0, (card.deck_lines?.length || 0) - 1) * 28;
+  const pills = await topicPills(publication.topics || []);
+  const problems = [];
+
+  const assertLinesFit = async (label, lines, style) => {
+    for (const line of lines || []) {
+      const width = await measureTextWidth(line, style);
+      const right = LEFT_TEXT_X + width;
+      if (right > LEFT_SAFE_RIGHT) {
+        problems.push(
+          `${label} “${line}” reaches x=${right}px; maximum is x=${LEFT_SAFE_RIGHT}px`
+        );
+      }
+    }
+  };
+
+  await assertLinesFit("Format label", [card.format_label], {
+    family: "Arial, sans-serif",
+    size: 15,
+    weight: 700,
+    letterSpacing: 0.7
+  });
+  await assertLinesFit("Title line", card.title_lines, {
+    family: "Georgia, serif",
+    size: titleSize,
+    weight: 700
+  });
+  await assertLinesFit("Subtitle line", card.subtitle_lines, {
+    family: "Georgia, serif",
+    size: 30
+  });
+  await assertLinesFit("Description line", card.deck_lines, {
+    family: "Arial, sans-serif",
+    size: 20
+  });
+  await assertLinesFit("Byline", [card.byline], {
+    family: "Arial, sans-serif",
+    size: 16
+  });
+
+  if (pills.right > LEFT_SAFE_RIGHT) {
+    problems.push(
+      `Topic row reaches x=${pills.right}px; maximum is x=${LEFT_SAFE_RIGHT}px`
+    );
+  }
+  if (deckBottom > BYLINE_Y - 42) {
+    problems.push(
+      `Description ends at y=${deckBottom}px; it must retain 42px before the byline`
+    );
+  }
+  if (TOPIC_Y + 38 > CARD_HEIGHT - 64) {
+    problems.push("Topic row falls outside the lower safe area.");
+  }
+
+  if (problems.length) {
+    throw new Error(
+      `${card.publication_url}: social-card layout preflight failed:\n- ${problems.join("\n- ")}\n` +
+      "Adjust line breaks or font size before generating the card."
+    );
+  }
+
+  return {
+    titleSize,
+    titleLineHeight,
+    titleY,
+    titleBottom,
+    subtitleY,
+    subtitleBottom,
+    deckY,
+    deckBottom,
+    pills
+  };
 };
 
 const riskOrbits = () => Buffer.from(`
@@ -89,17 +209,24 @@ const ebwTimeline = () => Buffer.from(`
     <text x="30" y="470" fill="#0e5f65" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">LEGAL + OPERATIONAL GATES</text>
   </svg>`);
 
-const renderGeneratedCard = async (card, publication) => {
-  const titleSize = Number(card.title_size || 48);
-  const titleLineHeight = Math.round(titleSize * 1.16);
-  const titleY = 194;
-  const titleBottom = titleY + (card.title_lines.length - 1) * titleLineHeight;
-  const subtitleY = titleBottom + 48;
-  const subtitleBottom = subtitleY + Math.max(0, (card.subtitle_lines?.length || 0) - 1) * 36;
-  const deckY = (card.subtitle_lines?.length ? subtitleBottom : titleBottom) + 45;
-
+const renderGeneratedCard = async (card, publication, layout) => {
+  const {
+    titleSize,
+    titleLineHeight,
+    titleY,
+    titleBottom,
+    subtitleY,
+    subtitleBottom,
+    deckY,
+    pills
+  } = layout;
   const baseSvg = Buffer.from(`
-    <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+    <svg xmlns="http://www.w3.org/2000/svg" width="${CARD_WIDTH}" height="${CARD_HEIGHT}" viewBox="0 0 ${CARD_WIDTH} ${CARD_HEIGHT}">
+      <defs>
+        <clipPath id="left-safe-area">
+          <rect x="64" y="108" width="${LEFT_SAFE_RIGHT - 64}" height="450" />
+        </clipPath>
+      </defs>
       <rect width="1200" height="630" fill="#071b2a"/>
       <rect width="1200" height="10" fill="#4f98c7"/>
       <rect width="16" height="630" fill="#7be0bd"/>
@@ -120,12 +247,14 @@ const renderGeneratedCard = async (card, publication) => {
       </style>
       <line x1="72" y1="76" x2="120" y2="76" stroke="#7be0bd" stroke-width="2"/>
       <text class="brand" x="135" y="82">SPHERITY RESEARCH</text>
-      <text class="format" x="72" y="132">${escapeXml(card.format_label)}</text>
-      ${textLines({ lines: card.title_lines, x: 72, y: titleY, lineHeight: titleLineHeight, className: "title" })}
-      ${textLines({ lines: card.subtitle_lines, x: 72, y: subtitleY, lineHeight: 36, className: "subtitle" })}
-      ${textLines({ lines: card.deck_lines, x: 72, y: deckY, lineHeight: 28, className: "deck" })}
-      <text class="byline" x="72" y="486">${escapeXml(card.byline)}</text>
-      ${topicPills(publication.topics || [])}
+      <g clip-path="url(#left-safe-area)">
+        <text class="format" x="72" y="132">${escapeXml(card.format_label)}</text>
+        ${textLines({ lines: card.title_lines, x: 72, y: titleY, lineHeight: titleLineHeight, className: "title" })}
+        ${textLines({ lines: card.subtitle_lines, x: 72, y: subtitleY, lineHeight: 36, className: "subtitle" })}
+        ${textLines({ lines: card.deck_lines, x: 72, y: deckY, lineHeight: 28, className: "deck" })}
+        <text class="byline" x="72" y="${BYLINE_Y}">${escapeXml(card.byline)}</text>
+        ${pills.markup}
+      </g>
     </svg>`);
 
   const visual = card.visual_type === "risk-orbits"
@@ -134,7 +263,7 @@ const renderGeneratedCard = async (card, publication) => {
       ? ebwTimeline()
       : await readFile(publicFile(card.visual));
   const visualBuffer = await sharp(visual)
-    .resize(360, 510, {
+    .resize(VISUAL_WIDTH, 510, {
       fit: card.visual_fit || "contain",
       position: "centre",
       background: "#ffffff"
@@ -144,7 +273,7 @@ const renderGeneratedCard = async (card, publication) => {
     .toBuffer();
 
   return sharp(baseSvg)
-    .composite([{ input: visualBuffer, left: 780, top: 50 }])
+    .composite([{ input: visualBuffer, left: VISUAL_X, top: 50 }])
     .webp({ quality: 88, effort: 6 })
     .toBuffer();
 };
@@ -168,8 +297,14 @@ for (const card of manifest) {
   }
   if (card.mode === "preserve") continue;
 
+  const layout = await prepareCardLayout(card, publication);
+  if (checkOnly) {
+    console.log(`Validated safe area for ${card.publication_url}.`);
+    continue;
+  }
+
   const outputPath = publicFile(card.output);
-  const rendered = await renderGeneratedCard(card, publication);
+  const rendered = await renderGeneratedCard(card, publication, layout);
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeFile(outputPath, rendered);
   console.log(`Generated ${path.relative(projectDirectory, outputPath)}.`);
