@@ -1,7 +1,7 @@
 # Spherity Research AEO/GEO implementation
 
 This document records the evidence-led answer-engine and generative-search
-architecture applied on 30 July 2026. It is an editorial and technical guide,
+architecture, updated on 7 September 2026. It is an editorial and technical guide,
 not a promise of rankings, snippets, AI citations, or inclusion in training
 data.
 
@@ -10,18 +10,20 @@ data.
 | Area | Status before this change | Decision | Implementation |
 | --- | --- | --- | --- |
 | Canonicals, sitemap, robots, Open Graph, X cards, favicon | Complete | Keep | Existing layouts, config, and sitemap generation |
-| Organization, WebSite, CollectionPage, ScholarlyArticle JSON-LD | Complete | Improve | One connected graph with stable IDs, citations, topics, images, authors, and breadcrumbs in `docs/_layouts/default.html` |
+| Organization, WebSite, CollectionPage, ResearchProject, ItemList, ScholarlyArticle JSON-LD | Complete | Enforce | Separate top-level JSON-LD objects with stable IDs, citations, topics, images, authors, PDFs, and breadcrumbs in `docs/_layouts/default.html` |
 | Publication authorship, dates, status, and references | Complete | Improve | Visible provenance retained and citation metadata added |
 | Answer-first summaries and key findings | Inconsistent | Add | Data-driven blocks in `docs/_layouts/research-respec.html` |
-| Direct questions and answers | Missing | Add | Visible, publication-supported answers; no FAQPage markup |
+| Direct questions and answers | Complete | Enforce | Visible, publication-supported answers and matching top-level FAQPage markup generated from the same data |
 | Internal research relationships | Limited | Add | Contextual related-publication cards on every research page |
 | PDF discoverability | PDF only | Add | Faithful HTML summaries for both control-plane and data-plane papers; PDFs remain authoritative |
 | Trusted AI architecture | Control plane only | Expand | Interlink legal authority and verifiable evidence as separate, complementary trust planes |
 | Quantum-resilient organizational identity | Attack analysis only | Expand | Add the distinct multi-author governance paper and relate it to the existing attack taxonomy without duplicate entries |
 | PQC Corridor implementation | Limited homepage explanation | Add | Explain organizational authority, trust-fabric inventories, bounded corridor governance, migration controls, and evidence-led scaling |
-| Machine-readable publication index | Missing | Add | Catalog-generated `docs/llms.txt`; no ranking claim |
-| Contributor safeguards | Good baseline | Improve | Source, catalog, schema, citation, heading, image, sitemap, and answer-content checks |
-| Topic hubs for DPP/DBP, DSCSA, data spaces, and sector pages | Insufficient source material | Agenda only | Include DPP, DBP, data sharing, data spaces, and digital corridors in the research agenda and homepage metadata; add dedicated topic pages only after approved original research supports them |
+| Machine-readable publication index | Complete | Enforce | Catalog- and page-generated `docs/llms.txt`; no ranking claim |
+| Author identity | Complete for verified profiles | Enforce | Central `docs/_data/authors.yml` registry supplies author `url` and `sameAs`; new template publications must register or provide a verified HTTPS identity |
+| Search-language research | Previously informal | Add | Version 2 template records Google Trends comparisons, authority terms, discovery terms, audience questions, evidence notes, and editorial decisions |
+| Contributor safeguards | Complete | Enforce | Source, template, catalog, author, schema, citation, FAQ, heading, image, PDF, sitemap, and search-research checks |
+| Topical discovery for DPP/DBP, data spaces, Trusted AI, resilience, and identity | Complete | Enforce | Homepage filters, research-scope sections, FAQ answers, publication relationships, catalog metadata, and authority keywords provide evidence-backed discovery without thin doorway pages |
 | “Market leader” and similar superlatives | Unsupported | Defer | Require independent, citable evidence and author approval |
 | Training-crawler permissions | Governance decision | Keep | No change without explicit approval |
 
@@ -30,24 +32,59 @@ data.
 ```text
 /
 ├── research homepage and publication library
-├── evidence-graphs-industrial-ai-data-plane.html
-│   └── authoritative 33-page PDF
-├── ebw-zero-trust-ai-agents.html
-│   └── authoritative 30-page PDF
-├── quantum-resilient-organizational-identity.html
-│   └── authoritative 26-page PDF
-├── ebw-roadmap.html
-├── Securing-Digital-Identity-Quantum-Vulnerabilities.html
-├── threat-escalation-model-germany-eu.html
-│   └── interactive threat-model visual
-├── llms.txt
-├── sitemap.xml
-└── robots.txt
+│   ├── WebSite, CollectionPage, ResearchProject, ItemList, and FAQPage data
+│   └── publication cards generated from _data/publications.yml
+├── *.html canonical research landing pages
+│   ├── answer summary, key takeaways, visible questions, and related evidence
+│   ├── ScholarlyArticle, BreadcrumbList, FAQPage, and author identity data
+│   └── alternate PDF links and MediaObject data where applicable
+├── *.pdf authoritative paper editions
+├── llms.txt generated from the publication catalog and research pages
+├── sitemap.xml generated from every indexable HTML and PDF output
+└── robots.txt and .well-known/security.txt
 ```
 
 Each research page links to the other publications only where the relationship
 is explained. The homepage links to all canonical HTML research pages, and the
 catalog remains the single source for publication discovery.
+
+## Reusable publication and author architecture
+
+New publications start from `templates/publication.md` version 2. The template
+captures search and social titles, explicit authors and affiliations, verified
+author identities, PDF editions, cover and social images, keywords, audiences,
+spatial coverage, answer-first content, citations, direct questions, and related
+research.
+
+The validator records the existing pre-v2 paper filenames as a legacy baseline.
+Any new research-page filename must declare template version 2, so copying an
+older page cannot accidentally bypass the stronger checks.
+
+Known author identities live in `docs/_data/authors.yml`. The shared layout uses
+the registry consistently across every paper. Every new author must be added to
+the registry with `identity_reviewed: true`; a paper may provide a verified
+HTTPS `url` or `same_as` override for publication-specific identity context.
+The build checks the rendered identity data rather than trusting source fields
+alone.
+
+The publication template does not automatically invent abstracts, FAQs,
+keywords, identity links, citations, or market claims. Those remain editorial
+decisions grounded in the publication and its authoritative sources.
+
+## Google Trends and search-language research
+
+The version 2 publishing workflow follows `SEO-AEO-GEO-RESEARCH.md`. It compares
+exact search terms and recognized topics across suitable geographies, past
+12-month and five-year periods, and Web or News search. The review distinguishes
+specialist authority terms from familiar discovery language and records related
+or rising queries only when they match the paper's scope.
+
+Google Trends values are sampled and normalized, and specialist terms can fall
+below the reporting threshold. A low or zero result therefore does not remove a
+technically important authority term. The build validates the recorded review
+and requires authority terms to reach the published `keywords`; it does not
+query or scrape Google Trends during deployment. This keeps releases
+deterministic and prevents changing data from silently rewriting approved copy.
 
 ## Entity and topic model
 

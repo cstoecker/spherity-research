@@ -52,7 +52,7 @@ jobs:
       - name: Minify HTML and CSS
         run: pnpm run optimize
 
-      - name: Enforce SEO, AEO, GEO, performance, links, and asset requirements
+      - name: Enforce SEO, AEO, GEO, author identity, search research, links, and assets
         run: pnpm run check
 
       - name: Publish IndexNow key proof

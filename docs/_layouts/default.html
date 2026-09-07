@@ -20,6 +20,8 @@
 {% assign og_type = page.og_type | default: "article" %}
 {% assign page_keywords = page.keywords | default: page.tags %}
 {% assign content_license = page.license | default: site.content_license | default: "https://creativecommons.org/licenses/by/4.0/" %}
+{% assign homepage_author_name = "Dr. Carsten Stöcker" %}
+{% assign homepage_author_profile = site.data.authors[homepage_author_name] %}
 
 {% if page.canonical_url %}
   {% assign canonical_url = page.canonical_url %}
@@ -165,8 +167,8 @@
       "honorificPrefix": "Dr.",
       "givenName": "Carsten",
       "familyName": "Stöcker",
-      "url": "{{ '/' | absolute_url }}#dr-carsten-stoecker",
-      "sameAs": ["https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/"],
+      "url": {{ homepage_author_profile.url | jsonify }},
+      "sameAs": {{ homepage_author_profile.same_as | jsonify }},
       "affiliation": { "@id": "https://www.spherity.com/#organization" },
       "worksFor": { "@id": "https://www.spherity.com/#organization" },
       "knowsAbout": [
@@ -421,11 +423,12 @@
     "author": [
       {% if page.author_entities %}
         {% for author in page.author_entities %}
+        {% assign author_profile = site.data.authors[author.name] %}
       {
         "@type": "Person",
         "name": {{ author.name | jsonify }},
-        {% if author.url %}"url": {{ author.url | jsonify }},{% elsif author.name contains "Carsten Stöcker" %}"url": "{{ '/' | absolute_url }}#dr-carsten-stoecker",{% endif %}
-        {% if author.same_as %}"sameAs": {{ author.same_as | jsonify }},{% elsif author.name contains "Carsten Stöcker" %}"sameAs": ["https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/"],{% endif %}
+        {% if author.url %}"url": {{ author.url | jsonify }},{% elsif author_profile.url %}"url": {{ author_profile.url | jsonify }},{% endif %}
+        {% if author.same_as %}"sameAs": {{ author.same_as | jsonify }},{% elsif author_profile.same_as %}"sameAs": {{ author_profile.same_as | jsonify }},{% endif %}
         "affiliation": {
           "@type": "Organization",
           "name": {{ author.affiliation | jsonify }}
@@ -434,11 +437,12 @@
         {% endfor %}
       {% elsif page.authors %}
         {% for author in page.authors %}
+        {% assign author_profile = site.data.authors[author] %}
       {
         "@type": "Person",
         "name": {{ author | jsonify }},
-        {% if author contains "Carsten Stöcker" %}"url": "{{ '/' | absolute_url }}#dr-carsten-stoecker",{% endif %}
-        {% if author contains "Carsten Stöcker" %}"sameAs": ["https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/"],{% endif %}
+        {% if author_profile.url %}"url": {{ author_profile.url | jsonify }},{% endif %}
+        {% if author_profile.same_as %}"sameAs": {{ author_profile.same_as | jsonify }},{% endif %}
         "affiliation": {
           "@type": "Organization",
           "name": {{ page.affiliation | default: "Spherity GmbH" | jsonify }}
@@ -446,11 +450,12 @@
       }{% unless forloop.last %},{% endunless %}
         {% endfor %}
       {% else %}
+      {% assign author_profile = site.data.authors[author_name] %}
       {
         "@type": "Person",
         "name": {{ author_name | jsonify }},
-        {% if author_name contains "Carsten Stöcker" %}"url": "{{ '/' | absolute_url }}#dr-carsten-stoecker",{% endif %}
-        {% if author_name contains "Carsten Stöcker" %}"sameAs": ["https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/"],{% endif %}
+        {% if author_profile.url %}"url": {{ author_profile.url | jsonify }},{% endif %}
+        {% if author_profile.same_as %}"sameAs": {{ author_profile.same_as | jsonify }},{% endif %}
         "affiliation": {
           "@type": "Organization",
           "name": {{ page.affiliation | default: "Spherity GmbH" | jsonify }}

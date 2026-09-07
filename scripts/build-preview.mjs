@@ -29,10 +29,13 @@ const publications = parseYaml(
 const homepageFaq = parseYaml(
   await readFile(path.join(sourceDirectory, "_data", "homepage_faq.yml"), "utf8")
 );
+const authors = parseYaml(
+  await readFile(path.join(sourceDirectory, "_data", "authors.yml"), "utf8")
+);
 
 const site = {
   ...config,
-  data: { publications, homepage_faq: homepageFaq },
+  data: { publications, homepage_faq: homepageFaq, authors },
   time: new Date(),
   url: config.url,
   baseurl: config.baseurl
