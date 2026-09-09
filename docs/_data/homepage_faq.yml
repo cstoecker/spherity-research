@@ -55,6 +55,11 @@ groups:
   - title: "Identity, evidence and resilience"
     description: "Architecture questions about accountable AI, provenance and migration of the trust fabric."
     items:
+      - id: "pace-physical-ai-evidence"
+        question: "How can verifiable safety and cyber evidence graphs accelerate compliant Physical AI deployment?"
+        answer: "PACE binds product identity and the current configuration to scoped safety, cybersecurity, AI and lifecycle evidence. This helps qualified parties find affected claims, tests and missing evidence faster after a change while deterministic safety controls and human assessment remain authoritative."
+        link_label: "Read the PACE Physical AI research"
+        url: "/physical-ai-compliance-evidence-pace.html"
       - id: "industrial-ai-evidence-graphs"
         question: "How can Industrial AI trace provenance, validation, freshness and conflicting evidence across organizations?"
         answer: "Evidence graphs represent claims, sources, issuers, transformations, validation status, timestamps, conflicts and uncertainty as connected evidence paths that people and machines can inspect and audit."

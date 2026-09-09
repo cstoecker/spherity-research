@@ -1,3 +1,31 @@
+- title: "PACE: Verifiable Safety and Cyber Evidence Graphs for Physical AI"
+  type: "Executive brief and full research paper"
+  date_label: "9 September 2026"
+  date_iso: "2026-09-09"
+  description: "A PACE reference architecture for verifiable safety and cyber evidence, faster Physical AI commissioning, controlled change and continuous assurance."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  topics:
+    - "Trusted AI"
+    - "DPP"
+    - "Identity"
+  filters: "ai dpp identity resilience infrastructure"
+  search: "pace physical ai compliance evidence pace for physical ai verifiable safety and cyber evidence graph verifiable safety assurance evidence graph vsaeg physical ai industrial ai trusted ai ai compliance robot safety humanoid robot safety modular robot arms functional safety cyber resilience cyber resilience act cra eu ai act machinery regulation maschinenverordnung digital product passport dpp european business wallet ebw eidas 2.0 verifiable credentials product evidence infrastructure evidence graph continuous assurance controlled change faster commissioning validation services lifecycle assurance iso 10218 iso 13849-1 iec 62061 iec 62443 iso iec tr 5469 w3c verifiable credentials shacl ietf rats carsten stöcker carsten stoecker spherity gmbh"
+  image: "/assets/preview-physical-ai-compliance-evidence-pace.webp"
+  image_alt: "PACE for Physical AI research preview with the executive brief cover and messaging on verifiable safety and cyber evidence graphs."
+  image_width: 1200
+  image_height: 630
+  media_class: "card-media-wide"
+  format: "HTML + 2 PDFs"
+  featured: true
+  links:
+    - label: "Read the topic page"
+      url: "/physical-ai-compliance-evidence-pace.html"
+      arrow: "→"
+    - label: "Download full research"
+      url: "/Spherity-Research-Physical-AI-Compliance-Evidence-PACE-Long-Paper.pdf"
+      arrow: "↓"
+      secondary: true
+
 - title: "Europe’s Fundamental AI Opportunity"
   type: "Executive brief and academic paper"
   date_label: "4 September 2026"

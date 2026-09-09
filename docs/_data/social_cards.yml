@@ -1,3 +1,20 @@
+- publication_url: "/physical-ai-compliance-evidence-pace.html"
+  output: "/assets/preview-physical-ai-compliance-evidence-pace.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "EXECUTIVE BRIEF + FULL RESEARCH · 2 PDFs"
+  title_size: 44
+  title_lines:
+    - "PACE for Physical AI"
+    - "Verifiable Safety &"
+    - "Cyber Evidence Graphs"
+  deck_lines:
+    - "Faster commissioning, controlled change and"
+    - "continuous assurance across company borders."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  visual: "/assets/physical-ai-compliance-evidence-pace-executive-brief-cover.jpg"
+  visual_fit: "contain"
+
 - publication_url: "/europes-fundamental-ai-opportunity.html"
   output: "/assets/preview-europes-fundamental-ai-opportunity.webp"
   style: "research-grid-v1"
