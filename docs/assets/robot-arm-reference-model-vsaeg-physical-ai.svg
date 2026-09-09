@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="547.2pt" height="392.4pt" viewBox="0 0 547.2 392.4" xmlns="http://www.w3.org/2000/svg" version="1.1" role="img" aria-labelledby="robot-arm-reference-model-title robot-arm-reference-model-description">
+ <title id="robot-arm-reference-model-title">Robot Arm Reference Model for access-controlled Physical AI compliance evidence</title>
+ <desc id="robot-arm-reference-model-description">A seven-axis robot arm and independent local protection connect to component passports, arm-assembly records and application evidence. An access-controlled Verifiable Safety Assurance Evidence Graph supports a scoped assessment for the installed configuration, intended use and current status.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Robot Arm Reference Model: From the physical arm to a scoped assurance decision</dc:title>
+    <dc:description>Component passports, arm-assembly records and application evidence contribute to an access-controlled VSAEG for robot and robot-component passports, compliance evidence, functional safety, cyber resilience and Physical AI compliance.</dc:description>
+    <dc:date>2026-09-09</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Spherity GmbH</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:contributor>Dr. Carsten Stöcker</dc:contributor>
+    <dc:subject>Physical AI; robot arm reference model; robot component passport; Digital Product Passport; Verifiable Safety Assurance Evidence Graph; functional safety; cyber resilience; compliance evidence</dc:subject>
+    <dc:rights>Source: Spherity GmbH. Licensed under Creative Commons Attribution 4.0 International.</dc:rights>
+    <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 392.4 
+L 547.2 392.4 
+L 547.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 40.32 108 
+L 83.52 66.24 
+L 137.52 46.08 
+L 190.08 85.68 
+L 238.32 59.04 
+L 285.12 90 
+L 329.76 63.36 
+" clip-path="url(#pce84ffe2be)" style="fill: none; stroke: #c9c9c9; stroke-width: 11; stroke-linecap: round"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 10.8 137.52 
+L 70.56 137.52 
+Q 72 137.52 72 136.08 
+L 72 121.68 
+Q 72 120.24 70.56 120.24 
+L 10.8 120.24 
+Q 9.36 120.24 9.36 121.68 
+L 9.36 136.08 
+Q 9.36 137.52 10.8 137.52 
+z
+" clip-path="url(#pce84ffe2be)" style="fill: #eaeaea; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 381.24 133.56 
+L 533.16 133.56 
+Q 537.48 133.56 537.48 129.24 
+L 537.48 37.8 
+Q 537.48 33.48 533.16 33.48 
+L 381.24 33.48 
+Q 376.92 33.48 376.92 37.8 
+L 376.92 129.24 
+Q 376.92 133.56 381.24 133.56 
+z
+" clip-path="url(#pce84ffe2be)" style="fill: #f3f3f3; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 299.153041 90 
+Q 336.240883 90 373.328726 90 
+" clip-path="url(#pce84ffe2be)" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 303.553041 92.2 
+L 299.153041 90 
+L 303.553041 87.8 
+" clip-path="url(#pce84ffe2be)" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 368.928726 87.8 
+L 373.328726 90 
+L 368.928726 92.2 
+" clip-path="url(#pce84ffe2be)" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 10.44 234.36 
+L 163.8 234.36 
+Q 168.12 234.36 168.12 230.04 
+L 168.12 173.88 
+Q 168.12 169.56 163.8 169.56 
+L 10.44 169.56 
+Q 6.12 169.56 6.12 173.88 
+L 6.12 230.04 
+Q 6.12 234.36 10.44 234.36 
+z
+" clip-path="url(#pce84ffe2be)" style="fill: #f3f3f3; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 197.64 234.36 
+L 351 234.36 
+Q 355.32 234.36 355.32 230.04 
+L 355.32 173.88 
+Q 355.32 169.56 351 169.56 
+L 197.64 169.56 
+Q 193.32 169.56 193.32 173.88 
+L 193.32 230.04 
+Q 193.32 234.36 197.64 234.36 
+z
+" clip-path="url(#pce84ffe2be)" style="fill: #f3f3f3; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 384.84 234.36 
+L 536.76 234.36 
+Q 541.08 234.36 541.08 230.04 
+L 541.08 173.88 
+Q 541.08 169.56 536.76 169.56 
+L 384.84 169.56 
+Q 380.52 169.56 380.52 173.88 
+L 380.52 230.04 
+Q 380.52 234.36 384.84 234.36 
+z
+" clip-path="url(#pce84ffe2be)" style="fill: #f3f3f3; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 87.12 236.719688 
+Q 87.12 246.239453 87.12 254.529381 
+" clip-path="url(#pce84ffe2be)" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 89.52 249.729381 
+L 87.12 254.529381 
+L 84.72 249.729381 
+z
+" clip-path="url(#pce84ffe2be)" style="stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 274.32 236.719688 
+Q 274.32 246.239453 274.32 254.529381 
+" clip-path="url(#pce84ffe2be)" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 276.72 249.729381 
+L 274.32 254.529381 
+L 271.92 249.729381 
+z
+" clip-path="url(#pce84ffe2be)" style="stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 460.8 236.719688 
+Q 460.8 246.239453 460.8 254.529381 
+" clip-path="url(#pce84ffe2be)" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 463.2 249.729381 
+L 460.8 254.529381 
+L 458.4 249.729381 
+z
+" clip-path="url(#pce84ffe2be)" style="stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 10.44 310.68 
+L 536.76 310.68 
+Q 541.08 310.68 541.08 306.36 
+L 541.08 261.72 
+Q 541.08 257.4 536.76 257.4 
+L 10.44 257.4 
+Q 6.12 257.4 6.12 261.72 
+L 6.12 306.36 
+Q 6.12 310.68 10.44 310.68 
+z
+" clip-path="url(#pce84ffe2be)" style="fill: #f3f3f3; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 273.6 313.04127 
+Q 273.6 319.320077 273.6 324.369048 
+" clip-path="url(#pce84ffe2be)" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 276 319.569048 
+L 273.6 324.369048 
+L 271.2 319.569048 
+z
+" clip-path="url(#pce84ffe2be)" style="stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 47.88 382.68 
+L 499.32 382.68 
+Q 503.64 382.68 503.64 378.36 
+L 503.64 331.56 
+Q 503.64 327.24 499.32 327.24 
+L 47.88 327.24 
+Q 43.56 327.24 43.56 331.56 
+L 43.56 378.36 
+Q 43.56 382.68 47.88 382.68 
+z
+" clip-path="url(#pce84ffe2be)" style="fill: #f3f3f3; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 40.32 108 
+L 83.52 66.24 
+L 137.52 46.08 
+L 190.08 85.68 
+L 238.32 59.04 
+L 285.12 90 
+L 329.76 63.36 
+" clip-path="url(#pce84ffe2be)" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 40.32 121.68 
+L 40.32 117.72 
+" clip-path="url(#pce84ffe2be)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 339.12 63.36 
+L 353.52 51.84 
+L 362.16 51.84 
+" clip-path="url(#pce84ffe2be)" style="fill: none; stroke: #000000; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 339.12 63.36 
+L 353.52 75.6 
+L 362.16 75.6 
+" clip-path="url(#pce84ffe2be)" style="fill: none; stroke: #000000; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="7.2" y="12.96" transform="rotate(-0 7.2 12.96)">A  Physical arm and independent local protection</text>
+   </g>
+   <g id="patch_14">
+    <path d="M 40.32 117.72 
+C 42.897774 117.72 45.370316 116.695839 47.193078 114.873078 
+C 49.015839 113.050316 50.04 110.577774 50.04 108 
+C 50.04 105.422226 49.015839 102.949684 47.193078 101.126922 
+C 45.370316 99.304161 42.897774 98.28 40.32 98.28 
+C 37.742226 98.28 35.269684 99.304161 33.446922 101.126922 
+C 31.624161 102.949684 30.6 105.422226 30.6 108 
+C 30.6 110.577774 31.624161 113.050316 33.446922 114.873078 
+C 35.269684 116.695839 37.742226 117.72 40.32 117.72 
+z
+" clip-path="url(#pce84ffe2be)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 83.52 75.96 
+C 86.097774 75.96 88.570316 74.935839 90.393078 73.113078 
+C 92.215839 71.290316 93.24 68.817774 93.24 66.24 
+C 93.24 63.662226 92.215839 61.189684 90.393078 59.366922 
+C 88.570316 57.544161 86.097774 56.52 83.52 56.52 
+C 80.942226 56.52 78.469684 57.544161 76.646922 59.366922 
+C 74.824161 61.189684 73.8 63.662226 73.8 66.24 
+C 73.8 68.817774 74.824161 71.290316 76.646922 73.113078 
+C 78.469684 74.935839 80.942226 75.96 83.52 75.96 
+z
+" clip-path="url(#pce84ffe2be)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 137.52 55.8 
+C 140.097774 55.8 142.570316 54.775839 144.393078 52.953078 
+C 146.215839 51.130316 147.24 48.657774 147.24 46.08 
+C 147.24 43.502226 146.215839 41.029684 144.393078 39.206922 
+C 142.570316 37.384161 140.097774 36.36 137.52 36.36 
+C 134.942226 36.36 132.469684 37.384161 130.646922 39.206922 
+C 128.824161 41.029684 127.8 43.502226 127.8 46.08 
+C 127.8 48.657774 128.824161 51.130316 130.646922 52.953078 
+C 132.469684 54.775839 134.942226 55.8 137.52 55.8 
+z
+" clip-path="url(#pce84ffe2be)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 190.08 95.4 
+C 192.657774 95.4 195.130316 94.375839 196.953078 92.553078 
+C 198.775839 90.730316 199.8 88.257774 199.8 85.68 
+C 199.8 83.102226 198.775839 80.629684 196.953078 78.806922 
+C 195.130316 76.984161 192.657774 75.96 190.08 75.96 
+C 187.502226 75.96 185.029684 76.984161 183.206922 78.806922 
+C 181.384161 80.629684 180.36 83.102226 180.36 85.68 
+C 180.36 88.257774 181.384161 90.730316 183.206922 92.553078 
+C 185.029684 94.375839 187.502226 95.4 190.08 95.4 
+z
+" clip-path="url(#pce84ffe2be)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 238.32 68.76 
+C 240.897774 68.76 243.370316 67.735839 245.193078 65.913078 
+C 247.015839 64.090316 248.04 61.617774 248.04 59.04 
+C 248.04 56.462226 247.015839 53.989684 245.193078 52.166922 
+C 243.370316 50.344161 240.897774 49.32 238.32 49.32 
+C 235.742226 49.32 233.269684 50.344161 231.446922 52.166922 
+C 229.624161 53.989684 228.6 56.462226 228.6 59.04 
+C 228.6 61.617774 229.624161 64.090316 231.446922 65.913078 
+C 233.269684 67.735839 235.742226 68.76 238.32 68.76 
+z
+" clip-path="url(#pce84ffe2be)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 285.12 99.72 
+C 287.697774 99.72 290.170316 98.695839 291.993078 96.873078 
+C 293.815839 95.050316 294.84 92.577774 294.84 90 
+C 294.84 87.422226 293.815839 84.949684 291.993078 83.126922 
+C 290.170316 81.304161 287.697774 80.28 285.12 80.28 
+C 282.542226 80.28 280.069684 81.304161 278.246922 83.126922 
+C 276.424161 84.949684 275.4 87.422226 275.4 90 
+C 275.4 92.577774 276.424161 95.050316 278.246922 96.873078 
+C 280.069684 98.695839 282.542226 99.72 285.12 99.72 
+z
+" clip-path="url(#pce84ffe2be)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 329.76 73.08 
+C 332.337774 73.08 334.810316 72.055839 336.633078 70.233078 
+C 338.455839 68.410316 339.48 65.937774 339.48 63.36 
+C 339.48 60.782226 338.455839 58.309684 336.633078 56.486922 
+C 334.810316 54.664161 332.337774 53.64 329.76 53.64 
+C 327.182226 53.64 324.709684 54.664161 322.886922 56.486922 
+C 321.064161 58.309684 320.04 60.782226 320.04 63.36 
+C 320.04 65.937774 321.064161 68.410316 322.886922 70.233078 
+C 324.709684 72.055839 327.182226 73.08 329.76 73.08 
+z
+" clip-path="url(#pce84ffe2be)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; text-anchor: middle" x="40.32" y="132.442156" transform="rotate(-0 40.32 132.442156)">Base</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10.7px; font-family: 'DejaVu Sans'; text-anchor: start" x="87.84" y="127.44" transform="rotate(-0 87.84 127.44)">Seven axes + exchangeable tool</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="387.36" y="52.43025" transform="rotate(-0 387.36 52.43025)">Local protection</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(387.36 74.218359)">Safety sensing</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(387.36 86.454764)">Safety controller</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(387.36 98.691169)">Drive / brake path</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="336.24" y="101.52" transform="rotate(-0 336.24 101.52)">Sense / act</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="7.2" y="154.8" transform="rotate(-0 7.2 154.8)">B  Passports and evidence bound to the installed configuration</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="16.56" y="188.51025" transform="rotate(-0 16.56 188.51025)">Component passports</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'" transform="translate(16.56 210.070406)">Identity · firmware</text>
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'" transform="translate(16.56 221.957199)">Calibration · test evidence</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="203.76" y="188.51025" transform="rotate(-0 203.76 188.51025)">Arm assembly</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'" transform="translate(203.76 210.070406)">Installed modules</text>
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'" transform="translate(203.76 221.957199)">Interfaces · safety limits</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="390.96" y="188.51025" transform="rotate(-0 390.96 188.51025)">Application evidence</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'" transform="translate(390.96 210.070406)">Tool · payload · task</text>
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'" transform="translate(390.96 221.957199)">Workspace · people</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="16.56" y="276.35025" transform="rotate(-0 16.56 276.35025)">Arm passport / VSAEG</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; text-anchor: start" x="16.56" y="297.986391" transform="rotate(-0 16.56 297.986391)">Linked claims, provenance, access rights, trace references and credential status</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="54" y="346.19025" transform="rotate(-0 54 346.19025)">Scoped assessment and deployment decision</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="54" y="367.750406" transform="rotate(-0 54 367.750406)">Named configuration + intended use + validation profile + current status</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; text-anchor: middle" x="40.32" y="110.814563" transform="rotate(-0 40.32 110.814563)">J1</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; text-anchor: middle" x="83.52" y="69.054563" transform="rotate(-0 83.52 69.054563)">J2</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; text-anchor: middle" x="137.52" y="48.894563" transform="rotate(-0 137.52 48.894563)">J3</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; text-anchor: middle" x="190.08" y="88.494563" transform="rotate(-0 190.08 88.494563)">J4</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; text-anchor: middle" x="238.32" y="61.854563" transform="rotate(-0 238.32 61.854563)">J5</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; text-anchor: middle" x="285.12" y="92.814563" transform="rotate(-0 285.12 92.814563)">J6</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; text-anchor: middle" x="329.76" y="66.174563" transform="rotate(-0 329.76 66.174563)">J7</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pce84ffe2be">
+   <rect x="0" y="0" width="547.2" height="392.4"/>
+  </clipPath>
+ </defs>
+</svg>

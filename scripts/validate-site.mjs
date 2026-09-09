@@ -696,6 +696,38 @@ for (const markdownFile of markdownFiles) {
     }
   }
 
+  if (data.figure_objects !== undefined) {
+    if (!Array.isArray(data.figure_objects) || data.figure_objects.length === 0) {
+      errors.push(`${markdownFile}: figure_objects must be a non-empty list.`);
+    } else {
+      const figureIds = new Set();
+      const figureUrls = new Set();
+      for (const [index, figure] of data.figure_objects.entries()) {
+        const label = `${markdownFile}: figure_objects item ${index + 1}`;
+        for (const field of ["id", "name", "content_url", "description", "caption", "credit_text"]) {
+          if (!figure?.[field]) errors.push(`${label} requires "${field}".`);
+        }
+        if (!Array.isArray(figure?.keywords) || figure.keywords.length < 3) {
+          errors.push(`${label} requires at least three discovery keywords.`);
+        }
+        if (figure?.id && figureIds.has(figure.id)) {
+          errors.push(`${markdownFile}: duplicate figure id ${figure.id}.`);
+        }
+        if (figure?.content_url && figureUrls.has(figure.content_url)) {
+          errors.push(`${markdownFile}: duplicate figure URL ${figure.content_url}.`);
+        }
+        figureIds.add(figure?.id);
+        figureUrls.add(figure?.content_url);
+        if (figure?.content_url && !/\.svg$/i.test(figure.content_url)) {
+          errors.push(`${label} must reference an SVG image.`);
+        }
+        if (figure?.content_url && !(await exists(sourcePathFromPublicUrl(figure.content_url)))) {
+          errors.push(`${label} image does not exist: ${figure.content_url}`);
+        }
+      }
+    }
+  }
+
   if (!content.includes('id="questions-answered"')) {
     const tocHasQuestions = data.toc_items?.some(
       (item) => item.href === "#questions-answered"

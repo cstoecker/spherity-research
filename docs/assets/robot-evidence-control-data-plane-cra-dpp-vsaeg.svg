@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="547.2pt" height="423.36pt" viewBox="0 0 547.2 423.36" xmlns="http://www.w3.org/2000/svg" version="1.1" role="img" aria-labelledby="robot-evidence-planes-title robot-evidence-planes-description">
+ <title id="robot-evidence-planes-title">Robot Evidence Control and Data Plane for access-controlled VSAEG decisions</title>
+ <desc id="robot-evidence-planes-description">Business Wallet and Edge Wallet services govern organizational authority and access while safety, Cyber Resilience Act and AI evidence connect through a CRA-capable Digital Product Passport and Verifiable Safety Assurance Evidence Graph for scoped regulatory and operational decisions.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Robot Evidence Control and Data Plane: Shared evidence with distinct regulatory responsibilities</dc:title>
+    <dc:description>Safety, CRA and AI evidence is linked through product identity and configuration in a CRA-capable DPP and access-controlled VSAEG. Organizational trust and Edge Wallet services govern authority, access and scoped verification.</dc:description>
+    <dc:date>2026-09-09</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Spherity GmbH</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:contributor>Dr. Carsten Stöcker</dc:contributor>
+    <dc:subject>Robot evidence control plane; robot evidence data plane; CRA-capable Digital Product Passport; Verifiable Safety Assurance Evidence Graph; European Business Wallet; Edge Wallet; functional safety; cyber resilience; AI compliance</dc:subject>
+    <dc:rights>Source: Spherity GmbH. Licensed under Creative Commons Attribution 4.0 International.</dc:rights>
+    <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 423.36 
+L 547.2 423.36 
+L 547.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 10.44 109.08 
+L 230.04 109.08 
+Q 234.36 109.08 234.36 104.76 
+L 234.36 35.64 
+Q 234.36 31.32 230.04 31.32 
+L 10.44 31.32 
+Q 6.12 31.32 6.12 35.64 
+L 6.12 104.76 
+Q 6.12 109.08 10.44 109.08 
+z
+" clip-path="url(#p93738714af)" style="fill: #f3f3f3; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 294.84 109.08 
+L 513.72 109.08 
+Q 518.04 109.08 518.04 104.76 
+L 518.04 35.64 
+Q 518.04 31.32 513.72 31.32 
+L 294.84 31.32 
+Q 290.52 31.32 290.52 35.64 
+L 290.52 104.76 
+Q 290.52 109.08 294.84 109.08 
+z
+" clip-path="url(#p93738714af)" style="fill: #f3f3f3; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 236.719819 74.16 
+Q 262.440189 74.16 286.930722 74.16 
+" clip-path="url(#p93738714af)" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 282.130722 71.76 
+L 286.930722 74.16 
+L 282.130722 76.56 
+z
+" clip-path="url(#p93738714af)" style="stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 10.44 219.96 
+L 156.6 219.96 
+Q 160.92 219.96 160.92 215.64 
+L 160.92 152.28 
+Q 160.92 147.96 156.6 147.96 
+L 10.44 147.96 
+Q 6.12 147.96 6.12 152.28 
+L 6.12 215.64 
+Q 6.12 219.96 10.44 219.96 
+z
+" clip-path="url(#p93738714af)" style="fill: #f3f3f3; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 189 219.96 
+L 335.16 219.96 
+Q 339.48 219.96 339.48 215.64 
+L 339.48 152.28 
+Q 339.48 147.96 335.16 147.96 
+L 189 147.96 
+Q 184.68 147.96 184.68 152.28 
+L 184.68 215.64 
+Q 184.68 219.96 189 219.96 
+z
+" clip-path="url(#p93738714af)" style="fill: #f3f3f3; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 367.56 219.96 
+L 513.72 219.96 
+Q 518.04 219.96 518.04 215.64 
+L 518.04 152.28 
+Q 518.04 147.96 513.72 147.96 
+L 367.56 147.96 
+Q 363.24 147.96 363.24 152.28 
+L 363.24 215.64 
+Q 363.24 219.96 367.56 219.96 
+z
+" clip-path="url(#p93738714af)" style="fill: #f3f3f3; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 83.52 222.322852 
+Q 83.52 233.281472 83.52 243.010255 
+" clip-path="url(#p93738714af)" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 85.92 238.210255 
+L 83.52 243.010255 
+L 81.12 238.210255 
+z
+" clip-path="url(#p93738714af)" style="stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 262.08 222.322852 
+Q 262.08 233.281472 262.08 243.010255 
+" clip-path="url(#p93738714af)" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 264.48 238.210255 
+L 262.08 243.010255 
+L 259.68 238.210255 
+z
+" clip-path="url(#p93738714af)" style="stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 440.64 222.322852 
+Q 440.64 233.281472 440.64 243.010255 
+" clip-path="url(#p93738714af)" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 443.04 238.210255 
+L 440.64 243.010255 
+L 438.24 238.210255 
+z
+" clip-path="url(#p93738714af)" style="stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 10.44 304.92 
+L 513.72 304.92 
+Q 518.04 304.92 518.04 300.6 
+L 518.04 250.92 
+Q 518.04 246.6 513.72 246.6 
+L 10.44 246.6 
+Q 6.12 246.6 6.12 250.92 
+L 6.12 300.6 
+Q 6.12 304.92 10.44 304.92 
+z
+" clip-path="url(#p93738714af)" style="fill: #f3f3f3; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 535.841895 277.92 
+Q 528.119513 277.92 521.626968 277.92 
+" clip-path="url(#p93738714af)" style="fill: none; stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 526.426968 280.32 
+L 521.626968 277.92 
+L 526.426968 275.52 
+z
+" clip-path="url(#p93738714af)" style="stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 262.08 307.279688 
+Q 262.08 316.799453 262.08 325.089381 
+" clip-path="url(#p93738714af)" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 264.48 320.289381 
+L 262.08 325.089381 
+L 259.68 320.289381 
+z
+" clip-path="url(#p93738714af)" style="stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 50.04 387.72 
+L 479.16 387.72 
+Q 483.48 387.72 483.48 383.4 
+L 483.48 333 
+Q 483.48 328.68 479.16 328.68 
+L 50.04 328.68 
+Q 45.72 328.68 45.72 333 
+L 45.72 383.4 
+Q 45.72 387.72 50.04 387.72 
+z
+" clip-path="url(#p93738714af)" style="fill: #f3f3f3; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 518.4 70.56 
+L 537.84 70.56 
+" clip-path="url(#p93738714af)" style="fill: none; stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.1"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 537.84 70.56 
+L 537.84 277.92 
+" clip-path="url(#p93738714af)" style="fill: none; stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.1"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="7.2" y="14.4" transform="rotate(-0 7.2 14.4)">A  Control plane: identity, authority and access</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="16.56" y="50.27025" transform="rotate(-0 16.56 50.27025)">Business Wallet / trust services</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(16.56 72.058359)">Organisation · role · mandate</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(16.56 84.294764)">Sealing and timestamp services</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="300.96" y="50.27025" transform="rotate(-0 300.96 50.27025)">Edge Wallet / issuer services</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(300.96 72.058359)">Device or issuer keys</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(300.96 84.294764)">Scoped signing and verification</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="262.08" y="87.84" transform="rotate(-0 262.08 87.84)">Mandate</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="7.2" y="131.76" transform="rotate(-0 7.2 131.76)">B  Data plane: linked evidence with identifiable issuers</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="16.56" y="166.91025" transform="rotate(-0 16.56 166.91025)">Safety evidence</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(16.56 188.698359)">Hazards · tests</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(16.56 200.934764)">Limits · assumptions</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="195.12" y="166.91025" transform="rotate(-0 195.12 166.91025)">CRA evidence</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(195.12 188.318438)">Software inventory</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(195.12 199.972156)">Vulnerabilities · updates</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="373.68" y="166.91025" transform="rotate(-0 373.68 166.91025)">AI evidence</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(373.68 188.318438)">Model · intended use</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(373.68 199.972156)">Evaluation · monitoring</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="16.56" y="265.55025" transform="rotate(-0 16.56 265.55025)">CRA-capable DPP / VSAEG</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="16.56" y="287.110406" transform="rotate(-0 16.56 287.110406)">Product + configuration · evidence links · access policy · provenance · status</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="56.16" y="347.63025" transform="rotate(-0 56.16 347.63025)">Scoped regulatory and operational decisions</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="56.16" y="369.190406" transform="rotate(-0 56.16 369.190406)">Authorised parties check requirements, evidence, arguments and status</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; text-anchor: start" x="7.2" y="408.96" transform="rotate(-0 7.2 408.96)">Solid arrows: evidence / delegation. Dashed arrow: authority and access policy.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p93738714af">
+   <rect x="0" y="0" width="547.2" height="423.36"/>
+  </clipPath>
+ </defs>
+</svg>

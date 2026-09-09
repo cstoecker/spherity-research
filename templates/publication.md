@@ -46,6 +46,20 @@ associated_media:
 cover_image: "/assets/publication-slug-cover.jpg"
 cover_image_alt: "First page of Full publication title."
 
+# Optional research figures. The layout emits a linked schema.org ImageObject
+# for each entry; keep the same descriptive caption visible beside the figure.
+figure_objects:
+  - id: "descriptive-figure-id"
+    name: "Descriptive figure title"
+    content_url: "/assets/descriptive-figure-name.svg"
+    description: "A plain-language explanation of what the figure shows and why it matters."
+    caption: "Complete visible figure caption, including the source attribution."
+    credit_text: "Source: Author organization"
+    keywords:
+      - "Primary figure subject"
+      - "Reference model or architecture"
+      - "Relevant application or standard"
+
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 license: "https://creativecommons.org/licenses/by/4.0/"
 license_scope: "This research page and the linked publication PDF"

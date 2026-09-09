@@ -536,7 +536,10 @@
       {% for media in page.associated_media %}{ "@id": "{{ media.url | absolute_url }}#media-object" }{% unless forloop.last %},{% endunless %}{% endfor %}
     ]{% elsif page.pdf_url %},
     "encoding": { "@id": "{{ page.pdf_url | absolute_url }}#media-object" },
-    "associatedMedia": { "@id": "{{ page.pdf_url | absolute_url }}#media-object" }{% endif %}
+    "associatedMedia": { "@id": "{{ page.pdf_url | absolute_url }}#media-object" }{% endif %}{% if page.figure_objects %},
+    "hasPart": [
+      {% for figure in page.figure_objects %}{ "@id": "{{ figure.content_url | absolute_url }}#image-object" }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ]{% endif %}
   }
   </script>
   <script type="application/ld+json">
@@ -656,6 +659,33 @@
     "isPartOf": { "@id": "{{ canonical_url | escape }}#article" }
   }
   </script>
+  {% endif %}
+  {% if page.figure_objects %}
+    {% for figure in page.figure_objects %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    "@id": "{{ figure.content_url | absolute_url }}#image-object",
+    "url": {{ figure.content_url | absolute_url | jsonify }},
+    "contentUrl": {{ figure.content_url | absolute_url | jsonify }},
+    "name": {{ figure.name | jsonify }},
+    "description": {{ figure.description | jsonify }},
+    "caption": {{ figure.caption | jsonify }},
+    "encodingFormat": "image/svg+xml",
+    "inLanguage": {{ page.lang | default: "en" | jsonify }},
+    "isAccessibleForFree": true,
+    "license": {{ content_license | jsonify }},
+    "creditText": {{ figure.credit_text | default: "Source: Spherity GmbH" | jsonify }},
+    "creator": { "@id": "https://www.spherity.com/#organization" },
+    "copyrightHolder": { "@id": "https://www.spherity.com/#organization" },
+    "keywords": {{ figure.keywords | default: page.keywords | jsonify }},
+    "isPartOf": { "@id": "{{ canonical_url | escape }}#article" }{% if page.date %},
+    "datePublished": "{{ page.date | date_to_xmlschema }}"{% endif %}{% if modified_date %},
+    "dateModified": "{{ modified_date | date_to_xmlschema }}"{% endif %}
+  }
+  </script>
+    {% endfor %}
   {% endif %}
   {% endif %}
 
