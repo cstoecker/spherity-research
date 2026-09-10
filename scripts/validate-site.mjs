@@ -59,6 +59,19 @@ const splitFrontMatter = (source) => {
 const asArray = (value) =>
   Array.isArray(value) ? value : value === undefined || value === null || value === "" ? [] : [value];
 
+const collectTypedObjects = (value, expectedType, results = []) => {
+  if (!value || typeof value !== "object") return results;
+  if (Array.isArray(value)) {
+    for (const item of value) collectTypedObjects(item, expectedType, results);
+    return results;
+  }
+  if (asArray(value["@type"]).includes(expectedType)) results.push(value);
+  for (const nested of Object.values(value)) {
+    collectTypedObjects(nested, expectedType, results);
+  }
+  return results;
+};
+
 const isHttpsUrl = (value) => {
   try {
     return new URL(String(value)).protocol === "https:";
@@ -704,7 +717,7 @@ for (const markdownFile of markdownFiles) {
       const figureUrls = new Set();
       for (const [index, figure] of data.figure_objects.entries()) {
         const label = `${markdownFile}: figure_objects item ${index + 1}`;
-        for (const field of ["id", "name", "content_url", "description", "caption", "credit_text"]) {
+        for (const field of ["id", "name", "content_url", "alt", "width", "height", "description", "caption", "credit_text"]) {
           if (!figure?.[field]) errors.push(`${label} requires "${field}".`);
         }
         if (!Array.isArray(figure?.keywords) || figure.keywords.length < 3) {
@@ -1110,6 +1123,52 @@ for (const htmlFile of htmlFiles) {
       parsedSchemas.push(JSON.parse(script[1]));
     } catch (error) {
       errors.push(`${htmlFile}: invalid JSON-LD (${error.message}).`);
+    }
+  }
+
+  const imageObjects = parsedSchemas.flatMap((schema) =>
+    collectTypedObjects(schema, "ImageObject")
+  );
+  for (const [index, imageObject] of imageObjects.entries()) {
+    const label = `${htmlFile}: ImageObject ${index + 1}`;
+    const imageContentUrl = imageObject.contentUrl || imageObject.url;
+    if (!isHttpsUrl(imageContentUrl)) {
+      errors.push(`${label} requires an absolute HTTPS contentUrl or url.`);
+    }
+    for (const field of ["license", "acquireLicensePage", "creditText", "copyrightNotice"]) {
+      if (!imageObject[field]) {
+        errors.push(`${label} requires "${field}" for Google image metadata.`);
+      }
+    }
+    for (const field of ["license", "acquireLicensePage"]) {
+      if (imageObject[field] && !isHttpsUrl(imageObject[field])) {
+        errors.push(`${label} field "${field}" must be an absolute HTTPS URL.`);
+      }
+    }
+    const creatorTypes = asArray(imageObject.creator?.["@type"]);
+    if (
+      !imageObject.creator ||
+      !creatorTypes.some((type) => type === "Person" || type === "Organization") ||
+      !imageObject.creator.name
+    ) {
+      errors.push(`${label} creator must be a named Person or Organization object.`);
+    }
+  }
+
+  for (const figureScope of html.matchAll(
+    /<figure\b[^>]*itemscope[^>]*itemtype=["']https:\/\/schema\.org\/ImageObject["'][^>]*>([\s\S]*?)<\/figure>/gi
+  )) {
+    const scope = figureScope[1];
+    for (const itemprop of ["contentUrl", "license", "acquireLicensePage", "creditText", "copyrightNotice"]) {
+      if (!new RegExp(`itemprop=["']${itemprop}["']`, "i").test(scope)) {
+        errors.push(`${htmlFile}: visible ImageObject figure is missing ${itemprop} microdata.`);
+      }
+    }
+    if (
+      !/itemprop=["']creator["'][^>]*itemscope[^>]*itemtype=["']https:\/\/schema\.org\/(?:Person|Organization)["']/i.test(scope) ||
+      !/itemprop=["']name["']/i.test(scope)
+    ) {
+      errors.push(`${htmlFile}: visible ImageObject figure requires a named Person or Organization creator.`);
     }
   }
 

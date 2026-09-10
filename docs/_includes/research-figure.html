@@ -1,0 +1,39 @@
+{% assign figure = include.figure %}
+{% assign figure_creator_name = figure.creator_name | default: site.image_creator_name | default: "Spherity GmbH" %}
+{% assign figure_creator_url = figure.creator_url | default: site.image_creator_url | default: "https://www.spherity.com/" %}
+{% assign figure_creator_type = figure.creator_type | default: "Organization" %}
+{% assign figure_credit_text = figure.credit_text | default: site.image_credit_text | default: "Spherity Research / Spherity GmbH" %}
+{% assign figure_copyright_notice = figure.copyright_notice | default: site.image_copyright_notice | default: "© 2026 Spherity GmbH" %}
+{% assign figure_license = figure.license | default: page.license | default: site.content_license %}
+{% if figure.acquire_license_page %}
+  {% assign figure_acquire_license_page = figure.acquire_license_page %}
+{% elsif page.canonical_url %}
+  {% capture figure_acquire_license_page %}{{ page.canonical_url }}#license-and-citation{% endcapture %}
+{% else %}
+  {% capture figure_acquire_license_page %}{{ page.url | absolute_url }}#license-and-citation{% endcapture %}
+{% endif %}
+<figure class="paper-figure centered-figure{% if figure.class %} {{ figure.class | escape }}{% endif %}"
+        id="{{ figure.id | escape }}-figure"
+        itemscope
+        itemtype="https://schema.org/ImageObject">
+  <a href="{{ figure.content_url | relative_url }}" aria-label="Open the full-size {{ figure.name | escape }} figure">
+    <img src="{{ figure.content_url | relative_url }}"
+         alt="{{ figure.alt | escape }}"
+         width="{{ figure.width }}"
+         height="{{ figure.height }}"
+         loading="lazy"
+         decoding="async"
+         itemprop="contentUrl">
+  </a>
+  <figcaption itemprop="caption">{% if include.number %}<strong>Figure {{ include.number }}.</strong> {% endif %}{{ figure.caption | escape }}</figcaption>
+  <meta itemprop="name" content="{{ figure.name | escape }}">
+  <meta itemprop="description" content="{{ figure.description | escape }}">
+  <meta itemprop="creditText" content="{{ figure_credit_text | escape }}">
+  <meta itemprop="copyrightNotice" content="{{ figure_copyright_notice | escape }}">
+  <link itemprop="license" href="{{ figure_license | escape }}">
+  <link itemprop="acquireLicensePage" href="{{ figure_acquire_license_page | strip | escape }}">
+  <span itemprop="creator" itemscope itemtype="https://schema.org/{{ figure_creator_type | escape }}" hidden>
+    <meta itemprop="name" content="{{ figure_creator_name | escape }}">
+    <link itemprop="url" href="{{ figure_creator_url | escape }}">
+  </span>
+</figure>

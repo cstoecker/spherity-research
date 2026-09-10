@@ -52,6 +52,9 @@ figure_objects:
   - id: "descriptive-figure-id"
     name: "Descriptive figure title"
     content_url: "/assets/descriptive-figure-name.svg"
+    alt: "Concise alternative text describing the figure's important relationships."
+    width: 1200
+    height: 800
     description: "A plain-language explanation of what the figure shows and why it matters."
     caption: "Complete visible figure caption, including the source attribution."
     credit_text: "Source: Author organization"
@@ -69,6 +72,12 @@ image_alt: "Plain-language description of the publication social preview."
 image_mime: "image/webp"
 image_width: 1200
 image_height: 630
+# Shared defaults provide Google image-licensing metadata for Spherity-owned
+# previews. Override these only when an image contains material with other rights.
+# image_license: "https://canonical.example/publication.html#license-and-citation"
+# image_acquire_license_page: "https://canonical.example/publication.html#license-and-citation"
+# image_credit_text: "Spherity Research / Spherity GmbH"
+# image_copyright_notice: "© YYYY Spherity GmbH"
 
 keywords:
   - "Specialist term this research should establish"
@@ -175,6 +184,11 @@ Write the evidence-led abstract here. State whether regulations or standards are
 <h2 id="1-introduction">1. Introduction</h2>
 
 Write the introduction here.
+
+{% assign primary_research_figure = page.figure_objects | first %}
+{% if primary_research_figure %}
+{% include research-figure.html figure=primary_research_figure number=1 %}
+{% endif %}
 
 <h2 id="2-findings">2. Findings</h2>
 

@@ -30,6 +30,10 @@ license_exclusions: "Gartner material cited or reproduced in the publication, an
 
 image: "/assets/dpp-dbp-strategy-market-positioning-social.png"
 image_alt: "Spherity strategy paper on its Gartner Pioneers position for Digital Product Passports, DPP and DBP execution, European Business Wallets, and Trusted AI."
+image_license: "https://spherity.github.io/spherity-research/spherity-dpp-dbp-strategy-market-positioning.html#license-and-citation"
+image_acquire_license_page: "https://spherity.github.io/spherity-research/spherity-dpp-dbp-strategy-market-positioning.html#license-and-citation"
+image_credit_text: "Spherity Research / Spherity GmbH; Gartner material retains its respective rights"
+image_copyright_notice: "© 2026 Spherity GmbH for the composition; Gartner material and trademarks retain their respective rights."
 cover_image: "/assets/dpp-dbp-strategy-market-positioning-cover.png"
 cover_image_alt: "First page of Spherity Strategy and Market Positioning Update."
 

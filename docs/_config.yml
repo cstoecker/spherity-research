@@ -17,6 +17,13 @@ content_license: "https://creativecommons.org/licenses/by/4.0/"
 content_license_name: "Creative Commons Attribution 4.0 International"
 code_license: "https://opensource.org/license/mit"
 copyright_holder: "The author or co-authors named on each publication"
+image_creator_name: "Spherity GmbH"
+image_creator_url: "https://www.spherity.com/"
+image_credit_text: "Spherity Research / Spherity GmbH"
+image_copyright_notice: "© 2026 Spherity GmbH"
+image_acquire_license_page: "https://spherity.github.io/spherity-research/#content-license"
+logo_license_page: "https://spherity.github.io/spherity-research/#content-license"
+logo_copyright_notice: "© 2026 Spherity GmbH. Spherity names and logos are excluded from the site's CC BY 4.0 license."
 
 exclude:
   - node_modules

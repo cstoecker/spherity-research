@@ -62,6 +62,10 @@ license_exclusions: "The journal PDF, journal layout, credited source figures, p
 image: "/assets/preview-energy-data-x-ebw-market-role-credentials.webp"
 image_mime: "image/webp"
 image_alt: "Social preview of the energy data-X article on European Business Wallets, market-role credentials, BESS data exchange, and controlled Digital Product Passport access."
+image_license: "https://spherity.github.io/spherity-research/energy-data-x-ebw-market-role-credentials-dpp-access-control.html#license-and-citation"
+image_acquire_license_page: "https://spherity.github.io/spherity-research/energy-data-x-ebw-market-role-credentials-dpp-access-control.html#license-and-citation"
+image_credit_text: "Spherity Research / Spherity GmbH; journal and third-party material retain their respective rights"
+image_copyright_notice: "© 2026 Spherity GmbH for the composition; journal and third-party material retain their respective rights."
 image_width: 1200
 image_height: 630
 cover_image: "/assets/energy-data-x-ebw-market-role-credentials-cover-v2.jpg"

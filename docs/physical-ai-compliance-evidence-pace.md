@@ -58,6 +58,9 @@ figure_objects:
   - id: "robot-arm-reference-model"
     name: "Robot Arm Reference Model: From the physical arm to a scoped assurance decision"
     content_url: "/assets/robot-arm-reference-model-vsaeg-physical-ai.svg"
+    alt: "Robot Arm Reference Model showing a seven-axis physical arm and local protection, component passports, arm-assembly records and application evidence feeding an access-controlled VSAEG and scoped assurance decision."
+    width: 1094
+    height: 785
     description: "A Spherity reference model connecting a seven-axis robot arm, component passports, assembly records and application evidence to an access-controlled VSAEG and scoped assurance decision."
     caption: "Robot Arm Reference Model: From the physical arm to a scoped assurance decision. Component passports, arm-assembly records and application evidence contribute to an access-controlled VSAEG. Assessment uses the installed configuration, intended use and current status. Immediate sensing and protective action remain in the local safety path. Source: Spherity GmbH."
     credit_text: "Source: Spherity GmbH"
@@ -71,6 +74,9 @@ figure_objects:
   - id: "robot-evidence-control-data-plane"
     name: "Robot Evidence Control and Data Plane: Shared evidence with distinct regulatory responsibilities"
     content_url: "/assets/robot-evidence-control-data-plane-cra-dpp-vsaeg.svg"
+    alt: "Robot Evidence Control and Data Plane showing Business Wallet and Edge Wallet authority services governing access to linked safety, Cyber Resilience Act and AI evidence in a CRA-capable DPP and VSAEG."
+    width: 1094
+    height: 847
     description: "A Spherity control-plane and data-plane model linking safety, CRA and AI evidence through a CRA-capable DPP and access-controlled VSAEG."
     caption: "Robot Evidence Control and Data Plane: Shared evidence with distinct regulatory responsibilities. Safety, CRA and AI records are linked through the product and configuration in a CRA-capable DPP/VSAEG. Organisational trust and Edge Wallet services govern authority and access; authorised parties evaluate the evidence under the applicable profile. Source: Spherity GmbH."
     credit_text: "Source: Spherity GmbH"
@@ -402,21 +408,7 @@ Four evidence scopes must therefore remain connected:
 3. **Application evidence** describes intended use, task, tool, payload, workspace, interaction with people and the validation results for that operating context.
 4. **The scoped decision profile** specifies which requirements and evidence must be satisfied for commissioning, change approval, continued operation or return to service.
 
-<figure class="paper-figure centered-figure" id="robot-arm-reference-model-figure" itemscope itemtype="https://schema.org/ImageObject">
-  <a href="{{ '/assets/robot-arm-reference-model-vsaeg-physical-ai.svg' | relative_url }}" aria-label="Open the full-size Robot Arm Reference Model figure">
-    <img src="{{ '/assets/robot-arm-reference-model-vsaeg-physical-ai.svg' | relative_url }}"
-         alt="Robot Arm Reference Model showing a seven-axis physical arm and local protection, component passports, arm-assembly records and application evidence feeding an access-controlled VSAEG and scoped assurance decision."
-         width="1094"
-         height="785"
-         loading="lazy"
-         decoding="async"
-         itemprop="contentUrl">
-  </a>
-  <figcaption itemprop="caption"><strong>Figure 1.</strong> Robot Arm Reference Model: From the physical arm to a scoped assurance decision. Component passports, arm-assembly records and application evidence contribute to an access-controlled VSAEG. Assessment uses the installed configuration, intended use and current status. Immediate sensing and protective action remain in the local safety path. Source: Spherity GmbH.</figcaption>
-  <meta itemprop="name" content="Robot Arm Reference Model: From the physical arm to a scoped assurance decision">
-  <meta itemprop="creator" content="Spherity GmbH">
-  <link itemprop="license" href="https://creativecommons.org/licenses/by/4.0/">
-</figure>
+{% include research-figure.html figure=page.figure_objects[0] number=1 %}
 
 The reference model draws a deliberate line between assurance evidence and runtime protection. The VSAEG can explain which evidence supports a decision and which change triggers revalidation. It must not sit in the time-critical sensing and protective-action loop. Immediate sensing, the safety controller and the drive or brake path remain local, independent and engineered to the applicable functional-safety requirements.
 
@@ -424,21 +416,7 @@ The reference model draws a deliberate line between assurance evidence and runti
 
 The access-controlled VSAEG combines a **control plane** for identity, authority and access with a **data plane** for linked evidence. The separation prevents two common category errors: reliable evidence does not prove that the requester is authorized to see or use it, and a valid mandate does not prove that the underlying safety, cybersecurity or AI claim is supported.
 
-<figure class="paper-figure centered-figure" id="robot-evidence-control-data-plane-figure" itemscope itemtype="https://schema.org/ImageObject">
-  <a href="{{ '/assets/robot-evidence-control-data-plane-cra-dpp-vsaeg.svg' | relative_url }}" aria-label="Open the full-size Robot Evidence Control and Data Plane figure">
-    <img src="{{ '/assets/robot-evidence-control-data-plane-cra-dpp-vsaeg.svg' | relative_url }}"
-         alt="Robot Evidence Control and Data Plane showing Business Wallet and Edge Wallet authority services governing access to linked safety, Cyber Resilience Act and AI evidence in a CRA-capable DPP and VSAEG."
-         width="1094"
-         height="847"
-         loading="lazy"
-         decoding="async"
-         itemprop="contentUrl">
-  </a>
-  <figcaption itemprop="caption"><strong>Figure 2.</strong> Robot Evidence Control and Data Plane: Shared evidence with distinct regulatory responsibilities. Safety, CRA and AI records are linked through the product and configuration in a CRA-capable DPP/VSAEG. Organisational trust and Edge Wallet services govern authority and access; authorised parties evaluate the evidence under the applicable profile. Source: Spherity GmbH.</figcaption>
-  <meta itemprop="name" content="Robot Evidence Control and Data Plane: Shared evidence with distinct regulatory responsibilities">
-  <meta itemprop="creator" content="Spherity GmbH">
-  <link itemprop="license" href="https://creativecommons.org/licenses/by/4.0/">
-</figure>
+{% include research-figure.html figure=page.figure_objects[1] number=2 %}
 
 The end-to-end process is intentionally scoped:
 

@@ -28,6 +28,20 @@
 {% else %}
   {% assign canonical_url = page.url | absolute_url %}
 {% endif %}
+{% assign image_creator_name = page.image_creator_name | default: site.image_creator_name | default: "Spherity GmbH" %}
+{% assign image_creator_url = page.image_creator_url | default: site.image_creator_url | default: "https://www.spherity.com/" %}
+{% assign image_credit_text = page.image_credit_text | default: site.image_credit_text | default: "Spherity Research / Spherity GmbH" %}
+{% assign image_copyright_notice = page.image_copyright_notice | default: site.image_copyright_notice | default: "© 2026 Spherity GmbH" %}
+{% assign image_license = page.image_license | default: content_license %}
+{% if page.image_acquire_license_page %}
+  {% assign image_acquire_license_page = page.image_acquire_license_page %}
+{% elsif page.schema_type == "CollectionPage" %}
+  {% capture image_acquire_license_page %}{{ canonical_url }}#content-license{% endcapture %}
+{% else %}
+  {% capture image_acquire_license_page %}{{ canonical_url }}#license-and-citation{% endcapture %}
+{% endif %}
+{% assign logo_license_page = site.logo_license_page | default: site.image_acquire_license_page %}
+{% assign logo_copyright_notice = site.logo_copyright_notice | default: "© 2026 Spherity GmbH" %}
 
 {% if page_image contains "://" %}
   {% assign image_url = page_image %}
@@ -195,7 +209,17 @@
       "sameAs": ["https://github.com/spherity"],
       "logo": {
         "@type": "ImageObject",
-        "url": "{{ logo_url | escape }}"
+        "url": {{ logo_url | jsonify }},
+        "contentUrl": {{ logo_url | jsonify }},
+        "license": {{ logo_license_page | jsonify }},
+        "acquireLicensePage": {{ logo_license_page | jsonify }},
+        "creditText": "Spherity GmbH",
+        "copyrightNotice": {{ logo_copyright_notice | jsonify }},
+        "creator": {
+          "@type": "Organization",
+          "name": "Spherity GmbH",
+          "url": "https://www.spherity.com/"
+        }
       },
       "knowsAbout": [
         "Digital Product Passports",
@@ -219,6 +243,23 @@
     "url": "{{ canonical_url | escape }}",
     "name": {{ page_title | jsonify }},
     "description": {{ page_description | jsonify }},
+    "image": {
+      "@type": "ImageObject",
+      "url": {{ image_url | jsonify }},
+      "contentUrl": {{ image_url | jsonify }},
+      "caption": {{ page.image_alt | default: page_title | jsonify }},
+      "width": {{ page.image_width | default: 1200 }},
+      "height": {{ page.image_height | default: 630 }},
+      "license": {{ image_license | jsonify }},
+      "acquireLicensePage": {{ image_acquire_license_page | strip | jsonify }},
+      "creditText": {{ image_credit_text | jsonify }},
+      "copyrightNotice": {{ image_copyright_notice | jsonify }},
+      "creator": {
+        "@type": "Organization",
+        "name": {{ image_creator_name | jsonify }},
+        "url": {{ image_creator_url | jsonify }}
+      }
+    },
     "license": {{ content_license | jsonify }},
     "author": { "@id": "{{ '/' | absolute_url }}#dr-carsten-stoecker" },
     "creator": { "@id": "{{ '/' | absolute_url }}#dr-carsten-stoecker" },
@@ -330,9 +371,19 @@
           {% if publication.image %}"image": {
             "@type": "ImageObject",
             "url": {{ publication.image | absolute_url | jsonify }},
+            "contentUrl": {{ publication.image | absolute_url | jsonify }},
             "caption": {{ publication.image_alt | jsonify }},
             "width": {{ publication.image_width }},
-            "height": {{ publication.image_height }}
+            "height": {{ publication.image_height }},
+            "license": {% if publication.image_license %}{{ publication.image_license | jsonify }}{% else %}{{ content_license | jsonify }}{% endif %},
+            "acquireLicensePage": {% if publication.image_acquire_license_page %}{{ publication.image_acquire_license_page | jsonify }}{% else %}"{{ primary_link.url | absolute_url }}#license-and-citation"{% endif %},
+            "creditText": {{ publication.image_credit_text | default: site.image_credit_text | default: "Spherity Research / Spherity GmbH" | jsonify }},
+            "copyrightNotice": {{ publication.image_copyright_notice | default: site.image_copyright_notice | default: "© 2026 Spherity GmbH" | jsonify }},
+            "creator": {
+              "@type": "Organization",
+              "name": {{ publication.image_creator_name | default: site.image_creator_name | default: "Spherity GmbH" | jsonify }},
+              "url": {{ publication.image_creator_url | default: site.image_creator_url | default: "https://www.spherity.com/" | jsonify }}
+            }
           },{% endif %}
           "encodingFormat": "text/html",
           "isAccessibleForFree": true,
@@ -423,7 +474,16 @@
       "contentUrl": {{ image_url | jsonify }},
       "caption": {{ page.image_alt | default: page_title | jsonify }},
       "width": {{ page.image_width | default: 1200 }},
-      "height": {{ page.image_height | default: 630 }}
+      "height": {{ page.image_height | default: 630 }},
+      "license": {{ image_license | jsonify }},
+      "acquireLicensePage": {{ image_acquire_license_page | strip | jsonify }},
+      "creditText": {{ image_credit_text | jsonify }},
+      "copyrightNotice": {{ image_copyright_notice | jsonify }},
+      "creator": {
+        "@type": "Organization",
+        "name": {{ image_creator_name | jsonify }},
+        "url": {{ image_creator_url | jsonify }}
+      }
     },
     {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
     {% if modified_date %}"dateModified": "{{ modified_date | date_to_xmlschema }}",{% endif %}
@@ -487,7 +547,17 @@
       "url": "https://www.spherity.com/",
       "logo": {
         "@type": "ImageObject",
-        "url": {{ logo_url | jsonify }}
+        "url": {{ logo_url | jsonify }},
+        "contentUrl": {{ logo_url | jsonify }},
+        "license": {{ logo_license_page | jsonify }},
+        "acquireLicensePage": {{ logo_license_page | jsonify }},
+        "creditText": "Spherity GmbH",
+        "copyrightNotice": {{ logo_copyright_notice | jsonify }},
+        "creator": {
+          "@type": "Organization",
+          "name": "Spherity GmbH",
+          "url": "https://www.spherity.com/"
+        }
       }
     },
     "isPartOf": {% if page.journal_title %}[
@@ -676,8 +746,14 @@
     "inLanguage": {{ page.lang | default: "en" | jsonify }},
     "isAccessibleForFree": true,
     "license": {{ content_license | jsonify }},
+    "acquireLicensePage": {% if figure.acquire_license_page %}{{ figure.acquire_license_page | jsonify }}{% else %}{{ image_acquire_license_page | strip | jsonify }}{% endif %},
     "creditText": {{ figure.credit_text | default: "Source: Spherity GmbH" | jsonify }},
-    "creator": { "@id": "https://www.spherity.com/#organization" },
+    "copyrightNotice": {{ figure.copyright_notice | default: site.image_copyright_notice | default: "© 2026 Spherity GmbH" | jsonify }},
+    "creator": {
+      "@type": {{ figure.creator_type | default: "Organization" | jsonify }},
+      "name": {{ figure.creator_name | default: site.image_creator_name | default: "Spherity GmbH" | jsonify }},
+      "url": {{ figure.creator_url | default: site.image_creator_url | default: "https://www.spherity.com/" | jsonify }}
+    },
     "copyrightHolder": { "@id": "https://www.spherity.com/#organization" },
     "keywords": {{ figure.keywords | default: page.keywords | jsonify }},
     "isPartOf": { "@id": "{{ canonical_url | escape }}#article" }{% if page.date %},

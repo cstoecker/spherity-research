@@ -369,7 +369,7 @@ image_alt: "Spherity Research — research for the systems we need to trust, wit
   </section>
 </main>
 
-<footer class="portal-footer">
+<footer class="portal-footer" id="content-license">
   <div class="portal-shell footer-inner">
     <img src="{{ '/assets/spherity-logo-horizontal-800.webp' | relative_url }}"
          alt="Spherity"
