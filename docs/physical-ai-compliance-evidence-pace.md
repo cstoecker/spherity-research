@@ -408,7 +408,8 @@ Four evidence scopes must therefore remain connected:
 3. **Application evidence** describes intended use, task, tool, payload, workspace, interaction with people and the validation results for that operating context.
 4. **The scoped decision profile** specifies which requirements and evidence must be satisfied for commissioning, change approval, continued operation or return to service.
 
-{% include research-figure.html figure=page.figure_objects[0] number=1 %}
+{% assign robot_arm_reference_figure = page.figure_objects | first %}
+{% include research-figure.html figure=robot_arm_reference_figure number=1 %}
 
 The reference model draws a deliberate line between assurance evidence and runtime protection. The VSAEG can explain which evidence supports a decision and which change triggers revalidation. It must not sit in the time-critical sensing and protective-action loop. Immediate sensing, the safety controller and the drive or brake path remain local, independent and engineered to the applicable functional-safety requirements.
 
@@ -416,7 +417,8 @@ The reference model draws a deliberate line between assurance evidence and runti
 
 The access-controlled VSAEG combines a **control plane** for identity, authority and access with a **data plane** for linked evidence. The separation prevents two common category errors: reliable evidence does not prove that the requester is authorized to see or use it, and a valid mandate does not prove that the underlying safety, cybersecurity or AI claim is supported.
 
-{% include research-figure.html figure=page.figure_objects[1] number=2 %}
+{% assign robot_evidence_plane_figure = page.figure_objects | last %}
+{% include research-figure.html figure=robot_evidence_plane_figure number=2 %}
 
 The end-to-end process is intentionally scoped:
 

@@ -444,6 +444,15 @@ for (const markdownFile of markdownFiles) {
     errors.push(`${markdownFile}: contains authoring-template placeholders.`);
   }
 
+  for (const includeTag of content.matchAll(/{%\s*include\b[^%]*%}/g)) {
+    if (/\b\w+(?:\.\w+)*\[[^\]]+\]/.test(includeTag[0])) {
+      errors.push(
+        `${markdownFile}: Jekyll 3 include parameters cannot use bracket indexing; ` +
+          "assign the indexed value to a Liquid variable before the include."
+      );
+    }
+  }
+
   if (data.layout !== "research-respec") continue;
 
   const publicationTemplateVersion = Number(data.publication_template_version);
