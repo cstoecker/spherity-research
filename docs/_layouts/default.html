@@ -720,6 +720,38 @@
   }
   </script>
   {% endif %}
+  {% if page.reference_architecture_zh and page.reference_architecture_zh.layers %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": "{{ canonical_url | escape }}#reference-architecture-zh",
+    "url": "{{ canonical_url | escape }}#reference-architecture-zh",
+    "name": {{ page.reference_architecture_zh.title | jsonify }},
+    "description": {{ page.reference_architecture_zh.intro | jsonify }},
+    "isPartOf": { "@id": "{{ canonical_url | escape }}#article" },
+    "inLanguage": "zh-Hans",
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "numberOfItems": {{ page.reference_architecture_zh.layers | size }},
+    "itemListElement": [
+      {% for layer in page.reference_architecture_zh.layers %}
+      {% capture layer_description %}核心组件：{{ layer.components }}；必须实现的结果：{{ layer.outcome }}{% endcapture %}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "item": {
+          "@type": "CreativeWork",
+          "@id": "{{ canonical_url | escape }}#reference-architecture-zh-layer-{{ forloop.index }}",
+          "name": {{ layer.name | jsonify }},
+          "description": {{ layer_description | strip | jsonify }},
+          "inLanguage": "zh-Hans"
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
   {% if page.associated_media %}
     {% for media in page.associated_media %}
   <script type="application/ld+json">

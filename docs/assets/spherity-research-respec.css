@@ -368,9 +368,24 @@ body {
 .table-scroll {
   width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border: 1px solid var(--border-soft);
   border-radius: 10px;
   background: #ffffff;
+}
+
+.table-scroll-hint {
+  display: none;
+  margin: 0.5rem 0;
+  color: var(--text-muted);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 760px) {
+  .table-scroll-hint {
+    display: block;
+  }
 }
 
 .academic-table {
@@ -409,6 +424,16 @@ body {
 }
 
 .translation-table { min-width: 840px; }
+.architecture-zh-table {
+  min-width: 700px;
+  table-layout: fixed;
+}
+.architecture-zh-table th:nth-child(1),
+.architecture-zh-table td:nth-child(1) { width: 18%; }
+.architecture-zh-table th:nth-child(2),
+.architecture-zh-table td:nth-child(2) { width: 50%; }
+.architecture-zh-table th:nth-child(3),
+.architecture-zh-table td:nth-child(3) { width: 32%; }
 .taxonomy-table { min-width: 1120px; }
 .macro-table { min-width: 980px; }
 .standards-table { min-width: 960px; }

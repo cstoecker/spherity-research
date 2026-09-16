@@ -207,6 +207,48 @@ layout: default
     </section>
     {% endif %}
 
+    {% if page.reference_architecture_zh %}
+    <section class="questions-answered reference-architecture-zh" id="reference-architecture-zh" lang="zh-Hans" aria-labelledby="reference-architecture-zh-title">
+      <p class="answer-summary-label">中文参考架构</p>
+      <h2 id="reference-architecture-zh-title">{{ page.reference_architecture_zh.title }}</h2>
+      <p>{{ page.reference_architecture_zh.intro }}</p>
+      <p class="table-scroll-hint">提示：在窄屏设备上可左右滑动查看全部三列。</p>
+      <div class="table-scroll" role="region" aria-label="{{ page.reference_architecture_zh.title }}" tabindex="0">
+        <table class="academic-table architecture-zh-table">
+          <caption>{{ page.reference_architecture_zh.caption }}</caption>
+          <thead>
+            <tr>
+              <th scope="col">层级</th>
+              <th scope="col">核心组件</th>
+              <th scope="col">必须实现的结果</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for layer in page.reference_architecture_zh.layers %}
+            <tr>
+              <th scope="row">{{ layer.name }}</th>
+              <td>{{ layer.components }}</td>
+              <td>{{ layer.outcome }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <p><strong>端到端流程：</strong>{{ page.reference_architecture_zh.transaction_flow }}</p>
+      <p><strong>范围说明：</strong>{{ page.reference_architecture_zh.scope_note }}</p>
+      <aside class="evidence-callout" aria-label="中文术语来源">
+        <p><strong>术语说明：</strong>{{ page.reference_architecture_zh.terminology_note }}</p>
+        {% if page.reference_architecture_zh.terminology_sources %}
+        <p><strong>术语来源：</strong>
+          {% for source in page.reference_architecture_zh.terminology_sources %}
+          <a href="{{ source.url }}">{{ source.name }}</a>{% unless forloop.last %}、{% endunless %}
+          {% endfor %}。
+        </p>
+        {% endif %}
+      </aside>
+    </section>
+    {% endif %}
+
     <footer class="article-footer">
       <p class="article-footer-label">Continue exploring</p>
       <a href="{{ '/' | relative_url }}">Browse all Spherity research <span aria-hidden="true">→</span></a>

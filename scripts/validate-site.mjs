@@ -777,11 +777,57 @@ for (const markdownFile of markdownFiles) {
     }
   }
 
+  if (data.reference_architecture_zh) {
+    if (data.secondary_language !== "zh-Hans") {
+      errors.push(`${markdownFile}: Chinese reference architecture requires secondary_language: zh-Hans.`);
+    }
+    if (!data.questions_answered_zh) {
+      errors.push(`${markdownFile}: Chinese reference architecture must follow a Chinese FAQ section.`);
+    }
+    const layers = data.reference_architecture_zh.layers;
+    if (!Array.isArray(layers) || layers.length !== 8) {
+      errors.push(`${markdownFile}: reference_architecture_zh must define exactly eight layers.`);
+    } else {
+      for (const [index, layer] of layers.entries()) {
+        for (const field of ["name", "components", "outcome"]) {
+          if (!layer?.[field]) {
+            errors.push(
+              `${markdownFile}: Chinese architecture layer ${index + 1} is missing ${field}.`
+            );
+          }
+        }
+      }
+    }
+    for (const field of ["title", "intro", "caption", "transaction_flow", "scope_note", "terminology_note"]) {
+      if (!data.reference_architecture_zh[field]) {
+        errors.push(`${markdownFile}: reference_architecture_zh is missing ${field}.`);
+      }
+    }
+    if (
+      !Array.isArray(data.reference_architecture_zh.terminology_sources) ||
+      data.reference_architecture_zh.terminology_sources.length < 2 ||
+      data.reference_architecture_zh.terminology_sources.some(
+        (source) => !source?.name || !/^https:\/\//.test(source?.url || "")
+      )
+    ) {
+      errors.push(
+        `${markdownFile}: Chinese reference architecture requires at least two named HTTPS terminology sources.`
+      );
+    }
+    const tocHasChineseArchitecture = data.toc_items?.some(
+      (item) => item.href === "#reference-architecture-zh"
+    );
+    if (!tocHasChineseArchitecture) {
+      errors.push(`${markdownFile}: table of contents is missing the Chinese reference architecture.`);
+    }
+  }
+
   for (const item of data.toc_items || []) {
     if (
       item.href?.startsWith("#") &&
       item.href !== "#questions-answered" &&
       item.href !== "#questions-answered-zh" &&
+      item.href !== "#reference-architecture-zh" &&
       item.href !== "#license-and-citation" &&
       !content.includes(`id="${item.href.slice(1)}"`)
     ) {
@@ -1298,6 +1344,52 @@ for (const htmlFile of htmlFiles) {
               `the visible Chinese FAQ section contains ${renderedChineseQuestionCount}.`
           );
         }
+      }
+    }
+
+    const chineseArchitectureSection = html.match(
+      /<section\b[^>]*id=["']reference-architecture-zh["'][^>]*>([\s\S]*?)<\/section>/i
+    )?.[1];
+    const chineseArchitectureSchema = parsedSchemas.find(
+      (schema) =>
+        schema?.["@type"] === "ItemList" &&
+        /#reference-architecture-zh$/.test(schema?.["@id"] || "")
+    );
+    if (chineseArchitectureSection || chineseArchitectureSchema) {
+      if (!chineseArchitectureSection) {
+        errors.push(
+          `${htmlFile}: Chinese architecture structured data requires a visible architecture section.`
+        );
+      }
+      if (!chineseArchitectureSchema) {
+        errors.push(
+          `${htmlFile}: visible Chinese reference architecture requires ItemList structured data.`
+        );
+      } else {
+        if (chineseArchitectureSchema.inLanguage !== "zh-Hans") {
+          errors.push(`${htmlFile}: Chinese architecture ItemList must declare zh-Hans.`);
+        }
+        if (
+          chineseArchitectureSchema.numberOfItems !== 8 ||
+          chineseArchitectureSchema.itemListElement?.length !== 8
+        ) {
+          errors.push(`${htmlFile}: Chinese architecture ItemList must contain exactly eight layers.`);
+        }
+      }
+      const renderedLayerCount = chineseArchitectureSection
+        ? [...chineseArchitectureSection.matchAll(/<tbody>[\s\S]*?<\/tbody>/gi)]
+            .flatMap((match) => [...match[0].matchAll(/<tr\b/gi)]).length
+        : 0;
+      if (renderedLayerCount !== 8) {
+        errors.push(
+          `${htmlFile}: visible Chinese reference architecture contains ${renderedLayerCount} layers; expected 8.`
+        );
+      }
+      if (
+        html.indexOf('id="reference-architecture-zh"') <
+        html.indexOf('id="questions-answered-zh"')
+      ) {
+        errors.push(`${htmlFile}: Chinese reference architecture must appear after the Chinese FAQ.`);
       }
     }
 
