@@ -30,6 +30,9 @@ last_modified_at: "2026-09-16"
 research_cutoff: "2026-09-16"
 research_cutoff_label: "Sources, standards and market developments reviewed to this date"
 lang: "en"
+secondary_language: "zh-Hans"
+abstract_zh: >-
+  AI 智能体能够选择工具、交换数据、发起交易，并在单一企业边界之外协同运行。NIST 零信任架构为资源与会话安全提供了必要基础，但其本身并不能证明企业智能体背后的法人实体、完整的授权委托链、AI 服务的当前状态，或跨域决策所依据的证据。本文对 GSMA 大中华区《面向未来智能体网络的信任范式演进（征求意见稿）》的中英文版本进行定性架构分析和标准差距分析，将 M-Trust 视为仍在讨论中的研究方向，而非强制性标准，并分析其三个维度：多方信任、基于智能体意图感知的信任和跨域信任。本文进一步提出，如何将企业数字钱包、法人身份、任务范围受限的智能体授权委托、AI 服务护照、W3C 可验证凭证、去中心化标识符、由验证方自主执行的策略、签名行动回执以及后量子迁移机制结合起来，使 B2B 和 B2G 智能体行动可归责、可验证且可审计。研究最终提出一种“临时跨域信任”参考架构：来源域继续治理其声明与凭证；依赖方（验证方）则针对特定目的、受众和时间窗口，组合最新的身份、授权、证据与上下文，并依据本地策略作出和执行授权决策。
 
 permalink: /beyond-zero-trust-m-trust-authorised-agentic-actors.html
 canonical_url: "https://spherity.github.io/spherity-research/beyond-zero-trust-m-trust-authorised-agentic-actors.html"
@@ -192,8 +195,25 @@ questions_answered:
     answer: "It is evidence that links the agent or workload to an accountable legal person, an authorized representative, a current mandate, explicit limits, applicable organizational policy and the resulting action receipt. It complements technical agent identity rather than replacing it."
   - question: "How does the architecture apply to data spaces, DPPs and Trusted AI?"
     answer: "A Business Wallet supplies organizational identity and mandates; Agent Wallets and credentials establish bounded agency; DPP, DBP and data-space evidence supports the requested decision; an AI Service Passport and runtime evidence describe the deployed AI service; local policy and enforcement remain verifier-sovereign."
+  - question: "Which architecture patterns converge across GSMA M-Trust, WE BUILD, Manufacturing-X, Anthropic and Spherity for enterprise agent identity and B2B use cases?"
+    answer: "They converge on a recurring pattern: strong agent or workload identity; task-scoped and context-aware authorization; independently verifiable evidence; enforcement outside the model's reasoning; continuous status and risk evaluation; and auditable outcomes. GSMA M-Trust frames multi-party, intent-aware and cross-domain trust; Anthropic emphasizes enterprise agent security controls; WE BUILD contributes wallet-based trusted identity, mandates and provable intent; Manufacturing-X contributes federated industrial governance, connectors and data-sovereignty controls; and Spherity connects these layers to legal-person identity, Business and Agent Wallets, task-bounded Powers of Attorney, AI Service Passports, evidence graphs, verifier-sovereign policy and signed action receipts. This is architectural convergence, not a claim of formal standards alignment, endorsement or demonstrated interoperability."
   - question: "Is M-Trust already a standard?"
     answer: "No. The reviewed GSMA Greater China publication is a draft reference architecture and research direction. This paper evaluates it, identifies standards gaps and proposes an aligned Spherity architecture; it does not claim that M-Trust is a mandatory standard or established regional consensus."
+questions_answered_zh:
+  - question: "为什么单一企业零信任架构不足以支持跨域 AI 智能体？"
+    answer: "零信任可以在访问企业资源之前验证主体、设备和请求。跨域 AI 智能体还需要提供可移植证据，以证明应承担责任的自然人或法人、完整的授权委托链、任务范围、AI 服务状态、来源域声明，以及允许该行动的策略决策。"
+  - question: "M-Trust 的三个信任维度是什么？"
+    answer: "多方信任结合多个评估方、信任输入、背书和风险信号。基于智能体意图感知的信任根据任务目的、上下文、风险和范围进行授权。跨域信任则在异构信任根之间传递可移植证据，同时由每个验证方依据自身策略作出决定。"
+  - question: "B2C 与 B2B 智能体授权有何不同？"
+    answer: "B2C 授权链将自然人的已认证指令与智能体、交易和回执连接起来。B2B 和 B2G 还需要法人身份、代表权限、组织内部审批规则、受治理的角色凭证，以及完整且受任务范围约束的授权委托链。"
+  - question: "企业 AI 智能体的“可验证授权”是什么？"
+    answer: "可验证授权是一组可独立验证的证据，用于将智能体或工作负载与承担责任的法人、获授权代表、当前有效的授权委托、明确限制、适用的组织策略以及最终行动回执连接起来。它补充技术性智能体身份，而不是取代技术性身份。"
+  - question: "该架构如何应用于数据空间、数字产品护照和可信人工智能？"
+    answer: "企业数字钱包提供组织身份和授权委托；智能体钱包与凭证建立受限的行动权限；数字产品护照、数字电池护照和数据空间证据支持具体决策；AI 服务护照与运行时证据描述所部署 AI 服务的当前状态；最终授权与策略执行仍由依赖方（验证方）自主控制。"
+  - question: "GSMA M-Trust、WE BUILD、Manufacturing-X、Anthropic 和 Spherity 在企业智能体身份及 B2B 用例方面汇聚出哪些架构模式？"
+    answer: "这些工作汇聚出一组反复出现的架构模式：强智能体或工作负载身份；任务范围受限且上下文感知的授权；可独立验证的证据；位于模型推理之外的策略执行；持续的状态与风险评估；以及可审计的结果。GSMA M-Trust 描述多方、意图感知和跨域信任；Anthropic 强调企业智能体安全控制；WE BUILD 提供基于钱包的可信身份、授权委托和可证明意图；Manufacturing-X 提供联邦式工业治理、连接器和数据主权控制；Spherity 则把这些层与法人身份、企业钱包和智能体钱包、任务范围受限的授权委托、AI 服务护照、证据图谱、验证方自主策略及签名行动回执连接起来。这种关系表示架构模式的趋同，并不表示正式标准已对齐、相关机构相互背书或系统已经实现互操作。"
+  - question: "M-Trust 已经是正式标准吗？"
+    answer: "不是。本文审阅的 GSMA 大中华区材料是一份征求意见稿、参考架构和研究方向。本文对其进行评估、识别标准差距并提出与之相关的 Spherity 架构，但不声称 M-Trust 已成为强制性标准，也不声称它代表已经形成的区域共识。"
 faq_schema: true
 related_publications:
   - title: "European Business Wallets as the Legal Control Plane for Zero Trust AI Agents"
@@ -214,6 +234,8 @@ toc_items:
     href: "#download-the-paper"
   - title: "Abstract"
     href: "#abstract"
+  - title: "中文摘要"
+    href: "#abstract-zh"
   - title: "Beyond single-enterprise ZTA"
     href: "#beyond-single-enterprise-zta"
   - title: "B2C and B2B authority"
@@ -240,6 +262,8 @@ toc_items:
     href: "#license-and-citation"
   - title: "Questions answered"
     href: "#questions-answered"
+  - title: "中文常见问题"
+    href: "#questions-answered-zh"
 
 tags:
   - zero-trust
@@ -301,6 +325,26 @@ keywords:
   - "NIST SP 800-207"
   - "Carsten Stöcker"
   - "Spherity GmbH"
+  - "AI 智能体安全"
+  - "AI Agent 安全"
+  - "零信任架构"
+  - "面向 AI 智能体的零信任"
+  - "M-Trust 多元信任架构"
+  - "多方信任"
+  - "基于智能体意图感知的信任"
+  - "跨域信任"
+  - "企业智能体身份"
+  - "B2B AI 智能体"
+  - "可验证授权"
+  - "企业数字钱包"
+  - "法人身份"
+  - "智能体授权委托"
+  - "AI 服务护照"
+  - "可验证凭证"
+  - "去中心化标识符"
+  - "数据空间"
+  - "数字产品护照"
+  - "可信人工智能"
 ---
 
 <section class="paper-download-grid" id="download-the-paper" aria-labelledby="download-the-paper-title">
@@ -336,6 +380,20 @@ This paper applies a qualitative architecture and standards-gap analysis to the 
 The result is a reference architecture for **transient cross-domain trust**: source domains retain governance over their claims, while the relying verifier composes current identity, authority, evidence and context for one purpose, audience and time window.
 
 <p class="keywords"><strong>Keywords:</strong> Zero Trust for AI agents; M-Trust; AI agent security; verifiable authority; Business Wallets; legal-person identity; cross-domain trust; agentic AI; data spaces; Digital Product Passports; Trusted AI</p>
+</section>
+
+<section class="abstract-box translated-abstract" lang="zh-Hans" aria-labelledby="abstract-zh" markdown="1">
+<h2 id="abstract-zh">中文摘要</h2>
+
+**中文标题：** 超越单一企业零信任架构：面向开放跨域生态系统中授权智能体的多元信任架构
+
+AI 智能体能够选择工具、交换数据、发起交易，并在单一企业边界之外协同运行。NIST 零信任架构为资源与会话安全提供了必要基础，但其本身并不能证明企业智能体背后的法人实体、完整的授权委托链、AI 服务的当前状态，或跨域决策所依据的证据。
+
+本文对 GSMA 大中华区《面向未来智能体网络的信任范式演进（征求意见稿）》的中英文版本进行定性架构分析和标准差距分析。本文将 M-Trust 视为仍在讨论中的研究方向，而非强制性标准，并分析其三个维度：**多方信任**、**基于智能体意图感知的信任**和**跨域信任**。本文进一步提出，如何将企业数字钱包、法人身份、任务范围受限的智能体授权委托、AI 服务护照、W3C 可验证凭证、去中心化标识符、由验证方自主执行的策略、签名行动回执以及后量子迁移机制结合起来，使 B2B 和 B2G 智能体行动可归责、可验证且可审计。
+
+研究最终提出一种**临时跨域信任**参考架构：来源域继续治理其声明与凭证；依赖方（验证方）则针对特定目的、受众和时间窗口，组合最新的身份、授权、证据与上下文，并依据本地策略作出和执行授权决策。
+
+<p class="keywords"><strong>中文关键词：</strong> AI 智能体安全；AI Agent 安全；零信任架构；面向 AI 智能体的零信任；M-Trust 多元信任架构；多方信任；基于智能体意图感知的信任；跨域信任；企业智能体身份；B2B AI 智能体；可验证授权；企业数字钱包；法人身份；智能体授权委托；AI 服务护照；可验证凭证；去中心化标识符；数据空间；数字产品护照；可信人工智能</p>
 </section>
 
 <h2 id="beyond-single-enterprise-zta">Beyond single-enterprise Zero Trust Architecture</h2>

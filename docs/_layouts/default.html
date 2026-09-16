@@ -458,15 +458,19 @@
     "headline": {{ page_title | jsonify }},
     {% if page.seo_title %}"alternativeHeadline": {{ page.seo_title | jsonify }},{% endif %}
     "description": {{ page_description | jsonify }},
-    {% if page.abstract_de %}"abstract": [
+    {% if page.abstract_de or page.abstract_zh %}"abstract": [
       {
         "@value": {{ page.answer_summary | default: page_description | jsonify }},
         "@language": {{ page.lang | default: "en" | jsonify }}
-      },
+      }{% if page.abstract_de %},
       {
         "@value": {{ page.abstract_de | jsonify }},
         "@language": "de"
-      }
+      }{% endif %}{% if page.abstract_zh %},
+      {
+        "@value": {{ page.abstract_zh | jsonify }},
+        "@language": "zh-Hans"
+      }{% endif %}
     ],{% else %}"abstract": {{ page.answer_summary | default: page_description | jsonify }},{% endif %}
     "image": {
       "@type": "ImageObject",
@@ -679,6 +683,35 @@
         "name": {{ item.question | jsonify }},
         "acceptedAnswer": {
           "@type": "Answer",
+          "text": {{ item.answer | jsonify }}
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
+  {% if page.questions_answered_zh %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "{{ canonical_url | escape }}#questions-answered-zh",
+    "url": "{{ canonical_url | escape }}#questions-answered-zh",
+    "name": {{ page_title | append: " — 中文常见问题" | jsonify }},
+    "isPartOf": { "@id": "{{ canonical_url | escape }}#article" },
+    "inLanguage": "zh-Hans",
+    "mainEntity": [
+      {% for item in page.questions_answered_zh %}
+      {
+        "@type": "Question",
+        "@id": "{{ canonical_url | escape }}#question-zh-{{ forloop.index }}",
+        "url": "{{ canonical_url | escape }}#questions-answered-zh",
+        "inLanguage": "zh-Hans",
+        "name": {{ item.question | jsonify }},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "inLanguage": "zh-Hans",
           "text": {{ item.answer | jsonify }}
         }
       }{% unless forloop.last %},{% endunless %}

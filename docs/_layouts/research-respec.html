@@ -191,6 +191,22 @@ layout: default
     </section>
     {% endif %}
 
+    {% if page.questions_answered_zh %}
+    <section class="questions-answered" id="questions-answered-zh" lang="zh-Hans" aria-labelledby="questions-answered-zh-title">
+      <p class="answer-summary-label">中文直答</p>
+      <h2 id="questions-answered-zh-title">中文常见问题</h2>
+      <p>以下问答概括本研究对企业智能体身份、跨域授权、M-Trust 与可验证信任链的核心结论。</p>
+      <div class="question-list">
+        {% for item in page.questions_answered_zh %}
+        <article>
+          <h3>{{ item.question }}</h3>
+          <p>{{ item.answer }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
     <footer class="article-footer">
       <p class="article-footer-label">Continue exploring</p>
       <a href="{{ '/' | relative_url }}">Browse all Spherity research <span aria-hidden="true">→</span></a>

@@ -759,10 +759,29 @@ for (const markdownFile of markdownFiles) {
     }
   }
 
+  if (data.questions_answered_zh) {
+    if (data.secondary_language !== "zh-Hans") {
+      errors.push(`${markdownFile}: Chinese FAQ content requires secondary_language: zh-Hans.`);
+    }
+    if (!data.abstract_zh) {
+      errors.push(`${markdownFile}: Chinese FAQ content requires an abstract_zh value.`);
+    }
+    if (!Array.isArray(data.questions_answered_zh) || data.questions_answered_zh.length < 1) {
+      errors.push(`${markdownFile}: questions_answered_zh must contain at least one question.`);
+    }
+    const tocHasChineseQuestions = data.toc_items?.some(
+      (item) => item.href === "#questions-answered-zh"
+    );
+    if (!tocHasChineseQuestions) {
+      errors.push(`${markdownFile}: table of contents is missing the Chinese FAQ section.`);
+    }
+  }
+
   for (const item of data.toc_items || []) {
     if (
       item.href?.startsWith("#") &&
       item.href !== "#questions-answered" &&
+      item.href !== "#questions-answered-zh" &&
       item.href !== "#license-and-citation" &&
       !content.includes(`id="${item.href.slice(1)}"`)
     ) {
@@ -1252,6 +1271,34 @@ for (const htmlFile of htmlFiles) {
         `${htmlFile}: FAQPage schema contains ${faqSchema.mainEntity?.length || 0} questions; ` +
           `the visible direct-answer section contains ${renderedQuestionCount}.`
       );
+    }
+
+    const chineseQuestionsSection = html.match(
+      /<section\b[^>]*id=["']questions-answered-zh["'][^>]*>([\s\S]*?)<\/section>/i
+    )?.[1];
+    const renderedChineseQuestionCount = chineseQuestionsSection
+      ? [...chineseQuestionsSection.matchAll(/<h3\b/gi)].length
+      : 0;
+    const chineseFaqSchema = parsedSchemas.find(
+      (schema) => schema?.["@type"] === "FAQPage" && /#questions-answered-zh$/.test(schema?.["@id"] || "")
+    );
+    if (renderedChineseQuestionCount || chineseFaqSchema) {
+      if (!chineseQuestionsSection) {
+        errors.push(`${htmlFile}: Chinese FAQ structured data requires a visible Chinese FAQ section.`);
+      }
+      if (!chineseFaqSchema) {
+        errors.push(`${htmlFile}: visible Chinese FAQ content requires FAQPage structured data.`);
+      } else {
+        if (chineseFaqSchema.inLanguage !== "zh-Hans") {
+          errors.push(`${htmlFile}: Chinese FAQPage structured data must declare zh-Hans.`);
+        }
+        if (chineseFaqSchema.mainEntity?.length !== renderedChineseQuestionCount) {
+          errors.push(
+            `${htmlFile}: Chinese FAQPage schema contains ${chineseFaqSchema.mainEntity?.length || 0} questions; ` +
+              `the visible Chinese FAQ section contains ${renderedChineseQuestionCount}.`
+          );
+        }
+      }
     }
 
     const pdfAlternates = [
