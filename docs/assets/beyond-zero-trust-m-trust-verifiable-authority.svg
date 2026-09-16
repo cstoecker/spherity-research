@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120" role="img" aria-labelledby="fig-title fig-desc">
+<title id="fig-title">Progression from Zero Trust to M-Trust and verifiable authority</title>
+<desc id="fig-desc">Three-stage architecture. Zero Trust provides the security foundation. M-Trust adds multi-party, intent-aware and cross-domain trust. The article adds Business Wallet identity, agent delegation, AI service evidence, local policy enforcement and signed receipts. A continuous decision loop links collection, decision, enforcement and feedback.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M 0 1 L 11 6 L 0 11 z" fill="#526273"/></marker>
+<marker id="arrow-teal" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M 0 1 L 11 6 L 0 11 z" fill="#167D8D"/></marker>
+<marker id="arrow-gold" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M 0 1 L 11 6 L 0 11 z" fill="#B47A16"/></marker>
+<marker id="arrow-purple" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M 0 1 L 11 6 L 0 11 z" fill="#6554A3"/></marker>
+</defs>
+<rect x="0" y="0" width="1800" height="1120" fill="#FFFFFF"/>
+<text x="70" y="67" font-family="Arial, Liberation Sans, sans-serif" font-size="24" font-weight="700" fill="#526273" text-anchor="start"><tspan x="70" dy="0">ARCHITECTURE PROGRESSION</tspan></text>
+<rect x="70" y="110" width="420" height="440" rx="18" fill="#EEF4FA" stroke="#183B63" stroke-width="3"/>
+<text x="280" y="150" font-family="Arial, Liberation Sans, sans-serif" font-size="34" font-weight="700" fill="#183B63" text-anchor="middle"><tspan x="280" dy="0">Zero Trust</tspan><tspan x="280" dy="38">foundation</tspan></text>
+<text x="110" y="244" font-family="Arial, Liberation Sans, sans-serif" font-size="30" font-weight="500" fill="#172536" text-anchor="start"><tspan x="110" dy="0">Identity-centric security</tspan><tspan x="110" dy="61">Least privilege</tspan><tspan x="110" dy="61">Continuous verification</tspan><tspan x="110" dy="61">Dynamic risk control</tspan></text>
+<text x="280" y="505" font-family="Arial, Liberation Sans, sans-serif" font-size="22" font-weight="600" fill="#526273" text-anchor="middle" font-style="italic"><tspan x="280" dy="0">Resource and session scope</tspan></text>
+<rect x="600" y="110" width="500" height="440" rx="18" fill="#EEF4FA" stroke="#2A6FBB" stroke-width="3"/>
+<text x="850" y="164" font-family="Arial, Liberation Sans, sans-serif" font-size="36" font-weight="700" fill="#183B63" text-anchor="middle"><tspan x="850" dy="0">M-Trust extension</tspan></text>
+<rect x="635" y="198" width="430" height="96" rx="12" fill="#FFFFFF" stroke="#2A6FBB" stroke-width="2"/>
+<text x="660" y="230" font-family="Arial, Liberation Sans, sans-serif" font-size="29" font-weight="700" fill="#183B63" text-anchor="start"><tspan x="660" dy="0">Multi-party trust</tspan></text>
+<text x="660" y="260" font-family="Arial, Liberation Sans, sans-serif" font-size="20" font-weight="400" fill="#526273" text-anchor="start"><tspan x="660" dy="0">Multiple evaluators</tspan><tspan x="660" dy="22">and trust inputs</tspan></text>
+<rect x="635" y="316" width="430" height="96" rx="12" fill="#FFFFFF" stroke="#2A6FBB" stroke-width="2"/>
+<text x="850" y="348" font-family="Arial, Liberation Sans, sans-serif" font-size="25" font-weight="700" fill="#183B63" text-anchor="middle"><tspan x="850" dy="0">Agentic Intent-aware trust</tspan></text>
+<text x="660" y="378" font-family="Arial, Liberation Sans, sans-serif" font-size="20" font-weight="400" fill="#526273" text-anchor="start"><tspan x="660" dy="0">Task purpose, context,</tspan><tspan x="660" dy="22">risk and scope</tspan></text>
+<rect x="635" y="434" width="430" height="96" rx="12" fill="#FFFFFF" stroke="#2A6FBB" stroke-width="2"/>
+<text x="660" y="466" font-family="Arial, Liberation Sans, sans-serif" font-size="29" font-weight="700" fill="#183B63" text-anchor="start"><tspan x="660" dy="0">Cross-domain trust</tspan></text>
+<text x="660" y="496" font-family="Arial, Liberation Sans, sans-serif" font-size="20" font-weight="400" fill="#526273" text-anchor="start"><tspan x="660" dy="0">Portable evidence and</tspan><tspan x="660" dy="22">heterogeneous roots</tspan></text>
+<rect x="1240" y="110" width="490" height="440" rx="18" fill="#EAF6F4" stroke="#167D8D" stroke-width="3"/>
+<text x="1485" y="164" font-family="Arial, Liberation Sans, sans-serif" font-size="36" font-weight="700" fill="#167D8D" text-anchor="middle"><tspan x="1485" dy="0">Verifiable authority</tspan></text>
+<rect x="1272" y="202" width="426" height="62" rx="12" fill="#FFFFFF" stroke="#167D8D" stroke-width="2"/>
+<text x="1485" y="242" font-family="Arial, Liberation Sans, sans-serif" font-size="28" font-weight="700" fill="#172536" text-anchor="middle"><tspan x="1485" dy="0">Business Wallet + LPID</tspan></text>
+<rect x="1272" y="284" width="426" height="62" rx="12" fill="#FFFFFF" stroke="#167D8D" stroke-width="2"/>
+<text x="1485" y="324" font-family="Arial, Liberation Sans, sans-serif" font-size="28" font-weight="700" fill="#172536" text-anchor="middle"><tspan x="1485" dy="0">Agent Wallet + PoA</tspan></text>
+<rect x="1272" y="366" width="426" height="62" rx="12" fill="#FFFFFF" stroke="#167D8D" stroke-width="2"/>
+<text x="1485" y="406" font-family="Arial, Liberation Sans, sans-serif" font-size="27" font-weight="700" fill="#172536" text-anchor="middle"><tspan x="1485" dy="0">AISP + verifiable evidence</tspan></text>
+<rect x="1272" y="448" width="426" height="62" rx="12" fill="#FFFFFF" stroke="#167D8D" stroke-width="2"/>
+<text x="1485" y="488" font-family="Arial, Liberation Sans, sans-serif" font-size="25" font-weight="700" fill="#172536" text-anchor="middle"><tspan x="1485" dy="0">Local policy + PEP + receipt</tspan></text>
+<line x1="490" y1="330" x2="600" y2="330" stroke="#526273" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="545" y="292" font-family="Arial, Liberation Sans, sans-serif" font-size="22" font-weight="600" fill="#526273" text-anchor="middle"><tspan x="545" dy="0">extends</tspan></text>
+<line x1="1100" y1="330" x2="1240" y2="330" stroke="#167D8D" stroke-width="4" marker-end="url(#arrow-teal)"/>
+<text x="1170" y="278" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="700" fill="#167D8D" text-anchor="middle"><tspan x="1170" dy="0">adds legal and</tspan><tspan x="1170" dy="19">evidence semantics</tspan></text>
+<rect x="70" y="635" width="1660" height="350" rx="18" fill="#F5F7F9" stroke="#A8B6C5" stroke-width="2"/>
+<text x="110" y="690" font-family="Arial, Liberation Sans, sans-serif" font-size="25" font-weight="700" fill="#183B63" text-anchor="start"><tspan x="110" dy="0">CONTINUOUS COLLECTION–DECISION–ENFORCEMENT LOOP</tspan></text>
+<rect x="105" y="750" width="320" height="116" rx="14" fill="#FFFFFF" stroke="#183B63" stroke-width="2"/>
+<text x="265" y="789" font-family="Arial, Liberation Sans, sans-serif" font-size="26" font-weight="700" fill="#183B63" text-anchor="middle"><tspan x="265" dy="0">Collect and evaluate</tspan></text>
+<text x="265" y="823" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" fill="#526273" text-anchor="middle"><tspan x="265" dy="0">Identity, authority,</tspan><tspan x="265" dy="21">evidence and risk</tspan></text>
+<rect x="515" y="750" width="320" height="116" rx="14" fill="#FFFFFF" stroke="#183B63" stroke-width="2"/>
+<text x="675" y="789" font-family="Arial, Liberation Sans, sans-serif" font-size="26" font-weight="700" fill="#183B63" text-anchor="middle"><tspan x="675" dy="0">Policy decision</tspan></text>
+<text x="675" y="823" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" fill="#526273" text-anchor="middle"><tspan x="675" dy="0">Effective scope</tspan><tspan x="675" dy="21">and local rules</tspan></text>
+<rect x="925" y="750" width="320" height="116" rx="14" fill="#FFFFFF" stroke="#167D8D" stroke-width="2"/>
+<text x="1085" y="789" font-family="Arial, Liberation Sans, sans-serif" font-size="26" font-weight="700" fill="#167D8D" text-anchor="middle"><tspan x="1085" dy="0">Policy enforcement</tspan></text>
+<text x="1085" y="823" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" fill="#526273" text-anchor="middle"><tspan x="1085" dy="0">External bounded</tspan><tspan x="1085" dy="21">execution</tspan></text>
+<rect x="1335" y="750" width="320" height="116" rx="14" fill="#FFFFFF" stroke="#167D8D" stroke-width="2"/>
+<text x="1495" y="789" font-family="Arial, Liberation Sans, sans-serif" font-size="26" font-weight="700" fill="#167D8D" text-anchor="middle"><tspan x="1495" dy="0">Runtime feedback</tspan></text>
+<text x="1495" y="823" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" fill="#526273" text-anchor="middle"><tspan x="1495" dy="0">Status, drift, incidents</tspan><tspan x="1495" dy="21">and outcomes</tspan></text>
+<line x1="425" y1="808" x2="515" y2="808" stroke="#526273" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="835" y1="808" x2="925" y2="808" stroke="#526273" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="1245" y1="808" x2="1335" y2="808" stroke="#526273" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 1495 866 L 1495 925 L 265 925 L 265 866" fill="none" stroke="#167D8D" stroke-width="3" marker-end="url(#arrow-teal)"/>
+<text x="865" y="957" font-family="Arial, Liberation Sans, sans-serif" font-size="23" font-weight="600" fill="#167D8D" text-anchor="middle"><tspan x="865" dy="0">continuous verification and updated decision state</tspan></text>
+<rect x="72" y="1030" width="30" height="22" rx="4" fill="#EEF4FA" stroke="#183B63" stroke-width="2"/>
+<text x="118" y="1049" font-family="Arial, Liberation Sans, sans-serif" font-size="23" font-weight="500" fill="#526273" text-anchor="start"><tspan x="118" dy="0">Documented source design</tspan></text>
+<rect x="500" y="1030" width="30" height="22" rx="4" fill="#EAF6F4" stroke="#167D8D" stroke-width="2"/>
+<text x="546" y="1049" font-family="Arial, Liberation Sans, sans-serif" font-size="23" font-weight="500" fill="#526273" text-anchor="start"><tspan x="546" dy="0">Article synthesis and joint-research proposal</tspan></text>
+<text x="1730" y="1050" font-family="Arial, Liberation Sans, sans-serif" font-size="21" font-weight="400" fill="#526273" text-anchor="end"><tspan x="1730" dy="0">Source mapping: [1], [24]–[27]</tspan></text>
+</svg>

@@ -118,11 +118,20 @@ keywords:
   - "Humanoid Robot Safety"
   - "Maschinenverordnung"
   - "Physical AI Commissioning"
+  - "Beyond Zero Trust"
+  - "Beyond Single-Enterprise ZTA"
+  - "Zero Trust for AI Agents"
+  - "AI Agent Security"
+  - "M-Trust"
+  - "Multi-Trust Architecture"
+  - "Verifiable Authority"
+  - "Authorised Agentic Actors"
+  - "Cross-Domain Trust"
 permalink: /
 schema_type: "CollectionPage"
 og_type: "website"
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-last_modified_at: "2026-09-09"
+last_modified_at: "2026-09-16"
 image: "/assets/spherity-research-og.png"
 image_alt: "Spherity Research — research for the systems we need to trust, with the portal's orbital trust-system motif."
 ---
@@ -200,9 +209,10 @@ image_alt: "Spherity Research — research for the systems we need to trust, wit
         evidence across regulated digital systems. The current agenda spans
         Digital Product Passports (DPPs), Digital Battery Passports (DBPs) and
         Cyber Resilience Act (CRA) product-evidence infrastructure; European
-        Business Wallets (EBW), Data Spaces and governed data sharing; Trusted
-        AI, Industrial AI and Physical AI, including functional-safety and cyber
-        assurance for robots; post-quantum resilience; and European
+        Business Wallets (EBW), Data Spaces and governed data sharing; AI-agent
+        security, cross-domain verifiable authority and Zero Trust extensions;
+        Trusted AI, Industrial AI and Physical AI, including functional-safety
+        and cyber assurance for robots; post-quantum resilience; and European
         AI competitiveness through trusted execution and industrial renewal.
       </p>
       <p class="scope-audience">Open-access papers, executive briefs and policy roadmaps connect architecture, regulation and operating models for policy makers, industry leaders, researchers and technology teams.</p>

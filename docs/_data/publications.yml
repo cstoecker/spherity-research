@@ -1,3 +1,32 @@
+- title: "Beyond Single-Enterprise ZTA: Multi-Trust Architectures for Authorised Agentic Actors in Open, Cross-Domain Ecosystems"
+  type: "Research paper"
+  date_label: "16 September 2026"
+  date_iso: "2026-09-16"
+  description: "How M-Trust, Business Wallets and verifiable authority extend Zero Trust for secure cross-domain B2B and B2G AI agent actions."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  topics:
+    - "Identity"
+    - "Wallets & Data Sharing"
+    - "Trusted AI"
+    - "Resilience"
+  filters: "identity wallets ai resilience infrastructure dpp"
+  search: "beyond single enterprise zero trust beyond zero trust zero trust architecture zta zero trust for ai agents ai agent security agentic ai security ai agents agentic ai m-trust m trust multi-trust architecture authorised agentic actors authorized agentic actors verifiable authority verifiable trust chain multi-party trust intent-aware trust cross-domain trust business wallet european business wallet organisational identity organizational identity legal-person identity legal person identity agent power of attorney poa ai service passport aisp verifiable credentials decentralized identifiers w3c did w3c vc policy decision point policy enforcement point signed action receipt b2c agentic commerce b2b ai agents b2g ai agents data spaces manufacturing-x digital product passport dpp trusted ai post quantum cryptography pqc gsma greater china nist sp 800-207 carsten stöcker carsten stoecker spherity gmbh"
+  image: "/assets/preview-beyond-zero-trust-m-trust-agentic-ai.webp"
+  image_alt: "Beyond Single-Enterprise Zero Trust research preview on M-Trust and verifiable authority for authorised AI agents."
+  image_width: 1200
+  image_height: 630
+  media_class: "card-media-wide"
+  format: "HTML + PDF"
+  featured: true
+  links:
+    - label: "Read the paper"
+      url: "/beyond-zero-trust-m-trust-authorised-agentic-actors.html"
+      arrow: "→"
+    - label: "Download PDF"
+      url: "/Spherity-Beyond-Single-Enterprise-ZTA-Multi-Trust-Architectures-for-Authorised-Agentic-Actors.pdf"
+      arrow: "↓"
+      secondary: true
+
 - title: "PACE: Verifiable Safety and Cyber Evidence Graphs for Physical AI"
   type: "Executive brief and full research paper"
   date_label: "9 September 2026"

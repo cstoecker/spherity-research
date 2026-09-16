@@ -1,3 +1,22 @@
+- publication_url: "/beyond-zero-trust-m-trust-authorised-agentic-actors.html"
+  output: "/assets/preview-beyond-zero-trust-m-trust-agentic-ai.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "RESEARCH PAPER · ZERO TRUST + AGENTIC AI"
+  title_size: 41
+  title_lines:
+    - "Beyond Single-Enterprise"
+    - "Zero Trust"
+  subtitle_size: 27
+  subtitle_lines:
+    - "M-Trust for Authorised AI Agents"
+  deck_lines:
+    - "Verifiable authority for B2B, data spaces,"
+    - "Digital Product Passports and Trusted AI."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  visual: "/assets/beyond-zero-trust-m-trust-agentic-ai-cover.jpg"
+  visual_fit: "contain"
+
 - publication_url: "/physical-ai-compliance-evidence-pace.html"
   output: "/assets/preview-physical-ai-compliance-evidence-pace.webp"
   style: "research-grid-v1"

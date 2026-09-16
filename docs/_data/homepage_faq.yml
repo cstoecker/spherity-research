@@ -55,6 +55,11 @@ groups:
   - title: "Identity, evidence and resilience"
     description: "Architecture questions about accountable AI, provenance and migration of the trust fabric."
     items:
+      - id: "beyond-zero-trust-agentic-networks"
+        question: "How can Zero Trust extend across organizations for authorised AI agents?"
+        answer: "Single-enterprise Zero Trust remains the security foundation. Cross-domain action additionally needs portable evidence of the accountable natural or legal person, task-bounded mandate, AI-service state and source-domain claims, followed by verifier-sovereign policy enforcement and a signed action receipt."
+        link_label: "Read the Beyond Single-Enterprise Zero Trust paper"
+        url: "/beyond-zero-trust-m-trust-authorised-agentic-actors.html"
       - id: "pace-physical-ai-evidence"
         question: "How can verifiable safety and cyber evidence graphs accelerate compliant Physical AI deployment?"
         answer: "PACE binds product identity and the current configuration to scoped safety, cybersecurity, AI and lifecycle evidence. This helps qualified parties find affected claims, tests and missing evidence faster after a change while deterministic safety controls and human assessment remain authoritative."
