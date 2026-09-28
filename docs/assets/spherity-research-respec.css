@@ -718,6 +718,37 @@ body {
   line-height: 1.5;
 }
 
+.paper-download-links {
+  display: grid;
+  grid-auto-rows: 1fr;
+  flex: 1 1 100%;
+  gap: 0.7rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.paper-download-links li {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.paper-download-links a {
+  align-items: center;
+  width: 100%;
+  min-height: 3rem;
+  height: 100%;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.paper-download-links a:focus-visible {
+  outline: 3px solid var(--text-strong);
+  outline-offset: 3px;
+}
+
 .paper-download-grid,
 .paper-cover-grid {
   display: grid;

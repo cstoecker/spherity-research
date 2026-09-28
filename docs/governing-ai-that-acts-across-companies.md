@@ -57,8 +57,8 @@ figure_objects:
     name: "Shared cross-company AI job with protected resource boundaries"
     content_url: "/assets/ai-safety-executive-shared-job-protected-boundaries.svg"
     alt: "Two organizations use separate protected controllers for a shared AI job, with agreed scope, a joint safety plan and controlled outcome records."
-    width: 404
-    height: 340
+    width: 936
+    height: 712
     description: "A cross-company AI safety reference model showing how proposals, evidence, local protected controllers, resource boundaries and joint assurance interact."
     caption: "One shared job and two protected resource boundaries. Each LLM proposes; its protected controller checks evidence, approves against current state and enforces at the resource. Dashed lines carry agreed scope and the joint safety plan. Green arrows show controlled effects and outcome records. The joint assurance model must cover both organizations; two local approvals alone do not establish joint safety. Source: Spherity GmbH."
     credit_text: "Source: Spherity GmbH"
@@ -71,8 +71,8 @@ figure_objects:
     name: "Managed agent-swarm platform with protected episode controls"
     content_url: "/assets/ai-safety-executive-managed-agent-swarm-platform.svg"
     alt: "A managed platform routes bounded agent-worker proposals through protected authority, budget, risk and pending-effect controls."
-    width: 418
-    height: 372
+    width: 936
+    height: 764
     description: "A proposed platform design for bounded AI-agent episodes, protected admission, resource enforcement, tenant isolation and outcome feedback."
     caption: "A proposed managed-platform design for one customer episode. Agents propose within a bounded worker pool. Protected controls retain current authority, shared spending, episode risk and pending effects across worker replacement. The provider enforces its own resource boundary; a customer or partner retains local acceptance and enforcement. Outcome records return to protected state. Other tenants remain isolated, while provider-wide incident review addresses shared dependencies. The figure illustrates responsibilities, not a validated platform-wide safety guarantee. Source: Spherity GmbH."
     credit_text: "Source: Spherity GmbH"
@@ -275,7 +275,11 @@ tags:
   </div>
   <div class="paper-download">
     <h2>Read the three technical papers</h2>
-    <p><a href="{{ '/resource-bounded-program-equilibria-ai-safety.html' | relative_url }}">Paper 1: protected execution</a><br><a href="{{ '/risk-bounded-runtime-assurance-multi-agent-systems.html' | relative_url }}">Paper 2: runtime assurance</a><br><a href="{{ '/private-verification-action-eligibility-trust-domains.html' | relative_url }}">Paper 3: private verification</a></p>
+    <ol class="paper-download-links" role="list">
+      <li><a href="{{ '/resource-bounded-program-equilibria-ai-safety.html' | relative_url }}">Paper 1: protected execution</a></li>
+      <li><a href="{{ '/risk-bounded-runtime-assurance-multi-agent-systems.html' | relative_url }}">Paper 2: runtime assurance</a></li>
+      <li><a href="{{ '/private-verification-action-eligibility-trust-domains.html' | relative_url }}">Paper 3: private verification</a></li>
+    </ol>
   </div>
 </section>
 

@@ -114,6 +114,33 @@ distinct question, evidence, figures, PDF and terminology to be indexed.
    entry. The local preview and build now fail if a figure include loses its
    image source, dimensions, creator or licensing metadata.
 
+## Figure display and visual quality checks
+
+Every SVG figure must be self-contained when displayed in an HTML `img` element.
+An SVG that refers to a neighbouring PNG can look correct when opened directly
+but appear blank inside a paper page. Embed extracted raster images as
+`data:image/...;base64,...` within the SVG, and inline shapes, fonts and styles.
+Keep local fragment references such as `#arrowhead`. Attribution hyperlinks and
+licensing metadata can still link to external pages. The site validator rejects
+external image, shape, font and CSS dependencies in `figure_objects` SVGs.
+Embedding a raster image does not make the figure vector artwork; retain the
+original resolution and describe its source accurately.
+
+For publication figures with SVG text, embed appropriately licensed fonts or
+outline the text from the original PDF so that unavailable fonts cannot alter
+labels, line breaks or alignment. Compare the result with the source PDF.
+Preserve readable `title` and `desc` elements, alt text and a visible caption
+for accessibility when lettering becomes vector outlines. Letters in an
+embedded PNG are already rasterized and do not require browser fonts.
+
+Before publication, open every figure through its paper page at desktop and
+mobile widths, scroll it into view and confirm that the image has loaded.
+Inspect the complete canvas, including borders, arrowheads, connectors and
+labels near every edge. Compare it with the source PDF, and correct crop or
+viewBox boundaries without dropping content. Check the full-size figure link
+as well as the inline version. A successful build or a valid image URL alone
+does not establish that a diagram is visible or correctly framed.
+
 ## SEO, AEO and GEO research
 
 Every publication created from template version 2 records a structured search

@@ -100,6 +100,54 @@ const sourcePathFromPublicUrl = (url) => {
   return path.join(sourceDirectory, pathname.replace(/^\/+/, ""));
 };
 
+// SVGs loaded through <img> cannot fetch their own image, font or style assets.
+// Only inspect rendering references: metadata and ordinary <a> links may
+// legitimately point to attribution, licensing and source pages.
+const svgRenderingDependencies = (source) => {
+  const dependencies = new Set();
+  const svg = source
+    .replace(/<!--[\s\S]*?-->/g, "")
+    .replace(/<(metadata|title|desc)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, "");
+  const embedded = (value) => /^(?:#|data:)/i.test(value.trim());
+  const record = (value) => {
+    if (!embedded(value)) dependencies.add(value.trim() || "(empty reference)");
+  };
+  const checkCss = (css) => {
+    for (const match of css.matchAll(/url\(\s*(?:(["'])([\s\S]*?)\1|([^)]*?))\s*\)/gi)) {
+      record(match[2] ?? match[3]);
+    }
+    for (const match of css.matchAll(/@import\s+(["'])([\s\S]*?)\1/gi)) {
+      record(match[2]);
+    }
+  };
+  const renderingHrefTags = new Set([
+    "image", "use", "feimage", "textpath", "mpath", "pattern",
+    "lineargradient", "radialgradient", "filter", "font-face-uri"
+  ]);
+  const cssAttributes = new Set([
+    "style", "fill", "stroke", "filter", "clip-path", "mask", "cursor",
+    "marker", "marker-start", "marker-mid", "marker-end"
+  ]);
+  for (const tag of svg.matchAll(/<([A-Za-z][\w:.-]*)\b((?:"[^"]*"|'[^']*'|[^'">])*)>/g)) {
+    const name = tag[1].split(":").at(-1).toLowerCase();
+    for (const attribute of tag[2].matchAll(/\b([\w:.-]+)\s*=\s*(["'])([\s\S]*?)\2/g)) {
+      const attributeName = attribute[1].toLowerCase();
+      if (renderingHrefTags.has(name) && /^(?:xlink:)?href$/.test(attributeName)) {
+        record(attribute[3]);
+      }
+      if (cssAttributes.has(attributeName)) checkCss(attribute[3]);
+    }
+  }
+  for (const style of svg.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style\s*>/gi)) {
+    checkCss(style[1].replace(/\/\*[\s\S]*?\*\//g, ""));
+  }
+  for (const instruction of svg.matchAll(/<\?xml-stylesheet\b[\s\S]*?\?>/gi)) {
+    const href = instruction[0].match(/\bhref\s*=\s*(["'])([\s\S]*?)\1/i);
+    if (href) record(href[2]);
+  }
+  return [...dependencies];
+};
+
 const imageDimensions = async (file) => {
   const buffer = await readFile(file);
   if (
@@ -743,8 +791,20 @@ for (const markdownFile of markdownFiles) {
         if (figure?.content_url && !/\.svg$/i.test(figure.content_url)) {
           errors.push(`${label} must reference an SVG image.`);
         }
-        if (figure?.content_url && !(await exists(sourcePathFromPublicUrl(figure.content_url)))) {
-          errors.push(`${label} image does not exist: ${figure.content_url}`);
+        if (figure?.content_url) {
+          const figurePath = sourcePathFromPublicUrl(figure.content_url);
+          if (!(await exists(figurePath))) {
+            errors.push(`${label} image does not exist: ${figure.content_url}`);
+          } else if (/\.svg$/i.test(figure.content_url)) {
+            const dependencies = svgRenderingDependencies(await readFile(figurePath, "utf8"));
+            if (dependencies.length) {
+              errors.push(
+                `${label} (${figure.content_url}) has external SVG rendering dependencies: ` +
+                  `${dependencies.join(", ")}. SVG figures must render independently inside <img>; ` +
+                  "embed raster images as data:image URLs and inline referenced shapes, styles and fonts."
+              );
+            }
+          }
         }
       }
     }
