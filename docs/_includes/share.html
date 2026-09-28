@@ -1,7 +1,7 @@
-{% assign share_id = include.id | default: "page-share" %}
-{% assign share_title = include.title | default: page.title | default: site.title %}
-{% assign share_text = include.text | default: page.description | default: site.description %}
-{% assign share_path = include.url | default: page.canonical_url | default: page.url %}
+{% assign share_id = include.id | default: id | default: "page-share" %}
+{% assign share_title = include.title | default: title | default: page.title | default: site.title %}
+{% assign share_text = include.text | default: text | default: page.description | default: site.description %}
+{% assign share_path = include.url | default: url | default: page.canonical_url | default: page.url %}
 {% if share_path contains "://" %}
   {% assign share_url = share_path %}
 {% else %}

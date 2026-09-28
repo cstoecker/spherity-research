@@ -127,11 +127,24 @@ keywords:
   - "Verifiable Authority"
   - "Authorised Agentic Actors"
   - "Cross-Domain Trust"
+  - "AI Safety"
+  - "AI Agents"
+  - "Cross-Company AI Agents"
+  - "Operational AI Alignment"
+  - "Agent Swarms"
+  - "Multi-Agent Systems"
+  - "Protected Execution"
+  - "Runtime Assurance"
+  - "Risk-Bounded Runtime Assurance"
+  - "Private Verification"
+  - "Action Eligibility"
+  - "Episode Risk Accounting"
+  - "AI Safety First-Mover Advantage"
 permalink: /
 schema_type: "CollectionPage"
 og_type: "website"
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-last_modified_at: "2026-09-16"
+last_modified_at: "2026-09-28"
 image: "/assets/spherity-research-og.png"
 image_alt: "Spherity Research — research for the systems we need to trust, with the portal's orbital trust-system motif."
 ---
@@ -210,7 +223,8 @@ image_alt: "Spherity Research — research for the systems we need to trust, wit
         Digital Product Passports (DPPs), Digital Battery Passports (DBPs) and
         Cyber Resilience Act (CRA) product-evidence infrastructure; European
         Business Wallets (EBW), Data Spaces and governed data sharing; AI-agent
-        security, cross-domain verifiable authority and Zero Trust extensions;
+        security, AI safety, agent swarms, runtime assurance, private
+        verification, cross-domain verifiable authority and Zero Trust extensions;
         Trusted AI, Industrial AI and Physical AI, including functional-safety
         and cyber assurance for robots; post-quantum resilience; and European
         AI competitiveness through trusted execution and industrial renewal.

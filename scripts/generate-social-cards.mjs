@@ -296,8 +296,15 @@ const generatedCards = [];
 const preflightErrors = [];
 
 for (const card of manifest) {
-  const publication = publicationsByUrl.get(card.publication_url);
-  if (!publication) throw new Error(`No publication catalog entry for ${card.publication_url}.`);
+  const publication = publicationsByUrl.get(card.publication_url) || {
+    topics: card.topics || [],
+    image: card.output
+  };
+  if (!publicationsByUrl.has(card.publication_url) && publication.topics.length === 0) {
+    throw new Error(
+      `${card.publication_url}: a non-catalog series page requires social-card topics.`
+    );
+  }
   if (publication.image && publication.image !== card.output) {
     throw new Error(`${card.publication_url}: catalog image must match ${card.output}.`);
   }

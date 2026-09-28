@@ -44,6 +44,9 @@ layout: default
         <nav class="article-breadcrumbs" aria-label="Breadcrumb">
           <ol>
             <li><a class="article-home-link" href="{{ '/' | relative_url }}">Research</a></li>
+            {% if page.series_position and page.series_position > 0 %}
+            <li><a href="{{ page.series_url | relative_url }}">{{ page.series_name }}</a></li>
+            {% endif %}
             <li aria-current="page">{{ page.title }}</li>
           </ol>
         </nav>
@@ -138,6 +141,10 @@ layout: default
       </details>
       {% endif %}
     </header>
+
+    {% if page.series_items %}
+    {% include research-series-nav.html %}
+    {% endif %}
 
     {% if page.answer_summary %}
     <section class="answer-summary" id="answer-summary" aria-labelledby="answer-summary-title">

@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="418" height="372" viewBox="92 194 418 372" role="img" aria-labelledby="title description">
+<title id="title">Managed AI-agent swarm with protected platform and customer boundaries</title>
+<desc id="description">A proposed platform architecture that keeps authority, spending limits, episode risk and pending effects in protected state across dynamic AI-worker replacement while preserving customer or partner enforcement.</desc>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_3">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_4">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_5">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_6">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_7">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_8">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_9">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_10">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_11">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_12">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_13">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_14">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_15">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_16">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_17">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_18">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_19">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_20">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_21">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_22">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_23">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_24">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_25">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_26">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_27">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_28">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_29">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+<clipPath id="clip_30">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M0 0H496.8V403.2H0Z" fill="#ffffff"/>
+<g clip-path="url(#clip_2)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M13.32 374.4H339.48C342.6 374.4 344.16 372.84 344.16 369.72V35.64C344.16 32.52 342.6 30.96 339.48 30.96H13.32C10.2 30.96 8.64 32.52 8.64 35.64V369.72C8.64 372.84 10.2 374.4 13.32 374.4Z" fill="#fbfcfd"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".85" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#aebec5" d="M13.32 374.4H339.48C342.6 374.4 344.16 372.84 344.16 369.72V35.64C344.16 32.52 342.6 30.96 339.48 30.96H13.32C10.2 30.96 8.64 32.52 8.64 35.64V369.72C8.64 372.84 10.2 374.4 13.32 374.4Z"/>
+</g>
+<g clip-path="url(#clip_3)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M367.56 374.4H483.48C486.6 374.4 488.16 372.84 488.16 369.72V35.64C488.16 32.52 486.6 30.96 483.48 30.96H367.56C364.44 30.96 362.88 32.52 362.88 35.64V369.72C362.88 372.84 364.44 374.4 367.56 374.4Z" fill="#fbfcfd"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".85" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#aebec5" d="M367.56 374.4H483.48C486.6 374.4 488.16 372.84 488.16 369.72V35.64C488.16 32.52 486.6 30.96 483.48 30.96H367.56C364.44 30.96 362.88 32.52 362.88 35.64V369.72C362.88 372.84 364.44 374.4 367.56 374.4Z"/>
+</g>
+<g clip-path="url(#clip_4)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M35.64 357.84H315.72C318.84 357.84 320.4 356.28 320.4 353.16V329.4C320.4 326.28 318.84 324.72 315.72 324.72H35.64C32.52 324.72 30.96 326.28 30.96 329.4V353.16C30.96 356.28 32.52 357.84 35.64 357.84Z" fill="#eaf1f4"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#20516b" d="M35.64 357.84H315.72C318.84 357.84 320.4 356.28 320.4 353.16V329.4C320.4 326.28 318.84 324.72 315.72 324.72H35.64C32.52 324.72 30.96 326.28 30.96 329.4V353.16C30.96 356.28 32.52 357.84 35.64 357.84Z"/>
+</g>
+<g clip-path="url(#clip_5)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M35.64 306H111.24C114.36 306 115.92 304.44 115.92 301.32V281.88C115.92 278.76 114.36 277.2 111.24 277.2H35.64C32.52 277.2 30.96 278.76 30.96 281.88V301.32C30.96 304.44 32.52 306 35.64 306Z" fill="#ffffff"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".8" stroke-linecap="butt" stroke-dasharray="2.4,1.6" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#677d87" d="M35.64 306H111.24C114.36 306 115.92 304.44 115.92 301.32V281.88C115.92 278.76 114.36 277.2 111.24 277.2H35.64C32.52 277.2 30.96 278.76 30.96 281.88V301.32C30.96 304.44 32.52 306 35.64 306Z"/>
+</g>
+<g clip-path="url(#clip_6)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M137.88 306H213.48C216.6 306 218.16 304.44 218.16 301.32V281.88C218.16 278.76 216.6 277.2 213.48 277.2H137.88C134.76 277.2 133.2 278.76 133.2 281.88V301.32C133.2 304.44 134.76 306 137.88 306Z" fill="#ffffff"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".8" stroke-linecap="butt" stroke-dasharray="2.4,1.6" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#677d87" d="M137.88 306H213.48C216.6 306 218.16 304.44 218.16 301.32V281.88C218.16 278.76 216.6 277.2 213.48 277.2H137.88C134.76 277.2 133.2 278.76 133.2 281.88V301.32C133.2 304.44 134.76 306 137.88 306Z"/>
+</g>
+<g clip-path="url(#clip_7)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M240.12 306H315.72C318.84 306 320.4 304.44 320.4 301.32V281.88C320.4 278.76 318.84 277.2 315.72 277.2H240.12C237 277.2 235.44 278.76 235.44 281.88V301.32C235.44 304.44 237 306 240.12 306Z" fill="#ffffff"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".8" stroke-linecap="butt" stroke-dasharray="2.4,1.6" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#677d87" d="M240.12 306H315.72C318.84 306 320.4 304.44 320.4 301.32V281.88C320.4 278.76 318.84 277.2 315.72 277.2H240.12C237 277.2 235.44 278.76 235.44 281.88V301.32C235.44 304.44 237 306 240.12 306Z"/>
+</g>
+<g clip-path="url(#clip_8)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M35.64 259.92H315.72C318.84 259.92 320.4 258.36 320.4 255.24V221.4C320.4 218.28 318.84 216.72 315.72 216.72H35.64C32.52 216.72 30.96 218.28 30.96 221.4V255.24C30.96 258.36 32.52 259.92 35.64 259.92Z" fill="#ffffff"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".85" stroke-linecap="butt" stroke-dasharray="2.55,1.7" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#677d87" d="M35.64 259.92H315.72C318.84 259.92 320.4 258.36 320.4 255.24V221.4C320.4 218.28 318.84 216.72 315.72 216.72H35.64C32.52 216.72 30.96 218.28 30.96 221.4V255.24C30.96 258.36 32.52 259.92 35.64 259.92Z"/>
+</g>
+<g clip-path="url(#clip_9)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M35.64 195.84H315.72C318.84 195.84 320.4 194.28 320.4 191.16V99.72C320.4 96.6 318.84 95.04 315.72 95.04H35.64C32.52 95.04 30.96 96.6 30.96 99.72V191.16C30.96 194.28 32.52 195.84 35.64 195.84Z" fill="#f1f5f7"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#20516b" d="M35.64 195.84H315.72C318.84 195.84 320.4 194.28 320.4 191.16V99.72C320.4 96.6 318.84 95.04 315.72 95.04H35.64C32.52 95.04 30.96 96.6 30.96 99.72V191.16C30.96 194.28 32.52 195.84 35.64 195.84Z"/>
+</g>
+<g clip-path="url(#clip_10)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M41.4 170.64H309.96C311.64 170.64 312.48 169.8 312.48 168.12V156.6C312.48 154.92 311.64 154.08 309.96 154.08H41.4C39.72 154.08 38.88 154.92 38.88 156.6V168.12C38.88 169.8 39.72 170.64 41.4 170.64Z" fill="#ffffff"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".65" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#b8c8cf" d="M41.4 170.64H309.96C311.64 170.64 312.48 169.8 312.48 168.12V156.6C312.48 154.92 311.64 154.08 309.96 154.08H41.4C39.72 154.08 38.88 154.92 38.88 156.6V168.12C38.88 169.8 39.72 170.64 41.4 170.64Z"/>
+</g>
+<g clip-path="url(#clip_11)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M41.4 143.28H309.96C311.64 143.28 312.48 142.44 312.48 140.76V129.24C312.48 127.56 311.64 126.72 309.96 126.72H41.4C39.72 126.72 38.88 127.56 38.88 129.24V140.76C38.88 142.44 39.72 143.28 41.4 143.28Z" fill="#ffffff"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".65" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#b8c8cf" d="M41.4 143.28H309.96C311.64 143.28 312.48 142.44 312.48 140.76V129.24C312.48 127.56 311.64 126.72 309.96 126.72H41.4C39.72 126.72 38.88 127.56 38.88 129.24V140.76C38.88 142.44 39.72 143.28 41.4 143.28Z"/>
+</g>
+<g clip-path="url(#clip_12)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M41.4 115.92H309.96C311.64 115.92 312.48 115.08 312.48 113.4V101.88C312.48 100.2 311.64 99.36 309.96 99.36H41.4C39.72 99.36 38.88 100.2 38.88 101.88V113.4C38.88 115.08 39.72 115.92 41.4 115.92Z" fill="#ffffff"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".65" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#b8c8cf" d="M41.4 115.92H309.96C311.64 115.92 312.48 115.08 312.48 113.4V101.88C312.48 100.2 311.64 99.36 309.96 99.36H41.4C39.72 99.36 38.88 100.2 38.88 101.88V113.4C38.88 115.08 39.72 115.92 41.4 115.92Z"/>
+</g>
+<g clip-path="url(#clip_13)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M35.64 75.6H315.72C318.84 75.6 320.4 74.04 320.4 70.92V39.24C320.4 36.12 318.84 34.56 315.72 34.56H35.64C32.52 34.56 30.96 36.12 30.96 39.24V70.92C30.96 74.04 32.52 75.6 35.64 75.6Z" fill="#eaf1f4"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".85" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#20516b" d="M35.64 75.6H315.72C318.84 75.6 320.4 74.04 320.4 70.92V39.24C320.4 36.12 318.84 34.56 315.72 34.56H35.64C32.52 34.56 30.96 36.12 30.96 39.24V70.92C30.96 74.04 32.52 75.6 35.64 75.6Z"/>
+</g>
+<g clip-path="url(#clip_14)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M379.08 261.36H471.96C475.08 261.36 476.64 259.8 476.64 256.68V218.52C476.64 215.4 475.08 213.84 471.96 213.84H379.08C375.96 213.84 374.4 215.4 374.4 218.52V256.68C374.4 259.8 375.96 261.36 379.08 261.36Z" fill="#ffffff"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".8" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#677d87" d="M379.08 261.36H471.96C475.08 261.36 476.64 259.8 476.64 256.68V218.52C476.64 215.4 475.08 213.84 471.96 213.84H379.08C375.96 213.84 374.4 215.4 374.4 218.52V256.68C374.4 259.8 375.96 261.36 379.08 261.36Z"/>
+</g>
+<g clip-path="url(#clip_15)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M379.08 156.96H471.96C475.08 156.96 476.64 155.4 476.64 152.28V102.6C476.64 99.48 475.08 97.92 471.96 97.92H379.08C375.96 97.92 374.4 99.48 374.4 102.6V152.28C374.4 155.4 375.96 156.96 379.08 156.96Z" fill="#f1f5f7"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#20516b" d="M379.08 156.96H471.96C475.08 156.96 476.64 155.4 476.64 152.28V102.6C476.64 99.48 475.08 97.92 471.96 97.92H379.08C375.96 97.92 374.4 99.48 374.4 102.6V152.28C374.4 155.4 375.96 156.96 379.08 156.96Z"/>
+</g>
+<g clip-path="url(#clip_16)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M379.08 74.16H471.96C475.08 74.16 476.64 72.6 476.64 69.48V45.72C476.64 42.6 475.08 41.04 471.96 41.04H379.08C375.96 41.04 374.4 42.6 374.4 45.72V69.48C374.4 72.6 375.96 74.16 379.08 74.16Z" fill="#e9f3f0"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#137b75" d="M379.08 74.16H471.96C475.08 74.16 476.64 72.6 476.64 69.48V45.72C476.64 42.6 475.08 41.04 471.96 41.04H379.08C375.96 41.04 374.4 42.6 374.4 45.72V69.48C374.4 72.6 375.96 74.16 379.08 74.16Z"/>
+</g>
+<g clip-path="url(#clip_17)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M13.68 20.88H483.12C484.56 20.88 485.28 20.16 485.28 18.72V5.76C485.28 4.32 484.56 3.6 483.12 3.6H13.68C12.24 3.6 11.52 4.32 11.52 5.76V18.72C11.52 20.16 12.24 20.88 13.68 20.88Z" fill="#f4f6f7"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".65" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#bac5ca" d="M13.68 20.88H483.12C484.56 20.88 485.28 20.16 485.28 18.72V5.76C485.28 4.32 484.56 3.6 483.12 3.6H13.68C12.24 3.6 11.52 4.32 11.52 5.76V18.72C11.52 20.16 12.24 20.88 13.68 20.88Z"/>
+</g>
+<g clip-path="url(#clip_18)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#20516b" d="M73.44 277.2C73.44 271.44 73.44 266.0154 73.44 260.92625"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M75.44 264.92625 73.44 260.92625 71.44 264.92625Z" fill="#20516b"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#20516b" d="M75.44 264.92625 73.44 260.92625 71.44 264.92625Z"/>
+</g>
+<g clip-path="url(#clip_19)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#20516b" d="M175.68 277.2C175.68 271.44 175.68 266.0154 175.68 260.92625"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M177.68 264.92625 175.68 260.92625 173.68 264.92625Z" fill="#20516b"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#20516b" d="M177.68 264.92625 175.68 260.92625 173.68 264.92625Z"/>
+</g>
+<g clip-path="url(#clip_20)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#20516b" d="M277.92 277.2C277.92 271.44 277.92 266.0154 277.92 260.92625"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M279.92 264.92625 277.92 260.92625 275.92 264.92625Z" fill="#20516b"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#20516b" d="M279.92 264.92625 277.92 260.92625 275.92 264.92625Z"/>
+</g>
+<g clip-path="url(#clip_21)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#20516b" d="M175.68 216.72C175.68 209.76 175.68 203.1354 175.68 196.84624"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M177.68 200.84624 175.68 196.84624 173.68 200.84624Z" fill="#20516b"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#20516b" d="M177.68 200.84624 175.68 196.84624 173.68 200.84624Z"/>
+</g>
+<g clip-path="url(#clip_22)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#20516b" d="M175.68 154.08C175.68 150.48 175.68 147.21541 175.68 144.28623"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M177.68 148.28623 175.68 144.28623 173.68 148.28623Z" fill="#20516b"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#20516b" d="M177.68 148.28623 175.68 144.28623 173.68 148.28623Z"/>
+</g>
+<g clip-path="url(#clip_23)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#20516b" d="M175.68 126.72C175.68 123.12 175.68 119.85541 175.68 116.92623"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M177.68 120.92623 175.68 116.92623 173.68 120.92623Z" fill="#20516b"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#20516b" d="M177.68 120.92623 175.68 116.92623 173.68 120.92623Z"/>
+</g>
+<g clip-path="url(#clip_24)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1.05" stroke-linecap="round" stroke-dasharray="3.15,2.1" stroke-linejoin="round" fill="none" stroke="#20516b" d="M320.4 341.28H333.36V162.36H313.65394"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M317.65394 160.36 313.65394 162.36 317.65394 164.36Z" fill="#20516b"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1.05" stroke-linecap="round" stroke-dasharray="3.15,2.1" stroke-linejoin="round" fill="none" stroke="#20516b" d="M317.65394 160.36 313.65394 162.36 317.65394 164.36Z"/>
+</g>
+<g clip-path="url(#clip_25)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1.05" stroke-linecap="round" stroke-dasharray="3.15,2.1" stroke-linejoin="round" fill="none" stroke="#20516b" d="M30.96 56.88H20.16V162.36H37.706064"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M33.706064 164.36 37.706064 162.36 33.706064 160.36Z" fill="#20516b"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1.05" stroke-linecap="round" stroke-dasharray="3.15,2.1" stroke-linejoin="round" fill="none" stroke="#20516b" d="M33.706064 164.36 37.706064 162.36 33.706064 160.36Z"/>
+</g>
+<g clip-path="url(#clip_26)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1.05" stroke-linecap="round" stroke-dasharray="3.15,2.1" stroke-linejoin="round" fill="none" stroke="#20516b" d="M20.16 135C26.4 135 32.248689 135 37.706064 135"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M33.706064 137 37.706064 135 33.706064 133Z" fill="#20516b"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1.05" stroke-linecap="round" stroke-dasharray="3.15,2.1" stroke-linejoin="round" fill="none" stroke="#20516b" d="M33.706064 137 37.706064 135 33.706064 133Z"/>
+</g>
+<g clip-path="url(#clip_27)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#20516b" d="M425.52 213.84C425.52 194.88 425.52 176.25542 425.52 157.96623"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M427.52 161.96623 425.52 157.96623 423.52 161.96623Z" fill="#20516b"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#20516b" d="M427.52 161.96623 425.52 157.96623 423.52 161.96623Z"/>
+</g>
+<g clip-path="url(#clip_28)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#137b75" d="M312.48 107.64C333.12 107.64 353.2755 107.64 372.94657 107.64"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M368.94657 109.64 372.94657 107.64 368.94657 105.64Z" fill="#137b75"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#137b75" d="M368.94657 109.64 372.94657 107.64 368.94657 105.64Z"/>
+</g>
+<g clip-path="url(#clip_29)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#137b75" d="M425.52 97.92C425.52 90 425.52 82.545848 425.52 75.55754"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M427.52 79.55754 425.52 75.55754 423.52 79.55754Z" fill="#137b75"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#137b75" d="M427.52 79.55754 425.52 75.55754 423.52 79.55754Z"/>
+</g>
+<g clip-path="url(#clip_30)">
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#137b75" d="M374.4 57.6C356.4 57.6 338.79133 57.6 321.57395 57.6"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" d="M325.57395 55.6 321.57395 57.6 325.57395 59.6Z" fill="#137b75"/>
+<path transform="matrix(.90837,0,0,-.90837,72,563.225)" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#137b75" d="M325.57395 55.6 321.57395 57.6 325.57395 59.6Z"/>
+</g>
+<text fill="#20516b" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 170.12668 211.50327)" font-size="11.2" font-family="DejaVuSans" font-weight="bold"><tspan y="0" x="0 8.2096 15.344001 23.153428 30.791829 38.44143 47.96143 56.58543 67.72943 71.62703 79.83663 88.46063 97.68376 106.35256 110.51896 119.81496 127.464557">PLATFORM PROVIDER</tspan></text>
+<text fill="#20516b" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 407.90928 211.50327)" font-size="10.5" font-family="DejaVuSans" font-weight="bold"><tspan y="0" x="0 8.085 15.2565 22.816502 31.7415 40.2675 48.3525 56.0595 63.231004 66.885 75.810009 87.3915 96.18 103.3515">RESOURCE OWNER</tspan></text>
+<text fill="#20516b" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 106.67447 255.72156)" font-size="10.3" font-family="DejaVuSans" font-weight="bold"><tspan y="0" x="0 8.755 16.0886 23.072 26.6564 32.7643 40.0979 46.226404 51.149805 58.225904 68.9585 75.9419 81.019809 84.6042 95.33681 102.28931 109.62291 116.99771 123.95021 128.87361 135.85701 139.4414 143.35541 146.9398 155.69481 163.02841 170.01181 173.5962 180.5796 187.2231 194.5979 201.674 207.80249 215.1361 220.21399 227.19739 230.78179 237.76519 245.13999 248.67288 254.80138 261.87748 269.25227">One customer mandate &#x00b7; One exposure episode</tspan></text>
+<text fill="#20516b" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 184.16979 277.95848)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 7.7000005 13.620001 19.960001 26.09 35.83 38.61 44.11 47.29 52.86 58.43 67.06 70.24 76.369998 82.71999 88.869998 95.20999 99.12999">Dynamic LLM agents</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 120.64265 301.10487)" font-size="10.5" font-family="DejaVuSans"><tspan y="0" x="0 6.3315007 9.250501 15.687001 22.344002 29.001002 35.4585">Planner</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 212.30086 301.10487)" font-size="10.5" font-family="DejaVuSans"><tspan y="0" x="0 9.7751259 16.201127 20.516627 26.221127 32.678628 36.994127">Workers</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 292.129 301.10487)" font-size="10.5" font-family="DejaVuSans"><tspan y="0" x="0 6.8287508 13.286251 19.50225 22.421252 28.878752 37.46775 40.80675 47.24325 53.91075 60.36825 67.02525">Review agent</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 134.40105 341.0005)" font-size="10.5" font-family="DejaVuSans"><tspan y="0" x="0 7.329 13.755001 20.181002 24.324627 30.992127 33.911127 40.568128 47.004629 51.12063 57.54663 61.86213 65.201129 71.86863 75.96538 82.39138 89.05888 95.484889 100.95538 107.41288 112.88338 116.222377 120.33837 126.99537 133.45287 136.79187 143.44887 149.7345 155.9505 160.0665 163.4055 169.8315 176.499 182.9565 187.272 193.7085 197.8245 200.7435 207.1695">Coordinator proposes the next operation</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 142.09381 358.40373)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.84 13.190001 19.34 25.68 29.6 32.78 42.52 48.670003 53.88 59.09 65.22 71.57 77.72 82.93 86.11 92.46 98.58 101.76 108.100009 114.22001 118.14001 121.32001 127.670009 131.78 137.91 144.25 148.17 151.35 157.48001 163.82 167.74 174.08 180.2 184.31 187.09 191.01">Agent messages do not grant authority</tspan></text>
+<text fill="#20516b" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 163.49729 398.95338)" font-size="10.4" font-family="DejaVuSans" font-weight="bold"><tspan y="0" x="0 7.6232 15.631201 24.4712 31.564002 38.667203 46.300806 53.393606 60.496805 69.1288 72.748 80.3816 89.2216 97.92641 105.01921 113.027217 121.86722 128.49202 135.11682 142.22002">PROTECTED CONTROLLER</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 139.3403 418.24714)" font-size="10.3" font-family="DejaVuSans"><tspan y="0" x="0 6.5096008 12.607201 18.9211 21.7845 28.314702 34.6286 38.666204 45.0007 48.2761 54.6106 60.7082 63.571599 70.1121 76.4466 82.9768 88.6418 94.9763 98.2517 104.565608 111.0958 117.63631 120.911708 123.77511 130.0787 132.94211 139.4723 143.5099 146.78531 152.15161 158.46552 162.09111 168.42562 172.46321 178.5608 181.83621 188.37671 191.24011 197.55402">Evaluate evidence and joint safety plan</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 167.63462 443.10014)" font-size="10.3" font-family="DejaVuSans"><tspan y="0" x="0 6.8733255 13.413826 23.446026 26.309426 30.347025 33.622426 39.936326 46.476827 52.790727 55.654127 62.184328 67.55063 71.58823 74.863628 80.528629 87.05882 91.12025 95.134799 101.4693 107.9995 112.037097 115.31249 120.678798 124.71639 131.03029 135.06789">Admit against current state</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 154.31421 467.95314)" font-size="10.3" font-family="DejaVuSans"><tspan y="0" x="0 6.5096008 13.039801 16.665402 22.969002 26.983551 32.648553 38.98305 42.258455 48.798955 52.813505 59.117105 65.21471 68.07811 74.61861 80.95311 85.18641 88.46181 92.47636 98.81086 104.17716 110.48077 117.01096 121.02551 126.69051 133.02501 136.30042 142.61432 148.27931 153.9443 160.27881 165.64511">Enforce provider resource access</tspan></text>
+<text fill="#20516b" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 122.66321 489.20899)" font-size="10.2" font-family="DejaVuSans" font-weight="bold"><tspan y="0" x="0 8.466001 15.728401 20.757002 27.642003 34.9452 38.4438 45.3594 48.909 54.978 59.8536 66.7386 71.614208 78.52981 82.07941 88.96441 95.01301 100.04161 107.04901 113.11801 119.18701 122.73661 132.1614 139.16881 144.1974 150.71479 157.63039 162.65898 166.20859 171.23719 178.15279 185.456 188.95459 195.83959 201.88819 208.80379 219.43219 226.3478 233.6102">Durable state across worker replacement</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 135.93393 504.90565)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.98 13.32 17.258126 21.149376 27.299376 33.639375 37.559373 40.739374 46.869375 53.209375 57.12937 63.46937 69.58937 73.69937 76.47937 80.39937 86.31937 89.49937 92.67937 95.85937 102.209369 108.54936 114.67936 118.57061 124.72061 131.07062 134.25061 139.46062 145.81063 151.96062 158.30062 164.65062 167.43062 173.77062 180.12062 183.30063 186.08063 188.86063 198.60063 201.38063 205.30063">Current authority &#x00b7; Shared spending limits</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 162.63858 515.37008)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 5.6862509 11.83625 15.774376 25.514378 31.644379 37.98438 44.13438 50.47438 54.39438 57.57438 63.72438 70.07438 72.85438 78.06438 84.18438 90.53438 96.68438 99.86438 103.97438 106.75438 111.96438 117.75438 120.93438 127.28438 133.43437 139.78438 142.56438 146.48438">Permanent episode risk debits</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 158.21738 525.8345)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 5.6862509 11.83625 18.17625 24.52625 27.306252 33.64625 39.996255 43.176256 49.296255 55.646257 61.796258 65.90626 72.036258 75.95625 78.73625 84.856258 91.19626 96.40626 99.58626 105.716259 112.05626 118.40626 121.58626 125.47751 131.6275 137.1275 143.2775 146.0575 152.4075 156.3275">Pending operations and receipts</tspan></text>
+<text fill="#20516b" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 429.44047 247.8504)" font-size="10.3" font-family="DejaVuSans" font-weight="bold"><tspan y="0" x="0 7.5602 15.923801 23.339802 30.364403 39.119405 49.367906 56.402807">CUSTOMER</tspan></text>
+<text fill="#20516b" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 425.60829 258.36054)" font-size="10.3" font-family="DejaVuSans" font-weight="bold"><tspan y="0" x="0 8.755 16.686 20.270401 26.882802 34.855005 42.33288 49.35748 57.97858 65.01348">OR PARTNER</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 436.5513 287.57359)" font-size="10.2" font-family="DejaVuSans"><tspan y="0" x="0 8.0274 16.371 22.8378 28.152 31.395602 35.394 41.8608">Owns the</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 416.62394 298.42857)" font-size="10.2" font-family="DejaVuSans"><tspan y="0" x="0 6.477 12.9438 18.258 21.0936 27.560399 33.833398 39.1476 44.4618 47.7054 51.67885 57.951848 63.26605 69.508449 75.97524 79.94869 85.55869">business resource</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 426.1973 339.73616)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 7.870001 16.050002 22.390002 25.570002 31.7 38.04 41.96 48.3 54.42 58.53 61.309999 65.229999">Own authority</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 430.50498 349.90138)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.13 12.47 18.82 22 25.89125 32.041254 34.82125 37.60125 43.73125 50.07125 55.57125">and reliance</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 447.3524 360.0666)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 4.11 10.450001 13.230001 19.380002">rules</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 420.7613 438.90547)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.98 13.32 19.47 24.97 30.76 33.940004 40.06 48.24 54.58 57.760004 62.97 66.89 73.02 76.939998">Check own state</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 419.76066 449.9674)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.668125 12.168125 17.668126 23.818125 30.168126 34.088129 37.268129 43.388128 49.73813 55.88813 59.99813 66.12813 70.04813 72.828128 78.94813">Accept operation</tspan></text>
+<text fill="#172831" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 425.367 461.0294)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.32 12.66 16.18 22.300002 26.191252 31.691252 37.84125 41.02125 43.80125 49.92125 55.42125 61.55125 64.33125 67.11125">Enforce locally</tspan></text>
+<text fill="#15554f" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 368.80369 459.4508)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.512501 12.6625 19.0125 25.3525 31.5025 36.7125">Request</tspan></text>
+<text fill="#15554f" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 416.39686 513.40798)" font-size="10.1" font-family="DejaVuSans" font-weight="bold"><tspan y="0" x="0 8.585001 17.9174 25.1086 31.956402 39.188005 42.702806 47.682107 54.529909 60.539407 67.4781 74.669307 79.648609 85.63791">Owned resource</tspan></text>
+<text fill="#15554f" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 367.92369 503.5976)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 6.512501 12.6625 18.1625 24.3125 27.0925 33.4425 37.362504">Receipts</tspan></text>
+<text fill="#48616b" xml:space="preserve" transform="matrix(.90837 0 -0 .90837 141.27173 554.61166)" font-size="10" font-family="DejaVuSans"><tspan y="0" x="0 7.870001 11.790001 18.130002 24.28 28.390002 31.570002 35.49 41.640005 47.980005 54.110006 60.450006 64.37 69.58 72.76 75.54 80.75 86.87 89.65 95.78 99.7 105.85 112.2 115.38 118.56 121.74 128.09 134.43 140.56 144.45125 150.60124 156.95125 160.13126 166.48126 170.37252 176.49251 182.4125 185.1925 191.54251 197.6925 201.8025 204.98252 211.33252 217.48252 223.83252 229.98252 236.32251 242.67252 248.82251 255.1625 260.6625 263.4425 269.5925 274.8025 277.98249 283.19248 287.1125 289.8925 292.6725 295.45249 298.63249 302.5237 308.6737 314.59373 317.37373 323.5237 331.7037 337.8537">Other tenants isolated &#x00b7; Shared provider dependencies still reviewed</tspan></text>
+</g>
+<text xml:space="preserve" transform="matrix(1.0099505 0 -0 .9901476 0 841.89)" font-size="10.061732" font-family="LMRoman10" font-weight="bold"><tspan y="-262.92344" x="71.29062 78.57531 81.79507 87.58056 94.01 98.77927 108.227237 114.012729">Figure2:</tspan></text>
+<text xml:space="preserve" transform="matrix(1.0099505 0 -0 .9901476 0 841.89)" font-size="10.061732" font-family="LMRoman10"><tspan y="-262.92344" x="122.98621 134.13462 139.72895 143.67314 148.70401 154.57 159.60088 163.5652 168.04267 177.24915 185.63059 190.66146 196.25579 201.28665 206.31752 210.79499 216.37926 219.72982 225.32415 228.12129 233.15218 237.06618 240.14508 245.17595 249.12015 261.1137 266.70805 271.18553 275.14988 277.94703 282.97789 292.17433 295.2532 300.28407 307.83039 312.86125 318.45558 326.53517 331.01264 336.60697 340.5713 344.48533 349.5162 357.8976 362.3751 369.9214 374.39888 379.9932 382.79035 386.7547 392.05726 397.65159 402.12907 410.26899 417.81529 422.84617 427.32365 432.63624 436.55024 444.12675 449.72108 453.66529 458.69615 464.56217 469.59303 473.55738 481.63694 488.90153 491.69868 495.61268 501.207 504.00416 513.20059">Aproposedmanaged-platformdesignforonecustomerepisode.Agentsproposewithina</tspan><tspan y="-250.84947" x="71.29062 77.15661 82.18748 87.78179 93.37612 98.97045 103.44792 112.69465 119.68756 124.71842 128.66262 133.70355 138.18102 145.77762 151.64362 156.94615 161.97702 164.77419 173.06507 179.9171 183.85124 188.88211 192.79613 197.27359 201.75106 205.66507 210.14253 219.39933 223.87679 228.90767 234.22026 238.13428 242.07848 247.10935 249.90651 257.52326 261.46748 265.94496 269.85899 274.88984 277.68699 286.9438 291.42127 297.00553 300.94975 304.89396 309.37144 314.6941 322.26054 327.29139 332.8857 336.79975 342.39408 347.42497 351.36918 354.1663 357.80867 362.29618 368.84635 372.81068 378.405 383.43589 387.3801 391.85758 401.1043 405.06864 410.93467 415.41215 421.00648 426.60078 429.39793 434.99226 440.02314 446.56327 451.04075 456.63505 459.4322 463.39656 468.6991 474.29344 482.4233 486.36753 489.16468 493.129 502.10408 507.13493 512.7192">boundedworkerpool.Protectedcontrolsretaincurrentauthority,sharedspending,episoderiskand</tspan></text>
+<text xml:space="preserve" transform="matrix(.9944848 0 -0 1.0055459 0 841.89)" font-size="9.907654" font-family="LMRoman10"><tspan y="-235.11908" x="72.3993 78.18537 82.59428 88.10293 93.61159 96.36591 101.874568 110.14745 114.55636 117.44444 120.33253 124.74143 129.15035 133.00443 140.22711 145.18093 149.58985 153.47365 158.42746 162.33107 169.56366 176.43958 181.39339 185.27719 190.23104 194.63004 201.8428 205.72661 210.13552 215.64417 218.3985 223.35231 227.76123 232.17015 240.42324 244.83214 250.05347 253.90756 261.1104 268.26374 273.77238 281.51026 287.0189 290.90269 295.5692 300.80046 303.55479 309.06343 313.47233 320.6851 325.09397 330.60264 333.63438 338.5882 342.472 346.87098 351.27989 358.51246 361.26679 365.12086 372.34355 377.01997 384.17326 393.00099 396.88478 401.29368 405.19728 410.1511 415.65977 419.54356 423.95246 431.6903 437.47639 442.4302 447.93885 453.4475 458.94627 463.9001 467.78388 473.0151 479.09843 487.38124 491.7901 497.29878 501.20237 505.05647 510.01029 518.26339 522.6723">pendingeffectsacrossworkerreplacement.Theproviderenforcesitsownresourceboundary;acustomer</tspan></text>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 0 841.89)" font-size="9.9626" font-family="LMRoman10"><tspan y="-224.468" x="72 76.9813 84.21415 89.75336 94.73466 98.64 102.51545 108.05466 112.488018 119.73083 123.63617 128.06952 131.94498 136.92627 139.69588 145.23508 152.48786 155.25746 160.5177 164.95105 169.93235 176.02947 181.01076 185.44412 189.87747 194.31082 199.85002 203.72548 208.70677 214.24597 218.67932 226.44019 231.42148 236.96068 245.83734 250.27069 255.80989 258.85847 263.83976 267.7451 272.1685 276.60185 284.9007 289.33406 294.60429 298.47975 305.7026 313.45353 318.99275 322.8682 327.30155 332.28285 340.5817 348.3525 352.25785 356.6912 361.12455 366.10585 370.01118 375.55039 382.80317 386.7085 391.14186 395.0173 400.55653 404.46186 413.32859 417.20405 425.5228 431.062 434.96736 439.94865 443.8241 448.25746 452.6908 456.56626 460.9996 469.86634 473.7916 477.66706 482.64836 486.5238 490.95716 498.19 505.94093 509.81639 515.3556 519.78897">orpartnerretainslocalacceptanceandenforcement.Outcomerecordsreturntoprotectedstate.Other</tspan></text>
+<text xml:space="preserve" transform="matrix(1.0014989 0 -0 .9985034 0 841.89)" font-size="9.977532" font-family="LMRoman10"><tspan y="-212.83152" x="71.892238 75.77349 80.21349 85.761 90.74977 96.01791 99.89916 107.15283 111.064029 115.50402 123.815319 128.80408 131.57782 140.43787 143.21161 147.14276 152.13153 154.90529 159.89406 163.77532 168.21532 173.76282 179.85909 187.06287 192.60039 195.37413 198.14789 205.9104 211.4579 215.3691 220.07849 225.34664 228.12038 233.66788 238.10788 242.01908 245.34159 252.54537 255.3191 260.86665 268.61918 271.39295 276.94044 281.38044 284.1542 289.7017 294.1417 299.4198 306.61363 310.5248 314.96479 320.23295 323.00669 327.4467 337.963 342.95179 348.49928 354.04679 357.95799 362.39799 366.3291 370.26026 374.70027 381.95393 385.88508 391.43257 396.42134 400.33253 404.76258 413.63258 419.18009 423.62007 429.44694 433.88694 439.42448 444.972 449.412 454.95948 459.39949 462.17326 466.61326 470.5444 477.7482 484.95198 490.49946 498.252 501.02577 503.7995 508.78828 514.33578 518.24697">tenantsremainisolated,whileprovider-wideincidentreviewaddressesshareddependencies.Thefigure</tspan></text>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 0 841.89)" font-size="9.9626" font-family="LMRoman10"><tspan y="-200.557" x="72 74.7696 77.5392 80.3088 85.84801 89.77327 93.64872 97.55406 102.53536 106.41081 110.84417 118.086978 121.99232 126.425678 130.35094 136.16909 141.15038 146.68958 150.61484 153.38445 158.91368 161.68329 164.4529 167.2225 171.09796 173.86757 178.30094 182.2262 188.32332 193.86252 198.84381 206.03682 214.33567 219.04798 224.02927 226.79888 229.56848 235.10768 240.08898 243.96443 248.3978 257.25456 262.79377 265.56336 270.54466 274.4201 277.46867 282.44996 286.3553 294.65415 297.97169 305.16468 307.93428 313.47349 321.22438 325.14964 330.13093 333.17948 337.61283 341.20933 349.7871 354.7684 360.30763 365.2889 369.19425 374.17555 379.4358 383.31126 387.7446 392.17796">illustratesresponsibilities,notavalidatedplatform-widesafetyguarantee.</tspan></text>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 0 841.89)" font-size="10.9091" font-family="LMRoman10"><tspan y="-42.112" x="292.18299 297.63755">12</tspan></text>
+</svg>

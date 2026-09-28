@@ -1,4 +1,5 @@
-{% assign figure = include.figure %}
+{% assign figure = include.figure | default: figure %}
+{% assign figure_number = include.number | default: number %}
 {% assign figure_creator_name = figure.creator_name | default: site.image_creator_name | default: "Spherity GmbH" %}
 {% assign figure_creator_url = figure.creator_url | default: site.image_creator_url | default: "https://www.spherity.com/" %}
 {% assign figure_creator_type = figure.creator_type | default: "Organization" %}
@@ -25,7 +26,7 @@
          decoding="async"
          itemprop="contentUrl">
   </a>
-  <figcaption itemprop="caption">{% if include.number %}<strong>Figure {{ include.number }}.</strong> {% endif %}{{ figure.caption | escape }}</figcaption>
+  <figcaption itemprop="caption">{% if figure_number %}<strong>Figure {{ figure_number }}.</strong> {% endif %}{{ figure.caption | escape }}</figcaption>
   <meta itemprop="name" content="{{ figure.name | escape }}">
   <meta itemprop="description" content="{{ figure.description | escape }}">
   <meta itemprop="creditText" content="{{ figure_credit_text | escape }}">

@@ -55,6 +55,11 @@ groups:
   - title: "Identity, evidence and resilience"
     description: "Architecture questions about accountable AI, provenance and migration of the trust fabric."
     items:
+      - id: "governing-ai-across-companies"
+        question: "How can leaders govern AI agents that act across companies?"
+        answer: "Leaders can combine protected execution at each resource boundary with current mandates, action-bound runtime assurance, persistent episode-risk accounting and privacy-preserving eligibility checks. This enables more useful delegation while preserving local authority, aggregate limits and accountable outcome evidence."
+        link_label: "Explore the Spherity AI Safety series"
+        url: "/governing-ai-that-acts-across-companies.html"
       - id: "beyond-zero-trust-agentic-networks"
         question: "How can Zero Trust extend across organizations for authorised AI agents?"
         answer: "Single-enterprise Zero Trust remains the security foundation. Cross-domain action additionally needs portable evidence of the accountable natural or legal person, task-bounded mandate, AI-service state and source-domain claims, followed by verifier-sovereign policy enforcement and a signed action receipt."

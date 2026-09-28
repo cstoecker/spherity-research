@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2412" height="1620" viewBox="0 0 2412 1620" role="img" aria-labelledby="title description">
+  <title id="title">Hidden operating state and runtime-assurance belief</title>
+  <desc id="description">Paper 2 diagram distinguishing hidden AI operating conditions from the supervisor's probability distribution, including residual probability for undetected harm.</desc>
+  <image href="ai-safety-paper-2-hidden-state-belief.png" width="2412" height="1620" preserveAspectRatio="xMidYMid meet"/>
+</svg>

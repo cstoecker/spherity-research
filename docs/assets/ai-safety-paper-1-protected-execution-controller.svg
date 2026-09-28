@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2340" height="2214" viewBox="0 0 2340 2214" role="img" aria-labelledby="title description">
+  <title id="title">Proposal generation and protected execution controller</title>
+  <desc id="description">Paper 1 architecture separating an AI agent proposal, a narrow deterministic policy kernel, proof verification, current authority and resource-state checks, and atomic controlled execution.</desc>
+  <image href="ai-safety-paper-1-protected-execution-controller.png" width="2340" height="2214" preserveAspectRatio="xMidYMid meet"/>
+</svg>

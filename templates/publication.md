@@ -106,6 +106,24 @@ audiences:
 spatial_coverage:
   - "European Union"
 
+# Optional multi-paper series navigation. Repeat the identical block on the
+# hub and every sub-page; set series_position to the matching item position.
+# The layouts emit visible navigation, breadcrumbs and CreativeWorkSeries
+# structured data, while validation prevents incomplete or broken series.
+# series_name: "Series name"
+# series_description: "One sentence explaining the common research programme."
+# series_url: "/series-hub.html"
+# series_position: 0
+# series_items:
+#   - position: 0
+#     label: "Executive brief"
+#     title: "Executive brief title"
+#     url: "/series-hub.html"
+#   - position: 1
+#     label: "Paper 1"
+#     title: "First paper title"
+#     url: "/first-paper.html"
+
 # Google Trends is an editorial research input, not an automated ranking
 # decision. Preserve specialist authority terms even when Trends reports zero
 # because low-volume queries may be below its reporting threshold.

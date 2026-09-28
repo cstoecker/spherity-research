@@ -750,6 +750,34 @@ for (const markdownFile of markdownFiles) {
     }
   }
 
+  if (data.series_items !== undefined) {
+    if (!data.series_name || !data.series_url || data.series_position === undefined) {
+      errors.push(`${markdownFile}: series pages require series_name, series_url and series_position.`);
+    }
+    if (!Array.isArray(data.series_items) || data.series_items.length < 2) {
+      errors.push(`${markdownFile}: series_items must contain at least two linked works.`);
+    } else {
+      const seriesUrls = new Set();
+      for (const [index, item] of data.series_items.entries()) {
+        for (const field of ["position", "label", "title", "url"]) {
+          if (item?.[field] === undefined || item?.[field] === "") {
+            errors.push(`${markdownFile}: series_items item ${index + 1} requires ${field}.`);
+          }
+        }
+        if (item?.url && seriesUrls.has(item.url)) {
+          errors.push(`${markdownFile}: duplicate series URL ${item.url}.`);
+        }
+        seriesUrls.add(item?.url);
+      }
+      if (!seriesUrls.has(data.permalink)) {
+        errors.push(`${markdownFile}: series_items must include the current permalink.`);
+      }
+      if (!seriesUrls.has(data.series_url)) {
+        errors.push(`${markdownFile}: series_items must include the series hub URL.`);
+      }
+    }
+  }
+
   if (!content.includes('id="questions-answered"')) {
     const tocHasQuestions = data.toc_items?.some(
       (item) => item.href === "#questions-answered"
@@ -876,6 +904,9 @@ const preservedSocialCardUrls = new Set([
 ]);
 const socialCardsByUrl = new Map();
 const socialCardOutputs = new Set();
+const publicationCatalogUrls = new Set(
+  publications.map((publication) => publication.links?.[0]?.url).filter(Boolean)
+);
 for (const card of asArray(socialCards)) {
   if (!card?.publication_url || socialCardsByUrl.has(card.publication_url)) {
     errors.push(`Social cards: duplicate or missing publication_url ${card?.publication_url || "(missing)"}.`);
@@ -913,6 +944,14 @@ for (const card of asArray(socialCards)) {
     }
     if (!card.visual && !card.visual_type) {
       errors.push(`${card.publication_url}: generated social card requires visual or visual_type.`);
+    }
+    if (
+      !publicationCatalogUrls.has(card.publication_url) &&
+      (!Array.isArray(card.topics) || card.topics.length < 3)
+    ) {
+      errors.push(
+        `${card.publication_url}: non-catalog series cards require at least three topic labels.`
+      );
     }
     if (card.visual && !(await exists(sourcePathFromPublicUrl(card.visual)))) {
       errors.push(`${card.publication_url}: social-card visual does not exist: ${card.visual}.`);
@@ -1094,10 +1133,18 @@ for (const publication of publications) {
   }
 }
 
-if (socialCardsByUrl.size !== publications.length) {
-  errors.push(
-    `Social cards: found ${socialCardsByUrl.size} manifest entries for ${publications.length} publications.`
-  );
+const researchPagePermalinks = new Set(
+  researchPages.map(({ data }) => data.permalink).filter(Boolean)
+);
+for (const socialCardUrl of socialCardsByUrl.keys()) {
+  if (
+    !publicationCatalogUrls.has(socialCardUrl) &&
+    !researchPagePermalinks.has(socialCardUrl)
+  ) {
+    errors.push(
+      `Social cards: ${socialCardUrl} is neither a catalog publication nor a research sub-page.`
+    );
+  }
 }
 
 const favicon = path.join(
@@ -1233,6 +1280,16 @@ for (const htmlFile of htmlFiles) {
     /<figure\b[^>]*itemscope[^>]*itemtype=["']https:\/\/schema\.org\/ImageObject["'][^>]*>([\s\S]*?)<\/figure>/gi
   )) {
     const scope = figureScope[1];
+    const visibleImage = scope.match(/<img\b[^>]*>/i)?.[0] || "";
+    const visibleSource = visibleImage.match(/\bsrc\s*=\s*["']([^"']*)["']/i)?.[1] || "";
+    if (!visibleSource || visibleSource === "/" || visibleSource === `${basePath}/`) {
+      errors.push(`${htmlFile}: visible ImageObject figure has no rendered image source.`);
+    }
+    for (const attribute of ["alt", "width", "height"]) {
+      if (!new RegExp(`\\b${attribute}\\s*=\\s*["'][^"']+["']`, "i").test(visibleImage)) {
+        errors.push(`${htmlFile}: visible ImageObject figure requires a non-empty ${attribute}.`);
+      }
+    }
     for (const itemprop of ["contentUrl", "license", "acquireLicensePage", "creditText", "copyrightNotice"]) {
       if (!new RegExp(`itemprop=["']${itemprop}["']`, "i").test(scope)) {
         errors.push(`${htmlFile}: visible ImageObject figure is missing ${itemprop} microdata.`);
@@ -1302,6 +1359,18 @@ for (const htmlFile of htmlFiles) {
     for (const type of ["WebSite", "ScholarlyArticle", "BreadcrumbList", "FAQPage"]) {
       if (!topLevelSchemaTypes.has(type)) {
         errors.push(`${htmlFile}: ${type} must be exposed as a top-level JSON-LD block.`);
+      }
+    }
+
+    if (html.includes('class="research-series-nav"')) {
+      if (!topLevelSchemaTypes.has("CreativeWorkSeries")) {
+        errors.push(`${htmlFile}: research series navigation requires CreativeWorkSeries JSON-LD.`);
+      }
+      const currentSeriesItems = [
+        ...html.matchAll(/class=["'][^"']*is-current[^"']*["'][\s\S]*?aria-current=["']page["']/gi)
+      ].length;
+      if (currentSeriesItems !== 1) {
+        errors.push(`${htmlFile}: research series navigation requires exactly one current item.`);
       }
     }
 

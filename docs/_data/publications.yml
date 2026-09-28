@@ -1,3 +1,31 @@
+- title: "Governing AI That Acts Across Companies"
+  type: "Executive brief and three-paper AI Safety series"
+  date_label: "28 September 2026"
+  date_iso: "2026-09-28"
+  description: "Protected execution, runtime assurance and private verification for AI agents acting across companies, trust domains and shared resources."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  topics:
+    - "Trusted AI"
+    - "Identity"
+    - "Resilience"
+  filters: "ai identity resilience infrastructure"
+  search: "ai safety ai agents cross company ai agents agentic ai ai governance ai alignment operational ai alignment agent swarms multi-agent systems multi agent systems protected execution deterministic state controller runtime assurance risk bounded runtime assurance private verification action eligibility cross domain ai agents trust domains revocable authority cryptographic commitments aggregate budget exact action binding assurance leases episode risk partial observation worker churn pending effects adverse evidence containment controlled execution verifiable identity responsible ai leadership first mover advantage carsten stöcker carsten stoecker spherity gmbh trusted ai identity resilience"
+  image: "/assets/preview-governing-ai-that-acts-across-companies.webp"
+  image_alt: "Governing AI That Acts Across Companies research preview using the Spherity AI Safety executive brief cover."
+  image_width: 1200
+  image_height: 630
+  media_class: "card-media-wide"
+  format: "HTML series + 4 PDFs"
+  featured: true
+  links:
+    - label: "Explore the series"
+      url: "/governing-ai-that-acts-across-companies.html"
+      arrow: "→"
+    - label: "Download executive brief"
+      url: "/Spherity-AI-Safety-Three-Paper-Series-Executive-Brief.pdf"
+      arrow: "↓"
+      secondary: true
+
 - title: "Beyond Single-Enterprise ZTA: Multi-Trust Architectures for Authorised Agentic Actors in Open, Cross-Domain Ecosystems"
   type: "Research paper"
   date_label: "16 September 2026"

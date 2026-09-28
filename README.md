@@ -86,6 +86,34 @@ If an HTML version is available, list “Read paper” first and “Download PDF
 second in the publication’s `links` block. Search engines should see the HTML
 page as the canonical research page and the PDF as an alternate format.
 
+## Add a multi-paper research series
+
+Use one cataloged hub page when an executive brief or overview provides the
+best public entry point, then give every technical paper its own canonical
+landing page. This preserves a simple homepage while allowing each paper's
+distinct question, evidence, figures, PDF and terminology to be indexed.
+
+1. Add the complete, identical `series_name`, `series_description`,
+   `series_url` and `series_items` block to the hub and every paper page. Give
+   the hub position `0` and assign each paper a stable numeric position.
+2. Set `series_position` to the current page's position. The shared layout adds
+   the four-way navigation, a three-level breadcrumb on sub-pages and
+   `CreativeWorkSeries` structured data. The build fails if the hub or current
+   page is missing from the declared series.
+3. Put only the hub in `docs/_data/publications.yml` unless readers genuinely
+   need every paper as a separate homepage card. Link every PDF from the hub
+   and list all of them in the hub's `associated_media`.
+4. Add a generated social-card entry for the hub. A technical sub-page may
+   also have a dedicated card without becoming a homepage item; such a card
+   must declare at least three `topics` in `docs/_data/social_cards.yml`.
+5. Give each page its own answer summary, direct questions, evidence boundary,
+   related research and search review. Do not copy the hub abstract across all
+   pages, because each canonical page must provide distinct reader value.
+6. For every published figure, preserve the highest-quality source available,
+   add visible caption and alt text, and declare a matching `figure_objects`
+   entry. The local preview and build now fail if a figure include loses its
+   image source, dimensions, creator or licensing metadata.
+
 ## SEO, AEO and GEO research
 
 Every publication created from template version 2 records a structured search
@@ -210,8 +238,9 @@ continues through `sitemap.xml`, internal links, and Search Console.
 - Thumbnail is legible at small size and has useful alt text.
 - HTML and PDF links work in the staging site.
 - Open Graph and X previews use the intended image.
-- The publication page and homepage catalog use the same generated social card;
-  approved exceptions remain checksum-identical.
+- A cataloged publication page and homepage card use the same generated social
+  card; dedicated series sub-page cards match a real research page and declare
+  their own topic labels. Approved exceptions remain checksum-identical.
 - Every social-card text line and topic row clears the document visual by the
   enforced 60-pixel safety gutter; no text is clipped or hidden behind imagery.
 - Version 2 search research records the Google Trends filters, findings,

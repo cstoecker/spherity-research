@@ -1,0 +1,18 @@
+{% assign series_items = page.series_items %}
+<nav class="research-series-nav" aria-labelledby="research-series-title">
+  <div class="research-series-heading">
+    <p class="answer-summary-label">AI Safety research series</p>
+    <h2 id="research-series-title"><a href="{{ page.series_url | relative_url }}">{{ page.series_name }}</a></h2>
+    {% if page.series_description %}<p>{{ page.series_description }}</p>{% endif %}
+  </div>
+  <ol>
+    {% for item in series_items %}
+    <li{% if item.url == page.permalink %} class="is-current"{% endif %}>
+      <a href="{{ item.url | relative_url }}"{% if item.url == page.permalink %} aria-current="page"{% endif %}>
+        <span>{{ item.label }}</span>
+        <strong>{{ item.title }}</strong>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+</nav>

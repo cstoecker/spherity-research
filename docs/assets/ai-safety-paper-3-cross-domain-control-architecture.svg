@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2100" height="2295" viewBox="0 0 2100 2295" role="img" aria-labelledby="title description">
+  <title id="title">Deterministic action control across two trust domains</title>
+  <desc id="description">Paper 3 architecture separating private eligibility evaluation, protected admission and resource-specific effect enforcement in two organizations linked by a joint assurance service and evidence exchange.</desc>
+  <image href="ai-safety-paper-3-cross-domain-control-architecture.png" width="2100" height="2295" preserveAspectRatio="xMidYMid meet"/>
+</svg>

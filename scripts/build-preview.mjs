@@ -18,8 +18,23 @@ const splitFrontMatter = (source) => {
 
 const normalizeJekyllIncludes = (source) =>
   source.replace(
-    /{%\s*include\s+([A-Za-z0-9_./-]+)(?=\s|%})/g,
-    '{% include "$1"'
+    /{%\s*include\s+([A-Za-z0-9_./-]+)([^%]*)%}/g,
+    (_match, file, rawParameters) => {
+      const parameters = [];
+      const parameterPattern = /([A-Za-z_][A-Za-z0-9_-]*)=(?:"([^"]*)"|'([^']*)'|([^\s]+))/g;
+      for (const match of rawParameters.matchAll(parameterPattern)) {
+        const [, name, doubleQuoted, singleQuoted, expression] = match;
+        const value =
+          doubleQuoted !== undefined
+            ? JSON.stringify(doubleQuoted)
+            : singleQuoted !== undefined
+              ? JSON.stringify(singleQuoted)
+              : expression;
+        parameters.push(`${name}: ${value}`);
+      }
+      const argumentsList = ["page: page", "site: site", ...parameters].join(", ");
+      return `{% render "${file}", ${argumentsList} %}`;
+    }
   );
 
 const config = parseYaml(await readFile(path.join(sourceDirectory, "_config.yml"), "utf8"));

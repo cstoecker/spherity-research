@@ -1,3 +1,93 @@
+- publication_url: "/governing-ai-that-acts-across-companies.html"
+  output: "/assets/preview-governing-ai-that-acts-across-companies.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "EXECUTIVE BRIEF + AI SAFETY SERIES · 4 PDFs"
+  title_size: 43
+  title_lines:
+    - "Governing AI That Acts"
+    - "Across Companies"
+  subtitle_size: 25
+  subtitle_lines:
+    - "Protected execution · Runtime assurance"
+    - "Private verification"
+  deck_lines:
+    - "Responsible leadership for useful, bounded"
+    - "and accountable cross-company AI agents."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  visual: "/assets/ai-safety-series-executive-brief-cover.jpg"
+  visual_fit: "contain"
+
+- publication_url: "/resource-bounded-program-equilibria-ai-safety.html"
+  output: "/assets/preview-resource-bounded-program-equilibria-ai-safety.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "AI SAFETY SERIES · PAPER 1"
+  title_size: 41
+  title_lines:
+    - "Program Equilibria"
+    - "& Protected Execution"
+  subtitle_size: 25
+  subtitle_lines:
+    - "Authority · Exact-action controls"
+  deck_lines:
+    - "Deterministic safeguards for resource-bounded"
+    - "multi-agent interaction."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  topics:
+    - "AI Safety"
+    - "Identity"
+    - "Resilience"
+  visual: "/assets/ai-safety-paper-1-program-equilibria-cover.jpg"
+  visual_fit: "contain"
+
+- publication_url: "/risk-bounded-runtime-assurance-multi-agent-systems.html"
+  output: "/assets/preview-risk-bounded-runtime-assurance-multi-agent-systems.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "AI SAFETY SERIES · PAPER 2"
+  title_size: 41
+  title_lines:
+    - "Risk-Bounded"
+    - "Runtime Assurance"
+  subtitle_size: 25
+  subtitle_lines:
+    - "Dynamic multi-agent systems"
+    - "under partial observation"
+  deck_lines:
+    - "Current mandates, assurance leases and"
+    - "persistent episode risk."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  topics:
+    - "AI Safety"
+    - "Trusted AI"
+    - "Resilience"
+  visual: "/assets/ai-safety-paper-2-runtime-assurance-cover.jpg"
+  visual_fit: "contain"
+
+- publication_url: "/private-verification-action-eligibility-trust-domains.html"
+  output: "/assets/preview-private-verification-action-eligibility-trust-domains.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "AI SAFETY SERIES · PAPER 3"
+  title_size: 40
+  title_lines:
+    - "Private Verification"
+    - "of Action Eligibility"
+  subtitle_size: 25
+  subtitle_lines:
+    - "Across organizational trust domains"
+  deck_lines:
+    - "Evidence semantics, adverse findings and"
+    - "controlled execution for AI agents."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  topics:
+    - "AI Safety"
+    - "Identity"
+    - "Trusted AI"
+  visual: "/assets/ai-safety-paper-3-private-verification-cover.jpg"
+  visual_fit: "contain"
+
 - publication_url: "/beyond-zero-trust-m-trust-authorised-agentic-actors.html"
   output: "/assets/preview-beyond-zero-trust-m-trust-agentic-ai.webp"
   style: "research-grid-v1"
