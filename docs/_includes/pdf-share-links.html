@@ -1,0 +1,23 @@
+{% if page.associated_media.size > 0 or page.pdf_url %}
+<details class="pdf-share-links">
+  <summary>Share a PDF with its cover preview</summary>
+  <p>Use these HTML links for social previews. Original PDF links remain available for downloads.</p>
+  <ul>
+    {% if page.associated_media.size > 0 %}
+      {% for media in page.associated_media %}
+        {% assign pdf_filename = media.url | split: "/" | last %}
+        {% assign pdf_stem_length = pdf_filename.size | minus: 4 %}
+        {% assign pdf_share_filename = pdf_filename | slice: 0, pdf_stem_length | append: ".html" %}
+        {% assign pdf_share_path = "/share/" | append: pdf_share_filename %}
+    <li><a href="{{ pdf_share_path | relative_url }}">{{ media.name | default: page.title | escape }}</a></li>
+      {% endfor %}
+    {% else %}
+      {% assign pdf_filename = page.pdf_url | split: "/" | last %}
+      {% assign pdf_stem_length = pdf_filename.size | minus: 4 %}
+      {% assign pdf_share_filename = pdf_filename | slice: 0, pdf_stem_length | append: ".html" %}
+      {% assign pdf_share_path = "/share/" | append: pdf_share_filename %}
+    <li><a href="{{ pdf_share_path | relative_url }}">{{ page.title | escape }} — PDF</a></li>
+    {% endif %}
+  </ul>
+</details>
+{% endif %}

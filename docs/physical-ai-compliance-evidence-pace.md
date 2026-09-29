@@ -38,9 +38,11 @@ executive_brief_pdf_url: "/Spherity-Research-Physical-AI-Compliance-Evidence-PAC
 associated_media:
   - name: "PACE: From Physical AI Trials to Industrial Operation — Executive Brief"
     url: "/Spherity-Research-Physical-AI-Compliance-Evidence-PACE-Executive-Brief.pdf"
+    cover_image: "/assets/physical-ai-compliance-evidence-pace-executive-brief-cover.jpg"
     license: "https://creativecommons.org/licenses/by/4.0/"
   - name: "Verifiable Safety Assurance Evidence Graphs for Modular Humanoid Robot Arms — Full Research"
     url: "/Spherity-Research-Physical-AI-Compliance-Evidence-PACE-Long-Paper.pdf"
+    cover_image: "/assets/physical-ai-compliance-evidence-pace-long-paper-cover.jpg"
     license: "https://creativecommons.org/licenses/by/4.0/"
 
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"

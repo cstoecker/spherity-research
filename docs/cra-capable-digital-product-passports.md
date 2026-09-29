@@ -25,8 +25,10 @@ management_brief_pdf_url: "/CRA-Capable-Digital-Product-Passports-Management-Bri
 associated_media:
   - name: "From Static Compliance to Continuous Cyber Assurance — Management Brief"
     url: "/CRA-Capable-Digital-Product-Passports-Management-Brief.pdf"
+    cover_image: "/assets/cra-capable-dpp-management-brief-cover.jpg"
   - name: "CRA-Capable Digital Product Passports — Full Research"
     url: "/CRA-Capable-Digital-Product-Passports-Full-Research.pdf"
+    cover_image: "/assets/cra-capable-dpp-full-research-cover.jpg"
 
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 license: "https://creativecommons.org/licenses/by/4.0/"

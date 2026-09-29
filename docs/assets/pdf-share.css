@@ -1,0 +1,31 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #122433; background: #f4f7f9; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #175f9a; text-underline-offset: .18em; }
+a:hover { text-decoration-thickness: .15em; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid #2d71b8; outline-offset: 4px; }
+.skip-link { position: absolute; top: -5rem; padding: 1rem; background: white; }
+.skip-link:focus { top: 0; }
+header { display: flex; gap: 1rem; justify-content: space-between; max-width: 1120px; margin: auto; padding: 2rem 1.5rem; border-bottom: 1px solid #d8e0e7; }
+header a { font-weight: 700; letter-spacing: .08em; text-decoration: none; }
+header span { color: #536573; font-size: .9rem; }
+main { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 330px); gap: 3rem; max-width: 1120px; margin: auto; padding: 3rem 1.5rem; }
+h1 { font-family: Georgia, serif; font-weight: 500; font-size: clamp(2rem, 3.5vw, 2.8rem); line-height: 1.16; margin: .7rem 0 1.25rem; overflow-wrap: anywhere; }
+p { line-height: 1.65; }
+.eyebrow { text-transform: uppercase; color: #175f9a; letter-spacing: .1em; font-size: .78rem; font-weight: 700; }
+.authors { color: #536573; }
+.actions { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.25rem 0; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; padding: .75rem 1rem; min-height: 46px; border: 1px solid #c3d1dc; border-radius: 7px; background: white; color: #123951; font: 600 .95rem system-ui, sans-serif; text-decoration: none; cursor: pointer; }
+.button:hover { background: #e8f0f6; }
+.primary { background: #205ea2; color: white; border-color: #205ea2; }
+.primary:hover { background: #174b83; }
+.sharing { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #d8e0e7; }
+h2 { font-size: 1.15rem; line-height: 1.4; }
+.sharing label { display: block; font-size: .8rem; font-weight: 600; margin-bottom: .4rem; }
+.sharing input { display: block; width: 100%; min-width: 0; padding: .8rem; border: 1px solid #c3d1dc; border-radius: 6px; background: white; font: .83rem system-ui, sans-serif; }
+#copy-feedback { min-height: 1.5em; font-size: .85rem; }
+.rights, figcaption { color: #536573; font-size: .8rem; }
+figure { margin: .5rem 0; align-self: start; }
+figure img { width: 100%; height: auto; display: block; border: 1px solid #d0dbe3; box-shadow: 0 12px 30px #13243618; }
+figcaption { margin-top: .9rem; line-height: 1.5; }
+@media (max-width: 720px) { header span { display: none; } main { grid-template-columns: minmax(0, 1fr); padding-top: 1.6rem; gap: 1.5rem; } figure { width: min(100%, 340px); justify-self: center; } }

@@ -38,8 +38,10 @@ executive_brief_pdf_url: "/Spherity-Why-Advisory-Research-Europes-Fundamental-AI
 associated_media:
   - name: "Europe’s Fundamental AI Opportunity — Executive Research Brief"
     url: "/Spherity-Why-Advisory-Research-Europes-Fundamental-AI-Opportunity-Executive-Brief.pdf"
+    cover_image: "/assets/europes-fundamental-ai-opportunity-executive-brief-cover.jpg"
   - name: "Europe’s Fundamental AI Opportunity — Long Academic Paper"
     url: "/Spherity-Why-Advisory-Research-Europes-Fundamental-AI-Opportunity-Long-Version.pdf"
+    cover_image: "/assets/europes-fundamental-ai-opportunity-long-version-cover.jpg"
 
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 license: "https://creativecommons.org/licenses/by/4.0/"

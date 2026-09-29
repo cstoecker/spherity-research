@@ -76,7 +76,10 @@ characters.
 3. Create a concise HTML landing page that faithfully states the paper's
    answer, authorship, findings, boundaries, and citation.
 4. Declare the primary PDF in `pdf_url` and every PDF edition in
-   `associated_media`; add the first-page cover image and descriptive alt text.
+   `associated_media`. Give each media entry its own `cover_image` screenshot
+   of that PDF's first page, with `cover_image_alt` describing it. A page-level
+   `cover_image` is a fallback only for a single-PDF publication; never reuse
+   the full paper's cover for a separate brief or edition.
 5. Add an entry to `docs/_data/publications.yml`. Put the canonical HTML page
    first and the PDF download second; use `format: "HTML + PDF"`.
 6. Open both links in the local preview and confirm that the HTML page does not
@@ -85,6 +88,32 @@ characters.
 If an HTML version is available, list “Read paper” first and “Download PDF”
 second in the publication’s `links` block. Search engines should see the HTML
 page as the canonical research page and the PDF as an alternate format.
+
+### Share a PDF with its cover preview
+
+A raw `.pdf` URL cannot carry HTML Open Graph or X-card metadata. For a
+first-page screenshot preview, share the generated HTML URL at
+`/share/<PDF-basename>.html` instead: for example, `/report.pdf` has the
+share page `/share/report.html`. The publication header's **Share a PDF with
+its cover preview** menu lists these links by document name. The ordinary
+**Share** button still shares the canonical research page, and existing PDF
+links still open or download the original file.
+
+The build generates one share page per PDF from publication metadata and its
+own cover screenshot. These pages provide social metadata and a link to the
+original PDF; they do not replace the canonical paper or its download URL.
+They declare `noindex, follow`, point their canonical URL to the existing
+research page, and are excluded from the sitemap. Do not hand-edit generated
+share pages. Keep each `associated_media` name, URL and cover screenshot
+accurate, then rebuild and check the resulting preview. Social platforms may
+cache old previews and decide whether to display an image; sharing a raw PDF
+URL still cannot guarantee its cover preview.
+
+Run `pnpm run pdf-shares` after the site build and before sitemap generation
+and optimization. `pnpm run test:preview` runs this automatically. The generator
+fits the complete cover screenshot into a 1200 × 630 JPEG at
+`_site/assets/pdf-share/<PDF-basename>.jpg`; it leaves source screenshots,
+homepage cards and the Gartner-approved card unchanged.
 
 ## Add a multi-paper research series
 
@@ -265,6 +294,9 @@ continues through `sitemap.xml`, internal links, and Search Console.
 - Thumbnail is legible at small size and has useful alt text.
 - HTML and PDF links work in the staging site.
 - Open Graph and X previews use the intended image.
+- Every PDF cover-preview share link opens the matching document's share page
+  and uses that PDF's own first-page screenshot; direct download links remain
+  unchanged, and generated share pages are absent from the sitemap.
 - A cataloged publication page and homepage card use the same generated social
   card; dedicated series sub-page cards match a real research page and declare
   their own topic labels. Approved exceptions remain checksum-identical.

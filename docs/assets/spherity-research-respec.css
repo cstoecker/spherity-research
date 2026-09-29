@@ -849,6 +849,47 @@ body {
   min-width: 1180px;
 }
 
+.pdf-share-links {
+  max-width: 44rem;
+  margin-top: 0.65rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.pdf-share-links summary {
+  min-height: 44px;
+  padding: 0.65rem 0;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.pdf-share-links summary:hover {
+  color: var(--spherity-blue);
+}
+
+.pdf-share-links summary:focus-visible,
+.pdf-share-links a:focus-visible {
+  outline: 3px solid var(--text-strong);
+  outline-offset: 3px;
+}
+
+.srespec-main .pdf-share-links p {
+  margin: 0.25rem 0 0.6rem;
+  color: var(--text-muted);
+}
+
+.pdf-share-links ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.pdf-share-links a {
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+
 .mobile-article-nav {
   display: none;
   margin-top: 1.4rem;
@@ -924,7 +965,8 @@ body {
     padding: 0;
   }
 
-  .srespec-sidebar {
+  .srespec-sidebar,
+  .pdf-share-links {
     display: none;
   }
 

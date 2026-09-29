@@ -39,6 +39,7 @@ pdf_url: "/Spherity-AI-Safety-Series-Paper-2-Runtime-Assurance.pdf"
 associated_media:
   - name: "Risk-Bounded Runtime Assurance — Paper 2 PDF"
     url: "/Spherity-AI-Safety-Series-Paper-2-Runtime-Assurance.pdf"
+    cover_image: "/assets/ai-safety-paper-2-runtime-assurance-cover.jpg"
     license: "https://creativecommons.org/licenses/by/4.0/"
 cover_image: "/assets/ai-safety-paper-2-runtime-assurance-cover.jpg"
 cover_image_alt: "First page of Risk-Bounded Runtime Assurance for Dynamic Multi-Agent Systems under Partial Observation."

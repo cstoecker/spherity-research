@@ -39,6 +39,7 @@ pdf_url: "/Spherity-AI-Safety-Series-Paper-3-Private-Verification.pdf"
 associated_media:
   - name: "Private Verification of Action Eligibility — Paper 3 PDF"
     url: "/Spherity-AI-Safety-Series-Paper-3-Private-Verification.pdf"
+    cover_image: "/assets/ai-safety-paper-3-private-verification-cover.jpg"
     license: "https://creativecommons.org/licenses/by/4.0/"
 cover_image: "/assets/ai-safety-paper-3-private-verification-cover.jpg"
 cover_image_alt: "First page of Private Verification of Action Eligibility across Trust Domains."

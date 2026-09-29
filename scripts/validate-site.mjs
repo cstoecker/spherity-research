@@ -4,6 +4,7 @@ import path from "node:path";
 import process from "node:process";
 import { glob } from "glob";
 import { parse as parseYaml } from "yaml";
+import { loadPdfShares, publicUrl } from "./lib/pdf-sharing.mjs";
 
 const getArgument = (name, fallback) => {
   const index = process.argv.indexOf(name);
@@ -1252,6 +1253,164 @@ const htmlFiles = await glob("**/*.html", {
   windowsPathsNoEscape: true
 });
 
+// Only mapped, generated PDF share pages may be noindex aliases. An arbitrary
+// file under /share/ must still satisfy the ordinary public-page rules below.
+let pdfShares = [];
+try {
+  ({ records: pdfShares } = await loadPdfShares(sourceDirectory));
+} catch (error) {
+  errors.push(`PDF sharing: ${error.message}`);
+}
+const pdfSharesByPath = new Map(pdfShares.map((record) => [record.sharePath, record]));
+const decodeHtmlAttribute = (value = "") => value.replace(
+  /&(#x[\da-f]+|#\d+|amp|quot|apos|lt|gt|nbsp);/gi,
+  (match, entity) => {
+    if (entity[0] === "#") {
+      const codePoint = entity[1].toLowerCase() === "x"
+        ? Number.parseInt(entity.slice(2), 16)
+        : Number.parseInt(entity.slice(1), 10);
+      return codePoint >= 0 && codePoint <= 0x10ffff ? String.fromCodePoint(codePoint) : match;
+    }
+    return { amp: "&", quot: '"', apos: "'", lt: "<", gt: ">", nbsp: "\u00a0" }[entity.toLowerCase()];
+  }
+);
+const htmlTags = (html, tagName) => [...html.matchAll(
+  new RegExp(`<${tagName}\\b((?:"[^"]*"|'[^']*'|[^'">])*)>`, "gi")
+)].map((match) => Object.fromEntries([...match[1].matchAll(
+  /([^\s=/>]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g
+)].map((attribute) => [
+  attribute[1].toLowerCase(),
+  decodeHtmlAttribute(attribute[2] ?? attribute[3] ?? attribute[4])
+])));
+const sharePublicUrl = (publicPath) => publicUrl(config, publicPath);
+const shareOutputPath = (publicPath) => path.join(siteDirectory, ...publicPath.replace(/^\//, "").split("/"));
+const anchorUrls = (html, pageUrl) => new Set(htmlTags(html, "a").flatMap(({ href }) => {
+  if (!href) return [];
+  try {
+    return [new URL(href, pageUrl).href];
+  } catch {
+    return [];
+  }
+}));
+
+for (const record of pdfShares) {
+  const label = record.sharePath;
+  const target = shareOutputPath(record.sharePath);
+  if (!(await exists(target))) {
+    errors.push(`${label}: missing generated PDF sharing page.`);
+    continue;
+  }
+  const html = await readFile(target, "utf8");
+  const shareUrl = sharePublicUrl(record.sharePath);
+  const imageUrl = sharePublicUrl(record.imagePath);
+  const pdfUrl = sharePublicUrl(record.pdfPath);
+  const metadata = htmlTags(html, "meta");
+  const checkMeta = (kind, name, expected) => {
+    const matches = metadata.filter((meta) => meta[kind]?.toLowerCase() === name);
+    if (matches.length !== 1 || matches[0].content !== expected) {
+      errors.push(`${label}: requires exactly one ${name} metadata value equal to ${JSON.stringify(expected)}.`);
+    }
+  };
+  for (const [name, value] of Object.entries({
+    "og:type": "website",
+    "og:title": record.title,
+    "og:description": record.description,
+    "og:url": shareUrl,
+    "og:image": imageUrl,
+    "og:image:secure_url": imageUrl,
+    "og:image:type": "image/jpeg",
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:image:alt": record.alt
+  })) checkMeta("property", name, value);
+  for (const [name, value] of Object.entries({
+    "twitter:card": "summary_large_image",
+    "twitter:title": record.title,
+    "twitter:description": record.description,
+    "twitter:image": imageUrl,
+    "twitter:image:alt": record.alt
+  })) checkMeta("name", name, value);
+  checkMeta("name", "description", record.description);
+  const robotTags = metadata.filter((meta) => meta.name?.toLowerCase() === "robots");
+  const robotTokens = (robotTags[0]?.content || "").toLowerCase().split(/[\s,]+/);
+  if (
+    robotTags.length !== 1 || !robotTokens.includes("noindex") || !robotTokens.includes("follow") ||
+    robotTokens.some((token) => ["index", "nofollow", "none"].includes(token))
+  ) errors.push(`${label}: PDF sharing aliases require noindex, follow robots metadata.`);
+  const canonicals = htmlTags(html, "link").filter((link) =>
+    (link.rel || "").toLowerCase().split(/\s+/).includes("canonical")
+  );
+  if (canonicals.length !== 1 || canonicals[0].href !== record.canonicalUrl) {
+    errors.push(`${label}: canonical must point only to the owning research page ${record.canonicalUrl}.`);
+  }
+  if (metadata.some((meta) => meta["http-equiv"]?.toLowerCase() === "refresh")) {
+    errors.push(`${label}: automatic refresh/redirects are forbidden on crawler-readable sharing pages.`);
+  }
+  for (const script of htmlTags(html, "script")) {
+    if (script.type?.toLowerCase() === "application/ld+json") continue;
+    let scriptUrl;
+    try { scriptUrl = script.src ? new URL(script.src, shareUrl).href : null; } catch { /* Report below. */ }
+    if (scriptUrl !== sharePublicUrl("/assets/pdf-share.js")) {
+      errors.push(`${label}: only the dedicated copy-link script is allowed; no inline or third-party redirect scripts.`);
+    }
+  }
+  if (/\bon[a-z]+\s*=|\b(?:href|src)\s*=\s*["']?\s*javascript:/i.test(html)) {
+    errors.push(`${label}: inline event handlers and JavaScript URLs are forbidden on sharing pages.`);
+  }
+  const links = anchorUrls(html, shareUrl);
+  if (!links.has(pdfUrl)) errors.push(`${label}: missing direct link to the original PDF ${pdfUrl}.`);
+  if (!links.has(record.canonicalUrl)) errors.push(`${label}: missing link to read the canonical research page.`);
+
+  for (const [kind, publicPath] of [["PDF", record.pdfPath], ["research page", record.pagePath], ["cover", record.coverPath]]) {
+    if (!(await exists(shareOutputPath(publicPath)))) errors.push(`${label}: missing ${kind} build output ${publicPath}.`);
+  }
+  const pdfTarget = shareOutputPath(record.pdfPath);
+  if (await exists(pdfTarget)) {
+    const pdf = await readFile(pdfTarget);
+    if (pdf.toString("ascii", 0, 5) !== "%PDF-") errors.push(`${label}: direct PDF URL no longer serves PDF bytes.`);
+    const sourcePdf = path.join(sourceDirectory, ...record.pdfPath.replace(/^\//, "").split("/"));
+    if (await exists(sourcePdf)) {
+      const sourceHash = createHash("sha256").update(await readFile(sourcePdf)).digest("hex");
+      if (createHash("sha256").update(pdf).digest("hex") !== sourceHash) {
+        errors.push(`${label}: original PDF bytes must be preserved unchanged in the build.`);
+      }
+    }
+  }
+  const imageTarget = shareOutputPath(record.imagePath);
+  if (!(await exists(imageTarget))) {
+    errors.push(`${label}: missing generated sharing JPEG ${record.imagePath}.`);
+  } else {
+    const image = await readFile(imageTarget);
+    if (image[0] !== 0xff || image[1] !== 0xd8 || image.at(-2) !== 0xff || image.at(-1) !== 0xd9) {
+      errors.push(`${label}: social image must contain JPEG bytes, not just a .jpg filename.`);
+    }
+    const dimensions = await imageDimensions(imageTarget);
+    if (dimensions?.width !== 1200 || dimensions?.height !== 630) {
+      errors.push(`${label}: social image must be exactly 1200×630 pixels.`);
+    }
+    if (image.length > 250 * 1024) errors.push(`${label}: social image exceeds the 250 KB budget.`);
+  }
+  for (const reference of record.references) {
+    const referenceFile = shareOutputPath(reference.pagePath);
+    if (!(await exists(referenceFile))) {
+      errors.push(`${label}: missing referring research page ${reference.pagePath}.`);
+      continue;
+    }
+    const researchHtml = await readFile(referenceFile, "utf8");
+    if (!anchorUrls(researchHtml, sharePublicUrl(reference.pagePath)).has(shareUrl)) {
+      errors.push(`${reference.pagePath}: missing generated PDF sharing link ${record.sharePath}.`);
+    }
+  }
+}
+
+const pdfShareScriptPath = path.join(siteDirectory, "assets", "pdf-share.js");
+if (pdfShares.length && await exists(pdfShareScriptPath)) {
+  const script = await readFile(pdfShareScriptPath, "utf8");
+  if (/\b(?:location|navigate)\b|\b(?:window|top|parent)\s*\.\s*open\s*\(|\beval\s*\(|\bnew\s+Function\b/i.test(script)) {
+    errors.push("assets/pdf-share.js: sharing pages must not automatically redirect or execute dynamic code.");
+  }
+}
+
 const resolveLocalReference = (reference, htmlFile) => {
   const cleanReference = reference.split("#")[0].split("?")[0];
   if (!cleanReference) return null;
@@ -1274,6 +1433,7 @@ const generatedCanonicals = new Map();
 
 for (const htmlFile of htmlFiles) {
   const html = await readFile(path.join(siteDirectory, htmlFile), "utf8");
+  const isPdfShare = pdfSharesByPath.has(`/${htmlFile.split(path.sep).join("/")}`);
 
   if (html.includes("{{") || html.includes("{%")) {
     errors.push(`${htmlFile}: contains unrendered Liquid markup.`);
@@ -1366,7 +1526,7 @@ for (const htmlFile of htmlFiles) {
   const canonical = html.match(
     /<link\b[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["'][^>]*>/i
   )?.[1];
-  if (!/^google[^/]*\.html$/i.test(htmlFile) && htmlFile !== "404.html") {
+  if (!isPdfShare && !/^google[^/]*\.html$/i.test(htmlFile) && htmlFile !== "404.html") {
     const robotsMeta = html.match(
       /<meta\b[^>]*name=["']robots["'][^>]*content=["']([^"']+)["'][^>]*>/i
     )?.[1];
@@ -1377,7 +1537,7 @@ for (const htmlFile of htmlFiles) {
       errors.push(`${htmlFile}: public page must not contain noindex or nofollow.`);
     }
   }
-  if (canonical) {
+  if (canonical && !isPdfShare) {
     if (generatedCanonicals.has(canonical)) {
       errors.push(
         `${htmlFile}: duplicate canonical also used by ${generatedCanonicals.get(canonical)}.`
@@ -1934,6 +2094,11 @@ if (await exists(path.join(siteDirectory, "sitemap.xml"))) {
   const sitemapEntries = new Map(
     sitemapMatches.map((match) => [match[1].replaceAll("&amp;", "&"), match[2]])
   );
+  for (const record of pdfShares) {
+    if (sitemapEntries.has(sharePublicUrl(record.sharePath))) {
+      errors.push(`sitemap.xml: noindex PDF sharing page must be excluded: ${record.sharePath}.`);
+    }
+  }
   if (sitemapMatches.length !== sitemapEntries.size) {
     errors.push("sitemap.xml: duplicate <loc> entries are not allowed.");
   }
@@ -2017,5 +2182,5 @@ if (errors.length) {
 }
 
 console.log(
-  `Validated ${researchPages.length} research sources, ${htmlFiles.length} HTML pages, ${publications.length} catalog entries, and ${requiredFiles.length} required outputs.`
+  `Validated ${researchPages.length} research sources, ${htmlFiles.length} HTML pages, ${pdfShares.length} PDF sharing pages, ${publications.length} catalog entries, and ${requiredFiles.length} required outputs.`
 );

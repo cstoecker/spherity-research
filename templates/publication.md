@@ -38,10 +38,17 @@ latest_version: "https://spherity.github.io/spherity-research/publication-slug.h
 
 # Keep this block for a PDF publication. For multiple editions, list every PDF
 # in associated_media and use the long/full version as pdf_url.
+# Each entry needs its own first-page screenshot in cover_image, not the
+# publication social card. Page-level cover_image is a single-PDF fallback only.
+# Builds generate /share/<PDF-basename>.html for social previews; these pages
+# are noindex, follow, excluded from the sitemap and canonicalize to this paper.
+# Keep original .pdf links for downloads. Do not hand-edit generated share pages.
 pdf_url: "/publication-slug.pdf"
 associated_media:
   - name: "Full publication title — PDF"
     url: "/publication-slug.pdf"
+    cover_image: "/assets/publication-slug-cover.jpg"
+    cover_image_alt: "First page of Full publication title."
     license: "https://creativecommons.org/licenses/by/4.0/"
 cover_image: "/assets/publication-slug-cover.jpg"
 cover_image_alt: "First page of Full publication title."

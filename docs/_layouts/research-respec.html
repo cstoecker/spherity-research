@@ -126,6 +126,7 @@ layout: default
 
       <div class="article-share">
         {% include share.html id="paper-share" title=page.title text=page.description url=page.canonical_url %}
+        {% include pdf-share-links.html %}
       </div>
 
       {% if page.toc_items %}

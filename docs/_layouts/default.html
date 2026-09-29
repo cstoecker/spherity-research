@@ -802,7 +802,7 @@
     {% if media.license %}"license": {{ media.license | jsonify }},{% elsif page.license_exclusions %}"copyrightNotice": {{ page.license_exclusions | jsonify }},{% else %}"license": {{ content_license | jsonify }},{% endif %}
     "inLanguage": {{ page.lang | default: "en" | jsonify }},
     {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
-    "thumbnailUrl": {{ image_url | jsonify }},
+    "thumbnailUrl": {{ media.cover_image | default: page.cover_image | default: page_image | absolute_url | jsonify }},
     {% if media.publisher %}"publisher": { "@type": "Organization", "name": {{ media.publisher | jsonify }} },{% elsif page.license_exclusions %}{% else %}"publisher": { "@id": "https://www.spherity.com/#organization" },{% endif %}
     "isPartOf": { "@id": "{{ canonical_url | escape }}#article" }
   }
@@ -823,7 +823,7 @@
     {% if page.pdf_license %}"license": {{ page.pdf_license | jsonify }},{% elsif page.license_exclusions %}"copyrightNotice": {{ page.license_exclusions | jsonify }},{% else %}"license": {{ content_license | jsonify }},{% endif %}
     "inLanguage": {{ page.lang | default: "en" | jsonify }},
     {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
-    "thumbnailUrl": {{ image_url | jsonify }},
+    "thumbnailUrl": {{ page.cover_image | default: page_image | absolute_url | jsonify }},
     {% if page.pdf_publisher %}"publisher": { "@type": "Organization", "name": {{ page.pdf_publisher | jsonify }} },{% elsif page.license_exclusions %}{% else %}"publisher": { "@id": "https://www.spherity.com/#organization" },{% endif %}
     "isPartOf": { "@id": "{{ canonical_url | escape }}#article" }
   }

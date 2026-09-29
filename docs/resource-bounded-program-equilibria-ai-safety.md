@@ -39,6 +39,7 @@ pdf_url: "/Spherity-AI-Safety-Series-Paper-1-Program-Equilibria.pdf"
 associated_media:
   - name: "Resource Bounded Program Equilibria — Paper 1 PDF"
     url: "/Spherity-AI-Safety-Series-Paper-1-Program-Equilibria.pdf"
+    cover_image: "/assets/ai-safety-paper-1-program-equilibria-cover.jpg"
     license: "https://creativecommons.org/licenses/by/4.0/"
 cover_image: "/assets/ai-safety-paper-1-program-equilibria-cover.jpg"
 cover_image_alt: "First page of Resource Bounded Program Equilibria under Cryptographic Commitments and Revocable Authority."

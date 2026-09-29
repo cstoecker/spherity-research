@@ -343,6 +343,16 @@ for (const { card, publication, layout } of generatedCards) {
 
   const outputPath = publicFile(card.output);
   const rendered = await renderGeneratedCard(card, publication, layout);
+  // Preserve unchanged assets (and avoid needless writes to files open in a
+  // Windows preview). Preflight and rendering still run before this comparison.
+  const previous = await readFile(outputPath).catch((error) => {
+    if (error.code === "ENOENT") return null;
+    throw error;
+  });
+  if (previous?.equals(rendered)) {
+    console.log(`Unchanged ${path.relative(projectDirectory, outputPath)}.`);
+    continue;
+  }
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeFile(outputPath, rendered);
   console.log(`Generated ${path.relative(projectDirectory, outputPath)}.`);

@@ -42,6 +42,7 @@ pdf_url: "/Spherity-Beyond-Single-Enterprise-ZTA-Multi-Trust-Architectures-for-A
 associated_media:
   - name: "Beyond Single-Enterprise ZTA — Full Research PDF"
     url: "/Spherity-Beyond-Single-Enterprise-ZTA-Multi-Trust-Architectures-for-Authorised-Agentic-Actors.pdf"
+    cover_image: "/assets/beyond-zero-trust-m-trust-agentic-ai-cover.jpg"
     license: "https://creativecommons.org/licenses/by/4.0/"
 cover_image: "/assets/beyond-zero-trust-m-trust-agentic-ai-cover.jpg"
 cover_image_alt: "First page of Beyond Single-Enterprise ZTA by Dr. Carsten Stöcker, on M-Trust and verifiable authority for agentic actors."
