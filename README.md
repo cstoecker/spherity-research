@@ -6,6 +6,19 @@ trusted AI, digital trust infrastructure, and post-quantum resilience.
 
 Live site: <https://spherity.github.io/spherity-research/>
 
+## Publishing with Codex
+
+The repository-local [Spherity Research Publishing skill](.agents/skills/spherity-research-publishing/SKILL.md)
+guides publication changes through the templates, editorial practices and checks
+below. Invoke it as `$spherity-research-publishing`; `AGENTS.md` also directs
+publication work to it. It covers single papers, briefs and series, search-language
+research, author and image metadata, figure quality, social cards and PDF sharing.
+It references the maintained project files instead of keeping duplicate templates.
+
+Word-to-LaTeX manuscript production remains a separate skill. Automated validation
+does not replace visual review, and the publishing skill does not grant permission
+to push, merge or deploy without a user request.
+
 ## How the publication site works
 
 The website source lives in `docs/` and is rendered by Jekyll on GitHub Pages.
@@ -71,8 +84,9 @@ characters.
 
 1. Put the final PDF in `docs/`. Use a stable, descriptive filename; avoid
    replacing a published filename unless the document is a true revision.
-2. Add its 1200 × 630 WebP thumbnail or cover image (maximum 250 KB) to
-   `docs/assets/`.
+2. Add its 1200 × 630 WebP social card (maximum 250 KB) to `docs/assets/`.
+   Separately render a first-page cover screenshot for each PDF, preserving the
+   complete page and its aspect ratio; do not crop it to the social-card format.
 3. Create a concise HTML landing page that faithfully states the paper's
    answer, authorship, findings, boundaries, and citation.
 4. Declare the primary PDF in `pdf_url` and every PDF edition in
@@ -126,7 +140,7 @@ distinct question, evidence, figures, PDF and terminology to be indexed.
    `series_url` and `series_items` block to the hub and every paper page. Give
    the hub position `0` and assign each paper a stable numeric position.
 2. Set `series_position` to the current page's position. The shared layout adds
-   the four-way navigation, a three-level breadcrumb on sub-pages and
+   navigation between the hub and its papers, a three-level breadcrumb on sub-pages and
    `CreativeWorkSeries` structured data. The build fails if the hub or current
    page is missing from the declared series.
 3. Put only the hub in `docs/_data/publications.yml` unless readers genuinely

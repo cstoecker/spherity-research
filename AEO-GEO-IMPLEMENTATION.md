@@ -1,7 +1,8 @@
 # Spherity Research AEO/GEO implementation
 
 This document records the evidence-led answer-engine and generative-search
-architecture, updated on 7 September 2026. It is an editorial and technical guide,
+architecture. The baseline audit is dated 7 September 2026; series and PDF-sharing
+guidance was reconciled on 11 October 2026. It is an editorial and technical guide,
 not a promise of rankings, snippets, AI citations, or inclusion in training
 data.
 
@@ -40,14 +41,19 @@ data.
 │   ├── ScholarlyArticle, BreadcrumbList, FAQPage, and author identity data
 │   └── alternate PDF links and MediaObject data where applicable
 ├── *.pdf authoritative paper editions
+├── share/*.html generated PDF cover-preview sharing pages
+│   └── noindex, follow; canonical to the research page; excluded from sitemap
 ├── llms.txt generated from the publication catalog and research pages
 ├── sitemap.xml generated from every indexable HTML and PDF output
 └── robots.txt and .well-known/security.txt
 ```
 
 Each research page links to the other publications only where the relationship
-is explained. The homepage links to all canonical HTML research pages, and the
-catalog remains the single source for publication discovery.
+is explained. The homepage catalog links to standalone publications and series
+hubs; individual series papers are also discoverable through their hub and shared
+series navigation. Each paper retains its own canonical URL and distinct content.
+The catalog remains the source for homepage discovery. See README for the current
+series, PDF-sharing, figure-quality and validation procedures.
 
 ## Reusable publication and author architecture
 
