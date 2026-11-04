@@ -8,11 +8,12 @@ citation_title: 'EU DPP Registry, W3C Standards and DPP5.0: From Semantic Produc
   and European Business Wallet Convergence'
 seo_title: EU DPP Registry, W3C Standards & DPP5.0 | Spherity Research
 og_title: 'EU DPP Registry: W3C Standards and DPP5.0'
-og_description: How the EU DPP Registry uses open semantics, where trust and policy gaps remain, and how DPP + European
-  Business Wallets could address them.
+og_description: "From DPP registration to governed data sharing: common semantics, business-wallet authority
+  and Spherity’s lightweight B2G data-space pattern."
 subtitle: What the October 2026 Registry package delivers—and how verifiable evidence, legal-person identity and
   policy could converge
-description: Digital Product Passport research on the EU DPP Registry, W3C standards, DPP4.0, DPP5.0 evidence graphs and proposed European Business Wallet convergence.
+description: "Digital Product Passport research: EU Registry semantics, DPP5.0 evidence, business wallets and
+  a B2G data-space pattern with Eclipse Dataspace Components."
 paper_status: Spherity Research · Visual paper overview + full PDF
 schema_type: ScholarlyArticle
 publication_type: paper
@@ -30,8 +31,8 @@ date: '2026-11-03'
 date_label: Visual paper prepared
 last_modified_at: '2026-11-04'
 research_cutoff: '2026-11-04'
-research_cutoff_label: Commission documentation through 30 October 2026; EBW proposal and procedure checked 4 November
-  2026
+research_cutoff_label: Commission documentation through 30 October 2026; EBW procedure and Eclipse
+  documentation checked 4 November 2026
 lang: en
 permalink: /eu-dpp-registry-w3c-dpp5.html
 canonical_url: https://spherity.github.io/spherity-research/eu-dpp-registry-w3c-dpp5.html
@@ -270,46 +271,56 @@ figure_objects:
   - name: 'Open standards stack: from semantics to organizational authority and policy — vector PDF'
     url: /assets/eu-dpp-registry-dpp5/dpp5-w3c-trust-policy-stack.pdf
 keywords:
-- EU DPP Registry
-- EU DPP Register
-- Digital Product Passport Registry
-- Digital Product Passport Register
-- Digital Product Passport
-- DPP4.0
-- DPP 4.0
-- DPP5.0
-- DPP 5.0
-- DPP maturity model
-- W3C standards
-- JSON-LD
-- RDF
-- SKOS
-- SHACL
-- SPARQL
-- OWL
-- XSD
-- DCAT
-- DCAT-AP
-- W3C Verifiable Credentials
-- decentralized identifiers
-- DIDs
-- European Business Wallet
-- EBW
-- legal-person identity
-- DPP and EBW convergence
-- ODRL
-- verifiable evidence graphs
-- digital battery passport
-- ESPR
-- product data provenance
-- AI
-- Physical AI
-answer_summary: 'The European Commission’s October 2026 EU DPP Registry package provides common product-registration
-  interfaces, semantic resources and access guidance built on open technologies such as JSON-LD, RDF, SKOS and SHACL.
-  Spherity’s DPP4.0/DPP5.0 model describes proposed steps beyond semantic interoperability: issuer-bound evidence,
-  current authority, governed access and connected evidence graphs. The proposed DPP + European Business Wallet
-  convergence could supply organizational identity and mandates, but still requires accepted trust profiles, sector
-  governance and local enforcement.'
+  - EU DPP Registry
+  - EU DPP Register
+  - Digital Product Passport Registry
+  - Digital Product Passport Register
+  - Digital Product Passport
+  - DPP4.0
+  - DPP 4.0
+  - DPP5.0
+  - DPP 5.0
+  - DPP maturity model
+  - W3C standards
+  - JSON-LD
+  - RDF
+  - SKOS
+  - SHACL
+  - SPARQL
+  - OWL
+  - XSD
+  - DCAT
+  - DCAT-AP
+  - W3C Verifiable Credentials
+  - decentralized identifiers
+  - DIDs
+  - European Business Wallet
+  - EBW
+  - legal-person identity
+  - DPP and EBW convergence
+  - ODRL
+  - verifiable evidence graphs
+  - digital battery passport
+  - ESPR
+  - product data provenance
+  - AI
+  - Physical AI
+  - DPP data space
+  - B2G data space
+  - semantic hub
+  - Semantics Register
+  - business wallets
+  - Eclipse Dataspace Components
+  - Dataspace Protocol
+answer_summary: "The European Commission’s October 2026 EU DPP Registry package provides common
+  product-registration interfaces, semantic resources and access guidance built on open technologies such as
+  JSON-LD, RDF, SKOS and SHACL. Spherity’s DPP4.0/DPP5.0 model describes proposed steps beyond semantic
+  interoperability: issuer-bound evidence, current authority, governed access and connected evidence graphs.
+  The proposed DPP + European Business Wallet convergence could supply organizational identity and mandates,
+  but still requires accepted trust profiles, sector governance and local enforcement. This web edition also
+  explains how the Registry’s catalogue-like role and semantic repository supply data-space building blocks,
+  and proposes a lightweight B2G pattern with business wallets that can connect to a fuller Eclipse-based data
+  space."
 abstract: The European Commission released its Digital Product Passport (DPP) Registry technical package on 30 October
   2026, combining registration and authentication guidance with semantic assets for product data. This paper examines
   the division between a common EU Registry and distributed product-passport content, and explains how Resource
@@ -323,99 +334,138 @@ abstract: The European Commission released its Digital Product Passport (DPP) Re
   is an architectural recommendation. Its legal recognition, trust profiles, cross-company interoperability and
   operational assurance remain to be specified and tested.
 key_takeaways:
-- The Registry registers identifiers and related data; it does not need to centralize every product-passport document
-  or evidence file.
-- The Commission package introduces machine-readable semantic assets and APIs; validation against SHACL does not
-  establish that a product claim is true or the issuer authorized.
-- DPP4.0 / DPP 4.0 and DPP5.0 / DPP 5.0 are Spherity research stages, not EU regulatory or W3C maturity classifications.
-- Verifiable Credentials can bind claims to issuers; verified legal-person identity, recognized roles, current status
-  and policy remain separate conditions.
-- A future European Business Wallet can help establish corporate identity and representation across borders, but
-  the regulation is still a legislative proposal.
-- Evidence graphs can make source changes and dependent claims traceable; revocation, interpretation and downstream
-  action need explicit receiver-side rules.
+  - The Registry registers identifiers and related data; it does not need to centralize every product-passport
+    document or evidence file.
+  - The Commission package introduces machine-readable semantic assets and APIs; validation against SHACL does
+    not establish that a product claim is true or the issuer authorized.
+  - DPP4.0 / DPP 4.0 and DPP5.0 / DPP 5.0 are Spherity research stages, not EU regulatory or W3C maturity
+    classifications.
+  - Verifiable Credentials can bind claims to issuers; verified legal-person identity, recognized roles,
+    current status and policy remain separate conditions.
+  - A future European Business Wallet can help establish corporate identity and representation across borders,
+    but the regulation is still a legislative proposal.
+  - Evidence graphs can make source changes and dependent claims traceable; revocation, interpretation and
+    downstream action need explicit receiver-side rules.
+  - The Registry and semantic repository contribute discovery and shared meaning. Spherity’s proposed B2G
+    pattern adds business-wallet authority, explicit policy decisions and enforcement, with a path to broader
+    data-space exchange.
 about:
-- Digital Product Passport Registry
-- EU DPP Registry
-- DPP4.0
-- DPP5.0
-- W3C semantics
-- European Business Wallet
-- Evidence graphs
+  - Digital Product Passport Registry
+  - EU DPP Registry
+  - DPP4.0
+  - DPP5.0
+  - W3C semantics
+  - European Business Wallet
+  - Evidence graphs
+  - B2G data spaces
+  - Semantic interoperability
 mentions:
-- Digital Product Passport
-- European Business Wallet
-- EBW
-- eIDAS 2.0
-- W3C Verifiable Credentials
-- ODRL
-- SHACL
-- SKOS
-- JSON-LD
-- RDF
-- Digital Battery Passport
-- CEN-CENELEC
-- AI
-- Physical AI
-- EU law 2026/1778
+  - Digital Product Passport
+  - European Business Wallet
+  - EBW
+  - eIDAS 2.0
+  - W3C Verifiable Credentials
+  - ODRL
+  - SHACL
+  - SKOS
+  - JSON-LD
+  - RDF
+  - Digital Battery Passport
+  - CEN-CENELEC
+  - AI
+  - Physical AI
+  - EU law 2026/1778
+  - Eclipse Dataspace Components
+  - Dataspace Protocol
+  - Decentralized Claims Protocol
+  - Business wallets
 citations:
-- https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/resources-documentation_en
-- https://eur-lex.europa.eu/eli/reg_impl/2026/1778/oj/eng
-- https://eur-lex.europa.eu/eli/reg/2024/1781/oj/eng
-- https://eur-lex.europa.eu/eli/reg/2023/1542/oj/eng
-- https://www.w3.org/TR/json-ld/
-- https://www.w3.org/TR/rdf11-concepts/
-- https://www.w3.org/TR/skos-reference/
-- https://www.w3.org/TR/shacl/
-- https://www.w3.org/TR/sparql11-query/
-- https://www.w3.org/TR/owl2-overview/
-- https://www.w3.org/TR/vocab-dcat-3/
-- https://www.w3.org/TR/vc-data-model-2.0/
-- https://www.w3.org/TR/did-core/
-- https://www.w3.org/TR/odrl-model/
-- https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025PC0838
-- https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0358(COD)
-- https://www.consilium.europa.eu/en/press/press-releases/2026/06/09/european-business-wallets-council-adopts-negotiating-position/
+  - https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/resources-documentation_en
+  - https://eur-lex.europa.eu/eli/reg_impl/2026/1778/oj/eng
+  - https://eur-lex.europa.eu/eli/reg/2024/1781/oj/eng
+  - https://eur-lex.europa.eu/eli/reg/2023/1542/oj/eng
+  - https://www.w3.org/TR/json-ld/
+  - https://www.w3.org/TR/rdf11-concepts/
+  - https://www.w3.org/TR/skos-reference/
+  - https://www.w3.org/TR/shacl/
+  - https://www.w3.org/TR/sparql11-query/
+  - https://www.w3.org/TR/owl2-overview/
+  - https://www.w3.org/TR/vocab-dcat-3/
+  - https://www.w3.org/TR/vc-data-model-2.0/
+  - https://www.w3.org/TR/did-core/
+  - https://www.w3.org/TR/odrl-model/
+  - https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025PC0838
+  - https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0358(COD)
+  - https://www.consilium.europa.eu/en/press/press-releases/2026/06/09/european-business-wallets-council-adopts-negotiating-position/
+  - https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/dpp-registry_en
+  - https://projects.eclipse.org/projects/technology.edc
+  - https://eclipse-edc.github.io/documentation/for-adopters/
+  - https://github.com/eclipse-edc/IdentityHub
+  - https://eclipse-edc.github.io/documentation/for-adopters/control-plane/policy-engine/
+  - https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/
 audiences:
-- DPP implementers and software architects
-- Product manufacturers and compliance teams
-- Regulators and standards experts
-- Wallet and identity providers
-- Industrial AI and Physical AI researchers
+  - DPP implementers and software architects
+  - Product manufacturers and compliance teams
+  - Regulators and standards experts
+  - Wallet and identity providers
+  - Industrial AI and Physical AI researchers
+  - Government-register and data-space architects
 spatial_coverage:
 - European Union
 - Global interoperability
 questions_answered:
-- question: What does the EU DPP Registry actually store?
-  answer: The Registry stores product-passport identifiers and required registration information under applicable
-    EU rules. The product-passport payload can remain at the responsible economic operator or another permitted
-    host. Registration alone does not prove every claim is true.
-- question: What is new in the 30 October 2026 DPP technical package?
-  answer: The package includes the Semantic Data Guide, machine-readable semantic artifacts, API Integration Guide,
-    OpenAPI specifications, Service Account Integration Guide, and guidance for self-hosted authentication and authorization.
-- question: Which W3C technologies underpin the DPP semantic model?
-  answer: RDF provides graph semantics; JSON-LD binds JSON properties to global meanings; SKOS defines controlled
-    concepts; SHACL validates graph constraints; SPARQL queries graphs; OWL supports ontology semantics; and DCAT
-    supports catalogues. XSD supplies relevant datatypes and XML definitions.
-- question: What do DPP4.0 and DPP5.0 mean?
-  answer: DPP4.0 (DPP 4.0) and DPP5.0 (DPP 5.0) are Spherity research labels. DPP4.0 adds attributable, verifiable
-    claims; DPP5.0 connects current product evidence, provenance, authority and purpose-specific policy across companies.
-    They are not EU maturity classes.
-- question: Does SHACL verification prove a product claim is true?
-  answer: No. SHACL tests conformance to declared data shapes and constraints. Factual reliability requires competent
-    sources, evidence checks and potentially independent assessment; authorized use requires a separate policy decision.
-- question: Does the DPP Registry require W3C Verifiable Credentials?
-  answer: The October 2026 technical package does not establish W3C Verifiable Credentials as a general requirement
-    for all product claims. Signed credentials can be a complementary evidence format under future or sector-specific
-    profiles.
-- question: How can European Business Wallets support DPP transactions?
-  answer: A future European Business Wallet may supply reusable business identity, representation credentials and
-    bounded mandates. Verifiable evidence, credential status and relying-party authorization can then be linked
-    to the DPP, subject to final law, accepted trust frameworks and local enforcement.
-- question: What remains to be tested for DPP5.0?
-  answer: Interoperable issuance and verification profiles, authority recognition, policy decisions, evidence status
-    and revocation, cross-company graph links, provenance completeness, latency, failure handling and auditability
-    need implementation tests.
+  - question: What does the EU DPP Registry actually store?
+    answer: The Registry stores product-passport identifiers and required registration information under
+      applicable EU rules. The product-passport payload can remain at the responsible economic operator or
+      another permitted host. Registration alone does not prove every claim is true.
+  - question: What is new in the 30 October 2026 DPP technical package?
+    answer: The package includes the Semantic Data Guide, machine-readable semantic artifacts, API Integration
+      Guide, OpenAPI specifications, Service Account Integration Guide, and guidance for self-hosted
+      authentication and authorization.
+  - question: Which W3C technologies underpin the DPP semantic model?
+    answer: RDF provides graph semantics; JSON-LD binds JSON properties to global meanings; SKOS defines
+      controlled concepts; SHACL validates graph constraints; SPARQL queries graphs; OWL supports ontology
+      semantics; and DCAT supports catalogues. XSD supplies relevant datatypes and XML definitions.
+  - question: What do DPP4.0 and DPP5.0 mean?
+    answer: DPP4.0 (DPP 4.0) and DPP5.0 (DPP 5.0) are Spherity research labels. DPP4.0 adds attributable,
+      verifiable claims; DPP5.0 connects current product evidence, provenance, authority and purpose-specific
+      policy across companies. They are not EU maturity classes.
+  - question: Does SHACL verification prove a product claim is true?
+    answer: No. SHACL tests conformance to declared data shapes and constraints. Factual reliability requires
+      competent sources, evidence checks and potentially independent assessment; authorized use requires a
+      separate policy decision.
+  - question: Does the DPP Registry require W3C Verifiable Credentials?
+    answer: The October 2026 technical package does not establish W3C Verifiable Credentials as a general
+      requirement for all product claims. Signed credentials can be a complementary evidence format under
+      future or sector-specific profiles.
+  - question: How can European Business Wallets support DPP transactions?
+    answer: A future European Business Wallet may supply reusable business identity, representation credentials
+      and bounded mandates. Verifiable evidence, credential status and relying-party authorization can then be
+      linked to the DPP, subject to final law, accepted trust frameworks and local enforcement.
+  - question: What remains to be tested for DPP5.0?
+    answer: Interoperable issuance and verification profiles, authority recognition, policy decisions, evidence
+      status and revocation, cross-company graph links, provenance completeness, latency, failure handling and
+      auditability need implementation tests.
+  - question: Is the EU DPP Registry a data space?
+    answer: "The Registry provides catalogue-like discovery and a semantic repository for regulated product data:
+      important data-space building blocks. These functions alone do not establish a complete data space.
+      Participation rules, trusted identities, authorization, enforcement and operating governance must be
+      defined for the intended exchanges."
+  - question: How does the DPP semantic repository act as a semantic hub?
+    answer: Its shared models, definitions, contexts and validation resources provide a focused semantic hub for
+      regulated Digital Product Passport and Digital Battery Passport data. This is an architectural
+      interpretation, not a claim that it contains all industrial knowledge or verifies factual truth.
+      Extensions need mappings to the applicable core version.
+  - question: What is Spherity’s lightweight B2G data-space pattern?
+    answer: Spherity is working on a pattern combining a Government Register, a versioned Semantics Register, and
+      business-wallet-supported authentication and authorization. Wallet evidence identifies the business and
+      its mandate; a policy engine decides whether a specific action is allowed, and APIs and data hosts
+      enforce the result. This is a proposed implementation pattern, not an adopted EU profile.
+  - question: How can Eclipse Dataspace Components connect B2G infrastructure to a fuller data space?
+    answer: An EDC-based implementation can add federated catalogue discovery, credential exchange through
+      Identity Hub, contract negotiation and transfer management, with a compatible data plane. Register
+      adapters, semantic profiles, business-wallet trust mappings and enforcement remain necessary. Statutory
+      registration and authority access retain their legal basis separately from optional B2B agreements.
 related_publications:
 - title: Verifiable, Access-Controlled Digital Product Passports
   url: /verifiable-access-controlled-digital-product-passports.html
@@ -455,6 +505,8 @@ search_research:
     - DPP5.0
     - DPP4.0
     - European Business Wallet
+    - Eclipse Dataspace Components
+    - Dataspace Protocol
   discovery_terms:
     - Digital Product Passport
     - digitaler Produktpass
@@ -463,10 +515,15 @@ search_research:
     - verifiable credentials
     - DPP 5.0
     - DPP 4.0
+    - data space
+    - B2G data space
+    - business wallets
   audience_questions:
     - What is the EU Digital Product Passport Registry?
     - How do DPPs and European Business Wallets connect?
     - What is DPP5.0 compared with DPP4.0?
+    - Is the EU DPP Registry a data space?
+    - How do business wallets support B2G authorization?
   evidence:
     - comparison: Digital Product Passport; EU DPP Registry; European Business Wallet
       input_type: Search terms
@@ -533,6 +590,16 @@ search_research:
       url: https://trends.google.com/trends/explore?date=today%205-y&geo=DE&q=Digital%20Product%20Passport,digitaler%20Produktpass,DPP4.0&hl=en
       result: Digital Product Passport has more relative interest than digitaler Produktpass. DPP4.0 has
         insufficient regional and related-query data.
+    - comparison: Digital Product Passport; data space; Eclipse Dataspace Components
+      input_type: Search terms
+      geography: Worldwide
+      time_range: Past 5 years
+      search_type: Web Search
+      url: https://trends.google.com/trends/explore?date=today%205-y&q=Digital%20Product%20Passport,data%20space,Eclipse%20Dataspace%20Components&hl=en
+      result: Displayed normalized averages are 1, 18 and 0 respectively. Related queries for data space include
+        Copernicus Data Space Ecosystem and unrelated news terms, so the broad phrase is not a clean measure
+        of industrial data-space demand. Eclipse Dataspace Components has insufficient related-query data;
+        rounded zero does not establish zero demand.
   editorial_decisions:
     - Lead the description and explanatory copy with Digital Product Passport, the stronger broad discovery
       phrase in these comparisons; retain the approved EU DPP Registry title.
@@ -546,48 +613,57 @@ search_research:
       unrelated trending topics.
     - Trends scores are normalized and do not establish absolute volume, market size, legal status or
       technical validity. Sparse News Search is inconclusive.
+    - Supplement the eight original comparisons with a Worldwide five-year Web Search comparison for the
+      data-space extension. Keep Digital Product Passport as the page focus; qualify data space by DPP or B2G
+      because broad related queries are ambiguous. Retain Eclipse Dataspace Components for implementation
+      accuracy despite sparse data.
 toc_items:
-- title: Read the paper
-  href: '#read-the-paper'
-- title: Abstract
-  href: '#abstract'
-- title: What the Registry does
-  href: '#what-the-registry-does'
-- title: Why it matters
-  href: '#why-it-matters'
-- title: Key concepts
-  href: '#key-concepts'
-- title: Commission technical package
-  href: '#eu-dpp-registry-package'
-- title: W3C semantic stack
-  href: '#w3c-semantic-stack'
-- title: Worked battery example
-  href: '#worked-example'
-- title: AI and evidence graphs
-  href: '#ai-and-evidence-graphs'
-- title: DPP4.0 and DPP5.0 maturity
-  href: '#dpp5-maturity-model'
-- title: DPP + EBW convergence
-  href: '#dpp-ebw-convergence'
-- title: Open standards target stack
-  href: '#target-stack'
-- title: Engineering recommendations
-  href: '#recommendations'
-- title: Key references
-  href: '#key-references'
-- title: License and citation
-  href: '#license-and-citation'
-- title: Questions answered
-  href: '#questions-answered'
+  - title: Read the paper
+    href: "#read-the-paper"
+  - title: Abstract
+    href: "#abstract"
+  - title: What the Registry does
+    href: "#what-the-registry-does"
+  - title: Why it matters
+    href: "#why-it-matters"
+  - title: Key concepts
+    href: "#key-concepts"
+  - title: Commission technical package
+    href: "#eu-dpp-registry-package"
+  - title: W3C semantic stack
+    href: "#w3c-semantic-stack"
+  - title: Worked battery example
+    href: "#worked-example"
+  - title: AI and evidence graphs
+    href: "#ai-and-evidence-graphs"
+  - title: DPP4.0 and DPP5.0 maturity
+    href: "#dpp5-maturity-model"
+  - title: DPP + EBW convergence
+    href: "#dpp-ebw-convergence"
+  - title: Open standards target stack
+    href: "#target-stack"
+  - title: B2G data space and Eclipse
+    href: "#b2g-data-space"
+  - title: Engineering recommendations
+    href: "#recommendations"
+  - title: Key references
+    href: "#key-references"
+  - title: License and citation
+    href: "#license-and-citation"
+  - title: Questions answered
+    href: "#questions-answered"
 tags:
-- digital-product-passport
-- dpp5
-- dpp4
-- w3c
-- dpp-registry
-- european-business-wallet
-- evidence-graphs
-- semantic-interoperability
+  - digital-product-passport
+  - dpp5
+  - dpp4
+  - w3c
+  - dpp-registry
+  - european-business-wallet
+  - evidence-graphs
+  - semantic-interoperability
+  - data-spaces
+  - b2g
+  - eclipse-dataspace-components
 ---
 <div class="paper-download" id="read-the-paper">
   <a href="{{ page.pdf_url | relative_url }}">Read or download the complete 36-page visual paper</a>
@@ -989,6 +1065,63 @@ The European Business Wallet is still legislation in progress. The Commission pr
 
 The stack should remain modular. The European Business Wallet is a proposed EU legal/business instrument, not a W3C specification. W3C credentials do not establish legal authority by themselves; an EBW does not prove a product claim is true; and ODRL does not determine policy governance. The relying party must combine trusted issuers, current status, sector rules and local authorization.
 
+<h2 id="b2g-data-space">From DPP Registry to data space: Spherity’s B2G implementation pattern</h2>
+
+**The EU DPP Registry and its semantic repository provide elements of a data space: a common point of discovery, shared meaning and governed participation around distributed product data.** Spherity is working on a lightweight business-to-government (B2G) implementation pattern that combines a Government Register, a Semantics Register and authentication and authorization supported by business wallets and a policy engine. The same foundations can connect statutory registration and reporting to a fuller data space spanning public authorities and commercial participants.
+
+*Web edition extension, 4 November 2026. This section develops Spherity’s architecture proposal beyond the original 36-page PDF; it does not describe an adopted EU data-space profile or a deployed Spherity service.*
+
+### The Registry as a catalogue; the semantic repository as a focused semantic hub
+
+The Commission describes the Registry as an EU-wide index connecting product-passport identifiers and registration information to a decentralized DPP system. Product data remains the responsibility of economic operators or their service providers. This supplies a **catalogue-like discovery function**: identify a passport and connect it to the relevant registration context. It does not establish that the Registry exposes a general-purpose catalogue of negotiable data offers or implements the Dataspace Protocol.<a href="#ref-21">[21]</a>
+
+The associated semantic repository supplies common models, definitions and validation resources. It can therefore be understood as a **special-purpose semantic hub for regulated Digital Product Passport (DPP) and Digital Battery Passport (DBP) data**. Shared identifiers, vocabularies, JSON-LD contexts and versioned constraints help independent systems interpret and validate the same regulated fields.<a href="#ref-1">[1]</a> <a href="#ref-2">[2]</a> “Semantic hub” is our architectural interpretation: it does not imply one universal industrial ontology, ownership of every product fact, or verification of factual truth. Sector and company extensions need governed mappings to the applicable core version.
+
+Together, these functions address **where to find data** and **how to understand it**. A functioning data space also needs an agreed operating framework: who may participate, which identities and issuers are trusted, which rights apply, how exchanges are enforced, and who handles failures and disputes. A catalogue plus semantics is a substantial foundation; completeness depends on the use case and governance, rather than on the number of installed components.
+
+### A lightweight B2G data space with business wallets
+
+Spherity’s implementation pattern separates three responsibilities, with business wallets providing reusable identity and authority evidence across them:
+
+1. **Government Register — the regulated record.** Maintain required identifiers, registration state and submission receipts; link to responsible operators and permitted data endpoints. For reporting use cases, record the report’s purpose, period and applicable submission rules. Store the payload only where the governing process requires it.
+2. **Semantics Register — the interpretation and validation contract.** Publish the applicable model, vocabulary, context and validation-profile versions. A submission must identify the version against which it was checked; later mappings must preserve meaning, units and provenance. Successful validation establishes conformance to those rules, not product conformity or factual accuracy.
+3. **Policy engine and enforcement — the decision on each action.** Authentication verifies the requesting party and its control of the relevant credential or key. Business wallets can supply legal-person identity, representation, roles and bounded mandates. Authorization then evaluates those verified inputs against the requested action, resource, purpose, legal basis, validity and current status. The register API and data host must enforce the decision and retain an auditable result.
+
+**A wallet presentation is an input to authorization, not an access grant.** Recognized issuers, delegation chains, credential status, service-account binding and failure handling need explicit profiles. The proposed European Business Wallet could provide an EU framework for some of these functions, subject to final legislation and interoperability rules; the architecture must not assume that any wallet credential already has that legal effect.<a href="#ref-15">[15]</a> <a href="#ref-16">[16]</a>
+
+For example, a battery manufacturer could submit a registration through a service acting under a bounded business-wallet mandate. The service authenticates, the policy engine checks its permission to register that product, and the submission is validated against a named semantic profile. The register returns an attributable receipt. A market-surveillance request and a recycler’s request subsequently receive distinct policy decisions and data views. The receipt proves what the registration process accepted; it does not certify every underlying battery claim. This is an illustrative target flow, not a claim about current Registry wallet integration.
+
+### Connecting registration and reporting to a fuller data space
+
+The opportunity is to **reuse compliance infrastructure as a governed entry point for wider data sharing**. Preserve the government record and its statutory purpose. Publish permitted discovery metadata and endpoint references into the wider catalogue, with explicit provenance, freshness and access conditions. Keep protected product evidence at its authoritative source where appropriate. Link identifiers and semantic versions across systems instead of silently copying records into a second source of truth.
+
+Mandatory B2G submissions and authority access must retain their applicable legal basis. Optional B2B exchanges can add agreed usage conditions and commercial terms; those terms must not replace statutory duties or access rights. A registration receipt, a participant credential and a contract agreement answer different questions and should remain distinguishable in the evidence graph.
+
+This transition requires adapters for register APIs, semantic mappings, trust recognition and policy enforcement. It also needs operational governance for onboarding, changes, revocation, catalogue-cache freshness, audit, retention and disputes. A practical acceptance test is whether a withdrawn mandate, changed semantic version or revoked evidence item produces the correct decision across both the B2G process and the connected data exchange.
+
+### Eclipse Dataspace Components: one fuller implementation pattern
+
+**Eclipse Dataspace Components (EDC)** is one modular framework for implementing this broader exchange architecture. It supplies reusable software building blocks that must be assembled with domain semantics, trust rules, governance and operational services.<a href="#ref-22">[22]</a> An EDC-based pattern could map the responsibilities as follows:
+
+<div class="table-scroll" tabindex="0" role="region" aria-label="B2G functions and Eclipse data-space components comparison table">
+<table class="academic-table">
+<thead><tr><th scope="col">Responsibility</th><th scope="col">EDC-based implementation option</th><th scope="col">Integration boundary</th></tr></thead>
+<tbody>
+<tr><td><strong>Discover data</strong></td><td>Participant catalogues and the Federated Catalog, which crawls and caches catalogue metadata.</td><td>Project permitted register metadata into data offerings; a product registration is not automatically a contractual offer.</td></tr>
+<tr><td><strong>Establish participant trust</strong></td><td>Identity Hub manages and presents credentials using the Decentralized Claims Protocol (DCP).</td><td>Define trusted issuers and mappings to business-wallet identity and mandates; wallet interoperability is not automatic.</td></tr>
+<tr><td><strong>Agree and control exchanges</strong></td><td>Connector control plane for contract negotiation and transfer lifecycle; policy functions evaluate configured conditions.</td><td>Keep statutory B2G rights distinct from optional B2B agreements and bind rules to the relevant decision stages.</td></tr>
+<tr><td><strong>Deliver protected data</strong></td><td>A compatible data plane integrated with the chosen source systems and transfer technology.</td><td>Enforce access at the source and delivery boundary; catalogue visibility is not permission to receive every field.</td></tr>
+<tr><td><strong>Preserve regulated meaning</strong></td><td>The Semantics Register remains a domain service alongside the exchange components.</td><td>Maintain approved profiles, mappings and validation evidence; installing a connector does not supply DPP/DBP semantics.</td></tr>
+</tbody></table>
+</div>
+
+The component roles follow the EDC adopter documentation and Identity Hub implementation; policy evaluation requires configured functions and correct scope bindings.<a href="#ref-23">[23]</a> <a href="#ref-24">[24]</a> <a href="#ref-25">[25]</a> The **Dataspace Protocol (DSP)** specifies interoperable catalogue, agreement and access exchanges. It does not by itself define the regulated product semantics or the legal basis of a government submission.<a href="#ref-26">[26]</a>
+
+Participant onboarding and endpoint discovery in a data space serve a different purpose from a government product register. Likewise, an Identity Hub is not automatically a legally recognized European Business Wallet. The proposed bridge needs explicit protocol versions, identity and trust profiles, API adapters and conformance tests. Nothing in this comparison establishes that the EU DPP Registry currently runs EDC or implements DSP/DCP.
+
+**Spherity’s strategic direction is a continuous architecture from regulated registration to governed evidence exchange:** start with the smallest complete B2G process, then add federation and cross-company exchange where the use case warrants them. Shared semantics and reusable business identity can reduce repeated integration work while preserving the government’s role, the operator’s data responsibilities and each recipient’s access limits.
+
+
 <h2 id="recommendations">Engineering recommendations</h2>
 
 **Implement what is required now; profile and test the proposed trust layer separately.** The current Commission semantic and API documentation should be the technical baseline. Future wallet, credential and policy integration should be treated as a controlled interoperability programme, not as an already-required feature of the Registry.
@@ -1023,6 +1156,12 @@ The stack should remain modular. The European Business Wallet is a proposed EU l
   <li id="ref-18"><strong>W3C — Verifiable Credential Data Integrity 1.0.</strong> <a href="https://www.w3.org/TR/vc-data-integrity/" rel="external">https://www.w3.org/TR/vc-data-integrity/</a></li>
   <li id="ref-19"><strong>W3C — Bitstring Status List v1.0.</strong> <a href="https://www.w3.org/TR/vc-bitstring-status-list/" rel="external">https://www.w3.org/TR/vc-bitstring-status-list/</a></li>
   <li id="ref-20"><strong>W3C — PROV-O: The PROV Ontology.</strong> <a href="https://www.w3.org/TR/prov-o/" rel="external">https://www.w3.org/TR/prov-o/</a></li>
+  <li id="ref-21"><strong>European Commission — Digital Product Passport Registry: purpose and decentralized architecture.</strong> <a href="https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/dpp-registry_en" rel="external">https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/dpp-registry_en</a></li>
+  <li id="ref-22"><strong>Eclipse Foundation — Eclipse Dataspace Components project.</strong> <a href="https://projects.eclipse.org/projects/technology.edc" rel="external">https://projects.eclipse.org/projects/technology.edc</a></li>
+  <li id="ref-23"><strong>Eclipse Dataspace Components — Adopters Manual, component roles and integration responsibilities.</strong> <a href="https://eclipse-edc.github.io/documentation/for-adopters/" rel="external">https://eclipse-edc.github.io/documentation/for-adopters/</a></li>
+  <li id="ref-24"><strong>Eclipse EDC — Identity Hub and Decentralized Claims Protocol implementation.</strong> <a href="https://github.com/eclipse-edc/IdentityHub" rel="external">https://github.com/eclipse-edc/IdentityHub</a></li>
+  <li id="ref-25"><strong>Eclipse Dataspace Components — Policy Engine, functions and scope bindings.</strong> <a href="https://eclipse-edc.github.io/documentation/for-adopters/control-plane/policy-engine/" rel="external">https://eclipse-edc.github.io/documentation/for-adopters/control-plane/policy-engine/</a></li>
+  <li id="ref-26"><strong>Eclipse Dataspace Protocol — stable release 2025-1.</strong> <a href="https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/" rel="external">https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/</a></li>
 </ol>
 
 **Evidence boundary:** DPP1.0–DPP5.0 and DPP + EBW convergence are Spherity research framings. They are not adopted EU or W3C profiles. Current software and legal provisions should be checked against their official sources.

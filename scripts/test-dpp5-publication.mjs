@@ -47,8 +47,8 @@ test('abstract precedes mobile navigation and comparison tables are keyboard acc
   assert.ok(html.indexOf('<h1') < html.indexOf('id="abstract"'));
   assert.ok(html.indexOf('id="main-content"') < html.indexOf('id="abstract"'));
   assert.ok(html.indexOf('id="abstract"') < html.indexOf('class="mobile-article-nav"'));
-  assert.equal([...html.matchAll(/class="academic-table"/g)].length, 7);
-  assert.equal([...html.matchAll(/class="table-scroll"[^>]*tabindex="0"/g)].length, 7);
+  assert.equal([...html.matchAll(/class="academic-table"/g)].length, 8);
+  assert.equal([...html.matchAll(/class="table-scroll"[^>]*tabindex="0"/g)].length, 8);
   assert.match(html, /<th scope="col">/);
   const palantir = fs.readFileSync('_site/europes-answer-to-palantir.html', 'utf8');
   assert.doesNotMatch(palantir, /id="abstract"/);
@@ -57,7 +57,7 @@ test('abstract precedes mobile navigation and comparison tables are keyboard acc
 
 test('search review records observed comparisons and preserves evidence boundaries', () => {
   const review = JSON.parse(fs.readFileSync('scripts/data/dpp5-search-review.json', 'utf8'));
-  assert.equal(review.evidence.length, 8);
+  assert.equal(review.evidence.length, 9);
   assert.deepEqual(page.search_research.evidence, review.evidence);
   assert.match(review.method, /not absolute search volume/);
   const html = fs.readFileSync(`_site/${slug}.html`, 'utf8');

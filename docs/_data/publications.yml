@@ -3,7 +3,7 @@
   type: Visual research paper · W3C semantic stack and verifiable DPP evidence
   date_label: 3 November 2026
   date_iso: '2026-11-03'
-  description: The EU DPP Registry technical stack, W3C semantics, DPP4.0 / DPP5.0 maturity, and a proposed DPP + EBW trust architecture.
+  description: EU DPP Registry semantics, DPP5.0 evidence and business wallets, with a new analysis of lightweight B2G data spaces and Eclipse implementation options.
   byline: Dr. Carsten Stöcker · Spherity GmbH
   topics:
   - DPP & DBP
@@ -14,7 +14,8 @@
     w3c semantics json-ld rdf skos shacl sparql owl xsd dcat dcat-ap eu digital product passport registry semantic data guide implementing
     regulation 2026/1778 espr digitaler produktpass digitales produktregister europäisches unternehmenswallet ebw european business
     wallet legal person identity verifiable credentials verifiable evidence graph data provenance product passport battery passport
-    policy odrl ai physical ai carsten stöcker carsten stoecker spherity
+    policy odrl ai physical ai data space dataspace b2g government register semantics register semantic hub
+    eclipse dataspace components edc dsp dcp business wallets authentication authorization carsten stöcker carsten stoecker spherity
   image: /assets/preview-eu-dpp-registry-w3c-dpp5.webp
   image_alt: EU DPP Registry and DPP5.0 research with W3C semantic standards and a visual-paper cover.
   image_width: 1200

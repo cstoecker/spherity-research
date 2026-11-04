@@ -16,7 +16,8 @@
     "EBW and DPP/EBW convergence are explicitly proposed; signature integrity, issuer authority, factual reliability and policy enforcement are distinguished.",
     "Legal scope does not imply immediate passport obligations across all covered products.",
     "Removed duplicate abstract and regulatory-scope paragraph; unified visible abstract with metadata; made seven comparison tables keyboard accessible.",
-    "All 36 PDF pages and five standalone figure PDFs visually inspected; no clipping or overlaps."
+    "All 36 PDF pages and five standalone figure PDFs visually inspected; no clipping or overlaps.",
+    "Web edition extension dated 4 November 2026: DPP/DBP semantic hub, catalogue-like Registry, Spherity B2G pattern with business wallets and a fuller EDC-based implementation. Proposed architecture distinguished from current EU functionality; original PDF and figures unchanged. Eighth comparison table uses the existing keyboard-accessible wrapper."
   ],
   "sources": [
     {
@@ -50,6 +51,30 @@
     {
       "url": "https://www.w3.org/TR/vc-bitstring-status-list/",
       "finding": "Credential suspension/revocation status mechanism; downstream enforcement requires implementation."
+    },
+    {
+      "url": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/dpp-registry_en",
+      "finding": "European Commission — Digital Product Passport Registry: purpose and decentralized architecture."
+    },
+    {
+      "url": "https://projects.eclipse.org/projects/technology.edc",
+      "finding": "Eclipse Foundation — Eclipse Dataspace Components project."
+    },
+    {
+      "url": "https://eclipse-edc.github.io/documentation/for-adopters/",
+      "finding": "Eclipse Dataspace Components — Adopters Manual, component roles and integration responsibilities."
+    },
+    {
+      "url": "https://github.com/eclipse-edc/IdentityHub",
+      "finding": "Eclipse EDC — Identity Hub and Decentralized Claims Protocol implementation."
+    },
+    {
+      "url": "https://eclipse-edc.github.io/documentation/for-adopters/control-plane/policy-engine/",
+      "finding": "Eclipse Dataspace Components — Policy Engine, functions and scope bindings."
+    },
+    {
+      "url": "https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/",
+      "finding": "Eclipse Dataspace Protocol — stable release 2025-1."
     }
   ],
   "search_review": "dpp5-search-review.json",
