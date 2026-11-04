@@ -1,0 +1,1519 @@
+[
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2023-08-15",
+        "kind": "opened",
+        "precision": "day",
+        "source_ids": [
+          "src-global-ca-credentials-challenge"
+        ]
+      },
+      {
+        "condition": null,
+        "date": "2023-09-26",
+        "kind": "closed",
+        "precision": "day",
+        "source_ids": [
+          "src-global-ca-credentials-challenge"
+        ]
+      },
+      {
+        "condition": null,
+        "date": "2025-08-26",
+        "kind": "page_updated",
+        "precision": "day",
+        "source_ids": [
+          "src-global-ca-credentials-challenge"
+        ]
+      }
+    ],
+    "entity_id": "global-ca-credential-challenge",
+    "label": "Canada supply-chain verifiable credentials challenge",
+    "limitations": [
+      "Award, deployment and general legal obligation not established."
+    ],
+    "source_ids": [
+      "src-global-ca-credentials-challenge"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Requirements apply to proposed funded solutions.",
+      "value": "procurement_closed_outcome_unverified"
+    },
+    "type": "Initiative",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2025-06-03",
+        "kind": "project_record",
+        "precision": "day",
+        "source_ids": [
+          "src-global-cn-dpp-project"
+        ]
+      }
+    ],
+    "entity_id": "global-cn-dpp-general-project",
+    "label": "China DPP General requirements project",
+    "limitations": [
+      "Eighteen-month project period is not a publication guarantee."
+    ],
+    "source_ids": [
+      "src-global-cn-dpp-project"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "No final standard number verified.",
+      "value": "under_development"
+    },
+    "type": "StandardisationProject",
+    "version": "20251568-T-469"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-03-27",
+        "kind": "announced",
+        "precision": "day",
+        "source_ids": [
+          "src-global-cn-working-group"
+        ]
+      }
+    ],
+    "entity_id": "global-cn-dpp-working-group",
+    "label": "SAC/SWG 41 DPP working group",
+    "limitations": [
+      "Formation does not create product obligations."
+    ],
+    "source_ids": [
+      "src-global-cn-working-group"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Standards governance institution.",
+      "value": "established"
+    },
+    "type": "Committee",
+    "version": "SAC/SWG 41"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-10-01",
+        "kind": "published",
+        "precision": "day",
+        "source_ids": [
+          "src-global-in-teri-research"
+        ]
+      }
+    ],
+    "entity_id": "global-in-teri-battery-research",
+    "label": "TERI Battery Lifecycle Aadhaar research",
+    "limitations": [
+      "Reference to draft AIS-227 is not proof of its legal adoption."
+    ],
+    "source_ids": [
+      "src-global-in-teri-research"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "TERI describes work with Mercedes-Benz Research and Development India.",
+      "value": "research_reported"
+    },
+    "type": "Initiative",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2025-02-28",
+        "kind": "architecture_whitepaper_published",
+        "precision": "day",
+        "source_ids": [
+          "src-global-jp-ouranos"
+        ]
+      }
+    ],
+    "entity_id": "global-jp-ouranos",
+    "label": "Ouranos Ecosystem",
+    "limitations": [
+      "No domestic mandate is inferred from programme activity."
+    ],
+    "source_ids": [
+      "src-global-jp-ouranos"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Architecture, guidance and implementation activity.",
+      "value": "programme_active_in_dossier"
+    },
+    "type": "Initiative",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2023-05-09",
+        "kind": "page_created",
+        "precision": "day",
+        "source_ids": [
+          "src-global-us-nist-battery-passport"
+        ]
+      },
+      {
+        "condition": null,
+        "date": "2025-03-26",
+        "kind": "page_updated",
+        "precision": "day",
+        "source_ids": [
+          "src-global-us-nist-battery-passport"
+        ]
+      }
+    ],
+    "entity_id": "global-us-nist-battery-research",
+    "label": "NIST EV Battery Passport research",
+    "limitations": [
+      "Completion date itself is not given."
+    ],
+    "source_ids": [
+      "src-global-us-nist-battery-passport"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "NIST project status; no federal market mandate asserted.",
+      "value": "completed"
+    },
+    "type": "Initiative",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": "Date of the shared release announcement; underlying artifact timestamp not independently checked.",
+        "date": "2026-08-27",
+        "kind": "publication_announced",
+        "precision": "day",
+        "source_ids": [
+          "src-std-battery-model"
+        ]
+      }
+    ],
+    "entity_id": "std-battery-model-2",
+    "label": "BatteryPass-Ready Data Model v2.0",
+    "limitations": [
+      "Full schema not inspected; the aligned longlist includes voluntary attributes and draft-act material."
+    ],
+    "source_ids": [
+      "src-std-battery-model"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Not equivalent to the complete legal minimum.",
+      "value": "published"
+    },
+    "type": "Specification",
+    "version": "2.0"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-battery-pass",
+    "label": "Battery Pass",
+    "limitations": [],
+    "source_ids": [
+      "src-std-battery-materials",
+      "src-std-battery-ready"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Predecessor work informing BatteryPass-Ready.",
+      "value": "published_outputs"
+    },
+    "type": "Initiative",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2025-04-01",
+        "kind": "started",
+        "precision": "day",
+        "source_ids": [
+          "src-std-battery-ready"
+        ]
+      }
+    ],
+    "entity_id": "std-batterypass-ready",
+    "label": "BatteryPass-Ready",
+    "limitations": [
+      "Programme funding geography; no claim all implementation sites are German."
+    ],
+    "source_ids": [
+      "src-std-battery-ready"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Two-year project building on Battery Pass.",
+      "value": "active"
+    },
+    "type": "Initiative",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-bsdd",
+    "label": "buildingSMART Data Dictionary (bSDD)",
+    "limitations": [
+      "Provider release unreviewed."
+    ],
+    "source_ids": [
+      "src-std-dictionary"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Adoption unverified.",
+      "value": "identified_resource"
+    },
+    "type": "Specification",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-catena-x",
+    "label": "Catena-X",
+    "limitations": [],
+    "source_ids": [
+      "src-std-catena-standard",
+      "src-std-catena-opc"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Ecosystem governance and specifications; no universal DPP mandate.",
+      "value": "active"
+    },
+    "type": "Initiative",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-cen-jtc24",
+    "label": "CEN-CENELEC JTC 24",
+    "limitations": [],
+    "source_ids": [
+      "src-std-cen-overview"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Product-specific mandatory content is outside this horizontal programme.",
+      "value": "active"
+    },
+    "type": "Committee",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2024-05",
+        "kind": "started",
+        "precision": "month",
+        "source_ids": [
+          "src-std-cirpass-dates"
+        ]
+      },
+      {
+        "condition": null,
+        "date": "2027-04",
+        "kind": "planned_end",
+        "precision": "month",
+        "source_ids": [
+          "src-std-cirpass-dates"
+        ]
+      }
+    ],
+    "entity_id": "std-cirpass2",
+    "label": "CIRPASS-2",
+    "limitations": [
+      "Programme geography is not the location of every pilot."
+    ],
+    "source_ids": [
+      "src-std-cirpass",
+      "src-std-cirpass-dates"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "49 partners and 13 pilots across four value chains reported by consortium.",
+      "value": "active"
+    },
+    "type": "Initiative",
+    "version": "2024–2027"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-10-12",
+        "kind": "announced",
+        "precision": "day",
+        "source_ids": [
+          "src-std-cirpass-results"
+        ]
+      }
+    ],
+    "entity_id": "std-cirpass2-ontology",
+    "label": "CIRPASS-2 DPP ontology network",
+    "limitations": [
+      "Competency questions not yet formally validated against product data in inspected dossier.",
+      "Latest page unavailable on reopening."
+    ],
+    "source_ids": [
+      "src-std-cirpass-ontology",
+      "src-std-cirpass-results"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Incomplete, non-normative and not an official EU ontology.",
+      "value": "exploratory"
+    },
+    "type": "Ontology",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-cx-0143",
+    "label": "Catena-X CX-0143 DPP standard",
+    "limitations": [
+      "No cross-ecosystem compatibility conclusion from specification alone."
+    ],
+    "source_ids": [
+      "src-std-catena-standard"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Battery and transmission passports are early realisations.",
+      "value": "published_ecosystem_standard"
+    },
+    "type": "Specification",
+    "version": "1.0.1 / CX-Io"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-dictionary-referencing",
+    "label": "DPP dictionary referencing concepts and principles",
+    "limitations": [
+      "Direct catalogue check pending."
+    ],
+    "source_ids": [
+      "src-std-dictionary"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Reported work; formal stage unverified.",
+      "value": "under_development"
+    },
+    "type": "StandardisationProject",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-din-dke-spec-99100",
+    "label": "DIN DKE SPEC 99100",
+    "limitations": [
+      "Edition and exact publication date require direct catalogue follow-up."
+    ],
+    "source_ids": [
+      "src-std-battery-materials"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Project materials identify it; complete normative content not examined.",
+      "value": "published_specification"
+    },
+    "type": "Specification",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-dpp4-0",
+    "label": "IDTA DPP4.0",
+    "limitations": [],
+    "source_ids": [
+      "src-std-idta"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Uses industrial digital-twin infrastructure; regulatory mappings evolve.",
+      "value": "active"
+    },
+    "type": "Initiative",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-eclass",
+    "label": "ECLASS",
+    "limitations": [
+      "Provider release unreviewed."
+    ],
+    "source_ids": [
+      "src-std-dictionary"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Adoption unverified.",
+      "value": "identified_resource"
+    },
+    "type": "Specification",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [
+      "a-std-037"
+    ],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-05-27",
+        "kind": "available",
+        "precision": "day",
+        "source_ids": [
+          "src-std-en-18216"
+        ]
+      },
+      {
+        "condition": null,
+        "date": "2026-07-15",
+        "kind": "cited_in_oj",
+        "precision": "day",
+        "source_ids": [
+          "src-std-oj-decision"
+        ]
+      }
+    ],
+    "entity_id": "std-en-18216-2026",
+    "label": "EN 18216:2026 — Data exchange protocols",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "source_ids": [
+      "src-std-en-18216",
+      "src-std-oj-decision",
+      "src-std-oj-register"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "OJ presumption concerns only covered ESPR requirements.",
+      "value": "published_oj_cited"
+    },
+    "type": "Standard",
+    "version": "2026"
+  },
+  {
+    "citation_assertion_ids": [
+      "a-std-038"
+    ],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-05-27",
+        "kind": "available",
+        "precision": "day",
+        "source_ids": [
+          "src-std-en-18219"
+        ]
+      },
+      {
+        "condition": null,
+        "date": "2026-07-15",
+        "kind": "cited_in_oj",
+        "precision": "day",
+        "source_ids": [
+          "src-std-oj-decision"
+        ]
+      }
+    ],
+    "entity_id": "std-en-18219-2026",
+    "label": "EN 18219:2026 — Unique identifiers",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "source_ids": [
+      "src-std-en-18219",
+      "src-std-oj-decision",
+      "src-std-oj-register"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "OJ presumption concerns only covered ESPR requirements.",
+      "value": "published_oj_cited"
+    },
+    "type": "Standard",
+    "version": "2026"
+  },
+  {
+    "citation_assertion_ids": [
+      "a-std-039"
+    ],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-05-27",
+        "kind": "available",
+        "precision": "day",
+        "source_ids": [
+          "src-std-en-18220"
+        ]
+      },
+      {
+        "condition": null,
+        "date": "2026-07-15",
+        "kind": "cited_in_oj",
+        "precision": "day",
+        "source_ids": [
+          "src-std-oj-decision"
+        ]
+      }
+    ],
+    "entity_id": "std-en-18220-2026",
+    "label": "EN 18220:2026 — Data carriers",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "source_ids": [
+      "src-std-en-18220",
+      "src-std-oj-decision",
+      "src-std-oj-register"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "OJ presumption concerns only covered ESPR requirements.",
+      "value": "published_oj_cited"
+    },
+    "type": "Standard",
+    "version": "2026"
+  },
+  {
+    "citation_assertion_ids": [
+      "a-std-040"
+    ],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-05-27",
+        "kind": "available",
+        "precision": "day",
+        "source_ids": [
+          "src-std-en-18221"
+        ]
+      },
+      {
+        "condition": null,
+        "date": "2026-07-15",
+        "kind": "cited_in_oj",
+        "precision": "day",
+        "source_ids": [
+          "src-std-oj-decision"
+        ]
+      }
+    ],
+    "entity_id": "std-en-18221-2026",
+    "label": "EN 18221:2026 — Data storage, archiving and persistence",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "source_ids": [
+      "src-std-en-18221",
+      "src-std-oj-decision",
+      "src-std-oj-register"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "OJ presumption concerns only covered ESPR requirements.",
+      "value": "published_oj_cited"
+    },
+    "type": "Standard",
+    "version": "2026"
+  },
+  {
+    "citation_assertion_ids": [
+      "a-std-041"
+    ],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-05-28",
+        "kind": "national_publication",
+        "precision": "day",
+        "source_ids": [
+          "src-std-en-18222"
+        ]
+      },
+      {
+        "condition": null,
+        "date": "2026-07-15",
+        "kind": "cited_in_oj",
+        "precision": "day",
+        "source_ids": [
+          "src-std-oj-decision"
+        ]
+      }
+    ],
+    "entity_id": "std-en-18222-2026",
+    "label": "EN 18222:2026 — Lifecycle and searchability APIs",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "source_ids": [
+      "src-std-en-18222",
+      "src-std-oj-decision",
+      "src-std-oj-register"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "OJ presumption concerns only covered ESPR requirements.",
+      "value": "published_oj_cited"
+    },
+    "type": "Standard",
+    "version": "2026"
+  },
+  {
+    "citation_assertion_ids": [
+      "a-std-042"
+    ],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-05-28",
+        "kind": "national_publication",
+        "precision": "day",
+        "source_ids": [
+          "src-std-en-18223"
+        ]
+      },
+      {
+        "condition": null,
+        "date": "2026-07-15",
+        "kind": "cited_in_oj",
+        "precision": "day",
+        "source_ids": [
+          "src-std-oj-decision"
+        ]
+      }
+    ],
+    "entity_id": "std-en-18223-2026",
+    "label": "EN 18223:2026 — System interoperability",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "source_ids": [
+      "src-std-en-18223",
+      "src-std-oj-decision",
+      "src-std-oj-register"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "OJ presumption concerns only covered ESPR requirements.",
+      "value": "published_oj_cited"
+    },
+    "type": "Standard",
+    "version": "2026"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-09-16",
+        "kind": "available",
+        "precision": "day",
+        "source_ids": [
+          "src-std-en-18239"
+        ]
+      },
+      {
+        "condition": null,
+        "date": "2027-03-31",
+        "kind": "national_implementation_deadline",
+        "precision": "day",
+        "source_ids": [
+          "src-std-en-18239"
+        ]
+      }
+    ],
+    "entity_id": "std-en-18239-2026",
+    "label": "EN 18239:2026 — Access rights, security and confidentiality",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue reopening failed; publication inherited from dossier.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "source_ids": [
+      "src-std-en-18239",
+      "src-std-oj-register"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Publication established in dossier; no citation identified in inspected Commission register.",
+      "value": "published_citation_pending"
+    },
+    "type": "Standard",
+    "version": "2026"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-09-16",
+        "kind": "available",
+        "precision": "day",
+        "source_ids": [
+          "src-std-en-18246"
+        ]
+      },
+      {
+        "condition": null,
+        "date": "2027-03-31",
+        "kind": "national_implementation_deadline",
+        "precision": "day",
+        "source_ids": [
+          "src-std-en-18246"
+        ]
+      }
+    ],
+    "entity_id": "std-en-18246-2026",
+    "label": "EN 18246:2026 — Data authentication, reliability and integrity",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue reopening failed; publication inherited from dossier.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "source_ids": [
+      "src-std-en-18246",
+      "src-std-oj-register"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Publication established in dossier; no citation identified in inspected Commission register.",
+      "value": "published_citation_pending"
+    },
+    "type": "Standard",
+    "version": "2026"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-etim",
+    "label": "ETIM",
+    "limitations": [
+      "Provider release unreviewed."
+    ],
+    "source_ids": [
+      "src-std-dictionary"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Adoption unverified.",
+      "value": "identified_resource"
+    },
+    "type": "Specification",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-gba",
+    "label": "Global Battery Alliance battery passport programme",
+    "limitations": [],
+    "source_ids": [
+      "src-std-gba-trials"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Private ecosystem distinct from EU legal battery passport.",
+      "value": "active"
+    },
+    "type": "Initiative",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2027",
+        "kind": "planned_launch",
+        "precision": "year",
+        "source_ids": [
+          "src-std-gba-trials"
+        ]
+      }
+    ],
+    "entity_id": "std-gba-certification",
+    "label": "GBA battery passport certification",
+    "limitations": [
+      "No completed certification launch inferred."
+    ],
+    "source_ids": [
+      "src-std-gba-trials"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Full launch described as a 2027 plan.",
+      "value": "planned"
+    },
+    "type": "CertificationScheme",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-08",
+        "kind": "ratified",
+        "precision": "month",
+        "source_ids": [
+          "src-std-gs1-digital-link"
+        ]
+      }
+    ],
+    "entity_id": "std-gs1-digital-link-1-7",
+    "label": "GS1 Digital Link URI Syntax",
+    "limitations": [],
+    "source_ids": [
+      "src-std-gs1-digital-link"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "URI syntax; resolution has a separate specification.",
+      "value": "ratified"
+    },
+    "type": "Standard",
+    "version": "1.7.0"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2022-06",
+        "kind": "ratified",
+        "precision": "month",
+        "source_ids": [
+          "src-std-gs1-epcis"
+        ]
+      }
+    ],
+    "entity_id": "std-gs1-epcis-2",
+    "label": "GS1 EPCIS",
+    "limitations": [],
+    "source_ids": [
+      "src-std-gs1-epcis"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Event exchange standard; not a DPP law.",
+      "value": "ratified"
+    },
+    "type": "Standard",
+    "version": "2.0"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2023-12-14",
+        "kind": "catalogue_valid_from",
+        "precision": "day",
+        "source_ids": [
+          "src-std-iec-aas"
+        ]
+      }
+    ],
+    "entity_id": "std-iec-63278-1",
+    "label": "IEC 63278-1:2023 — Asset Administration Shell structure",
+    "limitations": [
+      "EVS catalogue valid-from date is recorded separately from any original IEC publication event."
+    ],
+    "source_ids": [
+      "src-std-iec-aas"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Enabling structure; not a complete DPP compliance specification.",
+      "value": "published"
+    },
+    "type": "Standard",
+    "version": "2023"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-iec-cdd",
+    "label": "IEC Common Data Dictionary",
+    "limitations": [
+      "Release inventory unreviewed."
+    ],
+    "source_ids": [
+      "src-std-dictionary"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Optional semantic resource.",
+      "value": "available"
+    },
+    "type": "Specification",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-02-12",
+        "kind": "new_project_approved",
+        "precision": "day",
+        "source_ids": [
+          "src-std-iso-25534-1"
+        ]
+      }
+    ],
+    "entity_id": "std-iso-25534-1",
+    "label": "ISO/IEC AWI 25534-1 — Concepts and terminology",
+    "limitations": [
+      "Catalogue abstract retains wording inconsistent with current title."
+    ],
+    "source_ids": [
+      "src-std-iso-25534-1"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Stage 10.99; not a published international standard.",
+      "value": "new_project_approved"
+    },
+    "type": "StandardisationProject",
+    "version": "AWI edition 1"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-09-14",
+        "kind": "new_project_approved",
+        "precision": "day",
+        "source_ids": [
+          "src-std-iso-25534-2"
+        ]
+      }
+    ],
+    "entity_id": "std-iso-25534-2",
+    "label": "ISO/IEC AWI 25534-2 — Overview and fundamental principles",
+    "limitations": [],
+    "source_ids": [
+      "src-std-iso-25534-2"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Stage 10.99; not a published international standard.",
+      "value": "new_project_approved"
+    },
+    "type": "StandardisationProject",
+    "version": "AWI edition 1"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-iso-jtc5",
+    "label": "ISO/IEC JTC 5 — Digital Product Passport",
+    "limitations": [],
+    "source_ids": [
+      "src-std-iso-jtc5"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "International standards work does not itself impose domestic duties.",
+      "value": "active"
+    },
+    "type": "Committee",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2023-11-06",
+        "kind": "approved",
+        "precision": "day",
+        "source_ids": [
+          "src-std-itu-1070"
+        ]
+      }
+    ],
+    "entity_id": "std-itu-l1070",
+    "label": "ITU-T L.1070",
+    "limitations": [],
+    "source_ids": [
+      "src-std-itu-1070"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "ITU catalogue status; no universal legal mandate inferred.",
+      "value": "in_force_recommendation"
+    },
+    "type": "Standard",
+    "version": "11/2023"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2024-11-06",
+        "kind": "approved",
+        "precision": "day",
+        "source_ids": [
+          "src-std-itu-1071"
+        ]
+      }
+    ],
+    "entity_id": "std-itu-l1071",
+    "label": "ITU-T L.1071",
+    "limitations": [],
+    "source_ids": [
+      "src-std-itu-1071",
+      "src-std-itu-1071-summary"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "ITU catalogue status; sector-specific model.",
+      "value": "in_force_recommendation"
+    },
+    "type": "Standard",
+    "version": "11/2024"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-manufacturing-x",
+    "label": "Manufacturing-X",
+    "limitations": [
+      "Individual project maturity and international operation require separate records."
+    ],
+    "source_ids": [
+      "src-std-manufacturing-x"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Cross-industry programme, not one standard or DPP law.",
+      "value": "active_programme"
+    },
+    "type": "Initiative",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-10-16",
+        "kind": "published",
+        "precision": "day",
+        "source_ids": [
+          "src-std-opc-dpp"
+        ]
+      }
+    ],
+    "entity_id": "std-opc-30450-1",
+    "label": "OPC 30450-1 — DPP Information Model",
+    "limitations": [
+      "Supplementary file path contains a different date; no implementation date inferred."
+    ],
+    "source_ids": [
+      "src-std-opc-dpp"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Publication does not establish deployment scale.",
+      "value": "published"
+    },
+    "type": "Specification",
+    "version": "1.0.0"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-08-11",
+        "kind": "public_review_opened",
+        "precision": "day",
+        "source_ids": [
+          "src-std-unece-p1143"
+        ]
+      },
+      {
+        "condition": null,
+        "date": "2026-10-12",
+        "kind": "planned_public_review_close",
+        "precision": "day",
+        "source_ids": [
+          "src-std-unece-p1143"
+        ]
+      }
+    ],
+    "entity_id": "std-uncefact-p1143",
+    "label": "UN/CEFACT P1143 DPP BRS",
+    "limitations": [
+      "Detailed draft not obtained.",
+      "Elapsed review deadline alone does not prove review completion or adoption."
+    ],
+    "source_ids": [
+      "src-std-unece-p1143"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Announced review period ended; final approval not verified.",
+      "value": "public_draft_final_status_unverified"
+    },
+    "type": "StandardisationProject",
+    "version": "Public Draft 1.0"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-untp",
+    "label": "UN Transparency Protocol",
+    "limitations": [],
+    "source_ids": [
+      "src-std-untp-about"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Protocol work supporting transparency; no direct national legal mandate.",
+      "value": "active"
+    },
+    "type": "Initiative",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-untp-0-7",
+    "label": "UNTP maintained pilot release",
+    "limitations": [],
+    "source_ids": [
+      "src-std-untp-versions"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Versions listing shows no production 1.0 release.",
+      "value": "maintained_pilot"
+    },
+    "type": "Specification",
+    "version": "0.7.0"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-untp-dcc",
+    "label": "UNTP Conformity Credential",
+    "limitations": [
+      "Full component text not reviewed in this seed."
+    ],
+    "source_ids": [
+      "src-std-untp-suite"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Component listed in technical suite; no assessor authority inferred.",
+      "value": "work_in_progress"
+    },
+    "type": "Specification",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-untp-dia",
+    "label": "UNTP Digital Identity Anchor",
+    "limitations": [
+      "Dependency versions require further pinning."
+    ],
+    "source_ids": [
+      "src-std-untp-dia"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Working profile; recognition and assurance remain explicit.",
+      "value": "work_in_progress"
+    },
+    "type": "Specification",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-untp-dpp-0-8",
+    "label": "UNTP DPP working schema",
+    "limitations": [
+      "Live working page; no immutable repository commit captured."
+    ],
+    "source_ids": [
+      "src-std-untp-dpp"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Candidate for UNTP 1.0; not a production release.",
+      "value": "work_in_progress"
+    },
+    "type": "Specification",
+    "version": "0.8.0 working candidate"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-untp-dpp-family",
+    "label": "UNTP Digital Product Passport specification family",
+    "limitations": [
+      "Charter input does not select a particular UNTP DPP schema version."
+    ],
+    "source_ids": [
+      "src-std-w3c-charter",
+      "src-std-untp-dpp"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Family identity; current working artifact and maintained protocol release are separate nodes.",
+      "value": "evolving_specification_family"
+    },
+    "type": "Specification",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-untp-dte",
+    "label": "UNTP Digital Traceability Events",
+    "limitations": [
+      "Full component text not reviewed in this seed."
+    ],
+    "source_ids": [
+      "src-std-untp-suite"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Component listed in technical suite.",
+      "value": "work_in_progress"
+    },
+    "type": "Specification",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-w3c-bw-vocabulary",
+    "label": "W3C business-wallet vocabulary work",
+    "limitations": [],
+    "source_ids": [
+      "src-std-w3c-charter",
+      "src-std-w3c-repository"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Charter adoption onto Recommendation track remains conditional.",
+      "value": "tentative_deliverable"
+    },
+    "type": "StandardisationProject",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2022-07-19",
+        "kind": "published",
+        "precision": "day",
+        "source_ids": [
+          "src-std-w3c-did1"
+        ]
+      }
+    ],
+    "entity_id": "std-w3c-did1",
+    "label": "W3C Decentralized Identifiers 1.0",
+    "limitations": [],
+    "source_ids": [
+      "src-std-w3c-did1"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Specific methods and deployment trust remain separate.",
+      "value": "recommendation"
+    },
+    "type": "Standard",
+    "version": "1.0"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-w3c-dpp-bw-tf",
+    "label": "W3C VC DPP & Business Wallet Task Force",
+    "limitations": [],
+    "source_ids": [
+      "src-std-w3c-tf"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Institutional activity, not a legal business-wallet procedure.",
+      "value": "active"
+    },
+    "type": "Committee",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [],
+    "entity_id": "std-w3c-dpp-vocabulary",
+    "label": "W3C DPP vocabulary proposal",
+    "limitations": [
+      "Latest page unavailable on reopening."
+    ],
+    "source_ids": [
+      "src-std-w3c-dpp-vocabulary"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Not a completed normative ontology.",
+      "value": "unofficial_proposal"
+    },
+    "type": "Ontology",
+    "version": null
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-09-06",
+        "kind": "published",
+        "precision": "day",
+        "source_ids": [
+          "src-std-w3c-recognized"
+        ]
+      }
+    ],
+    "entity_id": "std-w3c-recognized",
+    "label": "W3C Recognized Entities 1.0",
+    "limitations": [],
+    "source_ids": [
+      "src-std-w3c-recognized"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Specification explicitly unsuitable for production deployment.",
+      "value": "experimental_working_draft"
+    },
+    "type": "Specification",
+    "version": "Working Draft 2026-09-06"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2025-05-15",
+        "kind": "published",
+        "precision": "day",
+        "source_ids": [
+          "src-std-w3c-vc2"
+        ]
+      }
+    ],
+    "entity_id": "std-w3c-vc2",
+    "label": "W3C Verifiable Credentials Data Model 2.0",
+    "limitations": [],
+    "source_ids": [
+      "src-std-w3c-vc2"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "Verification does not itself establish truth or legal sufficiency.",
+      "value": "recommendation"
+    },
+    "type": "Standard",
+    "version": "2.0"
+  },
+  {
+    "citation_assertion_ids": [],
+    "dates": [
+      {
+        "condition": null,
+        "date": "2026-03-11",
+        "kind": "charter_started",
+        "precision": "day",
+        "source_ids": [
+          "src-std-w3c-charter"
+        ]
+      },
+      {
+        "condition": null,
+        "date": "2028-03-31",
+        "kind": "charter_ends",
+        "precision": "day",
+        "source_ids": [
+          "src-std-w3c-charter"
+        ]
+      }
+    ],
+    "entity_id": "std-w3c-vcwg",
+    "label": "W3C Verifiable Credentials Working Group",
+    "limitations": [],
+    "source_ids": [
+      "src-std-w3c-charter"
+    ],
+    "status": {
+      "as_of": "2026-10-23",
+      "scope_note": "DPP and wallet vocabularies are tentative deliverables.",
+      "value": "active"
+    },
+    "type": "Committee",
+    "version": "2026 charter"
+  }
+]

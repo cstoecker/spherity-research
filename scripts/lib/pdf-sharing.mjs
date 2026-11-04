@@ -1,4 +1,4 @@
-import { access, readFile } from "node:fs/promises";
+import { access, readFile, realpath, stat } from "node:fs/promises";
 import path from "node:path";
 import { glob } from "glob";
 import { parse as parseYaml } from "yaml";
@@ -25,11 +25,55 @@ export async function loadPdfShares(sourceDirectory = "docs") {
   const config = parseYaml(await readFile(path.join(root, "_config.yml"), "utf8"));
   if (!/^https:\/\//.test(config.url || "")) throw new Error("PDF sharing requires an HTTPS site.url.");
   const candidates = new Map();
+  const figureDownloads = new Map();
+  const placeholderDownloads = new Map();
   for (const sourceFile of (await glob("*.md", { cwd: root })).sort()) {
     const source = await readFile(path.join(root, sourceFile), "utf8");
     const frontmatter = source.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/);
     if (!frontmatter) continue;
     const page = parseYaml(frontmatter[1]);
+    if (page?.paper_placeholder !== undefined) {
+      const placeholder = page.paper_placeholder;
+      const robots = String(page.robots || "").toLowerCase().split(/[,\s]+/).filter(Boolean);
+      if (page.paper_in_preparation !== true || page.publication_state !== "draft" || !robots.includes("noindex") || robots.includes("index")) {
+        throw new Error(`${sourceFile}: a paper placeholder requires paper_in_preparation: true, publication_state: draft and noindex robots.`);
+      }
+      if (page.pdf_url || page.associated_media?.length) {
+        throw new Error(`${sourceFile}: a paper placeholder cannot declare published-paper PDF media.`);
+      }
+      if (!placeholder || typeof placeholder.label !== "string" || !placeholder.label.trim() || typeof placeholder.description !== "string" || !placeholder.description.trim()) {
+        throw new Error(`${sourceFile}: paper_placeholder requires a label and description identifying its incomplete status.`);
+      }
+      const pdfPath = localPath(placeholder.url, `${sourceFile} placeholder PDF`, [".pdf"]);
+      const pagePath = localPath(page.permalink, `${sourceFile} placeholder owner`, [".html"]);
+      if (page.canonical_url !== publicUrl(config, pagePath)) throw new Error(`${sourceFile}: placeholder canonical URL must match its HTML owner.`);
+      const pdfFile = path.join(root, pdfPath.slice(1));
+      let resolvedRoot, resolvedPdf, pdfInfo, pdfBytes;
+      try {
+        [resolvedRoot, resolvedPdf, pdfInfo, pdfBytes] = await Promise.all([realpath(root), realpath(pdfFile), stat(pdfFile), readFile(pdfFile)]);
+      } catch {
+        throw new Error(`${sourceFile}: missing placeholder PDF ${pdfPath}.`);
+      }
+      const relative = path.relative(resolvedRoot, resolvedPdf);
+      if (!pdfInfo.isFile() || relative === ".." || relative.startsWith(`..${path.sep}`) || path.isAbsolute(relative)) throw new Error(`${sourceFile}: placeholder PDF must be a file contained in the source directory.`);
+      if (pdfBytes.toString("ascii", 0, 5) !== "%PDF-") throw new Error(`${sourceFile}: placeholder must contain PDF bytes.`);
+      if ([...placeholderDownloads.keys()].some(value => value.toLowerCase() === pdfPath.toLowerCase())) throw new Error(`${sourceFile}: duplicate placeholder PDF ownership for ${pdfPath}.`);
+      placeholderDownloads.set(pdfPath, { sourceFile, pagePath, label: placeholder.label, description: placeholder.description });
+    }
+    for (const figure of page?.figure_objects || []) {
+      for (const download of figure.downloads || []) {
+        if (!figure.id || !figure.content_url || !download.name) {
+          throw new Error(`${sourceFile}: supplemental figure PDFs require a figure id, image and download name.`);
+        }
+        const figurePath = localPath(figure.content_url, `${sourceFile} figure`, ['.svg', '.png', '.jpg', '.jpeg', '.webp']);
+        const pdfPath = localPath(download.url, `${sourceFile} figure PDF`, ['.pdf']);
+        for (const asset of [figurePath, pdfPath]) {
+          try { await access(path.join(root, asset.slice(1))); }
+          catch { throw new Error(`${sourceFile}: missing supplemental figure asset ${asset}`); }
+        }
+        figureDownloads.set(pdfPath, { sourceFile, figureId: figure.id, name: download.name });
+      }
+    }
     if (!page?.pdf_url && !page?.associated_media?.length) continue;
     const pagePath = localPath(page.permalink, `${sourceFile} permalink`, [".html"]);
     const canonicalUrl = publicUrl(config, pagePath);
@@ -69,6 +113,12 @@ export async function loadPdfShares(sourceDirectory = "docs") {
     }
   }
 
+  for (const pdfPath of placeholderDownloads.keys()) {
+    if ([...candidates.keys(), ...figureDownloads.keys()].some(value => value.toLowerCase() === pdfPath.toLowerCase())) {
+      throw new Error(`${pdfPath}: a placeholder PDF cannot also be a paper or supplemental figure.`);
+    }
+  }
+
   const records = [];
   const outputPaths = new Set();
   for (const [pdfPath, entries] of candidates) {
@@ -85,9 +135,13 @@ export async function loadPdfShares(sourceDirectory = "docs") {
       references: entries.map(({ pagePath, sourceFile }) => ({ pagePath, sourceFile })) });
   }
   for (const file of await glob("**/*.pdf", { cwd: root, nocase: true, windowsPathsNoEscape: true })) {
-    if (!candidates.has(`/${file.replaceAll("\\", "/")}`)) {
+    const pdfPath = `/${file.replaceAll("\\", "/")}`;
+    if (candidates.has(pdfPath) && figureDownloads.has(pdfPath)) {
+      throw new Error(`${file}: a PDF cannot be both a paper and a supplemental figure.`);
+    }
+    if (!candidates.has(pdfPath) && !figureDownloads.has(pdfPath) && !placeholderDownloads.has(pdfPath)) {
       throw new Error(`${file}: PDF has no paper page / screenshot sharing mapping.`);
     }
   }
-  return { config, records: records.sort((a, b) => a.pdfPath.localeCompare(b.pdfPath)) };
+  return { config, records: records.sort((a, b) => a.pdfPath.localeCompare(b.pdfPath)), figureDownloads, placeholderDownloads };
 }

@@ -38,6 +38,13 @@ GitHub Actions. The Gartner-
 approved strategy card is a checksum-protected exception and must not be
 changed without a new approval.
 
+The standalone Atlas has its own map-led card in the same manifest, with
+`page_type: website` and `layout: atlas-map`. Its 1200 × 630 JPEG is linked by
+static Open Graph and X metadata in `dpp-explorer/src/index.html`. Validation
+checks the rendered page and image together. To regenerate just this card,
+run `node scripts/generate-social-cards.mjs --only=/dpp-explorer/` after the map
+asset is prepared; all cards still pass safe-area preflight.
+
 Verified author identities are maintained in `docs/_data/authors.yml`. The
 shared page layout reuses those profiles on future papers, while a publication
 can supply an author-specific `url` or `same_as` value when necessary. Reviewed
@@ -185,6 +192,39 @@ as well as the inline version. A successful build or a valid image URL alone
 does not establish that a diagram is visible or correctly framed.
 
 ## SEO, AEO and GEO research
+
+The EBW roadmap page opts into image discovery with `image_sitemap: true`.
+The sitemap generator includes its reviewed figure, paper cover and social image;
+it verifies that each local image exists. Run
+`node scripts/update-ebw-image-metadata.mjs` after changing the EBW image metadata.
+Social-card and PDF-share generation retain the embedded creator, source and
+licence information. Keep descriptions faithful to each image's actual content.
+
+The EBW manuscript's metadata was corrected with
+`python scripts/update-ebw-pdf-metadata.py` (PyMuPDF and PyYAML required).
+The incremental update preserves the supplied PDF as an exact byte prefix;
+`scripts/data/ebw-pdf-metadata-provenance.json` records matching text, content
+streams, links, geometry and all 26 rendered pages before and after the update.
+The `ebw_launch` front matter supplies both the visible launch section and its
+structured company plan. Keep the planned quarter distinct from an exact release
+date and from regulatory conformity.
+
+The paired Palantir/industrial-AI publication retains all 39 approved source
+files in `research-assets/palantir/v1.0/`, outside the published site. Its web
+copies add descriptive and rights metadata. Use
+`node scripts/update-palantir-image-metadata.mjs` for SVG, PNG, cover and card XMP,
+and `python scripts/update-palantir-pdf-metadata.py --write` for incremental PDF
+Info/XMP updates (PyMuPDF and PyYAML required; omit `--write` to audit). The
+provenance records in `scripts/data/palantir-*-metadata-provenance.json` record
+pixel-equivalence checks and published hashes. Original release hashes remain
+in `scripts/data/palantir-release-integrity.json`; do not repin them for metadata
+changes. Social-card and PDF-share generators retain the image metadata.
+
+`image_sitemap: true` includes declared SVG/PNG figures, paper covers, social
+cards and optional `sitemap_images`. Explicit `sitemap_downloads` adds standalone
+PDF figures and research JSON using the publication's source date. The paired
+publication covers both HTML pages, 14 PDFs, 30 images and the graph model.
+Noindex sharing aliases, archived originals, scripts and styles remain excluded.
 
 Every publication created from template version 2 records a structured search
 review in its `search_research` front-matter block. Follow

@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "scope": "Strict JSON Schema, references, dates, history and evidence boundaries; no legal adjudication, live service test or independent human review.",
+  "schema_version": "0.2.0",
+  "counts": {
+    "entities": 268,
+    "substantive_records": 192,
+    "assertions": 364,
+    "active_assertions": 361,
+    "graph_edges": 205,
+    "sources": 188,
+    "source_identities": 171
+  },
+  "entity_types": {
+    "CertificationScheme": 1,
+    "Committee": 6,
+    "Concept": 9,
+    "Implementation": 5,
+    "Initiative": 16,
+    "Jurisdiction": 53,
+    "LegalInstrument": 21,
+    "Ontology": 2,
+    "Organisation": 10,
+    "Pilot": 13,
+    "Policy": 24,
+    "Provision": 8,
+    "Report": 27,
+    "Requirement": 9,
+    "Sector": 14,
+    "Specification": 20,
+    "Standard": 23,
+    "StandardisationProject": 7
+  },
+  "source_access": {
+    "dossier_only": 66,
+    "opened": 94,
+    "search_snippet": 17,
+    "unavailable": 11
+  },
+  "human_reviewed_assertions": 0,
+  "qualified_interoperability_claims": 1,
+  "checks": [
+    "Strict candidate schema including retained website predicates",
+    "Unique IDs and complete source/entity references",
+    "Day/month/year precision and conditional-date integrity",
+    "Observation/retrieval cutoff separate from event time",
+    "Source access and recheck consistency",
+    "History-preserving assertion supersession",
+    "Source observations retain identities and access limits",
+    "Calendar record/source references",
+    "No automatically assigned human review or independent result"
+  ]
+}

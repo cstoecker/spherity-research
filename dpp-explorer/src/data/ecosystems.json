@@ -1,0 +1,206 @@
+{
+  "version": "0.1.0-ui.1",
+  "dataset_version": "0.1.0",
+  "groups": [
+    {
+      "id": "aas-idta",
+      "label": "AAS / IDTA",
+      "kind": "standards",
+      "description": "Asset Administration Shell structure, IDTA and DPP4.0, with a CIRPASS-2 report that examines AAS/RDF approaches. The standard has international scope; IDTA's German base is a separate geographic association.",
+      "entity_ids": ["std-idta", "std-iec-63278-1", "std-dpp4-0", "std-cirpass2-aas-rdf"],
+      "source_ids": ["src-std-idta", "src-std-iec-aas", "src-std-cirpass-results"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "w3c",
+      "label": "W3C — global",
+      "kind": "standards",
+      "description": "W3C Verifiable Credentials, DIDs and the DPP & Business Wallet Task Force. Published Recommendations and provisional vocabulary work retain their distinct release statuses.",
+      "entity_ids": ["std-w3c-vcwg", "std-w3c-dpp-bw-tf", "std-w3c-vc2", "std-w3c-did1", "std-w3c-recognized", "std-w3c-dpp-vocabulary", "std-w3c-bw-vocabulary", "std-w3c-ucr"],
+      "source_ids": ["src-std-w3c-charter", "src-std-w3c-tf", "src-std-w3c-vc2", "src-std-w3c-did1", "src-std-w3c-recognized", "src-std-w3c-dpp-vocabulary", "src-std-w3c-repository", "src-std-w3c-ucr"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "cen-cenelec-jtc24",
+      "label": "CEN-CENELEC / JTC 24",
+      "kind": "standards",
+      "description": "European horizontal DPP standards, the JTC 24 committee and the recorded EU citation decision. Standard publication, Official Journal citation and legal application are separate matters.",
+      "entity_ids": ["std-cen-jtc24", "std-en-18216-2026", "std-en-18219-2026", "std-en-18220-2026", "std-en-18221-2026", "std-en-18222-2026", "std-en-18223-2026", "std-en-18239-2026", "std-en-18246-2026", "std-oj-2026-1736"],
+      "source_ids": ["src-std-cen-overview", "src-std-en-18216", "src-std-en-18219", "src-std-en-18220", "src-std-en-18221", "src-std-en-18222", "src-std-en-18223", "src-std-en-18239", "src-std-en-18246", "src-std-oj-decision", "src-std-oj-register"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "iso-iec-jtc5",
+      "label": "ISO/IEC JTC 5 — global",
+      "kind": "standards",
+      "description": "International DPP committee and the two AWI 25534 work items recorded in release 0.1.0. Work items are not represented as completed standards.",
+      "entity_ids": ["std-iso-jtc5", "std-iso-25534-1", "std-iso-25534-2"],
+      "source_ids": ["src-std-iso-jtc5", "src-std-iso-25534-1", "src-std-iso-25534-2"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "china-sac-swg41",
+      "label": "China / SAC SWG 41",
+      "kind": "standards",
+      "description": "China's DPP working group and General requirements standardisation project. This filter identifies standards activity; it does not convert that activity into a product obligation.",
+      "entity_ids": ["global-cn-dpp-working-group", "global-cn-dpp-general-project"],
+      "source_ids": ["src-global-cn-working-group", "src-global-cn-dpp-project"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "gs1",
+      "label": "GS1",
+      "kind": "standards",
+      "description": "GS1 Digital Link and EPCIS versions recorded in the research seed, covering identifiers and event exchange.",
+      "entity_ids": ["std-gs1-digital-link-1-7", "std-gs1-epcis-2"],
+      "source_ids": ["src-std-gs1-digital-link", "src-std-gs1-epcis"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "itu",
+      "label": "ITU-T",
+      "kind": "standards",
+      "description": "ITU-T Recommendations L.1070 and L.1071, retaining each publication's scope and date.",
+      "entity_ids": ["std-itu-l1070", "std-itu-l1071"],
+      "source_ids": ["src-std-itu-1070", "src-std-itu-1071", "src-std-itu-1071-summary"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "opc-foundation",
+      "label": "OPC Foundation",
+      "kind": "standards",
+      "description": "OPC Foundation and its DPP Information Model specification. The recorded cooperation with Catena-X does not by itself demonstrate cross-system interoperability.",
+      "entity_ids": ["std-opc-foundation", "std-opc-30450-1"],
+      "source_ids": ["src-std-opc-dpp", "src-std-catena-opc"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "semantic-dictionaries",
+      "label": "Semantic dictionaries",
+      "kind": "standards",
+      "description": "IEC CDD, ECLASS, ETIM, buildingSMART bSDD and DPP dictionary-referencing work. This is a comparison group of distinct resources, not a shared governance body or an equivalence claim.",
+      "entity_ids": ["std-iec-cdd", "std-eclass", "std-etim", "std-bsdd", "std-dictionary-referencing"],
+      "source_ids": ["src-std-dictionary"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "unece-uncefact",
+      "label": "UNECE / UN/CEFACT",
+      "kind": "standards",
+      "description": "UNECE Recommendation 49 and the UN/CEFACT P1143 business-requirements work item. These remain distinct from the UNTP implementation specifications.",
+      "entity_ids": ["std-unece-rec49", "std-uncefact-p1143"],
+      "source_ids": ["src-std-unece-rec49", "src-std-unece-rec49-adoption", "src-std-unece-p1143"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "cirpass2",
+      "label": "CIRPASS-2",
+      "kind": "dpp",
+      "description": "CIRPASS-2 programme, architecture, exploratory ontology, AAS/RDF report and test environment. Programme geography does not locate every pilot.",
+      "entity_ids": ["std-cirpass2", "std-cirpass2-architecture", "std-cirpass2-ontology", "std-cirpass2-aas-rdf", "std-cirpass2-test"],
+      "source_ids": ["src-std-cirpass", "src-std-cirpass-dates", "src-std-cirpass-architecture", "src-std-cirpass-ontology", "src-std-cirpass-results", "src-std-cirpass-test"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "gba",
+      "label": "Global Battery Alliance",
+      "kind": "dpp",
+      "description": "GBA battery passport programme, reported 2026 trials and planned certification scheme. This voluntary ecosystem is separate from legal battery-passport duties.",
+      "entity_ids": ["std-gba", "std-gba-trials-2026", "std-gba-certification"],
+      "source_ids": ["src-std-gba-trials"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "untp",
+      "label": "UNTP",
+      "kind": "dpp",
+      "description": "UN Transparency Protocol initiative and versioned passport, conformity, identity and traceability specifications. Pilot and working versions retain the maturity recorded in release 0.1.0.",
+      "entity_ids": ["std-untp", "std-untp-0-7", "std-untp-dpp-family", "std-untp-dpp-0-8", "std-untp-dcc", "std-untp-dia", "std-untp-dte"],
+      "source_ids": ["src-std-untp-about", "src-std-untp-versions", "src-std-untp-suite", "src-std-untp-dpp", "src-std-untp-dia"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "rain",
+      "label": "RAIN RFID",
+      "kind": "dpp",
+      "description": "RAIN's DPP identifier-encoding guidance. The seed contains one guidance record, not a complete inventory of RAIN members, deployments or certifications.",
+      "entity_ids": ["std-rain-dpp-001"],
+      "source_ids": ["src-std-rain"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "battery-pass",
+      "label": "Battery Pass / BatteryPass-Ready",
+      "kind": "dpp",
+      "description": "Battery Pass and BatteryPass-Ready projects, their data models and test environment, and DIN DKE SPEC 99100. Testing infrastructure is distinct from evidence that every implementation passes.",
+      "entity_ids": ["std-battery-pass", "std-batterypass-ready", "std-battery-longlist-2", "std-battery-model-2", "std-battery-test", "std-din-dke-spec-99100"],
+      "source_ids": ["src-std-battery-materials", "src-std-battery-ready", "src-std-battery-model", "src-std-battery-test"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "catena-x",
+      "label": "Catena-X",
+      "kind": "dpp",
+      "description": "Catena-X, its CX-0143 DPP specification and the reported Japan carbon-footprint exchange demonstration. The demonstration is shared with the Ouranos navigation group and remains bounded to its reported operation.",
+      "entity_ids": ["std-catena-x", "std-cx-0143", "global-jp-catena-x-cfp-demo"],
+      "source_ids": ["src-std-catena-standard", "src-std-catena-opc", "src-global-jp-catena-x-demonstration"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "we-build",
+      "label": "WE BUILD",
+      "kind": "dpp",
+      "description": "European business-wallet pilot and its architecture blueprint, including the DPP exchange use case. Pilot and simulated components do not establish legal recognition or general production readiness.",
+      "entity_ids": ["std-webuild", "std-webuild-blueprint"],
+      "source_ids": ["src-std-webuild-ec", "src-std-webuild-blueprint"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "ouranos",
+      "label": "Ouranos / Japan battery platform",
+      "kind": "dpp",
+      "description": "Japan's Ouranos programme, Battery Traceability Platform and reported Catena-X carbon-footprint demonstration. Other Japanese pilots are not automatically members of this group.",
+      "entity_ids": ["global-jp-ouranos", "global-jp-battery-platform", "global-jp-catena-x-cfp-demo"],
+      "source_ids": ["src-global-jp-ouranos", "src-global-jp-catena-x-demonstration"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "dpp4-0",
+      "label": "IDTA DPP4.0",
+      "kind": "dpp",
+      "description": "AAS-based DPP initiative and its supporting association. A separate standards filter exposes the AAS structure and comparative work.",
+      "entity_ids": ["std-dpp4-0", "std-idta"],
+      "source_ids": ["src-std-idta"],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "manufacturing-x",
+      "label": "Manufacturing-X",
+      "kind": "dpp",
+      "description": "German industrial-dataspace programme adjacent to DPP implementation. This is a programme-level record, not a claim that all constituent projects implement a DPP.",
+      "entity_ids": ["std-manufacturing-x"],
+      "source_ids": ["src-std-manufacturing-x"],
+      "membership_basis": "editorial_filter"
+    }
+  ],
+  "geographic_associations": [
+    {
+      "entity_id": "std-idta",
+      "jurisdiction_id": "jur-de",
+      "relationship": "organisation_base",
+      "note": "IDTA's own DPP4.0 page gives its Frankfurt am Main address. This additional association locates the organisation's base; the release's global technical scope is retained and no German legal obligation or exclusive national scope is inferred.",
+      "source_url": "https://industrialdigitaltwin.org/dpp4-0",
+      "source_title": "IDTA DPP4.0 page — organisation address and international AAS scope",
+      "observed_at": "2026-10-23"
+    },
+    {
+      "entity_id": "std-dpp4-0",
+      "jurisdiction_id": "jur-de",
+      "relationship": "ecosystem_activity",
+      "note": "Research navigation association with Germany through the Frankfurt-based IDTA that presents DPP4.0. It is not a deployment-location inventory, domestic mandate or limitation of the initiative's international technical scope.",
+      "source_url": "https://industrialdigitaltwin.org/dpp4-0",
+      "source_title": "IDTA DPP4.0 page — initiative, AAS basis and Frankfurt contact address",
+      "observed_at": "2026-10-23"
+    }
+  ]
+}

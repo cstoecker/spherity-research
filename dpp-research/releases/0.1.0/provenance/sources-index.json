@@ -1,0 +1,1348 @@
+{
+  "title": "DPP research cited-source index",
+  "research_cutoff": "2026-10-23",
+  "note": "Index of links cited in the research dossier. Source authority, retrieval limitations and claim-specific evidence are recorded in the cited evidence files; inclusion does not certify every claim on a source page.",
+  "sources": [
+    {
+      "url": "https://agenciagov.ebc.com.br/noticias/202408/combate-a-pirataria-e-protecao-da-propriedade-intelectual-e-prioridade-no-governo",
+      "labels": [
+        "AgênciaGov, August 2024, “Passaporte digital”"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://app.nbn.be/data/r/platform/frontend/detail?clear=40&p40_id=3523695&p40_language_code=&session=1598555810869",
+      "labels": [
+        "NBN EN 18223"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://app.nbn.be/data/r/platform/frontend/detail?clear=40&p40_id=3523696&p40_language_code=&session=14014194067451",
+      "labels": [
+        "NBN EN 18222"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://assets.pc.gov.au/2025-10/circular-economy.pdf?VersionId=kzNYni.c_7M8UjMSOx3bhMmrRnJ.fWXa",
+      "labels": [
+        "Final report, Recommendation 5.2 and p. 81"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://bgmea.com.bd/page/BGMEA_Hosts_Introductory_Session_on_AWARE_Digital_Product_Passport_Pilot",
+      "labels": [
+        "BGMEA AWARE pilot announcement",
+        "BGMEA"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://catena-x.net/news/catena-x-and-opc-foundation-join-forces-to-enable-seamless-industrial-data-exchange-for-the-digital-product-passport/",
+      "labels": [
+        "Partnership announcement, 19 August 2025"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://catenax-ev.github.io/docs/Io/standards/CX-0143-UseCaseCircularEconomyDigitalProductPassportStandard/introduction",
+      "labels": [
+        "CX-0143 v1.0.1, release CX-Io"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://ced.bracu.ac.bd/project/dpp/",
+      "labels": [
+        "Project's own record"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://cirpass-2.github.io/ontologies-docs/",
+      "labels": [
+        "ontology documentation",
+        "CIRPASS-2 documentation",
+        "documentation itself"
+      ],
+      "cited_in": [
+        "README.md",
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://cirpass2.eu/",
+      "labels": [
+        "CIRPASS-2 project"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://cirpass2.eu/lighthouse-pilots/",
+      "labels": [
+        "pilot catalogue"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://cirpass2.eu/project-results/",
+      "labels": [
+        "Results",
+        "Project results"
+      ],
+      "cited_in": [
+        "README.md",
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://congbao.chinhphu.vn/van-ban-dang-cong-bao/chinh-phu-c1/trang-45.htm",
+      "labels": [
+        "Official Gazette entry confirming issue/effective dates"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/156-vbhn-vpqh.pdf",
+      "labels": [
+        "Government consolidated law, 156/VBHN-VPQH, September 2025"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-establishment-european-business-wallets",
+      "labels": [
+        "Commission proposal publication"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md"
+      ]
+    },
+    {
+      "url": "https://docs.therainalliance.org/dpp/",
+      "labels": [
+        "RAIN Alliance"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://ec.europa.eu/digital-building-blocks/sites/pages/viewpage.action?navigatingVersions=true&pageId=920064578",
+      "labels": [
+        "Commission large-scale pilots overview"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTITYWALLET/pages/915931903/The+legal+and+technical+road+to+EU+Digital+Identity+Wallets",
+      "labels": [
+        "Commission EUDI legal/technical roadmap"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md"
+      ]
+    },
+    {
+      "url": "https://echa.europa.eu/understanding-the-regulation-on-detergents-and-surfactants",
+      "labels": [
+        "ECHA official overview and dates"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md"
+      ]
+    },
+    {
+      "url": "https://ecommerce.sist.si/catalog/standards/sist/e450fa4d-0f54-4a78-8ca1-b91dff1ff498/sist-en-18222-2026",
+      "labels": [
+        "SIST's EN 18222 preview"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://elstandard.se/documents/preview/3302401",
+      "labels": [
+        "SEK European foreword"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1542/ojn",
+      "labels": [
+        "Current consolidated Batteries Regulation",
+        "Article 77"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1183/oj",
+      "labels": [
+        "eIDAS amendment"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md"
+      ]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1781/2024-06-28/eng",
+      "labels": [
+        "EUR-Lex consolidated ESPR, current version shown as 28 June 2024",
+        "ESPR"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX%3A32024R3110",
+      "labels": [
+        "Construction Products Regulation, Articles 22 and 75–80",
+        "Articles 22, 75–80 and 95"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1252-20240503",
+      "labels": [
+        "CRMA consolidated text",
+        "CRMA Article 28"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX%3A32025R0040",
+      "labels": [
+        "PPWR official text, Article 12",
+        "PPWR Article 12"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R0405",
+      "labels": [
+        "Detergents and Surfactants Regulation",
+        "Regulation"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R1738",
+      "labels": [
+        "Vehicle circularity regulation, Article 13 and scope",
+        "Article 13"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32025R2509",
+      "labels": [
+        "Toy Safety Regulation, official text"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md"
+      ]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026D1736",
+      "labels": [
+        "Decision 2026/1736",
+        "Commission Implementing Decision (EU) 2026/1736"
+      ],
+      "cited_in": [
+        "README.md",
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026R1778",
+      "labels": [
+        "Official Journal implementing regulation"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md"
+      ]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AL_202490330",
+      "labels": [
+        "Official CRMA corrigendum"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md"
+      ]
+    },
+    {
+      "url": "https://github.com/uncefact/spec-untp",
+      "labels": [
+        "GitHub repository"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://hub.unido.org/news/global-south-ready-eus-digital-product-passport-first-insights-textile-sector",
+      "labels": [
+        "UNIDO study announcement"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://industrialdigitaltwin.org/dpp4-0",
+      "labels": [
+        "IDTA"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://ised-isde.canada.ca/site/innovative-solutions-canada/en/supply-chain-verifiable-digital-credentials",
+      "labels": [
+        "ISED challenge, problem statement and essential outcomes 6, 10–11",
+        "ISED"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB615",
+      "labels": [
+        "official bill record"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://legiscan.com/CA/text/SB615/id/3458179",
+      "labels": [
+        "Text mirror"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://morth.gov.in/sites/default/files/Battery%20Pack%20Aadhaar%20Guideline_30122025_0.pdf",
+      "labels": [
+        "MoRTH draft, sections 7 and 16",
+        "MoRTH"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://mst.gov.vn/nghi-dinh-37-ung-dung-cong-nghe-so-trong-quan-ly-chat-luong-va-truy-xuat-nguon-goc-197260812204117614.htm",
+      "labels": [
+        "MOST explanation, section “Triển khai hộ chiếu số của sản phẩm”",
+        "MOST"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1910752",
+      "labels": [
+        "Parliament official summary confirming adoption and publication"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md"
+      ]
+    },
+    {
+      "url": "https://oeil.europarl.europa.eu/oeil/fr/procedure-file?reference=2025%2F0358%28COD%29",
+      "labels": [
+        "Parliament current procedural events; French version includes October events",
+        "Parliament procedure"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=01%2F07%2F2025&jornal=515&pagina=51",
+      "labels": [
+        "Official Gazette issue, p.51 establishing plan"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://ref.gs1.org/standards/digital-link/uri-syntax/",
+      "labels": [
+        "GS1 specification"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://ref.gs1.org/standards/epcis/",
+      "labels": [
+        "GS1 specification"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://reference.opcfoundation.org/specs/OPC-30450-1",
+      "labels": [
+        "OPC Foundation catalogue"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://single-market-economy.ec.europa.eu/news/digital-product-passport-registry-now-live-2026-07-20_en",
+      "labels": [
+        "Commission: The Digital Product Passport Registry is now live, 20 July 2026",
+        "Commission launch announcement"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://single-market-economy.ec.europa.eu/news/guidance-support-preparations-digital-batteries-passport-2026-08-21_en",
+      "labels": [
+        "Commission guidance announcement, 21 August 2026"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md"
+      ]
+    },
+    {
+      "url": "https://single-market-economy.ec.europa.eu/news/stronger-toy-safety-rules-enter-force-2025-12-23_en",
+      "labels": [
+        "Commission confirmation, 23 December 2025",
+        "Commission confirmation"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport_en",
+      "labels": [
+        "Commission DPP timeline, explicitly labelled indicative and subject to publication",
+        "DPP timeline"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md",
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/explore-our-faqs_en",
+      "labels": [
+        "Commission FAQ, questions on applicability and exemptions"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md"
+      ]
+    },
+    {
+      "url": "https://single-market-economy.ec.europa.eu/single-market/goods/european-standards/harmonised-standards/digital-product-passport-dpp_en",
+      "labels": [
+        "Commission harmonised-standards register"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://standards.cencenelec.eu/ords/f?cs=14DC1F74D7E9F9DD3EA30959F19526334&p=205:110:::::FSP_PROJECT:79954",
+      "labels": [
+        "EN 18219"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://standards.cencenelec.eu/ords/f?cs=150B8E8F03843B9CC9F4CAD8E01C34DE6&p=205:110:::::FSP_PROJECT:80715",
+      "labels": [
+        "EN 18221"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://standards.cencenelec.eu/ords/f?cs=1606A2E7E589E0185CCA83A6D82E1C78E&p=205:110:::::FSP_PROJECT:80427",
+      "labels": [
+        "EN 18216"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://standards.cencenelec.eu/ords/f?cs=1C627F97280D3E45FBBBED053BCCA88A9&p=205:110:::::FSP_PROJECT:81495",
+      "labels": [
+        "CEN EN 18246",
+        "EN 18246"
+      ],
+      "cited_in": [
+        "README.md",
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://standards.cencenelec.eu/ords/f?cs=1C97AB3E731BCF82E3BD2A04D9D8DC8CD&p=205:110:::::FSP_PROJECT:81494",
+      "labels": [
+        "CEN EN 18239",
+        "EN 18239"
+      ],
+      "cited_in": [
+        "README.md",
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://standards.cencenelec.eu/ords/f?cs=1EEB1FD069281C804EC0A5EEDB8295A77&p=205:110:::::FSP_PROJECT:80081",
+      "labels": [
+        "EN 18220"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=1CB92886179AEDB9E06397BE0A0A064B",
+      "labels": [
+        "Official project register, basic information and technical scope",
+        "SAMR project"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://tcvn.gov.vn/5-diem-moi-dinh-hinh-quan-ly-chat-luong-hang-hoa-thoi-ky-so/27/03/2026/",
+      "labels": [
+        "National standards authority explanation, 27 March 2026"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://thebatterypass.eu/battery-pass/materials/",
+      "labels": [
+        "Battery Pass materials"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://thebatterypass.eu/news/batterypass-ready-test-environment-update-new-features-for-improved-battery-passport-preparation/",
+      "labels": [
+        "22 October 2026 update"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://thebatterypass.eu/news/now-published-data-attribute-longlist-v2-0-and-data-model-v2-0/",
+      "labels": [
+        "Longlist and Data Model v2.0"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://thebatterypass.eu/press-release/the-digital-battery-passport-gathers-momentum-batterypass-ready-develops-testing-environment/",
+      "labels": [
+        "Project launch"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://ticaret.gov.tr/dis-iliskiler/yesil-mutabakat/duyurular/dijital-urun-pasaportu-digital-product-passport-dpp-kayit-sisteminin-kullanima-acilmasina-iliskin-aciklama",
+      "labels": [
+        "Registry notice",
+        "Ministry announcement"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://ticaret.gov.tr/urun-guvenligi/ab-teknik-mevzuat-uyumu/dijital-urun-pasaportu",
+      "labels": [
+        "Ministry DPP overview"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://unece.org/sites/default/files/2025-10/Newsletter_Jan-Sep2025.pdf",
+      "labels": [
+        "UNECE 2025 newsletter"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://unece.org/trade/documents/2026/04/recommendation-ndeg-49-transparency-scale-fostering-sustainable-value",
+      "labels": [
+        "publication page"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://unece.org/trade/uncefact",
+      "labels": [
+        "UN/CEFACT official homepage"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://untp.unece.org/docs/about/",
+      "labels": [
+        "UNTP context",
+        "About UNTP"
+      ],
+      "cited_in": [
+        "README.md",
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://untp.unece.org/docs/about/References/",
+      "labels": [
+        "UNTP related standards"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://untp.unece.org/docs/implementations/",
+      "labels": [
+        "UNTP registers"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://untp.unece.org/docs/specification/",
+      "labels": [
+        "Technical specifications"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://untp.unece.org/docs/specification/Architecture/",
+      "labels": [
+        "UNTP architecture"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://untp.unece.org/docs/specification/DigitalIdentityAnchor/",
+      "labels": [
+        "Digital Identity Anchor"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://untp.unece.org/docs/specification/product-passport/",
+      "labels": [
+        "DPP specification"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://untp.unece.org/versions/",
+      "labels": [
+        "Versions",
+        "versions page"
+      ],
+      "cited_in": [
+        "README.md",
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://w3c.github.io/vc-dpp-bw/",
+      "labels": [
+        "task-force artifacts",
+        "Task-force repository"
+      ],
+      "cited_in": [
+        "README.md",
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://w3c.github.io/vc-dpp-bw/dpp-ucr/index.html",
+      "labels": [
+        "DPPs Secured by Verifiable Credentials"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://w3c.github.io/vc-dpp-bw/dpp/index.html",
+      "labels": [
+        "Vocabulary for digital product passport"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://w3c.github.io/vc-dpp-bw/ucr/",
+      "labels": [
+        "Vocabulary use cases and requirements"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://w3c.github.io/vc-wg/minutes/2026-10-07-dpp.html",
+      "labels": [
+        "7 October 2026 DPP meeting minutes"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://webuild-consortium.github.io/wp4-architecture/blueprint/blueprint.html",
+      "labels": [
+        "WE BUILD blueprint",
+        "WE BUILD architecture blueprint"
+      ],
+      "cited_in": [
+        "README.md",
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.bgmea.com.bd/index.php/page/DigiProd_Pass_signs_MoU_with_BGMEA%3A_Preparing_Bangladesh%E2%80%99s_Garment_Supply_Chain_for_EU_Market_Compliance",
+      "labels": [
+        "BGMEA source"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Dossier/manufacturing-x.html",
+      "labels": [
+        "German BMWE programme"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.busan.go.kr/nbtnewsBU/1692400?curPage=207&srchBeginDt=&srchEndDt=&srchKey=&srchText=",
+      "labels": [
+        "Busan government press release, subtitle and attachments",
+        "Busan"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://www.canada.ca/en/natural-resources-canada/news/2025/10/roadmap-to-promote-standards-based-markets-for-critical-minerals.html",
+      "labels": [
+        "Natural Resources Canada official statement, commitment 1",
+        "G7 roadmap"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-07-15-dpp/",
+      "labels": [
+        "CEN-CENELEC explanation, 15 July 2026"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/09/european-business-wallets-council-adopts-negotiating-position/",
+      "labels": [
+        "Council negotiating position"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.detran.pr.gov.br/Noticia/Passaporte-digital-motoristas-do-Parana-agora-podem-ter-registro-inovador-de-veiculos",
+      "labels": [
+        "Paraná transport department, 12 February 2026",
+        "Paraná"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://www.dke.de/de/arbeitsfelder/industry/iec-common-data-dictionary-technik-semantik-mehrwert",
+      "labels": [
+        "DKE, 17 August 2026"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.env.go.jp/recycle/circul/achievement.html",
+      "labels": [
+        "MOE programme results, relevant annual project lists"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.erca.go.jp/sip/english/overview/a101-2024.html",
+      "labels": [
+        "ERCA project record, R&D overview",
+        "PLA-NETJ"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://www.evs.ee/en/iec-63278-1-2023",
+      "labels": [
+        "EVS national standards catalogue"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.fda.gov/food/food-safety-modernization-act-fsma/fsma-final-rule-requirements-additional-traceability-records-certain-foods",
+      "labels": [
+        "FDA rule overview, compliance-date section"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.gov.br/mdic/pt-br/assuntos/infraestrutura-da-qualidade/conhecendo%20a%20eniq/documentos-base/resolucao-conmetro-02-2025-1.pdf",
+      "labels": [
+        "MDIC official plan PDF, indexed annex row",
+        "Official plan"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://www.gov.ca.gov/2026/09/20/governor-gavin-newsom-signs-legislation-to-accelerate-californias-ev-future-expand-consumer-choice-and-strengthen-energy-independence/",
+      "labels": [
+        "Governor's official release"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/government/calls-for-evidence/call-for-evidence-digital-product-record-policy/call-for-evidence-digital-product-records-policy",
+      "labels": [
+        "UK official DPR call for evidence",
+        "UK consultation"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://www.imda.gov.sg/-/media/imda/files/about/research-and-statictics/enterprise-digital-transformation/imda-digital-technologies-for-sustainability-playbook.pdf",
+      "labels": [
+        "IMDA playbook, “Meet requirements to access new markets”",
+        "IMDA"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://www.industry.gov.au/publications/australian-government-response-food-thought-report",
+      "labels": [
+        "Department of Industry response, digital-technology discussion"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.innovasjonnorge.no/en/artikkel/er-produktene-dine-omfattet-av-nye-eu-regelverk",
+      "labels": [
+        "Innovation Norway official EU-product-regulation overview"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.iso.org/cms/live/live/en/sites/isoorg/contents/data/committee/11/76/11760382/x/catalogue/",
+      "labels": [
+        "ISO catalogue",
+        "Committee catalogue"
+      ],
+      "cited_in": [
+        "README.md",
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.iso.org/fr/standard/95289.html?browse=tc",
+      "labels": [
+        "ISO catalogue"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.iso.org/standard/90652.html",
+      "labels": [
+        "ISO catalogue"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.itu.int/dms_pubrec/itu-t/rec/l/T-REC-L.1070-202311-I!!SUM-HTM-E.htm",
+      "labels": [
+        "summary"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.itu.int/dms_pubrec/itu-t/rec/l/T-REC-L.1071-202411-I!!SUM-HTM-E.htm",
+      "labels": [
+        "summary"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.itu.int/rec/T-REC-L.1070-202311-I/en",
+      "labels": [
+        "Catalogue"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.itu.int/rec/T-REC-L.1071-202411-I/en",
+      "labels": [
+        "Catalogue"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.izm.fraunhofer.de/en/institut/projects/cirpass-2.html",
+      "labels": [
+        "Fraunhofer IZM"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.kbob.admin.ch/dam/de/sd-web/XtU2aKG2mRws/20250701_Grundlagenpapier%20DPP_V1.01_DES.pdf",
+      "labels": [
+        "KBOB paper, imprint",
+        "KBOB paper"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148939669",
+      "labels": [
+        "MOLIT policy announcement, paragraphs on identification, replacements and 2027 system",
+        "MOLIT"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148961279&pWise=main&pWiseMain=R5",
+      "labels": [
+        "Official notice"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/uncefact_uncefact-unece-digitalproductpassport-activity-7493212202959564801-ES5q",
+      "labels": [
+        "official UN/CEFACT announcement"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.meti.go.jp/policy/mono_info_service/digital_architecture/ouranos.html",
+      "labels": [
+        "METI Ouranos programme, guidelines, OSS and past-news sections"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.mfat.govt.nz/en/trade/mfat-market-reports/eu-circular-economy-ecodesign-digital-product-passports-and-green-public-procurement",
+      "labels": [
+        "MFAT report, opportunities/costs/risks and disclaimer"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.miit.gov.cn/gyhxxhb/jgsj/cyzcyfgs/bmgz/jdcjxl/art/2026/art_392462fdc40c415ea4a4129cac3028c2.html",
+      "labels": [
+        "Primary law, Articles 4, 9–12, 24–26, 32 and 50",
+        "MIIT law"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://www.miit.gov.cn/xwfb/xwfbh/bxwfbh/art/2026/art_c5c9031e409e468eb4004d82fd394241.html",
+      "labels": [
+        "MIIT press conference, questions on traceability and digital ID"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.morth.gov.in/sites/default/files/Battery%20Pack%20Aadhaar%20Guideline_30122025.pdf",
+      "labels": [
+        "alternate official copy, section 16 p.25"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.nedo.go.jp/news/press/AA5_101831.html",
+      "labels": [
+        "NEDO announcement, demonstration table and notes 5–7",
+        "NEDO demonstration"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://www.nen.nl/en/nen-en-18223-2026-en-352704",
+      "labels": [
+        "NEN's EN 18223 page"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.nist.gov/programs-projects/ev-battery-passport",
+      "labels": [
+        "NIST project record, description, dates and status",
+        "NIST"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://www.nve.no/energi/virkemidler/oekodesign-og-energimerking-av-produkter/oekodesignforordning-for-baerekraftige-produkter-espr/",
+      "labels": [
+        "NVE official ESPR status page, section “Status for ESPR i Norge”",
+        "Norway NVE status"
+      ],
+      "cited_in": [
+        "eu-legal-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://www.oecd.org/en/publications/better-borders-for-trade-traceability-and-enforcement_b5dea5f5-en/full-report/digital-readiness-may-enable-efficient-traceability-at-scale_eaf0933a.html",
+      "labels": [
+        "OECD on digital readiness and cross-border traceability",
+        "OECD, Digital readiness may enable efficient traceability at scale"
+      ],
+      "cited_in": [
+        "README.md",
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.oneplanetnetwork.org/news-and-events/news/african-countries-shape-future-digital-product-information-systems",
+      "labels": [
+        "One Planet Network, 24 June 2026"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.pc.gov.au/inquiries-and-research/circular-economy/report/",
+      "labels": [
+        "Official report landing page",
+        "Australian Productivity Commission"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://www.renoon.com/blog/global-digital-product-passport-frameworks-requirements-beyond-the-european-union",
+      "labels": [
+        "Renoon article of 20 October 2026"
+      ],
+      "cited_in": [
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://www.s2.globalbattery.org/2026-battery-passport-pilots/",
+      "labels": [
+        "2026 operational-trials results"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.samr.gov.cn/xw/sj/art/2026/art_8d62ff552dfc410b9fa0f594598f8e1d.html",
+      "labels": [
+        "SAMR announcement"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.teriin.org/project/battery-lifecycle-aadhaar-enabling-digitalisation-circular-economy-and-responsible-battery",
+      "labels": [
+        "TERI project description"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.ungm.org/Public/Notice/294163",
+      "labels": [
+        "UN Global Marketplace notice 294163",
+        "Tender"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md",
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://www.unido.org/sites/default/files/unido-publications/2025-12/DPP-Report-V_1.6-lr.pdf",
+      "labels": [
+        "full report, December 2025"
+      ],
+      "cited_in": [
+        "global-jurisdictions-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.w3.org/2026/03/vc-wg-charter.html",
+      "labels": [
+        "WG charter",
+        "2026 VCWG charter"
+      ],
+      "cited_in": [
+        "README.md",
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.w3.org/groups/tf/vc-dbw/",
+      "labels": [
+        "W3C task-force page"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/",
+      "labels": [
+        "VC Data Model 2.0"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.w3.org/TR/2026/WD-vc-recognized-entities-1.0-20260906/",
+      "labels": [
+        "Recognized Entities 1.0"
+      ],
+      "cited_in": [
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.w3.org/TR/vc-data-model-2.0/",
+      "labels": [
+        "VC Data Model 2.0"
+      ],
+      "cited_in": [
+        "README.md",
+        "untp-w3c-evidence.md"
+      ]
+    },
+    {
+      "url": "https://zenodo.org/records/20720002",
+      "labels": [
+        "Zenodo record"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    },
+    {
+      "url": "https://zenodo.org/records/20749604",
+      "labels": [
+        "Zenodo"
+      ],
+      "cited_in": [
+        "standards-ecosystem-evidence.md"
+      ]
+    }
+  ]
+}

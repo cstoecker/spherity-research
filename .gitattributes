@@ -1,0 +1,14 @@
+# Preserve the exact bytes covered by the research archive manifests.
+dpp-research/releases/** -text
+dpp-research/candidates/** -text
+research-assets/palantir/v1.0/** -text whitespace=cr-at-eol
+research-assets/palantir/v1.0/**/*.pdf binary
+docs/assets/europes-answer-to-palantir/v1.0/figures/** -text whitespace=cr-at-eol
+docs/assets/europes-answer-to-palantir/v1.0/figures/*.pdf binary
+docs/assets/europes-answer-to-palantir/graph-v0.1/graph-model.json -text whitespace=cr-at-eol
+docs/Industrial_AI_Academic_Paper_v1.0.pdf -text
+docs/European_Industrial_AI_Executive_Brief_v1.0.pdf -text
+docs/assets/eu-dpp-registry-dpp5/** -text whitespace=cr-at-eol
+docs/assets/eu-dpp-registry-dpp5/*.pdf binary
+docs/Spherity_Research_EU_DPP_Registry_W3C_Standards_DPP5.0.pdf -text
+research-assets/dpp5/approved/** -text

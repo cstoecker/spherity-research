@@ -1,0 +1,31 @@
+import fs from 'node:fs/promises';
+import vm from 'node:vm';
+import sharp from 'sharp';
+import {embedImageXmp, embedSvgMetadata} from './lib/image-metadata.mjs';
+import {loadDppImageMetadata} from './lib/dpp-image-metadata.mjs';
+const read=async p=>JSON.parse(await fs.readFile(p,'utf8'));
+const base='dpp-explorer/src/';
+const world=await read(base+'vendor/world.geojson');
+const map=await read('docs/dpp-explorer/data/current-world-map.json');
+const phase=await read('docs/dpp-explorer/data/current-regulatory-phases.json').catch(()=>read(base+'data/regulatory-phases.json'));
+const context={};vm.runInNewContext(await fs.readFile(base+'vendor/d3.min.js','utf8'),context);const d3=context.d3;
+const palette={applying:'#276595',adopted:'#218577',proposal:'#d39a35',early:'#9380b6'};
+const profiles=new Map(phase.profiles.map(p=>[p.jurisdiction_id,p]));
+const countries=new Map(map.jurisdictions.filter(j=>j.geography.kind==='country').map(j=>[j.geography.iso_alpha3,j]));
+const projection=d3.geoNaturalEarth1().fitExtent([[12,12],[1188,556]],{type:'Sphere'});const geoPath=d3.geoPath(projection);
+let paths='';
+for(const f of world.features){const p=f.properties;const code=[p.ISO_A3_EH,p.ISO_A3,p.ADM0_A3].find(v=>v&&v!=='-99');const j=countries.get(code);let profile=j?profiles.get(j.jurisdiction_id):null;
+ if(!profile&&j?.records.some(r=>r.scope_basis==='eu_membership_display_join'))profile=profiles.get('jur-eu');
+ // GB and NI have distinct phases. Do not assign their phase to the UK polygon.
+ if(code==='GBR')profile=null;
+ const fill=profile?palette[profile.phase]:'#e5e9ee';
+ paths+=`<path d="${geoPath(f)}" fill="${fill}" stroke="#ffffff" stroke-width=".9"/>`;
+ if(profile?.scope_kind==='territorial')paths+=`<path d="${geoPath(f)}" fill="url(#scope-stripe)"/>`;
+}
+const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="610" viewBox="0 0 1200 610"><title>Selected DPP regulatory phases, 25 October 2026</title><desc>Country colours represent specific sourced measures, not national readiness. Stripes indicate territorial scope. Grey means unassessed; the UK needs separate GB and Northern Ireland details.</desc><defs><pattern id="scope-stripe" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="2" height="7" fill="#fff" opacity=".55"/></pattern></defs><rect width="1200" height="610" fill="#ffffff"/><path d="${geoPath({type:'Sphere'})}" fill="#f6f8fa" stroke="#dce4e9"/>${paths}<g font-family="Arial,sans-serif" font-size="18" fill="#365064"><rect x="28" y="579" width="15" height="15" rx="3" fill="${palette.applying}"/><text x="53" y="593">Applying</text><rect x="200" y="579" width="15" height="15" rx="3" fill="${palette.adopted}"/><text x="225" y="593">Adopted framework</text><rect x="450" y="579" width="15" height="15" rx="3" fill="${palette.proposal}"/><text x="475" y="593">Proposal</text><rect x="615" y="579" width="15" height="15" rx="3" fill="${palette.early}"/><text x="640" y="593">Early activity</text><text x="1172" y="593" text-anchor="end" font-size="16">Selected evidence · 25 Oct 2026</text></g></svg>`;
+const metadata = await loadDppImageMetadata();
+const svgPath = '/assets/dpp-global/whitepaper-v1/regulatory-social-map.svg';
+const pngPath = '/assets/dpp-global/whitepaper-v1/regulatory-social-map.png';
+await fs.writeFile(`docs${svgPath}`,embedSvgMetadata(svg,metadata[svgPath]));
+await fs.writeFile(`docs${pngPath}`,embedImageXmp(await sharp(Buffer.from(svg)).png().toBuffer(),metadata[pngPath]));
+console.log('Generated source-qualified social map from Atlas geometry and phase data.');

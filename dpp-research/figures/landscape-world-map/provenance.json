@@ -1,0 +1,206 @@
+{
+  "dataset_version": "0.1.0",
+  "evidence_cutoff": "2026-10-23",
+  "figure_dimensions_pt": [
+    770,
+    480
+  ],
+  "proof_dimensions_pt": [
+    841.8897637795277,
+    595.2755905511812
+  ],
+  "minimum_font_size_pt": 9,
+  "country_rows": 44,
+  "coverage_counts": {
+    "eu_instrument_scope_only": 26,
+    "selected_direct_records": 17,
+    "no_record_extracted": 1
+  },
+  "unique_substantive_entities": 128,
+  "entities_total": 203,
+  "assertions_total": 224,
+  "sources_total": 112,
+  "geometry_features": 177,
+  "country_rows_without_geometry": [
+    "Malta",
+    "Singapore"
+  ],
+  "projection": "Equal Earth (main map); Mercator (European detail inset)",
+  "scope_panel_entity_ids": [
+    "std-w3c-dpp-bw-tf",
+    "std-iso-jtc5",
+    "std-untp-0-7",
+    "std-gba",
+    "std-rain-dpp-001",
+    "std-cen-jtc24",
+    "std-cirpass2"
+  ],
+  "source_records": {
+    "src-std-w3c-tf": {
+      "access_status": "opened",
+      "dossier_files": [
+        "untp-w3c-evidence.md"
+      ],
+      "id": "src-std-w3c-tf",
+      "language": "en",
+      "limitations": [],
+      "publisher": "W3C",
+      "retrieved_at": "2026-10-23",
+      "source_type": "standards_body",
+      "title": "VC DPP & Business Wallet task force",
+      "url": "https://www.w3.org/groups/tf/vc-dbw/"
+    },
+    "src-std-iso-jtc5": {
+      "access_status": "dossier_only",
+      "dossier_files": [
+        "standards-ecosystem-evidence.md"
+      ],
+      "id": "src-std-iso-jtc5",
+      "language": "en",
+      "limitations": [],
+      "publisher": "ISO",
+      "retrieved_at": null,
+      "source_type": "standards_body",
+      "title": "ISO/IEC JTC 5 catalogue",
+      "url": "https://www.iso.org/cms/live/live/en/sites/isoorg/contents/data/committee/11/76/11760382/x/catalogue/"
+    },
+    "src-std-untp-versions": {
+      "access_status": "opened",
+      "dossier_files": [
+        "untp-w3c-evidence.md"
+      ],
+      "id": "src-std-untp-versions",
+      "language": "en",
+      "limitations": [
+        "Live version listing; no production 1.0 release shown at observation."
+      ],
+      "publisher": "UNECE / UN/CEFACT",
+      "retrieved_at": "2026-10-23",
+      "source_type": "public_authority",
+      "title": "UNTP documentation versions",
+      "url": "https://untp.unece.org/versions/"
+    },
+    "src-std-gba-trials": {
+      "access_status": "unavailable",
+      "dossier_files": [
+        "standards-ecosystem-evidence.md"
+      ],
+      "id": "src-std-gba-trials",
+      "language": "en",
+      "limitations": [
+        "Reopening returned 502 on 2026-10-23; trial claims inherited from dossier and not independently reproduced."
+      ],
+      "publisher": "Global Battery Alliance",
+      "retrieved_at": null,
+      "source_type": "industry_primary",
+      "title": "GBA 2026 battery passport trials",
+      "url": "https://www.s2.globalbattery.org/2026-battery-passport-pilots/"
+    },
+    "src-std-rain": {
+      "access_status": "opened",
+      "dossier_files": [
+        "standards-ecosystem-evidence.md"
+      ],
+      "id": "src-std-rain",
+      "language": "en",
+      "limitations": [
+        "Guidance, explicitly not a normative specification."
+      ],
+      "publisher": "RAIN Alliance",
+      "retrieved_at": "2026-10-23",
+      "source_type": "industry_primary",
+      "title": "RAIN DPP identifier encoding guidance",
+      "url": "https://docs.therainalliance.org/dpp/"
+    },
+    "src-std-cen-overview": {
+      "access_status": "opened",
+      "dossier_files": [
+        "standards-ecosystem-evidence.md"
+      ],
+      "id": "src-std-cen-overview",
+      "language": "en",
+      "limitations": [
+        "Overview is not the full normative standard text."
+      ],
+      "publisher": "CEN-CENELEC",
+      "retrieved_at": "2026-10-23",
+      "source_type": "standards_body",
+      "title": "DPP horizontal standards overview",
+      "url": "https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-07-15-dpp/"
+    },
+    "src-std-cirpass": {
+      "access_status": "dossier_only",
+      "dossier_files": [
+        "standards-ecosystem-evidence.md"
+      ],
+      "id": "src-std-cirpass",
+      "language": "en",
+      "limitations": [],
+      "publisher": "CIRPASS-2",
+      "retrieved_at": null,
+      "source_type": "project_primary",
+      "title": "CIRPASS-2 project",
+      "url": "https://cirpass2.eu/"
+    },
+    "src-std-cirpass-dates": {
+      "access_status": "dossier_only",
+      "dossier_files": [
+        "standards-ecosystem-evidence.md"
+      ],
+      "id": "src-std-cirpass-dates",
+      "language": "en",
+      "limitations": [],
+      "publisher": "Fraunhofer IZM",
+      "retrieved_at": null,
+      "source_type": "project_primary",
+      "title": "CIRPASS-2 project dates",
+      "url": "https://www.izm.fraunhofer.de/en/institut/projects/cirpass-2.html"
+    }
+  },
+  "inputs": {
+    "dpp-research/releases/0.1.0/dataset.json": "2c6e9d377bf265bc7edf288ee95cd5cd75955dbed4298cf5fa7f7c649b3134f1",
+    "dpp-research/releases/0.1.0/views/world-map.json": "5ae5c63174dd3b5980f4b55524c9b317e2560f71f20b7a089a3aad280cf82ebe",
+    "dpp-explorer/src/vendor/world.geojson": "6866c877d39cba9c357620878839b336d569f8c662d3cfab4cb1dbe2d39c977f",
+    "dpp-explorer/src/vendor/d3.min.js": "f2094bbf6141b359722c4fe454eb6c4b0f0e42cc10cc7af921fc158fceb86539"
+  },
+  "pdf_checks": {
+    "dpp-world-map.pdf": {
+      "pages": 1,
+      "page_size_pt": [
+        770.0,
+        480.0
+      ],
+      "embedded_fonts": [
+        "/AAAAAA+BitstreamVeraSans-Bold",
+        "/AAAAAA+BitstreamVeraSans-Roman"
+      ],
+      "image_xobjects": [],
+      "text_extract_chars": 1012,
+      "sha256": "1279b672442f00150a8250d4e91c4afa0fbe511ccb5890910794182b2536a6a6"
+    },
+    "dpp-world-map-a4-proof.pdf": {
+      "pages": 1,
+      "page_size_pt": [
+        841.8898,
+        595.2756
+      ],
+      "embedded_fonts": [
+        "/AAAAAA+BitstreamVeraSans-Bold",
+        "/AAAAAA+BitstreamVeraSans-Roman"
+      ],
+      "image_xobjects": [],
+      "text_extract_chars": 1494,
+      "sha256": "dcc3185c43bc5fb8e09735b6ba4a801ee0ff67669711e4ddf72e1029d5baeabe"
+    }
+  },
+  "limitations": [
+    "Selected research seed, not exhaustive global inventory; all substantive claims await qualified human review.",
+    "Direct coverage can describe laws, policy, pilots, standards or ecosystems; it does not mean a DPP mandate exists.",
+    "EU scope joins are cartographic display joins and do not evidence national implementation.",
+    "The UK country row has no extracted record; Great Britain and Northern Ireland have separate scoped records.",
+    "Germany has five direct records plus the same 27 EU-scope joins; direct coverage takes precedence in the map colour.",
+    "Small states and subnational or territory scopes are not exhaustively visible at this scale.",
+    "Natural Earth uses de facto boundaries; cartographic geometry is not a statement of legal jurisdiction.",
+    "Displayed scope-panel examples are illustrative, not an exhaustive list or proof of interoperability."
+  ]
+}

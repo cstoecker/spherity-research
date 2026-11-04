@@ -1,0 +1,2726 @@
+{
+  "id": "candidate-technical-2026-10-25",
+  "checked_at": "2026-10-25",
+  "description": "Versioned technical evidence reconciled with the current Atlas. International AAS evidence distinguishes adoption, projects, public support, dissemination and prototypes. No human review or production conformance is claimed.",
+  "review_status": "machine_assisted_unreviewed",
+  "entities": [
+    {
+      "id": "std-untp-dia-0-7-0",
+      "label": "UNTP Digital Identity Anchor 0.7.0",
+      "type": "Specification",
+      "description": "Pilot profile binding a controlled digital identifier to authoritative registration.",
+      "version": "0.7.0",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "pilot_specification",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-tech-20261025-untp-dia-070"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Do not attribute working-version Recognized Entities alignment to this edition."
+      ]
+    },
+    {
+      "id": "std-untp-access-control-0-7-0",
+      "label": "UNTP access control 0.7.0",
+      "type": "Specification",
+      "description": "Confidentiality patterns for public/protected evidence, including authentication and encrypted credentials.",
+      "version": "0.7.0",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "pilot_specification",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-tech-20261025-untp-access-070"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "No ODRL mandate established by the inspected text."
+      ]
+    },
+    {
+      "id": "std-untp-digital-wallets",
+      "label": "UNTP digital wallet guidance",
+      "type": "Report",
+      "description": "Optional wallet patterns alongside resolver-based discovery.",
+      "version": "Work in Progress",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "working_guidance",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-tech-20261025-untp-wallets"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "UNTP is wallet-agnostic; wallets are not a protocol prerequisite."
+      ]
+    },
+    {
+      "id": "std-untp-identity-resolver",
+      "label": "UNTP Identity Resolver",
+      "type": "Specification",
+      "description": "Working link-discovery specification for evidence associated with identifiers.",
+      "version": "Work in Progress",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "work_in_progress",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-tech-20261025-untp-resolver"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Discovery does not prove the credential or confer access rights."
+      ]
+    },
+    {
+      "id": "std-grid",
+      "label": "Global Registry Information Directory (GRID)",
+      "type": "Initiative",
+      "description": "Proposed directory of participating authoritative registrars and registers.",
+      "version": "Stage 5",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "deliverable_acceptance_check",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-tech-20261025-grid-supporting"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Not a central registry of all products or proof of worldwide deployment."
+      ]
+    },
+    {
+      "id": "std-grid-supporting-document",
+      "label": "GRID and DIA supporting explanation",
+      "type": "Report",
+      "description": "Non-normative explanation of directory and registrar-issued credential roles.",
+      "version": "Stage 5",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "project_supporting_document",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-tech-20261025-grid-supporting"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Explicitly outside formal project deliverables."
+      ]
+    },
+    {
+      "id": "std-w3c-odrl-model-2-2",
+      "label": "W3C ODRL Information Model 2.2",
+      "type": "Standard",
+      "description": "Model expressing permissions, prohibitions, duties and constraints.",
+      "version": "2.2",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "recommendation",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2018-02-15",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-odrl-model"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-odrl-model"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Policy expression alone is not enforcement."
+      ]
+    },
+    {
+      "id": "std-w3c-odrl-vocabulary-2-2",
+      "label": "W3C ODRL Vocabulary 2.2",
+      "type": "Standard",
+      "description": "Common policy terms for actions, parties and constraints.",
+      "version": "2.2",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "recommendation",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2018-02-15",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-odrl-vocabulary"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-odrl-vocabulary"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The former write action is deprecated; domain operations may require a declared profile."
+      ]
+    },
+    {
+      "id": "std-dsp-2025-1-err2",
+      "label": "Dataspace Protocol 2025-1 err2",
+      "type": "Specification",
+      "description": "Protocols for catalogues, agreement negotiation and transfer coordination.",
+      "version": "2025-1-err2",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "stable_specification",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": null,
+          "precision": "unknown",
+          "condition": "Conflicting 10/11 September 2026 headings; rendered pinned date unresolved.",
+          "source_ids": [
+            "src-tech-20261025-dsp-2025-1-err2"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-dsp-2025-1-err2"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Authorization-token semantics and actual data transport are outside scope.",
+        "Publication day unresolved; no deployment or conformance test.",
+        "Scoped summary uses inherited handover evidence and indexed primary text; direct rendered full-text retrieval was not completed in this import."
+      ]
+    },
+    {
+      "id": "std-dcp-1-0-1",
+      "label": "Decentralized Claims Protocol 1.0.1",
+      "type": "Specification",
+      "description": "Protocols for participant identity and credential issuance/presentation in data spaces.",
+      "version": "Pinned URL 1.0.1; heading v1.0",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "stable_specification",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": null,
+          "precision": "unknown",
+          "condition": "Conflicting 12/13 November 2025 dates; rendered pinned date unresolved.",
+          "source_ids": [
+            "src-tech-20261025-dcp-101"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-dcp-101"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Credential exchange does not itself confer legal recognition.",
+        "No exclusive VC 2.0 or binary conformance claim.",
+        "Scoped summary uses inherited handover evidence and indexed primary text; direct rendered full-text retrieval was not completed in this import."
+      ]
+    },
+    {
+      "id": "std-edc-connector-0-18-1",
+      "label": "Eclipse Dataspace Connector 0.18.1",
+      "type": "Implementation",
+      "description": "Concrete software release for reproducible implementation follow-up.",
+      "version": "0.18.1",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "released_software",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2026-09-25",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-edc-release-0181"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-edc-release-0181"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Software and interoperability were not executed/tested."
+      ]
+    },
+    {
+      "id": "std-edc-policy-engine-docs",
+      "label": "EDC policy-engine documentation",
+      "type": "Report",
+      "description": "Documentation of policy models, evaluation functions and execution scopes.",
+      "version": "Observed 2026-10-25",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "rolling_documentation",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-tech-20261025-edc-policy"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Rules unbound to a scope may be ignored; universal fail-closed enforcement is not established.",
+        "Rolling docs are not a conformance test of the pinned binary."
+      ]
+    },
+    {
+      "id": "std-dssc-blueprint-3-0",
+      "label": "DSSC Blueprint 3.0",
+      "type": "Report",
+      "description": "Reference building blocks for semantic models, discovery and data-space governance.",
+      "version": "3.0",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "published_reference_architecture",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-tech-20261025-dssc-blueprint-30"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Not an implementation mandate or deployment test."
+      ]
+    },
+    {
+      "id": "std-w3c-rdf11",
+      "label": "W3C RDF 1.1 Concepts",
+      "type": "Standard",
+      "description": "Graph data model with identified resources and statements.",
+      "version": "1.1",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "recommendation",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2014-02-25",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-rdf11"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-rdf11"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Representation, application validation and access policy are distinct."
+      ]
+    },
+    {
+      "id": "std-w3c-dcat3",
+      "label": "W3C DCAT 3",
+      "type": "Standard",
+      "description": "Vocabulary describing datasets and services in catalogues.",
+      "version": "3",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "recommendation",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2024-08-22",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-dcat3"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-dcat3"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Discovery metadata does not establish access permission or correctness."
+      ]
+    },
+    {
+      "id": "std-cn-aas-20243452-t-604",
+      "label": "China AAS national-standard project",
+      "type": "StandardisationProject",
+      "description": "Recommended-standard project targeting identical IEC 63278-1:2023 adoption.",
+      "version": "20243452-T-604",
+      "jurisdiction_ids": [
+        "jur-cn"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "under_approval",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "project_established",
+          "date": "2024-12-03",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-aas-china"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-aas-china"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Not yet a published standard at observation. A 16-month submission cycle is not a final-publication deadline.",
+        "No national deployment or AI architecture choice inferred."
+      ]
+    },
+    {
+      "id": "std-kr-ks-x-iec-63278-1",
+      "label": "Korea KS X IEC 63278-1",
+      "type": "Standard",
+      "description": "Published Korean identical adoption of IEC 63278-1:2023.",
+      "version": "2025",
+      "jurisdiction_ids": [
+        "jur-kr"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "published_national_standard",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2025-07-31",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-aas-korea"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-aas-korea"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "National-standard adoption does not establish mandatory use or production penetration."
+      ]
+    },
+    {
+      "id": "global-kr-aas-reference-model-programme-2026",
+      "label": "Korea AAS reference-model programme",
+      "type": "Initiative",
+      "description": "Public support for AAS-based manufacturing-data models, guidance and demonstrations.",
+      "version": "2026 call No. 2026-247",
+      "jurisdiction_ids": [
+        "jur-kr"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "public_programme_call",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "applications_open",
+          "date": "2026-04-06",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-aas-korea-programme"
+          ]
+        },
+        {
+          "kind": "applications_close",
+          "date": "2026-04-24",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-aas-korea-programme"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-aas-korea-programme"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Reference models are templates, not factory counts.",
+        "Programme model counts were not reverified from the primary TIPA article; no numerical scale claim is imported.",
+        "Manufacturing programme, not a general DPP law."
+      ]
+    },
+    {
+      "id": "global-jp-aas-iec-participation-2024",
+      "label": "Japan participation in IEC AAS development",
+      "type": "Report",
+      "description": "JEMIMA participant account of Japanese contributions to IEC 63278-1.",
+      "version": "JEMIMA Vol. 61 No. 3",
+      "jurisdiction_ids": [
+        "jur-jp"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "participant_report",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2024-07",
+          "precision": "month",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-aas-japan-committee"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-aas-japan-committee"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Participation, not JIS adoption or representative production uptake."
+      ]
+    },
+    {
+      "id": "global-jp-aas-roadmap-dissemination-2025",
+      "label": "Japan AAS roadmap dissemination",
+      "type": "Initiative",
+      "description": "RRI dissemination of a Japanese translation of a German Industrie 4.0 standards roadmap.",
+      "version": "2025 translation",
+      "jurisdiction_ids": [
+        "jur-jp"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "industry_dissemination",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "member_release",
+          "date": "2025-07",
+          "precision": "month",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-aas-japan-rri"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-aas-japan-rri"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "No Japanese government adoption of the German roadmap inferred."
+      ]
+    },
+    {
+      "id": "global-us-de-aas-dpp-prototypes-2024",
+      "label": "US–German AAS DPP prototypes",
+      "type": "Pilot",
+      "description": "Two reported prototypes connecting industrial data approaches for DPPs.",
+      "version": "April 2024",
+      "jurisdiction_ids": [
+        "jur-us",
+        "jur-de"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "reported_prototypes",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2024-04",
+          "precision": "month",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-aas-us-german-prototypes"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-aas-us-german-prototypes"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Not broad production use or federal architecture selection.",
+        "Catena-X contribution is specific to the battery example."
+      ]
+    },
+    {
+      "id": "std-cirpass2-aas-rdf-v1-3",
+      "label": "AAS/RDF Interoperability Approaches — v1.3",
+      "type": "Report",
+      "description": "Inspected cross-project report on structural conversion, semantic lifting and AAS/RDF coexistence.",
+      "version": "Revision history v1.3",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "published_report",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "revision",
+          "date": "2026-05-24",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-aas-rdf-v13"
+          ]
+        },
+        {
+          "kind": "repository_created",
+          "date": "2026-05-26",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-aas-rdf-v13"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-aas-rdf-v13"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Summary box retains v1.0; family record retains earlier publisher-summary provenance.",
+        "Not an EU ontology mandate or proof of universal lossless mapping."
+      ]
+    },
+    {
+      "id": "report-grimm-aas-rdf-2026",
+      "label": "Improved RDF representation of AAS — accepted manuscript",
+      "type": "Report",
+      "description": "Handover-reported workshop manuscript on AAS RDF representation.",
+      "version": "SemIIM/ISWC 2026 accepted manuscript",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "accepted_manuscript",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "workshop_scheduled",
+          "date": "2026-10-26",
+          "precision": "day",
+          "condition": "Future at the observation; not already presented.",
+          "source_ids": [
+            "src-tech-20261025-grimm-aas-rdf"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-grimm-aas-rdf"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Original manuscript not re-inspected here; prior full-text access attributed to handover.",
+        "No AI-accuracy, global-adoption or independent reproduction claim."
+      ]
+    },
+    {
+      "id": "std-cirpass2-risk-mitigations-v1-1",
+      "label": "CIRPASS-2 risks and mitigations — v1.1",
+      "type": "Report",
+      "description": "Draft D4.1 companion cataloguing 52 actions/risks across five lifecycle stages.",
+      "version": "1.1",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "published_draft_report",
+        "as_of": "2026-10-25",
+        "scope_note": "Documentary status and scope are bounded by this edition; not evidence of universal deployment."
+      },
+      "dates": [
+        {
+          "kind": "submitted_and_published",
+          "date": "2026-06-05",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-cirpass-risk-v11"
+          ]
+        },
+        {
+          "kind": "repository_created",
+          "date": "2026-06-12",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-tech-20261025-cirpass-risk-v11"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-cirpass-risk-v11"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Catalogue entries, not incident prevalence, severity or measured mitigation effectiveness.",
+        "Mitigations are proposals; some risks remain unhandled."
+      ]
+    },
+    {
+      "id": "report-proposed-wallet-policy-evidence-architecture",
+      "label": "Proposed wallet and policy evidence architecture",
+      "type": "Report",
+      "description": "The paper proposes credential checks, policy decisions and enforcement before permitted evidence operations.",
+      "version": "Paper v1.0",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "proposed_architecture",
+        "as_of": "2026-10-25",
+        "scope_note": "Author-proposed design, separate from documentary standard relationships."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-paper-global-dpp-whitepaper-v1-20261025"
+      ],
+      "evidence_status": "research_defined",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Author proposal, not a UNTP requirement, normative standard, tested system or recognition agreement.",
+        "Appending an authority inspection result differs from rewriting a manufacturer declaration."
+      ]
+    },
+    {
+      "id": "std-cn-tc124-swg2",
+      "label": "China SAC/TC124/SWG2 — industrial AAS",
+      "type": "Committee",
+      "description": "Participant-reported working group for industrial AAS standardisation and international-standard conversion.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-cn"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "participant_reported_active",
+        "as_of": "2026-10-25",
+        "scope_note": "Formation and remit reported by a participant; distinct from the separate DPP working group SAC/SWG 41."
+      },
+      "dates": [
+        {
+          "kind": "formation_meeting_reported",
+          "date": "2025-03",
+          "precision": "month",
+          "condition": "Participant reports meeting on 20–21 March 2025; no single establishment day inferred.",
+          "source_ids": [
+            "src-tech-20261025-china-aas-working-group"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-tech-20261025-china-aas-working-group"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Participant report, not national production-adoption evidence."
+      ]
+    }
+  ],
+  "assertions": [
+    {
+      "id": "a-tech-20261025-dia070-part",
+      "subject": "std-untp-dia-0-7-0",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "std-untp-0-7"
+      },
+      "statement": "This component/guidance belongs to the identified UNTP edition or initiative.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-untp-dia-070"
+      ],
+      "locator": "Version banner and specification/guidance navigation",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Does not upgrade component maturity."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-access070-part",
+      "subject": "std-untp-access-control-0-7-0",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "std-untp-0-7"
+      },
+      "statement": "This component/guidance belongs to the identified UNTP edition or initiative.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-untp-access-070"
+      ],
+      "locator": "Version banner and specification/guidance navigation",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Does not upgrade component maturity."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-wallet-part",
+      "subject": "std-untp-digital-wallets",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "std-untp"
+      },
+      "statement": "This component/guidance belongs to the identified UNTP edition or initiative.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-untp-wallets"
+      ],
+      "locator": "Version banner and specification/guidance navigation",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Does not upgrade component maturity."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-resolver-part",
+      "subject": "std-untp-identity-resolver",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "std-untp"
+      },
+      "statement": "This component/guidance belongs to the identified UNTP edition or initiative.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-untp-resolver"
+      ],
+      "locator": "Version banner and specification/guidance navigation",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Does not upgrade component maturity."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-dia070-vc2",
+      "subject": "std-untp-dia-0-7-0",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-vc2"
+      },
+      "statement": "The 0.7.0 DIA specification requires Verifiable Credentials 2.0.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-untp-dia-070"
+      ],
+      "locator": "Technical model: all DIAs are W3C Verifiable Credentials v2.0",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Requirement, not observed production conformance."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-dia070-did",
+      "subject": "std-untp-dia-0-7-0",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-w3c-did1"
+      },
+      "statement": "DIA 0.7.0 requires proof of control of the linked decentralised identifier.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-untp-dia-070"
+      ],
+      "locator": "DIA-01 and conceptual model",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Do not transfer this requirement to every working-version URI-only registration."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-dia-working-recognized",
+      "subject": "std-untp-dia",
+      "predicate": "aligned_with_claim",
+      "object": {
+        "entity_id": "std-w3c-recognized"
+      },
+      "statement": "The working DIA page describes itself as a profile of W3C Recognized Entities.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-untp-dia-working",
+        "src-tech-20261025-recognized-20260906"
+      ],
+      "locator": "Relationship to W3C Recognized Entities; W3C draft status",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Attributed alignment; vocabulary definitions borrowed pending namespace finalisation.",
+        "Not a conformance test, Recommendation, or claim about DIA 0.7."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-wallet-dia",
+      "subject": "std-untp-digital-wallets",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-untp-dia"
+      },
+      "statement": "Wallet guidance describes DIA presentation for organisational identity and accreditation.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-untp-wallets"
+      ],
+      "locator": "When wallets are relevant",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Wallet guidance remains optional and work in progress."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-wallet-resolver",
+      "subject": "std-untp-digital-wallets",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-untp-identity-resolver"
+      },
+      "statement": "Wallet guidance identifies resolver-based pull discovery as the primary exchange pattern.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-untp-wallets"
+      ],
+      "locator": "Overview",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Wallets are not required."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-access-identity",
+      "subject": "std-untp-access-control-0-7-0",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-w3c-did1"
+      },
+      "statement": "Protected-access patterns can authenticate a requester through DID-based mechanisms.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-untp-access-070"
+      ],
+      "locator": "Conceptual model; authentication patterns",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "DID authentication is an example; not every read requires it."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-grid-doc-part",
+      "subject": "std-grid-supporting-document",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "std-grid"
+      },
+      "statement": "This explanation supports the GRID project.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-grid-supporting"
+      ],
+      "locator": "Project Supporting Document notice",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-grid-dia",
+      "subject": "std-grid-supporting-document",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-untp-dia"
+      },
+      "statement": "The explanation recommends registrar-issued DIAs.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-grid-supporting"
+      ],
+      "locator": "Sections 1, 4 and 5.2",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The text describes review of DIA 0.6; no implementation of the current working edition is established."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-grid-untp",
+      "subject": "std-grid",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-untp"
+      },
+      "statement": "GRID documentation positions registrar discovery alongside UNTP.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-grid-supporting"
+      ],
+      "locator": "Introduction and footnote 4",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "No global operational deployment claimed."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-odrl-vocab-model",
+      "subject": "std-w3c-odrl-vocabulary-2-2",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-w3c-odrl-model-2-2"
+      },
+      "statement": "The vocabulary supplies terms for the ODRL model.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-odrl-vocabulary"
+      ],
+      "locator": "Abstract and common vocabulary",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Expression remains distinct from enforcement."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-dsp-odrl",
+      "subject": "std-dsp-2025-1-err2",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-w3c-odrl-model-2-2"
+      },
+      "statement": "DSP uses an ODRL profile in policy-bearing catalogue and negotiation messages.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-dsp-2025-1-err2"
+      ],
+      "locator": "Introduction; Catalog and Contract Negotiation protocols",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Profiled use does not imply support for every feature of the referenced standard."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-dsp-dcat",
+      "subject": "std-dsp-2025-1-err2",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-w3c-dcat3"
+      },
+      "statement": "DSP reuses a DCAT profile for catalogue metadata.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-dsp-2025-1-err2"
+      ],
+      "locator": "Introduction; Catalog Protocol; vocab-dcat-3 reference",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Profiled use does not imply support for every feature of the referenced standard."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-dsp-jsonld",
+      "subject": "std-dsp-2025-1-err2",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-w3c-jsonld11"
+      },
+      "statement": "DSP uses JSON-LD 1.1 contexts alongside normative JSON schemas.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-dsp-2025-1-err2"
+      ],
+      "locator": "Section 4.2 Schemas and Contexts",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Profiled use does not imply support for every feature of the referenced standard."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-dcp-dsp",
+      "subject": "std-dcp-1-0-1",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-dsp-2025-1-err2"
+      },
+      "statement": "DCP credential exchange complements DSP data-space interactions.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-dcp-101"
+      ],
+      "locator": "Abstract; handover technical connection",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Protocol-family connection, not evidence this DCP edition implements DSP 2025-1 err2."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-edc-doc-release",
+      "subject": "std-edc-policy-engine-docs",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-edc-connector-0-18-1"
+      },
+      "statement": "The software release is identified separately from the rolling policy documentation.",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-edc-policy",
+        "src-tech-20261025-edc-release-0181"
+      ],
+      "locator": "Policy-engine documentation; v0.18.1 release tag",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Research linkage for follow-up; docs do not establish every binary behaviour."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-edc-policy-odrl",
+      "subject": "std-edc-policy-engine-docs",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-w3c-odrl-model-2-2"
+      },
+      "statement": "EDC documentation describes an ODRL-derived policy model and evaluation functions.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-edc-policy"
+      ],
+      "locator": "Policy Model; Evaluation; Scopes",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "No universal ODRL conformance; unbound rules may be ignored."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-dssc-dsp",
+      "subject": "std-dssc-blueprint-3-0",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-dsp-2025-1-err2"
+      },
+      "statement": "The Blueprint discusses DSP as a data-space interaction mechanism.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-dssc-blueprint-30"
+      ],
+      "locator": "Data exchange and publication/discovery building blocks",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Family-level reference, not exact err2 implementation evidence."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-dssc-dcp",
+      "subject": "std-dssc-blueprint-3-0",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-dcp-1-0-1"
+      },
+      "statement": "The Blueprint links the pinned DCP specification for credential exchange.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-dssc-blueprint-30"
+      ],
+      "locator": "Identity and Attestation Management: OpenID for VC and DCP; Useful links",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Reference guidance, not an implementation test."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-china-aas-target",
+      "subject": "std-cn-aas-20243452-t-604",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-iec-63278-1"
+      },
+      "statement": "The Chinese project targets identical adoption of IEC 63278-1:2023.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-aas-china"
+      ],
+      "locator": "Project status; adoption section",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Under approval; not completed publication."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-korea-aas-idt",
+      "subject": "std-kr-ks-x-iec-63278-1",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-iec-63278-1"
+      },
+      "statement": "The catalogue identifies identical Korean adoption of IEC 63278-1:2023.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-aas-korea"
+      ],
+      "locator": "Publication and correspondence fields",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Not mandatory use or measured deployment."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-korea-programme-aas",
+      "subject": "global-kr-aas-reference-model-programme-2026",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-iec-63278-1"
+      },
+      "statement": "The programme seeks AAS-based manufacturing-data models and guidance.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-aas-korea-programme"
+      ],
+      "locator": "Eligibility and support scope",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Summary names the AAS family; edge supplies standard context, not an exact-edition conformance requirement."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-japan-aas-participation",
+      "subject": "global-jp-aas-iec-participation-2024",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-iec-63278-1"
+      },
+      "statement": "JEMIMA describes Japanese contributions to IEC 63278-1 development.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-aas-japan-committee"
+      ],
+      "locator": "July 2024 entry and introduction",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Participant account, not adoption measurement."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-japan-rri-aas",
+      "subject": "global-jp-aas-roadmap-dissemination-2025",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-iec-63278-1"
+      },
+      "statement": "RRI disseminates a roadmap covering AAS in industrial digitalisation.",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-aas-japan-rri"
+      ],
+      "locator": "Release description",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "AAS-family connection, not exact-edition or Japanese government adoption."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-us-german-aas",
+      "subject": "global-us-de-aas-dpp-prototypes-2024",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-iec-63278-1"
+      },
+      "statement": "The demonstrator uses AAS alongside CESMII Smart Manufacturing Profiles.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-aas-us-german-prototypes"
+      ],
+      "locator": "Printed pp. 2–3 and 6–7",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "AAS-family prototype evidence; exact IEC conformance not tested."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-us-german-catena",
+      "subject": "global-us-de-aas-dpp-prototypes-2024",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-catena-x"
+      },
+      "statement": "The battery demonstrator includes a Catena-X contribution.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-aas-us-german-prototypes"
+      ],
+      "locator": "Printed pp. 6–7",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Limited to the battery example, not both prototypes or a national architecture."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-aas-v13-family",
+      "subject": "std-cirpass2-aas-rdf-v1-3",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "std-cirpass2-aas-rdf"
+      },
+      "statement": "The inspected archive is an edition of the existing report family.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-aas-rdf-v13"
+      ],
+      "locator": "PDF p. 3 revision history; repository 20396377",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Original family publisher-summary access claim retained."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-aas-v13-iec",
+      "subject": "std-cirpass2-aas-rdf-v1-3",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-iec-63278-1"
+      },
+      "statement": "The report discusses AAS/RDF interoperability and coexistence.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-aas-rdf-v13"
+      ],
+      "locator": "Sections 3–7",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "AAS-family discussion, not IEC conformance testing."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-aas-v13-rdf",
+      "subject": "std-cirpass2-aas-rdf-v1-3",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-w3c-rdf11"
+      },
+      "statement": "The report distinguishes structural RDF representation from semantic lifting.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-aas-rdf-v13"
+      ],
+      "locator": "Sections 6.1 and 7",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "No universal lossless semantic-mapping result claimed."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-aas-v13-owl",
+      "subject": "std-cirpass2-aas-rdf-v1-3",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-w3c-owl2"
+      },
+      "statement": "The report describes an OWL-based AAS metamodel representation.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-aas-rdf-v13"
+      ],
+      "locator": "Section 6.1",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "No particular OWL profile inferred."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-aas-v13-shacl",
+      "subject": "std-cirpass2-aas-rdf-v1-3",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-w3c-shacl"
+      },
+      "statement": "The report describes SHACL checks of metamodel constraints.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-aas-rdf-v13"
+      ],
+      "locator": "Section 6.1",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "SHACL does not imply every shape or the whole AAS ecosystem is closed-world."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-grimm-aas",
+      "subject": "report-grimm-aas-rdf-2026",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-iec-63278-1"
+      },
+      "statement": "The handover identifies this manuscript as research on AAS RDF representation.",
+      "assertion_type": "source_statement",
+      "evidence_type": "analysis",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-grimm-aas-rdf"
+      ],
+      "locator": "Handover section 5.3; source v05-grimm-aas-rdf-2026",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Inherited classification only; original not re-inspected."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-risk-cirpass",
+      "subject": "std-cirpass2-risk-mitigations-v1-1",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "std-cirpass2"
+      },
+      "statement": "This is a CIRPASS-2 research output.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-cirpass-risk-v11"
+      ],
+      "locator": "PDF cover and authors; repository publisher",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-risk-architecture",
+      "subject": "std-cirpass2-risk-mitigations-v1-1",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-cirpass2-architecture"
+      },
+      "statement": "The report accompanies the D4.1 architecture.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-cirpass-risk-v11"
+      ],
+      "locator": "Title; sections 1 and 3",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Recommendations are not legal requirements."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-risk-total",
+      "subject": "std-cirpass2-risk-mitigations-v1-1",
+      "predicate": "reports_result",
+      "object": {
+        "value": 52,
+        "datatype": "number"
+      },
+      "statement": "The catalogue contains 52 numbered actions/risks.",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-cirpass-risk-v11"
+      ],
+      "locator": "Section 2.3, printed pp. 10–13: 1A–52A",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Catalogue count, not incidents or severity."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-risk-creation",
+      "subject": "std-cirpass2-risk-mitigations-v1-1",
+      "predicate": "reports_result",
+      "object": {
+        "value": "creation: 9 entries (1A–9A)",
+        "datatype": "string"
+      },
+      "statement": "Creation contains 9 numbered entries.",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-cirpass-risk-v11"
+      ],
+      "locator": "Section 2.3 lifecycle headings; 1A–9A",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Source categories/counts, not frequency or effectiveness."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-risk-storage",
+      "subject": "std-cirpass2-risk-mitigations-v1-1",
+      "predicate": "reports_result",
+      "object": {
+        "value": "storage: 11 entries (10A–20A)",
+        "datatype": "string"
+      },
+      "statement": "Storage contains 11 numbered entries.",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-cirpass-risk-v11"
+      ],
+      "locator": "Section 2.3 lifecycle headings; 10A–20A",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Source categories/counts, not frequency or effectiveness."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-risk-retrieval",
+      "subject": "std-cirpass2-risk-mitigations-v1-1",
+      "predicate": "reports_result",
+      "object": {
+        "value": "retrieval: 14 entries (21A–34A)",
+        "datatype": "string"
+      },
+      "statement": "Retrieval contains 14 numbered entries.",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-cirpass-risk-v11"
+      ],
+      "locator": "Section 2.3 lifecycle headings; 21A–34A",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Source categories/counts, not frequency or effectiveness."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-risk-updating",
+      "subject": "std-cirpass2-risk-mitigations-v1-1",
+      "predicate": "reports_result",
+      "object": {
+        "value": "updating: 11 entries (35A–45A)",
+        "datatype": "string"
+      },
+      "statement": "Updating contains 11 numbered entries.",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-cirpass-risk-v11"
+      ],
+      "locator": "Section 2.3 lifecycle headings; 35A–45A",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Source categories/counts, not frequency or effectiveness."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-risk-deletion",
+      "subject": "std-cirpass2-risk-mitigations-v1-1",
+      "predicate": "reports_result",
+      "object": {
+        "value": "deletion: 7 entries (46A–52A)",
+        "datatype": "string"
+      },
+      "statement": "Deletion contains 7 numbered entries.",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-cirpass-risk-v11"
+      ],
+      "locator": "Section 2.3 lifecycle headings; 46A–52A",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Source categories/counts, not frequency or effectiveness."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-odrl-policy-role",
+      "subject": "std-w3c-odrl-model-2-2",
+      "predicate": "has_status",
+      "object": {
+        "value": "policy_expression_not_enforcement",
+        "datatype": "string"
+      },
+      "statement": "ODRL expresses policy; enforcement requires an implementation/profile.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-odrl-model"
+      ],
+      "locator": "Information Model: policies, rules and profiles",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "No closed-world, paid-licence or runtime-enforcement badge follows merely from ODRL use."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-aas-rdf-semantics",
+      "subject": "std-cirpass2-aas-rdf-v1-3",
+      "predicate": "reports_result",
+      "object": {
+        "value": "representation_validation_and_licence_are_independent",
+        "datatype": "string"
+      },
+      "statement": "The report separates RDF representation/semantic lifting from metamodel validation.",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-aas-rdf-v13"
+      ],
+      "locator": "Sections 6.1 and 7",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "No blanket semantic or licence classification inherited by AAS users.",
+        "Document/content reuse licensing is a separate assessment; it has not been inferred from RDF representation."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-edc-evaluation-scope",
+      "subject": "std-edc-policy-engine-docs",
+      "predicate": "reports_result",
+      "object": {
+        "value": "configured_scope_sensitive_policy_evaluation",
+        "datatype": "string"
+      },
+      "statement": "EDC evaluation depends on bound functions and execution scopes.",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-edc-policy"
+      ],
+      "locator": "Scopes and Policy Evaluation",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Unbound rules may be filtered out; no general fail-closed guarantee."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-proposal-wallet",
+      "subject": "report-proposed-wallet-policy-evidence-architecture",
+      "predicate": "uses_as_input",
+      "object": {
+        "entity_id": "std-untp-digital-wallets"
+      },
+      "statement": "The paper proposes actor-wallet presentation in a broader evidence-access design.",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-paper-global-dpp-whitepaper-v1-20261025"
+      ],
+      "locator": "Paper v1.0, PDF pp. 28–31 and Figure 4",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Author-proposed combination; not normative, operational integration, tested conformance or legal-recognition agreement."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-proposal-recognition",
+      "subject": "report-proposed-wallet-policy-evidence-architecture",
+      "predicate": "uses_as_input",
+      "object": {
+        "entity_id": "std-w3c-recognized"
+      },
+      "statement": "The proposed design considers recognition credentials as identity/authority inputs.",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-paper-global-dpp-whitepaper-v1-20261025"
+      ],
+      "locator": "Paper v1.0, PDF pp. 28–31 and Figure 4",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Author-proposed combination; not normative, operational integration, tested conformance or legal-recognition agreement."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-proposal-dia",
+      "subject": "report-proposed-wallet-policy-evidence-architecture",
+      "predicate": "uses_as_input",
+      "object": {
+        "entity_id": "std-untp-dia"
+      },
+      "statement": "The proposed design considers DIA registration evidence.",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-paper-global-dpp-whitepaper-v1-20261025"
+      ],
+      "locator": "Paper v1.0, PDF pp. 28–31 and Figure 4",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Author-proposed combination; not normative, operational integration, tested conformance or legal-recognition agreement."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-proposal-policy",
+      "subject": "report-proposed-wallet-policy-evidence-architecture",
+      "predicate": "uses_as_input",
+      "object": {
+        "entity_id": "std-w3c-odrl-model-2-2"
+      },
+      "statement": "The design uses an agreed ODRL profile for policy decisions before evidence operations.",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-paper-global-dpp-whitepaper-v1-20261025"
+      ],
+      "locator": "Paper v1.0, PDF pp. 28–31 and Figure 4",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Author-proposed combination; not normative, operational integration, tested conformance or legal-recognition agreement."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-proposal-implementation",
+      "subject": "report-proposed-wallet-policy-evidence-architecture",
+      "predicate": "uses_as_input",
+      "object": {
+        "entity_id": "std-edc-policy-engine-docs"
+      },
+      "statement": "EDC mechanisms serve as an implementation reference for evaluation/enforcement design.",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-paper-global-dpp-whitepaper-v1-20261025"
+      ],
+      "locator": "Paper v1.0, PDF pp. 28–31 and Figure 4",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Author-proposed combination; not normative, operational integration, tested conformance or legal-recognition agreement."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-proposal-authority-limit",
+      "subject": "report-proposed-wallet-policy-evidence-architecture",
+      "predicate": "reports_result",
+      "object": {
+        "value": "append_own_inspection_not_rewrite_manufacturer",
+        "datatype": "string"
+      },
+      "statement": "The design distinguishes an authority appending an inspection result from changing manufacturer declarations.",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-paper-global-dpp-whitepaper-v1-20261025"
+      ],
+      "locator": "Paper v1.0, PDF pp. 30–31 and Figure 4",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Authority, legal basis and permitted operation need separate establishment; domain actions require declared terms."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-china-aas-project-group",
+      "subject": "std-cn-aas-20243452-t-604",
+      "predicate": "developed_by",
+      "object": {
+        "entity_id": "std-cn-tc124-swg2"
+      },
+      "statement": "The participant account describes this working group and the first drafting meeting for project 20243452-T-604.",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-china-aas-working-group"
+      ],
+      "locator": "Participant report dated 21 March 2025, opening paragraph and working-group remit",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Attributed participant account; standard publication and deployment are separate questions."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-tech-20261025-china-aas-group-iec",
+      "subject": "std-cn-tc124-swg2",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-iec-63278-1"
+      },
+      "statement": "The participant describes an international AAS standards-conversion remit including the structure standard.",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-tech-20261025-china-aas-working-group"
+      ],
+      "locator": "Participant report dated 21 March 2025, opening paragraph and working-group remit",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Attributed participant account; standard publication and deployment are separate questions."
+      ],
+      "interoperability": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-tech-20261025-untp-dia-070",
+      "title": "UNTP Digital Identity Anchor 0.7.0",
+      "url": "https://untp.unece.org/docs/0.7.0/specification/DigitalIdentityAnchor/",
+      "publisher": "UN/CEFACT",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Pilot specification; no production conformance tested."
+      ],
+      "artifact_version": "0.7.0"
+    },
+    {
+      "id": "src-tech-20261025-untp-dia-working",
+      "title": "UNTP Digital Identity Anchor — working v0.8 schema",
+      "url": "https://untp.unece.org/docs/specification/DigitalIdentityAnchor/",
+      "publisher": "UN/CEFACT",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Rolling page; must not be backdated to maintained 0.7.0."
+      ],
+      "artifact_version": "Work in Progress; v0.8.0 schema",
+      "source_identity_id": "src-std-untp-dia"
+    },
+    {
+      "id": "src-tech-20261025-untp-access-070",
+      "title": "UNTP Decentralised Access Control 0.7.0",
+      "url": "https://untp.unece.org/docs/0.7.0/specification/DecentralisedAccessControl/",
+      "publisher": "UN/CEFACT",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [],
+      "artifact_version": "0.7.0"
+    },
+    {
+      "id": "src-tech-20261025-untp-wallets",
+      "title": "UNTP Digital wallets guidance",
+      "url": "https://untp.unece.org/docs/design-patterns/DigitalWallets/",
+      "publisher": "UN/CEFACT",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [],
+      "artifact_version": "Work in Progress"
+    },
+    {
+      "id": "src-tech-20261025-untp-resolver",
+      "title": "UNTP Identity Resolver",
+      "url": "https://untp.unece.org/docs/specification/IdentityResolver/",
+      "publisher": "UN/CEFACT",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Link discovery is not credential verification."
+      ],
+      "artifact_version": "Work in Progress"
+    },
+    {
+      "id": "src-tech-20261025-grid-supporting",
+      "title": "About the GRID and DIAs — project supporting document",
+      "url": "https://grid.unece.org/docs/draft/About/",
+      "publisher": "UN/CEFACT",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Supporting explanation explicitly outside formal project deliverables; proposed operation is not proven global deployment."
+      ],
+      "artifact_version": "Stage 5 — Deliverable Acceptance Check"
+    },
+    {
+      "id": "src-tech-20261025-odrl-model",
+      "title": "ODRL Information Model 2.2",
+      "url": "https://www.w3.org/TR/2018/REC-odrl-model-20180215/",
+      "publisher": "World Wide Web Consortium",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [],
+      "artifact_version": "Recommendation 2018-02-15"
+    },
+    {
+      "id": "src-tech-20261025-odrl-vocabulary",
+      "title": "ODRL Vocabulary and Expression 2.2",
+      "url": "https://www.w3.org/TR/2018/REC-odrl-vocab-20180215/",
+      "publisher": "World Wide Web Consortium",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [],
+      "artifact_version": "Recommendation 2018-02-15"
+    },
+    {
+      "id": "src-tech-20261025-dsp-2025-1-err2",
+      "title": "Dataspace Protocol 2025-1 err2",
+      "url": "https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1-err2/",
+      "publisher": "Eclipse Foundation",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "search_snippet",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Direct opening returned an unrendered ReSpec shell; primary indexed text and handover support the scoped summary.",
+        "Date conflict: handover 11 September 2026; primary indexed rolling heading 10 September 2026. The index points to this release. Rendered pinned date/configuration unresolved; no timezone cause asserted."
+      ],
+      "artifact_version": "2025-1-err2"
+    },
+    {
+      "id": "src-tech-20261025-dcp-101",
+      "title": "Eclipse Decentralized Claims Protocol, pinned v1.0.1",
+      "url": "https://eclipse-dataspace-dcp.github.io/decentralized-claims-protocol/v1.0.1/",
+      "publisher": "Eclipse Foundation",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "search_snippet",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Direct opening returned an unrendered ReSpec shell; primary indexed abstract/status inspected.",
+        "Date conflict: handover 13 November 2025; indexed primary body 12 November 2025. Rendered date/configuration unresolved.",
+        "Exact credential profiles not re-inspected; no exclusive VC 2.0 dependency inferred."
+      ],
+      "artifact_version": "URL v1.0.1; heading v1.0"
+    },
+    {
+      "id": "src-tech-20261025-edc-policy",
+      "title": "EDC Policy Engine documentation",
+      "url": "https://eclipse-edc.github.io/documentation/for-adopters/control-plane/policy-engine/",
+      "publisher": "Eclipse Dataspace Components contributors",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Documentation inspection is not a test of Connector v0.18.1."
+      ],
+      "artifact_version": "Rolling documentation, 2026-10-25"
+    },
+    {
+      "id": "src-tech-20261025-edc-release-0181",
+      "title": "Eclipse Dataspace Connector v0.18.1",
+      "url": "https://github.com/eclipse-edc/Connector/releases/tag/v0.18.1",
+      "publisher": "Eclipse Dataspace Components contributors",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Release inspected; no binary or interoperability suite executed."
+      ],
+      "artifact_version": "v0.18.1"
+    },
+    {
+      "id": "src-tech-20261025-dssc-blueprint-30",
+      "title": "DSSC Blueprint 3.0",
+      "url": "https://blueprint.dssc.eu/",
+      "publisher": "Data Spaces Support Centre",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Reference architecture, not deployment validation."
+      ],
+      "artifact_version": "3.0"
+    },
+    {
+      "id": "src-tech-20261025-rdf11",
+      "title": "RDF 1.1 Concepts and Abstract Syntax",
+      "url": "https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/",
+      "publisher": "World Wide Web Consortium",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [],
+      "artifact_version": "Recommendation 2014-02-25"
+    },
+    {
+      "id": "src-tech-20261025-dcat3",
+      "title": "Data Catalog Vocabulary (DCAT), Version 3",
+      "url": "https://www.w3.org/TR/2024/REC-vocab-dcat-3-20240822/",
+      "publisher": "World Wide Web Consortium",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [],
+      "artifact_version": "Recommendation 2024-08-22"
+    },
+    {
+      "id": "src-tech-20261025-recognized-20260906",
+      "title": "Recognized Entities v1.0 — Working Draft",
+      "url": "https://www.w3.org/TR/2026/WD-vc-recognized-entities-1.0-20260906/",
+      "publisher": "World Wide Web Consortium",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Experimental and explicitly unsuitable for production."
+      ],
+      "artifact_version": "Working Draft 2026-09-06",
+      "source_identity_id": "src-std-w3c-recognized"
+    },
+    {
+      "id": "src-tech-20261025-aas-china",
+      "title": "Chinese national-standard project 20243452-T-604",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=28F53BF293F6A8D3E06397BE0A0AF10B",
+      "publisher": "SAMR / SAC",
+      "source_type": "public_authority",
+      "language": "zh",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Machine-assisted interpretation of official metadata. Under approval; no national deployment measurement."
+      ]
+    },
+    {
+      "id": "src-tech-20261025-aas-korea",
+      "title": "KS X IEC 63278-1 catalogue",
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010153517",
+      "publisher": "Korean Standards Association / KATS",
+      "source_type": "standards_body",
+      "language": "ko",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Catalogue metadata and scope inspected; normative text not purchased."
+      ],
+      "artifact_version": "KS X IEC 63278-1, 2025"
+    },
+    {
+      "id": "src-tech-20261025-aas-korea-programme",
+      "title": "2026 Manufacturing Data Standardization Programme, call No. 2026-247",
+      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000120466",
+      "publisher": "Ministry of SMEs and Startups / Bizinfo",
+      "source_type": "public_authority",
+      "language": "ko",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Official programme summary inspected; no completion/deployment audit. TIPA detailed model counts could not be recovered from the primary page and are omitted."
+      ]
+    },
+    {
+      "id": "src-tech-20261025-aas-japan-committee",
+      "title": "JEMIMA Report Vol. 61 No. 3: IEC 63278-1 overview",
+      "url": "https://www.jemima.or.jp/international-standardization/jncactivities/JNC-iectc65.html",
+      "publisher": "JEMIMA IEC TC65 Japanese National Committee",
+      "source_type": "standards_body",
+      "language": "ja",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Committee index and participant introduction inspected; not an adoption study or JIS-adoption evidence."
+      ],
+      "artifact_version": "July 2024"
+    },
+    {
+      "id": "src-tech-20261025-aas-japan-rri",
+      "title": "Japanese translation of the German Industrie 4.0 roadmap progress report",
+      "url": "https://www.jmfrri.gr.jp/library/library-6743/",
+      "publisher": "Robot Revolution & Industrial IoT Initiative",
+      "source_type": "industry_primary",
+      "language": "ja",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Release announcement inspected; registration-gated translated report not downloaded."
+      ]
+    },
+    {
+      "id": "src-tech-20261025-aas-us-german-prototypes",
+      "title": "US-German Digital Product Passport Demonstration",
+      "url": "https://lni40.de/wp-content/uploads/2024/04/US-German-DPP-PCF.pdf",
+      "publisher": "CESMII; Plattform Industrie 4.0; LNI 4.0; ZVEI",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Primary ten-page report inspected. Two prototypes, not national production adoption or federal architecture selection."
+      ],
+      "artifact_version": "April 2024"
+    },
+    {
+      "id": "src-tech-20261025-aas-rdf-v13",
+      "title": "AAS/RDF Interoperability Approaches for DPP — inspected v1.3",
+      "url": "https://zenodo.org/records/20396377",
+      "publisher": "AAS/RDF Volunteer Cross-Project Work Group / Zenodo",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "AASRDF.pdf"
+      ],
+      "limitations": [
+        "Local 21-page PDF inspected; MD5 578b2d7a7a4422282e419b4d3803dade matches indexed primary repository metadata.",
+        "Summary box retains v1.0 / 30 April; history reaches v1.3 / 24 May; repository created 26 May.",
+        "Collaborative research recommendations, not a normative standard or independent certification."
+      ],
+      "artifact_version": "Revision history v1.3, 24 May 2026"
+    },
+    {
+      "id": "src-tech-20261025-grimm-aas-rdf",
+      "title": "An Improved RDF Representation of the Asset Administration Shell — accepted manuscript locator",
+      "url": "https://www.linkedin.com/posts/mhrimaz_an-improved-rdf-representation-of-the-aas-activity-7505301601750872064-l-x7",
+      "publisher": "Grimm, Rimaz, Wenzel, Schoesau, Li, Zanini, Neumann and Coelho",
+      "source_type": "academic",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "Global_DPP_Knowledge_Graph_Baseline_Handover_v1.0 (3).md"
+      ],
+      "limitations": [
+        "Co-author announcement locator, not a DOI or newly inspected full text.",
+        "Handover records prior full-manuscript inspection; original 12-page manuscript not located here. Workshop scheduled 26 October 2026.",
+        "No fresh benchmark assertion; synthetic query/store performance is not AI accuracy or global adoption."
+      ],
+      "artifact_version": "Accepted manuscript, SemIIM/ISWC 2026"
+    },
+    {
+      "id": "src-tech-20261025-cirpass-risk-v11",
+      "title": "Risks and mitigations: a companion to D4.1 Reference Architecture",
+      "url": "https://zenodo.org/records/20670585",
+      "publisher": "CIRPASS-2 Consortium",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "D4_1_Risk_and_Mitigation.pdf"
+      ],
+      "limitations": [
+        "Local 26-page PDF inspected; MD5 44a6593a78656709ad6ad6737d0813a2 matches repository. Printed pages = PDF pages minus two.",
+        "Marked Draft; inconsistent May front-matter dates and older citation. 5 June 2026 is submission/publication; repository created 12 June.",
+        "Counts are catalogue entries, not incidents, severity, law or measured mitigation success."
+      ],
+      "artifact_version": "1.1"
+    },
+    {
+      "id": "src-tech-20261025-china-aas-working-group",
+      "title": "Participation in drafting the national standard for Asset Administration Shells for industrial applications",
+      "url": "https://qdbhu.edu.cn/News/Detail/14842",
+      "publisher": "Qingdao Binhai University",
+      "source_type": "project_primary",
+      "language": "zh",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "limitations": [
+        "Primary participant account; machine-assisted interpretation. Not an independent uptake measure or evidence that the standard is already published."
+      ]
+    }
+  ],
+  "revisions": [
+    {
+      "kind": "entities",
+      "id": "std-untp-dia",
+      "record": {
+        "dates": [],
+        "description": "Working registration/recognition profile; DID control is checked where a DID is anchored.",
+        "evidence_status": "primary_rechecked",
+        "geography": null,
+        "id": "std-untp-dia",
+        "jurisdiction_ids": [
+          "jur-global"
+        ],
+        "label": "UNTP Digital Identity Anchor — working profile",
+        "limitations": [
+          "Distinct from maintained 0.7.0.",
+          "Authoritative registration URIs can be used without a DID; control proof applies when a DID is anchored.",
+          "No independent conformance test or universal legal recognition established."
+        ],
+        "review_status": "machine_assisted_unreviewed",
+        "sector_ids": [
+          "sec-cross-sector"
+        ],
+        "source_ids": [
+          "src-std-untp-dia",
+          "src-tech-20261025-untp-dia-working",
+          "src-tech-20261025-recognized-20260906"
+        ],
+        "status": {
+          "value": "work_in_progress",
+          "as_of": "2026-10-25",
+          "scope_note": "Pre-production profile; Recognized Entities alignment is an attributed project claim."
+        },
+        "type": "Specification",
+        "version": "Work in Progress; v0.8.0 schema"
+      },
+      "reason": "Pin observed working schema and prevent 0.7/0.8 identity/maturity conflation.",
+      "source_ids": [
+        "src-tech-20261025-untp-dia-working",
+        "src-tech-20261025-recognized-20260906"
+      ],
+      "observed_at": "2026-10-25"
+    }
+  ],
+  "supersessions": [
+    {
+      "assertion_id": "a-std-073",
+      "replacement_ids": [
+        "a-tech-20261025-dia-working-recognized"
+      ],
+      "reason": "Replace unversioned discussion edge with dated attributed alignment and experimental-status limits.",
+      "source_ids": [
+        "src-tech-20261025-untp-dia-working",
+        "src-tech-20261025-recognized-20260906"
+      ],
+      "observed_at": "2026-10-25"
+    }
+  ],
+  "navigation_groups": [
+    {
+      "id": "aas-international",
+      "entity_ids": [
+        "std-iec-63278-1",
+        "std-idta",
+        "std-cn-aas-20243452-t-604",
+        "std-kr-ks-x-iec-63278-1",
+        "global-kr-aas-reference-model-programme-2026",
+        "global-jp-aas-iec-participation-2024",
+        "global-jp-aas-roadmap-dissemination-2025",
+        "global-us-de-aas-dpp-prototypes-2024",
+        "std-cirpass2-aas-rdf-v1-3",
+        "report-grimm-aas-rdf-2026",
+        "std-cn-tc124-swg2"
+      ],
+      "source_ids": [
+        "src-tech-20261025-aas-china",
+        "src-tech-20261025-aas-korea",
+        "src-tech-20261025-aas-korea-programme",
+        "src-tech-20261025-aas-japan-committee",
+        "src-tech-20261025-aas-japan-rri",
+        "src-tech-20261025-aas-us-german-prototypes",
+        "src-tech-20261025-aas-rdf-v13",
+        "src-tech-20261025-grimm-aas-rdf",
+        "src-tech-20261025-china-aas-working-group"
+      ],
+      "description": "International evidence distinguishes global standard, national adoption/project, public programme, participation, dissemination, prototypes and research.",
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "identity-policy-evidence",
+      "entity_ids": [
+        "std-untp",
+        "std-untp-0-7",
+        "std-untp-dia",
+        "std-w3c-vc2",
+        "std-w3c-recognized",
+        "std-untp-dia-0-7-0",
+        "std-untp-access-control-0-7-0",
+        "std-untp-digital-wallets",
+        "std-untp-identity-resolver",
+        "std-grid",
+        "std-grid-supporting-document",
+        "std-w3c-odrl-model-2-2",
+        "std-w3c-odrl-vocabulary-2-2",
+        "std-dsp-2025-1-err2",
+        "std-dcp-1-0-1",
+        "std-edc-connector-0-18-1",
+        "std-edc-policy-engine-docs",
+        "std-dssc-blueprint-3-0",
+        "std-w3c-dcat3",
+        "report-proposed-wallet-policy-evidence-architecture"
+      ],
+      "source_ids": [
+        "src-tech-20261025-untp-dia-070",
+        "src-tech-20261025-untp-dia-working",
+        "src-tech-20261025-untp-access-070",
+        "src-tech-20261025-untp-wallets",
+        "src-tech-20261025-untp-resolver",
+        "src-tech-20261025-grid-supporting",
+        "src-tech-20261025-odrl-model",
+        "src-tech-20261025-odrl-vocabulary",
+        "src-tech-20261025-dsp-2025-1-err2",
+        "src-tech-20261025-dcp-101",
+        "src-tech-20261025-edc-policy",
+        "src-tech-20261025-edc-release-0181",
+        "src-tech-20261025-dssc-blueprint-30",
+        "src-paper-global-dpp-whitepaper-v1-20261025"
+      ],
+      "description": "Identity, discovery, policy and enforcement roles; standards, drafts, software and proposals remain distinct.",
+      "membership_basis": "editorial_filter"
+    }
+  ]
+}

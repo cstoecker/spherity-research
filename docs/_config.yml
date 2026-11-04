@@ -33,3 +33,10 @@ exclude:
 # contact at the project site's well-known path.
 include:
   - ".well-known"
+
+# Published pages declare front matter. Keep raw research/archive Markdown as
+# downloads instead of generating unreviewed HTML aliases or README indexes.
+optional_front_matter:
+  enabled: false
+readme_index:
+  enabled: false

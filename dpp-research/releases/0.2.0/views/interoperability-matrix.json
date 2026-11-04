@@ -1,0 +1,145 @@
+[
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "dimension": "product_identity",
+    "coding_status": "not_assessed",
+    "result": "not_tested",
+    "source_ids": [],
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated.",
+      "Missing evidence is not a failed test."
+    ]
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "dimension": "syntactic_exchange",
+    "coding_status": "bounded_reported_evidence",
+    "result": "reported_success",
+    "source_ids": [
+      "src-global-jp-catena-x-demonstration"
+    ],
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated."
+    ]
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "dimension": "semantic_meaning",
+    "coding_status": "bounded_reported_evidence",
+    "result": "reported_success",
+    "source_ids": [
+      "src-global-jp-catena-x-demonstration"
+    ],
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated."
+    ]
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "dimension": "evidence_provenance",
+    "coding_status": "not_assessed",
+    "result": "not_tested",
+    "source_ids": [],
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated.",
+      "Missing evidence is not a failed test."
+    ]
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "dimension": "authentication",
+    "coding_status": "bounded_reported_evidence",
+    "result": "reported_success",
+    "source_ids": [
+      "src-global-jp-catena-x-demonstration"
+    ],
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated."
+    ]
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "dimension": "business_identity",
+    "coding_status": "not_assessed",
+    "result": "not_tested",
+    "source_ids": [],
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated.",
+      "Missing evidence is not a failed test."
+    ]
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "dimension": "delegated_authority",
+    "coding_status": "not_assessed",
+    "result": "not_tested",
+    "source_ids": [],
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated.",
+      "Missing evidence is not a failed test."
+    ]
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "dimension": "access_control",
+    "coding_status": "not_assessed",
+    "result": "not_tested",
+    "source_ids": [],
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated.",
+      "Missing evidence is not a failed test."
+    ]
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "dimension": "lifecycle_continuity",
+    "coding_status": "not_assessed",
+    "result": "not_tested",
+    "source_ids": [],
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated.",
+      "Missing evidence is not a failed test."
+    ]
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "dimension": "legal_acceptance",
+    "coding_status": "not_assessed",
+    "result": "not_tested",
+    "source_ids": [],
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated.",
+      "Missing evidence is not a failed test."
+    ]
+  }
+]

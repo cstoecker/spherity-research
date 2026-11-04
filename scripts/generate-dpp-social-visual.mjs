@@ -1,0 +1,14 @@
+import { readFile, writeFile } from 'node:fs/promises';
+import { runInNewContext } from 'node:vm';
+const context = {};
+runInNewContext(await readFile('dpp-explorer/src/vendor/d3.min.js', 'utf8'), context);
+const d3 = context.d3;
+const world = JSON.parse(await readFile('dpp-explorer/src/vendor/world.geojson', 'utf8'));
+const projection = d3.geoNaturalEarth1().fitExtent([[25, 330], [775, 803]], { type: 'Sphere' });
+const draw = d3.geoPath(projection);
+const globe = `<path d="${draw({ type: 'Sphere' })}" fill="#0b304c" stroke="#1687e8" stroke-width="2"/>`;
+const grid = `<path d="${draw(d3.geoGraticule10())}" fill="none" stroke="#286083" stroke-width="0.9"/>`;
+const countries = world.features.map(f => `<path d="${draw(f)}" fill="#8ec9e7" stroke="#0b304c" stroke-width="0.55"/>`).join('');
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1133" viewBox="0 0 800 1133" role="img" aria-labelledby="title desc"><title id="title">Global Digital Product Passport research atlas</title><desc id="desc">Natural Earth world boundaries in a uniform colour. Decorative locator graphic, not a country assessment or readiness map. Boundary data: Natural Earth, public domain.</desc><rect width="800" height="1133" fill="#061827"/>${globe}${grid}${countries}</svg>\n`;
+await writeFile('docs/assets/dpp-global-atlas-overview.svg', svg);
+console.log('Generated atlas social-card visual from the bundled Natural Earth geometry.');

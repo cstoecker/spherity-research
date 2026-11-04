@@ -1,0 +1,39 @@
+{% assign canonical_url = page.canonical_url %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "{{ canonical_url }}#launch-plan",
+      "url": "{{ canonical_url }}#ebw-ready-wallet-launch",
+      "name": {{ page.ebw_launch.heading | jsonify }},
+      "description": {{ page.ebw_launch.description | jsonify }},
+      "creativeWorkStatus": {{ page.ebw_launch.status | jsonify }},
+      "temporalCoverage": "2027-01-01/2027-03-31",
+      "datePublished": {{ page.ebw_launch.evidence_date | jsonify }},
+      "inLanguage": "en",
+      "isPartOf": {"@id": "{{ canonical_url }}#article"},
+      "publisher": {"@id": "https://www.spherity.com/#organization"},
+      "about": {"@id": "{{ canonical_url }}#ebw-ready-business-wallet"},
+      "mentions": {"@id": "{{ page.ebw_launch.partner_url }}#organization"}
+    },
+    {
+      "@type": "Service",
+      "@id": "{{ canonical_url }}#ebw-ready-business-wallet",
+      "url": "https://www.spherity.com/eida",
+      "name": {{ page.ebw_launch.product | jsonify }},
+      "serviceType": "European business identity and verifiable credential wallet",
+      "description": {{ page.ebw_launch.description | jsonify }},
+      "provider": {"@id": "https://www.spherity.com/#organization"},
+      "subjectOf": {"@id": "{{ canonical_url }}#launch-plan"}
+    },
+    {
+      "@type": "Organization",
+      "@id": "{{ page.ebw_launch.partner_url }}#organization",
+      "name": {{ page.ebw_launch.partner | jsonify }},
+      "url": {{ page.ebw_launch.partner_url | jsonify }}
+    }
+  ]
+}
+</script>

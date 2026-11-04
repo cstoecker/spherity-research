@@ -1,0 +1,30 @@
+<div id="robot-evidence-explorer" hidden>
+  <h3>Humanoid H-01: follow the evidence</h3>
+  <div class="text-small">Synthetic scenario · Industrial picking · Non-medical intended use</div>
+  <div class="viz-controls">
+    <label class="form-label">Select a record <select class="form-select" id="reg-node"></select></label>
+    <label class="form-label">Assessment lens <select class="form-select" id="reg-domain"></select></label>
+    <label class="form-label">Report TR42 <select class="form-select" id="reg-status"><option value="withdrawn">Withdrawn</option><option value="available">Available for review</option></select></label>
+  </div>
+  <div class="viz-row text-small" aria-label="Dependency legend">
+    <span><span class="reg-key reg-support"></span>Supporting records (solid left border)</span>
+    <span><span class="reg-key reg-impact"></span>Potentially affected records (dashed bottom border)</span>
+    <span>Select a node to read its typed relationships.</span>
+  </div>
+  <div id="reg-graph" aria-label="Graph of 22 fictional records across four participant boundaries"></div>
+  <div class="viz-row text-small" aria-label="Node types"><span>● Object / service</span><span>▤ Source document</span><span>◆ Assertion</span><span>⬡ Certificate</span><span>◇ Event</span><span>▱ Rule / profile</span></div>
+  <div id="reg-detail" class="card" aria-live="polite"></div>
+  <details id="reg-more"><summary>Evidence, sources and access conditions</summary><div id="reg-evidence"></div></details>
+  <div id="reg-lens" aria-live="polite"></div>
+  <details><summary>What people and AI can do with these links</summary>
+    <table class="table"><thead><tr><th>People and software</th><th>Practical value to test</th></tr></thead><tbody>
+      <tr><td>Locate the exact configuration and retrieve permitted facts</td><td>Less repeated extraction; smaller relevant prompt context</td></tr>
+      <tr><td>Follow sources, check scope and apply explicit rules</td><td>Fewer unsupported claims; more reviewable decisions</td></tr>
+      <tr><td>Trace a changed component or withdrawn report</td><td>Targeted reassessment, incident response and recovery</td></tr>
+      <tr><td>Reuse evidence across separate assessment scopes</td><td>Less duplicate work; faster commissioning and product changes</td></tr>
+      <tr><td>Record accepted premises, conditions and local approval</td><td>Accountable automation; measurable cost and time to market</td></tr>
+    </tbody></table>
+    <div class="text-small">AI can use documents without a graph. Graph construction, retrieval and verification have costs. Measure end-to-end accuracy, latency, tokens, total cost and unauthorized disclosure on the actual task.</div>
+  </details>
+  <div class="text-small">All records are fictional and pre-disclosed. No signatures, legal conformity, robot safety or AI performance are verified here. Restricted records and even their existence require real access control.</div>
+</div>

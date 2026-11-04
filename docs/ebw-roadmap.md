@@ -1,97 +1,284 @@
 ---
+publication_template_version: 2
+ebw_paper: true
+image_sitemap: true
+ebw_launch:
+  heading: "Spherity EBW-ready Business Wallet with Bundesanzeiger Verlag: planned Q1 2027 launch"
+  product: Spherity EBW-ready Business Wallet
+  period: Q1 2027
+  period_description: January–March 2027; exact launch day to be announced
+  status: Planned general availability
+  description: Spherity plans general availability of its EBW-ready Business Wallet in Q1 2027 on BSI-certified infrastructure, building on a European Business Wallet developed with Bundesanzeiger Verlag and tested in WE BUILD. The exact launch day has not been announced.
+  partner: Bundesanzeiger Verlag
+  partner_url: https://www.bundesanzeiger-verlag.de/
+  infrastructure: BSI-certified infrastructure
+  evidence_date: "2026-10-31"
 layout: research-respec
-css: "/assets/spherity-research-respec.css"
-
-title: "Legal & Operational EBW Roadmap Toward EU-Wide Acceptance"
-subtitle: "European Business Wallet roadmap under eIDAS 2.0, with legal, operational, conformance, and adoption milestones toward EU-wide acceptance by 2029"
-description: "Roadmap for European Business Wallet adoption, covering the proposed EU regulation, standards, pilots, conformance, dependencies, and projected rollout."
-
-paper_status: "Spherity Research Paper"
-author: "Dr. Carsten Stöcker, Ronald Koenig, Ricky Thiermann, Dr. Martin Westerkamp"
+css: /assets/spherity-research-respec.css
+title: "European Business Wallets: Regulation, Roadmap and Business Value"
+citation_title: "European Business Wallets: A Conditional Roadmap for the Single Market, Cyber-Resilience and Accountable Automation"
+citation_publication_date: "2026-10-31"
+seo_title: "European Business Wallet: Regulation, Roadmap & EUDI Comparison"
+og_title: "European Business Wallets: Regulation, Roadmap and Business Value"
+og_description: "European Business Wallet research and roadmap. Spherity’s EBW-ready Business Wallet, developed with Bundesanzeiger Verlag and tested in WE BUILD, is planned for Q1 2027 on BSI-certified infrastructure."
+subtitle: A conditional roadmap for the Single Market, cyber-resilience and accountable automation—with practical guidance for starting now.
+description: "European Business Wallet roadmap and EUDI comparison. Spherity’s EBW-ready Wallet with Bundesanzeiger Verlag: general availability planned for Q1 2027."
+paper_status: Research manuscript · Summary and implementation guide
+author: Dr. Carsten Stöcker
 authors:
-  - "Dr. Carsten Stöcker"
-  - "Ronald Koenig"
-  - "Ricky Thiermann"
-  - "Dr. Martin Westerkamp"
-affiliation: "Spherity GmbH"
-date: "2026-05-18"
-last_modified_at: "2026-09-07"
-lang: "en"
-
+  - Dr. Carsten Stöcker
+author_entities:
+  - name: Dr. Carsten Stöcker
+    affiliation: Spherity GmbH
+affiliation: Spherity GmbH
+author_affiliations:
+  - Dr. Carsten Stöcker — Spherity GmbH
+date: "2026-10-31"
+last_modified_at: "2026-10-31"
+research_cutoff: "2026-10-31"
+research_cutoff_label: Legal and technical evidence; product plans labelled separately
+lang: en
 permalink: /ebw-roadmap.html
-canonical_url: "https://spherity.github.io/spherity-research/ebw-roadmap.html"
-latest_version: "https://spherity.github.io/spherity-research/ebw-roadmap.html"
-
-robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-license: "https://creativecommons.org/licenses/by/4.0/"
-
-image: "/assets/preview-ebw-roadmap.webp"
-image_alt: "Spherity Research preview for the legal and operational European Business Wallet roadmap toward EU-wide acceptance."
-image_mime: "image/webp"
+canonical_url: https://spherity.github.io/spherity-research/ebw-roadmap.html
+latest_version: https://spherity.github.io/spherity-research/ebw-roadmap.html
+pdf_url: /Spherity-Research-European-Business-Wallet-Regulation-And-Roadmap.pdf
+associated_media:
+  - name: European Business Wallets — full research manuscript (26 pages)
+    description: Comparative analysis of proposed European Business Wallet legal clocks, six transaction-readiness gates, cyber-resilience and accountable automation, with practical implementation guidance in Section 19.
+    url: /Spherity-Research-European-Business-Wallet-Regulation-And-Roadmap.pdf
+    cover_image: /assets/ebw-roadmap-paper-cover.jpg
+    cover_image_alt: Complete first page of European Business Wallets, by Dr. Carsten Stöcker, prepared 31 October 2026.
+    license: https://creativecommons.org/licenses/by/4.0/
+cover_image: /assets/ebw-roadmap-paper-cover.jpg
+cover_image_alt: First page of the European Business Wallets research manuscript, with title, author, date and abstract.
+figure_objects:
+  - id: ebw-conditional-roadmap
+    name: European Business Wallet legislative and implementation timeline, 2025–2031
+    content_url: /assets/Spherity-Research-European-Business-Wallet-Regulation-And-Roadmap.svg
+    raster_url: /assets/Spherity-Research-European-Business-Wallet-Regulation-And-Roadmap.png
+    alt: Timeline separating recorded EBW legislative events from hypothetical 2029, 2030 and 2031 acceptance calculations, continuing implementation work and separate post-quantum policy targets.
+    width: 2540
+    height: 1500
+    class: ebw-roadmap-figure
+    description: The roadmap compares three proposed acceptance clocks with explicit assumptions and parallel standards, architecture, WE BUILD, receiving-service, assurance, industry and cryptographic migration workstreams.
+    caption: "Legislative and implementation timeline at 31 October 2026. Filled markers show recorded events or published baselines; diamonds show targets or plans; open circles show calculated acceptance examples. Continuing bars do not assign completion deadlines. E, I and A are different legal triggers. The EUDI and authentic-source dates are enacted milestones; PQC targets are policy recommendations. Reference numbers follow the full paper. Source: Dr. Carsten Stöcker / Spherity GmbH; supplied roadmap with added white margin and embedded fonts."
+    creator_type: Person
+    creator_name: Dr. Carsten Stöcker
+    creator_url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    credit_text: Dr. Carsten Stöcker / Spherity GmbH
+    copyright_notice: © 2026 Dr. Carsten Stöcker, Spherity GmbH
+    copyright_holder:
+      type: Person
+      name: Dr. Carsten Stöcker
+      url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    keywords:
+      - European Business Wallet
+      - EBW regulation
+      - Conditional acceptance roadmap
+      - Post-quantum cryptography
+robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+license: https://creativecommons.org/licenses/by/4.0/
+license_scope: This research publication (including the page, linked manuscript and original roadmap)
+license_exclusions: Logos and trademarks are excluded from the CC BY grant. Third-party sources retain their own terms. Embedded Liberation Sans font software retains its accompanying font licence.
+image: /assets/preview-ebw-roadmap.webp
+image_alt: Spherity Research preview for European Business Wallet regulation, conditional roadmap, cyber-resilience and business value.
+image_mime: image/webp
 image_width: 1200
 image_height: 630
-
-answer_summary: "The roadmap treats European Business Wallet adoption as a gated legal and operational transition. The Commission proposal starts the legislative path, while standards, conformance, authentic-source credentials, pilots, national implementation, and wallet availability determine when cross-border use can work at scale."
+keywords:
+  - European Business Wallet
+  - EBW regulation
+  - EBW-ready Business Wallet
+  - Spherity EBW-ready Business Wallet launch
+  - Q1 2027 planned general availability
+  - EUDI Wallet
+  - European Digital Identity Wallet
+  - EUDIW
+  - eIDAS 2.0
+  - digital identity
+  - business wallet
+  - Unternehmenswallet
+  - digitale Identität
+  - d-you
+  - WE BUILD
+  - Bundesanzeiger Verlag
+  - business value
+  - cyber-resilience
+  - Trusted AI
+  - AI-agent mandates
+  - KYB
+  - KYS
+  - B2G
+  - G2G
+  - post-quantum cryptography
+  - Digital Product Passport
+answer_summary: "European Business Wallets connect organisational identity, verifiable evidence and bounded authority to business transactions. Spherity plans general availability of its EBW-ready Business Wallet in Q1 2027 on BSI-certified infrastructure, building on work developed with Bundesanzeiger Verlag and tested in WE BUILD. This product plan is separate from the EBW regulation, which remained under negotiation at the 31 October 2026 cut-off: the paper’s 2029–2031 acceptance examples are conditional calculations, not adopted deadlines."
 key_takeaways:
-  - "The European Business Wallet remains a European Commission proposal; projected dates must be read as scenarios until the legislative text is adopted."
-  - "EU-wide acceptance depends on legislation, technical standards, conformance capacity, national integration, wallet availability, and authoritative business credentials."
-  - "Early pilots can test mature identity, attribute, mandate, and interoperability components before mandatory acceptance."
-  - "The paper projects a 2028–2029 acceptance window, conditional on the final entry-into-force date and the proposed implementation period."
+  - The Commission, Parliament ITRE and Council texts use different proposed triggers for public-sector acceptance; political agreement is not the same as entry into force or application.
+  - "EUDI Wallets and business wallets are complementary: personal identity and user-controlled disclosure can connect with organisational evidence, mandates and enterprise processes."
+  - "Readiness requires six transaction gates: legal basis, technical profile, credentials, mandates, receiving service and operations."
+  - Section 19 recommends a minimum viable ecosystem, a value-realisation plan, controlled pilots and a funded approach to changing standards.
+  - Identity and bounded authority can support cyber-resilience and Trusted AI; they do not establish safe AI decisions or guaranteed economic gains.
+  - Spherity’s EBW-ready Business Wallet, developed with Bundesanzeiger Verlag and tested in WE BUILD, has general availability planned for Q1 2027 on BSI-certified infrastructure; the exact launch day is not announced.
 about:
-  - "European Business Wallet"
-  - "Legal-person identity"
-  - "Cross-border business identity"
-  - "Digital trust infrastructure"
+  - European Business Wallet
+  - Organisational identity
+  - Transaction readiness
+  - Single Market
 mentions:
-  - "eIDAS 2.0"
-  - "European Digital Identity Wallet"
-  - "Digital Product Passport"
-  - "Data spaces"
-  - "Trusted AI"
+  - EUDI Wallet
+  - eIDAS 2.0
+  - d-you
+  - WE BUILD
+  - Bundesanzeiger Verlag
+  - Trusted AI
+  - Cyber-resilience
+  - Post-quantum cryptography
 citations:
-  - "https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-establishment-european-business-wallets"
-  - "https://digital-strategy.ec.europa.eu/en/policies/business-wallets"
-  - "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32024R1183"
+  - https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-establishment-european-business-wallets
+  - https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025%2F0358%28COD%29
+  - https://data.consilium.europa.eu/doc/document/ST-9684-2026-INIT/en/pdf
+  - https://www.europarl.europa.eu/RegData/seance_pleniere/textes_deposes/rapports/2026/0240/P10_A(2026)0240_EN.pdf
+  - https://eur-lex.europa.eu/eli/reg/2024/1183/oj/eng
+  - https://www.webuildconsortium.eu/about-we-build
+  - https://eudi-wallet.gov.de/faq
+  - https://www.spherity.com/eida
+audiences:
+  - Business leaders and process owners
+  - Public administrations
+  - CISOs and identity architects
+  - Enterprise AI teams
+spatial_coverage:
+  - European Union
+  - Germany
+search_research:
+  reviewed_on: "2026-10-31"
+  source: Google Trends
+  source_url: https://trends.google.com/trends/explore
+  geographies:
+    - Germany
+    - France
+    - Netherlands
+    - Worldwide
+  time_ranges:
+    - Past 12 months
+    - Past 5 years
+  search_types:
+    - Web Search
+    - News Search
+  authority_terms:
+    - European Business Wallet
+    - EBW regulation
+    - EBW-ready Business Wallet
+  discovery_terms:
+    - EUDI Wallet
+    - digital identity
+    - eIDAS 2.0
+    - digitale Identität
+    - Unternehmenswallet
+    - d-you
+  audience_questions:
+    - When could EBW acceptance become mandatory?
+    - How do EUDI Wallets and European Business Wallets differ?
+    - How can a business start before final EBW rules?
+  evidence:
+    - comparison: European Business Wallet; EUDI Wallet; digital identity (English, all categories)
+      input_type: Search terms, not Google Trends topics
+      geography: Germany
+      time_range: Past 12 months
+      search_type: Web Search
+      result: Reviewed Google Trends Explore on 31 October 2026. European Business Wallet was zero in most weekly observations, with sparse nonzero reporting. EUDI Wallet and digital identity had more sustained reported interest. EUDI Wallet rising queries included d-you, eudi-wallet and d you. EBW related queries showed insufficient data. Unrelated digital identity rising queries were rejected. Relative normalized signals are not absolute search volumes.
+    - comparison: European Business Wallet; EUDI Wallet; digital identity (English, all categories)
+      input_type: Search terms, not Google Trends topics
+      geography: Germany
+      time_range: Past 5 years
+      search_type: Web Search
+      result: The weekly chart covered late October 2021 to October 2026. EBW remained sparsely reported; EUDI Wallet and digital identity had stronger visible signals. EUDI Wallet related rising terms included eu wallet, eidas, sprind, eidas 2.0 and eudi-wallet. Keep the EBW authority term and use the established EUDI/eIDAS wording in definitions and questions.
+    - comparison: European Business Wallet; EUDI Wallet; digital identity (English, all categories)
+      input_type: Search terms, not Google Trends topics
+      geography: France
+      time_range: Past 5 years
+      search_type: Web Search
+      result: Digital identity dominated the displayed English-term comparison. EBW and EUDI Wallet related-query panels reported insufficient data. Digital identity related queries included european digital identity wallet and eu digital identity wallet. This English-only comparison does not establish French-language demand or market size.
+    - comparison: European Business Wallet; EUDI Wallet; digital identity (English, all categories)
+      input_type: Search terms, not Google Trends topics
+      geography: Netherlands
+      time_range: Past 5 years
+      search_type: Web Search
+      result: The displayed English-term comparison favoured digital identity, with smaller EUDI Wallet and sparse EBW signals. Related-query panels for EBW and EUDI Wallet reported insufficient data; eu digital identity wallet appeared among the broader term's rising queries. Reject unrelated queries and do not equate sparse reporting with no demand.
+    - comparison: European Business Wallet; EUDI Wallet; digital identity (English, all categories)
+      input_type: Search terms, not Google Trends topics
+      geography: Worldwide
+      time_range: Past 5 years
+      search_type: Web Search
+      result: Digital identity had the broadest reported interest. Relevant EUDI Wallet rising queries included eu wallet, eidas, eidas 2.0, eu digital wallet and eu digital identity wallet. European digital identity wallet appeared in the EBW related-query panel. Broad unrelated news/travel queries were excluded from editorial decisions.
+    - comparison: European Business Wallet; EUDI Wallet; digital identity (English, all categories)
+      input_type: Search terms, not Google Trends topics
+      geography: Worldwide
+      time_range: Past 5 years
+      search_type: News Search
+      result: The chart and related-query panels showed much stronger broader digital identity reporting and limited specialist-wallet data. EBW and EUDI Wallet related-query panels reported insufficient data. Relevant broader rising phrases included digital identity wallet, eu digital identity and european digital identity wallet. No quantitative demand or ranking claim is made.
+  editorial_decisions:
+    - Keep European Business Wallet and the legal trigger comparison as the authority focus despite sparse exact-term data. Missing or zero normalized values do not establish zero demand.
+    - Use EUDI Wallet and digital identity in definitions, the comparison and FAQs. Mention d-you as a German example, not the entire European framework.
+    - Retain German variants in the on-site search catalog without keyword stuffing the English prose. Do not infer market size from English-only comparisons in France or the Netherlands.
+    - Reject unrelated rising queries such as travel, shopping and general news. Search data informs language, not technical, legal, certification or product-availability claims.
 questions_answered:
-  - question: "What is the European Business Wallet?"
-    answer: "In the European Commission proposal, the European Business Wallet is a harmonised digital solution for businesses and public-sector bodies to identify, authenticate, exchange data, manage attributes, and perform legally relevant digital interactions across the European Union."
-  - question: "When could European Business Wallet acceptance become mandatory?"
-    answer: "The paper projects a 2028–2029 window, but the operative date depends on adoption and entry into force of the final regulation. The roadmap therefore presents conditional milestones rather than an enacted deadline."
-  - question: "Why pilot EBW-ready services before the final regulation?"
-    answer: "Pilots can test mature identity, credential, mandate, trust-service, and interoperability components, produce implementation evidence, and expose conformance or integration gaps before the mandatory phase."
+  - question: What is the European Business Wallet?
+    answer: European Business Wallets are proposed digital infrastructure for economic operators and public bodies to identify themselves, exchange verifiable business evidence and demonstrate authority across borders. The practical goal is a completed, accountable transaction. The final EBW regulation had not been established in the official record reviewed on 31 October 2026.
+  - question: When will European Business Wallet acceptance become mandatory?
+    answer: There was no adopted final EBW acceptance date at the 31 October 2026 evidence cut-off. The Commission proposal uses regulation entry into force plus 24 months; the Parliament ITRE and Council positions use different implementing-act triggers plus 24 months. The paper’s 2029, 2030 and 2031 examples are conditional calculations, not forecasts or legal deadlines.
+  - question: What is the difference between an EUDI Wallet and a European Business Wallet?
+    answer: Typical personal EUDI Wallet use emphasises user-controlled identity and attribute disclosure. A business-wallet operating profile adds organisational evidence, scoped mandates, multiple roles, APIs and process automation. They complement each other; this is not an exclusive legal or technical division, and the EUDI framework also addresses legal persons. Privacy and access protection matter to both.
+  - question: Is d-you the European Business Wallet?
+    answer: No. d-you is Germany’s national EUDI Wallet example for personal digital identity and attestations. European Business Wallets follow a separate proposed framework for economic operators and public bodies. A person’s EUDI Wallet can work alongside a company’s business wallet to establish identity and authority.
+  - question: How can companies start before final EBW legislation?
+    answer: Choose one lawful recurring transaction, name the process and benefit owners, involve a real receiver and a competent source, and set cost and resilience baselines. Section 19 recommends a controlled pilot, explicit expand/adjust/stop criteria and modular technology with a migration budget. Earlier bounded use does not establish conformity with future EBW rules.
+  - question: How do business wallets support Trusted AI and cyber-resilience?
+    answer: They can supply verifiable organisational identity and bounded authority to policy enforcement, helping make automated actions attributable and revocable. Test replay, stale evidence, compromised endpoints and recovery. Wallets do not prove the correctness of AI outputs or the safety of physical actions; separate model, runtime and safety controls remain necessary.
+  - question: When is the Spherity EBW-ready Business Wallet launch with Bundesanzeiger Verlag planned?
+    answer: Spherity plans general availability of its EBW-ready Business Wallet in Q1 2027 (January–March 2027) on BSI-certified infrastructure. The wallet builds on work developed with Bundesanzeiger Verlag and tested in WE BUILD. The exact launch day has not been announced. This company plan, stated on 31 October 2026, is separate from final EBW regulatory conformity.
+  - question: What is Bundesanzeiger Verlag’s role in Spherity’s EBW-ready Business Wallet?
+    answer: Spherity and Bundesanzeiger Verlag developed a European Business Wallet and tested it in WE BUILD. Bundesanzeiger Verlag contributes verified business information for company identity, representation and related enterprise processes. Spherity is productising this work as an EBW-ready Business Wallet, with general availability planned for Q1 2027 on BSI-certified infrastructure.
 related_publications:
-  - title: "European Business Wallets as the Legal Control Plane for Zero Trust AI Agents"
-    url: "/ebw-zero-trust-ai-agents.html"
-    context: "Examines how legal-person identity and digital mandates can govern autonomous enterprise actions."
-  - title: "Securing Digital Identity and Verifiable Credential Wallets against Quantum Vulnerabilities"
-    url: "/Securing-Digital-Identity-Quantum-Vulnerabilities.html"
-    context: "Explains the crypto-agility and end-to-end trust dependencies that wallet ecosystems must migrate."
-  - title: "AI-Cyber, Quantum Risk, Hybrid Warfare, and Physical AI"
-    url: "/threat-escalation-model-germany-eu.html"
-    context: "Connects identity and trust infrastructure to wider German and EU operational readiness."
-
+  - title: European Business Wallets as the Legal Control Plane for Zero Trust AI Agents
+    url: /ebw-zero-trust-ai-agents.html
+    context: Examines how legal-person identity and digital mandates can govern autonomous enterprise actions.
+  - title: "Global Digital Product Passports: Regulation, Interoperability and Shared Evidence Infrastructure"
+    url: /global-digital-product-passport-regulation.html
+    context: Connects business identity and authorised updates with product evidence and cross-border interoperability.
+  - title: Securing Digital Identity and Verifiable Credential Wallets against Quantum Vulnerabilities
+    url: /Securing-Digital-Identity-Quantum-Vulnerabilities.html
+    context: Explains the crypto-agility and end-to-end trust dependencies that wallet ecosystems must migrate.
 toc_items:
-  - title: "Abstract"
+  - title: Overview and PDF
     href: "#abstract"
-  - title: "1. Fast-track adoption"
-    href: "#fast-track-adoption-and-early-ebw-ready-solutions"
-  - title: "2. Key use cases"
-    href: "#key-use-cases-of-the-ebw"
-  - title: "3. Key milestones"
+  - title: Planned launch · Q1 2027
+    href: "#ebw-ready-wallet-launch"
+  - title: Roadmap
+    href: "#ebw-roadmap"
+  - title: Regulatory status
     href: "#key-milestones-to-mandatory-ebw-acceptance"
-  - title: "4. Roadmap summary table"
-    href: "#roadmap-summary-table"
-  - title: "5. Council Presidency timeline"
-    href: "#rotating-presidencies-of-the-council-of-the-european-union-timeline"
-  - title: "6. Key risks and dependencies"
+  - title: EUDI Wallet vs EBW
+    href: "#eudi-wallet-vs-ebw"
+  - title: Business value and Trusted AI
+    href: "#fast-track-adoption-and-early-ebw-ready-solutions"
+  - title: Six readiness gates
     href: "#key-risks-and-dependencies"
-  - title: "References"
+  - title: Practical guidance · Section 19
+    href: "#practical-guidelines"
+  - title: Spherity Business Wallet
+    href: "#spherity-business-wallet"
+  - title: Start now
+    href: "#start-now"
+  - title: Research boundaries
+    href: "#research-boundaries"
+  - title: References
     href: "#references"
-  - title: "License and citation"
+  - title: License and citation
     href: "#license-and-citation"
-  - title: "Questions answered"
+  - title: Questions answered
     href: "#questions-answered"
-
 tags:
   - european-business-wallet
   - ebw
@@ -105,136 +292,177 @@ tags:
   - compliance
 ---
 
-
-
-
-
-<p class="keywords">
-  <strong>Keywords:</strong> European Business Wallet; EBW; eIDAS 2.0; legal person identity; verifiable credentials; qualified attributes; B2G access; data spaces; KYC; KYB; KYS; Trusted AI; digital product passport; supply chain compliance; eSeals; trusted infrastructure; Architecture Reference Framework; EBW-ready; fast-track adoption; EU digital identity; EBW regulation; qualified attestation; conformity assessment; eGovernment interoperability; business case; roadmap.
-</p>
+<style>
+.ebw-hero{display:grid;grid-template-columns:155px minmax(0,1fr);gap:1.6rem;align-items:center;margin:2rem 0}.ebw-cover-link img{display:block;width:155px;height:auto;border:1px solid #d7e3e7;box-shadow:0 7px 20px #003b4d16}.ebw-hero p{margin:.65rem 0}.ebw-hero .ebw-downloads{margin-bottom:0}
+.ebw-downloads{display:flex;flex-wrap:wrap;gap:.75rem;margin:1.5rem 0}
+.ebw-button{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;background:#003b4d;color:#fff!important;border:2px solid #003b4d;border-radius:6px;padding:.75rem 1.1rem;font:600 1rem/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;text-decoration:none!important}
+.ebw-button:hover{background:#07586b;border-color:#07586b}.ebw-button:focus-visible{outline:3px solid #11bd98;outline-offset:4px}.ebw-button-secondary{background:#fff;color:#003b4d!important}.ebw-button-secondary:hover{background:#eef8f6}
+.paper-figure.ebw-roadmap-figure{margin:3.5rem 0 3rem}.paper-figure.ebw-roadmap-figure img{width:100%;max-width:100%;border:1px solid #d7e3e7;border-radius:8px;background:white}
+.ebw-comparison{overflow-x:auto;margin:1.5rem 0}.ebw-comparison table{min-width:660px}.ebw-comparison:focus-visible{outline:3px solid #11bd98;outline-offset:3px}
+.ebw-cta,.ebw-launch{margin:3.5rem 0;padding:clamp(1.35rem,4vw,2.4rem);background:#eef8f6;border:1px solid #c6e5dd;border-left:5px solid #08b796;border-radius:8px}.ebw-cta h2,.ebw-launch h2{margin-top:.5rem}.ebw-launch dl{display:grid;grid-template-columns:minmax(110px,1fr) 2fr;gap:.65rem 1.2rem}.ebw-launch dt{font-weight:700}.ebw-launch dd{margin:0}.ebw-launch-teaser{padding:.85rem 1rem;border-left:4px solid #08b796;background:#eef8f6}.ebw-eyebrow{font:700 .85rem/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;text-transform:uppercase;letter-spacing:.07em;color:#165b60}.ebw-cta-note{font-size:.88rem;color:#4b626b}
+@media(max-width:600px){.ebw-hero{grid-template-columns:1fr}.ebw-cover-link img{width:115px}.ebw-downloads{flex-direction:column}.ebw-button{width:100%;box-sizing:border-box}.ebw-launch dl{grid-template-columns:1fr;gap:.25rem}.ebw-launch dd{margin-bottom:.7rem}.paper-figure.ebw-roadmap-figure{margin:2.5rem 0}}
+</style>
 
 <section class="abstract-box" markdown="1">
-<h2 id="abstract">Abstract</h2>
+<h2 id="abstract">European Business Wallets: from identity to completed transactions</h2>
 
-The [European Business Wallet (EBW)](https://digital-strategy.ec.europa.eu/en/policies/business-wallets), proposed by the [European Commission on 19 November 2025 (COM(2025) 838)](https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-establishment-european-business-wallets), is a key element of the EU’s digital trust infrastructure under eIDAS 2.0. It introduces a secure and standardised wallet for legal persons, enabling trusted identification, authentication, qualified signatures and seals, and access to digital services across borders.
+**European Business Wallets (EBWs) are proposed digital infrastructure for economic operators and public bodies to identify themselves, exchange verifiable business evidence and demonstrate authority across borders.** The practical objective is a completed business transaction: a supplier onboarded, a filing accepted or an authorised agent action recorded. Owning a wallet alone does not deliver that outcome.
 
-The EBW enables legally valid digital interaction with public and private actors. It supports automation, compliance, and interoperability across key sectors while unlocking a significant macro-economic business case and cyber-security improvements. 
+This page summarises the **26-page research manuscript prepared on 31 October 2026** and adds an implementation perspective, an EUDI Wallet comparison and Spherity’s product outlook. The full PDF contains the method, article-level legal comparison, worked example and 46 references. The economic and security benefits discussed in the paper are hypotheses to test in deployments.
 
-This roadmap outlines the legal, technical, and operational milestones required for full EU-wide acceptance by 2028–2029 and highlights early adoption opportunities starting already in 2026.
-
+**What changed:** the earlier 2028–2029 forecast is replaced by three proposed legal clocks and explicit 2029, 2030 and 2031 scenarios. The paper introduces six transaction-readiness gates and practical implementation guidance in Section 19. The original page was published on 18 May 2026; this edition retains its URL.
 </section>
 
-<figure class="paper-figure centered-figure">
-  <img src="{{ '/assets/Europen%20Business%20Wallet%20%28EBW%29%20Roadmap%20-%20Spherity%20GmbH.png' | relative_url }}"
-       alt="European Business Wallet roadmap timeline showing legal, regulatory, standardisation, conformance, pilot, and adoption milestones from 2026 to 2029.">
-  <figcaption>
-    <strong>Figure 1.</strong> European Business Wallet roadmap timeline. The figure shows legal,
-    regulatory, standardisation, conformance, pilot, and operational milestones from 2026 to 2029,
-    including eIDAS 2.0 adoption, the EBW regulation, ETSI and CEN-CENELEC standardisation,
-    Architecture Reference Framework updates, Large-Scale Pilots, WE BUILD, Qualified Trust
-    Service Providers, and phased public-sector and industry rollout across EU Member States.
-    Source: Spherity GmbH.
-  </figcaption>
-</figure>
+{% include ebw-wallet-launch.html %}
 
+<h2 id="ebw-roadmap">The updated European Business Wallet roadmap</h2>
 
+The roadmap separates **recorded events**, **political or programme targets**, **calculated acceptance examples** and **continuing implementation work**. The timeline extends to 2031 to make the consequences of different assumptions visible. It does not promise a final rollout date. Open the SVG for readable detail or download it for reuse with attribution.
 
-<h2 id="fast-track-adoption-and-early-ebw-ready-solutions">1. Fast-Track Adoption and Early EBW-Ready Solutions</h2>
+{% assign ebw_roadmap_figure = page.figure_objects | first %}
+{% include research-figure.html figure=ebw_roadmap_figure number=1 %}
 
-To [unlock business value](https://medium.com/spherity/digital-identity-real-world-impact-the-industrial-upside-of-the-european-business-wallet-eubw-d9e0c4e96aae) early, industry actors and some government bodies are expected to start field deployment of **EBW-ready solutions** from 2026 onwards. These solutions will build on existing **eIDAS 2.0 trust infrastructure**, qualified attributes, and interoperable credential formats. Stakeholders are encouraged **not to wait** until final regulations and standards are complete, but to pilot and adopt early solutions where legal and technical elements are mature. This fast-track path supports real-world use, accelerates market feedback, and de-risks future compliance.
+<div class="ebw-downloads"><a class="ebw-button ebw-button-secondary" href="{{ '/assets/Spherity-Research-European-Business-Wallet-Regulation-And-Roadmap.svg' | relative_url }}" download>Download roadmap · SVG</a><a class="ebw-button ebw-button-secondary" href="{{ '/assets/Spherity-Research-European-Business-Wallet-Regulation-And-Roadmap.png' | relative_url }}" download>Download roadmap · PNG</a></div>
+<p>Reference numbers inside the figure follow the <a href="{{ page.pdf_url | relative_url }}#page=23">paper’s bibliography</a>.</p>
 
-<h2 id="key-use-cases-of-the-ebw">2. Key Use Cases of the EBW</h2>
+<h2 id="key-milestones-to-mandatory-ebw-acceptance">Regulatory status: three proposed acceptance clocks</h2>
 
-* **Financial Services**: Enables reusable KYC/KYB data, supports PSD2 and strong authentication, automates B2G reporting obligations, and simplifies onboarding and compliance.
+At the **31 October 2026 evidence cut-off**, the official record did not establish an adopted final EBW regulation or its publication in the Official Journal. The Commission proposal dates from 19 November 2025; the Council adopted its negotiating position on 9 June 2026; Parliament’s negotiating mandate was confirmed on 7 October; the first trilogue was recorded on 14 October. The end-of-2026 agreement objective is a political target. [<a href="#ref-commission">1</a>, <a href="#ref-procedure">2</a>, <a href="#ref-council">3</a>, <a href="#ref-parliament">4</a>]
 
-* **Professional Services**: Provides firm identity, qualified eSeals, mandate credentials, and trusted filings for auditors, law firms, tax advisors, health care professionals, and notaries.
+<h3 id="roadmap-summary-table">When could public-sector acceptance become mandatory?</h3>
 
-* **Industry 4.0**: Links machine identities to corporate credentials, supports provenance, quality, and compliance in automated environments.
+The answer depends on the **final legal trigger**, not simply the date of political agreement. Define **E** as the regulation’s entry into force, **I** as entry into force of the implementing acts referenced by ITRE Article 16, and **A** as application of the last implementing act listed in Council Article 22.
 
-* **Supply Chain and ESG**: Delivers digital product passports (DPPs), supplier declarations, and ESG disclosures using verifiable credentials.
+| Negotiating text | General application | Proposed public-sector acceptance |
+| --- | --- | --- |
+| Commission proposal | E + 12 months | **E + 24 months**, Article 16 |
+| Parliament ITRE report | E + 12 months, with the Article 20 exception | **I + 24 months**, Article 16 |
+| Council general approach | A + 12 months, with specified early provisions | **A + 24 months**, Article 22(1c) |
 
-* **Data Space Ecosystems**: Acts as a trusted gateway for legal entity onboarding and access control in Gaia-X, Manufacturing-X, and other EU Data Spaces.
+The Council’s acceptance period runs directly from A. Adding it after general application to produce A + 36 months would misread the text. Conditional registered-delivery transition provisions also need separate treatment; they are not universal wallet go-live dates. See the full legal analysis in [paper Sections 4–6]({{ page.pdf_url | relative_url }}#page=5).
 
-* **Critical Infrastructures**: Enables verified access for legal entities in energy, telecom, water, and transport systems; supports NIS2 security frameworks.
+<h3 id="rotating-presidencies-of-the-council-of-the-european-union-timeline">Illustrative calendar scenarios, not deadlines</h3>
 
-* **Trusted AI**: Supports traceable and verifiable information about AI system developers, providers, and operators in compliance with the AI Act; establishes Power of Attorney (PoA) for agent delegation and the AI Service Passport (AISP), enables registration in High-Risk AI registries and audit chains using EBW credentials, positioning Europe with a modern trust infrastructure in the global race for secure, regulated industrial AI.
+| Explicit assumptions | Commission calculation | ITRE / Council calculations |
+| --- | --- | --- |
+| E = 1 April 2027; I and A = 1 April 2028 | 1 April 2029 | 1 April 2030 |
+| E = 1 April 2027; I and A = 1 April 2029 | 1 April 2029 | 1 April 2031 |
 
-* **B2G Reporting and Registry Access**: Provides standardised authentication for EU portals such as EPRL, DPP registries, Customs, AgriFood Subsidies & Reporting (CAP Process), Tendering & Procurement, High-Risk AI registry, NIS2, and MiFIR/MiFID II.
+I and A remain different legal events even when an example assigns them the same date. No probability is assigned to these scenarios. Council presidencies can influence political progress, but do not start the proposed acceptance clocks. EUDI Wallet provision, authentic-source rules and post-quantum policy milestones have their own calendars and must not be substituted for an EBW deadline. [<a href="#ref-eidas">5</a>, <a href="#ref-authentic-source">6</a>, <a href="#ref-pqc">7</a>]
 
-* **G2G Integration**: Supports trusted data exchange between authorities across Member States, enabling mutual recognition of business attributes and once-only reporting.
+<h2 id="eudi-wallet-vs-ebw">EUDI Wallet vs European Business Wallet: complementary roles</h2>
 
-The EBW is essential for digital sovereignty, process automation, and compliance in the EU’s digital economy. Fast-track adoption by public and private stakeholders in 2026 will be key to demonstrating readiness, shaping standards, and ensuring operational maturity well before mandatory deadlines.
+The **European Digital Identity Wallet (EUDI Wallet or EUDIW)** provides a common framework for digital identity and attestations under eIDAS. **European Business Wallets add a proposed organisational operating framework** for business evidence, representation and cross-border processes. The table compares a typical personal EUDI Wallet experience with an industrial business-wallet profile. These are usage emphases, not hard technology boundaries: the EUDI framework also addresses legal persons, and personal wallets can carry professional attributes. Privacy and access protection apply to both. [<a href="#ref-eidas">5</a>, <a href="#ref-commission">1</a>, <a href="#ref-webuild">8</a>]
 
-<h2 id="key-milestones-to-mandatory-ebw-acceptance">3. Key Milestones to Mandatory EBW Acceptance</h2>
+<div class="ebw-comparison" role="region" aria-label="EUDI Wallet and European Business Wallet comparison" tabindex="0" markdown="1">
 
-The road to having all EU Member States mandatorily accepting EBW involves several key milestones across the legal adoption, technical readiness, and conformance/certification domains. Below we outline the critical path milestones, along with dependencies, uncertainties, and what constitutes a “gate” that must be cleared for the next phase:
+| Dimension | EUDI Wallet: typical personal use | European Business Wallet: industrial profile |
+| --- | --- | --- |
+| **Trust and privacy** | User control, data minimisation and privacy-preserving disclosure; unlinkability where supported by the transaction and design. | Verifiable organisational authority and auditable actions, with protected access and proportionate logs. Personal data still requires protection. |
+| **Evidence and data** | Identity attributes and other personal or professional attestations. | Company identity, licences, representation and business evidence; integration with semantic data, knowledge graphs and Digital Product Passports where the use case requires it. |
+| **Approval and delegation** | User-mediated disclosure and strong authentication, for example a device plus PIN or biometrics. | Scoped mandates and policy checks can support automation, with approval or escalation for exceptions. A login is not an unlimited mandate. |
+| **Operation** | Commonly a personal smartphone application, with the user initiating an interaction. | Cloud services and APIs, multiple users and roles, enterprise integrations and business-continuity requirements. Availability must be demonstrated. |
+| **Actors** | People demonstrate identity and attributes, including professional roles. | Organisations delegate bounded actions to people, software and machines; AI-agent actions remain attributable to responsible organisations and persons. |
+| **Legal status and timing** | Based on the enacted European Digital Identity Framework and applicable implementing rules. | Separate EBW legislation remained under negotiation at the research cut-off; final obligations and acceptance dates were unsettled. |
 
-* **Commission Proposal Published (Q4 2025)** – *Completed*. Marked the start of the legislative journey. This milestone set forth the vision and allowed preparatory work (impact assessments, initial standardization efforts) to proceed in parallel. Dependency: None (starting point). Uncertainty: Low – already done.
-* **Political Agreement on Regulation (Projected Q4 2026)**: The point at which Parliament and Council reach a provisional agreement (trilogue deal) on the EBW regulation’s text. This is a legal milestone – once achieved, the final adoption is almost certain. Dependencies: Sufficient consensus in Council (possibly unanimity if legal basis touches national IDs, but likely QMV under single market) and simple majority in Parliament. Uncertainty: Medium – timeline depends on political priorities and any contentious issues (e.g. data protection concerns or Member State readiness worries). If negotiations drag, this could slip to 2027. Gating events: Parliamentary first reading vote, Council general approach – if either is delayed, the overall timeline shifts.
-* **Formal Adoption & Publication (Projected Q1–Q2 2027)**: After legal-linguistic revisions, the regulation would be formally adopted and published in the Official Journal. Milestone: Publication = T0 for implementation timelines. Dependency: The previous political agreement. Uncertainty: Medium – exact quarter depends on legislative speed. If adoption happens earlier (mid-2026), publication could be late 2026. If late 2026 deal, publication early 2027. Gate: The 20-day wait post-publication after which the law is in force.
-* **Entry into Force (T0 + 20 days)**: The regulation becomes law across the EU. This triggers official work on implementation. Notably, Article X of the EBW proposal likely sets the application date for obligations: based on Commission info, Member States have 24 months from this date to comply. So, we start the clock for mandatory acceptance. Dependency: Publication date. Uncertainty: None on the 20-day rule itself.
-* **Establishment of National Implementation Projects (2027)**: Once the law is in force, each Member State will need to integrate EBW acceptance into their digital infrastructure. A milestone here is when Member States designate responsible bodies (e.g. a Ministry or Agency) and allocate budget for EBW implementation (adapting portals, training staff, etc.). Some Member States, like Germany, have already mobilized stakeholders – e.g. Germany gathered 75+ organizations in late 2025 to plan wallet readiness by 2027. Dependency: Political will and clarity of requirements (some may wait for final ARF/standards). Uncertainty: Medium – proactive countries vs. those waiting. Gate: This is more a soft milestone; delay here could jeopardize meeting the 2-year deadline.
-* **Standards Finalization (2026–2027)**: On the technical side, by mid-2026 to mid-2027 we expect finalization of critical standards and ARF updates. Milestones include: ETSI publication of TS/EN for QAA providers (e.g. TS 119 472) – needed for audit schemes; CEN or ETSI final guidance on wallet security (if a Protection Profile or similar is used in certification); the EBW Architecture Reference Framework published (target ~2027 as discussed). Dependency: These depend on the timely work of standard bodies and the EDICG toolbox group. Uncertainty: Medium – delays in standards (or divergence between standards and the Commission’s needs) could force iterative changes to implementing acts (the Commission has noted it may update IRs annually as needed when new standards are ready). Gate: The availability of standards is a conformance gate – wallet providers and trust service providers need them to build compliant systems.
-* **Pilot and Testing Phase (2026–2028)**: Leading up to mandatory acceptance, pilots will validate the system. The EU Large-Scale Pilots (like POTENTIAL, Atlantis, EWC, etc.) concluded in 2025 for the EBW wallet in EWC and WE BUILD LSPs; new or extended pilots focusing on legal entities (for example, a “Business Wallet Pilot” possibly under the Digital Europe Programme or national sandboxes) may run during 2026–27. A milestone could be a Multi-Country Pilot in 2027 where companies from several Member States use EBW in a controlled scenario (e.g. a cross-border public procurement). Dependency: Technical readiness of pilot systems (could use pre-standard tech). Uncertainty: Medium – success of pilots can influence confidence and identify last-minute issues. Gate: A conformance testing event in 2028 may be required – akin to a plugtest – that acts as a gate: if interoperability issues are found, either standards or implementations must be fixed before go-live.
-* **Wallet Provider Accreditation Begins (by 2027)**: To meet the 2028 deadline, wallet providers (likely a mix of state-operated and private) should start the conformity assessment process by late 2027. A milestone is the first EBW wallet solution certified under the scheme (possibly by a national cyber-security agency or accredited CAB). For example, a Member State’s pilot wallet might undergo assessment in 2027. Dependency: The certification scheme (CIR 2024/2981) is already in force, but possibly updated criteria for legal-person features might be issued by the Commission or Cooperation Group. Uncertainty: Medium – if certification criteria are too immature or CABs not ready, this could delay availability of approved wallets. Gate: At least one compliant wallet needs to exist for businesses to use – a delay here directly impacts rollout.
-* **Qualified Attestation Providers Onboarded (2027–2028)**: Another operational milestone: authentic sources (business registers, etc.) and other attribute providers start issuing digital credentials for companies. For EBW to be useful, businesses need verifiable data to put in it. By 2028, we expect each Member State’s business registry to either become a Qualified Attestation of Attributes provider or partner with one, so that, e.g., a certificate of incorporation can be obtained in wallet-friendly format. Dependency: Legal basis in EBW reg plus standards like ETSI TS for QAA. Also, cooperation of national authorities (possibly requiring changes in national laws to allow digital issuance). Uncertainty: Medium-high – some states might lag on this front. Gate: If key credentials (like company registration, tax ID, etc.) aren’t widely available as EAAs, the EBW’s utility is limited, even if the wallet tech is ready.
-* **Mandatory Acceptance Date (T0 + 24m, projected 2028–29)**: This is the hard legal milestone: two years after entry into force, all public sector bodies in the EU (from European Commission down to local municipalities) must accept the EBW for any of its “core functions”. That includes identification, authentication, signature/seal, data exchange, etc., as defined in the regulation. By this date, every Member State must ensure its e-government front-ends can interface with wallets – likely via the EBW Wallet standards (i.e. accepting verifiable 'Business Identity Credentials' such LPIDs or EUCCs). Dependency: Everything prior (legal adoption, standards, implementation, testing) feeds into this. Uncertainty: Moderate – the date itself is fixed by law once the regulation is in force, but the state of readiness can vary. The regulation might allow some “transitory measures” beyond this date for legacy systems, but non-compliance could lead to infringement procedures. Gate: This is effectively the final gate – after it, the system is considered live EU-wide.
-* **First Evaluation and Possible Adjustments (2030 and beyond)**: Though beyond the immediate scope, typically a regulation will require the Commission to report on its application after e.g. 3 or 4 years. We can foresee a 2030 review where the Commission evaluates EBW uptake (are companies actually using it?), interoperability issues, and possibly introduce amendments or new implementing acts. Also, by 2030 the market must accept EBW credentials (e.g. banks must accept an EBW-delivered KYC attribute by law if relevant). If adoption by private services is sluggish, the EU could consider further mandates at that point. Dependency: Post-implementation experience. Uncertainty: High (policy changes based on political context then). Gate: Not a prerequisite for initial success, but a check-point for long-term success.
+</div>
 
-<h2 id="roadmap-summary-table">4. Roadmap Summary Table</h2>
+**They work together:** a person can establish identity through an EUDI Wallet while a business wallet supplies company evidence and the authority to act for that company. Germany’s **d-you** is one national EUDI Wallet example, not a synonym for all EUDI Wallets. Its official project describes a user-centred personal wallet and a planned initial release in early 2027. See the [d-you / EUDI Wallet FAQ](https://eudi-wallet.gov.de/faq) and [official naming announcement](https://eudi-wallet.gov.de/news/d-you-name-logo-eudi-wallet). [<a href="#ref-dyou">9</a>]
 
-To encapsulate these milestones with timing and dependencies, see the Milestone Table below, followed by an illustrative infographic concept.
+<h2 id="fast-track-adoption-and-early-ebw-ready-solutions">Start with business value, cyber-resilience and Trusted AI</h2>
 
-| **Milestone**                               | **Date/Target**                  | **Description & Significance**                                                                                                                                                                                                                        | **Dependencies/Notes**                                                                                                                                                                                                                                           |
-| ------------------------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Commission EBW Proposal (COM(2025) 838)** | 19 Nov 2025 (Done)               | Commission proposed the EBW Regulation, defining scope (legal persons) and core functions. Begins legislative process and stakeholder consultations.                                                                                                  | Published alongside Digital Omnibus package. Stakeholder feedback positive, shaping Parliament/Council debate. |
-| **EU Parliament & Council Negotiations**    | Q1–Q4 2026 (ongoing)             | Parliament committee and Council working party review the proposal, suggest amendments. Likely political agreement by late 2026. Started under **Cyprus** Presidency.                                                                                                                      | *Dependency:* Stable EU political environment, priority in legislative agenda. Current Parliament (2024) and Commission must carry it forward.  |
-| **Trilogue Agreement**                      | Late 2026 (est.)                 | Provisional deal between Parliament, Council, Commission on final EBW text. Key details (timelines, obligations) finalized under **Irish** Presidency.                                                                                                                           | *Gate:* Must resolve any issues (e.g. data protection, scope). If delayed, pushes subsequent milestones.  |
-| **Formal Adoption & Publication**        | ~Q1 2027 (est.)                  | EBW Regulation formally adopted by EU co-legislators and published in the Official Journal (OJ, i.e. becomes Regulation (EU) 2027/XXXX).                                                                                                                       | Could be late 2026 if negotiations quick. Publication date = start of countdown for entry into force.          |
-| **Entry into Force of EBW Regulation (T0)**      | ~Q1–Q2 2027                      | 20 days after OJ publication, the regulation is in force. Legal obligations (like developing technical specs, notifying schemes) kick in. Under **Lithuania** Presidency.                                                                                                            | Marks T0 for implementation timeline. EBW legal basis now available for further actions.     |
-| **EU Cooperation Group Toolbox Update**     | 2026–2027                        | European Digital Identity Cooperation Group (EDICG) updates the **Architecture Reference Framework (ARF)** to include EBW specifics. Also drafts any new implementing acts as mandated by EBW regulation.                                             | *Dependency:* Final legal text clarity. Likely draft ARF v3.0 by 2027 aligned with EBW law. Ongoing standardization input.    |
-| **Standards Finalized (ETSI/CEN)**          | by mid-2027                      | Critical technical standards for EBW are published: e.g. **ETSI TS for Qualified Attestation of Attributes**, **ETSI TS for wallet interfaces (remote signing)**, any CEN guidelines for business attributes.                                         | *Dependency:* eIDAS expert input, piloting results. These standards feed into updated Implementing Acts or certification criteria if needed.        |
-| **National Implementation Kick-off**        | mid-2027                         | Member States designate authorities and budget for EBW integration. Begin upgrading e-government systems to accept wallets (e.g. integrating OIDC/VC verification in portals).                                                                        | Some countries (DE, FR) already started in 2025. Others might wait until now. EU funding (DEP, RRF) likely supports this.        |
-| **Pilot Programs & Testing**                | 2026–2027                        | Targeted pilots demonstrating EBW in action (e.g. Industry 4.0 & Supply Chain Data Spaces, cross-border procurement using pilot wallets, B2G Portal pilots). Interoperability **conformance testing event** by late 2027 to iron out issues.                                                                      | *Dependency:* Availability of prototype wallets and credentials. Informal WE BUILD reference wallet (2025) developed by Spherity to demonstrate EBW key features and processews. Outcome: “works at scale” as a EBW-ready soltuin by end-2026.   |
-| **Wallet Solutions Development**            | 2026–2028                        | Governments and providers develop EBW solutions. By 2027, at least one reference open-source or national wallet for businesses is in beta.                                                                                                            | Many personal EUDI wallet solutions (e.g. Germany’s ID-Wallet) could be extended for EBW. Close coordination via eIDAS Sandbox if applicable.                 |
-| **Conformity Assessment Framework Ready**   | ~2027                            | Accreditation of Conformity Assessment Bodies (CABs) for wallet certification (under CIR 2024/2981) is operational. CABs have criteria (possibly CC profiles) to certify wallets including EBW features.                                              | *Dependency:* Schemes and criteria likely defined by Cooperation Group. CAB training and accreditation through national authorities (e.g. ANSSI, BSI, etc.). Potential uncertainty if criteria need updates for multi-user wallets.   |
-| **Qualified Attribute Providers Onboard**   | 2027–2028                        | Business registries, tax authorities, etc. implement systems to issue **verifiable credentials (EAAs/QEAAs)** for company data. By 2028, core credentials (registration, VAT, licenses) available in digital signed form in most Member States.       | *Dependency:* Standards (data models), legal permission for digital issuance at national level. Some Member States may piggy-back on existing eIDAS nodes or SDG once-only infrastructure.       |
-| **First Final EBW Wallet Certified**              | mid-2028 (goal)                  | A milestone when a wallet (or module) achieves full certification under EU scheme – confirming it meets all security, functionality, interoperability requirements.                                                                                   | Could be a Member State wallet or private sector solution. This builds trust and allows broad deployment (similar significance as first eIDAS eID notified in 2018).   |
-| **EBW Go-Live: Mandatory Acceptance**       | T0 + 24 months:<br>**2028–2029**, *T0 = Entry into Force* | **All EU public administrations must accept EBW** for identification, signatures, data exchange by this date. EBW services officially go live EU-wide. Businesses can interact with any authority via the wallet, with legal guarantee of acceptance. | If entry into force was early 2027, this lands early 2029. Some Member States might quietly aim for late 2028 to be safe. *Gate:* The EU-wide interoperability infrastructure (e.g. trusted lists of wallets, discovery services) must be up and running by now. |
-| **Widespread Industry Adoption**            | 2028–2030                        | Private sector uptake grows. Banks, large companies, data space platforms begin accepting and using EBW credentials for KYC, supply chain, etc. (Not legally mandated by EBW Reg, but likely driven by efficiency gains).                             | *Dependency:* Network effect – once governments accept, companies start using for G2B and then extend to B2B. Possibly further EU initiatives or national laws could push sectors (e.g. finance) to recognize EBW by 2030 if voluntary uptake is slow.           |
-| **Post-Implementation Review**              | ~2030                            | Commission evaluates EBW’s impact, reports to Parliament/Council. Could propose adjustments if goals not met (e.g. if SMEs aren’t benefiting, or to mandate private-sector acceptance if needed).                                                     | *Dependency:* Sufficient data on usage and impact by then. This review is required typically ~3 years after application. It will inform any “EBW 2.0”.  |
+Organisations can assess and pilot bounded, lawful use cases before mandatory acceptance. The case for starting is the work that can be improved today: repeated evidence collection, slow onboarding, unclear authority and fragile recovery. Commit to expansion when a real counterparty, a lawful process and measured outcomes support it.
 
-<h2 id="rotating-presidencies-of-the-council-of-the-european-union-timeline">5. Rotating Presidencies of the Council of the European Union Timeline</h2>
+<h3 id="key-use-cases-of-the-ebw">Where to look for an initial business case</h3>
 
-List of the rotating Presidencies of the Council of the European Union (six-month terms) from 2025 until the end of 2030. The order is based on official rotation decisions and confirmed lists from the EU Info website and official EU Council rotation order.
+| Use case | Practical value to test | Evidence of success |
+| --- | --- | --- |
+| Supplier onboarding: know your business (KYB) / know your supplier (KYS) | Reuse current company evidence instead of repeatedly collecting and rekeying it. | Completion time, cost per accepted supplier, freshness and exception rates. |
+| Public procurement and business-to-government (B2G) filings | Combine company evidence with the representative’s current, limited authority. | A submission associated with the correct case, an explicit receipt or outcome, fewer correction cycles. |
+| Government-to-government evidence exchange | Obtain evidence from a competent authority through an authorised route. | Less reconciliation, lawful access, source-response times and complete case records. |
+| Data spaces and Digital Product Passports | Establish which company may access or update a shared record. | Appropriate access decisions, provenance and revocation performance. |
+| Industrial AI agents | Bind a software action to an organisation, a mandate and an enforced policy. | Rejection of out-of-scope actions, human escalation and a reconstructable action record. |
 
-| Year | Jan–Jun Presidency        | Jul–Dec Presidency        |
-|------|---------------------------|---------------------------|
-| *2025* | *Poland*                    | *Denmark*             |
-| 2026 | **Cyprus**                    | Ireland                   |
-| 2027 | Lithuania                 | Greece                    |
-| 2028 | Italy                     | Latvia                    |
-| 2029 | Luxembourg                | Netherlands               |
-| 2030 | Slovakia                  | Malta                     |
+**Cyber-resilience:** test impersonation resistance, revoked authority, replay, stale evidence, compromised endpoints and recovery. The wallet supplies evidence to an access decision; endpoint protection, incident response, privacy controls and continuity remain necessary. Start a cryptographic inventory and a risk-based post-quantum migration plan alongside wallet integration. [<a href="#ref-pqc">7</a>, <a href="#ref-zero-trust">12</a>]
 
-<h2 id="key-risks-and-dependencies">6. Key Risks and Dependencies</h2>
+**Europe’s Trusted AI opportunity:** interoperable business identity and bounded delegation can support accountable automation across the Single Market. Enforce permissions outside the generative model and bind them to the action actually executed. For physical AI, retain local safety controls and safe failure paths. A valid identity or mandate does not prove that an AI decision is correct, a product claim is true or a machine action is safe. These are implementation opportunities described in paper Sections 9–14, not demonstrated economy-wide benefits. [<a href="#ref-parliament">4</a>, <a href="#ref-ai-rmf">13</a>]
 
-Throughout these milestones, certain dependencies and risks stand out:
+<h2 id="key-risks-and-dependencies">Six readiness gates: what “EBW-ready” should mean</h2>
 
-* **Political Risk**: A delay in legislative adoption (e.g. due to other political crises or lower priority) could push everything back, compressing the implementation window. The 2024 European elections and subsequent Commission changeover add uncertainty – if a new Commission had different priorities, EBW could be slowed (though given it’s already proposed under von der Leyen II, it likely has continuity).
-* **Technical Risk**: If standardization outputs are delayed or if the chosen standards prove unimplementable at scale, that could cause a scramble. For instance, if ETSI cannot finalize QAA standards by 2026, Member States might each do their own for a while, causing fragmentation. The “agile” approach of annually revising implementing acts is a double-edged sword: it allows quick fixes, but also means implementers face moving targets.
-* **Operational Readiness**: Not all Member States are equally advanced in digital ID. Some might struggle to meet the 2-year deadline. For example, connecting hundreds of local authorities’ IT systems to accept EBW might be challenging. The regulation’s transitional clause hints they can use “existing similar systems” during a transition – this may be invoked by laggards, creating an uncertainty band of perhaps +1 year in some regions. A critical dependency here is the availability of funding and technical assistance (the Digital Europe Programme and Recovery Funds could be tapped to help nations implement EBW; without that, some might fall behind).
-* **Conformance and Trust**: A major gating factor is trust: businesses will only adopt the wallet if they trust its security and legal validity. Thus the conformity assessment processes (wallet certification, provider accreditation) must be fully operational before go-live. CABs need to be trained for wallet audits (which is new territory). Petteri Ihalainen (a conformity assessment expert) noted that CABs are eyeing the “tsunami of new business” from eIDAS 2 (wallet certification), but also that no certification system existed yet (as of late 2025) for wallets beyond an Austrian pilot, making it “impossible for a CAB to make a strategic decision right now”. This indicates that by 2026, the Cooperation Group must establish the Common Criteria profiles or equivalent so CABs worldwide can prepare. Any delay in that is a direct risk to the timeline.
+The paper’s framework evaluates a **specified transaction**, not a whole country or product in the abstract. A working credential exchange cannot compensate for an absent legal basis or an unprepared receiving service. All six gates need documented evidence before the selected production use. This is a research framework, not a certification scheme. See [Section 15]({{ page.pdf_url | relative_url }}#page=16).
+
+| Gate | Evidence to request |
+| --- | --- |
+| **L — Legal basis** | Applicable procedure, recognition scope and lawful use of the required evidence. |
+| **P — Technical profile** | A versioned specification manifest and exchange tests between independent providers. |
+| **C — Credentials** | A competent source for each required attribute, correct identifiers, coverage and freshness/status checks. |
+| **M — Mandates** | Action-specific authority, delegation limits and successful revocation tests. |
+| **S — Receiving service** | End-to-end case integration and an explicit submission or service outcome. |
+| **O — Operations** | Security, privacy, recovery, provider exit and an appropriate post-quantum migration plan. |
+
+The tender example in [Section 16]({{ page.pdf_url | relative_url }}#page=18) exercises these gates with a manufacturer, its representative, evidence issuers and a receiving authority. Test successful submission alongside revoked mandates, missing evidence, unsupported profiles, interrupted delivery and duplicate requests.
+
+<h2 id="practical-guidelines">Practical implementation guidance from Section 19</h2>
+
+1. **Choose one recurring transaction and its owner.** Record manual steps, required evidence, volume, delays and failure modes. Define a completed business outcome and a cost threshold before selecting technology.
+2. **Assemble a minimum viable ecosystem.** Include the business, a competent source or issuer, a real receiving counterparty, and wallet, verification and operational services. Agree semantics, evidence acceptance, support and responsibility for disputed outcomes. A demonstration within one vendor’s stack does not establish independent interoperability.
+3. **Set a value-realisation plan.** Name a benefit owner, baseline, target, measurement method and review date. Include costs across the business, issuer and receiver, plus support, parallel channels and migration. Distinguish time released from cash expenditure avoided.
+4. **Run a controlled pilot and test failures.** Apply the six gates. Test revoked authority, missing or stale evidence, outages, retries and recovery. Decide in advance what evidence would justify expansion, adjustment or stopping; record manual intervention.
+5. **Design and budget for change.** Separate business workflows from credential formats, protocols, trust services and cryptography. Use versioned interfaces, portable records and replaceable adapters. Assign a migration owner and rerun affected interoperability, authorisation and recovery checks when requirements change.
+
+An illustrative first cycle is **one month for design, one for integration and one for measurement**. This is a planning option from the paper, dependent on procurement, source availability and participant capacity, not a delivery promise.
+
+<h3 id="business-case">Measure value per completed transaction</h3>
+
+The paper proposes a transparent annual accounting model:
+
+**Net benefit = eligible annual transactions × completion share × (effort avoided per completion − variable cost) − annual fixed costs − exception and parallel-channel costs.**
+
+Its illustrative inputs are 1,200 transactions, 60% completion, €18 avoided effort, €3 variable cost, €7,000 fixed cost and €1,500 exception/parallel-channel cost. They yield **€2,300 annual net benefit**, with break-even completion around **47.2%**. At 40% completion the same case loses **€1,300**. These are invented management inputs, not benchmarks or a savings forecast. Pair the financial assessment with revocation, recovery, error and support measurements. [Sections 14 and 19]({{ page.pdf_url | relative_url }}#page=21).
+
+<h2 id="spherity-business-wallet">From WE BUILD testing to an EBW-ready Business Wallet</h2>
+
+**Spherity and Bundesanzeiger Verlag have developed a European Business Wallet and tested it in WE BUILD.** The collaboration connects wallet capabilities with verified business information, representation and enterprise processes. Spherity’s [EIDA Business Wallet overview](https://www.spherity.com/eida) describes the partnership and pilot use cases, including KYC/KYS/KYB, representative rights, corporate banking and data-space access. WE BUILD provides the wider European pilot and interoperability setting. [<a href="#ref-eida">10</a>, <a href="#ref-webuild">8</a>]
+
+Spherity is productising this work as an **EBW-ready Business Wallet**. See the [standalone Q1 2027 launch plan](#ebw-ready-wallet-launch) for the planned general-availability window, Bundesanzeiger Verlag partnership and infrastructure scope.
+
+For procurement, ask for the tested profile versions, participating counterparties, supported credentials, mandate lifecycle, service commitments, infrastructure certification scope and migration responsibilities. Pilot participation is useful implementation experience; final EBW conformity remains a separate matter.
+
+<section class="ebw-cta" aria-labelledby="start-now" markdown="1">
+<p class="ebw-eyebrow">Your next step · from 1 November 2026</p>
+<h2 id="start-now">Don’t wait to build business value.</h2>
+
+**Put business value, cyber-resilience and Europe’s Trusted AI opportunity on the same implementation agenda.** Start with one recurring transaction, one receiving partner and a measurable outcome. Use the assessment to decide whether a controlled pilot is justified, then scale what works.
+
+Bring your onboarding, procurement, compliance or AI-agent use case to Spherity. Define the minimum ecosystem, evidence requirements, delegated authority and recovery tests—and a practical path towards the planned Q1 2027 Business Wallet release.
+
+<p><a class="ebw-button" href="https://www.spherity.com/contact">Discuss your Business Wallet use case <span aria-hidden="true">↗</span></a></p>
+<p class="ebw-cta-note">1 November is a recommended action date, not a regulatory deadline or a general-availability announcement.</p>
+</section>
+
+<h2 id="research-boundaries">Research scope and limitations</h2>
+
+This is a comparative legal and technical policy analysis with a fixed evidence cut-off. It proposes a readiness framework and evaluation model; it does not report independently measured deployment savings or security outcomes. Specifications, negotiating positions, enacted requirements and product plans have different evidentiary status. Check the [official procedure record](https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025%2F0358%28COD%29) for subsequent developments.
+
+The author is affiliated with Spherity GmbH, which has commercial interests in digital identity and credential infrastructure. The product outlook above is additional company information supplied for this page; it is distinct from the manuscript’s documentary findings. The PDF preserves the supplied manuscript content and publication date; its descriptive metadata has been corrected.
 
 <section class="references" markdown="1">
-<h2 id="references">References</h2>
+<h2 id="references">Selected references and further reading</h2>
 
-1. European Commission (Press Release) — “[Simpler EU digital rules and new digital wallets to save billions for businesses and boost innovation](https://digital-strategy.ec.europa.eu/en/news/simpler-eu-digital-rules-and-new-digital-wallets-save-billions-businesses-and-boost-innovation),” 19 Nov 2025.
-2. European Commission (Digibyte) — “[Commission proposes European Business Wallets to simplify business operations and enhance competitiveness across the EU](https://digital-strategy.ec.europa.eu/en/news/commission-proposes-european-business-wallets-simplify-business-operations-and-enhance),” 19 Nov 2025.
-3. European Commission (Q&A) — “[Digital Package — European Business Wallets](https://digital-strategy.ec.europa.eu/en/faqs/digital-package),” 19 Nov 2025.
-4. European Commission (Fact Sheet) — “[The European Business Wallets in a nutshell](https://digital-strategy.ec.europa.eu/en/library/european-business-wallets-nutshell),” 19 Nov 2025.
-5. European Commission Policy & Legislation — “[Proposal for a Regulation on the establishment of European Business Wallets](https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-establishment-european-business-wallets),” 19 Nov 2025.
-6. Carsten Stöcker, Spherity GmbH, “[The European Business Wallet: A Strategic Pillar for Digital Identity and Industrial Competitiveness in the EU](https://medium.com/spherity/the-european-business-wallet-a-strategic-pillar-for-digital-identity-and-industrial-3f9983f7b299),” Medium, 2025.  
-7. Carsten Stöcker, Spherity GmbH, “[Digital Identity, Real World Impact: The Industrial Upside of the European Business Wallet (EBW)](https://medium.com/@cstoecker/digital-identity-real-world-impact-the-industrial-upside-of-the-european-business-wallet-eubw-d9e0c4e96aae),” Medium, 2025.  
+The full paper contains 46 references. The numbered references below support this page; numbering inside the roadmap follows the PDF.
+
+1. <span id="ref-commission"></span>European Commission. [Proposal establishing European Business Wallets, COM(2025) 838](https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-establishment-european-business-wallets), 19 November 2025. Proposed functions and legal baseline; Articles 16 and 22 govern the Commission’s timing model.
+2. <span id="ref-procedure"></span>European Parliament. [Legislative Observatory: 2025/0358(COD)](https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025%2F0358%28COD%29) and [first-trilogue event record, 14 October 2026](https://data.europarl.europa.eu/eli/dl/event/2025-0358-MEET-TRI1-2026-10-14).
+3. <span id="ref-council"></span>Council of the European Union. [General approach, ST 9684/26](https://data.consilium.europa.eu/doc/document/ST-9684-2026-INIT/en/pdf), 2 June 2026; [negotiating position adopted 9 June 2026](https://www.consilium.europa.eu/en/press/press-releases/2026/06/09/european-business-wallets-council-adopts-negotiating-position/).
+4. <span id="ref-parliament"></span>European Parliament, ITRE. [Report A10-0240/2026](https://www.europarl.europa.eu/RegData/seance_pleniere/textes_deposes/rapports/2026/0240/P10_A(2026)0240_EN.pdf), September 2026. Consolidated negotiating text, particularly Articles 6, 16 and 22.
+5. <span id="ref-eidas"></span>European Parliament and Council. [Regulation (EU) 2024/1183: European Digital Identity Framework](https://eur-lex.europa.eu/eli/reg/2024/1183/oj/eng). Enacted EUDI framework, distinct from the EBW proposal.
+6. <span id="ref-authentic-source"></span>European Commission. [Implementing Regulation (EU) 2026/1735](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32026R1735), amending attestation and authentic-source specifications. Article 1(3) applies from 1 January 2027.
+7. <span id="ref-pqc"></span>NIS Cooperation Group. [Coordinated implementation roadmap for the transition to post-quantum cryptography](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography), June 2025. Risk-based policy recommendations, not EBW acceptance law.
+8. <span id="ref-webuild"></span>WE BUILD Consortium. [About WE BUILD](https://www.webuildconsortium.eu/about-we-build). Business and payment use cases, technical foundations and interoperability testing.
+9. <span id="ref-dyou"></span>German EUDI Wallet project. [Frequently asked questions](https://eudi-wallet.gov.de/faq) and [d-you name and logo announcement](https://eudi-wallet.gov.de/news/d-you-name-logo-eudi-wallet). National personal-wallet example; consult the project for current availability.
+10. <span id="ref-eida"></span>Spherity. [EIDA European Business Wallet](https://www.spherity.com/eida). Company source for the Bundesanzeiger Verlag partnership and WE BUILD pilot use cases; product claims are not independent conformity evidence.
+11. <span id="ref-standards"></span>European Commission. [EUDI Architecture and Reference Framework 3.0.0](https://eudi.dev/3.0.0/). W3C. [Verifiable Credentials Data Model v2.0](https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/). Technical foundations; they do not alone establish final EBW compliance.
+12. <span id="ref-zero-trust"></span>NIST. [Zero Trust Architecture, SP 800-207](https://doi.org/10.6028/NIST.SP.800-207), 2020. Authentication, authorisation and resource-specific policy decisions.
+13. <span id="ref-ai-rmf"></span>NIST. [AI Risk Management Framework 1.0](https://doi.org/10.6028/NIST.AI.100-1), 2023. Trustworthiness includes validity, safety, security and accountability beyond identity.
 
 </section>

@@ -1,0 +1,241 @@
+{
+  "version": 1,
+  "metadata_source": "docs/global-digital-product-passport-regulation.md",
+  "metadata_updated_at": "2026-10-25T20:46:33Z",
+  "tool": "PyMuPDF 2.0",
+  "files": [
+    {
+      "file": "docs/Spherity-Research-Global-DPP-Whitepaper.pdf",
+      "source_bytes": 890913,
+      "source_sha256": "92e535b89ba11b2c3ca2d20835d06dfad0c8a1401d6e00084c54607aa3fc3d87",
+      "output_bytes": 905798,
+      "output_sha256": "7e1cf863cf45a2c2b6dba1f07315447a59484f38e9f51c2e9c7c17894662222a",
+      "pages": 63,
+      "info": {
+        "title": "Global Digital Product Passports",
+        "author": "Dr. Carsten Stöcker",
+        "subject": "Global Digital Product Passports and shared evidence infrastructure",
+        "keywords": "Digital Product Passport; ESPR; W3C; UNTP; business wallets; ODRL; evidence graph; access control; data spaces; physical AI"
+      },
+      "rights": {
+        "Copyright": "Copyright 2026 Dr. Carsten Stöcker, Spherity GmbH. Except where otherwise noted, this work is licensed under CC BY 4.0.",
+        "License": "https://creativecommons.org/licenses/by/4.0/",
+        "RightsSource": "https://spherity.github.io/spherity-research/global-digital-product-passport-regulation.html#license-and-citation",
+        "EditionDate": "2026-10-25"
+      },
+      "verification": {
+        "source_prefix_preserved": true,
+        "render_dpi": 150,
+        "all_page_pixels_identical": true,
+        "content_streams_identical": true,
+        "geometry_links_bookmarks_identical": true,
+        "bookmark_count": 64,
+        "xmp_present": true
+      }
+    },
+    {
+      "file": "docs/assets/dpp-global/whitepaper-v1/fig01_world_map.pdf",
+      "source_bytes": 163626,
+      "source_sha256": "1279b672442f00150a8250d4e91c4afa0fbe511ccb5890910794182b2536a6a6",
+      "output_bytes": 167870,
+      "output_sha256": "2b3703b72e5cf6eecfd5f45b101f3f35d5adf7838d7e81f928182b4be59c3a1d",
+      "pages": 1,
+      "info": {
+        "title": "Selected DPP evidence coverage",
+        "author": "Dr. Carsten Stöcker",
+        "subject": "World map of direct country evidence and EU scope joins, with a separate panel for global and European initiatives.",
+        "keywords": "Digital Product Passport; Selected DPP evidence coverage; Spherity DPP research"
+      },
+      "rights": {
+        "Copyright": "© 2026 Dr. Carsten Stöcker, Spherity GmbH. Natural Earth geometry is public domain where used.",
+        "License": "https://creativecommons.org/licenses/by/4.0/",
+        "RightsSource": "https://spherity.github.io/spherity-research/global-digital-product-passport-regulation.html#license-and-citation",
+        "EditionDate": "2026-10-25"
+      },
+      "verification": {
+        "source_prefix_preserved": true,
+        "render_dpi": 150,
+        "all_page_pixels_identical": true,
+        "content_streams_identical": true,
+        "geometry_links_bookmarks_identical": true,
+        "bookmark_count": 0,
+        "xmp_present": true
+      }
+    },
+    {
+      "file": "docs/assets/dpp-global/whitepaper-v1/fig02_regulatory_calendar.pdf",
+      "source_bytes": 74966,
+      "source_sha256": "022f6162a6113622cf61f09aef132bbda18ed54faeb42e136c71b671117be921",
+      "output_bytes": 79284,
+      "output_sha256": "967be6f0e71d85ff13568f22acbb0981211682f59f13713eab3c40ff8944ecbb",
+      "pages": 1,
+      "info": {
+        "title": "A calendar of different legal events",
+        "author": "Dr. Carsten Stöcker",
+        "subject": "Selected EU dates grouped into registry and passport events, adjacent product regimes and indicative ESPR adoption targets.",
+        "keywords": "Digital Product Passport; A calendar of different legal events; Spherity DPP research"
+      },
+      "rights": {
+        "Copyright": "© 2026 Dr. Carsten Stöcker, Spherity GmbH. Natural Earth geometry is public domain where used.",
+        "License": "https://creativecommons.org/licenses/by/4.0/",
+        "RightsSource": "https://spherity.github.io/spherity-research/global-digital-product-passport-regulation.html#license-and-citation",
+        "EditionDate": "2026-10-25"
+      },
+      "verification": {
+        "source_prefix_preserved": true,
+        "render_dpi": 150,
+        "all_page_pixels_identical": true,
+        "content_streams_identical": true,
+        "geometry_links_bookmarks_identical": true,
+        "bookmark_count": 0,
+        "xmp_present": true
+      }
+    },
+    {
+      "file": "docs/assets/dpp-global/whitepaper-v1/fig03_registry_services.pdf",
+      "source_bytes": 74717,
+      "source_sha256": "7025f172a37bc63791ed5aa6d6cc56fc14b5d4a4ddce6a1a3c4884114fd467cb",
+      "output_bytes": 79099,
+      "output_sha256": "56f088a3bb34ae09bc34af10189e5ee1bea8888e410ada5702921a563fe4c3c8",
+      "pages": 1,
+      "info": {
+        "title": "Registration, semantics, discovery and use",
+        "author": "Dr. Carsten Stöcker",
+        "subject": "Two statutory registry functions above a separate proposed arrangement of discovery, semantic services, evidence hosts and consumer controls.",
+        "keywords": "Digital Product Passport; Registration, semantics, discovery and use; Spherity DPP research"
+      },
+      "rights": {
+        "Copyright": "© 2026 Dr. Carsten Stöcker, Spherity GmbH. Natural Earth geometry is public domain where used.",
+        "License": "https://creativecommons.org/licenses/by/4.0/",
+        "RightsSource": "https://spherity.github.io/spherity-research/global-digital-product-passport-regulation.html#license-and-citation",
+        "EditionDate": "2026-10-25"
+      },
+      "verification": {
+        "source_prefix_preserved": true,
+        "render_dpi": 150,
+        "all_page_pixels_identical": true,
+        "content_streams_identical": true,
+        "geometry_links_bookmarks_identical": true,
+        "bookmark_count": 0,
+        "xmp_present": true
+      }
+    },
+    {
+      "file": "docs/assets/dpp-global/whitepaper-v1/fig04_wallet_evidence.pdf",
+      "source_bytes": 76796,
+      "source_sha256": "43f37aef49c1f8c95e7ff113e03de3b04145b872fa2e705dd7e79c50c8cf25e4",
+      "output_bytes": 81159,
+      "output_sha256": "9a35d6d1e492c35a541b41d77679cbe0216f46fb75c7473318a2a612cd64c5ba",
+      "pages": 1,
+      "info": {
+        "title": "DPP and business-wallet relationships",
+        "author": "Dr. Carsten Stöcker",
+        "subject": "Standards coordination above a proposed evidence exchange connecting identity and policy inputs, actor wallets, enforcement and product evidence.",
+        "keywords": "Digital Product Passport; DPP and business-wallet relationships; Spherity DPP research"
+      },
+      "rights": {
+        "Copyright": "© 2026 Dr. Carsten Stöcker, Spherity GmbH. Natural Earth geometry is public domain where used.",
+        "License": "https://creativecommons.org/licenses/by/4.0/",
+        "RightsSource": "https://spherity.github.io/spherity-research/global-digital-product-passport-regulation.html#license-and-citation",
+        "EditionDate": "2026-10-25"
+      },
+      "verification": {
+        "source_prefix_preserved": true,
+        "render_dpi": 150,
+        "all_page_pixels_identical": true,
+        "content_streams_identical": true,
+        "geometry_links_bookmarks_identical": true,
+        "bookmark_count": 0,
+        "xmp_present": true
+      }
+    },
+    {
+      "file": "docs/assets/dpp-global/whitepaper-v1/fig05_interoperability_evidence.pdf",
+      "source_bytes": 74840,
+      "source_sha256": "8156b8e2c86c64eedcce81dba090645cfa6769f68a7bb663e5c9f434ea3d6c4c",
+      "output_bytes": 79322,
+      "output_sha256": "ee0e6282266973b683d97a25757866bddfb18146dee7e9fbbd382b51c6ff0586",
+      "pages": 1,
+      "info": {
+        "title": "One reported exchange, ten distinct dimensions",
+        "author": "Dr. Carsten Stöcker",
+        "subject": "Ten interoperability dimensions for the Japan Battery Traceability Platform and Catena-X demonstration, with three reported conversion results and seven dimensions not assessed.",
+        "keywords": "Digital Product Passport; One reported exchange, ten distinct dimensions; Spherity DPP research"
+      },
+      "rights": {
+        "Copyright": "© 2026 Dr. Carsten Stöcker, Spherity GmbH. Natural Earth geometry is public domain where used.",
+        "License": "https://creativecommons.org/licenses/by/4.0/",
+        "RightsSource": "https://spherity.github.io/spherity-research/global-digital-product-passport-regulation.html#license-and-citation",
+        "EditionDate": "2026-10-25"
+      },
+      "verification": {
+        "source_prefix_preserved": true,
+        "render_dpi": 150,
+        "all_page_pixels_identical": true,
+        "content_streams_identical": true,
+        "geometry_links_bookmarks_identical": true,
+        "bookmark_count": 0,
+        "xmp_present": true
+      }
+    },
+    {
+      "file": "docs/assets/dpp-global/whitepaper-v1/fig06_product_ai_continuum.pdf",
+      "source_bytes": 74466,
+      "source_sha256": "8b7c3d7e889af99c40d405b943cb25000b5052b59943c3368cb744394fa4cd9c",
+      "output_bytes": 78861,
+      "output_sha256": "bdc6e1b804fe333c89d534e52a03304b5ac43a5fe2d2f1b66faa38642c767e3d",
+      "pages": 1,
+      "info": {
+        "title": "Shared evidence functions across product forms",
+        "author": "Dr. Carsten Stöcker",
+        "subject": "Physical products, physical AI and virtual products connect to shared evidence functions and separate decision and enforcement controls.",
+        "keywords": "Digital Product Passport; Shared evidence functions across product forms; Spherity DPP research"
+      },
+      "rights": {
+        "Copyright": "© 2026 Dr. Carsten Stöcker, Spherity GmbH. Natural Earth geometry is public domain where used.",
+        "License": "https://creativecommons.org/licenses/by/4.0/",
+        "RightsSource": "https://spherity.github.io/spherity-research/global-digital-product-passport-regulation.html#license-and-citation",
+        "EditionDate": "2026-10-25"
+      },
+      "verification": {
+        "source_prefix_preserved": true,
+        "render_dpi": 150,
+        "all_page_pixels_identical": true,
+        "content_streams_identical": true,
+        "geometry_links_bookmarks_identical": true,
+        "bookmark_count": 0,
+        "xmp_present": true
+      }
+    },
+    {
+      "file": "docs/assets/dpp-global/whitepaper-v1/fig07_convergence_scenarios.pdf",
+      "source_bytes": 74382,
+      "source_sha256": "1a0611c3321cf23c35837b621fb3a61c73ef822548221fccf2308108c9a6b68d",
+      "output_bytes": 78721,
+      "output_sha256": "1964556895e3fb6fffeee32d667f2a1a5641f9325e92856e844417669a2b76f9",
+      "pages": 1,
+      "info": {
+        "title": "Four scenarios for scoped DPP convergence",
+        "author": "Dr. Carsten Stöcker",
+        "subject": "Four scenarios cross demonstrated technical interoperability with institutional recognition for one specified operation.",
+        "keywords": "Digital Product Passport; Four scenarios for scoped DPP convergence; Spherity DPP research"
+      },
+      "rights": {
+        "Copyright": "© 2026 Dr. Carsten Stöcker, Spherity GmbH. Natural Earth geometry is public domain where used.",
+        "License": "https://creativecommons.org/licenses/by/4.0/",
+        "RightsSource": "https://spherity.github.io/spherity-research/global-digital-product-passport-regulation.html#license-and-citation",
+        "EditionDate": "2026-10-25"
+      },
+      "verification": {
+        "source_prefix_preserved": true,
+        "render_dpi": 150,
+        "all_page_pixels_identical": true,
+        "content_streams_identical": true,
+        "geometry_links_bookmarks_identical": true,
+        "bookmark_count": 0,
+        "xmp_present": true
+      }
+    }
+  ],
+  "timestamp_note": "Existing sourced creation dates preserved. ReportLab's year-2000 placeholder removed; EditionDate identifies the supplied 2026-10-25 manuscript edition, not an invented original creation time."
+}

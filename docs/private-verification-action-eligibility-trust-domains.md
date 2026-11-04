@@ -135,14 +135,14 @@ spatial_coverage:
   - "European Union"
   - "Global"
 
-series_name: "Governing AI That Acts Across Companies"
+series_name: "Governing Safe AI That Acts Across Companies"
 series_description: "A four-part AI Safety series connecting incentive-compatible protected execution, runtime assurance and private cross-domain verification."
 series_url: "/governing-ai-that-acts-across-companies.html"
 series_position: 3
 series_items:
   - position: 0
     label: "Executive brief"
-    title: "Governing AI That Acts Across Companies"
+    title: "Governing Safe AI That Acts Across Companies"
     url: "/governing-ai-that-acts-across-companies.html"
   - position: 1
     label: "Paper 1"
@@ -200,7 +200,7 @@ questions_answered:
   - question: "Does revocation stop an effect that is already pending?"
     answer: "Not by itself. Revocation can block future admission, while an earlier remote effect may still require a containment request, kill-switch action, compensating control and independently verified closure."
 related_publications:
-  - title: "Governing AI That Acts Across Companies"
+  - title: "Governing Safe AI That Acts Across Companies"
     url: "/governing-ai-that-acts-across-companies.html"
     context: "The executive brief explains why private cross-domain verification is a leadership and deployment capability."
   - title: "Program Equilibria and Protected Execution"

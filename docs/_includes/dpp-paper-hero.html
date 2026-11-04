@@ -1,0 +1,50 @@
+<section class="dpp-paper-thesis" id="paper-thesis" aria-labelledby="dpp-thesis-heading">
+  <p class="dpp-thesis-kicker">The paper’s working thesis</p>
+  <h2 id="dpp-thesis-heading">A shared evidence infrastructure for DPPs and AI</h2>
+  <blockquote>
+    <p>Access-controlled, verifiable evidence graphs for physical products, virtual products and physical AI—built on open international standards and open-world semantics.</p>
+  </blockquote>
+  <p class="dpp-thesis-outlook"><strong>Author’s outlook · 2026–2029.</strong> We expect local initiatives to converge through global trade, interoperable infrastructure and mutual acceptance of DPP evidence, with wider US participation and AI accelerating integration.</p>
+  <div class="dpp-thesis-footer">
+    <p>A research hypothesis to test as the paper develops.</p>
+    <a href="{{ '/dpp-explorer/?view=graph#graph-outlook' | relative_url }}">Why the graph is still fragmented <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+<section class="dpp-paper-hero" id="world-map" aria-labelledby="dpp-map-heading">
+  <div class="dpp-map-intro">
+    <div>
+      <p class="dpp-map-kicker"><span aria-hidden="true"></span> Global DPP Atlas · Release 0.1.0</p>
+      <h2 id="dpp-map-heading">Explore global DPP regulation</h2>
+      <p>Start with regulatory phases around the world, then follow standards and their evidence. Select a country to inspect scope, dates and sources.</p>
+    </div>
+    <span class="dpp-map-snapshot">Baseline 23 October 2026<br><strong>Phase review · 25 October</strong></span>
+  </div>
+  <figure class="dpp-map-feature">
+    <iframe class="dpp-map-frame"
+            src="{{ '/dpp-explorer/?embed=map&mapMode=regulation' | relative_url }}"
+            title="Interactive world map of DPP regulatory phases and related product-traceability measures"
+            aria-describedby="dpp-map-caveat"
+            width="1000" height="680" loading="eager" allow="fullscreen" allowfullscreen></iframe>
+    <figcaption id="dpp-map-caveat">
+      <strong>Phases, with scope.</strong> Colours distinguish applicable sector duties, adopted frameworks, proposals and early public initiatives. Stripes mark territorial measures. EU shading reflects shared instrument scope; grey means unassessed. Inspect sources and dates before drawing conclusions. Human review is pending.
+      <a href="{{ '/dpp-explorer/coverage.html' | relative_url }}">Read the accessible coverage table and limitations</a>.
+    </figcaption>
+  </figure>
+  <nav class="dpp-map-actions" aria-label="Explore DPP research">
+    <a class="dpp-map-primary" href="{{ '/dpp-explorer/?view=map' | relative_url }}">Open full world map <span aria-hidden="true">↗</span></a>
+    <a class="dpp-map-secondary" href="{{ '/dpp-explorer/?view=graph' | relative_url }}">Explore knowledge graph <span aria-hidden="true">→</span></a>
+    <a class="dpp-map-secondary" href="{{ '/dpp-explorer/data/knowledge-graph.json' | relative_url }}" download="global-dpp-knowledge-graph.json">Download graph JSON <span aria-hidden="true">↓</span></a>
+    <a class="dpp-map-text" href="{{ '/dpp-explorer/catalogue.html' | relative_url }}">Static evidence catalogue</a>
+  </nav>
+  {% if page.paper_placeholder %}
+  <aside class="dpp-paper-status" aria-labelledby="dpp-paper-status-title">
+    <svg class="dpp-paper-icon" viewBox="0 0 32 40" aria-hidden="true" focusable="false"><path d="M3 1h17l9 9v29H3z"/><path d="M20 1v10h9"/></svg>
+    <div>
+      <p class="dpp-paper-state">Paper in preparation</p>
+      <h3 id="dpp-paper-status-title">{{ page.paper_placeholder.label }}</h3>
+      <p>{{ page.paper_placeholder.description }}</p>
+    </div>
+    <a class="dpp-paper-download" href="{{ page.paper_placeholder.url | relative_url }}" download>Download blank PDF <span aria-hidden="true">↓</span></a>
+  </aside>
+  {% endif %}
+</section>

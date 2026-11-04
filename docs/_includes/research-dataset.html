@@ -1,0 +1,24 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "{{ page.canonical_url }}#dataset-{{ page.dataset.version }}",
+  "name": {{ page.dataset.name | jsonify }},
+  "description": {{ page.dataset.description | jsonify }},
+  "version": {{ page.dataset.version | jsonify }},
+  "url": {{ page.dataset.url | absolute_url | jsonify }},
+  "dateCreated": {{ page.dataset.date_created | jsonify }},
+  "creativeWorkStatus": "Research seed; machine-assisted; qualified human review pending",
+  "copyrightNotice": {{ page.dataset.rights_statement | jsonify }},
+  "isBasedOn": {{ page.dataset.protocol_url | absolute_url | jsonify }},
+  "subjectOf": { "@id": "{{ page.canonical_url }}#article" },
+  "distribution": [
+    {% for distribution in page.dataset.distributions %}{
+      "@type": "DataDownload",
+      "name": {{ distribution.name | jsonify }},
+      "contentUrl": {{ distribution.url | absolute_url | jsonify }},
+      "encodingFormat": {{ distribution.encoding_format | jsonify }}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}
+</script>

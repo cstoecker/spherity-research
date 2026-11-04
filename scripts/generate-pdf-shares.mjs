@@ -1,7 +1,12 @@
+import {dpp5PaperPath, loadDpp5ImageMetadata} from "./lib/dpp5-image-metadata.mjs";
 import { access, mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
 import { loadPdfShares, publicUrl } from "./lib/pdf-sharing.mjs";
+import { embedImageXmp } from "./lib/image-metadata.mjs";
+import { dppPaperPath, loadDppImageMetadata } from "./lib/dpp-image-metadata.mjs";
+import { ebwPaperPath, loadEbwImageMetadata } from "./lib/ebw-image-metadata.mjs";
+import { palantirPages, loadPalantirImageMetadata } from "./lib/palantir-image-metadata.mjs";
 
 const option = (key, fallback) => {
   const index = process.argv.indexOf(key);
@@ -10,6 +15,11 @@ const option = (key, fallback) => {
 const sourceDirectory = path.resolve(option("--source-dir", "docs"));
 const siteDirectory = path.resolve(option("--site-dir", "_site"));
 const { config, records } = await loadPdfShares(sourceDirectory);
+const dppImageMetadata = records.some(record => record.pagePath === dppPaperPath)
+  ? await loadDppImageMetadata(sourceDirectory) : {};
+const imageMetadata = {...dppImageMetadata, ...(records.some(record => record.pagePath === dpp5PaperPath) ? await loadDpp5ImageMetadata(sourceDirectory) : {}), ...(records.some(record => record.pagePath === ebwPaperPath)
+  ? await loadEbwImageMetadata(sourceDirectory) : {}), ...(records.some(record => palantirPages.includes(record.pagePath))
+  ? await loadPalantirImageMetadata(sourceDirectory) : {})};
 const escape = (value) => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;")
   .replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#39;");
 const relativeUrl = (value) => `${config.baseurl || ""}${value.split("/").map(encodeURIComponent).join("/")}`;
@@ -30,8 +40,10 @@ for (const record of records) {
   const image = await sharp({ create: { width: 1200, height: 630, channels: 3, background: "#eef3f6" } })
     .composite([{ input: border, left: left - 2, top: top - 2 }, { input: cover.data, left, top }])
     .jpeg({ quality: 90, mozjpeg: true }).toBuffer();
-  if (image.length > 250 * 1024) throw new Error(`${record.pdfPath}: screenshot preview exceeds 250 KB.`);
-  await writeFile(path.join(siteDirectory, record.imagePath.slice(1)), image);
+  const imageWithMetadata = imageMetadata[record.imagePath]
+    ? embedImageXmp(image, imageMetadata[record.imagePath]) : image;
+  if (imageWithMetadata.length > 250 * 1024) throw new Error(`${record.pdfPath}: screenshot preview exceeds 250 KB.`);
+  await writeFile(path.join(siteDirectory, record.imagePath.slice(1)), imageWithMetadata);
   const coverMetadata = await sharp(sourceCover).metadata();
   const shareUrl = publicUrl(config, record.sharePath);
   const imageUrl = publicUrl(config, record.imagePath);

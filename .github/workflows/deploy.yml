@@ -40,6 +40,12 @@ jobs:
         id: pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
 
+      - name: Prepare atlas and verify immutable release
+        run: pnpm run atlas:prepare
+
+      - name: Generate accessible robot evidence records
+        run: node scripts/generate-robot-evidence.mjs
+
       - name: Build Jekyll site
         uses: actions/jekyll-build-pages@44a6e6beabd48582f863aeeb6cb2151cc1716697 # v1.0.13
         with:
@@ -57,6 +63,12 @@ jobs:
 
       - name: Minify HTML and CSS
         run: pnpm run optimize
+
+      # Exercise the review candidate against the real Jekyll output even while
+      # the unchanged production gate below rejects an unsealed Atlas release.
+      - name: Validate PR preview, media metadata, and Atlas integrity
+        if: github.event_name == 'pull_request'
+        run: pnpm run check:atlas-preview
 
       - name: Enforce SEO, AEO, GEO, author identity, search research, links, and assets
         run: pnpm run check

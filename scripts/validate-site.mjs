@@ -5,6 +5,8 @@ import process from "node:process";
 import { glob } from "glob";
 import { parse as parseYaml } from "yaml";
 import { loadPdfShares, publicUrl } from "./lib/pdf-sharing.mjs";
+import { loadSitemapDownloads } from "./lib/sitemap-images.mjs";
+import { verifyAtlasPublication } from "../dpp-explorer/scripts/publication-release.mjs";
 
 const getArgument = (name, fallback) => {
   const index = process.argv.indexOf(name);
@@ -18,6 +20,19 @@ const basePath = "/spherity-research";
 const canonicalOrigin = "https://spherity.github.io/spherity-research";
 const indexNowKey = "ae12be17912040a1bceb67f0efcc1cf3";
 const errors = [];
+const warnings = [];
+const allowDrafts = process.argv.includes("--allow-drafts");
+const atlasRoutes = new Set(["dpp-explorer/index.html", "dpp-explorer/catalogue.html", "dpp-explorer/catalogue-0.1.0.html", "dpp-explorer/rights.html", "dpp-explorer/coverage.html"]);
+const hasDraftRobots = value => {
+  const tokens = String(value || "").toLowerCase().split(/[,\s]+/).filter(Boolean);
+  return tokens.includes("noindex") && tokens.includes("follow") && !tokens.includes("index") && !tokens.includes("nofollow");
+};
+const isDraftAtlas = data => data?.publication_type === "atlas" && data?.schema_type === "CreativeWork" && data?.publication_state === "draft" && hasDraftRobots(data?.robots);
+const permitsDraftAtlas = data => allowDrafts && isDraftAtlas(data);
+// A completed whitepaper may accompany an explicitly unsealed Atlas candidate.
+// This exception applies only to Atlas routes, never to paper publication checks.
+const isPaperWithAtlas = data => data?.publication_type === "paper" && data?.schema_type === "ScholarlyArticle" && data?.dpp_paper === true && Boolean(data?.dataset);
+const isCandidateAtlasOwner = data => isPaperWithAtlas(data) && data?.atlas_release_state === "candidate";
 // These pages predate publication template v2. Any new research-page filename
 // must opt into v2, so copying an older paper cannot silently bypass the new
 // author-identity and search-research checks.
@@ -515,6 +530,35 @@ for (const markdownFile of markdownFiles) {
   }
 
   researchPages.push({ file: markdownFile, data, content });
+  if (data.publication_type === "atlas" || isPaperWithAtlas(data)) {
+    if (data.publication_type === "atlas" && data.schema_type !== "CreativeWork") errors.push(`${markdownFile}: atlas landing must declare schema_type: CreativeWork.`);
+    if (isCandidateAtlasOwner(data) && !allowDrafts) errors.push(`${markdownFile}: accompanying Atlas candidate is unsealed; use --allow-drafts only for review preview validation.`);
+    if (isPaperWithAtlas(data) && !isCandidateAtlasOwner(data)) {
+      try {
+        await verifyAtlasPublication(data, { repositoryRoot: projectDirectory, siteDirectory });
+      } catch (error) {
+        errors.push(`${markdownFile}: Atlas publication verification failed: ${error.message}`);
+      }
+    }
+    if (data.publication_state === "draft") {
+      if (!isDraftAtlas(data)) errors.push(`${markdownFile}: draft atlas requires noindex, follow and CreativeWork metadata.`);
+      else if (!allowDrafts) errors.push(`${markdownFile}: draft atlas is not publication-ready; use --allow-drafts only for review preview validation.`);
+    }
+    for (const field of ["name", "description", "version", "url", "date_created", "rights_statement", "protocol_url"]) {
+      if (!data.dataset?.[field]) errors.push(`${markdownFile}: atlas dataset requires ${field}.`);
+    }
+    if (asArray(data.dataset?.distributions).length < 2) errors.push(`${markdownFile}: atlas dataset requires at least JSON and JSON-LD distributions.`);
+    for (const distribution of asArray(data.dataset?.distributions)) {
+      if (!distribution?.name || !distribution?.encoding_format || !distribution?.url) errors.push(`${markdownFile}: every dataset distribution needs name, encoding_format and url.`);
+      else if (!distribution.url.includes(`/releases/${data.dataset.version}/`)) errors.push(`${markdownFile}: dataset distribution must use its immutable release URL.`);
+    }
+  }
+
+  if (data.paper_in_preparation === true) {
+    if (!isDraftAtlas(data)) errors.push(`${markdownFile}: an in-preparation paper must remain an explicit noindex atlas draft.`);
+    if (!data.paper_placeholder) errors.push(`${markdownFile}: in-preparation paper requires an explicit paper_placeholder download.`);
+    if (data.pdf_url || asArray(data.associated_media).length) errors.push(`${markdownFile}: a placeholder must not use paper PDF or associated-media metadata.`);
+  }
 
   const requiredFields = [
     "title",
@@ -626,11 +670,13 @@ for (const markdownFile of markdownFiles) {
     }
 
     const searchResearch = data.search_research || {};
+    const searchReviewIssues = permitsDraftAtlas(data) ? warnings : errors;
+    if (data.publication_type === "atlas" && searchResearch.status === "pending") searchReviewIssues.push(`${markdownFile}: search_research review is explicitly pending.`);
     for (const [field, minimum] of searchResearchRequirements) {
       const value = searchResearch[field];
       const count = asArray(value).length;
       if (count < minimum) {
-        errors.push(
+        (permitsDraftAtlas(data) && ["reviewed_on", "evidence"].includes(field) ? warnings : errors).push(
           `${markdownFile}: search_research.${field} requires at least ${minimum} ` +
             `${minimum === 1 ? "entry" : "entries"}.`
         );
@@ -644,7 +690,7 @@ for (const markdownFile of markdownFiles) {
     }
     const searchReviewDate = Date.parse(searchResearch.reviewed_on);
     if (Number.isNaN(searchReviewDate)) {
-      errors.push(`${markdownFile}: search_research.reviewed_on must be a valid date.`);
+      (permitsDraftAtlas(data) && !searchResearch.reviewed_on ? warnings : errors).push(`${markdownFile}: search_research.reviewed_on must be a valid date.`);
     } else {
       const lastModifiedDate = Date.parse(data.last_modified_at);
       if (!Number.isNaN(lastModifiedDate) && searchReviewDate > lastModifiedDate) {
@@ -781,6 +827,25 @@ for (const markdownFile of markdownFiles) {
         if (!Array.isArray(figure?.keywords) || figure.keywords.length < 3) {
           errors.push(`${label} requires at least three discovery keywords.`);
         }
+        if (figure?.license !== undefined && (typeof figure.license !== "string" || !isHttpsUrl(figure.license))) {
+          errors.push(`${label}: license must be an absolute HTTPS URL.`);
+        }
+        if (figure?.copyright_holder !== undefined) {
+          const holder = figure.copyright_holder;
+          if (!holder || typeof holder !== "object" || Array.isArray(holder)) {
+            errors.push(`${label}: copyright_holder must be an object with type, name and url.`);
+          } else {
+            if (!["Person", "Organization"].includes(holder.type)) {
+              errors.push(`${label}: copyright_holder.type must be Person or Organization.`);
+            }
+            if (typeof holder.name !== "string" || !holder.name.trim()) {
+              errors.push(`${label}: copyright_holder.name must be a non-empty name.`);
+            }
+            if (typeof holder.url !== "string" || !isHttpsUrl(holder.url)) {
+              errors.push(`${label}: copyright_holder.url must be an absolute HTTPS URL.`);
+            }
+          }
+        }
         if (figure?.id && figureIds.has(figure.id)) {
           errors.push(`${markdownFile}: duplicate figure id ${figure.id}.`);
         }
@@ -911,6 +976,18 @@ for (const markdownFile of markdownFiles) {
     }
   }
 
+  // Layout includes may own valid ToC anchors (for example the paper map hero).
+  // Read only this page's contained output; never exempt a target just by name.
+  let renderedTocHtml = "";
+  if (typeof data.permalink === "string" && data.permalink.startsWith("/")) {
+    const relativeOutput = data.permalink.replace(/^\/+/, "").replace(/\/$/, "/index.html") || "index.html";
+    const renderedOutput = path.resolve(siteDirectory, ...relativeOutput.split("/"));
+    const relativeToSite = path.relative(siteDirectory, renderedOutput);
+    if (relativeToSite !== ".." && !relativeToSite.startsWith(`..${path.sep}`) && !path.isAbsolute(relativeToSite) && await exists(renderedOutput)) {
+      renderedTocHtml = await readFile(renderedOutput, "utf8");
+    }
+  }
+  const containsTocAnchor = (markup, id) => markup.includes(`id="${id}"`) || markup.includes(`id='${id}'`);
   for (const item of data.toc_items || []) {
     if (
       item.href?.startsWith("#") &&
@@ -918,7 +995,8 @@ for (const markdownFile of markdownFiles) {
       item.href !== "#questions-answered-zh" &&
       item.href !== "#reference-architecture-zh" &&
       item.href !== "#license-and-citation" &&
-      !content.includes(`id="${item.href.slice(1)}"`)
+      !containsTocAnchor(content, item.href.slice(1)) &&
+      !containsTocAnchor(renderedTocHtml, item.href.slice(1))
     ) {
       errors.push(`${markdownFile}: ToC target is missing: ${item.href}`);
     }
@@ -1011,7 +1089,7 @@ for (const card of asArray(socialCards)) {
       (!Array.isArray(card.topics) || card.topics.length < 3)
     ) {
       errors.push(
-        `${card.publication_url}: non-catalog series cards require at least three topic labels.`
+        `${card.publication_url}: non-catalog cards require at least three topic labels.`
       );
     }
     if (card.visual && !(await exists(sourcePathFromPublicUrl(card.visual)))) {
@@ -1134,6 +1212,10 @@ for (const publication of publications) {
     );
   }
 
+  if (matchingPage?.data.publication_type === "atlas" && (publication.publication_type !== "atlas" || publication.publication_state !== matchingPage.data.publication_state)) {
+    errors.push(`Publication catalog: atlas type/state must match ${matchingPage.file}.`);
+  }
+
   if (matchingPage && matchingPage.data.title !== publication.title) {
     errors.push(
       `Publication catalog: title differs from ${matchingPage.file}: "${publication.title}".`
@@ -1186,9 +1268,9 @@ for (const publication of publications) {
         `Publication catalog: "${publication.title}" links a PDF but its format does not include PDF.`
       );
     }
-    if (matchingPage?.data.pdf_url !== link.url) {
+    if (matchingPage?.data.pdf_url !== link.url && !asArray(matchingPage?.data.associated_media).some(media => media.url === link.url)) {
       errors.push(
-        `Publication catalog: PDF link for "${publication.title}" must match pdf_url on its HTML landing page.`
+        `Publication catalog: PDF link for "${publication.title}" must match a declared PDF on its HTML landing page.`
       );
     }
   }
@@ -1197,17 +1279,6 @@ for (const publication of publications) {
 const researchPagePermalinks = new Set(
   researchPages.map(({ data }) => data.permalink).filter(Boolean)
 );
-for (const socialCardUrl of socialCardsByUrl.keys()) {
-  if (
-    !publicationCatalogUrls.has(socialCardUrl) &&
-    !researchPagePermalinks.has(socialCardUrl)
-  ) {
-    errors.push(
-      `Social cards: ${socialCardUrl} is neither a catalog publication nor a research sub-page.`
-    );
-  }
-}
-
 const favicon = path.join(
   sourceDirectory,
   decodeURIComponent(config.favicon.replace(/^\/+/, ""))
@@ -1256,8 +1327,10 @@ const htmlFiles = await glob("**/*.html", {
 // Only mapped, generated PDF share pages may be noindex aliases. An arbitrary
 // file under /share/ must still satisfy the ordinary public-page rules below.
 let pdfShares = [];
+let figureDownloads = new Map();
+let placeholderDownloads = new Map();
 try {
-  ({ records: pdfShares } = await loadPdfShares(sourceDirectory));
+  ({ records: pdfShares, figureDownloads, placeholderDownloads } = await loadPdfShares(sourceDirectory));
 } catch (error) {
   errors.push(`PDF sharing: ${error.message}`);
 }
@@ -1292,6 +1365,77 @@ const anchorUrls = (html, pageUrl) => new Set(htmlTags(html, "a").flatMap(({ hre
     return [];
   }
 }));
+
+// Standalone tools have static HTML rather than publication front matter.
+// Declaring one must still bind its card to a real page and crawler-visible metadata.
+for (const [socialCardUrl, card] of socialCardsByUrl) {
+  const isPublication = publicationCatalogUrls.has(socialCardUrl) || researchPagePermalinks.has(socialCardUrl);
+  if (card.page_type !== undefined && card.page_type !== "website") {
+    errors.push(`${socialCardUrl}: unsupported social-card page_type ${card.page_type}.`);
+  }
+  if (card.page_type !== "website") {
+    if (!isPublication) errors.push(`Social cards: ${socialCardUrl} is neither a catalog publication nor a research sub-page or declared website.`);
+    continue;
+  }
+  if (isPublication) errors.push(`${socialCardUrl}: publication cards cannot be classified as standalone websites.`);
+  if (card.mode !== "generated") errors.push(`${socialCardUrl}: standalone website cards must be generated.`);
+  if (!socialCardUrl.startsWith("/") || socialCardUrl.startsWith("//") || /[\\?#%]/.test(socialCardUrl) || socialCardUrl.split("/").some(part => part === "." || part === "..") || !/(?:\/|\.html)$/.test(socialCardUrl)) {
+    errors.push(`${socialCardUrl}: standalone website card requires a local HTML page URL.`);
+    continue;
+  }
+  const pagePath = shareOutputPath(socialCardUrl.endsWith("/") ? `${socialCardUrl}index.html` : socialCardUrl);
+  if (!(await exists(pagePath)) || !(await stat(pagePath)).isFile()) {
+    errors.push(`${socialCardUrl}: standalone social-card page does not exist in the rendered site.`);
+    continue;
+  }
+  const html = await readFile(pagePath, "utf8");
+  const head = (html.replace(/<!--[\s\S]*?-->/g, "").match(/<head\b[^>]*>([\s\S]*?)<\/head>/i)?.[1] || "").replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi, "");
+  const metadata = htmlTags(head, "meta");
+  const canonicalUrl = sharePublicUrl(socialCardUrl);
+  const imageUrl = card.output ? sharePublicUrl(card.output) : "";
+  const canonicals = htmlTags(head, "link").filter(link => link.rel?.toLowerCase() === "canonical");
+  if (canonicals.length !== 1 || canonicals[0].href !== canonicalUrl) errors.push(`${socialCardUrl}: standalone website canonical must equal ${canonicalUrl}.`);
+  const readMeta = (kind, name) => {
+    const matches = metadata.filter(meta => meta[kind]?.toLowerCase() === name);
+    if (matches.length !== 1 || !matches[0].content?.trim()) errors.push(`${socialCardUrl}: requires exactly one nonempty static ${name} metadata value.`);
+    return matches[0]?.content;
+  };
+  const imageType = /\.jpe?g$/i.test(card.output || "") ? "image/jpeg" : /\.png$/i.test(card.output || "") ? "image/png" : /\.webp$/i.test(card.output || "") ? "image/webp" : "";
+  if (!imageType) errors.push(`${socialCardUrl}: standalone social-card output requires a supported image format.`);
+  for (const [name, value] of Object.entries({
+    "og:type": "website", "og:url": canonicalUrl, "og:site_name": config.title,
+    "og:image": imageUrl, "og:image:secure_url": imageUrl, "og:image:type": imageType,
+    "og:image:width": "1200", "og:image:height": "630"
+  })) if (readMeta("property", name) !== value) errors.push(`${socialCardUrl}: ${name} must equal ${JSON.stringify(value)}.`);
+  if (readMeta("name", "twitter:card") !== "summary_large_image") errors.push(`${socialCardUrl}: Twitter card must be summary_large_image.`);
+  if (readMeta("name", "twitter:image") !== imageUrl) errors.push(`${socialCardUrl}: Twitter image must match the social-card output.`);
+  for (const field of ["title", "description", "image:alt"]) {
+    if (readMeta("property", `og:${field}`) !== readMeta("name", `twitter:${field}`)) errors.push(`${socialCardUrl}: Open Graph and Twitter ${field} must match.`);
+  }
+  if (card.output) {
+    const imagePath = shareOutputPath(card.output);
+    if (!(await exists(imagePath))) errors.push(`${socialCardUrl}: social-card image is missing from the rendered site.`);
+    else {
+      const dimensions = await imageDimensions(imagePath);
+      if (dimensions?.width !== 1200 || dimensions?.height !== 630) errors.push(`${socialCardUrl}: rendered social-card image must be 1200×630 pixels.`);
+      const bytes = await readFile(imagePath);
+      const actualType = bytes.toString("hex", 0, 3) === "ffd8ff" ? "image/jpeg" : bytes.toString("hex", 0, 8) === "89504e470d0a1a0a" ? "image/png" : bytes.toString("ascii", 0, 4) === "RIFF" && bytes.toString("ascii", 8, 12) === "WEBP" ? "image/webp" : "";
+      if (actualType !== imageType) errors.push(`${socialCardUrl}: delivered social-card bytes do not match the declared MIME type.`);
+      if (bytes.length > 250 * 1024) errors.push(`${socialCardUrl}: delivered social-card image exceeds 250 KB.`);
+    }
+  }
+}
+
+for (const [pdfPath] of placeholderDownloads) {
+  const target = shareOutputPath(pdfPath);
+  if (!(await exists(target))) errors.push(`${pdfPath}: missing blank placeholder build output.`);
+  else {
+    const source = await readFile(path.join(sourceDirectory, pdfPath.slice(1)));
+    const delivered = await readFile(target);
+    if (!source.equals(delivered) || delivered.toString("ascii", 0, 5) !== "%PDF-") errors.push(`${pdfPath}: placeholder must preserve the source PDF bytes.`);
+  }
+  if (pdfShares.some(record => record.pdfPath === pdfPath)) errors.push(`${pdfPath}: a blank placeholder must not generate paper sharing pages.`);
+}
 
 for (const record of pdfShares) {
   const label = record.sharePath;
@@ -1416,20 +1560,26 @@ const resolveLocalReference = (reference, htmlFile) => {
   if (!cleanReference) return null;
   if (/^(?:https?:|mailto:|tel:|data:|javascript:)/i.test(cleanReference)) return null;
 
-  let publicPath = decodeURIComponent(cleanReference);
-  if (publicPath.startsWith(basePath)) publicPath = publicPath.slice(basePath.length);
+  let publicPath = decodeURIComponent(cleanReference).replaceAll("\\", "/");
+  if (publicPath.includes("\0")) throw new Error("NUL byte in local reference");
+  if (publicPath === basePath || publicPath.startsWith(`${basePath}/`)) publicPath = publicPath.slice(basePath.length);
 
   if (publicPath.startsWith("/")) {
     publicPath = publicPath.slice(1);
   } else {
-    publicPath = path.posix.join(path.posix.dirname(htmlFile), publicPath);
+    publicPath = path.posix.join(path.posix.dirname(htmlFile.replaceAll("\\", "/")), publicPath);
   }
 
   if (!publicPath || publicPath.endsWith("/")) publicPath += "index.html";
-  return path.join(siteDirectory, ...publicPath.split("/"));
+  const target = path.resolve(siteDirectory, ...publicPath.split("/"));
+  const relative = path.relative(siteDirectory, target);
+  if (relative === ".." || relative.startsWith(`..${path.sep}`) || path.isAbsolute(relative)) throw new Error("Local reference escapes the site directory");
+  return target;
 };
 
 const generatedCanonicals = new Map();
+const atlasLandingPage = researchPages.find(({ data }) => (data.publication_type === "atlas" || isPaperWithAtlas(data)) && data.permalink === "/global-digital-product-passport-regulation.html");
+const draftAtlasPath = file => atlasRoutes.has(file.split(path.sep).join("/")) && (permitsDraftAtlas(atlasLandingPage?.data) || (allowDrafts && isCandidateAtlasOwner(atlasLandingPage?.data)));
 
 for (const htmlFile of htmlFiles) {
   const html = await readFile(path.join(siteDirectory, htmlFile), "utf8");
@@ -1450,9 +1600,11 @@ for (const htmlFile of htmlFiles) {
   }
 
   for (const match of html.matchAll(/\b(?:href|src)\s*=\s*["']([^"'<>]+)["']/gi)) {
-    const target = resolveLocalReference(match[1], htmlFile);
-    if (target && !(await exists(target))) {
-      errors.push(`${htmlFile}: broken local reference ${match[1]}`);
+    try {
+      const target = resolveLocalReference(match[1], htmlFile);
+      if (target && !(await exists(target))) errors.push(`${htmlFile}: broken local reference ${match[1]}`);
+    } catch (error) {
+      errors.push(`${htmlFile}: invalid local reference ${match[1]} (${error.message})`);
     }
   }
 
@@ -1496,6 +1648,40 @@ for (const htmlFile of htmlFiles) {
     }
   }
 
+  const figureSourcePage = researchPages.find(({ data }) =>
+    data.permalink === `/${htmlFile.split(path.sep).join("/")}`
+  );
+  for (const figure of asArray(figureSourcePage?.data.figure_objects)) {
+    const figureUrl = `${config.url}${config.baseurl}${figure.content_url}`;
+    const matches = imageObjects.filter((imageObject) => imageObject.contentUrl === figureUrl);
+    if (matches.length !== 1) {
+      errors.push(`${htmlFile}: figure ${figure.id} requires exactly one matching ImageObject.`);
+      continue;
+    }
+    const [imageObject] = matches;
+    const expectedLicense = figure.license || figureSourcePage.data.license || config.content_license;
+    if (imageObject.license !== expectedLicense) {
+      errors.push(`${htmlFile}: figure ${figure.id} JSON-LD license must match its declared figure/page license.`);
+    }
+    const expectedNotice = figure.copyright_notice || config.image_copyright_notice || "© 2026 Spherity GmbH";
+    if (imageObject.copyrightNotice !== expectedNotice) {
+      errors.push(`${htmlFile}: figure ${figure.id} JSON-LD copyright notice must match its declared rights.`);
+    }
+    if (figure.copyright_holder) {
+      const holder = imageObject.copyrightHolder;
+      if (
+        holder?.["@type"] !== figure.copyright_holder.type ||
+        holder?.name !== figure.copyright_holder.name ||
+        holder?.url !== figure.copyright_holder.url ||
+        holder?.["@id"] === "https://www.spherity.com/#organization"
+      ) {
+        errors.push(`${htmlFile}: figure ${figure.id} JSON-LD copyright holder must match its declared holder.`);
+      }
+    } else if (imageObject.copyrightHolder?.["@id"] !== "https://www.spherity.com/#organization") {
+      errors.push(`${htmlFile}: figure ${figure.id} must retain the default Spherity copyright holder.`);
+    }
+  }
+
   for (const figureScope of html.matchAll(
     /<figure\b[^>]*itemscope[^>]*itemtype=["']https:\/\/schema\.org\/ImageObject["'][^>]*>([\s\S]*?)<\/figure>/gi
   )) {
@@ -1526,14 +1712,29 @@ for (const htmlFile of htmlFiles) {
   const canonical = html.match(
     /<link\b[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["'][^>]*>/i
   )?.[1];
+  const sourcePageForHtml = researchPages.find(({ data }) => data.canonical_url === canonical);
+  const isAtlasLanding = sourcePageForHtml?.data.publication_type === "atlas";
+  const isResearchTopic = sourcePageForHtml?.data.publication_type === "research-topic";
+  const expectedWorkType = isAtlasLanding ? "CreativeWork" : isResearchTopic ? "WebPage" : "ScholarlyArticle";
+  const isKnownAtlasRoute = atlasRoutes.has(htmlFile.split(path.sep).join("/"));
+  const isAllowedDraft = permitsDraftAtlas(sourcePageForHtml?.data) || draftAtlasPath(htmlFile);
+  if (isKnownAtlasRoute) {
+    if (!atlasLandingPage) errors.push(`${htmlFile}: atlas route requires its declared research landing page.`);
+    for (const [pattern, label] of [[/<html\b[^>]*lang=["']en["']/i, "English language"], [/<title>[^<]+<\/title>/i, "title"], [/<meta\b[^>]*name=["']description["'][^>]*content=["'][^"']+["']/i, "description"], [/<main\b/i, "main landmark"]]) {
+      if (!pattern.test(html)) errors.push(`${htmlFile}: atlas output requires ${label}.`);
+    }
+    if ([...html.matchAll(/<h1\b/gi)].length !== 1) errors.push(`${htmlFile}: atlas output requires exactly one H1.`);
+    if (parsedSchemas.some(schema => schema?.["@type"] === "ScholarlyArticle")) errors.push(`${htmlFile}: atlas output must not claim ScholarlyArticle.`);
+  }
   if (!isPdfShare && !/^google[^/]*\.html$/i.test(htmlFile) && htmlFile !== "404.html") {
     const robotsMeta = html.match(
       /<meta\b[^>]*name=["']robots["'][^>]*content=["']([^"']+)["'][^>]*>/i
     )?.[1];
-    if (!robotsMeta || !/\bindex\b/i.test(robotsMeta) || !/\bfollow\b/i.test(robotsMeta)) {
+    if (isAllowedDraft && !hasDraftRobots(robotsMeta)) errors.push(`${htmlFile}: allowed draft must retain noindex, follow robots metadata.`);
+    if (!isAllowedDraft && (!robotsMeta || !/\bindex\b/i.test(robotsMeta) || !/\bfollow\b/i.test(robotsMeta))) {
       errors.push(`${htmlFile}: Google indexing requires index, follow robots metadata.`);
     }
-    if (/\bnoindex\b|\bnofollow\b/i.test(robotsMeta || "")) {
+    if (!isAllowedDraft && /\bnoindex\b|\bnofollow\b/i.test(robotsMeta || "")) {
       errors.push(`${htmlFile}: public page must not contain noindex or nofollow.`);
     }
   }
@@ -1551,17 +1752,21 @@ for (const htmlFile of htmlFiles) {
     const checks = [
       ['class="answer-summary"', "answer-first summary"],
       ['id="questions-answered"', "direct questions and answers"],
-      ['name="citation_title"', "citation title metadata"],
-      ['name="citation_author"', "citation author metadata"],
-      ['name="citation_license"', "citation license metadata"],
+      ...(!isAtlasLanding && !isResearchTopic ? [
+        ['name="citation_title"', "citation title metadata"],
+        ['name="citation_author"', "citation author metadata"],
+        ['name="citation_license"', "citation license metadata"]
+      ] : []),
       ['rel="license"', "machine-readable license link"],
       ['class="research-license"', "paper license and citation block"],
-      ["data-share", "share control"],
-      ['data-share-link="bluesky"', "Bluesky share action"],
-      ['data-share-link="threads"', "Threads share action"],
-      ['data-share-link="reddit"', "Reddit share action"],
+      ...(!isDraftAtlas(sourcePageForHtml?.data) ? [
+        ["data-share", "share control"],
+        ['data-share-link="bluesky"', "Bluesky share action"],
+        ['data-share-link="threads"', "Threads share action"],
+        ['data-share-link="reddit"', "Reddit share action"]
+      ] : []),
       ['"@type": "BreadcrumbList"', "BreadcrumbList structured data"],
-      ['"@type": "ScholarlyArticle"', "ScholarlyArticle structured data"]
+      [`"@type": "${expectedWorkType}"`, `${expectedWorkType} structured data`]
     ];
 
     for (const [needle, label] of checks) {
@@ -1576,10 +1781,48 @@ for (const htmlFile of htmlFiles) {
         return Array.isArray(type) ? type : type ? [type] : [];
       })
     );
-    for (const type of ["WebSite", "ScholarlyArticle", "BreadcrumbList", "FAQPage"]) {
+    for (const type of ["WebSite", expectedWorkType, "BreadcrumbList", ...(sourcePageForHtml?.data.faq_schema === false ? [] : ["FAQPage"]), ...(isAtlasLanding ? ["Dataset"] : [])]) {
       if (!topLevelSchemaTypes.has(type)) {
         errors.push(`${htmlFile}: ${type} must be exposed as a top-level JSON-LD block.`);
       }
+    }
+
+    if (isDraftAtlas(sourcePageForHtml?.data) && /<[^>]+\bdata-share(?:-button|-link|-url)?(?:[\s=>])/i.test(html)) errors.push(`${htmlFile}: unpublished atlas draft must not expose public sharing controls.`);
+
+    if (sourcePageForHtml?.data.paper_in_preparation === true) {
+      const placeholder = sourcePageForHtml.data.paper_placeholder;
+      const registered = placeholderDownloads.get(placeholder?.url);
+      const textContent = value => decodeHtmlAttribute(value.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, " ").replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
+      const visibleText = textContent(html);
+      if (!registered || registered.sourceFile !== sourcePageForHtml.file) errors.push(`${htmlFile}: missing registered paper placeholder owned by this page.`);
+      else {
+        const placeholderUrl = sharePublicUrl(placeholder.url);
+        const linked = [...html.matchAll(/<a\b((?:"[^"]*"|'[^']*'|[^'">])*)>([\s\S]*?)<\/a>/gi)].some(match => {
+          const href = htmlTags(`<a${match[1]}>`, "a")[0]?.href;
+          try { return new URL(href, canonical).href === placeholderUrl && /blank|placeholder/i.test(textContent(match[2])); }
+          catch { return false; }
+        });
+        if (!linked) errors.push(`${htmlFile}: requires a clearly labelled link to its blank placeholder PDF.`);
+        if (!visibleText.includes(placeholder.label) || !visibleText.includes(placeholder.description) || !/in preparation/i.test(visibleText)) errors.push(`${htmlFile}: placeholder label, description and in-preparation status must be visible.`);
+        if (collectTypedObjects(parsedSchemas, "MediaObject").some(media => media.contentUrl === placeholderUrl) || collectTypedObjects(parsedSchemas, "DataDownload").some(media => media.contentUrl === placeholderUrl)) errors.push(`${htmlFile}: blank placeholder must not be described as a published PDF or research dataset distribution.`);
+        if (htmlTags(html, "link").some(link => link.rel?.split(/\s+/).includes("alternate") && link.type === "application/pdf")) errors.push(`${htmlFile}: a placeholder must not be a paper PDF alternate.`);
+      }
+    }
+
+    if (isAtlasLanding || isPaperWithAtlas(sourcePageForHtml?.data)) {
+      const datasetSchema = parsedSchemas.find(schema => schema?.["@type"] === "Dataset");
+      const workSchema = parsedSchemas.find(schema => schema?.["@type"] === "CreativeWork");
+      const expectedDataset = sourcePageForHtml.data.dataset || {};
+      if (isAtlasLanding && parsedSchemas.some(schema => schema?.["@type"] === "ScholarlyArticle")) errors.push(`${htmlFile}: atlas must not claim a scholarly paper.`);
+      if (datasetSchema?.version !== expectedDataset.version || datasetSchema?.name !== expectedDataset.name || datasetSchema?.description !== expectedDataset.description || datasetSchema?.copyrightNotice !== expectedDataset.rights_statement) errors.push(`${htmlFile}: Dataset metadata must match its explicit source fields and rights.`);
+      if (datasetSchema?.license) errors.push(`${htmlFile}: the frozen dataset has no public licence grant and must not inherit the landing-page licence.`);
+      const distributions = asArray(datasetSchema?.distribution);
+      if (distributions.length !== asArray(expectedDataset.distributions).length) errors.push(`${htmlFile}: Dataset distribution count must match source metadata.`);
+      for (const item of expectedDataset.distributions || []) {
+        const expectedUrl = item.url?.startsWith("https:") ? item.url : `${canonicalOrigin}${item.url}`;
+        if (!distributions.some(d => d["@type"] === "DataDownload" && d.contentUrl === expectedUrl && d.encodingFormat === item.encoding_format && d.name === item.name)) errors.push(`${htmlFile}: missing exact Dataset distribution ${item.url}.`);
+      }
+      if (isDraftAtlas(sourcePageForHtml.data) && (workSchema?.datePublished || /name=["']citation_(?:title|publication_date|pdf_url)["']|property=["']article:published_time["']/i.test(html))) errors.push(`${htmlFile}: draft atlas must not emit published-paper metadata.`);
     }
 
     if (html.includes('class="research-series-nav"')) {
@@ -1721,17 +1964,33 @@ for (const htmlFile of htmlFiles) {
     }
 
     const articleSchema = parsedSchemas.find(
-      (schema) => schema?.["@type"] === "ScholarlyArticle"
+      (schema) => schema?.["@type"] === expectedWorkType
     );
     const sourcePage = researchPages.find(({ data }) => data.canonical_url === canonical);
     const sourceAuthorEntities = new Map(
       asArray(sourcePage?.data?.author_entities).map((author) => [author?.name, author])
     );
+    if (isResearchTopic) {
+      const works = asArray(sourcePage?.data.research_works);
+      if (sourcePage.data.schema_type !== 'WebPage' || sourcePage.data.citation_metadata !== false || /name="citation_/i.test(html)) errors.push(htmlFile+': a multi-work topic must use WebPage and omit single-paper citation tags.');
+      if (works.length < 2 || new Set(works.map(w=>w.id)).size !== works.length || new Set(works.map(w=>w.pdf_url)).size !== works.length) errors.push(htmlFile+': topic requires distinct work identities and PDFs.');
+      for (const work of works) {
+        const actual=parsedSchemas.find(s=>s['@id']===work.id);
+        if (!actual || !['ScholarlyArticle','Article','Report'].includes(actual['@type']) || actual.name!==work.title || actual.version!==work.version || actual.datePublished!==work.date || actual.encoding?.['@id']!==`${config.url}${config.baseurl}${work.pdf_url}`+'#media-object') errors.push(htmlFile+': incomplete or mismatched research work '+work.id);
+        if (!asArray(articleSchema?.mainEntity).some(e=>e['@id']===work.id)) errors.push(htmlFile+': topic must link each work as a main entity.');
+        if (!html.includes(work.title)) errors.push(htmlFile+': work title must be visible.');
+      }
+      if (asArray(articleSchema?.encoding).length) errors.push(htmlFile+': distinct papers are not encodings of the topic page.');
+    }
     const articleAuthors = Array.isArray(articleSchema?.author)
       ? articleSchema.author
       : articleSchema?.author
         ? [articleSchema.author]
         : [];
+    if (isAtlasLanding) {
+      const expectedNames = asArray(sourcePage?.data?.author_entities).map(author => author.name);
+      if (articleAuthors.length !== expectedNames.length || !expectedNames.every(name => articleAuthors.some(author => author?.name === name && author?.["@type"] === "Person"))) errors.push(`${htmlFile}: atlas curator identities must match its source author_entities.`);
+    }
     for (const author of articleAuthors) {
       const registeredProfile = authorProfiles?.[author?.name];
       if (!registeredProfile) continue;
@@ -1766,7 +2025,7 @@ for (const htmlFile of htmlFiles) {
           `${htmlFile}: author ${author.name} must expose ${expectedOrcid} as its ORCID identifier.`
         );
       }
-      if (expectedOrcid && !html.includes(`name="citation_author_orcid" content="${expectedOrcid}"`)) {
+      if (!isAtlasLanding && !isResearchTopic && expectedOrcid && !html.includes(`name="citation_author_orcid" content="${expectedOrcid}"`)) {
         errors.push(
           `${htmlFile}: author ${author.name} must expose ${expectedOrcid} in citation metadata.`
         );
@@ -2085,8 +2344,16 @@ if (await exists(path.join(siteDirectory, "sitemap.xml"))) {
   if (sitemap.includes("\u00a0")) {
     errors.push("sitemap.xml: replace non-breaking spaces with ordinary whitespace.");
   }
-  if (!/^<\?xml[^>]+\?>\n<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">[\s\S]*<\/urlset>\n?$/.test(sitemap)) {
+  if (!/^<\?xml[^>]+\?>\n<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9"(?: xmlns:image="http:\/\/www\.google\.com\/schemas\/sitemap-image\/1\.1")?>[\s\S]*<\/urlset>\n?$/.test(sitemap)) {
     errors.push("sitemap.xml: malformed XML sitemap envelope.");
+  }
+  if (sitemap.includes('<image:image>') && !sitemap.includes('xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"')) {
+    errors.push("sitemap.xml: image entries require the Google image sitemap namespace.");
+  }
+  for (const [, imageLocation] of sitemap.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)) {
+    if (!imageLocation.startsWith(`${canonicalOrigin}/assets/`) || !/\.(?:svg|png|jpe?g|webp|avif)$/i.test(imageLocation)) {
+      errors.push(`sitemap.xml: invalid publication image URL ${imageLocation}.`);
+    }
   }
   const sitemapMatches = [
     ...sitemap.matchAll(/<url>\s*<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/gi)
@@ -2111,7 +2378,8 @@ if (await exists(path.join(siteDirectory, "sitemap.xml"))) {
     }
   }
 
-  const expectedSitemapUrls = new Set();
+  const sitemapDownloads = await loadSitemapDownloads(sourceDirectory, siteDirectory);
+  const expectedSitemapUrls = new Set([...sitemapDownloads.keys()].map(asset => canonicalOrigin + asset));
   const sitemapFiles = await glob("**/*.{html,pdf}", {
     cwd: siteDirectory,
     nodir: true,
@@ -2120,6 +2388,7 @@ if (await exists(path.join(siteDirectory, "sitemap.xml"))) {
   });
   for (const sitemapFile of sitemapFiles) {
     const normalizedFile = sitemapFile.split(path.sep).join("/");
+    if ((figureDownloads.has(`/${normalizedFile}`) && !sitemapDownloads.has(`/${normalizedFile}`)) || placeholderDownloads.has(`/${normalizedFile}`)) continue;
     let expectedUrl = `${canonicalOrigin}/${normalizedFile}`;
     if (normalizedFile === "index.html") expectedUrl = `${canonicalOrigin}/`;
     if (normalizedFile.endsWith("/index.html")) {
@@ -2154,6 +2423,10 @@ if (await exists(path.join(siteDirectory, "sitemap.xml"))) {
     );
   }
   for (const researchPage of researchPages) {
+    if (permitsDraftAtlas(researchPage.data)) {
+      if (sitemapEntries.has(researchPage.data.canonical_url)) errors.push(`sitemap.xml: draft atlas must be excluded: ${researchPage.data.canonical_url}.`);
+      continue;
+    }
     if (!sitemap.includes(researchPage.data.canonical_url)) {
       errors.push(`sitemap.xml: missing ${researchPage.data.canonical_url}.`);
     }
@@ -2168,11 +2441,21 @@ if (await exists(path.join(siteDirectory, "sitemap.xml"))) {
     for (const link of publication.links || []) {
       if (!link?.url || !/\.(?:html|pdf)$/i.test(link.url)) continue;
       const publicationUrl = `${canonicalOrigin}${link.url}`;
+      const linkedPage = researchPages.find(({ data }) => data.permalink === link.url);
+      if (permitsDraftAtlas(linkedPage?.data) || draftAtlasPath(link.url.replace(/^\//, ""))) {
+        if (sitemapEntries.has(publicationUrl)) errors.push(`sitemap.xml: draft atlas must be excluded: ${publicationUrl}.`);
+        continue;
+      }
       if (!sitemap.includes(publicationUrl)) {
         errors.push(`sitemap.xml: missing publication URL ${publicationUrl}.`);
       }
     }
   }
+}
+
+if (warnings.length) {
+  console.warn(`Draft atlas publication review pending (${warnings.length} issue(s)); these remain failures in strict production validation:`);
+  warnings.forEach(warning => console.warn(`- ${warning}`));
 }
 
 if (errors.length) {

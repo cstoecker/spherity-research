@@ -1,0 +1,726 @@
+{
+  "version": "0.1.0",
+  "as_of": "2026-11-01",
+  "title": "Humanoid H-01: an evidence graph across companies",
+  "status": "Synthetic educational architecture; not a deployed system, real robot assurance case or legal assessment",
+  "author": "Dr. Carsten Stöcker, Spherity GmbH",
+  "license": "CC BY 4.0 except third-party referenced sources",
+  "groups": [
+    {
+      "id": "S",
+      "name": "Component supplier",
+      "short": "Supplier"
+    },
+    {
+      "id": "L",
+      "name": "Independent laboratory",
+      "short": "Laboratory"
+    },
+    {
+      "id": "M",
+      "name": "Robot manufacturer",
+      "short": "Manufacturer"
+    },
+    {
+      "id": "O",
+      "name": "Industrial operator",
+      "short": "Operator"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "S01",
+      "label": "Actuator A17",
+      "title": "Actuator A17",
+      "type": "entity",
+      "group": "S",
+      "claim": "Physical component, serial A17. Claims must identify the component and version actually installed.",
+      "limit": "Asset identity; not a safety certificate.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Component supplier"
+    },
+    {
+      "id": "S02",
+      "label": "Firmware FW3.2",
+      "title": "Firmware FW3.2",
+      "type": "entity",
+      "group": "S",
+      "claim": "Versioned software installed on actuator A17. An update requires a fresh assessment of which evidence still applies.",
+      "limit": "Version identity; no automatic transfer of a previous test result.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Component supplier"
+    },
+    {
+      "id": "S03",
+      "label": "SBOM SB04",
+      "title": "Software inventory SB04",
+      "type": "document",
+      "group": "S",
+      "claim": "Machine-readable software bill of materials for FW3.2, including dependency identifiers and versions.",
+      "limit": "Inventory completeness and vulnerability relevance still require checks.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Component supplier"
+    },
+    {
+      "id": "S04",
+      "label": "Material declaration",
+      "title": "Material declaration MD2",
+      "type": "document",
+      "group": "S",
+      "claim": "Supplier assertion about the identified component or batch, retained with its source and issuer.",
+      "limit": "A signed claim is attributable, not automatically true.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Component supplier"
+    },
+    {
+      "id": "L01",
+      "label": "Test assertion TA42",
+      "title": "Test-result assertion TA42",
+      "type": "assertion",
+      "group": "L",
+      "claim": "The tested configuration met the selected criterion under method TM1 and task conditions TP-PICK. This is a fictional, bounded result.",
+      "limit": "Subject, method, conditions and current admissibility must match.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Independent laboratory"
+    },
+    {
+      "id": "L02",
+      "label": "Test report TR42",
+      "title": "Original test report TR42",
+      "type": "document",
+      "group": "L",
+      "claim": "Original fictional PDF from which TA42 was extracted. Its source identity and history remain available after withdrawal.",
+      "limit": "Demonstration only; no real report or signature is supplied.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Independent laboratory"
+    },
+    {
+      "id": "L03",
+      "label": "Method TM1",
+      "title": "Test-method profile TM1",
+      "type": "policy",
+      "group": "L",
+      "claim": "Defines measurement units, test procedure, operating conditions and acceptance criterion for the example.",
+      "limit": "A method profile is not accreditation or product certification.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Independent laboratory"
+    },
+    {
+      "id": "L04",
+      "label": "Scope certificate LC7",
+      "title": "Laboratory scope certificate LC7",
+      "type": "certificate",
+      "group": "L",
+      "claim": "Illustrative credential identifying a laboratory and the scope for which the verifier accepts its evidence.",
+      "limit": "Certificate authenticity, scope, expiry and issuer acceptance are separate checks.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Independent laboratory"
+    },
+    {
+      "id": "L05",
+      "label": "Report-status event",
+      "title": "Report-status event RS9",
+      "type": "event",
+      "group": "L",
+      "claim": "In the withdrawn branch, a later event withdraws TR42 from current reliance. The available branch is an alternative scenario before that withdrawal; it does not erase the historical report.",
+      "limit": "The receiving participant must obtain current status within its declared freshness bound. No safety verdict follows from withdrawal alone.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Independent laboratory"
+    },
+    {
+      "id": "M01",
+      "label": "Humanoid H-01",
+      "title": "Humanoid robot H-01",
+      "type": "entity",
+      "group": "M",
+      "claim": "Fictional industrial humanoid used to explain evidence reuse. Its intended task is non-medical material handling.",
+      "limit": "No real manufacturer, product performance or endorsement is implied.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Robot manufacturer"
+    },
+    {
+      "id": "M02",
+      "label": "Configuration R3",
+      "title": "Robot configuration R3",
+      "type": "entity",
+      "group": "M",
+      "claim": "The specific robot, actuator, firmware and task configuration being assessed.",
+      "limit": "A graph connection does not transfer a certificate to a new configuration.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Robot manufacturer"
+    },
+    {
+      "id": "M03",
+      "label": "Task TP-PICK",
+      "title": "Task and operating conditions TP-PICK",
+      "type": "policy",
+      "group": "M",
+      "claim": "A bounded industrial picking task with specified workspace, payload, speed and supervision. Values are deliberately unspecified.",
+      "limit": "New intended uses or operating conditions require applicability review.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Robot manufacturer"
+    },
+    {
+      "id": "M04",
+      "label": "Release claim RC3",
+      "title": "Bounded release claim RC3",
+      "type": "assertion",
+      "group": "M",
+      "claim": "A proposed assurance claim for the selected configuration and task, supported by explicit accepted premises.",
+      "limit": "This is neither a universal compliance certificate nor permission to operate.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Robot manufacturer"
+    },
+    {
+      "id": "M05",
+      "label": "Approval rule AR1",
+      "title": "Manufacturer approval rule AR1",
+      "type": "policy",
+      "group": "M",
+      "claim": "The example rule requires a current, applicable test result. Withdrawal of its only accepted report produces HOLD pending reassessment.",
+      "limit": "Author-created teaching rule; not a claim about a legal approval procedure.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Robot manufacturer"
+    },
+    {
+      "id": "M06",
+      "label": "AI service AS1",
+      "title": "AI evidence-assistant service AS1",
+      "type": "entity",
+      "group": "M",
+      "claim": "A versioned virtual service that can retrieve permitted evidence, follow links and prepare source-linked explanations.",
+      "limit": "The visualization runs deterministic rules; no live AI model or action authority is attached.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Robot manufacturer"
+    },
+    {
+      "id": "O01",
+      "label": "Installed robot IC3",
+      "title": "Installed configuration IC3",
+      "type": "entity",
+      "group": "O",
+      "claim": "The operator records which physical robot and software configuration are actually installed.",
+      "limit": "Installation identity and operational context must match the assessed configuration.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Industrial operator"
+    },
+    {
+      "id": "O02",
+      "label": "Maintenance ME5",
+      "title": "Maintenance event ME5",
+      "type": "event",
+      "group": "O",
+      "claim": "A lifecycle event records work on the installed configuration and may trigger targeted reassessment.",
+      "limit": "An event can invalidate assumptions without invalidating every certificate.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Industrial operator"
+    },
+    {
+      "id": "O03",
+      "label": "Delivery event DE7",
+      "title": "Supply-chain delivery event DE7",
+      "type": "event",
+      "group": "O",
+      "claim": "Receipt of the identified component connects its supplier provenance to the operator lifecycle.",
+      "limit": "Custody, origin, export classification and permitted end use remain distinct questions.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Industrial operator"
+    },
+    {
+      "id": "O04",
+      "label": "Work order WO9",
+      "title": "Work order WO9",
+      "type": "document",
+      "group": "O",
+      "claim": "A request to use the installed robot for the specified task. It needs local authorization as well as accepted evidence.",
+      "limit": "The graph cannot grant legal or operational authority by itself.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Industrial operator"
+    },
+    {
+      "id": "META1",
+      "label": "Shared meaning",
+      "title": "Shared semantic profile SP1",
+      "type": "policy",
+      "group": "G",
+      "claim": "Versioned industry definitions, identifiers, units and mappings make assertions interpretable across participants.",
+      "limit": "Open standards need maintained profiles, mappings and conformance tests.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Multiple independently governed metadata services"
+    },
+    {
+      "id": "META2",
+      "label": "Discovery",
+      "title": "Permitted evidence catalogue CAT1",
+      "type": "document",
+      "group": "G",
+      "claim": "Authorized discovery of relevant evidence and services. Restricted existence and metadata must also be protected.",
+      "limit": "The visible demo contains only pre-disclosed fictional metadata.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Multiple independently governed metadata services"
+    },
+    {
+      "id": "META3",
+      "label": "Trust and status",
+      "title": "Issuer, scope and status bundle TB1",
+      "type": "certificate",
+      "group": "G",
+      "claim": "Accepted issuer references, credential scopes and current status information support local verification.",
+      "limit": "Signatures, authority, freshness, applicability and permission are independent dimensions.",
+      "source_kind": "synthetic teaching record",
+      "version": "0.1",
+      "signature": "Not cryptographically checked in this demonstration",
+      "access": "Pre-disclosed example; a real query requires task-scoped authorization",
+      "status": "Illustrative",
+      "owner": "Multiple independently governed metadata services"
+    }
+  ],
+  "edges": [
+    {
+      "source": "M01",
+      "target": "M02",
+      "relation": "has configuration",
+      "dependency": true
+    },
+    {
+      "source": "M02",
+      "target": "S01",
+      "relation": "includes",
+      "dependency": true
+    },
+    {
+      "source": "M02",
+      "target": "S02",
+      "relation": "uses",
+      "dependency": true
+    },
+    {
+      "source": "S03",
+      "target": "S02",
+      "relation": "describes",
+      "dependency": true
+    },
+    {
+      "source": "S04",
+      "target": "S01",
+      "relation": "concerns",
+      "dependency": true
+    },
+    {
+      "source": "L01",
+      "target": "M02",
+      "relation": "tests",
+      "dependency": true
+    },
+    {
+      "source": "L01",
+      "target": "L02",
+      "relation": "recorded in",
+      "dependency": true
+    },
+    {
+      "source": "L01",
+      "target": "L03",
+      "relation": "used method",
+      "dependency": true
+    },
+    {
+      "source": "L02",
+      "target": "L04",
+      "relation": "issued under",
+      "dependency": true
+    },
+    {
+      "source": "L05",
+      "target": "L02",
+      "relation": "updates status of",
+      "dependency": true
+    },
+    {
+      "source": "M04",
+      "target": "M02",
+      "relation": "assesses",
+      "dependency": true
+    },
+    {
+      "source": "M04",
+      "target": "M03",
+      "relation": "for task",
+      "dependency": true
+    },
+    {
+      "source": "M04",
+      "target": "M05",
+      "relation": "applies",
+      "dependency": true
+    },
+    {
+      "source": "M04",
+      "target": "L01",
+      "relation": "requires",
+      "dependency": true
+    },
+    {
+      "source": "M06",
+      "target": "M04",
+      "relation": "explains",
+      "dependency": true
+    },
+    {
+      "source": "O01",
+      "target": "M02",
+      "relation": "instantiates",
+      "dependency": true
+    },
+    {
+      "source": "O02",
+      "target": "O01",
+      "relation": "concerns",
+      "dependency": true
+    },
+    {
+      "source": "O03",
+      "target": "S01",
+      "relation": "delivers",
+      "dependency": true
+    },
+    {
+      "source": "O04",
+      "target": "O01",
+      "relation": "requests use of",
+      "dependency": true
+    },
+    {
+      "source": "O04",
+      "target": "M04",
+      "relation": "requires",
+      "dependency": true
+    }
+  ],
+  "dependency_projection": [
+    [
+      "M01",
+      "M02"
+    ],
+    [
+      "M02",
+      "S01"
+    ],
+    [
+      "M02",
+      "S02"
+    ],
+    [
+      "S02",
+      "S03"
+    ],
+    [
+      "S01",
+      "S04"
+    ],
+    [
+      "L01",
+      "M02"
+    ],
+    [
+      "L01",
+      "L02"
+    ],
+    [
+      "L01",
+      "L03"
+    ],
+    [
+      "L02",
+      "L04"
+    ],
+    [
+      "L02",
+      "L05"
+    ],
+    [
+      "M04",
+      "M02"
+    ],
+    [
+      "M04",
+      "M03"
+    ],
+    [
+      "M04",
+      "M05"
+    ],
+    [
+      "M04",
+      "L01"
+    ],
+    [
+      "M06",
+      "M04"
+    ],
+    [
+      "O01",
+      "M02"
+    ],
+    [
+      "O02",
+      "O01"
+    ],
+    [
+      "O03",
+      "S01"
+    ],
+    [
+      "O04",
+      "O01"
+    ],
+    [
+      "O04",
+      "M04"
+    ]
+  ],
+  "domains": [
+    {
+      "id": "all",
+      "name": "All assessment lenses",
+      "nodes": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L05",
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06",
+        "O01",
+        "O02",
+        "O03",
+        "O04",
+        "META1",
+        "META2",
+        "META3"
+      ],
+      "question": "Which evidence is reusable, and which decisions remain separate?",
+      "scope": "Separate assessment scopes; no single graph-wide compliance score."
+    },
+    {
+      "id": "dpp",
+      "name": "ESPR / DPP",
+      "nodes": [
+        "M01",
+        "M02",
+        "S01",
+        "S04",
+        "O03",
+        "O02"
+      ],
+      "question": "Can product identity, materials and lifecycle claims be traced?",
+      "scope": "ESPR DPP duties depend on applicable product measures and dates; a humanoid does not automatically require an ESPR DPP.",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1781/oj"
+    },
+    {
+      "id": "safety",
+      "name": "Functional safety",
+      "nodes": [
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L05",
+        "O01",
+        "O02",
+        "O04"
+      ],
+      "question": "Does accepted evidence support this configuration in this task?",
+      "scope": "Functional safety is a discipline and assurance task. A single test result does not establish system safety.",
+      "url": "https://www.iec.ch/functional-safety"
+    },
+    {
+      "id": "ai",
+      "name": "EU AI Act",
+      "nodes": [
+        "M01",
+        "M02",
+        "M03",
+        "M06",
+        "S02",
+        "S03",
+        "O01"
+      ],
+      "question": "What is the AI function, intended use and applicable assurance route?",
+      "scope": "Classification, duty holder and sectoral route require assessment; a robot or AI assistant is not automatically high-risk.",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+    },
+    {
+      "id": "mdr",
+      "name": "MDR · medical branch",
+      "nodes": [
+        "M01",
+        "M02",
+        "M03",
+        "L01",
+        "L02",
+        "L03"
+      ],
+      "question": "Would a medical intended purpose change the required evidence?",
+      "scope": "The base case is non-medical. A medical variant would require its own classification, clinical evidence and conformity route; these are not supplied here.",
+      "url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj"
+    },
+    {
+      "id": "machinery",
+      "name": "Machinery Regulation",
+      "nodes": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "L01",
+        "L02",
+        "S02",
+        "O04"
+      ],
+      "question": "Which risk assessment, technical documentation and conformity route apply?",
+      "scope": "Check the placing-on-market date and applicable machinery regime. The figure does not grant conformity or CE marking.",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1230/oj"
+    },
+    {
+      "id": "cra",
+      "name": "Cyber Resilience Act",
+      "nodes": [
+        "M01",
+        "M02",
+        "S02",
+        "S03",
+        "M06",
+        "O02",
+        "O01"
+      ],
+      "question": "Which software, vulnerabilities, support duties and incidents matter?",
+      "scope": "Determine product scope, exclusions and staged duties. An SBOM is useful evidence, not a complete CRA assurance case.",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj"
+    },
+    {
+      "id": "export",
+      "name": "Export controls",
+      "nodes": [
+        "M01",
+        "M02",
+        "S01",
+        "S02",
+        "S04",
+        "O03",
+        "M03"
+      ],
+      "question": "What classification, destination, end user and end use must be checked?",
+      "scope": "No automatic licence requirement follows from the word robot. List entries, catch-all provisions and other relevant restrictions need case-specific review.",
+      "url": "https://eur-lex.europa.eu/eli/reg/2021/821/oj"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spherity robot-passport demonstration",
+      "url": "https://spherity.github.io/building-passport-viewer/ROBOT-demo.html",
+      "use": "Design precedent only; no manufacturer or certificate endorsement"
+    },
+    {
+      "title": "Spherity Research library",
+      "url": "https://spherity.github.io/spherity-research/",
+      "use": "Conceptual research context"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1920" height="1080" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1920" height="1080"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-1080)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1920" height="1080" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="55" y="1034" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 38px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,2068) scale(1,-1)">Where meaning, decisions and dependencies are controlled</text>
+			<text x="55" y="994" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,1988) scale(1,-1)">The strategic test: can useful industrial intelligence survive a change of operator or implementation?</text>
+			<text x="315" y="943" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 31px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1886) scale(1,-1)">PLATFORM-GOVERNED INTEGRATION</text>
+			<text x="1105" y="943" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1886) scale(1,-1)">PARTICIPANT-CONTROLLED COOPERATION</text>
+			<text x="315" y="906" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,1812) scale(1,-1)">Palantir is the documented example, not all Big Tech.</text>
+			<text x="1105" y="906" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,1812) scale(1,-1)">European dataspace foundations; proposed global cooperation.</text>
+			<text x="55" y="849" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1698) scale(1,-1)">Meaning</text>
+			<rect x="300" y="765" width="755" height="110" rx="8" ry="8" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<rect x="1090" y="765" width="775" height="110" rx="8" ry="8" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="322" y="842" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1684) scale(1,-1)">A deployment or ecosystem selects its model and</text>
+			<text x="322" y="810" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1620) scale(1,-1)">mappings. Industry vocabularies are possible.</text>
+			<text x="1112" y="842" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1684) scale(1,-1)">An agreed exchange profile links independent local models.</text>
+			<text x="1112" y="810" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1620) scale(1,-1)">Governance and mapping maintenance remain.</text>
+			<text x="55" y="725" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1450) scale(1,-1)">Operational</text>
+			<text x="55" y="691" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1382) scale(1,-1)">capabilities</text>
+			<rect x="300" y="641" width="755" height="110" rx="8" ry="8" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<rect x="1090" y="641" width="775" height="110" rx="8" ry="8" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="322" y="718" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1436) scale(1,-1)">Data, graph reads, executable logic and actions connect</text>
+			<text x="322" y="686" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1372) scale(1,-1)">through configured platform interfaces.</text>
+			<text x="1112" y="718" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1436) scale(1,-1)">The same capabilities repeat locally; explicit contracts link</text>
+			<text x="1112" y="686" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1372) scale(1,-1)">queries, evidence and actions.</text>
+			<text x="55" y="601" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1202) scale(1,-1)">Trust and</text>
+			<text x="55" y="567" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1134) scale(1,-1)">evidence</text>
+			<rect x="300" y="517" width="755" height="110" rx="8" ry="8" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<rect x="1090" y="517" width="775" height="110" rx="8" ry="8" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="322" y="594" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1188) scale(1,-1)">Configured identity, access and provenance. Test external</text>
+			<text x="322" y="562" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1124) scale(1,-1)">proof, policy and authority portability.</text>
+			<text x="1112" y="594" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1188) scale(1,-1)">Verify protected assertions, issuer scope and delegation at</text>
+			<text x="1112" y="562" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1124) scale(1,-1)">each boundary. Test policy composition.</text>
+			<text x="55" y="477" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,954) scale(1,-1)">Participant</text>
+			<text x="55" y="443" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,886) scale(1,-1)">authority</text>
+			<rect x="300" y="393" width="755" height="110" rx="8" ry="8" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<rect x="1090" y="393" width="775" height="110" rx="8" ry="8" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="322" y="470" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,940) scale(1,-1)">Permissions and operational change follow deployment</text>
+			<text x="322" y="438" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,876) scale(1,-1)">governance and integration contracts.</text>
+			<text x="1112" y="470" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,940) scale(1,-1)">Each participant controls disclosure and local writes. A</text>
+			<text x="1112" y="438" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,876) scale(1,-1)">managed gateway must preserve effective authority.</text>
+			<text x="55" y="353" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,706) scale(1,-1)">Exit and</text>
+			<text x="55" y="319" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,638) scale(1,-1)">replacement</text>
+			<rect x="300" y="269" width="755" height="110" rx="8" ry="8" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<rect x="1090" y="269" width="775" height="110" rx="8" ry="8" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="322" y="346" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,692) scale(1,-1)">Assess APIs, exports, rights and adapter fidelity in the</text>
+			<text x="322" y="314" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,628) scale(1,-1)">actual deployment.</text>
+			<text x="1112" y="346" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,692) scale(1,-1)">Prove that meaning, evidence and authorized behavior</text>
+			<text x="1112" y="314" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,628) scale(1,-1)">survive operator or implementation replacement.</text>
+			<rect x="55" y="110" width="1810" height="125" rx="8" ry="8" style="stroke: rgb(83%,71%,42%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,97%,90%); fill-rule: evenodd;"/>
+			<text x="78" y="206" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 30px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,412) scale(1,-1)">Shared dependencies remain in both patterns</text>
+			<rect x="78" y="148" width="334" height="40" rx="8" ry="8" style="stroke: rgb(83%,71%,42%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,99%,96%); fill-rule: evenodd;"/>
+			<text x="93" y="160" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,320) scale(1,-1)">Cloud / compute</text>
+			<rect x="431" y="148" width="334" height="40" rx="8" ry="8" style="stroke: rgb(83%,71%,42%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,99%,96%); fill-rule: evenodd;"/>
+			<text x="446" y="160" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,320) scale(1,-1)">AI models</text>
+			<rect x="784" y="148" width="334" height="40" rx="8" ry="8" style="stroke: rgb(83%,71%,42%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,99%,96%); fill-rule: evenodd;"/>
+			<text x="799" y="160" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,320) scale(1,-1)">Chips / hardware</text>
+			<rect x="1137" y="148" width="334" height="40" rx="8" ry="8" style="stroke: rgb(83%,71%,42%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,99%,96%); fill-rule: evenodd;"/>
+			<text x="1152" y="160" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,320) scale(1,-1)">Software / updates</text>
+			<rect x="1490" y="148" width="334" height="40" rx="8" ry="8" style="stroke: rgb(83%,71%,42%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,99%,96%); fill-rule: evenodd;"/>
+			<text x="1505" y="160" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,320) scale(1,-1)">Identity / trust roots</text>
+			<text x="78" y="125" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,250) scale(1,-1)">Map dependence on providers and required authorities; measure substitution and resilience instead of assuming independence.</text>
+			<text x="55" y="72" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,144) scale(1,-1)">Federation is a control and portability objective, not proof of lower cost, superior AI or freedom from cloud, model or hardware suppliers.</text>
+			<text x="55" y="42" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,84) scale(1,-1)">Documented mechanisms and proposed requirements have different evidence status; compare matched tasks and failures.</text>
+			<text x="55" y="12" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,24) scale(1,-1)">Original author comparison of control and dependencies; no executed superiority claim.</text>
+		</g>
+	</g>
+</svg>

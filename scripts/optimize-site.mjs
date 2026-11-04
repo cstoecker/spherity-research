@@ -14,11 +14,13 @@ const siteDirectory = path.resolve(getArgument("--site-dir", "_site"));
 const htmlFiles = await glob("**/*.html", {
   cwd: siteDirectory,
   nodir: true,
+  ignore: ["dpp-explorer/**"],
   windowsPathsNoEscape: true
 });
 const cssFiles = await glob("**/*.css", {
   cwd: siteDirectory,
   nodir: true,
+  ignore: ["dpp-explorer/**"],
   windowsPathsNoEscape: true
 });
 

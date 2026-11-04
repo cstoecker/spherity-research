@@ -1,0 +1,54 @@
+{
+  "reviewed_on": "2026-11-01",
+  "evidence": [
+    {
+      "comparison": "Palantir; industrial AI; knowledge graph (English, all categories)",
+      "input_type": "Exact search terms, not Google Trends topics",
+      "geography": "Germany",
+      "time_range": "Past 12 months",
+      "search_type": "Web Search",
+      "result": "Reviewed in Google Trends Explore on 1 November 2026. Palantir had the strongest displayed interest. Related queries were heavily about shares and general news and were rejected. Knowledge graph related queries included what is a knowledge graph and graphrag. Retain explanatory graph language; no volume or market inference."
+    },
+    {
+      "comparison": "Palantir; industrial AI; knowledge graph (English, all categories)",
+      "input_type": "Exact search terms, not Google Trends topics",
+      "geography": "Germany",
+      "time_range": "Past 5 years",
+      "search_type": "Web Search",
+      "result": "Reviewed in Google Trends Explore on 1 November 2026. Palantir again dominated this comparison. Relevant related phrases included industrial ai cloud, llm knowledge graph and knowledge graph examples. Many earlier specialist-term observations were zero or small; that is not evidence of no demand. Stock and consumer queries were excluded."
+    },
+    {
+      "comparison": "Palantir; industrial AI; knowledge graph (English, all categories)",
+      "input_type": "Exact search terms, not Google Trends topics",
+      "geography": "France",
+      "time_range": "Past 5 years",
+      "search_type": "Web Search",
+      "result": "Reviewed in Google Trends Explore on 1 November 2026. Palantir exceeded the two specialist English phrases. Knowledge graph related queries included llm knowledge graph, knowledge graph rag, graph rag and sap knowledge graph. Stock and unrelated news queries were excluded. English-term results do not measure French-language demand."
+    },
+    {
+      "comparison": "Palantir; industrial AI; knowledge graph (English, all categories)",
+      "input_type": "Exact search terms, not Google Trends topics",
+      "geography": "Netherlands",
+      "time_range": "Past 5 years",
+      "search_type": "Web Search",
+      "result": "Reviewed in Google Trends Explore on 1 November 2026. Palantir exceeded industrial AI and knowledge graph. Relevant related phrases included knowledge graph llm, knowledge graph rag, graphrag and knowledge graph tools. Consumer, stock and restaurant queries were rejected; this does not measure Dutch-language demand."
+    },
+    {
+      "comparison": "Palantir; industrial AI; knowledge graph (English, all categories)",
+      "input_type": "Exact search terms, not Google Trends topics",
+      "geography": "Worldwide",
+      "time_range": "Past 5 years",
+      "search_type": "Web Search",
+      "result": "Reviewed in Google Trends Explore on 1 November 2026. Palantir had the strongest displayed interest; industrial AI and knowledge graph had smaller reported signals. Knowledge graph llm, graphrag and langchain knowledge graph appeared in related queries. Preserve the paper’s evidence boundaries instead of adding unsupported product claims."
+    },
+    {
+      "comparison": "Palantir; industrial AI; knowledge graph (English, all categories)",
+      "input_type": "Exact search terms, not Google Trends topics",
+      "geography": "Worldwide",
+      "time_range": "Past 5 years",
+      "search_type": "News Search",
+      "result": "Reviewed in Google Trends Explore on 1 November 2026. Palantir dominated; knowledge graph showed sparse reporting. Industrial AI related queries included manufacturing, industrial robotics and industrial automation. Unrelated stock, conflict and news queries were excluded. The low specialist signal is not zero demand."
+    }
+  ],
+  "limitations": "Sampled normalized interest, not absolute volumes. German-language variants are source-based editorial synonyms and were not measured in these English comparisons."
+}

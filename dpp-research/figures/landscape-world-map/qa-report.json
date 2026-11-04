@@ -1,0 +1,49 @@
+{
+  "visual_review": "Passed: proof rendered with Poppler; no clipping, overlap, missing glyphs or ambiguous legend counts observed.",
+  "latex_fragment": "Provided as integration fragment; not yet compiled into final manuscript. Native width and dedicated page geometry are explicit.",
+  "standalone_latex_check": {"status":"compile-failed","message":"Compilation timed out","observation_date":"2026-10-24","project":"../../landscape-figure-latex-check/","source_error_returned":false},
+  "files": {
+    "dpp-world-map.pdf": {
+      "minimum_text_size_pt": 8.999999999999986,
+      "maximum_text_size_pt": 18.0,
+      "text_bbox_pt": [
+        0.0,
+        7.324219200000016,
+        760.6479512999999,
+        476.1621096
+      ],
+      "out_of_page_characters": 0
+    },
+    "dpp-world-map-a4-proof.pdf": {
+      "minimum_text_size_pt": 8.999999999999986,
+      "maximum_text_size_pt": 18.0,
+      "text_bbox_pt": [
+        35.94488,
+        41.33997920000013,
+        796.5928313,
+        551.1778696
+      ],
+      "out_of_page_characters": 0
+    },
+    "dpp-world-map-300dpi.png": {
+      "size_px": [
+        3209,
+        2000
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "dpp-world-map-a4-proof.png": {
+      "size_px": [
+        1754,
+        1241
+      ],
+      "dpi": [
+        149.987,
+        149.987
+      ]
+    }
+  }
+}

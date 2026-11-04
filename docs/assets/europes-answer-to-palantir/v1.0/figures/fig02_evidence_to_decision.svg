@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1920" height="1080" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>A valve-release decision explained</title>
+	<desc>Illustrative valve records connect to a measurement, source and acceptance rule; evidence and policy checks support an accountable decision rather than automatic approval. A proposed valve-release example shows how heterogeneous records become decision-relevant evidence. The graph links the subject, measurement, source and applicable rule. Verification and policy checks determine whether the evidence may support the task; AI explains the accepted facts, while the responsible participant controls the operation. A valid signature does not establish truth. Missing evidence can require HOLD. This is an illustrative workflow, not a validated safety case or a reported industrial deployment.</desc><metadata id="palantir-publication-metadata"><x:xmpmeta xmlns:x="adobe:ns:meta/"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/" xmlns:cc="http://creativecommons.org/ns#" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"><dc:title><rdf:Alt><rdf:li xml:lang="x-default">A valve-release decision explained</rdf:li></rdf:Alt></dc:title><dc:description><rdf:Alt><rdf:li xml:lang="x-default">Illustrative valve records connect to a measurement, source and acceptance rule; evidence and policy checks support an accountable decision rather than automatic approval. A proposed valve-release example shows how heterogeneous records become decision-relevant evidence. The graph links the subject, measurement, source and applicable rule. Verification and policy checks determine whether the evidence may support the task; AI explains the accepted facts, while the responsible participant controls the operation. A valid signature does not establish truth. Missing evidence can require HOLD. This is an illustrative workflow, not a validated safety case or a reported industrial deployment.</rdf:li></rdf:Alt></dc:description><dc:creator><rdf:Seq><rdf:li>Dr. Carsten Stöcker</rdf:li></rdf:Seq></dc:creator><dc:subject><rdf:Bag><rdf:li>Industrial AI</rdf:li><rdf:li>Evidence graphs</rdf:li><rdf:li>Semantic interoperability</rdf:li></rdf:Bag></dc:subject><dc:rights><rdf:Alt><rdf:li xml:lang="x-default">© 2026 Dr. Carsten Stöcker, Spherity GmbH. CC BY 4.0 except where otherwise noted. Referenced third-party material retains its own terms.</rdf:li></rdf:Alt></dc:rights><dc:source>https://spherity.github.io/spherity-research/europes-answer-to-palantir.html#figure-11-figure</dc:source><dc:format>image/svg+xml</dc:format><photoshop:Credit>Dr. Carsten Stöcker, Spherity GmbH</photoshop:Credit><xmpRights:Marked>True</xmpRights:Marked><xmpRights:WebStatement>https://spherity.github.io/spherity-research/europes-answer-to-palantir.html#license-and-citation</xmpRights:WebStatement><cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/><xmp:MetadataDate>2026-11-01</xmp:MetadataDate></rdf:Description></rdf:RDF></x:xmpmeta></metadata>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1920" height="1080"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-1080)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1920" height="1080" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="55" y="1032" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 42px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,2064) scale(1,-1)">From scattered records to an accountable decision</text>
+			<text x="55" y="985" style="font-family: Arial, sans-serif; font-size: 30px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,1970) scale(1,-1)">The ontology connects meaning; verification establishes what may be relied on.</text>
+			<text x="55" y="925" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 31px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1850) scale(1,-1)">One valve, three records, one controlled decision</text>
+			<rect x="60" y="620" width="540" height="260" rx="10" ry="10" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="85" y="835" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 33px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1670) scale(1,-1)">1  Collect records</text>
+			<path d="M 87,761 L 111,785 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 6;"/>
+			<path d="M 87,785 L 111,761 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 6;"/>
+			<text x="128" y="765" style="font-family: Arial, sans-serif; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1530) scale(1,-1)">Excel: valve identifier</text>
+			<rect x="87" y="701" width="24" height="24" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<text x="128" y="705" style="font-family: Arial, sans-serif; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1410) scale(1,-1)">PDF: laboratory test</text>
+			<polygon points="99 665, 87 641, 111 641" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(65%,47%,14%); fill-rule: evenodd;"/>
+			<text x="128" y="645" style="font-family: Arial, sans-serif; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1290) scale(1,-1)">Database: acceptance rules</text>
+			<rect x="690" y="620" width="540" height="260" rx="10" ry="10" style="stroke: rgb(57%,60%,77%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,94%,98%); fill-rule: evenodd;"/>
+			<text x="715" y="835" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 33px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1670) scale(1,-1)">2  Give facts meaning</text>
+			<text x="715" y="783" style="font-family: Arial, sans-serif; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1566) scale(1,-1)">Which valve and test?</text>
+			<text x="715" y="745" style="font-family: Arial, sans-serif; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1490) scale(1,-1)">Which units and limits?</text>
+			<text x="715" y="707" style="font-family: Arial, sans-serif; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1414) scale(1,-1)">Who asserted it, and when?</text>
+			<text x="715" y="651" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1302) scale(1,-1)">2.40 mL / 600 s = 0.24 mL/min</text>
+			<rect x="1320" y="620" width="540" height="260" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="1345" y="835" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 30px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1670) scale(1,-1)">3  Verify evidence + permission</text>
+			<text x="1345" y="779" style="font-family: Arial, sans-serif; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1558) scale(1,-1)">Accepted issuer and scope</text>
+			<text x="1345" y="738" style="font-family: Arial, sans-serif; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1476) scale(1,-1)">Current status and provenance</text>
+			<text x="1345" y="697" style="font-family: Arial, sans-serif; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1394) scale(1,-1)">Permission for this use</text>
+			<path d="M 600,750 L 690,750 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="690 750, 678 745, 678 755" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 1230,750 L 1320,750 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="1320 750, 1308 745, 1308 755" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="60" y="270" width="540" height="225" rx="10" ry="10" style="stroke: rgb(72%,78%,82%); stroke-linecap: butt; stroke-width: 2; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="85" y="447" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 31px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,894) scale(1,-1)">Why the ontology matters</text>
+			<text x="85" y="395" style="font-family: Arial, sans-serif; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,790) scale(1,-1)">It connects records to the same valve,</text>
+			<text x="85" y="357" style="font-family: Arial, sans-serif; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,714) scale(1,-1)">the same units and the same test.</text>
+			<text x="85" y="319" style="font-family: Arial, sans-serif; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,638) scale(1,-1)">This makes evidence usable by AI.</text>
+			<rect x="690" y="270" width="540" height="225" rx="10" ry="10" style="stroke: rgb(83%,71%,42%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,97%,90%); fill-rule: evenodd;"/>
+			<text x="715" y="447" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,894) scale(1,-1)">4  AI uses accepted facts</text>
+			<text x="715" y="394" style="font-family: Arial, sans-serif; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,788) scale(1,-1)">Links answers to their sources</text>
+			<text x="715" y="354" style="font-family: Arial, sans-serif; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,708) scale(1,-1)">Shows gaps and conflicts</text>
+			<text x="715" y="314" style="font-family: Arial, sans-serif; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,628) scale(1,-1)">Does not confer authority</text>
+			<rect x="1320" y="270" width="540" height="225" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="1345" y="447" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 31px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,894) scale(1,-1)">5  Local decision + approval</text>
+			<text x="1345" y="394" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(3%,46%,43%); stroke:none;" transform="translate(0,788) scale(1,-1)">RELEASE ELIGIBLE: checks pass</text>
+			<text x="1345" y="352" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(65%,47%,14%); stroke:none;" transform="translate(0,704) scale(1,-1)">HOLD: missing or invalid evidence</text>
+			<text x="1345" y="303" style="font-family: Arial, sans-serif; font-size: 28px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,606) scale(1,-1)">Action still needs authorization</text>
+			<path d="M 1590,620 L 1590,550 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<path d="M 1590,550 L 960,550 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<path d="M 960,550 L 960,495 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="960 495, 955 507, 965 507" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<text x="1038" y="570" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(3%,46%,43%); stroke:none;" transform="translate(0,1140) scale(1,-1)">Accepted facts and stated gaps</text>
+			<path d="M 1230,380 L 1320,380 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="1320 380, 1308 375, 1308 385" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="60" y="100" width="570" height="105" rx="10" ry="10" style="stroke: rgb(72%,78%,82%); stroke-linecap: butt; stroke-width: 2; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="198.376" y="160.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,320) scale(1,-1)">Signature is not truth</text>
+			<text x="148.466" y="125.0" style="font-family: Arial, sans-serif; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,250) scale(1,-1)">Verify the source and its authority.</text>
+			<rect x="675" y="100" width="570" height="105" rx="10" ry="10" style="stroke: rgb(72%,78%,82%); stroke-linecap: butt; stroke-width: 2; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="826.2375" y="160.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,320) scale(1,-1)">Missing is not false</text>
+			<text x="788.023" y="125.0" style="font-family: Arial, sans-serif; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,250) scale(1,-1)">Keep absent evidence visible.</text>
+			<rect x="1290" y="100" width="570" height="105" rx="10" ry="10" style="stroke: rgb(72%,78%,82%); stroke-linecap: butt; stroke-width: 2; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="1377.5825" y="160.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,320) scale(1,-1)">An answer is not permission</text>
+			<text x="1372.6680000000001" y="125.0" style="font-family: Arial, sans-serif; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,250) scale(1,-1)">Authorize the consequential action.</text>
+			<text x="55" y="38" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,76) scale(1,-1)">Illustrative synthetic valve case; no actual certification, measured result or executed comparison is reported.</text>
+		</g>
+	</g>
+</svg>

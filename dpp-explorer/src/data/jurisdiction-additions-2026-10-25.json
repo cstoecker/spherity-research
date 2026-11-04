@@ -1,0 +1,516 @@
+{
+  "id": "jurisdiction-additions-2026-10-25",
+  "checked_at": "2026-10-25",
+  "base_version": "0.1.0",
+  "description": "Primary-source additions for Switzerland’s THG proposal, Norway’s battery-registry consultation and Taiwan’s resource-circulation law and voluntary DPP pilot.",
+  "review_status": "machine_assisted_unreviewed",
+  "relationship_definitions": {
+    "references": "An explicit source reference or contextual discussion; it does not establish legal incorporation, conformity, standard adoption or mutual recognition.",
+    "part_of": "A provision identified within its named legal instrument; implementation scope and dates remain qualified in the records."
+  },
+  "entities": [
+    {
+      "id": "global-ch-thg-dpp-proposal",
+      "type": "Policy",
+      "label": "Swiss THG proposal: digital product information system",
+      "description": "The June 2026 consultation draft would authorise a digital product information system, with sector decisions and compatibility with trading-partner systems considered separately.",
+      "version": "Consultation draft 2026-06-05",
+      "jurisdiction_ids": [
+        "jur-ch"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "draft_consultation_closed",
+        "as_of": "2026-10-25",
+        "scope_note": "Consultation closed on 28 September 2026. The reviewed proposal is not an enacted Swiss DPP requirement."
+      },
+      "dates": [
+        {
+          "kind": "consultation_opened",
+          "date": "2026-06-05",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-ch-thg-announcement"
+          ]
+        },
+        {
+          "kind": "consultation_closed",
+          "date": "2026-09-28",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-ch-thg-announcement"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-ch-thg-announcement",
+        "src-update-20261025-ch-thg-explanatory-report"
+      ],
+      "limitations": [
+        "The consultation announcement and explanatory report do not establish subsequent enactment or a mandatory DPP for any product category.",
+        "A domestic system or participation in a trading-partner system remains an option; no mutual recognition or completed interoperability is established."
+      ]
+    },
+    {
+      "id": "global-no-battery-registry-consultation",
+      "type": "Policy",
+      "label": "Norway battery regulation consultation: passport registry",
+      "description": "The Norwegian Environment Agency consulted on amendments to its proposed battery regulation, including the use of the product-passport registry for battery-passport identifiers.",
+      "version": "Consultation 2026/4456",
+      "jurisdiction_ids": [
+        "jur-no"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "geography": null,
+      "status": {
+        "value": "closed_consultation_current_adoption_unverified",
+        "as_of": "2026-10-25",
+        "scope_note": "Consultation 2026/4456 closed on 11 May 2026. Subsequent adoption and current Norwegian applicability were not established by this source."
+      },
+      "dates": [
+        {
+          "kind": "consultation_opened",
+          "date": "2026-04-27",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-no-battery-consultation"
+          ]
+        },
+        {
+          "kind": "consultation_closed",
+          "date": "2026-05-11",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-no-battery-consultation"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-no-battery-consultation"
+      ],
+      "limitations": [
+        "The source records a proposal and an expired consultation, not final enactment or EEA incorporation.",
+        "The source does not establish that the EU battery-passport application date already applies domestically in Norway."
+      ]
+    },
+    {
+      "id": "jur-tw",
+      "type": "Jurisdiction",
+      "label": "Taiwan",
+      "description": "Geographic join for the assessed Taiwanese legal framework and voluntary DPP pilot.",
+      "version": null,
+      "jurisdiction_ids": [],
+      "sector_ids": [],
+      "geography": {
+        "kind": "country",
+        "iso_alpha2": "TW",
+        "iso_alpha3": "TWN",
+        "iso_3166_2": null,
+        "map_code": "TWN",
+        "parent_id": null,
+        "member_ids": [],
+        "join_note": "TWN is used solely to join the assessed records to the existing map boundary dataset; the map is a geographic research index."
+      },
+      "status": {
+        "value": "research_defined",
+        "as_of": "2026-10-25",
+        "scope_note": "Geographic research scope only; the presence of a record does not establish a universal DPP obligation."
+      },
+      "dates": [],
+      "evidence_status": "research_defined",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-tw-resource-circulation-act",
+        "src-update-20261025-tw-dpp-pilot"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "global-tw-resource-circulation-act",
+      "type": "LegalInstrument",
+      "label": "Taiwan Resource Circulation Promotion Act",
+      "description": "The amended Act establishes a resource-circulation framework including powers for product-information disclosure under Article 22.",
+      "version": "Amended 2026-06-17",
+      "jurisdiction_ids": [
+        "jur-tw"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "in_force_with_deferred_provisions",
+        "as_of": "2026-10-25",
+        "scope_note": "Amended on 17 June 2026. Article 52 brings the Act into force on promulgation, except Article 14 and Article 38(1), which take effect two years later."
+      },
+      "dates": [
+        {
+          "kind": "amended",
+          "date": "2026-06-17",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-tw-resource-circulation-act"
+          ]
+        },
+        {
+          "kind": "entered_into_force",
+          "date": "2026-06-17",
+          "precision": "day",
+          "condition": "Article 52; excludes Article 14 and Article 38(1).",
+          "source_ids": [
+            "src-update-20261025-tw-resource-circulation-act"
+          ]
+        },
+        {
+          "kind": "deferred_provisions_enter_into_force",
+          "date": "2028-06-17",
+          "precision": "day",
+          "condition": "Article 14 and Article 38(1), two years after promulgation.",
+          "source_ids": [
+            "src-update-20261025-tw-resource-circulation-act"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-tw-resource-circulation-act"
+      ],
+      "limitations": [
+        "The Act is an enabling framework; designated products, disclosure methods and deadlines require the relevant announcements and rules.",
+        "This record does not establish a general mandatory DPP rollout or a single DPP compliance date.",
+        "The official English translation states that the Chinese text prevails in case of discrepancy."
+      ]
+    },
+    {
+      "id": "global-tw-product-information-art22",
+      "type": "Provision",
+      "label": "Taiwan product-information disclosure: Article 22",
+      "description": "Article 22 enables designated products to carry material, repairability and circularity information; where a unique product code is used, traceability and quality-verification information must be updated.",
+      "version": "Article 22",
+      "jurisdiction_ids": [
+        "jur-tw"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "enabling_provision_in_force",
+        "as_of": "2026-10-25",
+        "scope_note": "The authority must specify covered products, deadlines and methods. Products outside those designations may disclose information voluntarily."
+      },
+      "dates": [
+        {
+          "kind": "entered_into_force",
+          "date": "2026-06-17",
+          "precision": "day",
+          "condition": "Article 52; product-specific duties depend on implementing announcements.",
+          "source_ids": [
+            "src-update-20261025-tw-resource-circulation-act"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-tw-resource-circulation-act",
+        "src-update-20261025-tw-dpp-pilot"
+      ],
+      "limitations": [
+        "No product-specific designation or implementing disclosure rule was verified for this update.",
+        "Article 22 does not itself prescribe W3C, UNTP or a particular DPP data model."
+      ]
+    },
+    {
+      "id": "global-tw-dpp-voluntary-pilot",
+      "type": "Pilot",
+      "label": "Taiwan voluntary DPP pilot programme",
+      "description": "The Resource Circulation Administration reports a voluntary programme across batteries, textiles, ICT equipment and circular materials, alongside an open-source module and cross-border data-exchange testing.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-tw"
+      ],
+      "sector_ids": [
+        "sec-batteries",
+        "sec-textiles",
+        "sec-electronics",
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "voluntary_pilot_reported",
+        "as_of": "2026-10-25",
+        "scope_note": "The 7 September 2026 agency report describes 28 participating companies and more than 20,000 product records. This is pilot evidence, not nationwide compliance."
+      },
+      "dates": [
+        {
+          "kind": "programme_started",
+          "date": "2023",
+          "precision": "year",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-tw-dpp-pilot"
+          ]
+        },
+        {
+          "kind": "results_reported",
+          "date": "2026-09-07",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-tw-dpp-pilot"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-tw-dpp-pilot"
+      ],
+      "limitations": [
+        "Reported pilot results were not independently reproduced.",
+        "Cross-border tests do not establish formal mutual recognition, EU conformity or adoption of a named international technical standard.",
+        "The source places the pilot alongside Article 22 but does not establish a universal domestic DPP duty."
+      ]
+    }
+  ],
+  "assertions": [
+    {
+      "id": "a-update-20261025-ch-thg-espr",
+      "subject": "global-ch-thg-dpp-proposal",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "The Swiss explanatory report discusses the EU ESPR DPP framework when explaining the proposed Swiss product-information system.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-ch-thg-explanatory-report"
+      ],
+      "locator": "Draft Article 6b explanation, printed pages 19–20; explicit reference to EU Regulation 2024/1781",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A reference to the EU framework does not establish Swiss incorporation, equivalence or mutual recognition."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-no-battery-regulation",
+      "subject": "global-no-battery-registry-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-batteries-regulation"
+      },
+      "statement": "The Norwegian consultation concerns amendments to the proposed national regulation implementing the EU Batteries Regulation.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-no-battery-consultation"
+      ],
+      "locator": "Introductory sentence and proposal item 2",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "This records the subject of a consultation, not final Norwegian implementation."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-no-battery-espr",
+      "subject": "global-no-battery-registry-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "The consultation explicitly describes an amendment arising from the EU ecodesign regulation concerning product-passport registry use for battery-passport identifiers.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-no-battery-consultation"
+      ],
+      "locator": "Proposal item 2",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The proposed registry linkage does not prove that ESPR or the registry obligations are currently incorporated in Norwegian law."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-tw-art22-part",
+      "subject": "global-tw-product-information-art22",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "global-tw-resource-circulation-act"
+      },
+      "statement": "Article 22 is a provision of Taiwan’s Resource Circulation Promotion Act.",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-tw-resource-circulation-act"
+      ],
+      "locator": "Article 22",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Product-specific scope and deadlines are established through implementing announcements."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-tw-pilot-art22",
+      "subject": "global-tw-dpp-voluntary-pilot",
+      "predicate": "references",
+      "object": {
+        "entity_id": "global-tw-product-information-art22"
+      },
+      "statement": "The Resource Circulation Administration’s pilot report identifies Article 22 as the legal framework for product-information disclosure while describing the voluntary DPP pilot.",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-tw-dpp-pilot"
+      ],
+      "locator": "Paragraph connecting Article 22 to voluntary trials before implementation of the disclosure system",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The agency report links the policy context and pilot; this does not make pilot participation mandatory."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-tw-pilot-eu-battery",
+      "subject": "global-tw-dpp-voluntary-pilot",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-battery-passport-requirement"
+      },
+      "statement": "The Taiwan pilot report discusses the EU battery-passport requirement as an international driver for supply-chain preparation.",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-tw-dpp-pilot"
+      ],
+      "locator": "Paragraph on EU battery passports and the 18 February 2027 date",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A reference to the EU requirement does not establish pilot conformity, legal recognition or adoption of an EU technical standard."
+      ],
+      "interoperability": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-update-20261025-ch-thg-announcement",
+      "title": "Bundesrat will Gesetz über technische Handelshemmnisse modernisieren",
+      "url": "https://www.kmu.admin.ch/de/newnsb/k4JemTZmDs6ON5OOOP--_",
+      "publisher": "Swiss Federal Council / SECO",
+      "source_type": "public_authority",
+      "language": "de",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-06-05",
+      "dossier_files": [],
+      "locator": "Announcement: proposed legal basis for a digital product passport; consultation dates",
+      "limitations": [
+        "Consultation-stage announcement; subsequent enactment is not established."
+      ]
+    },
+    {
+      "id": "src-update-20261025-ch-thg-explanatory-report",
+      "title": "Teilrevision des Bundesgesetzes über die technischen Handelshemmnisse: Erläuternder Bericht zur Eröffnung des Vernehmlassungsverfahrens",
+      "url": "https://cms.news.admin.ch/fileservice/sdweb-docs-prod-nsbcch-files/files/2026/06/05/7da6b141-a858-4d2d-a24b-deb9935b58a5.pdf",
+      "publisher": "Swiss Federal Council / SECO",
+      "source_type": "public_authority",
+      "language": "de",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-06-05",
+      "dossier_files": [],
+      "locator": "Discussion of draft Article 6b, printed pages 18–20 (PDF pages 18–20): product-information systems and EU Regulation 2024/1781",
+      "limitations": [
+        "Explanatory report accompanying a consultation draft, not the final law."
+      ]
+    },
+    {
+      "id": "src-update-20261025-no-battery-consultation",
+      "title": "Høring av endringer i batteriforskriften",
+      "url": "https://www.miljodirektoratet.no/hoeringer/2026/april-2026/horing-av-endringer-i-batteriforskriften/",
+      "publisher": "Norwegian Environment Agency",
+      "source_type": "public_authority",
+      "language": "no",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-04-27",
+      "dossier_files": [],
+      "locator": "Consultation 2026/4456; proposal item 2 on product-passport registry use for battery-passport identifiers",
+      "limitations": [
+        "The official page confirms the consultation is closed; final adoption and EEA incorporation were not verified."
+      ]
+    },
+    {
+      "id": "src-update-20261025-tw-resource-circulation-act",
+      "title": "Resource Circulation Promotion Act — amended 17 June 2026",
+      "url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=O0050049",
+      "publisher": "Taiwan Ministry of Justice, Laws & Regulations Database",
+      "source_type": "legal_text",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-06-17",
+      "dossier_files": [],
+      "locator": "Articles 22 and 52; amendment date in header",
+      "limitations": [
+        "Official English translation; the Chinese text prevails in case of discrepancy.",
+        "Product-specific implementing announcements and disclosure rules were not reviewed."
+      ]
+    },
+    {
+      "id": "src-update-20261025-tw-dpp-pilot",
+      "title": "透明循環．數位賦能！環境部偕同 28 家企業 展現產品數位護照跨業應用實績",
+      "url": "https://prcp.moenv.gov.tw/Public/views/news_detailed.aspx?id=9c70b479-f62d-4a55-9300-0cfe4d340b10",
+      "publisher": "Taiwan Ministry of Environment, Resource Circulation Administration",
+      "source_type": "public_authority",
+      "language": "zh",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-09-07",
+      "dossier_files": [],
+      "locator": "Opening paragraphs; Article 22, voluntary pilot since 2023, open-source module and cross-border testing",
+      "limitations": [
+        "Agency account of voluntary pilot results; not independently replicated.",
+        "No named international technical standard or formal mutual recognition is established."
+      ]
+    }
+  ]
+}

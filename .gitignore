@@ -6,3 +6,9 @@ dist/
 vendor/
 .pnpm-store/
 artifacts/
+
+# The atlas is rebuilt from editable sources and a frozen research release.
+docs/dpp-explorer/
+dpp-explorer/integration/docs/dpp-explorer/
+!dpp-explorer/src/vendor/
+!dpp-explorer/src/vendor/**

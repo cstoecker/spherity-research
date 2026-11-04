@@ -1,0 +1,46 @@
+{
+  "retrievedOn": "2026-10-23",
+  "assets": [
+    {
+      "file": "world.geojson",
+      "name": "Natural Earth 1:110m Admin 0 Countries",
+      "repositoryRelease": "v5.1.2",
+      "layerVersionAdvertisedByProject": "5.1.1",
+      "sourceUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_110m_admin_0_countries.geojson",
+      "repositoryUrl": "https://github.com/nvkelso/natural-earth-vector/blob/v5.1.2/geojson/ne_110m_admin_0_countries.geojson",
+      "documentationUrl": "https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/",
+      "license": "Public domain",
+      "licenseFile": "NATURAL-EARTH-LICENSE.md",
+      "licenseSourceUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/LICENSE.md",
+      "termsUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "attribution": "Made with Natural Earth.",
+      "featureCount": 177,
+      "bytes": 838726,
+      "sha256": "6866c877d39cba9c357620878839b336d569f8c662d3cfab4cb1dbe2d39c977f",
+      "modifications": "None. Original GeoJSON geometry and properties preserved.",
+      "limitations": [
+        "Generalised 1:110m cartography omits some small countries and territories; the dataset's jurisdiction selector and table are the authoritative coverage views.",
+        "Natural Earth uses de facto boundaries. Cartographic boundaries and names are not statements of legal jurisdiction or endorsement of territorial claims.",
+        "The 177 geometry features are not a count of researched jurisdictions or recognised sovereign states.",
+        "ISO_A3 is -99 for France and Norway; ISO_A3_EH supplies FRA and NOR. Other non-ISO identifiers must remain explicit and must not be treated as assigned ISO codes.",
+        "Northern Ireland, supranational bodies, regional groups and global initiatives require explicit dataset treatment; they cannot be inferred from country polygons."
+      ]
+    },
+    {
+      "file": "d3.min.js",
+      "name": "D3",
+      "version": "7.9.0",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js",
+      "repositoryUrl": "https://github.com/d3/d3/releases/tag/v7.9.0",
+      "documentationUrl": "https://d3js.org/getting-started",
+      "license": "ISC",
+      "licenseFile": "D3-LICENSE.txt",
+      "licenseSourceUrl": "https://raw.githubusercontent.com/d3/d3/v7.9.0/LICENSE",
+      "copyright": "Copyright 2010-2023 Mike Bostock",
+      "bytes": 279706,
+      "sha256": "f2094bbf6141b359722c4fe454eb6c4b0f0e42cc10cc7af921fc158fceb86539",
+      "modifications": "None. Minified UMD distribution preserved.",
+      "distributionNote": "The D3 getting-started documentation identifies jsDelivr as a supported distribution source and documents local UMD use. This copy is version-pinned and served locally."
+    }
+  ]
+}

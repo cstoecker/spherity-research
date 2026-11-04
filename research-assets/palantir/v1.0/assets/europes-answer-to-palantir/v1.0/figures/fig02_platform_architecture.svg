@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1920" height="1080" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1920" height="1080"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-1080)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1920" height="1080" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="55" y="1034" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 38px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,2068) scale(1,-1)">P1  Platform-governed operational ontology</text>
+			<text x="55" y="994" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,1988) scale(1,-1)">Documented Palantir responsibilities, abstracted for comparison; one platform can serve multiple organizations</text>
+			<rect x="70" y="925" width="1790" height="55" rx="8" ry="8" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="92" y="945" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1890) scale(1,-1)">Data + meaning + executable logic + controlled action</text>
+			<text x="915" y="945" style="font-family: Arial, sans-serif; font-size: 26px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,1890) scale(1,-1)">An industry vocabulary can supply the shared model</text>
+			<rect x="40" y="70" width="1320" height="830" rx="8" ry="8" style="stroke: rgb(52%,61%,68%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="70" y="830" width="610" height="65" rx="8" ry="8" style="stroke: rgb(57%,60%,77%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,94%,98%); fill-rule: evenodd;"/>
+			<rect x="710" y="830" width="620" height="65" rx="8" ry="8" style="stroke: rgb(57%,60%,77%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,94%,98%); fill-rule: evenodd;"/>
+			<text x="88" y="867" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1734) scale(1,-1)">G01 Governance - identity, policy, audit</text>
+			<text x="88" y="839" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1678) scale(1,-1)">Applies to every source, tool, result and action</text>
+			<text x="728" y="867" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1734) scale(1,-1)">G02 Lifecycle - versions, tests, recovery</text>
+			<text x="728" y="839" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1678) scale(1,-1)">Profiles, keys, models, data and dependent decisions</text>
+			<text x="75" y="805" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,1610) scale(1,-1)">Organization A private | Organization B private | Governed shared spaces</text>
+			<rect x="1080" y="80" width="260" height="710" rx="8" ry="8" style="stroke: rgb(57%,60%,77%); stroke-linecap: butt; stroke-width: 2; fill: rgb(96%,96%,98%); fill-rule: evenodd; stroke-dasharray: 10, 7;"/>
+			<text x="1097" y="754" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1508) scale(1,-1)">Ontology Engine</text>
+			<text x="1097" y="725" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,1450) scale(1,-1)">Functional view</text>
+			<rect x="70" y="610" width="220" height="130" rx="8" ry="8" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="85" y="709" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1418) scale(1,-1)">B09</text>
+			<text x="85" y="679" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1358) scale(1,-1)">Applications</text>
+			<text x="85" y="642" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,1284) scale(1,-1)">People / APIs</text>
+			<rect x="320" y="610" width="220" height="130" rx="8" ry="8" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="335" y="709" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1418) scale(1,-1)">B07 AI</text>
+			<text x="335" y="679" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1358) scale(1,-1)">orchestration</text>
+			<text x="335" y="642" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,1284) scale(1,-1)">Tools / planning</text>
+			<rect x="820" y="610" width="220" height="130" rx="8" ry="8" style="stroke: rgb(57%,60%,77%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,94%,98%); fill-rule: evenodd;"/>
+			<text x="835" y="709" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1418) scale(1,-1)">B04 Ontology</text>
+			<text x="835" y="679" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1358) scale(1,-1)">model and</text>
+			<text x="835" y="649" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1298) scale(1,-1)">vocabulary</text>
+			<rect x="70" y="420" width="220" height="150" rx="8" ry="8" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="85" y="539" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1078) scale(1,-1)">B01 Source</text>
+			<text x="85" y="509" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1018) scale(1,-1)">access</text>
+			<text x="85" y="472" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,944) scale(1,-1)">DB / PDF / Excel</text>
+			<text x="85" y="444" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,888) scale(1,-1)">other files / APIs</text>
+			<rect x="320" y="420" width="220" height="150" rx="8" ry="8" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="335" y="539" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1078) scale(1,-1)">B02</text>
+			<text x="335" y="509" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1018) scale(1,-1)">Preparation</text>
+			<text x="335" y="472" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,944) scale(1,-1)">Parse / extract</text>
+			<text x="335" y="444" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,888) scale(1,-1)">normalize</text>
+			<rect x="570" y="420" width="220" height="150" rx="8" ry="8" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="585" y="539" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1078) scale(1,-1)">B03 Data</text>
+			<text x="585" y="509" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1018) scale(1,-1)">substrate</text>
+			<text x="585" y="472" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,944) scale(1,-1)">Store / reference</text>
+			<rect x="820" y="420" width="220" height="150" rx="8" ry="8" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="835" y="539" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1078) scale(1,-1)">B10</text>
+			<text x="835" y="509" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1018) scale(1,-1)">Knowledge</text>
+			<text x="835" y="479" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,958) scale(1,-1)">Graph Builder</text>
+			<text x="835" y="442" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,884) scale(1,-1)">Map / index</text>
+			<rect x="1100" y="420" width="220" height="150" rx="8" ry="8" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="1115" y="539" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1078) scale(1,-1)">B05</text>
+			<text x="1115" y="509" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1018) scale(1,-1)">Operational</text>
+			<text x="1115" y="479" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,958) scale(1,-1)">graph and</text>
+			<text x="1115" y="449" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,898) scale(1,-1)">read services</text>
+			<rect x="1100" y="255" width="220" height="120" rx="8" ry="8" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="1115" y="344" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,688) scale(1,-1)">B06 Logic and</text>
+			<text x="1115" y="314" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,628) scale(1,-1)">model</text>
+			<text x="1115" y="284" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,568) scale(1,-1)">execution</text>
+			<rect x="1100" y="95" width="220" height="115" rx="8" ry="8" style="stroke: rgb(83%,71%,42%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,97%,90%); fill-rule: evenodd;"/>
+			<text x="1115" y="179" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,358) scale(1,-1)">B08 Action</text>
+			<text x="1115" y="149" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,298) scale(1,-1)">execution</text>
+			<text x="1115" y="112" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,224) scale(1,-1)">Authorize / act</text>
+			<path d="M 290,495 L 320,495 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="320 495, 308 490, 308 500" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 540,495 L 570,495 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="570 495, 558 490, 558 500" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 790,495 L 820,495 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="820 495, 808 490, 808 500" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 1040,495 L 1100,495 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="1100 495, 1088 490, 1088 500" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 930,610 L 930,570 Z" style="stroke: rgb(46%,48%,67%); stroke-linecap: butt; stroke-width: 3; stroke-dasharray: 9, 6;"/>
+			<polygon points="930 570, 925 582, 935 582" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<text x="950" y="581" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(46%,48%,67%); stroke:none;" transform="translate(0,1162) scale(1,-1)">types</text>
+			<path d="M 1040,680 L 1080,680 Z" style="stroke: rgb(46%,48%,67%); stroke-linecap: butt; stroke-width: 3; stroke-dasharray: 9, 6;"/>
+			<polygon points="1080 680, 1068 675, 1068 685" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<path d="M 180,740 L 180,770 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<path d="M 180,770 L 1055,770 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<path d="M 1055,770 L 1055,190 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<path d="M 1055,190 L 1100,190 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="1100 190, 1088 185, 1088 195" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="180 740, 175 752, 185 752" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<path d="M 180,740 L 180,770 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="180 770, 185 758, 175 758" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="180 740, 175 752, 185 752" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<path d="M 430,740 L 430,770 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="430 770, 435 758, 425 758" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="430 740, 425 752, 435 752" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<path d="M 1055,595 L 1210,595 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<path d="M 1210,595 L 1210,570 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="1210 570, 1205 582, 1215 582" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="1055 595, 1067 600, 1067 590" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<path d="M 1055,315 L 1100,315 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="1100 315, 1088 310, 1088 320" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="1055 315, 1067 320, 1067 310" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<circle cx="180" cy="770" r="4.5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<circle cx="430" cy="770" r="4.5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<circle cx="1055" cy="595" r="4.5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<circle cx="1055" cy="315" r="4.5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="545" y="776" width="490" height="29" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="550" y="782" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(3%,46%,43%); stroke:none;" transform="translate(0,1564) scale(1,-1)">Queries / logic / action calls and returns</text>
+			<path d="M 1210,420 L 1210,375 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="1210 375, 1205 387, 1215 387" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="1210 420, 1215 408, 1205 408" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<text x="1230" y="385" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(3%,46%,43%); stroke:none;" transform="translate(0,770) scale(1,-1)">read</text>
+			<path d="M 1210,255 L 1210,210 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="1210 210, 1205 222, 1215 222" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="1210 255, 1215 243, 1205 243" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<text x="1230" y="220" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(3%,46%,43%); stroke:none;" transform="translate(0,440) scale(1,-1)">check</text>
+			<path d="M 1100,125 L 980,125 Z" style="stroke: rgb(65%,47%,14%); stroke-linecap: butt; stroke-width: 3;"/>
+			<path d="M 980,125 L 980,420 Z" style="stroke: rgb(65%,47%,14%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="980 420, 985 408, 975 408" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(65%,47%,14%); fill-rule: evenodd;"/>
+			<rect x="845" y="275" width="155" height="58" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="850" y="310" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(65%,47%,14%); stroke:none;" transform="translate(0,620) scale(1,-1)">edits /</text>
+			<text x="850" y="281" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(65%,47%,14%); stroke:none;" transform="translate(0,562) scale(1,-1)">receipts</text>
+			<path d="M 540,680 L 820,680 Z" style="stroke: rgb(46%,48%,67%); stroke-linecap: butt; stroke-width: 3; stroke-dasharray: 9, 6;"/>
+			<polygon points="820 680, 808 675, 808 685" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<polygon points="540 680, 552 685, 552 675" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<rect x="555" y="696" width="245" height="29" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="560" y="702" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(46%,48%,67%); stroke:none;" transform="translate(0,1404) scale(1,-1)">model proposals</text>
+			<text x="560" y="640" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,1280) scale(1,-1)">Review before use</text>
+			<text x="70" y="588" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,1176) scale(1,-1)">Schedule / event / API triggers can dispatch configured logic, AI or action.</text>
+			<rect x="1450" y="95" width="410" height="115" rx="8" ry="8" style="stroke: rgb(83%,71%,42%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,97%,90%); fill-rule: evenodd;"/>
+			<text x="1465" y="179" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,358) scale(1,-1)">External ERP /</text>
+			<text x="1465" y="149" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,298) scale(1,-1)">operational system</text>
+			<text x="1465" y="112" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,224) scale(1,-1)">State and receipts</text>
+			<path d="M 1320,150 L 1450,150 Z" style="stroke: rgb(65%,47%,14%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="1450 150, 1438 145, 1438 155" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(65%,47%,14%); fill-rule: evenodd;"/>
+			<polygon points="1320 150, 1332 155, 1332 145" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(65%,47%,14%); fill-rule: evenodd;"/>
+			<text x="1343" y="172" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(65%,47%,14%); stroke:none;" transform="translate(0,344) scale(1,-1)">action</text>
+			<text x="1343" y="116" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(65%,47%,14%); stroke:none;" transform="translate(0,232) scale(1,-1)">outcome</text>
+			<path d="M 1450,200 L 1380,200 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3;"/>
+			<path d="M 1380,200 L 1380,410 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3;"/>
+			<path d="M 1380,410 L 180,410 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3;"/>
+			<path d="M 180,410 L 180,420 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="180 420, 185 408, 175 408" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<rect x="205" y="375" width="600" height="29" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="210" y="381" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(20%,46%,64%); stroke:none;" transform="translate(0,762) scale(1,-1)">Later observed state returns to source access</text>
+			<rect x="1450" y="650" width="410" height="235" rx="8" ry="8" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="1470" y="848" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1696) scale(1,-1)">Configured external</text>
+			<text x="1470" y="814" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1628) scale(1,-1)">interfaces</text>
+			<text x="1470" y="772" style="font-family: Arial, sans-serif; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1544) scale(1,-1)">Configured clients and AI tools</text>
+			<text x="1470" y="740" style="font-family: Arial, sans-serif; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1480) scale(1,-1)">can use ontology services,</text>
+			<text x="1470" y="708" style="font-family: Arial, sans-serif; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1416) scale(1,-1)">external models and compute.</text>
+			<path d="M 1450,735 L 1340,735 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="1340 735, 1352 740, 1352 730" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="1450 735, 1438 730, 1438 740" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="1450" y="420" width="410" height="210" rx="8" ry="8" style="stroke: rgb(57%,60%,77%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,94%,98%); fill-rule: evenodd;"/>
+			<text x="1470" y="593" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1186) scale(1,-1)">Governance is not a</text>
+			<text x="1470" y="559" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1118) scale(1,-1)">single-company limit</text>
+			<text x="1470" y="510" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1020) scale(1,-1)">Private and shared spaces,</text>
+			<text x="1470" y="478" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,956) scale(1,-1)">roles and mappings are</text>
+			<text x="1470" y="446" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,892) scale(1,-1)">deployment choices.</text>
+			<rect x="70" y="110" width="770" height="215" rx="8" ry="8" style="stroke: rgb(72%,78%,82%); stroke-linecap: butt; stroke-width: 2; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="92" y="290" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 29px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,580) scale(1,-1)">Files still need domain modelling</text>
+			<text x="92" y="245" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,490) scale(1,-1)">Resolve identifiers, units and source context. Configure</text>
+			<text x="92" y="210" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,420) scale(1,-1)">types, links and acceptance rules.</text>
+			<text x="1450" y="330" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,660) scale(1,-1)">External effects need</text>
+			<text x="1450" y="295" style="font-family: Arial, sans-serif; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,590) scale(1,-1)">receipts and reconciliation.</text>
+			<text x="55" y="42" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,84) scale(1,-1)">Dashed: model/change. Paired: request/return. Dots: junctions. Builder/indexing overlaps the Engine write path.</text>
+			<text x="55" y="12" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,24) scale(1,-1)">Principal flows; protocol details in Appendix A. Functional grouping, not exact service topology or an executed benchmark.</text>
+		</g>
+	</g>
+</svg>

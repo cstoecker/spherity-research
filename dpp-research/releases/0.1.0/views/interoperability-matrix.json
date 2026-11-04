@@ -1,0 +1,168 @@
+[
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "coding_status": "not_assessed",
+    "dimension": "product_identity",
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated."
+    ],
+    "mapping_note": "No qualified result for this dimension is coded in this seed; no incompatibility conclusion.",
+    "result": "not_tested",
+    "source_dimension": null,
+    "source_ids": [],
+    "subject": "global-jp-catena-x-cfp-demo"
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "coding_status": "bounded_reported_evidence",
+    "dimension": "syntactic_exchange",
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated."
+    ],
+    "mapping_note": "Protocol conversion was reported for the specified demonstration.",
+    "result": "reported_success",
+    "source_dimension": "protocol",
+    "source_ids": [
+      "src-global-jp-catena-x-demonstration"
+    ],
+    "subject": "global-jp-catena-x-cfp-demo"
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "coding_status": "bounded_reported_evidence",
+    "dimension": "semantic_meaning",
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated."
+    ],
+    "mapping_note": "Model conversion was reported; comprehensive semantic equivalence was not independently tested.",
+    "result": "reported_success",
+    "source_dimension": "semantic",
+    "source_ids": [
+      "src-global-jp-catena-x-demonstration"
+    ],
+    "subject": "global-jp-catena-x-cfp-demo"
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "coding_status": "not_assessed",
+    "dimension": "evidence_provenance",
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated."
+    ],
+    "mapping_note": "No qualified result for this dimension is coded in this seed; no incompatibility conclusion.",
+    "result": "not_tested",
+    "source_dimension": null,
+    "source_ids": [],
+    "subject": "global-jp-catena-x-cfp-demo"
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "coding_status": "bounded_reported_evidence",
+    "dimension": "authentication",
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated."
+    ],
+    "mapping_note": "Authentication conversion was reported; business identity and legal authority are separate dimensions.",
+    "result": "reported_success",
+    "source_dimension": "identity_authentication",
+    "source_ids": [
+      "src-global-jp-catena-x-demonstration"
+    ],
+    "subject": "global-jp-catena-x-cfp-demo"
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "coding_status": "not_assessed",
+    "dimension": "business_identity",
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated."
+    ],
+    "mapping_note": "No qualified result for this dimension is coded in this seed; no incompatibility conclusion.",
+    "result": "not_tested",
+    "source_dimension": null,
+    "source_ids": [],
+    "subject": "global-jp-catena-x-cfp-demo"
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "coding_status": "not_assessed",
+    "dimension": "delegated_authority",
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated."
+    ],
+    "mapping_note": "No qualified result for this dimension is coded in this seed; no incompatibility conclusion.",
+    "result": "not_tested",
+    "source_dimension": null,
+    "source_ids": [],
+    "subject": "global-jp-catena-x-cfp-demo"
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "coding_status": "not_assessed",
+    "dimension": "access_control",
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated."
+    ],
+    "mapping_note": "No qualified result for this dimension is coded in this seed; no incompatibility conclusion.",
+    "result": "not_tested",
+    "source_dimension": null,
+    "source_ids": [],
+    "subject": "global-jp-catena-x-cfp-demo"
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "coding_status": "not_assessed",
+    "dimension": "lifecycle_continuity",
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated."
+    ],
+    "mapping_note": "No qualified result for this dimension is coded in this seed; no incompatibility conclusion.",
+    "result": "not_tested",
+    "source_dimension": null,
+    "source_ids": [],
+    "subject": "global-jp-catena-x-cfp-demo"
+  },
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "coding_status": "not_assessed",
+    "dimension": "legal_acceptance",
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated."
+    ],
+    "mapping_note": "No qualified result for this dimension is coded in this seed; no incompatibility conclusion.",
+    "result": "not_tested",
+    "source_dimension": null,
+    "source_ids": [],
+    "subject": "global-jp-catena-x-cfp-demo"
+  }
+]

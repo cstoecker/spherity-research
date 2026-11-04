@@ -1,4 +1,147 @@
-- title: "Governing AI That Acts Across Companies"
+- title: EU DPP Registry, W3C Standards and DPP5.0
+  publication_type: paper
+  type: Visual research paper · W3C semantic stack and verifiable DPP evidence
+  date_label: 3 November 2026
+  date_iso: '2026-11-03'
+  description: The EU DPP Registry technical stack, W3C semantics, DPP4.0 / DPP5.0 maturity, and a proposed DPP + EBW trust architecture.
+  byline: Dr. Carsten Stöcker · Spherity GmbH
+  topics:
+  - DPP & DBP
+  - Evidence graphs
+  - Identity
+  filters: dpp identity wallets infrastructure ai
+  search: eu dpp registry eu dpp register digital product passport register registry dpp4.0 dpp 4.0 dpp5.0 dpp 5.0 dpp maturity model
+    w3c semantics json-ld rdf skos shacl sparql owl xsd dcat dcat-ap eu digital product passport registry semantic data guide implementing
+    regulation 2026/1778 espr digitaler produktpass digitales produktregister europäisches unternehmenswallet ebw european business
+    wallet legal person identity verifiable credentials verifiable evidence graph data provenance product passport battery passport
+    policy odrl ai physical ai carsten stöcker carsten stoecker spherity
+  image: /assets/preview-eu-dpp-registry-w3c-dpp5.webp
+  image_alt: EU DPP Registry and DPP5.0 research with W3C semantic standards and a visual-paper cover.
+  image_width: 1200
+  image_height: 630
+  media_class: card-media-wide
+  format: HTML overview + 36-page PDF + figures
+  links:
+  - label: Explore the research
+    url: /eu-dpp-registry-w3c-dpp5.html
+    arrow: →
+  - label: Download visual paper
+    url: /Spherity_Research_EU_DPP_Registry_W3C_Standards_DPP5.0.pdf
+    arrow: ↓
+    secondary: true
+
+- title: Europe’s answer to Palantir
+  type: Two research papers · Interactive evidence graph
+  date_label: Papers 1.0 · 1 November 2026
+  date_iso: "2026-11-01"
+  description: "Explore Europe’s open-standards answer to platform dependence: two research papers, architecture figures and an interactive industrial AI evidence graph."
+  byline: Dr. Carsten Stöcker, Spherity GmbH
+  topics:
+    - Trusted AI
+    - Identity, wallets & data sharing
+    - Resilience
+  filters: ai identity wallets resilience infrastructure
+  search: europe palantir industrial ai operational ontology evidence graph knowledge graph dataspaces open standards semantic interoperability sovereign industrial ai participant exchange gateway global cooperation us asia pacific industrielle ki wissensgraph datenräume digitale souveränität carsten stöcker spherity
+  image: /assets/preview-europes-answer-to-palantir.webp
+  image_alt: Europe’s answer to Palantir — open industrial AI research with the executive brief cover.
+  image_width: 1200
+  image_height: 630
+  media_class: card-media-wide
+  format: HTML + 2 PDFs + interactive graph
+  links:
+    - label: Explore the research
+      url: /europes-answer-to-palantir.html
+      arrow: →
+    - label: Executive Brief
+      url: /European_Industrial_AI_Executive_Brief_v1.0.pdf
+      arrow: ↓
+      secondary: true
+    - label: Academic paper
+      url: /Industrial_AI_Academic_Paper_v1.0.pdf
+      arrow: ↓
+      secondary: true
+
+- title: Global Digital Product Passports
+  publication_type: paper
+  type: Whitepaper · World map and knowledge graph
+  date_label: Version 1.0 · 25 October 2026
+  date_iso: "2026-10-25"
+  description: Explore global Digital Product Passport regulation, standards and evidence infrastructure through a research whitepaper, world map, knowledge graph and EU timelines.
+  byline: Dr. Carsten Stöcker · Spherity GmbH
+  topics:
+    - DPP & DBP
+    - Evidence graphs
+    - Identity
+  filters: dpp identity wallets infrastructure
+  search: global digital product passport digital product passports dpp regulation dpp standards regulatory developments battery passport digital battery passport dbp espr ecodesign sustainable products regulation untp cirpass cirpass-2 w3c cen-cenelec jtc 24 iso iec jtc 5 asset administration shell aas gs1 itu catena-x gba global battery alliance rain alliance knowledge graph evidence interoperability world map jurisdiction digitaler produktpass digitale produktpässe batteriepass normen regulierung carsten stöcker carsten stoecker spherity shared evidence infrastructure global regulation calendar timeline eu product act odrl physical ai aas korea china japan us
+  image: /assets/preview-global-digital-product-passports-atlas.webp
+  image_alt: Global Digital Product Passports — a prominent regulatory world map with a vertical DPP Atlas label beside the whitepaper's first page.
+  image_width: 1200
+  image_height: 630
+  media_class: card-media-wide
+  format: HTML overview + PDF + interactive Atlas
+  links:
+    - label: Explore the research
+      url: /global-digital-product-passport-regulation.html
+      arrow: →
+    - label: Download whitepaper
+      url: /Spherity-Research-Global-DPP-Whitepaper.pdf
+      arrow: ↓
+      secondary: true
+    - label: Open Atlas
+      url: /dpp-explorer/
+      arrow: ↗
+      secondary: true
+
+- title: "Governed Memory for Physical AI"
+  type: "Research paper · Robot memory and supply chain security"
+  date_label: "20 October 2026"
+  date_iso: "2026-10-20"
+  description: "Govern robot memory from experience to action: trace its supply chain, assess configuration-specific reuse and enforce current evidence and authority."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  topics: ["Trusted AI", "Identity", "Resilience"]
+  filters: "ai identity resilience infrastructure"
+  search: "governed robot memory physical ai embodied ai robot learning memory supply chain security memory bill of materials mbom robot bom robot bill of materials memory poisoning verifiable evidence graphs evidence roles revocation runtime assurance european business wallet ebw legal person identity delegated authority calibration revalidation robotergedächtnis robotik erfahrungswissen sichere robotik roboterlernen industrielles ki gedächtnis carsten stöcker carsten stoecker spherity"
+  image: "/assets/preview-governed-robot-memory-physical-ai.webp"
+  image_alt: "Governed Memory for Physical AI social preview with the research paper's first page and memory supply chain security theme."
+  image_width: 1200
+  image_height: 630
+  media_class: "card-media-wide"
+  format: "HTML overview + PDF"
+  links:
+    - label: "Explore the research"
+      url: "/governed-robot-memory-physical-ai.html"
+      arrow: "→"
+    - label: "Download full paper"
+      url: "/Spherity-Research-Governed-Robot-Memory-for-Physical-AI.pdf"
+      arrow: "↓"
+      secondary: true
+
+- title: "AI Agent Revocation and Containment in Multi-Agent Systems"
+  type: "Executive brief and two-paper research series"
+  date_label: "11 October 2026"
+  date_iso: "2026-10-11"
+  description: "Revocation, status propagation and bounded containment in multi-agent systems—not a complete wallet or self-sovereign identity (SSI) architecture design."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  topics: ["Trusted AI", "Identity", "Resilience"]
+  filters: "ai identity resilience infrastructure"
+  search: "ai agent revocation runtime revocation status propagation bounded containment cascading trust failures ai agents agentic ai multi-agent systems multi agent systems mas security credential status privacy verifiable credentials verifiable authority zero trust protected execution business wallets bitstring status list w3c openid caep shared signals framework anoncreds decoys masking source freshness finite leases persistent operation accounting cross company engineering file release ki agenten widerruf berechtigungen multiagentensysteme eindämmung vertrauensausfälle carsten stöcker carsten stoecker spherity"
+  image: "/assets/preview-ai-agent-revocation-containment.webp"
+  image_alt: "AI Agent Revocation and Containment preview with the executive brief cover and a three-PDF research series label."
+  image_width: 1200
+  image_height: 630
+  media_class: "card-media-wide"
+  format: "HTML overview + 3 PDFs"
+  links:
+    - label: "Explore the research"
+      url: "/ai-agent-revocation-containment-multi-agent-systems.html"
+      arrow: "→"
+    - label: "Download executive brief"
+      url: "/Spherity-Reseach-AI-Agent-Revocation-in-MAS-Executive-Brief.pdf"
+      arrow: "↓"
+      secondary: true
+
+- title: "Governing Safe AI That Acts Across Companies"
   type: "Executive brief and three-paper AI Safety series"
   date_label: "28 September 2026"
   date_iso: "2026-09-28"
@@ -11,7 +154,7 @@
   filters: "ai identity resilience infrastructure"
   search: "ai safety ai agents cross company ai agents agentic ai ai governance ai alignment operational ai alignment agent swarms multi-agent systems multi agent systems protected execution deterministic state controller runtime assurance risk bounded runtime assurance private verification action eligibility cross domain ai agents trust domains revocable authority cryptographic commitments aggregate budget exact action binding assurance leases episode risk partial observation worker churn pending effects adverse evidence containment controlled execution verifiable identity responsible ai leadership first mover advantage carsten stöcker carsten stoecker spherity gmbh trusted ai identity resilience"
   image: "/assets/preview-governing-ai-that-acts-across-companies.webp"
-  image_alt: "Governing AI That Acts Across Companies research preview using the Spherity AI Safety executive brief cover."
+  image_alt: "Governing Safe AI That Acts Across Companies research preview using the Spherity AI Safety executive brief cover."
   image_width: 1200
   image_height: 630
   media_class: "card-media-wide"
@@ -410,27 +553,32 @@
       url: "/Securing-Digital-Identity-Quantum-Vulnerabilities.html"
       arrow: "→"
 
-- title: "Legal & Operational EBW Roadmap Toward EU-Wide Acceptance"
-  type: "Roadmap"
-  date_label: "18 May 2026"
-  date_iso: "2026-05-18"
-  description: "Milestones, dependencies, standards, and adoption gates for the European Business Wallet under eIDAS 2.0."
+- title: "European Business Wallets: Regulation, Roadmap and Business Value"
+  type: Roadmap
+  date_label: 31 October 2026
+  date_iso: "2026-10-31"
+  description: "European Business Wallet research and roadmap, plus Spherity’s EBW-ready Wallet with Bundesanzeiger Verlag: general availability planned for Q1 2027."
+  authors:
+    - Dr. Carsten Stöcker
   topics:
-    - "European Business Wallet"
-    - "eIDAS 2.0"
-    - "EU adoption"
-  filters: "wallets identity"
-  search: "legal operational ebw roadmap eu wide acceptance eidas european business wallet compliance data exchange"
-  image: "/assets/preview-ebw-roadmap.webp"
-  image_alt: "Spherity Research preview for the legal and operational European Business Wallet roadmap toward EU-wide acceptance by 2029."
+    - European Business Wallet
+    - eIDAS 2.0
+    - Trusted AI
+  filters: wallets identity
+  search: european business wallet ebw regulation roadmap eudi wallet eudiw d-you eidas 2.0 digital identity digitale identität unternehmenswallet business wallet mandates vollmacht bundesanzeiger we build cyber resilience trusted ai kyb kys launch general availability q1 2027 planned start bundesanzeiger verlag 2029 2030 2031
+  image: /assets/preview-ebw-roadmap.webp
+  image_alt: Spherity Research preview for European Business Wallet regulation, conditional roadmap, cyber-resilience and business value.
   image_width: 1200
   image_height: 630
-  media_class: "card-media-wide"
-  format: "HTML"
+  media_class: card-media-wide
+  format: HTML + PDF
   links:
-    - label: "Read roadmap"
-      url: "/ebw-roadmap.html"
-      arrow: "→"
+    - label: Read paper page
+      url: /ebw-roadmap.html
+      arrow: →
+    - label: Download PDF
+      url: /Spherity-Research-European-Business-Wallet-Regulation-And-Roadmap.pdf
+      arrow: ↓
 
 - title: "AI-Cyber, Quantum Risk, Hybrid Warfare, and Physical AI"
   type: "Policy paper"

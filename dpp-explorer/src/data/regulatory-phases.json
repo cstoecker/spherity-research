@@ -1,0 +1,668 @@
+{
+  "id": "dpp-regulatory-phases-2026-10-25",
+  "checked_at": "2026-10-25",
+  "review_status": "machine_assisted_unreviewed",
+  "title": "DPP and related product-traceability regulatory phases",
+  "methodology": "Curated phase of a specifically evidenced public measure, not a country ranking, generic legal readiness score or automatic maximum of record statuses. Global technical standards and private ecosystem participation are excluded. EU instrument coverage may be joined to member countries for display only. Territorial proxies are explicitly striped and qualified. Grey means not assessed or excluded by filters, not absence of regulation.",
+  "phases": {
+    "applying": "Specific sector product-information or traceability duties apply.",
+    "adopted": "Legal framework adopted; relevant passport rollout is future, conditional or requires further measures.",
+    "proposal": "Published draft or consultation; final adoption or requirements not established.",
+    "early": "Official exploration, exporter guidance, public programme or pilot; no DPP duty established by this evidence."
+  },
+  "profiles": [
+    {
+      "jurisdiction_id": "jur-eu",
+      "phase": "adopted",
+      "scope_kind": "direct",
+      "record_ids": [
+        "eu-espr",
+        "eu-espr-art-9",
+        "eu-batteries-regulation",
+        "eu-battery-passport-requirement"
+      ],
+      "headline": "EU framework adopted; product-specific passport duties phase in",
+      "summary": "The ESPR establishes a Digital Product Passport framework, with product coverage and compliance dates set through delegated acts. Battery passports become mandatory from 18 February 2027 for EV batteries, light means of transport batteries and industrial batteries above 2 kWh placed on the market or put into service.",
+      "caveats": [
+        "There is no general ESPR obligation for every product to have a DPP. A working-plan listing is not itself a passport requirement.",
+        "Battery passport requirements were not yet operative on the review date. Other sectors have their own instruments, scope and commencement conditions.",
+        "EU-country highlighting represents territorial coverage of EU instruments, not a separately completed review of each national implementation.",
+        "Related development: the European Product Act product-rules reform remains planned in the Commission tracker. Its intended horizontal DPP approach is under assessment and creates no new current duty; the separately published standardisation proposal has a different procedural status."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "European Commission — Digital Product Passport: frequently asked questions",
+          "url": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/explore-our-faqs_en",
+          "locator": "General questions 5–6 and Legislation question 7: product-by-product introduction; no general ESPR passport obligation; delegated acts determine scope."
+        },
+        {
+          "title": "European Commission — Guidance to support preparations for the Digital Batteries Passport",
+          "url": "https://single-market-economy.ec.europa.eu/news/guidance-support-preparations-digital-batteries-passport-2026-08-21_en",
+          "locator": "21 August 2026 announcement: 18 February 2027 commencement and EV, LMT and industrial battery scope; guidance does not create new requirements."
+        },
+        {
+          "title": "European Commission — Prosperity and competitiveness implementation tracker",
+          "url": "https://commission.europa.eu/priorities-2024-2029/competitiveness/implementation-tracker_en",
+          "locator": "Page last updated 7 October 2026. Legislative items → Planned: European product act (NLF and market-surveillance updates); Proposed: standardisation update, 6 October 2026."
+        },
+        {
+          "title": "European Commission — Follow-up to Parliament resolution on a New Legislative Framework for the digital and sustainable transition",
+          "url": "https://data.europarl.europa.eu/distribution/doc/SP-2026-03-05-TA-10-2025-0242_en.pdf",
+          "locator": "Page 2: package and consultation context. Page 3, Digital Product Passport (paragraphs 9–20): planned horizontal DPP tool, ESPR infrastructure and battery deployment."
+        }
+      ],
+      "related_record_ids": [
+        "eu-european-product-act"
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-cn",
+      "phase": "applying",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-cn-order73",
+        "global-cn-battery-coding"
+      ],
+      "headline": "China: NEV battery coding and traceability duties are in force",
+      "summary": "Order 73 applies from 1 April 2026 to new-energy-vehicle power-battery recycling and comprehensive utilisation. It requires battery coding and lifecycle information reporting through the national traceability platform. These are sector-specific product-data duties, not a general DPP mandate.",
+      "caveats": [
+        "Article 12 establishes a battery digital-identity system but leaves its detailed measures to separate rules; this review does not establish a completed digital-identity rollout.",
+        "The regime concerns NEV power batteries and specified supply-chain actors. It must not be read as equivalent in scope to the EU ESPR.",
+        "The general DPP requirements project 20251568-T-469 remains a standards project; it does not extend this battery law to all products."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "MIIT and five other departments — Interim Measures for the Recycling and Comprehensive Utilisation of Waste Power Batteries from New Energy Vehicles (Order 73)",
+          "url": "https://www.miit.gov.cn/gyhxxhb/jgsj/cyzcyfgs/bmgz/jdcjxl/art/2026/art_392462fdc40c415ea4a4129cac3028c2.html",
+          "locator": "Published 16 January 2026. Articles 2 and 4: sector scope and platform; Articles 9–12: coding and digital identity; Article 24: reporting; Article 50: effective 1 April 2026."
+        },
+        {
+          "title": "SAMR national standards project register — Digital Product Passport: General Requirements, 20251568-T-469",
+          "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=1CB92886179AEDB9E06397BE0A0A064B",
+          "locator": "Project record: recommended national-standard project, issued 3 June 2025, 18-month project period; project identifier is not a final standard number."
+        }
+      ],
+      "related_record_ids": [
+        "global-cn-dpp-general-project",
+        "global-cn-digital-id-art12"
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-gb",
+      "phase": "proposal",
+      "scope_kind": "territorial",
+      "record_ids": [
+        "eu-gb-dpr-consultation",
+        "uk-construction-products-reform-white-paper",
+        "uk-toy-safety-dpp-consultation",
+        "eu-northern-ireland-scope"
+      ],
+      "headline": "UK: Great Britain DPP consultations; Northern Ireland has a separate basis",
+      "summary": "Great Britain’s Digital Product Records approach remains under consideration following the 2026 call for evidence and sector consultations.",
+      "caveats": [
+        "This country-level phase describes Great Britain’s proposal track, not a UK-wide enacted DPP duty.",
+        "Northern Ireland follows relevant EU instruments under the Windsor Framework; their scope and future passport dates must be assessed separately."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "UK Department for Business and Trade — Call for evidence: Digital Product Records policy",
+          "url": "https://www.gov.uk/government/calls-for-evidence/call-for-evidence-digital-product-record-policy/call-for-evidence-digital-product-records-policy",
+          "locator": "Published 27 July 2026, closed 21 September 2026. “Current UK regulatory approach”: Great Britain approach not yet determined; Northern Ireland distinguished under Windsor; toy and construction consultation tracks."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-gb-gbn",
+      "phase": "proposal",
+      "scope_kind": "territorial",
+      "record_ids": [
+        "eu-gb-dpr-consultation",
+        "uk-construction-products-reform-white-paper",
+        "uk-toy-safety-dpp-consultation"
+      ],
+      "headline": "Great Britain: Digital Product Records policy under consultation review",
+      "summary": "The July 2026 call for evidence closed on 21 September. The government had not determined Great Britain’s domestic approach.",
+      "caveats": [
+        "Consultations and policy exploration do not themselves create a passport duty."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "UK Department for Business and Trade — Call for evidence: Digital Product Records policy",
+          "url": "https://www.gov.uk/government/calls-for-evidence/call-for-evidence-digital-product-record-policy/call-for-evidence-digital-product-records-policy",
+          "locator": "“How to respond”: 21 September 2026 deadline; “Current UK regulatory approach”: Great Britain approach not yet determined."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-gb-nir",
+      "phase": "adopted",
+      "scope_kind": "territorial",
+      "record_ids": [
+        "eu-northern-ireland-scope",
+        "eu-espr",
+        "eu-batteries-regulation",
+        "eu-battery-passport-requirement"
+      ],
+      "headline": "Northern Ireland: EU framework scope, with product-specific passport dates",
+      "summary": "The UK government identifies ESPR and the EU Batteries Regulation as applying in Northern Ireland under the Windsor Framework.",
+      "caveats": [
+        "This does not establish an operative passport duty for every product or extend Northern Ireland’s framework to Great Britain.",
+        "Battery passports begin in February 2027; other passport duties depend on the relevant product rules. This is a government scope statement, not a complete incorporation analysis."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "UK Department for Business and Trade — Call for evidence: Digital Product Records policy",
+          "url": "https://www.gov.uk/government/calls-for-evidence/call-for-evidence-digital-product-record-policy/call-for-evidence-digital-product-records-policy",
+          "locator": "“Current framework in the EU” and “Current UK regulatory approach”: ESPR in Northern Ireland under Windsor; battery passport commencement; later battery section identifies EUBR as applying directly in Northern Ireland."
+        },
+        {
+          "title": "European Commission — Guidance to support preparations for the Digital Batteries Passport",
+          "url": "https://single-market-economy.ec.europa.eu/news/guidance-support-preparations-digital-batteries-passport-2026-08-21_en",
+          "locator": "21 August 2026 announcement: battery passport commencement on 18 February 2027 and specified battery categories."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-tw",
+      "phase": "adopted",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-tw-resource-circulation-act",
+        "global-tw-product-information-art22",
+        "global-tw-dpp-voluntary-pilot"
+      ],
+      "headline": "Taiwan: product-information framework adopted; DPP pilots remain voluntary",
+      "summary": "Article 22 of the Resource Circulation Promotion Act enables authorities to designate products for information disclosure and unique-code traceability. The amended framework took effect on 17 June 2026, while product designations, deadlines and disclosure methods require further measures. The environmental authority also reports voluntary DPP pilots.",
+      "caveats": [
+        "An enabling provision is not evidence that all products currently need a DPP. This review did not establish a generally operative passport requirement or a specific Article 22 product designation.",
+        "Undesignated products may participate voluntarily. Pilot participation is not regulatory coverage.",
+        "The official English translation notes that the Chinese text prevails in case of discrepancy; Article 52 defers separate provisions, not Article 22."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "Taiwan Ministry of Justice — Resource Circulation Promotion Act",
+          "url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=O0050049",
+          "locator": "Amended 17 June 2026. Article 22: designated product information, unique-code updating, voluntary participation and separate implementing measures. Article 52: commencement and limited deferred provisions."
+        },
+        {
+          "title": "Taiwan Ministry of Environment, Resource Circulation Administration — Digital Product Passport pilot update",
+          "url": "https://prcp.moenv.gov.tw/Public/views/news_detailed.aspx?id=9c70b479-f62d-4a55-9300-0cfe4d340b10",
+          "locator": "7 September 2026 update: voluntary programme begun in 2023; batteries, textiles, computer/network equipment and circular materials; Article 22 framework distinguished from pilot activity."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-no",
+      "phase": "proposal",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-no-battery-registry-consultation"
+      ],
+      "headline": "Battery-passport implementation consulted",
+      "summary": "Norway consulted on changes to its proposed battery regulation, including the passport registry and unique identifier. The reviewed consultation establishes a domestic implementation proposal; the agency's current guidance still makes Norwegian application conditional on incorporation into national rules.",
+      "caveats": [
+        "The April–May 2026 consultation is closed. Final domestic adoption was not established in this review.",
+        "EU application dates do not by themselves establish that the same duties apply in Norway."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "Norwegian Environment Agency — consultation on changes to the battery regulation",
+          "url": "https://www.miljodirektoratet.no/hoeringer/2026/april-2026/horing-av-endringer-i-batteriforskriften/",
+          "locator": "Consultation 2026/4456, published 27 April 2026; deadline 11 May 2026; proposed passport-registry implementation."
+        },
+        {
+          "title": "Norwegian Environment Agency — timeline for battery requirements",
+          "url": "https://www.miljodirektoratet.no/ansvarsomrader/avfall/for-naringsliv/batteriveilederen/tidslinje-for-kravene/",
+          "locator": "Introduction distinguishes EU entry into force from application in Norway after implementation in national rules."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-ch",
+      "phase": "proposal",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-ch-thg-dpp-proposal"
+      ],
+      "headline": "Proposed legal basis for digital product passports",
+      "summary": "The Federal Council's proposed revision of the Technical Barriers to Trade Act would create a legal basis for introducing digital product passports. The June 2026 announcement opened a consultation that ended in September.",
+      "caveats": [
+        "This is evidence of a legislative proposal, not an existing general Swiss passport obligation.",
+        "The consultation deadline has passed; this review did not establish a subsequently enacted text or product-specific duties."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "Swiss Confederation — modernising the Technical Barriers to Trade Act",
+          "url": "https://www.kmu.admin.ch/de/newnsb/k4JemTZmDs6ON5OOOP--_",
+          "locator": "Federal Council announcement of 5 June 2026; proposed DPP legal basis; consultation through 28 September 2026."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-in",
+      "phase": "proposal",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-in-battery-aadhaar-draft"
+      ],
+      "headline": "Draft Battery Pack Aadhaar guidelines",
+      "summary": "The Ministry of Road Transport and Highways published draft guidelines for a battery identity and information system, with electric-vehicle batteries as the defined scope. The document specifies static and lifecycle information associated with a unique battery identifier.",
+      "caveats": [
+        "The reviewed document is expressly marked Draft; a final compulsory instrument was not established.",
+        "This is a sector-specific battery proposal, not a passport mandate for all Indian products."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "Ministry of Road Transport and Highways — Draft Guidelines for Battery Pack Aadhaar",
+          "url": "https://morth.gov.in/sites/default/files/Battery%20Pack%20Aadhaar%20Guideline_30122025_0.pdf",
+          "locator": "Cover marked Draft; section 2 scope; battery identifier and data-attribute provisions."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-kr",
+      "phase": "applying",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-kr-battery-id-regime"
+      ],
+      "headline": "Applying EV battery identification duties — adjacent regime",
+      "summary": "The Korean government reports that battery certification and history-management duties took effect on 17 February 2025. Manufacturers assign battery identifiers, and vehicle registration and battery-replacement procedures record them, establishing sectoral traceability relevant to passport development.",
+      "caveats": [
+        "These are adjacent EV battery identification and history duties, not a verified general Digital Product Passport regime.",
+        "The classification relies on the ministry's implementation announcement. The consolidated operative legal text was not independently reviewed.",
+        "The announcement describes a fuller battery-history information system as planned for 2027; that later system is not treated as already operating."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "Republic of Korea policy portal / Ministry of Land, Infrastructure and Transport — battery certification and history management",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148939669",
+          "locator": "17 February 2025 announcement; implementation date, manufacturer battery ID, vehicle register and replacement reporting; planned 2027 history system."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-vn",
+      "phase": "adopted",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-vn-law78",
+        "global-vn-decree37"
+      ],
+      "headline": "Passport framework adopted; product rollout conditional",
+      "summary": "Vietnam's Decree 37/2026 establishes a framework for digital product passports, including identifiers, origin and traceability information, quality and conformity data, and updates through the national traceability infrastructure. The decree entered into force on 23 January 2026; product-specific implementation requires a further roadmap.",
+      "caveats": [
+        "An enabling framework in force is not equivalent to a currently applying passport duty for every product.",
+        "The official explanation assigns a product-specific implementation roadmap to further government action. This review did not establish all designated product groups or their deadlines.",
+        "The domestic framework does not by itself establish recognition or technical equivalence with EU passports."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "Vietnam Ministry of Science and Technology — Decree 37: digital technology in quality management and traceability",
+          "url": "https://mst.gov.vn/nghi-dinh-37-ung-dung-cong-nghe-so-trong-quan-ly-chat-luong-va-truy-xuat-nguon-goc-197260812204117614.htm",
+          "locator": "Sections on digital product passports, minimum information, national traceability portal and product-specific implementation roadmap; effective date 23 January 2026."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-jp",
+      "phase": "early",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-jp-ouranos",
+        "global-jp-battery-platform",
+        "global-jp-catena-x-cfp-demo"
+      ],
+      "headline": "Public battery traceability and interoperability programme",
+      "summary": "Japan's NEDO reports a battery traceability platform developed within the Ouranos programme and a demonstration exchanging carbon-footprint information with Catena-X. This is evidence of publicly supported infrastructure and practical interoperability work relevant to DPPs.",
+      "caveats": [
+        "The reviewed programme and demonstration do not establish a general Japanese statutory passport obligation.",
+        "A demonstrated carbon-footprint exchange does not establish universal passport interoperability or mutual legal recognition."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "NEDO — Japan–Europe battery carbon-footprint data exchange demonstration",
+          "url": "https://www.nedo.go.jp/news/press/AA5_101831.html",
+          "locator": "31 March 2025 release; Ouranos battery traceability platform, service development and Catena-X carbon-footprint demonstration."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-au",
+      "phase": "early",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-au-circular-economy-inquiry"
+      ],
+      "headline": "Official circular-economy inquiry considers digital product information",
+      "summary": "Australia's Productivity Commission published its final circular-economy inquiry report in January 2026. It considers digital labels and product passports in its assessment of improved textiles information, alongside recommendations on product stewardship and transparency.",
+      "caveats": [
+        "An inquiry report and its recommendations are not enacted passport requirements.",
+        "The report calls for learning from international labelling schemes before determining a domestic approach; no general Australian DPP mandate is established by this record."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "Productivity Commission — Australia's circular economy: unlocking the opportunities, final report",
+          "url": "https://www.pc.gov.au/inquiries-and-research/circular-economy/report/",
+          "locator": "Final report release 16 January 2026; tabled 23 January 2026."
+        },
+        {
+          "title": "Productivity Commission — circular-economy inquiry report, chapter 6",
+          "url": "https://assets.pc.gov.au/2025-10/circular-economy.pdf?VersionId=kzNYni.c_7M8UjMSOx3bhMmrRnJ.fWXa",
+          "locator": "Printed pages 81–83, especially page 81 footnote 4 on digital product passports and the discussion of learning from international labelling schemes."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-us",
+      "phase": "adopted",
+      "scope_kind": "territorial",
+      "record_ids": [
+        "global-us-ca-sb615"
+      ],
+      "headline": "California battery legislation — adjacent, state-level measure",
+      "summary": "California's governor announced signing SB 615 within a September 2026 package of electric-vehicle legislation that includes battery-information measures. This is evidence of an adopted state-level measure relevant to battery information and lifecycle management, rather than a national US DPP law.",
+      "caveats": [
+        "Territorial coverage is California only. Colouring the US country outline is a map proxy for this subnational record, not a nationwide obligation.",
+        "The signing announcement establishes enactment; the final statutory provisions, operative deadlines and any passport-equivalent requirements were not independently verified in this review.",
+        "This is labelled adjacent battery legislation. Federal NIST battery-passport research is a separate research activity and is not evidence of a US regulatory mandate."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "California Governor — EV and battery legislation signed",
+          "url": "https://www.gov.ca.gov/2026/09/20/governor-gavin-newsom-signs-legislation-to-accelerate-californias-ev-future-expand-consumer-choice-and-strengthen-energy-independence/",
+          "locator": "20 September 2026 signing announcement; SB 615 listed in the battery-information legislative package."
+        },
+        {
+          "title": "NIST — EV Battery Passport research",
+          "url": "https://www.nist.gov/programs-projects/ev-battery-passport",
+          "locator": "Project description and completed project status; research context only, not legislative authority."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-br",
+      "phase": "early",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-br-eniq-plan",
+        "global-br-pr-vehicle-pilot"
+      ],
+      "headline": "National DPP study and a separate Paraná vehicle pilot",
+      "summary": "Brazil's ENIQ 2025–2026 action plan includes a digital product passport benchmarking study. Separately, Paraná's transport authority announced a voluntary digital vehicle-passport pilot in February 2026. These records show public investigation and experimentation rather than an enacted national passport duty.",
+      "caveats": [
+        "Adoption of a policy action plan does not mean adoption of mandatory product passports.",
+        "The vehicle pilot is subnational and voluntary; its 120-day planned trial and vehicle-history focus do not establish a national environmental DPP scheme or a completed outcome.",
+        "The national plan was rechecked through the official indexed gazette text; direct retrieval of the gazette PDF was unavailable."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "Brazil Official Gazette — CONMETRO Resolution 2/2025 and ENIQ action plan",
+          "url": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=01%2F07%2F2025&jornal=515&pagina=51",
+          "locator": "1 July 2025, section 1, page 51; resolution approving the ENIQ 2025–2026 plan; action titled Benchmarking do Passaporte Digital do Produto."
+        },
+        {
+          "title": "Detran Paraná — digital vehicle passport pilot",
+          "url": "https://www.detran.pr.gov.br/Noticia/Passaporte-digital-motoristas-do-Parana-agora-podem-ter-registro-inovador-de-veiculos",
+          "locator": "12 February 2026 announcement; voluntary free registration, 120-day pilot, vehicle-history records."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-ca",
+      "phase": "early",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-ca-credential-challenge"
+      ],
+      "headline": "Public innovation procurement for supply-chain credentials",
+      "summary": "An Innovative Solutions Canada challenge sought a verifiable-credentials solution for supply chains, including digital product passports. The published competition opened in August 2023 and closed in September 2023, showing official experimentation with the technology.",
+      "caveats": [
+        "The challenge is closed; this review did not establish an awarded, delivered or deployed outcome.",
+        "Innovation procurement is not a Canadian legal requirement to issue product passports."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "Innovation, Science and Economic Development Canada — supply-chain verifiable digital credentials challenge",
+          "url": "https://ised-isde.canada.ca/site/innovative-solutions-canada/en/supply-chain-verifiable-digital-credentials",
+          "locator": "Challenge scope and passport use case; opening 15 August 2023 and closing 26 September 2023."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-tr",
+      "phase": "early",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-tr-eu-dpp-guidance"
+      ],
+      "headline": "Official guidance on readiness for EU passports",
+      "summary": "Türkiye's Ministry of Trade explains the EU Digital Product Passport framework, standardisation work and implementation developments for businesses. This provides an official readiness and trade-policy information signal.",
+      "caveats": [
+        "The guidance describes EU requirements; it does not itself enact a domestic Turkish passport regime.",
+        "No transposition or nationwide Turkish DPP obligation is inferred from exporter guidance."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "Türkiye Ministry of Trade — Digital Product Passport",
+          "url": "https://ticaret.gov.tr/urun-guvenligi/ab-teknik-mevzuat-uyumu/dijital-urun-pasaportu",
+          "locator": "EU technical-legislation alignment guidance; overview of ESPR, standardisation and EU secondary legislation."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-nz",
+      "phase": "early",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-nz-exporter-guidance"
+      ],
+      "headline": "Official exporter guidance on EU passport developments",
+      "summary": "New Zealand's Ministry of Foreign Affairs and Trade published a market report explaining the EU circular-economy framework, ecodesign and digital product passports. It helps exporters prepare for developments in their destination market.",
+      "caveats": [
+        "This is official market guidance about the EU, not a New Zealand domestic passport regulation.",
+        "The early-policy classification records public readiness activity and does not imply an announced national DPP law."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "New Zealand MFAT — EU circular economy, ecodesign, digital product passports and green public procurement",
+          "url": "https://www.mfat.govt.nz/en/trade/mfat-market-reports/eu-circular-economy-ecodesign-digital-product-passports-and-green-public-procurement",
+          "locator": "October 2025 market intelligence report; EU passport developments and implications for exporters."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-us-ca",
+      "phase": "adopted",
+      "scope_kind": "territorial",
+      "record_ids": [
+        "global-us-ca-sb615"
+      ],
+      "headline": "California battery legislation — adjacent state-level measure",
+      "summary": "California’s governor announced signing SB 615 within a September 2026 electric-vehicle legislation package containing battery-information measures. This is an adopted California measure relevant to battery information and lifecycle management, not a national US DPP law.",
+      "caveats": [
+        "Coverage is California only; the parent US outline is a display proxy for this state-level record.",
+        "The signing announcement establishes enactment. Final statutory provisions, operative deadlines and passport-equivalent requirements were not independently verified in this review.",
+        "Adjacent battery legislation must not be treated as a universal Digital Product Passport requirement."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "California Governor — EV and battery legislation signed",
+          "url": "https://www.gov.ca.gov/2026/09/20/governor-gavin-newsom-signs-legislation-to-accelerate-californias-ev-future-expand-consumer-choice-and-strengthen-energy-independence/",
+          "locator": "20 September 2026 signing announcement; SB 615 listed in the battery-information legislative package."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-br-pr",
+      "phase": "early",
+      "scope_kind": "territorial",
+      "record_ids": [
+        "global-br-pr-vehicle-pilot"
+      ],
+      "headline": "Paraná: voluntary digital vehicle-passport pilot",
+      "summary": "Paraná’s transport authority announced a voluntary digital vehicle-passport pilot in February 2026. The vehicle-history trial is a subnational public initiative, not an enacted national product-passport duty.",
+      "caveats": [
+        "The announced trial was planned for 120 days; completion and later rollout are unverified in this review.",
+        "Coverage is Paraná. The parent Brazil outline is a display proxy; the pilot does not establish a nationwide obligation.",
+        "Vehicle-history records are not automatically equivalent to an environmental Digital Product Passport."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "Detran Paraná — digital vehicle passport pilot",
+          "url": "https://www.detran.pr.gov.br/Noticia/Passaporte-digital-motoristas-do-Parana-agora-podem-ter-registro-inovador-de-veiculos",
+          "locator": "12 February 2026 announcement; voluntary free registration, 120-day pilot and vehicle-history records."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-sg",
+      "phase": "early",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-sg-sustainability-guidance"
+      ],
+      "headline": "Official exporter guidance on digital product passports",
+      "summary": "Singapore's IMDA sustainability playbook explains how EU product-passport requirements may affect companies accessing overseas markets. IMDA announced the playbook in January 2026 as practical guidance for businesses adopting digital sustainability solutions.",
+      "caveats": [
+        "This is enterprise and exporter guidance, not a Singapore law requiring product passports or evidence of a national DPP platform.",
+        "Primary-source content was rechecked in the official PDF and launch announcement's search-index excerpts; direct retrieval encountered an access challenge."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "IMDA — Digital Technologies for Sustainability Playbook",
+          "url": "https://www.imda.gov.sg/-/media/imda/files/about/research-and-statictics/enterprise-digital-transformation/imda-digital-technologies-for-sustainability-playbook.pdf",
+          "locator": "What is the impact on my business? → Regulatory changes → Meet requirements to access new markets: EU ESPR digital product passport discussion."
+        },
+        {
+          "title": "IMDA — practical digital sustainability resources launched",
+          "url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2026/imda-simplifies-digital-sustainability-adoption-for-businesses-with-new-practical-resources",
+          "locator": "22 January 2026; paragraphs 1 and 4–5 announce the playbook as free practical enterprise guidance."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-kr-26",
+      "phase": "early",
+      "scope_kind": "territorial",
+      "record_ids": [
+        "global-kr-busan-pilot"
+      ],
+      "headline": "Busan: publicly funded battery-passport demonstration",
+      "summary": "Busan announced selection for the Ministry of Science and ICT's 2025 public-sector blockchain programme. The city planned a battery-passport platform with demonstrations for charging and safety, performance checks and history management, supported by a 2025 budget of KRW 3.46 billion.",
+      "caveats": [
+        "This is a regional public programme, not a new national DPP obligation. Platform completion or current deployment was not independently established.",
+        "Korea's separately reviewed national battery-identification and history duties also form part of the relevant legal context; the local pilot's early phase does not replace their national classification.",
+        "The official city announcement was rechecked through indexed primary text; direct page retrieval timed out."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "Busan Metropolitan City — battery passport programme selected for public blockchain funding",
+          "url": "https://www.busan.go.kr/nbtnewsBU/1692400?curPage=207&srchBeginDt=&srchEndDt=&srchKey=&srchText=",
+          "locator": "7 August 2025 announcement; subtitle identifies MSIT programme, three demonstration services and KRW 3.46 billion annual budget."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-eg",
+      "phase": "early",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-eg-goeic-dpp-programme",
+        "global-eg-textile-pilot-procurement"
+      ],
+      "headline": "Public product-traceability programme and textile pilot procurement",
+      "summary": "Egypt's GOEIC announced a Korean-supported digital inspection and traceability programme, scheduled for 2025–2029, that includes creating DPPs for locally manufactured industrial products. Separately, UNIDO requested textile-SME DPP pilot services in March 2026.",
+      "caveats": [
+        "These are programme and procurement announcements. No generally compulsory Egyptian passport duty or completed national platform was established.",
+        "The UNIDO tender closed on 1 April 2026; an award or delivered pilot was not verified. It is not assumed to be part of the GOEIC programme.",
+        "The GOEIC announcement was rechecked through the official indexed text; direct page retrieval timed out."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "GOEIC — Korean-supported digital risk management and product-tracking programme",
+          "url": "https://www.goeic.gov.eg/en/media-center/news/1356",
+          "locator": "14 March 2025 announcement; paragraphs on June 2025–end-2029 implementation and DPPs for industrial goods in the local market and locally manufactured Egyptian products."
+        },
+        {
+          "title": "UNIDO / UNGM — DPP pilot implementation services for textile SMEs in Egypt",
+          "url": "https://www.ungm.org/Public/Notice/294163",
+          "locator": "RFQ 7000008382; beneficiary Egypt; published 17 March 2026, expired deadline 1 April 2026."
+        }
+      ]
+    },
+    {
+      "jurisdiction_id": "jur-bd",
+      "phase": "early",
+      "scope_kind": "direct",
+      "record_ids": [
+        "global-bd-export-dpp-guidance"
+      ],
+      "headline": "Government export portal explains EU passport readiness",
+      "summary": "Bangladesh's Ministry of Commerce export portal explains EU ESPR and battery-passport developments and the traceability challenges faced by exporters. This establishes an official information and readiness activity; the separate BGMEA and university pilots remain industry and research initiatives.",
+      "caveats": [
+        "This is guidance about access to the EU market, not an enacted Bangladeshi DPP law, adopted national traceability strategy or mandatory national platform.",
+        "The portal article draws on export statistics and industry reporting. Its presence on the official portal establishes publication of guidance, not government adoption of the proposals reported from industry.",
+        "Government participation in a research roundtable is not treated as proof that a national strategy has been adopted."
+      ],
+      "checked_at": "2026-10-25",
+      "sources": [
+        {
+          "title": "Export Bangladesh / Ministry of Commerce — electrical exports and EU compliance readiness",
+          "url": "https://exportbangladesh.gov.bd/insights/bangladesh-electrical-exports-eu-compliance",
+          "locator": "EU Sustainability Rules Raise the Compliance Bar; Battery Rules Add Another Upcoming Requirement; footer identifies the Ministry of Commerce initiative. Publication date not stated on the opened page."
+        }
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "id": "phase-cn-applying-basis-20261025",
+      "jurisdiction_id": "jur-cn",
+      "observed_at": "2026-10-25",
+      "previous_record_ids": [
+        "global-cn-order73",
+        "global-cn-battery-coding",
+        "global-cn-digital-id-art12",
+        "global-cn-dpp-general-project"
+      ],
+      "record_ids": [
+        "global-cn-order73",
+        "global-cn-battery-coding"
+      ],
+      "related_record_ids": [
+        "global-cn-dpp-general-project",
+        "global-cn-digital-id-art12"
+      ],
+      "reason": "A standardisation project under development and an enabling provision awaiting separate implementation do not establish applicable sector duties. Order 73 and the battery coding duty remain the phase-driving evidence.",
+      "source_urls": [
+        "https://www.miit.gov.cn/gyhxxhb/jgsj/cyzcyfgs/bmgz/jdcjxl/art/2026/art_392462fdc40c415ea4a4129cac3028c2.html",
+        "https://std.samr.gov.cn/gb/search/gbDetailed?id=1CB92886179AEDB9E06397BE0A0A064B"
+      ],
+      "review_status": "machine_assisted_unreviewed"
+    }
+  ]
+}

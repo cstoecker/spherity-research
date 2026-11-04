@@ -1,0 +1,412 @@
+{
+  "id": "w3c-committee-additions-2026-10-25",
+  "checked_at": "2026-10-25",
+  "base_version": "0.1.0",
+  "description": "Dated W3C connections: EN 18219 normative references, W3C task-force discussion touching JTC 5 and JTC 24, and specification stewardship. Formal liaison, discussion and normative reference remain distinct.",
+  "review_status": "machine_assisted_unreviewed",
+  "relationship_definitions": {
+    "references": "An explicit reference or discussion; not by itself adoption, formal liaison or tested interoperability.",
+    "part_of": "A document or activity identified as part of a named programme or group.",
+    "developed_by": "The group identified by the primary source as developing or publishing the document; the document status is retained.",
+    "normatively_references": "The cited document is explicitly listed in normative references. Applicable clauses and implementation choices still determine the requirements; universal implementation or interoperability is not inferred."
+  },
+  "entities": [
+    {
+      "id": "std-w3c-dpp-committee-discussion-20260727",
+      "type": "Report",
+      "label": "W3C DPP discussion with JTC 5 / JTC 24 context",
+      "description": "W3C task-force discussion of verifiable credentials and DPP schemas, with participant-reported JTC 24 work and planned JTC 5 work.",
+      "version": "Meeting minutes 2026-07-27",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "recorded_technical_discussion",
+        "as_of": "2026-10-25",
+        "scope_note": "Discussion evidence, not a formal liaison, committee decision or adoption of W3C standards."
+      },
+      "dates": [
+        {
+          "kind": "meeting",
+          "date": "2026-07-27",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-w3c-minutes"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-w3c-minutes"
+      ],
+      "limitations": [
+        "Participant affiliation is self-reported in a transcript; this does not establish institutional representation."
+      ]
+    }
+  ],
+  "assertions": [
+    {
+      "id": "a-update-20261025-w3c-minutes-task-force",
+      "subject": "std-w3c-dpp-committee-discussion-20260727",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "std-w3c-dpp-bw-tf"
+      },
+      "statement": "These minutes document a W3C product-and-wallet vocabulary task-force meeting.",
+      "assertion_type": "source_statement",
+      "evidence_type": "meeting_minutes",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-minutes"
+      ],
+      "locator": "Document heading and meeting date",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Discussion record; no formal coordination agreement is inferred."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-minutes-jtc5",
+      "subject": "std-w3c-dpp-committee-discussion-20260727",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-iso-jtc5"
+      },
+      "statement": "The discussion includes a participant reporting planned JTC 5 work.",
+      "assertion_type": "source_statement",
+      "evidence_type": "meeting_minutes",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-minutes"
+      ],
+      "locator": "VCs And Digital Product Passports; Michael Linck",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Self-reported participation; not a formal W3C liaison."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-minutes-jtc24",
+      "subject": "std-w3c-dpp-committee-discussion-20260727",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-cen-jtc24"
+      },
+      "statement": "The discussion includes a participant reporting JTC 24 work.",
+      "assertion_type": "source_statement",
+      "evidence_type": "meeting_minutes",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-minutes"
+      ],
+      "locator": "VCs And Digital Product Passports; Michael Linck",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Self-reported participation; not a formal W3C liaison."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-minutes-vc2",
+      "subject": "std-w3c-dpp-committee-discussion-20260727",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-w3c-vc2"
+      },
+      "statement": "The discussion explicitly considers VC Data Model 2.0 and DPP schemas.",
+      "assertion_type": "source_statement",
+      "evidence_type": "meeting_minutes",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-minutes"
+      ],
+      "locator": "VCs And Digital Product Passports; Ingo Wolf",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Discussion does not establish adoption by either committee."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-vc2-working-group",
+      "subject": "std-w3c-vc2",
+      "predicate": "developed_by",
+      "object": {
+        "entity_id": "std-w3c-vcwg"
+      },
+      "statement": "The Recommendation identifies the Verifiable Credentials Working Group as its publishing group.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-vc2"
+      ],
+      "locator": "Status of This Document",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Publication responsibility does not establish DPP adoption.",
+        "Published in 2025 under an earlier charter; the linked committee record describes its current 2026 charter."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-vc2-did",
+      "subject": "std-w3c-vc2",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-w3c-did1"
+      },
+      "statement": "VC Data Model 2.0 lists DID Core 1.0 as an informative reference.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-vc2"
+      ],
+      "locator": "G.2 Informative references, DID entry",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Informative reference; this does not require every credential to use a DID."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-dpp-vocabulary-task-force",
+      "subject": "std-w3c-dpp-vocabulary",
+      "predicate": "developed_by",
+      "object": {
+        "entity_id": "std-w3c-dpp-bw-tf"
+      },
+      "statement": "The task-force repository lists the DPP vocabulary document among its development work.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-repository"
+      ],
+      "locator": "Repository introduction and provisional document list",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Repository development is not W3C endorsement or a completed Recommendation."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-wallet-vocabulary-task-force",
+      "subject": "std-w3c-bw-vocabulary",
+      "predicate": "developed_by",
+      "object": {
+        "entity_id": "std-w3c-dpp-bw-tf"
+      },
+      "statement": "The task-force repository lists the business-wallet vocabulary document among its development work.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-repository"
+      ],
+      "locator": "Repository introduction and provisional document list",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Repository development is not W3C endorsement or a completed Recommendation."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-use-cases-task-force",
+      "subject": "std-w3c-ucr",
+      "predicate": "developed_by",
+      "object": {
+        "entity_id": "std-w3c-dpp-bw-tf"
+      },
+      "statement": "The task-force repository lists the vocabulary use-cases and requirements document among its development work.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-repository"
+      ],
+      "locator": "Repository introduction and provisional document list",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Repository development is not W3C endorsement or a completed Recommendation."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-recognized-working-group",
+      "subject": "std-w3c-recognized",
+      "predicate": "developed_by",
+      "object": {
+        "entity_id": "std-w3c-vcwg"
+      },
+      "statement": "The Recognized Entities Working Draft identifies the VC Working Group as its publishing group.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-recognized"
+      ],
+      "locator": "Status of This Document",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Experimental draft; not fit for production deployment."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-en18219-did",
+      "subject": "std-en-18219-2026",
+      "predicate": "normatively_references",
+      "object": {
+        "entity_id": "std-w3c-did1"
+      },
+      "statement": "EN 18219:2026 clause 2 lists W3C DID Core 1.0:2022 among its normative references.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-en18219"
+      ],
+      "locator": "Clause 2, printed page 8 (PDF page 10)",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The applicable identifier scheme and clauses still determine which requirements apply.",
+        "This reference does not mandate W3C technology in every DPP or show completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-en18219-vc2",
+      "subject": "std-en-18219-2026",
+      "predicate": "normatively_references",
+      "object": {
+        "entity_id": "std-w3c-vc2"
+      },
+      "statement": "EN 18219:2026 clause 2 lists W3C VC Data Model v2:2025 among its normative references.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-en18219"
+      ],
+      "locator": "Clause 2, printed page 8 (PDF page 10)",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The applicable identifier scheme and clauses still determine which requirements apply.",
+        "This reference does not mandate W3C technology in every DPP or show completed interoperability."
+      ],
+      "interoperability": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-update-20261025-w3c-minutes",
+      "title": "W3C Product and Wallet Vocabularies minutes, 27 July 2026",
+      "url": "https://w3c.github.io/vc-wg/minutes/2026-07-27-dbw.html",
+      "publisher": "W3C Verifiable Credentials Working Group",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Meeting minutes; VCs And Digital Product Passports; Michael Linck and following discussion",
+      "limitations": [
+        "Public meeting transcript; participant statements are not committee resolutions."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-repository",
+      "title": "W3C DPP and Business Wallet task-force repository",
+      "url": "https://w3c.github.io/vc-dpp-bw/",
+      "publisher": "W3C VC DPP & Business Wallet Task Force",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Repository introduction and document list",
+      "limitations": [
+        "Document titles are provisional; development does not establish Recommendation status."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-vc2",
+      "title": "W3C Verifiable Credentials Data Model 2.0, dated Recommendation",
+      "url": "https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/",
+      "publisher": "W3C",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Status of This Document; G.2 Informative references, DID entry",
+      "limitations": [
+        "DID Core is an informative reference in this document."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-recognized",
+      "title": "W3C Recognized Entities 1.0, dated Working Draft",
+      "url": "https://www.w3.org/TR/2026/WD-vc-recognized-entities-1.0-20260906/",
+      "publisher": "W3C",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Status of This Document",
+      "limitations": [
+        "Experimental Working Draft, expressly unsuitable for production deployment."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-en18219",
+      "title": "EN 18219:2026 normative references, public SIST standard preview",
+      "url": "https://cdn.standards.iteh.ai/samples/sist/sist-en-18219-2026/6091e9d2b2484b96adc84fecf46f58cb/sist-en-18219-2026.pdf",
+      "publisher": "CEN-CENELEC / SIST; public preview hosted by iTeh",
+      "source_type": "standard",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Clause 2, printed pages 7-8; W3C references on printed page 8 (PDF page 10)",
+      "limitations": [
+        "Only the public standard preview was reviewed, not the complete licensed text.",
+        "A normative-reference listing does not require every identifier scheme to use the referenced technology."
+      ]
+    }
+  ]
+}

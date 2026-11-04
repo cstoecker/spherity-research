@@ -1,0 +1,343 @@
+[
+  {
+    "boundary": "Includes adjacent identification duties; inspect scope before classifying a record as a passport obligation.",
+    "id": "CQ01",
+    "question": "Which selected battery-related requirements are coded?",
+    "result": [
+      "eu-battery-passport-requirement",
+      "global-cn-battery-coding",
+      "global-kr-battery-id-regime"
+    ]
+  },
+  {
+    "boundary": "No calendar dates imputed.",
+    "id": "CQ02",
+    "question": "Which dates remain conditional?",
+    "result": [
+      {
+        "condition": "18 months after Article 75(1) system delegated act enters into force, subject to product-family transition.",
+        "date": null,
+        "entity_id": "eu-construction-passport-requirement",
+        "entity_type": "Requirement",
+        "jurisdiction_ids": [
+          "jur-eu"
+        ],
+        "kind": "applies_from",
+        "label": "Construction DPP provision — Articles 22(7), 75–80",
+        "precision": "conditional",
+        "review_status": "machine_assisted_unreviewed",
+        "sector_ids": [
+          "sec-construction"
+        ],
+        "source_ids": [
+          "src-eu-cpr"
+        ]
+      },
+      {
+        "condition": "System operational six months after that delegated act enters into force.",
+        "date": null,
+        "entity_id": "eu-construction-passport-requirement",
+        "entity_type": "Requirement",
+        "jurisdiction_ids": [
+          "jur-eu"
+        ],
+        "kind": "available",
+        "label": "Construction DPP provision — Articles 22(7), 75–80",
+        "precision": "conditional",
+        "review_status": "machine_assisted_unreviewed",
+        "sector_ids": [
+          "sec-construction"
+        ],
+        "source_ids": [
+          "src-eu-cpr"
+        ]
+      },
+      {
+        "condition": "Two years after relevant implementing act enters into force for principal label/data-carrier requirements.",
+        "date": null,
+        "entity_id": "eu-permanent-magnet-information",
+        "entity_type": "Requirement",
+        "jurisdiction_ids": [
+          "jur-eu"
+        ],
+        "kind": "applies_from",
+        "label": "Permanent-magnet information — CRMA Article 28",
+        "precision": "conditional",
+        "review_status": "machine_assisted_unreviewed",
+        "sector_ids": [
+          "sec-critical-materials"
+        ],
+        "source_ids": [
+          "src-eu-crma"
+        ]
+      },
+      {
+        "condition": "12 February 2029 or 30 months after relevant implementing act enters into force, whichever is later.",
+        "date": null,
+        "entity_id": "eu-reusable-packaging-carrier",
+        "entity_type": "Requirement",
+        "jurisdiction_ids": [
+          "jur-eu"
+        ],
+        "kind": "applies_from",
+        "label": "Reusable-packaging data carrier — PPWR Article 12",
+        "precision": "conditional",
+        "review_status": "machine_assisted_unreviewed",
+        "sector_ids": [
+          "sec-packaging"
+        ],
+        "source_ids": [
+          "src-eu-ppwr"
+        ]
+      },
+      {
+        "condition": "Separate measures under Article 12.",
+        "date": null,
+        "entity_id": "global-cn-digital-id-art12",
+        "entity_type": "Provision",
+        "jurisdiction_ids": [
+          "jur-cn"
+        ],
+        "kind": "implementation_details",
+        "label": "Order 73 Article 12: battery digital identity",
+        "precision": "conditional",
+        "review_status": "machine_assisted_unreviewed",
+        "sector_ids": [
+          "sec-batteries"
+        ],
+        "source_ids": [
+          "src-global-cn-order73"
+        ]
+      },
+      {
+        "condition": "Prime Minister approval of product-specific roadmap.",
+        "date": null,
+        "entity_id": "global-vn-decree37",
+        "entity_type": "LegalInstrument",
+        "jurisdiction_ids": [
+          "jur-vn"
+        ],
+        "kind": "product_rollout",
+        "label": "Vietnam Decree 37/2026/NĐ-CP",
+        "precision": "conditional",
+        "review_status": "machine_assisted_unreviewed",
+        "sector_ids": [
+          "sec-cross-sector"
+        ],
+        "source_ids": [
+          "src-global-vn-decree37-explanation"
+        ]
+      }
+    ]
+  },
+  {
+    "boundary": "Citation scope and presumption limits remain in source assertions.",
+    "id": "CQ03",
+    "question": "Which standards have explicit OJ citation assertions?",
+    "result": [
+      "a-std-037",
+      "a-std-038",
+      "a-std-039",
+      "a-std-040",
+      "a-std-041",
+      "a-std-042"
+    ]
+  },
+  {
+    "boundary": "Use each artifact status; do not equate working drafts and Recommendations.",
+    "id": "CQ04",
+    "question": "Which UNTP and W3C artifacts have versioned status records?",
+    "result": [
+      "std-untp",
+      "std-untp-0-7",
+      "std-untp-dcc",
+      "std-untp-dia",
+      "std-untp-dpp-0-8",
+      "std-untp-dpp-family",
+      "std-untp-dte",
+      "std-w3c-bw-vocabulary",
+      "std-w3c-did1",
+      "std-w3c-dpp-bw-tf",
+      "std-w3c-dpp-vocabulary",
+      "std-w3c-recognized",
+      "std-w3c-ucr",
+      "std-w3c-vc2",
+      "std-w3c-vcwg"
+    ]
+  },
+  {
+    "boundary": "Attributed results only; this release runs no ecosystem exchange experiment.",
+    "id": "CQ05",
+    "question": "What interoperability results have been coded?",
+    "result": [
+      "a-global-jp-cfp-exchange"
+    ]
+  },
+  {
+    "boundary": "Territorial records retain their instrument-specific conditions.",
+    "id": "CQ06",
+    "question": "Which records distinguish Great Britain and Northern Ireland?",
+    "result": {
+      "jur-gb-gbn": [
+        "eu-gb-dpr-consultation"
+      ],
+      "jur-gb-nir": [
+        "eu-northern-ireland-scope"
+      ]
+    }
+  },
+  {
+    "boundary": "Opened status does not imply full text or human review.",
+    "id": "CQ07",
+    "question": "Which source records were actually reopened?",
+    "result": [
+      "src-eu-battery-guidance",
+      "src-eu-dpp-faq",
+      "src-eu-ebw-procedure",
+      "src-eu-norway-nve",
+      "src-eu-registry-launch",
+      "src-eu-toys-dates",
+      "src-eu-uk-dpr",
+      "src-global-cn-dpp-project",
+      "src-global-cn-order73",
+      "src-global-jp-catena-x-demonstration",
+      "src-global-kr-battery-regime",
+      "src-global-us-ca-sb615-signing",
+      "src-global-us-nist-battery-passport",
+      "src-global-vn-decree37-explanation",
+      "src-root-eu-countries",
+      "src-root-m49",
+      "src-std-battery-model",
+      "src-std-cen-overview",
+      "src-std-cirpass-results",
+      "src-std-dictionary",
+      "src-std-gs1-digital-link",
+      "src-std-iso-25534-1",
+      "src-std-iso-25534-2",
+      "src-std-oj-register",
+      "src-std-opc-dpp",
+      "src-std-rain",
+      "src-std-untp-dpp",
+      "src-std-untp-versions",
+      "src-std-w3c-charter",
+      "src-std-w3c-did1",
+      "src-std-w3c-recognized",
+      "src-std-w3c-tf"
+    ]
+  },
+  {
+    "boundary": "Review tasks, not findings of error.",
+    "id": "CQ08",
+    "question": "Which records need priority human review?",
+    "result": [
+      "eu-batteries-regulation",
+      "eu-battery-due-diligence",
+      "eu-battery-passport-requirement",
+      "eu-business-wallet-proposal",
+      "eu-construction-passport-requirement",
+      "eu-construction-regulation",
+      "eu-critical-raw-materials-act",
+      "eu-crma-corrigendum",
+      "eu-detergent-passport-requirement",
+      "eu-detergents-regulation",
+      "eu-eidas-amendment",
+      "eu-espr",
+      "eu-espr-art-10",
+      "eu-espr-art-11",
+      "eu-espr-art-12",
+      "eu-espr-art-13",
+      "eu-espr-art-9",
+      "eu-packaging-regulation",
+      "eu-permanent-magnet-information",
+      "eu-registry-regulation",
+      "eu-reusable-packaging-carrier",
+      "eu-toy-passport-requirement",
+      "eu-toy-safety-regulation",
+      "eu-vehicle-circularity-regulation",
+      "eu-vehicle-passport-requirement",
+      "global-cn-battery-coding",
+      "global-cn-digital-id-art12",
+      "global-cn-order73",
+      "global-kr-battery-id-regime",
+      "global-us-ca-sb615",
+      "global-vn-decree37",
+      "global-vn-law78",
+      "std-oj-2026-1736"
+    ]
+  },
+  {
+    "boundary": "No national legal survey is implied.",
+    "id": "CQ09",
+    "question": "Which country rows only inherit EU scope?",
+    "result": [
+      "jur-at",
+      "jur-be",
+      "jur-bg",
+      "jur-cy",
+      "jur-cz",
+      "jur-dk",
+      "jur-ee",
+      "jur-es",
+      "jur-fi",
+      "jur-fr",
+      "jur-gr",
+      "jur-hr",
+      "jur-hu",
+      "jur-ie",
+      "jur-it",
+      "jur-lt",
+      "jur-lu",
+      "jur-lv",
+      "jur-mt",
+      "jur-nl",
+      "jur-pl",
+      "jur-pt",
+      "jur-ro",
+      "jur-se",
+      "jur-si",
+      "jur-sk"
+    ]
+  },
+  {
+    "boundary": "These relations do not imply semantic equivalence or tested interoperability.",
+    "id": "CQ10",
+    "question": "Which specifications refer to another artifact as input or reference?",
+    "result": [
+      "a-eu-battery-guidance",
+      "a-eu-construction-registry",
+      "a-eu-ni-battery",
+      "a-eu-ni-espr",
+      "a-eu-norway-reference",
+      "a-eu-registry-law-scope",
+      "a-eu-toy-registry",
+      "a-eu-vehicle-battery-integration",
+      "a-eu-vehicle-espr-integration",
+      "a-global-au-dpp-discussion",
+      "a-global-bd-brac-policy",
+      "a-global-bd-digiprod-exposure",
+      "a-global-ca-challenge-tech",
+      "a-global-cn-coding-standard",
+      "a-global-in-teri-ais-reference",
+      "a-global-nz-eu-exposure",
+      "a-global-sg-eu-exposure",
+      "a-global-tr-eu-exposure",
+      "a-std-051",
+      "a-std-054",
+      "a-std-055",
+      "a-std-056",
+      "a-std-069",
+      "a-std-070",
+      "a-std-071",
+      "a-std-072",
+      "a-std-073",
+      "a-std-077",
+      "a-std-079",
+      "a-std-080",
+      "a-std-084",
+      "a-std-087",
+      "a-std-088",
+      "a-std-089",
+      "a-std-090"
+    ]
+  }
+]

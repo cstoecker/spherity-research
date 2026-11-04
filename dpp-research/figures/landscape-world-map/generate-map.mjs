@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import vm from 'node:vm';
+import {fileURLToPath} from 'node:url';
+
+const here = path.dirname(fileURLToPath(import.meta.url));
+const root = path.resolve(here, '../../..');
+const sandbox = {console};
+vm.createContext(sandbox);
+vm.runInContext(fs.readFileSync(path.join(root, 'dpp-explorer/src/vendor/d3.min.js'), 'utf8'), sandbox);
+const d3 = sandbox.d3;
+const world = JSON.parse(fs.readFileSync(path.join(root, 'dpp-explorer/src/vendor/world.geojson'), 'utf8'));
+const data = JSON.parse(fs.readFileSync(path.join(root, 'dpp-research/releases/0.1.0/views/world-map.json'), 'utf8'));
+const code = f => ['ISO_A3_EH','ISO_A3','ADM0_A3'].map(k=>f.properties[k]).find(v=>v && v!=='-99');
+const byCode = new Map(data.jurisdictions.filter(j=>j.geography.kind==='country').map(j=>[j.geography.map_code,j]));
+const projection = d3.geoEqualEarth().fitExtent([[1,71],[534,354]],{type:'Sphere'});
+const geoPath = d3.geoPath(projection).digits(4);
+const europeProjection = d3.geoMercator().center([12,53]).scale(180).translate([442.5,405]).clipExtent([[355,361],[530,450]]);
+const europePath = d3.geoPath(europeProjection).digits(4);
+const rows = world.features.map(f=>({code:code(f),label:f.properties.NAME_EN || f.properties.NAME,coverage:byCode.get(code(f))?.coverage || 'not_assessed',path:geoPath(f),europePath:europePath(f)}));
+const out = {projection:'Equal Earth (main map); Mercator (European detail inset)',geometryFeatures:world.features.length,sphere:geoPath({type:'Sphere'}),graticule:geoPath(d3.geoGraticule10()),features:rows};
+fs.writeFileSync(path.join(here,'geometry.json'), JSON.stringify(out));
+console.log(`Projected ${rows.length} geometry features.`);

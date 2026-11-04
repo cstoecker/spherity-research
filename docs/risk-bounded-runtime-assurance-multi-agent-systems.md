@@ -146,14 +146,14 @@ spatial_coverage:
   - "European Union"
   - "Global"
 
-series_name: "Governing AI That Acts Across Companies"
+series_name: "Governing Safe AI That Acts Across Companies"
 series_description: "A four-part AI Safety series connecting incentive-compatible protected execution, runtime assurance and private cross-domain verification."
 series_url: "/governing-ai-that-acts-across-companies.html"
 series_position: 2
 series_items:
   - position: 0
     label: "Executive brief"
-    title: "Governing AI That Acts Across Companies"
+    title: "Governing Safe AI That Acts Across Companies"
     url: "/governing-ai-that-acts-across-companies.html"
   - position: 1
     label: "Paper 1"
@@ -211,7 +211,7 @@ questions_answered:
   - question: "Does the paper prove that a deployed multi-agent system is safe?"
     answer: "No. The first-harm bound is conditional on calibration, model-bank coverage, protected enforcement and other stated assumptions. The synthetic evaluation tests the controller logic but does not replace field measurement or general alignment evidence."
 related_publications:
-  - title: "Governing AI That Acts Across Companies"
+  - title: "Governing Safe AI That Acts Across Companies"
     url: "/governing-ai-that-acts-across-companies.html"
     context: "The executive brief places runtime assurance within a leadership and first-mover strategy."
   - title: "Program Equilibria and Protected Execution"

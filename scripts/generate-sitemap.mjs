@@ -2,6 +2,8 @@ import { readFile, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import { glob } from "glob";
+import { loadPdfShares } from "./lib/pdf-sharing.mjs";
+import { loadSitemapImages, loadSitemapDownloads } from "./lib/sitemap-images.mjs";
 
 const DEFAULT_SITE_URL = "https://spherity.github.io/spherity-research";
 
@@ -88,7 +90,14 @@ const assertCanonicalSiteUrl = (location) => {
 const files = await glob("**/*.{html,pdf}", {
   cwd: siteDirectory,
   nodir: true,
-  ignore: ["404.html", "google*.html"],
+  ignore: [
+    "404.html",
+    "google*.html",
+    // These directories contain source downloads, not canonical HTML pages.
+    // Also guard against aliases produced by optional Jekyll Markdown plugins.
+    "dpp-explorer/{releases,candidates,data,vendor}/**/*.html",
+    "assets/dpp-global/**/*.html"
+  ],
   windowsPathsNoEscape: true
 });
 
@@ -106,8 +115,16 @@ for (const file of files.filter((candidate) => candidate.toLowerCase().endsWith(
   if (metadata.pdfUrl) lastModifiedByUrl.set(metadata.pdfUrl, date.slice(0, 10));
 }
 
+// Figure PDFs remain excluded unless the publication explicitly opts them in.
+const { figureDownloads, placeholderDownloads } = await loadPdfShares(getArgument("--source-dir", "docs"));
+const extraDownloads = await loadSitemapDownloads(getArgument("--source-dir", "docs"), siteDirectory);
+for (const [asset, modified] of extraDownloads) {
+  if (!files.some(file => toPublicPath(file) === asset)) files.push(asset.slice(1));
+  lastModifiedByUrl.set(`${siteUrl}${encodePublicPath(asset)}`, modified);
+}
 const entriesByLocation = new Map();
 for (const file of files) {
+  if ((figureDownloads.has(toPublicPath(file)) && !extraDownloads.has(toPublicPath(file))) || placeholderDownloads.has(toPublicPath(file))) continue;
   const pathname = encodePublicPath(toPublicPath(file));
   const htmlMetadata = htmlMetadataByFile.get(file);
   if (htmlMetadata && /(?:^|,)\s*noindex\b/i.test(htmlMetadata.robots)) continue;
@@ -138,19 +155,20 @@ if (!entries.some(({ location }) => location === `${siteUrl}/`)) {
   throw new Error(`The sitemap is missing the site root ${siteUrl}/`);
 }
 
+const imageUrls = await loadSitemapImages(getArgument("--source-dir", "docs"), siteDirectory, siteUrl);
 const body = entries
   .map(
     ({ location, modified, priority }) => `  <url>
     <loc>${xmlEscape(location)}</loc>
     <lastmod>${modified}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>${priority}</priority>
+    <priority>${priority}</priority>${(imageUrls.get(location) || []).map(image => `\n    <image:image><image:loc>${xmlEscape(image)}</image:loc></image:image>`).join('')}
   </url>`
   )
   .join("\n");
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${body}
 </urlset>
 `;
@@ -159,5 +177,5 @@ await writeFile(path.join(siteDirectory, "sitemap.xml"), sitemap, "utf8");
 const htmlCount = entries.filter(({ file }) => file.toLowerCase().endsWith(".html")).length;
 const pdfCount = entries.filter(({ file }) => file.toLowerCase().endsWith(".pdf")).length;
 console.log(
-  `Generated sitemap.xml with ${entries.length} canonical URLs (${htmlCount} HTML pages and ${pdfCount} PDFs).`
+  `Generated sitemap.xml with ${entries.length} canonical URLs (${htmlCount} HTML pages, ${pdfCount} PDFs and ${entries.length-htmlCount-pdfCount} research data downloads).`
 );

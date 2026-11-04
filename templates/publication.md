@@ -2,8 +2,16 @@
 publication_template_version: 2
 layout: research-respec
 css: "/assets/spherity-research-respec.css"
+# The shared layout places Contact Spherity at the bottom of the desktop sidebar
+# and in the mobile header. Open atlas appears above it only on the Global DPP
+# paper, which explicitly sets dpp_paper: true.
+# The article footer includes Contact Spherity. Keep this layout and stylesheet;
+# do not add duplicate per-paper action markup or custom contact destinations.
 
 title: "Full publication title"
+# Optional: exact bibliographic title of pdf_url when it differs from the page title.
+# Defaults to title; does not change the visible title, search title or social title.
+# citation_title: "Exact primary PDF title: Full subtitle"
 seo_title: "Concise search title using the primary authority term"
 og_title: "Clear social title aligned with the publication"
 og_description: "A self-contained social description that communicates the question, evidence and value."
@@ -37,7 +45,9 @@ canonical_url: "https://spherity.github.io/spherity-research/publication-slug.ht
 latest_version: "https://spherity.github.io/spherity-research/publication-slug.html"
 
 # Keep this block for a PDF publication. For multiple editions, list every PDF
-# in associated_media and use the long/full version as pdf_url.
+# in associated_media and normally use the long/full version as pdf_url.
+# Exception: a series hub built around an executive brief may use that brief as
+# pdf_url. Set citation_title to its exact title and subtitle, not the hub's SEO title.
 # Each entry needs its own first-page screenshot in cover_image, not the
 # publication social card. Page-level cover_image is a single-PDF fallback only.
 # Builds generate /share/<PDF-basename>.html for social previews; these pages
@@ -65,6 +75,10 @@ figure_objects:
     description: "A plain-language explanation of what the figure shows and why it matters."
     caption: "Complete visible figure caption, including the source attribution."
     credit_text: "Source: Author organization"
+    # For author-owned figures supply both the notice and matching holder:
+    # copyright_notice: "© YYYY Author name"
+    # copyright_holder: {type: "Person", name: "Author name", url: "https://authoritative.example/author-profile"}
+    # A figure-specific license overrides the page license in microdata and JSON-LD.
     keywords:
       - "Primary figure subject"
       - "Reference model or architecture"
@@ -179,6 +193,7 @@ related_publications:
     url: "/related-publication.html"
     context: "Explain the evidence-based relationship in one sentence."
 
+# Navigation renders standalone "and" as "&"; keep headings and anchor IDs unchanged.
 toc_items:
   - title: "Abstract"
     href: "#abstract"

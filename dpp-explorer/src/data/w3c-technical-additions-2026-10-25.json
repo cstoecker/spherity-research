@@ -1,0 +1,549 @@
+{
+  "id": "w3c-technical-connections-2026-10-25",
+  "checked_at": "2026-10-25",
+  "base_version": "0.1.0",
+  "description": "Dated technical relationships connecting the UNTP working profile and CIRPASS-2 ontology to W3C standards. These are specification relationships, not claims of national adoption.",
+  "review_status": "machine_assisted_unreviewed",
+  "relationship_definitions": {
+    "uses_standard": "The inspected specification or documentation explicitly uses the linked standard for the stated technical purpose. Scope, version and maturity qualifications remain attached; this is not proof of implementation conformance, legal adoption or interoperability."
+  },
+  "entities": [
+    {
+      "id": "std-w3c-jsonld11",
+      "type": "Standard",
+      "label": "W3C JSON-LD 1.1",
+      "description": "JSON syntax for expressing linked data and shared term identifiers.",
+      "version": "1.1",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "recommendation",
+        "as_of": "2026-10-25",
+        "scope_note": "Global web standard; use alone does not establish DPP compliance."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2020-07-16",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-w3c-jsonld11"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-w3c-jsonld11"
+      ],
+      "limitations": [
+        "Serialization format; does not itself prescribe a product vocabulary or access policy."
+      ]
+    },
+    {
+      "id": "std-w3c-owl2",
+      "type": "Standard",
+      "label": "W3C OWL 2",
+      "description": "Ontology language for describing classes, properties and formal relationships.",
+      "version": "2, Second Edition",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "recommendation",
+        "as_of": "2026-10-25",
+        "scope_note": "Global ontology language; applications choose applicable profiles and semantics."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2012-12-11",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-w3c-owl2"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-w3c-owl2"
+      ],
+      "limitations": [
+        "The overview is informative; no particular OWL profile is inferred for a connected implementation."
+      ]
+    },
+    {
+      "id": "std-w3c-shacl",
+      "type": "Standard",
+      "label": "W3C SHACL",
+      "description": "Language for checking RDF data against explicitly supplied shapes.",
+      "version": "2017 Recommendation",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "recommendation",
+        "as_of": "2026-10-25",
+        "scope_note": "Validation rules apply to specified data and shapes; this does not define a universal closed-world ontology."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2017-07-20",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-w3c-shacl"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-w3c-shacl"
+      ],
+      "limitations": [
+        "A SHACL relationship does not imply that every shape is closed or that an entire ecosystem uses closed-world semantics."
+      ]
+    }
+  ],
+  "assertions": [
+    {
+      "id": "a-update-20261025-w3c-tech-untp-vc2",
+      "subject": "std-untp",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-vc2"
+      },
+      "statement": "The current UNTP credential profile requires VCDM 2.0.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-untp-vc-profile"
+      ],
+      "locator": "Verifiable Credential Profile: VCDM profile",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current UNTP working-profile requirement; no production adoption, complete interoperability or obligation under DPP law is established.",
+        "This is not a claim about the separate maintained 0.7.0 release."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-untp-did1",
+      "subject": "std-untp",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-did1"
+      },
+      "statement": "The current UNTP credential profile requires DID Core with supported DID methods.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-untp-vc-profile"
+      ],
+      "locator": "Verifiable Credential Profile: VCDM profile, linked DID Core specification",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current UNTP working-profile requirement; no production adoption, complete interoperability or obligation under DPP law is established.",
+        "This is not a claim about the separate maintained 0.7.0 release."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-untp-jsonld11",
+      "subject": "std-untp",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-jsonld11"
+      },
+      "statement": "The current UNTP profile uses compacted JSON-LD through VCDM 2.0.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-untp-vc-profile",
+        "src-update-20261025-w3c-vc2-jsonld"
+      ],
+      "locator": "VCDM profile and Vocabularies; VCDM 2.0 section 6.1",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current UNTP working-profile requirement; no production adoption, complete interoperability or obligation under DPP law is established.",
+        "This is not a claim about the separate maintained 0.7.0 release."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-dpp-vc2",
+      "subject": "std-untp-dpp-0-8",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-vc2"
+      },
+      "statement": "The UNTP DPP working schema wraps product data in a W3C v2 credential envelope.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-untp-dpp",
+        "src-update-20261025-w3c-untp-vc-profile"
+      ],
+      "locator": "v0.8.0 schema and samples; VCDM profile",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current UNTP working-profile requirement; no production adoption, complete interoperability or obligation under DPP law is established.",
+        "This is not a claim about the separate maintained 0.7.0 release."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-dcc-vc2",
+      "subject": "std-untp-dcc",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-vc2"
+      },
+      "statement": "The working Conformity Credential specification uses a VCDM 2.0 envelope.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-untp-dcc"
+      ],
+      "locator": "Credential Envelope",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current UNTP working-profile requirement; no production adoption, complete interoperability or obligation under DPP law is established.",
+        "This is not a claim about the separate maintained 0.7.0 release."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-dte-vc2",
+      "subject": "std-untp-dte",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-vc2"
+      },
+      "statement": "The working traceability-event envelope uses the W3C v2 credential context.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-untp-dte"
+      ],
+      "locator": "Vocabulary and Context",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current UNTP working-profile requirement; no production adoption, complete interoperability or obligation under DPP law is established.",
+        "This is not a claim about the separate maintained 0.7.0 release."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-dia-vc2",
+      "subject": "std-untp-dia",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-vc2"
+      },
+      "statement": "The working Digital Identity Anchor uses the W3C v2 credential context.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-untp-dia"
+      ],
+      "locator": "v0.8.0 Schema and Samples",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current UNTP working-profile requirement; no production adoption, complete interoperability or obligation under DPP law is established.",
+        "This is not a claim about the separate maintained 0.7.0 release."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-vc2-jsonld11",
+      "subject": "std-w3c-vc2",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-jsonld11"
+      },
+      "statement": "VCDM 2.0 specifies JSON-LD 1.1 serialization for its data model.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-vc2-jsonld"
+      ],
+      "locator": "Sections 6 and 6.1",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Other representations can map back to the defined media types. Generalized JSON-LD processing is not required for every consumer."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-cirpass-owl2",
+      "subject": "std-cirpass2-ontology",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-owl2"
+      },
+      "statement": "CIRPASS-2 CORE combines modules using OWL imports and cites OWL 2.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-cirpass-ontology"
+      ],
+      "locator": "The EU DPP Core Ontology; OWL2-OVERVIEW reference",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Research ontology; no particular OWL 2 profile, formal conformance test or legal endorsement is established."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-cirpass-shacl",
+      "subject": "std-cirpass2-ontology",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-shacl"
+      },
+      "statement": "CIRPASS-2 separates ontology meaning from application profiles validated with SHACL shapes.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-cirpass-ontology"
+      ],
+      "locator": "Architecture; application profiles, DPP templates and SHACL shapes",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The shapes are a separate validation layer; this does not make the ontology closed-world or establish successful product validation."
+      ],
+      "interoperability": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-update-20261025-w3c-untp-vc-profile",
+      "title": "UNTP Verifiable Credentials — working profile",
+      "url": "https://untp.unece.org/docs/specification/VerifiableCredentials/",
+      "publisher": "UNECE / UN/CEFACT",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Verifiable Credential Profile: VCDM profile and Vocabularies",
+      "limitations": [
+        "Live pre-production working specification; no immutable commit captured. This evidence is not a statement about every historical UNTP release."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-untp-dpp",
+      "title": "UNTP Digital Product Passport — working schema",
+      "url": "https://untp.unece.org/docs/specification/product-passport/",
+      "publisher": "UNECE / UN/CEFACT",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "v0.8.0 schema and samples; credential envelope",
+      "limitations": [
+        "Live pre-production working specification; no immutable commit captured. This evidence is not a statement about every historical UNTP release."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-untp-dcc",
+      "title": "UNTP Conformity Credential — working specification",
+      "url": "https://untp.unece.org/docs/specification/conformity-credential/",
+      "publisher": "UNECE / UN/CEFACT",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Credential Envelope: VCDM 2.0",
+      "limitations": [
+        "Live pre-production working specification; no immutable commit captured. This evidence is not a statement about every historical UNTP release."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-untp-dte",
+      "title": "UNTP Digital Traceability Events — working specification",
+      "url": "https://untp.unece.org/docs/specification/DigitalTraceabilityEvents/",
+      "publisher": "UNECE / UN/CEFACT",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "v0.8.0 schema and samples; Vocabulary and Context",
+      "limitations": [
+        "Live pre-production working specification; no immutable commit captured. This evidence is not a statement about every historical UNTP release."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-untp-dia",
+      "title": "UNTP Digital Identity Anchor — working specification",
+      "url": "https://untp.unece.org/docs/specification/DigitalIdentityAnchor/",
+      "publisher": "UNECE / UN/CEFACT",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "v0.8.0 schema and samples; W3C v2 credential context",
+      "limitations": [
+        "Live pre-production working specification; no immutable commit captured. This evidence is not a statement about every historical UNTP release."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-cirpass-ontology",
+      "title": "CIRPASS-2 ontology overview — official documentation source",
+      "url": "https://github.com/CIRPASS-2/ontologies-docs/blob/main/index.html",
+      "publisher": "CIRPASS-2",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Architecture; The EU DPP Core Ontology; bibliography entries OWL2-OVERVIEW and SHACL",
+      "limitations": [
+        "The published documentation site was unavailable; its official source was inspected instead.",
+        "Development-branch documentation; no immutable commit captured. Research model, not a mandated EU ontology."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-jsonld11",
+      "title": "JSON-LD 1.1 — W3C Recommendation",
+      "url": "https://www.w3.org/TR/2020/REC-json-ld11-20200716/",
+      "publisher": "W3C",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Title, status, abstract and section 10",
+      "limitations": []
+    },
+    {
+      "id": "src-update-20261025-w3c-owl2",
+      "title": "OWL 2 Web Ontology Language Document Overview (Second Edition)",
+      "url": "https://www.w3.org/TR/2012/REC-owl2-overview-20121211/",
+      "publisher": "W3C",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Title, status and sections 2.1–2.3",
+      "limitations": [
+        "This overview introduces the OWL 2 specification family; individual profiles have distinct conformance conditions."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-shacl",
+      "title": "Shapes Constraint Language (SHACL) — W3C Recommendation",
+      "url": "https://www.w3.org/TR/2017/REC-shacl-20170720/",
+      "publisher": "W3C",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Abstract and Status of This Document",
+      "limitations": []
+    },
+    {
+      "id": "src-update-20261025-w3c-vc2-jsonld",
+      "title": "Verifiable Credentials Data Model v2.0 — JSON-LD syntax",
+      "url": "https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/",
+      "publisher": "W3C",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Section 6.1 JSON-LD; section 6 Syntaxes and section 6.3 processing",
+      "limitations": []
+    }
+  ],
+  "batch": {
+    "id": "w3c-technical-connections-2026-10-25",
+    "checked_at": "2026-10-25",
+    "description": "Dated technical relationships connecting the UNTP working profile and CIRPASS-2 ontology to W3C standards. These are specification relationships, not claims of national adoption.",
+    "review_status": "machine_assisted_unreviewed",
+    "entity_ids": [
+      "std-w3c-jsonld11",
+      "std-w3c-owl2",
+      "std-w3c-shacl"
+    ],
+    "assertion_ids": [
+      "a-update-20261025-w3c-tech-untp-vc2",
+      "a-update-20261025-w3c-tech-untp-did1",
+      "a-update-20261025-w3c-tech-untp-jsonld11",
+      "a-update-20261025-w3c-tech-dpp-vc2",
+      "a-update-20261025-w3c-tech-dcc-vc2",
+      "a-update-20261025-w3c-tech-dte-vc2",
+      "a-update-20261025-w3c-tech-dia-vc2",
+      "a-update-20261025-w3c-tech-vc2-jsonld11",
+      "a-update-20261025-w3c-tech-cirpass-owl2",
+      "a-update-20261025-w3c-tech-cirpass-shacl"
+    ],
+    "source_ids": [
+      "src-update-20261025-w3c-untp-vc-profile",
+      "src-update-20261025-w3c-untp-dpp",
+      "src-update-20261025-w3c-untp-dcc",
+      "src-update-20261025-w3c-untp-dte",
+      "src-update-20261025-w3c-untp-dia",
+      "src-update-20261025-w3c-cirpass-ontology",
+      "src-update-20261025-w3c-jsonld11",
+      "src-update-20261025-w3c-owl2",
+      "src-update-20261025-w3c-shacl",
+      "src-update-20261025-w3c-vc2-jsonld"
+    ]
+  }
+}

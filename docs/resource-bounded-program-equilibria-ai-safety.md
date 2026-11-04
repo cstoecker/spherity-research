@@ -129,14 +129,14 @@ spatial_coverage:
   - "European Union"
   - "Global"
 
-series_name: "Governing AI That Acts Across Companies"
+series_name: "Governing Safe AI That Acts Across Companies"
 series_description: "A four-part AI Safety series connecting incentive-compatible protected execution, runtime assurance and private cross-domain verification."
 series_url: "/governing-ai-that-acts-across-companies.html"
 series_position: 1
 series_items:
   - position: 0
     label: "Executive brief"
-    title: "Governing AI That Acts Across Companies"
+    title: "Governing Safe AI That Acts Across Companies"
     url: "/governing-ai-that-acts-across-companies.html"
   - position: 1
     label: "Paper 1"
@@ -194,7 +194,7 @@ questions_answered:
   - question: "Which guards are essential in the shared-resource example?"
     answer: "The model requires aggregate reservation, current authority epoch, controller version, unused logical operation identifier and exact action-payload checks. Omission testing produces a specific violation when each guard is removed."
 related_publications:
-  - title: "Governing AI That Acts Across Companies"
+  - title: "Governing Safe AI That Acts Across Companies"
     url: "/governing-ai-that-acts-across-companies.html"
     context: "The executive brief explains how Paper 1 fits the wider leadership and cross-company AI safety programme."
   - title: "Risk-Bounded Runtime Assurance"

@@ -144,9 +144,12 @@ permalink: /
 schema_type: "CollectionPage"
 og_type: "website"
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-last_modified_at: "2026-09-28"
-image: "/assets/spherity-research-og.png"
-image_alt: "Spherity Research — research for the systems we need to trust, with the portal's orbital trust-system motif."
+last_modified_at: "2026-10-11"
+image: "/assets/preview-global-digital-product-passports-atlas.webp"
+image_alt: "Global Digital Product Passports — a prominent regulatory world map with a vertical DPP Atlas label beside the whitepaper's first page."
+image_mime: image/webp
+image_width: 1200
+image_height: 630
 ---
 
 <header class="portal-header">
@@ -158,10 +161,11 @@ image_alt: "Spherity Research — research for the systems we need to trust, wit
            height="239">
     </a>
     <nav aria-label="Primary navigation">
+      <a class="nav-cta contact-spherity" href="https://www.spherity.com/contact" rel="external">Contact Spherity <span aria-hidden="true">↗</span></a>
       <a href="#publications">Publications</a>
       <a href="#research-scope">Research scope</a>
       <a href="#faq">FAQ</a>
-      <a class="nav-cta" href="https://www.spherity.com/" rel="external">Spherity.com <span aria-hidden="true">↗</span></a>
+      <a href="https://www.spherity.com/" rel="external">Spherity.com <span aria-hidden="true">↗</span></a>
     </nav>
   </div>
 </header>
@@ -183,6 +187,7 @@ image_alt: "Spherity Research — research for the systems we need to trust, wit
         <div class="hero-actions">
           <a class="button button-primary" href="#publications">Explore publications <span aria-hidden="true">↓</span></a>
           <a class="button button-ghost" href="https://github.com/spherity/spherity-research">View source on GitHub <span aria-hidden="true">↗</span></a>
+          <a class="button button-contact" href="https://www.spherity.com/contact" rel="external">Contact Spherity <span aria-hidden="true">↗</span></a>
           {% include share.html id="homepage-share" title=page.title text=page.description url=page.url %}
         </div>
       </div>
@@ -413,6 +418,7 @@ image_alt: "Spherity Research — research for the systems we need to trust, wit
       <p>Except where otherwise noted, this site's research content and data are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license external">CC BY 4.0</a> by the named author or co-authors.</p>
     </div>
     <p>Source code is available under the <a href="https://github.com/spherity/spherity-research/blob/main/LICENSE">MIT License</a>. Spherity names and logos are excluded.</p>
+    <div class="footer-contact"><p>Questions about the research or putting it into practice?</p><a class="button button-contact" href="https://www.spherity.com/contact" rel="external">Contact Spherity <span aria-hidden="true">↗</span></a></div>
     <p class="footer-copyright">© 2026 Spherity GmbH</p>
   </div>
 </footer>

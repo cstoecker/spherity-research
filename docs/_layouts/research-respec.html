@@ -6,6 +6,10 @@ layout: default
 {% assign paper_status = page.paper_status | default: "Spherity Research Paper" %}
 {% assign this_version = page.canonical_url | default: page.url %}
 {% assign latest_version = page.latest_version | default: page.canonical_url %}
+{% if page.publication_state == "draft" %}
+  {% assign this_version = page.url | relative_url %}
+  {% assign latest_version = nil %}
+{% endif %}
 {% if page.authors %}
   {% assign author_name = page.authors | join: ", " %}
 {% else %}
@@ -13,7 +17,7 @@ layout: default
 {% endif %}
 {% assign affiliation = page.affiliation | default: "Spherity GmbH" %}
 
-<div class="srespec-page">
+<div class="srespec-page{% if page.paper_in_preparation or page.dpp_paper %} dpp-paper-page{% endif %}">
   <aside class="srespec-sidebar" aria-label="Document navigation">
     <a class="srespec-logo-link" href="{{ '/' | relative_url }}" aria-label="Spherity Research home">
       <img class="srespec-logo"
@@ -21,23 +25,28 @@ layout: default
            alt="Spherity"
            width="170">
     </a>
-
     <nav class="srespec-toc" aria-labelledby="srespec-toc-heading">
       <h2 id="srespec-toc-heading">On this page</h2>
       {% if page.toc_items %}
       <ol>
         {% for item in page.toc_items %}
-        <li><a href="{{ item.href }}">{{ item.title }}</a></li>
+        <li><a href="{{ item.href }}">{% if item.href == "#explore-the-atlas" %}Using the atlas{% else %}{{ item.title | replace: ' and ', ' & ' | escape }}{% endif %}</a></li>
         {% endfor %}
       </ol>
       {% endif %}
+    </nav>
+    <nav class="srespec-sidebar-actions" aria-label="Research tools and contact">
+      {% if page.dpp_paper == true %}
+      <a class="srespec-atlas-link" href="{{ '/dpp-explorer/' | relative_url }}">Open atlas <span aria-hidden="true">→</span></a>
+      {% endif %}
+      <a class="srespec-contact-link" href="https://www.spherity.com/contact" rel="external">Contact Spherity <span aria-hidden="true">↗</span></a>
     </nav>
   </aside>
 
   <article class="srespec-main research-article"
            id="main-content"
            itemscope
-           itemtype="https://schema.org/ScholarlyArticle">
+           itemtype="https://schema.org/{{ page.schema_type | default: 'ScholarlyArticle' }}">
 
     <header class="srespec-header">
       <div class="srespec-header-top">
@@ -54,6 +63,12 @@ layout: default
              src="{{ logo_path | relative_url }}"
              alt="Spherity"
              width="160">
+        <nav class="srespec-mobile-actions" aria-label="Research tools and contact">
+          {% if page.dpp_paper == true %}
+          <a class="srespec-atlas-link" href="{{ '/dpp-explorer/' | relative_url }}">Open atlas <span aria-hidden="true">→</span></a>
+          {% endif %}
+          <a class="srespec-contact-link" href="https://www.spherity.com/contact" rel="external">Contact Spherity <span aria-hidden="true">↗</span></a>
+        </nav>
         <p class="srespec-kicker">{{ paper_status }}</p>
       </div>
 
@@ -63,9 +78,14 @@ layout: default
       <p class="srespec-subtitle">{{ page.subtitle }}</p>
       {% endif %}
 
+      {% if page.paper_in_preparation or page.dpp_paper or page.ebw_paper %}
+      {% if page.ebw_paper %}{% include ebw-paper-hero.html %}{% elsif page.dpp_paper %}{% include dpp-whitepaper-hero.html %}{% else %}{% include dpp-paper-hero.html %}{% endif %}
+      <details class="dpp-paper-record">
+        <summary>Research record and version details</summary>
+      {% endif %}
       <dl class="srespec-meta">
         <div>
-          <dt>{% if page.authors and page.authors.size > 1 %}Authors{% else %}Author{% endif %}</dt>
+          <dt>{% if page.publication_type == "atlas" %}Research curator{% elsif page.authors and page.authors.size > 1 %}Authors{% else %}Author{% endif %}</dt>
           <dd itemprop="author">
             {% if page.authors %}
               {% for author in page.authors %}{{ author }}{% unless forloop.last %}, {% endunless %}{% endfor %}
@@ -94,8 +114,8 @@ layout: default
         {% endif %}
         {% if page.date %}
         <div>
-          <dt>Published</dt>
-          <dd><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time></dd>
+          <dt>{% if page.publication_state == "draft" %}Preview prepared{% else %}{{ page.date_label | default: "Published" }}{% endif %}</dt>
+          <dd><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="{% if page.publication_state == 'draft' %}dateCreated{% else %}datePublished{% endif %}">{{ page.date | date: "%Y-%m-%d" }}</time></dd>
         </div>
         {% endif %}
         {% if page.last_modified_at %}
@@ -112,7 +132,7 @@ layout: default
         {% endif %}
         {% if this_version %}
         <div>
-          <dt>This version</dt>
+          <dt>{% if page.publication_state == "draft" %}Local preview{% else %}This version{% endif %}</dt>
           <dd><a href="{{ this_version }}">{{ this_version }}</a></dd>
         </div>
         {% endif %}
@@ -123,19 +143,31 @@ layout: default
         </div>
         {% endif %}
       </dl>
+      {% if page.paper_in_preparation or page.dpp_paper or page.ebw_paper %}</details>{% endif %}
 
+      {% if page.publication_state != "draft" %}
       <div class="article-share">
         {% include share.html id="paper-share" title=page.title text=page.description url=page.canonical_url %}
         {% include pdf-share-links.html %}
       </div>
+      {% else %}
+      <p>This is an unpublished local preview. Public sharing will become available after publication.</p>
+      {% endif %}
+
+      {% if page.abstract_before_toc and page.abstract %}
+      <section class="abstract-box" aria-labelledby="abstract">
+        <h2 id="abstract">Abstract</h2>
+        <p>{{ page.abstract | escape }}</p>
+      </section>
+      {% endif %}
 
       {% if page.toc_items %}
       <details class="mobile-article-nav">
-        <summary>Browse this paper</summary>
+        <summary>Browse this {% if page.paper_in_preparation or page.dpp_paper %}paper page{% elsif page.publication_type == "atlas" %}atlas{% else %}paper{% endif %}</summary>
         <nav aria-label="Mobile document navigation">
           <ol>
             {% for item in page.toc_items %}
-            <li><a href="{{ item.href }}">{{ item.title }}</a></li>
+            <li><a href="{{ item.href }}">{% if item.href == "#explore-the-atlas" %}Using the atlas{% else %}{{ item.title | replace: ' and ', ' & ' | escape }}{% endif %}</a></li>
             {% endfor %}
           </ol>
         </nav>
@@ -150,7 +182,7 @@ layout: default
     {% if page.answer_summary %}
     <section class="answer-summary" id="answer-summary" aria-labelledby="answer-summary-title">
       <p class="answer-summary-label">In brief</p>
-      <h2 id="answer-summary-title">What does this research establish?</h2>
+      <h2 id="answer-summary-title">{{ page.summary_heading | default: "What does this research establish?" }}</h2>
       <p class="answer-summary-copy">{{ page.answer_summary }}</p>
       {% if page.key_takeaways %}
       <div class="answer-takeaways">
@@ -259,7 +291,10 @@ layout: default
 
     <footer class="article-footer">
       <p class="article-footer-label">Continue exploring</p>
-      <a href="{{ '/' | relative_url }}">Browse all Spherity research <span aria-hidden="true">→</span></a>
+      <div class="article-footer-actions">
+        <a href="{{ '/' | relative_url }}">Browse all Spherity research <span aria-hidden="true">→</span></a>
+        <a class="srespec-contact-link" href="https://www.spherity.com/contact" rel="external">Contact Spherity <span aria-hidden="true">↗</span></a>
+      </div>
     </footer>
   </article>
 </div>

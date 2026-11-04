@@ -246,9 +246,12 @@ a {
 }
 
 .hero-actions {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
   gap: 0.8rem;
+  width: 100%;
+  max-width: 30rem;
   margin-top: 2.2rem;
 }
 
@@ -1847,3 +1850,31 @@ a {
     display: none !important;
   }
 }
+
+/* Consistent, visible route to the Spherity contact form. */
+.portal-nav nav a.contact-spherity,
+.portal-body a.button-contact {
+  display:inline-flex;align-items:center;justify-content:center;gap:.65rem;
+  min-height:44px;padding:.7rem 1rem;border:1px solid #218577;border-radius:8px;
+  color:#102636;background:#7ee4c1;font-weight:750;text-decoration:none;
+}
+.portal-nav nav a.contact-spherity:hover,
+.portal-body a.button-contact:hover {color:#102636;background:#a1efd4;border-color:#126658}
+.portal-nav nav a.contact-spherity:focus-visible,
+.portal-body a.button-contact:focus-visible {outline:3px solid #fff;outline-offset:4px;box-shadow:0 0 0 6px #126658}
+.footer-contact {grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:1.25rem;flex-wrap:wrap;padding-top:.5rem}
+.footer-contact p {color:#e3edf2;font-size:.95rem}
+@media(max-width:720px){
+  .portal-nav {gap:1rem}
+  .footer-contact {align-items:flex-start;flex-direction:column}
+}
+@media print{.footer-contact{display:none}}
+
+/* Keep the four hero actions aligned across both rows. */
+.portal-body .hero-actions > .button,
+.portal-body .hero-actions .share-button {
+  width:100%;min-height:3.2rem;height:100%;padding:.78rem 1.15rem;
+  border-radius:.7rem;line-height:1.4;text-align:center;
+}
+.hero-actions > .share-control {min-width:0;align-items:stretch}
+@media(max-width:379px){.hero-actions{grid-template-columns:1fr}}

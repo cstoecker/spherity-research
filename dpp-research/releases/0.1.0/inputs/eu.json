@@ -1,0 +1,2737 @@
+{
+  "entities": [
+    {
+      "id": "eu-espr",
+      "type": "LegalInstrument",
+      "label": "ESPR — Regulation (EU) 2024/1781",
+      "description": "EU ecodesign and DPP framework.",
+      "version": "2024/1781; consolidation labelled 2024-06-28",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "enacted_framework",
+        "as_of": "2026-10-23",
+        "scope_note": "Product obligations depend on applicable delegated acts; exclusions apply."
+      },
+      "dates": [
+        {
+          "kind": "adopted",
+          "date": "2024-06-13",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-espr"
+          ]
+        },
+        {
+          "kind": "entered_into_force",
+          "date": "2024-07-18",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-espr"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-espr",
+        "src-eu-dpp-faq"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Framework classification rechecked in Commission FAQ; full legislation inaccessible."
+      ]
+    },
+    {
+      "id": "eu-espr-art-9",
+      "type": "Provision",
+      "label": "ESPR Article 9 — Passport and product-specific parameters",
+      "description": "Delegated acts determine passport data and granularity.",
+      "version": "Article 9",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "enacted_framework_provision",
+        "as_of": "2026-10-23",
+        "scope_note": "Apply within the ESPR framework and applicable product rules."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Dossier-derived entity supplemented by indexed official search passages; primary full article material was not reopened."
+      ]
+    },
+    {
+      "id": "eu-espr-art-10",
+      "type": "Provision",
+      "label": "ESPR Article 10 — Essential passport requirements",
+      "description": "Identifiers, carriers, open formats and access conditions.",
+      "version": "Article 10",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "enacted_framework_provision",
+        "as_of": "2026-10-23",
+        "scope_note": "Apply within the ESPR framework and applicable product rules."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Dossier-derived entity supplemented by indexed official search passages; primary full article material was not reopened."
+      ]
+    },
+    {
+      "id": "eu-espr-art-11",
+      "type": "Provision",
+      "label": "ESPR Article 11 — Technical design and operation",
+      "description": "Technical, semantic and organisational interoperability requirements.",
+      "version": "Article 11",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "enacted_framework_provision",
+        "as_of": "2026-10-23",
+        "scope_note": "Apply within the ESPR framework and applicable product rules."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Dossier-derived entity supplemented by indexed official search passages; primary full article material was not reopened."
+      ]
+    },
+    {
+      "id": "eu-espr-art-12",
+      "type": "Provision",
+      "label": "ESPR Article 12 — Unique identifiers",
+      "description": "Operator/facility identifiers and lifecycle rules.",
+      "version": "Article 12",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "enacted_framework_provision",
+        "as_of": "2026-10-23",
+        "scope_note": "Apply within the ESPR framework and applicable product rules."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Dossier-derived entity supplemented by indexed official search passages; primary full article material was not reopened."
+      ]
+    },
+    {
+      "id": "eu-espr-art-13",
+      "type": "Provision",
+      "label": "ESPR Article 13 — DPP registry",
+      "description": "Registry arrangements and registration identifiers.",
+      "version": "Article 13",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "enacted_framework_provision",
+        "as_of": "2026-10-23",
+        "scope_note": "Apply within the ESPR framework and applicable product rules."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Dossier-derived entity supplemented by indexed official search passages; primary full article material was not reopened."
+      ]
+    },
+    {
+      "id": "eu-espr-workplan",
+      "type": "Policy",
+      "label": "ESPR indicative implementation timeline",
+      "description": "Commission timetable for planned sector and implementation acts.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "indicative_plan",
+        "as_of": "2026-10-23",
+        "scope_note": "Adoption targets are not product compliance dates."
+      },
+      "dates": [
+        {
+          "kind": "planned",
+          "date": "2026",
+          "precision": "year",
+          "condition": "Iron/steel delegated-act target Q4; adoption not verified.",
+          "source_ids": [
+            "src-eu-timeline"
+          ]
+        },
+        {
+          "kind": "planned",
+          "date": "2027",
+          "precision": "year",
+          "condition": "Textiles, aluminium and tyres targets Q3–Q4; adoption not verified.",
+          "source_ids": [
+            "src-eu-timeline"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-timeline"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Not rechecked this turn.",
+        "Service-provider timetable has inconsistent Q2/Q3 2027 targets in dossier."
+      ]
+    },
+    {
+      "id": "eu-registry-regulation",
+      "type": "LegalInstrument",
+      "label": "Commission Implementing Regulation (EU) 2026/1778",
+      "description": "Practical arrangements for the EU DPP registry.",
+      "version": "2026/1778",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "enacted_implementing_measure",
+        "as_of": "2026-10-23",
+        "scope_note": "Covers ESPR and specified sector passports requiring registration."
+      },
+      "dates": [
+        {
+          "kind": "adopted",
+          "date": "2026-07-16",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-registry-law"
+          ]
+        },
+        {
+          "kind": "published",
+          "date": "2026-07-17",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-registry-law"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-registry-law"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Commencement article was not extracted; launch date must not substitute for entry into force."
+      ]
+    },
+    {
+      "id": "eu-dpp-registry",
+      "type": "Implementation",
+      "label": "EU Digital Product Passport Registry",
+      "description": "Commission registry and testing environment.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "operational_testing_available",
+        "as_of": "2026-10-23",
+        "scope_note": "Infrastructure availability does not activate every sector obligation."
+      },
+      "dates": [
+        {
+          "kind": "available",
+          "date": "2026-07-20",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-registry-launch"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-registry-launch"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Authority launch announcement; production integrations and service performance not independently tested."
+      ]
+    },
+    {
+      "id": "eu-batteries-regulation",
+      "type": "LegalInstrument",
+      "label": "Batteries Regulation (EU) 2023/1542",
+      "description": "Battery lifecycle regulation including passport duties.",
+      "version": "Consolidation 2026-08-13 reported by dossier",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "status": {
+        "value": "enacted_sector_law",
+        "as_of": "2026-10-23",
+        "scope_note": "Passport scope and commencement are captured separately."
+      },
+      "dates": [
+        {
+          "kind": "adopted",
+          "date": "2023-07-12",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-battery-law"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-battery-law",
+        "src-eu-battery-guidance"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Consolidated legal text not reopened."
+      ]
+    },
+    {
+      "id": "eu-battery-passport-requirement",
+      "type": "Requirement",
+      "label": "Battery passport — Article 77",
+      "description": "Passport for EV, LMT and industrial batteries above 2 kWh.",
+      "version": "Article 77",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "status": {
+        "value": "enacted_future_obligation",
+        "as_of": "2026-10-23",
+        "scope_note": "The capacity threshold applies to industrial batteries; placing on market or putting into service triggers scope."
+      },
+      "dates": [
+        {
+          "kind": "applies_from",
+          "date": "2027-02-18",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-battery-guidance"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-battery-law",
+        "src-eu-battery-guidance"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Scope/date rechecked in Commission announcement; access tiers remain dossier-derived."
+      ]
+    },
+    {
+      "id": "eu-battery-data-guidance",
+      "type": "Report",
+      "label": "Digital Batteries Passport data-point guidance",
+      "description": "Overview of 71 data points and category applicability.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "status": {
+        "value": "non_binding_guidance",
+        "as_of": "2026-10-23",
+        "scope_note": "Does not introduce new legal duties or authoritative interpretation."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2026-08-21",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-battery-guidance"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-battery-guidance"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Announcement checked; linked guidance not fully examined."
+      ]
+    },
+    {
+      "id": "eu-battery-due-diligence",
+      "type": "Provision",
+      "label": "Battery due diligence — Article 48",
+      "description": "Separate due-diligence commencement.",
+      "version": "Article 48 as amended",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "status": {
+        "value": "enacted_future_obligation",
+        "as_of": "2026-10-23",
+        "scope_note": "Distinct from Article 77 passport duty."
+      },
+      "dates": [
+        {
+          "kind": "applies_from",
+          "date": "2027-08-18",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-battery-law"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-battery-law"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Dossier-derived amendment timing; consolidated text not reopened."
+      ]
+    },
+    {
+      "id": "eu-construction-regulation",
+      "type": "LegalInstrument",
+      "label": "Construction Products Regulation (EU) 2024/3110",
+      "description": "Construction-product framework including a DPP system.",
+      "version": "2024/3110",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-construction"
+      ],
+      "status": {
+        "value": "enacted_framework",
+        "as_of": "2026-10-23",
+        "scope_note": "General application and product-family transitions do not establish a single passport start."
+      },
+      "dates": [
+        {
+          "kind": "adopted",
+          "date": "2024-11-27",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-cpr"
+          ]
+        },
+        {
+          "kind": "applies_from",
+          "date": "2026-01-08",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-cpr"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-cpr"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Dossier-derived entity supplemented by indexed official Article 80/96 passages; primary full legal material was not reopened and Article 95 transitions need full review."
+      ]
+    },
+    {
+      "id": "eu-construction-passport-requirement",
+      "type": "Requirement",
+      "label": "Construction DPP provision — Articles 22(7), 75–80",
+      "description": "Conditional construction-product passport duty.",
+      "version": "Articles 22(7), 75–80, 95(9)",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-construction"
+      ],
+      "status": {
+        "value": "enacted_conditional_obligation",
+        "as_of": "2026-10-23",
+        "scope_note": "Requires system delegated act and relevant product-family transition."
+      },
+      "dates": [
+        {
+          "kind": "applies_from",
+          "date": null,
+          "precision": "conditional",
+          "condition": "18 months after Article 75(1) system delegated act enters into force, subject to product-family transition.",
+          "source_ids": [
+            "src-eu-cpr"
+          ]
+        },
+        {
+          "kind": "available",
+          "date": null,
+          "precision": "conditional",
+          "condition": "System operational six months after that delegated act enters into force.",
+          "source_ids": [
+            "src-eu-cpr"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-cpr"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Trigger act adoption/entry not verified; no calendar deadline inferred.",
+        "Dossier-derived requirement supplemented by indexed official Article 80 timing; primary full legal material was not reopened."
+      ]
+    },
+    {
+      "id": "eu-toy-safety-regulation",
+      "type": "LegalInstrument",
+      "label": "Toy Safety Regulation (EU) 2025/2509",
+      "description": "Toy safety law including DPP requirements.",
+      "version": "2025/2509",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-toys"
+      ],
+      "status": {
+        "value": "enacted_future_application",
+        "as_of": "2026-10-23",
+        "scope_note": "Covers toys within statutory scope."
+      },
+      "dates": [
+        {
+          "kind": "adopted",
+          "date": "2025-11-26",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-toys-law"
+          ]
+        },
+        {
+          "kind": "entered_into_force",
+          "date": "2026-01-01",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-toys-dates"
+          ]
+        },
+        {
+          "kind": "applies_from",
+          "date": "2030-08-01",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-toys-dates"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-toys-law",
+        "src-eu-toys-dates"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Status/application rechecked in Commission summary; detailed operative text inherited."
+      ]
+    },
+    {
+      "id": "eu-toy-passport-requirement",
+      "type": "Requirement",
+      "label": "Toy passport — Articles 19–22",
+      "description": "Toy safety and compliance passport.",
+      "version": "Articles 19–22",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-toys"
+      ],
+      "status": {
+        "value": "enacted_future_obligation",
+        "as_of": "2026-10-23",
+        "scope_note": "Toys placed on EU market; statutory exclusions remain relevant."
+      },
+      "dates": [
+        {
+          "kind": "applies_from",
+          "date": "2030-08-01",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-toys-dates"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-toys-law",
+        "src-eu-toys-dates"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": []
+    },
+    {
+      "id": "eu-detergents-regulation",
+      "type": "LegalInstrument",
+      "label": "Detergents and Surfactants Regulation (EU) 2026/405",
+      "description": "Detergent/surfactant law with passport provisions.",
+      "version": "2026/405",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-detergents"
+      ],
+      "status": {
+        "value": "enacted_future_application",
+        "as_of": "2026-10-23",
+        "scope_note": "General instrument scope is broader than the DPP provision's end-user-surfactant scope."
+      },
+      "dates": [
+        {
+          "kind": "adopted",
+          "date": "2026-02-11",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-detergents-law"
+          ]
+        },
+        {
+          "kind": "published",
+          "date": "2026-03-02",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-detergents-echa"
+          ]
+        },
+        {
+          "kind": "entered_into_force",
+          "date": "2026-03-22",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-detergents-echa"
+          ]
+        },
+        {
+          "kind": "applies_from",
+          "date": "2029-09-23",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-detergents-dates"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-detergents-law",
+        "src-eu-detergents-dates",
+        "src-eu-detergents-echa"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Article 37 timing rechecked only via indexed official passage; other dates and scope inherited."
+      ]
+    },
+    {
+      "id": "eu-detergent-passport-requirement",
+      "type": "Requirement",
+      "label": "Detergent passport — Article 21",
+      "description": "Passport before market placement of detergent or end-user surfactant.",
+      "version": "Articles 21–25; Annex VI",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-detergents"
+      ],
+      "status": {
+        "value": "enacted_future_obligation",
+        "as_of": "2026-10-23",
+        "scope_note": "Normally model-level; technical details require an implementing act."
+      },
+      "dates": [
+        {
+          "kind": "applies_from",
+          "date": "2029-09-23",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-detergents-dates"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-detergents-law",
+        "src-eu-detergents-dates"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Article 21 detailed scope not reopened; implementing act status unverified."
+      ]
+    },
+    {
+      "id": "eu-vehicle-circularity-regulation",
+      "type": "LegalInstrument",
+      "label": "Vehicle Circularity Regulation (EU) 2026/1738",
+      "description": "Circularity and end-of-life vehicle law.",
+      "version": "2026/1738",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-vehicles"
+      ],
+      "status": {
+        "value": "enacted_future_application",
+        "as_of": "2026-10-23",
+        "scope_note": "Principally M1/N1; article-specific exceptions and extensions apply."
+      },
+      "dates": [
+        {
+          "kind": "adopted",
+          "date": "2026-07-08",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-vehicle-law"
+          ]
+        },
+        {
+          "kind": "published",
+          "date": "2026-07-24",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-vehicle-law"
+          ]
+        },
+        {
+          "kind": "entered_into_force",
+          "date": "2026-08-13",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-vehicle-law"
+          ]
+        },
+        {
+          "kind": "applies_from",
+          "date": "2028-09-01",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-vehicle-article59"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-vehicle-law",
+        "src-eu-vehicle-article59"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Article 59 general date rechecked via index; Article 2 scope and Article 13 require full-text recheck."
+      ]
+    },
+    {
+      "id": "eu-vehicle-passport-requirement",
+      "type": "Requirement",
+      "label": "Digital Circularity Vehicle Passport — Article 13",
+      "description": "Circularity information passport for relevant vehicles.",
+      "version": "Article 13",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-vehicles"
+      ],
+      "status": {
+        "value": "enacted_future_obligation",
+        "as_of": "2026-10-23",
+        "scope_note": "Do not apply Article 13 to heavy-duty/trailer categories excluded by Article 2."
+      },
+      "dates": [
+        {
+          "kind": "applies_from",
+          "date": "2032-09-01",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-vehicle-law"
+          ]
+        },
+        {
+          "kind": "implementing_act_due",
+          "date": "2030-08-14",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-vehicle-law"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-vehicle-law"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Dossier-derived Article 13 date and scope; direct text inaccessible this turn."
+      ]
+    },
+    {
+      "id": "eu-critical-raw-materials-act",
+      "type": "LegalInstrument",
+      "label": "Critical Raw Materials Act — Regulation (EU) 2024/1252",
+      "description": "Includes permanent-magnet digital-information provisions.",
+      "version": "2024/1252 read with corrigendum 2024/90330",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-critical-materials"
+      ],
+      "status": {
+        "value": "enacted_adjacent_law",
+        "as_of": "2026-10-23",
+        "scope_note": "Not a universal critical-material DPP mandate."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-eu-crma",
+        "src-eu-crma-corrigendum"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Relevant implementing-act adoption unverified."
+      ]
+    },
+    {
+      "id": "eu-permanent-magnet-information",
+      "type": "Requirement",
+      "label": "Permanent-magnet information — CRMA Article 28",
+      "description": "Label and identifier-linked information for listed products.",
+      "version": "Article 28",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-critical-materials"
+      ],
+      "status": {
+        "value": "enacted_conditional_digital_information",
+        "as_of": "2026-10-23",
+        "scope_note": "Specified magnet/product categories; exceptions and special dates apply."
+      },
+      "dates": [
+        {
+          "kind": "applies_from",
+          "date": null,
+          "precision": "conditional",
+          "condition": "Two years after relevant implementing act enters into force for principal label/data-carrier requirements.",
+          "source_ids": [
+            "src-eu-crma"
+          ]
+        },
+        {
+          "kind": "applies_from",
+          "date": "2029-05-24",
+          "precision": "day",
+          "condition": "Special Article 28(10) provision for MRI devices, motor vehicles and type-approved category-L transport.",
+          "source_ids": [
+            "src-eu-crma"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-crma",
+        "src-eu-crma-corrigendum"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "No blanket critical-material passport inference; implementing-act status unresolved."
+      ]
+    },
+    {
+      "id": "eu-crma-corrigendum",
+      "type": "LegalInstrument",
+      "label": "CRMA corrigendum 2024/90330",
+      "description": "Correction to dates in Regulation 2024/1252.",
+      "version": "OJ 2024/90330",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-critical-materials"
+      ],
+      "status": {
+        "value": "published_correction",
+        "as_of": "2026-10-23",
+        "scope_note": "Article 28(2) deadline corrected to 24 November 2025."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2024-06-03",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-crma-corrigendum"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-crma-corrigendum"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Correction does not establish that the implementing act was adopted."
+      ]
+    },
+    {
+      "id": "eu-packaging-regulation",
+      "type": "LegalInstrument",
+      "label": "Packaging and Packaging Waste Regulation (EU) 2025/40",
+      "description": "Packaging law including digital labelling.",
+      "version": "2025/40",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-packaging"
+      ],
+      "status": {
+        "value": "applicable_adjacent_law",
+        "as_of": "2026-10-23",
+        "scope_note": "General application does not make every package subject to a standalone DPP."
+      },
+      "dates": [
+        {
+          "kind": "applies_from",
+          "date": "2026-08-12",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-ppwr"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-ppwr"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Digital-labelling implementing acts not checked."
+      ]
+    },
+    {
+      "id": "eu-reusable-packaging-carrier",
+      "type": "Requirement",
+      "label": "Reusable-packaging data carrier — PPWR Article 12",
+      "description": "QR/open data carrier for applicable reusable packaging.",
+      "version": "Article 12(2)–(6)",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-packaging"
+      ],
+      "status": {
+        "value": "enacted_conditional_digital_information",
+        "as_of": "2026-10-23",
+        "scope_note": "Open-loop and other statutory exceptions require case-specific review."
+      },
+      "dates": [
+        {
+          "kind": "applies_from",
+          "date": null,
+          "precision": "conditional",
+          "condition": "12 February 2029 or 30 months after relevant implementing act enters into force, whichever is later.",
+          "source_ids": [
+            "src-eu-ppwr"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-ppwr"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Cannot use fixed 2029 date without checking the trigger act."
+      ]
+    },
+    {
+      "id": "eu-business-wallet-proposal",
+      "type": "LegalInstrument",
+      "label": "European Business Wallets — COM(2025)838",
+      "description": "Proposed business identity and representation framework.",
+      "version": "COM(2025)838; 2025/0358(COD)",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "legislative_proposal",
+        "as_of": "2026-10-23",
+        "scope_note": "Identity/trust infrastructure proposal, not a DPP obligation."
+      },
+      "dates": [
+        {
+          "kind": "proposed",
+          "date": "2025-11-19",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-ebw-proposal"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-ebw-proposal",
+        "src-eu-ebw-procedure"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Parliament procedural record says awaiting first-reading position; no enacted EBW regulation established."
+      ]
+    },
+    {
+      "id": "eu-eidas-amendment",
+      "type": "LegalInstrument",
+      "label": "European Digital Identity Framework — Regulation (EU) 2024/1183",
+      "description": "Enacted amendment of eIDAS identity/trust framework.",
+      "version": "2024/1183",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "enacted_enabling_framework",
+        "as_of": "2026-10-23",
+        "scope_note": "Wallets cover natural/legal persons; no generic product-passport duty."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-eu-eidas"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Wallet provision timing depends on implementing acts; no blanket fixed start encoded."
+      ]
+    },
+    {
+      "id": "eu-gb-dpr-consultation",
+      "type": "Policy",
+      "label": "Great Britain digital product records policy consultation",
+      "description": "Government consultation on domestic DPR approach.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-gb-gbn"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "consultation_closed_policy_unresolved",
+        "as_of": "2026-10-23",
+        "scope_note": "Great Britain domestic policy; EU market exposure is separate."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2026-07-27",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-uk-dpr"
+          ]
+        },
+        {
+          "kind": "ends",
+          "date": "2026-09-21",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-uk-dpr"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-uk-dpr"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "No post-consultation government response established in this seed."
+      ]
+    },
+    {
+      "id": "eu-northern-ireland-scope",
+      "type": "Report",
+      "label": "UK authority statement on Northern Ireland DPP scope",
+      "description": "Official explanation of Windsor Framework treatment.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-gb-nir"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "official_scope_statement",
+        "as_of": "2026-10-23",
+        "scope_note": "NI must be distinguished from Great Britain and assessed instrument by instrument."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2026-07-27",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-uk-dpr"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-uk-dpr"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Authority summary, not a complete legal incorporation analysis."
+      ]
+    },
+    {
+      "id": "eu-norway-espr-status",
+      "type": "Report",
+      "label": "NVE statement on ESPR incorporation",
+      "description": "NVE page reports ESPR not incorporated in EEA/Norwegian law.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-no"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "reported_non_incorporation_current_unverified",
+        "as_of": "2026-10-23",
+        "scope_note": "Last source update March 2025; present legal status needs EEA-Lex/national-law verification."
+      },
+      "dates": [
+        {
+          "kind": "source_updated",
+          "date": "2025-03-12",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-eu-norway-nve"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-eu-norway-nve"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Reopening a stale page does not prove no later incorporation."
+      ]
+    }
+  ],
+  "assertions": [
+    {
+      "id": "a-eu-espr-framework",
+      "subject": "eu-espr",
+      "predicate": "has_status",
+      "object": {
+        "value": "Enacted framework; no universal immediate DPP duty",
+        "datatype": "string"
+      },
+      "statement": "ESPR obligations roll out through product-specific rules.",
+      "source_ids": [
+        "src-eu-dpp-faq"
+      ],
+      "locator": "General FAQ, product coverage/exemptions",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-art-9-part",
+      "subject": "eu-espr-art-9",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Article 9 belongs to ESPR.",
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "locator": "Article 9",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Indexed passage; complete legal text not opened."
+      ]
+    },
+    {
+      "id": "a-eu-art-10-part",
+      "subject": "eu-espr-art-10",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Article 10 belongs to ESPR.",
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "locator": "Article 10",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Indexed passage; complete legal text not opened."
+      ]
+    },
+    {
+      "id": "a-eu-art-11-part",
+      "subject": "eu-espr-art-11",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Article 11 belongs to ESPR.",
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "locator": "Article 11",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Indexed passage; complete legal text not opened."
+      ]
+    },
+    {
+      "id": "a-eu-art-12-part",
+      "subject": "eu-espr-art-12",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Article 12 belongs to ESPR.",
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "locator": "Article 12",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Indexed passage; complete legal text not opened."
+      ]
+    },
+    {
+      "id": "a-eu-art-13-part",
+      "subject": "eu-espr-art-13",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Article 13 belongs to ESPR.",
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "locator": "Article 13",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Indexed passage; complete legal text not opened."
+      ]
+    },
+    {
+      "id": "a-eu-art9-parameters",
+      "subject": "eu-espr-art-9",
+      "predicate": "requires",
+      "object": {
+        "value": "Product rules specify data, carrier and model/batch/item level",
+        "datatype": "string"
+      },
+      "statement": "Product rules determine passport parameters.",
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "locator": "Article 9(1)–(2)",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-art10-essentials",
+      "subject": "eu-espr-art-10",
+      "predicate": "requires",
+      "object": {
+        "value": "Persistent identifiers, carriers, open formats and controlled access",
+        "datatype": "string"
+      },
+      "statement": "Essential passport requirements include identification and access conditions.",
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "locator": "Article 10(1)",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-art11-interoperability",
+      "subject": "eu-espr-art-11",
+      "predicate": "requires",
+      "object": {
+        "value": "Technical, semantic and organisational end-to-end interoperability",
+        "datatype": "string"
+      },
+      "statement": "ESPR requires interoperability across these dimensions.",
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "locator": "Article 11(a)",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Requirement, not evidence of achieved interoperability."
+      ]
+    },
+    {
+      "id": "a-eu-art12-identifiers",
+      "subject": "eu-espr-art-12",
+      "predicate": "requires",
+      "object": {
+        "value": "Standards-based operator/facility identifiers",
+        "datatype": "string"
+      },
+      "statement": "Article 12 governs relevant identifiers.",
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "locator": "Article 12(1)–(6)",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-art13-enables",
+      "subject": "eu-espr-art-13",
+      "predicate": "enables",
+      "object": {
+        "entity_id": "eu-dpp-registry"
+      },
+      "statement": "Article 13 establishes the registry.",
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "locator": "Article 13",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-registry-not-compliance",
+      "subject": "eu-espr-art-13",
+      "predicate": "has_status",
+      "object": {
+        "value": "Registration communication is not substantive compliance proof",
+        "datatype": "string"
+      },
+      "statement": "Registration does not establish product compliance.",
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "locator": "Article 13(5)",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-espr-amends-battery",
+      "subject": "eu-espr",
+      "predicate": "amends",
+      "object": {
+        "entity_id": "eu-batteries-regulation"
+      },
+      "statement": "ESPR adds battery identifier registration.",
+      "source_ids": [
+        "src-eu-espr"
+      ],
+      "locator": "Article 78",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-plan-espr",
+      "subject": "eu-espr-workplan",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "The timeline supports ESPR implementation.",
+      "source_ids": [
+        "src-eu-timeline"
+      ],
+      "locator": "Indicative timeline",
+      "assertion_type": "research_classification",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Timeline is policy information, not operative delegated legislation."
+      ]
+    },
+    {
+      "id": "a-eu-registry-law-scope",
+      "subject": "eu-registry-regulation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-espr-art-13"
+      },
+      "statement": "Implementing law specifies registry arrangements.",
+      "source_ids": [
+        "src-eu-registry-law"
+      ],
+      "locator": "Article 1; recital 3",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-registry-launch",
+      "subject": "eu-dpp-registry",
+      "predicate": "has_milestone",
+      "object": {
+        "value": "2026-07-20",
+        "datatype": "date"
+      },
+      "statement": "Commission launched registry and testing environment.",
+      "source_ids": [
+        "src-eu-registry-launch"
+      ],
+      "locator": "Launch announcement, opening paragraphs",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2026-07-20",
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-registry-semantic",
+      "subject": "eu-dpp-registry",
+      "predicate": "enables",
+      "object": {
+        "value": "Semantic repository and secure UI/API registration architecture",
+        "datatype": "string"
+      },
+      "statement": "The announcement describes a semantic repository and registration interfaces.",
+      "source_ids": [
+        "src-eu-registry-launch"
+      ],
+      "locator": "Designed for usability, interoperability and trust",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Published architecture description, not an independent operational test."
+      ]
+    },
+    {
+      "id": "a-eu-battery-part",
+      "subject": "eu-battery-passport-requirement",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-batteries-regulation"
+      },
+      "statement": "Article 77 provides the passport obligation.",
+      "source_ids": [
+        "src-eu-battery-law"
+      ],
+      "locator": "Article 77",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-battery-date",
+      "subject": "eu-battery-passport-requirement",
+      "predicate": "has_milestone",
+      "object": {
+        "value": "2027-02-18",
+        "datatype": "date"
+      },
+      "statement": "Passport duty starts for EV, LMT and industrial batteries above 2 kWh.",
+      "source_ids": [
+        "src-eu-battery-guidance"
+      ],
+      "locator": "Paragraph beginning From 18 February 2027",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2027-02-18",
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-battery-access",
+      "subject": "eu-battery-passport-requirement",
+      "predicate": "requires",
+      "object": {
+        "value": "Differentiated public, authority and legitimate-interest access",
+        "datatype": "string"
+      },
+      "statement": "Battery passport information has differentiated access tiers.",
+      "source_ids": [
+        "src-eu-battery-law"
+      ],
+      "locator": "Article 77; Annex XIII",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Dossier-derived; full consolidated text inaccessible."
+      ]
+    },
+    {
+      "id": "a-eu-battery-guidance",
+      "subject": "eu-battery-data-guidance",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-battery-passport-requirement"
+      },
+      "statement": "Guidance maps 71 data points without creating new legal requirements.",
+      "source_ids": [
+        "src-eu-battery-guidance"
+      ],
+      "locator": "Guidance announcement; How to use the guidance",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-diligence-part",
+      "subject": "eu-battery-due-diligence",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-batteries-regulation"
+      },
+      "statement": "Due diligence has a separate 18 August 2027 start.",
+      "source_ids": [
+        "src-eu-battery-law"
+      ],
+      "locator": "Article 48 as amended",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Separate from passport commencement; dossier-derived date."
+      ]
+    },
+    {
+      "id": "a-eu-construction-part",
+      "subject": "eu-construction-passport-requirement",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-construction-regulation"
+      },
+      "statement": "Construction passport provision is within CPR.",
+      "source_ids": [
+        "src-eu-cpr"
+      ],
+      "locator": "Articles 22(7), 75–80",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-construction-trigger",
+      "subject": "eu-construction-passport-requirement",
+      "predicate": "depends_on",
+      "object": {
+        "value": "Article 75(1) delegated act entry plus product-family transition",
+        "datatype": "string"
+      },
+      "statement": "Passport provision starts 18 months after the system act enters into force.",
+      "source_ids": [
+        "src-eu-cpr"
+      ],
+      "locator": "Article 80(1); Article 95(9)",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Article 80 timing rechecked in indexed text; transition details inherited."
+      ]
+    },
+    {
+      "id": "a-eu-construction-registry",
+      "subject": "eu-construction-passport-requirement",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-espr-art-13"
+      },
+      "statement": "CPR uses ESPR registry rules subject to detailed or alternative system rules.",
+      "source_ids": [
+        "src-eu-cpr"
+      ],
+      "locator": "Article 79(2)",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Dossier-derived relationship; system delegated act unverified."
+      ]
+    },
+    {
+      "id": "a-eu-toy-part",
+      "subject": "eu-toy-passport-requirement",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-toy-safety-regulation"
+      },
+      "statement": "Toy passport requirements are in the Toy Safety Regulation.",
+      "source_ids": [
+        "src-eu-toys-law"
+      ],
+      "locator": "Articles 19–22",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-toy-date",
+      "subject": "eu-toy-passport-requirement",
+      "predicate": "has_milestone",
+      "object": {
+        "value": "2030-08-01",
+        "datatype": "date"
+      },
+      "statement": "New toy passport rules apply from 1 August 2030.",
+      "source_ids": [
+        "src-eu-toys-dates"
+      ],
+      "locator": "Final paragraph",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2030-08-01",
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-toy-registry",
+      "subject": "eu-toy-passport-requirement",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-espr-art-13"
+      },
+      "statement": "Toy rules use the ESPR registry.",
+      "source_ids": [
+        "src-eu-toys-law"
+      ],
+      "locator": "Article 22",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-detergent-part",
+      "subject": "eu-detergent-passport-requirement",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-detergents-regulation"
+      },
+      "statement": "Article 21 requires passports for detergents and end-user surfactants.",
+      "source_ids": [
+        "src-eu-detergents-law"
+      ],
+      "locator": "Article 21(1)",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-detergent-date",
+      "subject": "eu-detergent-passport-requirement",
+      "predicate": "has_milestone",
+      "object": {
+        "value": "2029-09-23",
+        "datatype": "date"
+      },
+      "statement": "General application starts 23 September 2029, subject to transitional provisions.",
+      "source_ids": [
+        "src-eu-detergents-dates"
+      ],
+      "locator": "Articles 36–37",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2029-09-23",
+      "valid_to": null,
+      "limitations": [
+        "Indexed legal passage; full text not opened."
+      ]
+    },
+    {
+      "id": "a-eu-detergent-integration",
+      "subject": "eu-detergent-passport-requirement",
+      "predicate": "requires",
+      "object": {
+        "value": "Single passport when another Union law also requires one",
+        "datatype": "string"
+      },
+      "statement": "Article 21 supports integration of overlapping passport requirements.",
+      "source_ids": [
+        "src-eu-detergents-law"
+      ],
+      "locator": "Article 21, single-passport provision",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Exact subparagraph requires full-text recheck."
+      ]
+    },
+    {
+      "id": "a-eu-detergent-technical",
+      "subject": "eu-detergent-passport-requirement",
+      "predicate": "depends_on",
+      "object": {
+        "value": "Article 21(10) implementing act for technical details",
+        "datatype": "string"
+      },
+      "statement": "Technical details are reserved for an implementing act.",
+      "source_ids": [
+        "src-eu-detergents-law"
+      ],
+      "locator": "Article 21(10)",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Act adoption not verified; do not infer deadline postponement."
+      ]
+    },
+    {
+      "id": "a-eu-vehicle-part",
+      "subject": "eu-vehicle-passport-requirement",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-vehicle-circularity-regulation"
+      },
+      "statement": "Article 13 establishes the relevant vehicle passport.",
+      "source_ids": [
+        "src-eu-vehicle-law"
+      ],
+      "locator": "Articles 2 and 13",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-vehicle-date",
+      "subject": "eu-vehicle-passport-requirement",
+      "predicate": "has_milestone",
+      "object": {
+        "value": "2032-09-01",
+        "datatype": "date"
+      },
+      "statement": "Vehicle passport commencement is 1 September 2032.",
+      "source_ids": [
+        "src-eu-vehicle-law"
+      ],
+      "locator": "Article 13",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2032-09-01",
+      "valid_to": null,
+      "limitations": [
+        "Dossier-derived; Article 13 inaccessible this turn."
+      ]
+    },
+    {
+      "id": "a-eu-vehicle-battery-integration",
+      "subject": "eu-vehicle-passport-requirement",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-battery-passport-requirement"
+      },
+      "statement": "Article 13 calls for alignment and possible integration with battery passports.",
+      "source_ids": [
+        "src-eu-vehicle-law"
+      ],
+      "locator": "Article 13",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Normative convergence intent; no technical test result."
+      ]
+    },
+    {
+      "id": "a-eu-vehicle-espr-integration",
+      "subject": "eu-vehicle-passport-requirement",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Article 13 also addresses ESPR passport interoperability and avoiding duplication.",
+      "source_ids": [
+        "src-eu-vehicle-law"
+      ],
+      "locator": "Article 13",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No implemented cross-system operation established."
+      ]
+    },
+    {
+      "id": "a-eu-magnet-part",
+      "subject": "eu-permanent-magnet-information",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-critical-raw-materials-act"
+      },
+      "statement": "Article 28 provides magnet-related digital-information requirements.",
+      "source_ids": [
+        "src-eu-crma"
+      ],
+      "locator": "Article 28",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-magnet-passport-reuse",
+      "subject": "eu-permanent-magnet-information",
+      "predicate": "requires",
+      "object": {
+        "value": "Include relevant magnet information in a passport required by another law",
+        "datatype": "string"
+      },
+      "statement": "Existing passport obligations can host magnet information.",
+      "source_ids": [
+        "src-eu-crma"
+      ],
+      "locator": "Article 28(6)",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Conditional integration, not a standalone universal DPP mandate."
+      ]
+    },
+    {
+      "id": "a-eu-magnet-trigger",
+      "subject": "eu-permanent-magnet-information",
+      "predicate": "depends_on",
+      "object": {
+        "value": "Relevant implementing act entry into force",
+        "datatype": "string"
+      },
+      "statement": "Principal label/data-carrier timing follows the implementing act by two years.",
+      "source_ids": [
+        "src-eu-crma"
+      ],
+      "locator": "Article 28(1)–(2)",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Trigger act status unverified; special Article 28(10) provision is separate."
+      ]
+    },
+    {
+      "id": "a-eu-crma-correction",
+      "subject": "eu-crma-corrigendum",
+      "predicate": "amends",
+      "object": {
+        "entity_id": "eu-critical-raw-materials-act"
+      },
+      "statement": "Corrigendum changes the Article 28(2) deadline to 24 November 2025.",
+      "source_ids": [
+        "src-eu-crma-corrigendum"
+      ],
+      "locator": "Correction to Article 28(2)",
+      "assertion_type": "research_classification",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Graph uses amends for a textual correction; this is legally a corrigendum, not an amending regulation."
+      ]
+    },
+    {
+      "id": "a-eu-packaging-part",
+      "subject": "eu-reusable-packaging-carrier",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-packaging-regulation"
+      },
+      "statement": "Article 12 regulates applicable reusable-packaging carriers.",
+      "source_ids": [
+        "src-eu-ppwr"
+      ],
+      "locator": "Article 12(2)–(6)",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-packaging-trigger",
+      "subject": "eu-reusable-packaging-carrier",
+      "predicate": "depends_on",
+      "object": {
+        "value": "Later of 12 February 2029 and implementing-act entry plus 30 months",
+        "datatype": "string"
+      },
+      "statement": "Applicable carrier timing is conditional.",
+      "source_ids": [
+        "src-eu-ppwr"
+      ],
+      "locator": "Article 12(2)",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Relevant implementing-act status unverified."
+      ]
+    },
+    {
+      "id": "a-eu-packaging-sharing",
+      "subject": "eu-reusable-packaging-carrier",
+      "predicate": "requires",
+      "object": {
+        "value": "Same carrier when Union law also requires packaged-product digital information",
+        "datatype": "string"
+      },
+      "statement": "Article 12(5) links packaging and product information carriers.",
+      "source_ids": [
+        "src-eu-ppwr"
+      ],
+      "locator": "Article 12(5)",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Does not establish a universal packaging DPP."
+      ]
+    },
+    {
+      "id": "a-eu-ebw-status",
+      "subject": "eu-business-wallet-proposal",
+      "predicate": "has_status",
+      "object": {
+        "value": "Legislative proposal awaiting Parliament first-reading position",
+        "datatype": "string"
+      },
+      "statement": "Parliament records an ongoing legislative procedure.",
+      "source_ids": [
+        "src-eu-ebw-procedure"
+      ],
+      "locator": "Informations de base; Statut",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-ebw-role",
+      "subject": "eu-business-wallet-proposal",
+      "predicate": "enables",
+      "object": {
+        "value": "Proposed business identification and representation infrastructure",
+        "datatype": "string"
+      },
+      "statement": "The proposal concerns business wallets rather than product-passport duties.",
+      "source_ids": [
+        "src-eu-ebw-proposal"
+      ],
+      "locator": "Proposal publication",
+      "assertion_type": "research_classification",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Proposed capability, not enacted legal entitlement."
+      ]
+    },
+    {
+      "id": "a-eu-eidas-role",
+      "subject": "eu-eidas-amendment",
+      "predicate": "enables",
+      "object": {
+        "value": "European Digital Identity Wallets for natural and legal persons",
+        "datatype": "string"
+      },
+      "statement": "Amended Article 5a provides identity-wallet functions.",
+      "source_ids": [
+        "src-eu-eidas"
+      ],
+      "locator": "Amended Article 5a(1), (4)–(5)",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "DPP credential recognition and authority must be evidenced separately."
+      ]
+    },
+    {
+      "id": "a-eu-gb-status",
+      "subject": "eu-gb-dpr-consultation",
+      "predicate": "has_status",
+      "object": {
+        "value": "Domestic DPR approach not yet determined",
+        "datatype": "string"
+      },
+      "statement": "The UK government says its Great Britain approach remains undetermined.",
+      "source_ids": [
+        "src-eu-uk-dpr"
+      ],
+      "locator": "Current UK regulatory approach",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Statement in July consultation; later policy response not established."
+      ]
+    },
+    {
+      "id": "a-eu-gb-closure",
+      "subject": "eu-gb-dpr-consultation",
+      "predicate": "has_milestone",
+      "object": {
+        "value": "2026-09-21",
+        "datatype": "date"
+      },
+      "statement": "The call for evidence closed on 21 September 2026.",
+      "source_ids": [
+        "src-eu-uk-dpr"
+      ],
+      "locator": "How to respond",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-ni-espr",
+      "subject": "eu-northern-ireland-scope",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "The UK page describes ESPR application in Northern Ireland under Windsor.",
+      "source_ids": [
+        "src-eu-uk-dpr"
+      ],
+      "locator": "Current regulatory frameworks; Current UK regulatory approach",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Instrument-specific legal checking required; do not extend every EU law automatically."
+      ]
+    },
+    {
+      "id": "a-eu-ni-battery",
+      "subject": "eu-northern-ireland-scope",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-battery-passport-requirement"
+      },
+      "statement": "The UK page identifies battery passport rollout from February 2027 in NI/EU context.",
+      "source_ids": [
+        "src-eu-uk-dpr"
+      ],
+      "locator": "Current regulatory frameworks",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Authority summary; scope follows actual Batteries Regulation."
+      ]
+    },
+    {
+      "id": "a-eu-norway-status",
+      "subject": "eu-norway-espr-status",
+      "predicate": "has_status",
+      "object": {
+        "value": "NVE reports ESPR not incorporated; current legal status unverified",
+        "datatype": "string"
+      },
+      "statement": "NVE's page still reports no incorporation, but was last updated in March 2025.",
+      "source_ids": [
+        "src-eu-norway-nve"
+      ],
+      "locator": "Status for ESPR i Norge; last-updated label",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Do not infer verified absence of October 2026 incorporation from this stale page."
+      ]
+    },
+    {
+      "id": "a-eu-norway-reference",
+      "subject": "eu-norway-espr-status",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "The NVE status statement concerns ESPR.",
+      "source_ids": [
+        "src-eu-norway-nve"
+      ],
+      "locator": "Status for ESPR i Norge",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-eu-registry-sector-coverage",
+      "subject": "eu-registry-regulation",
+      "predicate": "applies_to",
+      "object": {
+        "entity_id": "eu-battery-passport-requirement"
+      },
+      "statement": "Registry implementing law covers Article 77 battery passports.",
+      "source_ids": [
+        "src-eu-registry-law"
+      ],
+      "locator": "Article 1",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Registration framework does not alter passport commencement."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-eu-espr",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1781/2024-06-28/eng",
+      "title": "Regulation (EU) 2024/1781, consolidated text",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "access_status": "search_snippet",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": [
+        "Direct opening returned a JavaScript challenge. Indexed official passages of Articles 9–13 were rechecked; complete text was not opened. Consolidated version is a documentation tool; authentic OJ texts and corrigenda govern."
+      ]
+    },
+    {
+      "id": "src-eu-dpp-faq",
+      "url": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/explore-our-faqs_en",
+      "title": "Frequently Asked Questions on the Digital Product Passport",
+      "publisher": "European Commission",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-23",
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-eu-timeline",
+      "url": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport_en",
+      "title": "Digital Product Passport implementation timeline",
+      "publisher": "European Commission",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": [
+        "Indicative timetable; dossier reports inconsistent Q2/Q3 2027 service-provider targets."
+      ]
+    },
+    {
+      "id": "src-eu-registry-law",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026R1778",
+      "title": "Commission Implementing Regulation (EU) 2026/1778",
+      "publisher": "European Commission",
+      "source_type": "legal_text",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-eu-registry-launch",
+      "url": "https://single-market-economy.ec.europa.eu/news/digital-product-passport-registry-now-live-2026-07-20_en",
+      "title": "The Digital Product Passport Registry is now live",
+      "publisher": "European Commission",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-23",
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-eu-battery-law",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1542/ojn",
+      "title": "Regulation (EU) 2023/1542, Batteries Regulation",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "access_status": "unavailable",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": [
+        "Direct opening returned a JavaScript challenge. Dossier identifies consolidated text dated 13 August 2026; consolidation was not independently reopened."
+      ]
+    },
+    {
+      "id": "src-eu-battery-guidance",
+      "url": "https://single-market-economy.ec.europa.eu/news/guidance-support-preparations-digital-batteries-passport-2026-08-21_en",
+      "title": "Guidance to support preparations for the Digital Batteries Passport",
+      "publisher": "European Commission",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-23",
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": [
+        "Announcement opened; linked data-point guidance itself was not opened this turn."
+      ]
+    },
+    {
+      "id": "src-eu-cpr",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32024R3110",
+      "title": "Regulation (EU) 2024/3110, Construction Products Regulation",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "access_status": "search_snippet",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": [
+        "Direct opening returned a JavaScript challenge. Indexed Article 80 conditional timing and Article 96 application were rechecked. Product-family transitions remain dossier-derived."
+      ]
+    },
+    {
+      "id": "src-eu-toys-law",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32025R2509",
+      "title": "Regulation (EU) 2025/2509, Toy Safety Regulation",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-eu-toys-dates",
+      "url": "https://single-market-economy.ec.europa.eu/news/stronger-toy-safety-rules-enter-force-2025-12-23_en",
+      "title": "Stronger toy safety rules enter into force",
+      "publisher": "European Commission",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-23",
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-eu-detergents-law",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R0405",
+      "title": "Regulation (EU) 2026/405, detergents and surfactants",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": [
+        "Operative DPP scope in Articles 21–25 is inherited from the dossier."
+      ]
+    },
+    {
+      "id": "src-eu-detergents-dates",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?qid=1789256683532&uri=OJ%3AL_202600405",
+      "title": "Regulation (EU) 2026/405, Articles 36–37",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "access_status": "search_snippet",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": [
+        "Indexed official Articles 36–37 rechecked; full PDF not opened."
+      ]
+    },
+    {
+      "id": "src-eu-detergents-echa",
+      "url": "https://echa.europa.eu/understanding-the-regulation-on-detergents-and-surfactants",
+      "title": "Understanding the Regulation on detergents and surfactants",
+      "publisher": "European Chemicals Agency",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "unavailable",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": [
+        "Direct opening failed with 403. Earlier dossier records publication and commencement dates."
+      ]
+    },
+    {
+      "id": "src-eu-vehicle-law",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R1738",
+      "title": "Regulation (EU) 2026/1738, vehicle circularity",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "access_status": "unavailable",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": [
+        "Direct opening returned a JavaScript challenge; Article 13 and scope details remain dossier-derived."
+      ]
+    },
+    {
+      "id": "src-eu-vehicle-article59",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026R1738",
+      "title": "Regulation (EU) 2026/1738, Article 59",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "access_status": "search_snippet",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": [
+        "Indexed Article 59 rechecked for general application. This passage alone does not establish Article 13 passport scope/date."
+      ]
+    },
+    {
+      "id": "src-eu-crma",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1252-20240503",
+      "title": "Regulation (EU) 2024/1252, Critical Raw Materials Act",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": [
+        "Read with corrigendum 2024/90330; implementing-act adoption not verified."
+      ]
+    },
+    {
+      "id": "src-eu-crma-corrigendum",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AL_202490330",
+      "title": "Corrigendum 2024/90330 to Regulation (EU) 2024/1252",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-eu-ppwr",
+      "url": "https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX%3A32025R0040",
+      "title": "Regulation (EU) 2025/40, Packaging and Packaging Waste Regulation",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-eu-ebw-proposal",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-establishment-european-business-wallets",
+      "title": "Proposal for a Regulation on the establishment of European Business Wallets",
+      "publisher": "European Commission",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-eu-ebw-procedure",
+      "url": "https://oeil.europarl.europa.eu/oeil/fr/procedure-file?reference=2025%2F0358%28COD%29",
+      "title": "Procedure 2025/0358(COD): European Business Wallets",
+      "publisher": "European Parliament",
+      "source_type": "public_authority",
+      "language": "fr",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-23",
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": [
+        "Procedural status checked; full negotiating texts not reviewed."
+      ]
+    },
+    {
+      "id": "src-eu-eidas",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1183/oj",
+      "title": "Regulation (EU) 2024/1183 establishing the European Digital Identity Framework",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-eu-uk-dpr",
+      "url": "https://www.gov.uk/government/calls-for-evidence/call-for-evidence-digital-product-record-policy/call-for-evidence-digital-product-records-policy",
+      "title": "Call for evidence: digital product records policy",
+      "publisher": "UK Government",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-23",
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": [
+        "Official policy summary is not a substitute for instrument-specific Windsor Framework applicability analysis. Its construction timing shorthand must not override CPR conditional commencement."
+      ]
+    },
+    {
+      "id": "src-eu-norway-nve",
+      "url": "https://www.nve.no/energi/virkemidler/oekodesign-og-energimerking-av-produkter/oekodesignforordning-for-baerekraftige-produkter-espr/",
+      "title": "Økodesignforordning for bærekraftige produkter (ESPR)",
+      "publisher": "Norwegian Water Resources and Energy Directorate (NVE)",
+      "source_type": "public_authority",
+      "language": "no",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-23",
+      "dossier_files": [
+        "eu-legal-evidence.md"
+      ],
+      "limitations": [
+        "Page states last updated 12 March 2025. Its reported non-incorporation is not conclusive evidence of current October 2026 EEA status; EEA-Lex and Norwegian law require checking."
+      ]
+    }
+  ]
+}

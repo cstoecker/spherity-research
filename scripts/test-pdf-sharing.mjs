@@ -163,6 +163,38 @@ test("every PDF under the source directory must have a front-matter mapping", as
   await assert.rejects(loadPdfShares(directory), /unmapped|mapping|Unmapped\.pdf/i);
 });
 
+test("registered vector figure PDFs do not become paper sharing pages", async (context) => {
+  const directory = await fixture(context, {
+    pages: { 'paper.md': page({ figure_objects: [{ id: 'map', content_url: '/assets/map.svg', downloads: [{ name: 'Vector figure', url: '/assets/map.pdf' }] }] }) },
+    files: { 'assets/map.svg': '<svg/>', 'assets/map.pdf': '%PDF-1.7 figure' }
+  });
+  const { records, figureDownloads } = await loadPdfShares(directory);
+  assert.equal(records.length, 1);
+  assert.equal(records[0].pdfPath, '/Paper.pdf');
+  assert.equal(figureDownloads.get('/assets/map.pdf').figureId, 'map');
+});
+
+test("figure PDF registration still requires the referenced image", async (context) => {
+  const directory = await fixture(context, {
+    pages: { 'paper.md': page({ figure_objects: [{ id: 'map', content_url: '/assets/missing.svg', downloads: [{ name: 'Vector figure', url: '/assets/map.pdf' }] }] }) },
+    files: { 'assets/map.pdf': '%PDF-1.7 figure' }
+  });
+  await assert.rejects(loadPdfShares(directory), /missing supplemental figure asset/);
+});
+
+test("figure PDF registrations cannot hide a paper or escape the source directory", async (context) => {
+  const directory = await fixture(context, {
+    pages: { 'paper.md': page({ figure_objects: [{ id: 'map', content_url: '/assets/map.svg', downloads: [{ name: 'Vector figure', url: '/Paper.pdf' }] }] }) },
+    files: { 'assets/map.svg': '<svg/>' }
+  });
+  await assert.rejects(loadPdfShares(directory), /both a paper and a supplemental figure/);
+  const unsafe = await fixture(context, {
+    pages: { 'paper.md': page({ figure_objects: [{ id: 'map', content_url: '/assets/map.svg', downloads: [{ name: 'Vector figure', url: '/assets/../../outside.pdf' }] }] }) },
+    files: { 'assets/map.svg': '<svg/>' }
+  });
+  await assert.rejects(loadPdfShares(unsafe), /unsafe or unsupported local path/);
+});
+
 test("missing declared covers fail rather than substituting a generic social image", async (context) => {
   const directory = await fixture(context, { pages: { "paper.md": page({ cover_image: "/assets/missing.jpg" }) } });
   await assert.rejects(loadPdfShares(directory), /missing|exist|ENOENT/i);
@@ -196,4 +228,115 @@ test("public share URLs preserve the configured base path and encode filenames",
     publicUrl(siteConfig, "/share/A paper – résumé.html"),
     "https://example.org/research/share/A%20paper%20%E2%80%93%20r%C3%A9sum%C3%A9.html"
   );
+});
+
+const placeholderPage = (overrides = {}) => ({
+  layout: "research-respec",
+  publication_type: "atlas",
+  schema_type: "CreativeWork",
+  publication_state: "draft",
+  robots: "noindex, follow",
+  paper_in_preparation: true,
+  title: "A paper in preparation",
+  permalink: "/draft-paper.html",
+  canonical_url: "https://example.org/research/draft-paper.html",
+  paper_placeholder: {
+    url: "/assets/Blank-Placeholder.pdf",
+    label: "Blank PDF placeholder",
+    description: "One blank A4 page. Manuscript and page content are in preparation."
+  },
+  ...overrides
+});
+const placeholderBytes = "%PDF-1.7\nPlaceholder fixture; byte signature only\n%%EOF\n";
+
+test("explicit draft placeholders are registered without creating a sharing page", async (context) => {
+  const directory = await fixture(context, {
+    pages: { "paper.md": page(), "draft.md": placeholderPage() },
+    files: { "assets/Blank-Placeholder.pdf": placeholderBytes }
+  });
+  const { records, figureDownloads, placeholderDownloads } = await loadPdfShares(directory);
+  assert.equal(records.length, 1, "the real paper retains its sharing page");
+  assert.equal(records[0].pdfPath, "/Paper.pdf");
+  assert.equal(figureDownloads.size, 0);
+  assert.equal(placeholderDownloads.size, 1);
+  assert.deepEqual(placeholderDownloads.get("/assets/Blank-Placeholder.pdf"), {
+    sourceFile: "draft.md", pagePath: "/draft-paper.html",
+    label: "Blank PDF placeholder", description: placeholderPage().paper_placeholder.description
+  });
+});
+
+for (const [label, overrides] of [
+  ["unmarked paper", { paper_in_preparation: undefined }],
+  ["false preparation flag", { paper_in_preparation: false }],
+  ["published page", { publication_state: "published" }],
+  ["indexable draft", { robots: "index, follow" }],
+  ["missing robots", { robots: undefined }],
+  ["contradictory robots", { robots: "noindex, index, follow" }]
+]) {
+  test(`placeholder registration rejects ${label}`, async (context) => {
+    const directory = await fixture(context, {
+      pages: { "paper.md": page(), "draft.md": placeholderPage(overrides) },
+      files: { "assets/Blank-Placeholder.pdf": placeholderBytes }
+    });
+    await assert.rejects(loadPdfShares(directory), /placeholder requires paper_in_preparation.*draft and noindex/);
+  });
+}
+
+for (const unsafeUrl of ["/../Blank.pdf", "/assets/%2e%2e/%2e%2e/Blank.pdf", "/assets/%252e%252e/Blank.pdf", "https://example.org/Blank.pdf", "//example.org/Blank.pdf", "/assets/Blank.pdf?download=1", "/assets/Blank.txt"]) {
+  test(`placeholder registration rejects unsafe or non-PDF path ${unsafeUrl}`, async (context) => {
+    const directory = await fixture(context, {
+      pages: { "paper.md": page(), "draft.md": placeholderPage({ paper_placeholder: { ...placeholderPage().paper_placeholder, url: unsafeUrl } }) }
+    });
+    await assert.rejects(loadPdfShares(directory), /unsafe or unsupported local path/);
+  });
+}
+
+test("placeholder requires a real PDF file, label and description", async (context) => {
+  const missing = await fixture(context, { pages: { "paper.md": page(), "draft.md": placeholderPage() } });
+  await assert.rejects(loadPdfShares(missing), /missing placeholder PDF/);
+  const mislabeled = await fixture(context, {
+    pages: { "paper.md": page(), "draft.md": placeholderPage() },
+    files: { "assets/Blank-Placeholder.pdf": "not PDF bytes" }
+  });
+  await assert.rejects(loadPdfShares(mislabeled), /placeholder must contain PDF bytes/);
+  for (const field of ["label", "description"]) {
+    const directory = await fixture(context, {
+      pages: { "paper.md": page(), "draft.md": placeholderPage({ paper_placeholder: { ...placeholderPage().paper_placeholder, [field]: "" } }) },
+      files: { "assets/Blank-Placeholder.pdf": placeholderBytes }
+    });
+    await assert.rejects(loadPdfShares(directory), /requires a label and description/);
+  }
+});
+
+test("placeholder registration cannot conceal an existing paper or figure PDF", async (context) => {
+  const paperCollision = await fixture(context, {
+    pages: { "paper.md": page(), "draft.md": placeholderPage({ paper_placeholder: { ...placeholderPage().paper_placeholder, url: "/Paper.pdf" } }) }
+  });
+  await assert.rejects(loadPdfShares(paperCollision), /placeholder PDF cannot also be a paper or supplemental figure/);
+  const figureCollision = await fixture(context, {
+    pages: {
+      "paper.md": page({ figure_objects: [{ id: "map", content_url: "/assets/map.svg", downloads: [{ name: "Vector figure", url: "/assets/Blank-Placeholder.pdf" }] }] }),
+      "draft.md": placeholderPage()
+    },
+    files: { "assets/map.svg": "<svg/>", "assets/Blank-Placeholder.pdf": placeholderBytes }
+  });
+  await assert.rejects(loadPdfShares(figureCollision), /placeholder PDF cannot also be a paper or supplemental figure/);
+});
+
+test("placeholder pages cannot emit published-paper media or have ambiguous owners", async (context) => {
+  for (const media of [{ pdf_url: "/Paper.pdf" }, { associated_media: [{ url: "/Paper.pdf" }] }]) {
+    const directory = await fixture(context, {
+      pages: { "paper.md": page(), "draft.md": placeholderPage(media) },
+      files: { "assets/Blank-Placeholder.pdf": placeholderBytes }
+    });
+    await assert.rejects(loadPdfShares(directory), /placeholder cannot declare published-paper PDF media/);
+  }
+  const duplicate = await fixture(context, {
+    pages: {
+      "paper.md": page(), "draft.md": placeholderPage(),
+      "other.md": placeholderPage({ permalink: "/other.html", canonical_url: "https://example.org/research/other.html" })
+    },
+    files: { "assets/Blank-Placeholder.pdf": placeholderBytes }
+  });
+  await assert.rejects(loadPdfShares(duplicate), /duplicate placeholder PDF ownership/);
 });

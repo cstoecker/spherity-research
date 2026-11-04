@@ -76,6 +76,9 @@ questions_answered:
   - question: "How do the data plane and European Business Wallet control plane work together?"
     answer: "The data plane supplies traceable evidence about products, processes, risks, and operational facts. The control plane supplies legal-person identity, delegated authority, current mandate status, and action accountability. Regulated Industrial AI requires both."
 related_publications:
+  - title: Europe’s answer to Palantir
+    url: /europes-answer-to-palantir.html
+    context: Two papers and a fictional robot graph extend the evidence-plane proposal to cooperation across independently governed platforms.
   - title: "European Business Wallets as the Legal Control Plane for Zero Trust AI Agents"
     url: "/ebw-zero-trust-ai-agents.html"
     context: "Provides the complementary legal-authority layer for deciding who an AI agent represents and whether a specific action is permitted."

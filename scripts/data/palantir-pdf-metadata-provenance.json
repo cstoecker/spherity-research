@@ -1,0 +1,1388 @@
+[
+  {
+    "file": "docs/European_Industrial_AI_Executive_Brief_v1.0.pdf",
+    "original_bytes": 148118,
+    "original_sha256": "cc78bb17b5bbd169e0de097ce892d4a6343ef7d2d76d292a6d10abdef275e971",
+    "before_info": {
+      "format": "PDF 1.5",
+      "title": "A European Answer to Palantir",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "A globally collaborative counter model for industrial AI (Version 1.0)",
+      "keywords": "Evidence graphs; Operational ontology; Industrial AI; Palantir; Dataspaces; Semantic interoperability; Digital sovereignty; International cooperation; W3C; Participant Exchange Gateway; Knowledge graph; Industrielle KI; Wissensgraph",
+      "creator": "LaTeX with hyperref",
+      "producer": "XeTeX version 0.999994",
+      "creationDate": "D:20261101171016-00'00'",
+      "modDate": "D:20261101183333+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "required_updates": [],
+    "status": "already_complete",
+    "published_bytes": 148118,
+    "published_sha256": "cc78bb17b5bbd169e0de097ce892d4a6343ef7d2d76d292a6d10abdef275e971",
+    "source_prefix_preserved": true,
+    "render_dpi": 150,
+    "all_page_pixels_identical": true,
+    "content_streams_identical": true,
+    "geometry_links_bookmarks_identical": true,
+    "page_count": 19,
+    "bookmark_count": 12,
+    "after_info": {
+      "format": "PDF 1.5",
+      "title": "A European Answer to Palantir",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "A globally collaborative counter model for industrial AI (Version 1.0)",
+      "keywords": "Evidence graphs; Operational ontology; Industrial AI; Palantir; Dataspaces; Semantic interoperability; Digital sovereignty; International cooperation; W3C; Participant Exchange Gateway; Knowledge graph; Industrielle KI; Wissensgraph",
+      "creator": "LaTeX with hyperref",
+      "producer": "XeTeX version 0.999994",
+      "creationDate": "D:20261101171016-00'00'",
+      "modDate": "D:20261101183333+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "xmp_present": true,
+    "page_pixel_checks": [
+      {
+        "page": 1,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "51186bb562c1bfe1c0210fb1264a36b37f076df3a142887add249dbfe9fdfa58"
+      },
+      {
+        "page": 2,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "3d28398c723051899ec649bf7e6ae34ef209717192add0548a8821ff8e2cc509"
+      },
+      {
+        "page": 3,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "3f4a52b2c64cf8ad428064f8c2f04b585721643d9e6eb1efc3a6b07bbce0745a"
+      },
+      {
+        "page": 4,
+        "size": [
+          1754,
+          1241
+        ],
+        "sha256": "63c0cacc2d207f877dadae75ca18c2b3a1c9760eddbeaaf01362438ab02fc30d"
+      },
+      {
+        "page": 5,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "6c1ffb51829504eb3ea80c26e16fa5e7ee640886afaa0e497db269f0da1d843f"
+      },
+      {
+        "page": 6,
+        "size": [
+          1754,
+          1241
+        ],
+        "sha256": "b8720f0dbd12212cd6bbc9612944142b300f9e52d5d71d00558493dc9f6a64d9"
+      },
+      {
+        "page": 7,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "aa62d4ecedfa525afa44c4a5bb713833b32eb866a06c0abcb8965e3b66102eea"
+      },
+      {
+        "page": 8,
+        "size": [
+          1754,
+          1241
+        ],
+        "sha256": "91e2116a6fab96088ad0eace04b71a87ef8dba0ece989063d1c0eb848a0d4623"
+      },
+      {
+        "page": 9,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "b9d9b748f41b3aea0606d12845817f14f781bd6d7ff0959f2deef7f2bf9552ed"
+      },
+      {
+        "page": 10,
+        "size": [
+          1754,
+          1241
+        ],
+        "sha256": "1eff551de6feb77a46060ec26784bbd86833f866b8f2f5b2e3e45c0af226af3e"
+      },
+      {
+        "page": 11,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "ffbafeeb827c2ca4414ea5fe10fc2f60406bf10588938f93cc067fbd56bbbee1"
+      },
+      {
+        "page": 12,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "e45faaeba649435ef66a41c2135b1e27518a48c99f9e1cffd190cfed1d6208d6"
+      },
+      {
+        "page": 13,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "0382ad643e9ae75d6e25a33dd1814a265586cfedbaa1174286f314fea73f42ac"
+      },
+      {
+        "page": 14,
+        "size": [
+          1754,
+          1241
+        ],
+        "sha256": "495811ddaa7c28dac1a040f6010de9fa7d5ca938c7549ebf2f96b6bc0c1c58f0"
+      },
+      {
+        "page": 15,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "77b45d4a69ac39dd2876f67e548d8144b4cba0de52fe2c8c4c5edc410709fcc5"
+      },
+      {
+        "page": 16,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "33c9ae2218f7ed1056829aca56f4ed03dbe1a44fdaf567987bff28ade2f3de99"
+      },
+      {
+        "page": 17,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "7322d1d7ef24042bd0c65ea824cc8f8dc45978e68287857a076b9a7980f4d1af"
+      },
+      {
+        "page": 18,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "6a74c8376ef6754958706dea76e914295b7a8957bd1345042fbfd0870caf3d5c"
+      },
+      {
+        "page": 19,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "bb0b4ba8bf41fc2dae7c978270b9511074ce8693d6dc6d1a9a9e13632cb5ece0"
+      }
+    ],
+    "source_bytes": 132729,
+    "source_sha256": "e7deda5fe2c13b71c23491e7be58326014083729159ec3464d19c8ef51c8a387"
+  },
+  {
+    "file": "docs/Industrial_AI_Academic_Paper_v1.0.pdf",
+    "original_bytes": 255097,
+    "original_sha256": "b5ed4bbe64933f97f739bf377e57ebee2f6357259667e170e6fb84e9ad8d90fa",
+    "before_info": {
+      "format": "PDF 1.5",
+      "title": "A Global Cooperation Model for Sovereign Industrial AI",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "European dataspaces and open standards for verifiable evidence across platforms (Version 1.0)",
+      "keywords": "Evidence graphs; Operational ontology; Industrial AI; Palantir; Dataspaces; Semantic interoperability; Digital sovereignty; International cooperation; W3C; Participant Exchange Gateway; Knowledge graph; Industrielle KI; Wissensgraph",
+      "creator": "LaTeX with hyperref",
+      "producer": "XeTeX version 0.999994",
+      "creationDate": "D:20261101170919-00'00'",
+      "modDate": "D:20261101183333+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "required_updates": [],
+    "status": "already_complete",
+    "published_bytes": 255097,
+    "published_sha256": "b5ed4bbe64933f97f739bf377e57ebee2f6357259667e170e6fb84e9ad8d90fa",
+    "source_prefix_preserved": true,
+    "render_dpi": 150,
+    "all_page_pixels_identical": true,
+    "content_streams_identical": true,
+    "geometry_links_bookmarks_identical": true,
+    "page_count": 45,
+    "bookmark_count": 50,
+    "after_info": {
+      "format": "PDF 1.5",
+      "title": "A Global Cooperation Model for Sovereign Industrial AI",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "European dataspaces and open standards for verifiable evidence across platforms (Version 1.0)",
+      "keywords": "Evidence graphs; Operational ontology; Industrial AI; Palantir; Dataspaces; Semantic interoperability; Digital sovereignty; International cooperation; W3C; Participant Exchange Gateway; Knowledge graph; Industrielle KI; Wissensgraph",
+      "creator": "LaTeX with hyperref",
+      "producer": "XeTeX version 0.999994",
+      "creationDate": "D:20261101170919-00'00'",
+      "modDate": "D:20261101183333+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "xmp_present": true,
+    "page_pixel_checks": [
+      {
+        "page": 1,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "87ff871e41784e05f668389f98b6c81631ff9c2e816845fbb7a68d0ca1ad3646"
+      },
+      {
+        "page": 2,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "9c3b8f00283398e7c7a5b4263658eab89b828484bc4fb79f18039f812cbd5c9d"
+      },
+      {
+        "page": 3,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "b5fb2ddc3bbfc813a2d5266264823c0ec28d335280002abef918c15ae92538df"
+      },
+      {
+        "page": 4,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "a42763a7859fbd50272ee8868c3d834fdf7a22a84d4d68092b7362a3fbd43a46"
+      },
+      {
+        "page": 5,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "57254dfe014df97cf19d787557590aca07772c002260a8236dedcc8cb567b7ad"
+      },
+      {
+        "page": 6,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "f055e37eb1eb2521288b9c12a03e7fc34667119fe8c28684941b0b256be39f03"
+      },
+      {
+        "page": 7,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "011f3eba2f80ef75a8825a2c780c79a35f15ed0284ab73ae70f6b9bfb91366ff"
+      },
+      {
+        "page": 8,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "27bee04aa90ec7a1dd5de7188c4c9753962fe88b4a488c8de4b3e58f2fedc154"
+      },
+      {
+        "page": 9,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "ac4261af69183e46d466496545a0919766a9279936052ad1540b354f7bf35c21"
+      },
+      {
+        "page": 10,
+        "size": [
+          1754,
+          1241
+        ],
+        "sha256": "240437f94fbf45268c06fdb47a90f20176f04660e800332e67034a9b459d7dc8"
+      },
+      {
+        "page": 11,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "75400814af3c8fac61389fe6a10ff2917d9816fb85aebe53e3323136608e75ef"
+      },
+      {
+        "page": 12,
+        "size": [
+          1754,
+          1241
+        ],
+        "sha256": "3d304e0597656a01c422be11506f30cfa4639a1c1a87a015166d4298dc6c8f68"
+      },
+      {
+        "page": 13,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "9b1baa0b3277f35a2748311066ec0b746ea7d7861a3c6eb1f95769c9a768733f"
+      },
+      {
+        "page": 14,
+        "size": [
+          1754,
+          1241
+        ],
+        "sha256": "11ec32b21a993f5ecbabd8aae792b362b6796883b76a84cb1364d5491b07d1cb"
+      },
+      {
+        "page": 15,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "d94bc6962329ce9dc14b2a126f35a260eab2444cfe61a76af39c3b817740e341"
+      },
+      {
+        "page": 16,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "947a4768ac09e68cbab4cc3726bf0073f38963a2b311f1117d01ccb720e42bca"
+      },
+      {
+        "page": 17,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "5af7428de6b675dacd06b37bb311f5c32893eeb221be412700bd0e9f693fb591"
+      },
+      {
+        "page": 18,
+        "size": [
+          1754,
+          1241
+        ],
+        "sha256": "d87f7fe8971865b429def98d33a524be5732c235a70c3d16ab04d4cf1e23d1c2"
+      },
+      {
+        "page": 19,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "836b69c082ac77b577dec79f0c8b764f8658bb0dfcad01e76fc83f55360cfa43"
+      },
+      {
+        "page": 20,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "815da2568776cc92d04e8afed7c7161de58f147db1655e2b9173e4fd43918777"
+      },
+      {
+        "page": 21,
+        "size": [
+          1754,
+          1241
+        ],
+        "sha256": "bdee4066e5f93f5f635bfac515c46cf4dc184560c8ba8d1edea73f1ef6a85da7"
+      },
+      {
+        "page": 22,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "76acb9dfb54752bfdd1f237c1b02b3e09f3315a5f269fdb2ec93458da82838e5"
+      },
+      {
+        "page": 23,
+        "size": [
+          1754,
+          1241
+        ],
+        "sha256": "e202e11a8e6940c51151b0b6e6753839b775474da87ff22dc4dee2d8c5e53399"
+      },
+      {
+        "page": 24,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "2a8805ff5e96a41887950377f077c419cefa89ada1c43006f4d2b57783d154fa"
+      },
+      {
+        "page": 25,
+        "size": [
+          1754,
+          1241
+        ],
+        "sha256": "345beb2a5bff86f0021d17a665e17d35ec430e2f1e4d77064963acd4f5208c94"
+      },
+      {
+        "page": 26,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "bf243f5b8b2b4729950e0753800c354aa640729103fa7acc6412e0842fe2585a"
+      },
+      {
+        "page": 27,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "81c2e07613782b5186cdcd5eabaf6f4d16275ce6080e5e3e76a3406aa9dc8df6"
+      },
+      {
+        "page": 28,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "51f62f72f101202a4e22b4068f849f9ca28a6fc5ee54d50328fb0c2a712d6d7d"
+      },
+      {
+        "page": 29,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "707a16866f106e9f745fe0ba633ecd2c02c9d33482ff211af36968039866c1ac"
+      },
+      {
+        "page": 30,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "ca0bde17615aabb3fb4921b22633f3c211d2f6ca887f38d6171430c5c82a4996"
+      },
+      {
+        "page": 31,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "2e01d23bd9d5aea99bdcb5f2210def7307e9c77ddac23c130023ccfd4093d3c7"
+      },
+      {
+        "page": 32,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "5787bfce3033ebf3b1d1b9e9a5661a15473c61889da8ea26d8238cc23a45c0a9"
+      },
+      {
+        "page": 33,
+        "size": [
+          1754,
+          1241
+        ],
+        "sha256": "9a4a9c92b6e1d0bc7cc235f73a00b0724e697eaf995905aae5dba94ec83d0acd"
+      },
+      {
+        "page": 34,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "8edcfe5be9c7c6cfef0bc225bcf4f6d2e7f3c9fd9650e7ed642d7b8d1343d374"
+      },
+      {
+        "page": 35,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "64b5beaabdd901badcae6de953f706554fc5304ea09f7f0dd88725e8d98cee8b"
+      },
+      {
+        "page": 36,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "5eb5f276d730f626ab5acee25a3916ad5c4f399cdd2545872f4e4cb2f8e0663c"
+      },
+      {
+        "page": 37,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "39febfba16c4cf129a69ffa76d7939778f4758da89a1d33d32695e841f447bf6"
+      },
+      {
+        "page": 38,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "6efa66edcadb1f91cc2310d37d7bbf1a7d8a5d3df787aebb387e6ebc6712a540"
+      },
+      {
+        "page": 39,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "9b908d49bd312ea4cb7f2e22228dd61ea64a5204caf53db686404f03cf13674e"
+      },
+      {
+        "page": 40,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "67f84d56f17b96fcceea088d7148b6e072e29072fa5791aa655e68d8206b4347"
+      },
+      {
+        "page": 41,
+        "size": [
+          1754,
+          1241
+        ],
+        "sha256": "7697c25cbef7b7466bcfa92be0bd63183cd0d4ae7a1524920582ff5ff22ef76d"
+      },
+      {
+        "page": 42,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "02db417de50225aa889ab0d9b2b1d077a353ebf64cd9aa88c62820b8c12283e3"
+      },
+      {
+        "page": 43,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "27cf5b564de4ea30f823ff319727deced3d3f42b4330e961ba1462852391e168"
+      },
+      {
+        "page": 44,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "f1d25f825baf3a19e272337188aeb2db053e0539de74630f35c8b16f0df81f0c"
+      },
+      {
+        "page": 45,
+        "size": [
+          1241,
+          1754
+        ],
+        "sha256": "2ebb1c84be85600209413f1d7275a40931570c7da5d1e7b6e916331207045950"
+      }
+    ],
+    "source_bytes": 237123,
+    "source_sha256": "878e1edf90c1a7d97044c3c9f46f2ac58a3c7764e979165f7375f0278c40f909"
+  },
+  {
+    "file": "docs/assets/europes-answer-to-palantir/v1.0/figures/fig01_ontology_engine_ecosystems.pdf",
+    "original_bytes": 5979,
+    "original_sha256": "316fdf54f6c9b823ac7bdc3e7e5e25c2adc5df735a549b5b534d5c94828bd5bb",
+    "before_info": {
+      "format": "PDF 1.4",
+      "title": "Operational ontology across platform and ecosystem boundaries",
+      "author": "Dr. Carsten Stöcker, Spherity GmbH",
+      "subject": "Original conceptual comparison, research draft 0.4; CC BY 4.0",
+      "keywords": "",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101143106+01'00'",
+      "modDate": "D:20261101143106+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "required_updates": [
+      "Info:title",
+      "Info:author",
+      "Info:subject",
+      "Info:keywords",
+      "Info:Copyright",
+      "Info:License",
+      "Info:RightsSource",
+      "Info:EditionDate",
+      "XMP:absent"
+    ],
+    "status": "updated",
+    "published_bytes": 10347,
+    "published_sha256": "0379ee7424b96193a53750ebcf742c6cdabbaf1358a9fab0854b6f241f7a0c52",
+    "source_prefix_preserved": true,
+    "render_dpi": 150,
+    "all_page_pixels_identical": true,
+    "content_streams_identical": true,
+    "geometry_links_bookmarks_identical": true,
+    "page_count": 1,
+    "bookmark_count": 0,
+    "after_info": {
+      "format": "PDF 1.4",
+      "title": "Ontology engines across ecosystems",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "Platform-governed ontology capability compared with independently governed participants connected through shared meaning, discovery, trust and scoped exchange.",
+      "keywords": "Industrial AI; Evidence graphs; Semantic interoperability",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101143106+01'00'",
+      "modDate": "D:20261101183353+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "xmp_present": true,
+    "page_pixel_checks": [
+      {
+        "page": 1,
+        "size": [
+          1754,
+          987
+        ],
+        "sha256": "bda5da1569a381968aa50293acd0b9bda5654c59ba761056caee3a462507253f"
+      }
+    ],
+    "source_bytes": 5979,
+    "source_sha256": "316fdf54f6c9b823ac7bdc3e7e5e25c2adc5df735a549b5b534d5c94828bd5bb"
+  },
+  {
+    "file": "docs/assets/europes-answer-to-palantir/v1.0/figures/fig02_platform_architecture.pdf",
+    "original_bytes": 6981,
+    "original_sha256": "f1d890e792f165d4686a13ead1b41a7b1d51c55b1b529b82948700a3b58caac6",
+    "before_info": {
+      "format": "PDF 1.4",
+      "title": "fig01 platform architecture",
+      "author": "Dr. Carsten Stoecker, Spherity GmbH",
+      "subject": "Original analytical architecture figure; proposed versus documented responsibilities",
+      "keywords": "",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101135612+01'00'",
+      "modDate": "D:20261101135612+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "required_updates": [
+      "Info:title",
+      "Info:author",
+      "Info:subject",
+      "Info:keywords",
+      "Info:Copyright",
+      "Info:License",
+      "Info:RightsSource",
+      "Info:EditionDate",
+      "XMP:absent"
+    ],
+    "status": "updated",
+    "published_bytes": 11185,
+    "published_sha256": "5a5e868eb8f91676dffeea731b28392b4fe62573604ba04483a16bae9891bf32",
+    "source_prefix_preserved": true,
+    "render_dpi": 150,
+    "all_page_pixels_identical": true,
+    "content_streams_identical": true,
+    "geometry_links_bookmarks_identical": true,
+    "page_count": 1,
+    "bookmark_count": 0,
+    "after_info": {
+      "format": "PDF 1.4",
+      "title": "P1: operational ontology platform architecture",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "Twelve functional responsibilities connect source preparation, ontology model, graph builder, runtime, AI and controlled actions within a logical platform governance scope.",
+      "keywords": "Industrial AI; Evidence graphs; Semantic interoperability",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101135612+01'00'",
+      "modDate": "D:20261101183353+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "xmp_present": true,
+    "page_pixel_checks": [
+      {
+        "page": 1,
+        "size": [
+          1754,
+          987
+        ],
+        "sha256": "d59cb43df45d7e5f071e4a042a61185e36e6ae5a745838ba18bd1156570bea0c"
+      }
+    ],
+    "source_bytes": 6981,
+    "source_sha256": "f1d890e792f165d4686a13ead1b41a7b1d51c55b1b529b82948700a3b58caac6"
+  },
+  {
+    "file": "docs/assets/europes-answer-to-palantir/v1.0/figures/fig03_federated_architecture.pdf",
+    "original_bytes": 8166,
+    "original_sha256": "75d1327227f2e08d3c2ac9af87246ed2f998268a2fb618a4bf5d542f5d8f2698",
+    "before_info": {
+      "format": "PDF 1.4",
+      "title": "Participant-controlled cooperation for industrial AI",
+      "author": "Dr. Carsten Stoecker, Spherity GmbH",
+      "subject": "Proposed architecture; metadata services reach every participant separately from business exchanges",
+      "keywords": "",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101142916+01'00'",
+      "modDate": "D:20261101142916+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "required_updates": [
+      "Info:title",
+      "Info:author",
+      "Info:subject",
+      "Info:keywords",
+      "Info:Copyright",
+      "Info:License",
+      "Info:RightsSource",
+      "Info:EditionDate",
+      "XMP:absent"
+    ],
+    "status": "updated",
+    "published_bytes": 12583,
+    "published_sha256": "3a88dd0703230f114049e2ef4b2a414b177548183a8ebf2d5d36986623f618ca",
+    "source_prefix_preserved": true,
+    "render_dpi": 150,
+    "all_page_pixels_identical": true,
+    "content_streams_identical": true,
+    "geometry_links_bookmarks_identical": true,
+    "page_count": 1,
+    "bookmark_count": 0,
+    "after_info": {
+      "format": "PDF 1.4",
+      "title": "P2: participant-controlled cooperation architecture",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "Manufacturer, supplier and laboratory each connect local ontology capabilities to shared meaning, discovery and trust, with scoped exchanges through participant gateways.",
+      "keywords": "Industrial AI; Evidence graphs; Semantic interoperability",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101142916+01'00'",
+      "modDate": "D:20261101183353+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "xmp_present": true,
+    "page_pixel_checks": [
+      {
+        "page": 1,
+        "size": [
+          1754,
+          987
+        ],
+        "sha256": "e7c732a225e559aea3b592ed2f5ed1c79c920135e3619864fda04945acc6c192"
+      }
+    ],
+    "source_bytes": 8166,
+    "source_sha256": "75d1327227f2e08d3c2ac9af87246ed2f998268a2fb618a4bf5d542f5d8f2698"
+  },
+  {
+    "file": "docs/assets/europes-answer-to-palantir/v1.0/figures/fig04_control_and_dependencies.pdf",
+    "original_bytes": 5244,
+    "original_sha256": "045707dd381e13ac27b7bdad4c2d1213b5963484a3c81b4ab8cad0c85ca8807c",
+    "before_info": {
+      "format": "PDF 1.4",
+      "title": "fig03 control and dependencies",
+      "author": "Dr. Carsten Stoecker, Spherity GmbH",
+      "subject": "Original analytical architecture figure; proposed versus documented responsibilities",
+      "keywords": "",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101135613+01'00'",
+      "modDate": "D:20261101135613+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "required_updates": [
+      "Info:title",
+      "Info:author",
+      "Info:subject",
+      "Info:keywords",
+      "Info:Copyright",
+      "Info:License",
+      "Info:RightsSource",
+      "Info:EditionDate",
+      "XMP:absent"
+    ],
+    "status": "updated",
+    "published_bytes": 9503,
+    "published_sha256": "5129fa4d84e7a38203db113766cab2322f57b9e027f9247f1be2957295a010e3",
+    "source_prefix_preserved": true,
+    "render_dpi": 150,
+    "all_page_pixels_identical": true,
+    "content_streams_identical": true,
+    "geometry_links_bookmarks_identical": true,
+    "page_count": 1,
+    "bookmark_count": 0,
+    "after_info": {
+      "format": "PDF 1.4",
+      "title": "Control, dependence and provider substitution",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "Comparison of operational control and dependency dimensions in platform integration and proposed cooperation across independent implementations.",
+      "keywords": "Industrial AI; Evidence graphs; Semantic interoperability",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101135613+01'00'",
+      "modDate": "D:20261101183353+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "xmp_present": true,
+    "page_pixel_checks": [
+      {
+        "page": 1,
+        "size": [
+          1754,
+          987
+        ],
+        "sha256": "ff49707f2a82a04e2b6c17e8c32dee340eb4d83832486835f5a12434489e4179"
+      }
+    ],
+    "source_bytes": 5244,
+    "source_sha256": "045707dd381e13ac27b7bdad4c2d1213b5963484a3c81b4ab8cad0c85ca8807c"
+  },
+  {
+    "file": "docs/assets/europes-answer-to-palantir/v1.0/figures/fig05_evidence_and_assurance.pdf",
+    "original_bytes": 4129,
+    "original_sha256": "5872d8c2128301c1f4160ae25909343dfb4430b036096a92b654932cbd60f5a7",
+    "before_info": {
+      "format": "PDF 1.4",
+      "title": "fig02 evidence and assurance",
+      "author": "Dr. Carsten Stoecker, Spherity GmbH",
+      "subject": "unspecified",
+      "keywords": "",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101124707+01'00'",
+      "modDate": "D:20261101124707+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "required_updates": [
+      "Info:title",
+      "Info:author",
+      "Info:subject",
+      "Info:keywords",
+      "Info:Copyright",
+      "Info:License",
+      "Info:RightsSource",
+      "Info:EditionDate",
+      "XMP:absent"
+    ],
+    "status": "updated",
+    "published_bytes": 8182,
+    "published_sha256": "24768af353d8964faf352cee0347fb46e41737daafc2379608b0a347dcd10e4b",
+    "source_prefix_preserved": true,
+    "render_dpi": 150,
+    "all_page_pixels_identical": true,
+    "content_streams_identical": true,
+    "geometry_links_bookmarks_identical": true,
+    "page_count": 1,
+    "bookmark_count": 0,
+    "after_info": {
+      "format": "PDF 1.4",
+      "title": "From evidence admission to bounded assurance",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "An assertion passes interpretation, authority, status and permitted-use checks before supporting an assurance argument; action authorization remains separate.",
+      "keywords": "Industrial AI; Evidence graphs; Semantic interoperability",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101124707+01'00'",
+      "modDate": "D:20261101183353+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "xmp_present": true,
+    "page_pixel_checks": [
+      {
+        "page": 1,
+        "size": [
+          1754,
+          987
+        ],
+        "sha256": "50eeeaaa3f21ef45b90ae5335bcd277f5532a3737e6977f27646e5b2ace3c35e"
+      }
+    ],
+    "source_bytes": 4129,
+    "source_sha256": "5872d8c2128301c1f4160ae25909343dfb4430b036096a92b654932cbd60f5a7"
+  },
+  {
+    "file": "docs/assets/europes-answer-to-palantir/v1.0/figures/fig_robot_evidence_graph.pdf",
+    "original_bytes": 8073,
+    "original_sha256": "c69b70d1c7d014a4f821ba67a020eda1478138def7c7d6bb79576a7a51307fb9",
+    "before_info": {
+      "format": "PDF 1.4",
+      "title": "fig robot evidence graph",
+      "author": "Dr. Carsten Stöcker, Spherity GmbH",
+      "subject": "Original synthetic demonstration; CC BY 4.0; no compliance or performance result",
+      "keywords": "",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101174834+01'00'",
+      "modDate": "D:20261101174834+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "required_updates": [
+      "Info:title",
+      "Info:author",
+      "Info:subject",
+      "Info:keywords",
+      "Info:Copyright",
+      "Info:License",
+      "Info:RightsSource",
+      "Info:EditionDate",
+      "XMP:absent"
+    ],
+    "status": "updated",
+    "published_bytes": 12538,
+    "published_sha256": "a44a969ed1df257bb4a85e7947315333b8e9cb1256055fb9f090ce3f6d6ec843",
+    "source_prefix_preserved": true,
+    "render_dpi": 150,
+    "all_page_pixels_identical": true,
+    "content_streams_identical": true,
+    "geometry_links_bookmarks_identical": true,
+    "page_count": 1,
+    "bookmark_count": 0,
+    "after_info": {
+      "format": "PDF 1.4",
+      "title": "Humanoid H-01: evidence across company boundaries",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "Fictional robot configuration links supplier, laboratory, manufacturer and operator records; withdrawal of report TR42 highlights dependent claims requiring reassessment.",
+      "keywords": "Industrial AI; Evidence graphs; Semantic interoperability",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101174834+01'00'",
+      "modDate": "D:20261101183353+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "xmp_present": true,
+    "page_pixel_checks": [
+      {
+        "page": 1,
+        "size": [
+          1754,
+          987
+        ],
+        "sha256": "17bd4d0957c043d8786d64e34d496c347420b6b69258eded57ad69b41a4625a1"
+      }
+    ],
+    "source_bytes": 8073,
+    "source_sha256": "c69b70d1c7d014a4f821ba67a020eda1478138def7c7d6bb79576a7a51307fb9"
+  },
+  {
+    "file": "docs/assets/europes-answer-to-palantir/v1.0/figures/fig_robot_evidence_actions.pdf",
+    "original_bytes": 6523,
+    "original_sha256": "0cbe2eb3807481b49cc95e312f66d3267dbe18d27d31de9206a3367a459bac88",
+    "before_info": {
+      "format": "PDF 1.4",
+      "title": "fig robot evidence actions",
+      "author": "Dr. Carsten Stöcker, Spherity GmbH",
+      "subject": "Original synthetic demonstration; CC BY 4.0; no compliance or performance result",
+      "keywords": "",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101174834+01'00'",
+      "modDate": "D:20261101174834+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "required_updates": [
+      "Info:title",
+      "Info:author",
+      "Info:subject",
+      "Info:keywords",
+      "Info:Copyright",
+      "Info:License",
+      "Info:RightsSource",
+      "Info:EditionDate",
+      "XMP:absent"
+    ],
+    "status": "updated",
+    "published_bytes": 10942,
+    "published_sha256": "9880cc71b54876370741286f2f9322c0aba370876137ab21a58617bc9fd12c0e",
+    "source_prefix_preserved": true,
+    "render_dpi": 150,
+    "all_page_pixels_identical": true,
+    "content_streams_identical": true,
+    "geometry_links_bookmarks_identical": true,
+    "page_count": 1,
+    "bookmark_count": 0,
+    "after_info": {
+      "format": "PDF 1.4",
+      "title": "One evidence foundation, separate assessment views",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "Seven distinct assessment lenses reuse selected evidence through permitted retrieval, verification, interpretation, explanation and locally authorized action.",
+      "keywords": "Industrial AI; Evidence graphs; Semantic interoperability",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101174834+01'00'",
+      "modDate": "D:20261101183353+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "xmp_present": true,
+    "page_pixel_checks": [
+      {
+        "page": 1,
+        "size": [
+          1754,
+          987
+        ],
+        "sha256": "cf1a635eeac75649389559b6ea77a5abc53b5d0b6fd6d6c0303a165c9acbf0c9"
+      }
+    ],
+    "source_bytes": 6523,
+    "source_sha256": "0cbe2eb3807481b49cc95e312f66d3267dbe18d27d31de9206a3367a459bac88"
+  },
+  {
+    "file": "docs/assets/europes-answer-to-palantir/v1.0/figures/fig06_global_cooperation.pdf",
+    "original_bytes": 5301,
+    "original_sha256": "703ede3a731811f0d140575e2869415e4f85dacd5d9fc66a45dc5129fd7e5bff",
+    "before_info": {
+      "format": "PDF 1.4",
+      "title": "Proposed global cooperation through interoperable contracts",
+      "author": "Dr. Carsten Stöcker, Spherity GmbH",
+      "subject": "Original proposed architecture: equal participant roles, shared commons and scoped exchange contracts",
+      "keywords": "",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101135615+01'00'",
+      "modDate": "D:20261101135615+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "required_updates": [
+      "Info:title",
+      "Info:author",
+      "Info:subject",
+      "Info:keywords",
+      "Info:Copyright",
+      "Info:License",
+      "Info:RightsSource",
+      "Info:EditionDate",
+      "XMP:absent"
+    ],
+    "status": "updated",
+    "published_bytes": 9516,
+    "published_sha256": "1b6f995f8bb023d7e0a04651c1196ad3a778b1625d0ca6d36bda55ed3ab3d3bf",
+    "source_prefix_preserved": true,
+    "render_dpi": 150,
+    "all_page_pixels_identical": true,
+    "content_streams_identical": true,
+    "geometry_links_bookmarks_identical": true,
+    "page_count": 1,
+    "bookmark_count": 0,
+    "after_info": {
+      "format": "PDF 1.4",
+      "title": "Global cooperation architecture",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "Proposed European, US and Asia-Pacific cooperation through shared exchange contracts while regional participants retain authority and jurisdictional responsibilities.",
+      "keywords": "Industrial AI; Evidence graphs; Semantic interoperability",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101135615+01'00'",
+      "modDate": "D:20261101183353+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "xmp_present": true,
+    "page_pixel_checks": [
+      {
+        "page": 1,
+        "size": [
+          1754,
+          987
+        ],
+        "sha256": "19da559baa0795c4da01edf97cfdbbdcaea5b55b1e5618144a9f498e948612f5"
+      }
+    ],
+    "source_bytes": 5301,
+    "source_sha256": "703ede3a731811f0d140575e2869415e4f85dacd5d9fc66a45dc5129fd7e5bff"
+  },
+  {
+    "file": "docs/assets/europes-answer-to-palantir/v1.0/figures/fig07_matched_decision_journey.pdf",
+    "original_bytes": 5576,
+    "original_sha256": "10ed93f347281d6b04a4f4c982b0f2c3256c15bbedef7f8882ee4296675de48d",
+    "before_info": {
+      "format": "PDF 1.4",
+      "title": "fig01 matched decision journey",
+      "author": "Dr. Carsten Stoecker, Spherity GmbH",
+      "subject": "unspecified",
+      "keywords": "",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101124707+01'00'",
+      "modDate": "D:20261101124707+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "required_updates": [
+      "Info:title",
+      "Info:author",
+      "Info:subject",
+      "Info:keywords",
+      "Info:Copyright",
+      "Info:License",
+      "Info:RightsSource",
+      "Info:EditionDate",
+      "XMP:absent"
+    ],
+    "status": "updated",
+    "published_bytes": 9545,
+    "published_sha256": "13bf53cc2c274080daf40aad50137fa68c000e0fb17c10487021ebc38cd0ceda",
+    "source_prefix_preserved": true,
+    "render_dpi": 150,
+    "all_page_pixels_identical": true,
+    "content_streams_identical": true,
+    "geometry_links_bookmarks_identical": true,
+    "page_count": 1,
+    "bookmark_count": 0,
+    "after_info": {
+      "format": "PDF 1.4",
+      "title": "Matched decision journey and proposed evaluation",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "Both architecture patterns follow corresponding discovery, authorization, verification, decision, action and update steps in a proposed synthetic experiment.",
+      "keywords": "Industrial AI; Evidence graphs; Semantic interoperability",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101124707+01'00'",
+      "modDate": "D:20261101183353+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "xmp_present": true,
+    "page_pixel_checks": [
+      {
+        "page": 1,
+        "size": [
+          1754,
+          987
+        ],
+        "sha256": "5f4370780f83ba3f7c392a9bbbec60eb529f38e6a89f7a3fc9950a5a642a813e"
+      }
+    ],
+    "source_bytes": 5576,
+    "source_sha256": "10ed93f347281d6b04a4f4c982b0f2c3256c15bbedef7f8882ee4296675de48d"
+  },
+  {
+    "file": "docs/assets/europes-answer-to-palantir/v1.0/figures/fig01_shared_meaning_comparison.pdf",
+    "original_bytes": 8851,
+    "original_sha256": "999012d900daf936d4f4fb046d436e87e2f8ee62a09046de7691761da5866784",
+    "before_info": {
+      "format": "PDF 1.4",
+      "title": "Local meaning, shared evidence, cross-company AI",
+      "author": "Dr. Carsten Stöcker, Spherity GmbH",
+      "subject": "All ingestion and modeling local; task-scoped authorized cross-company evidence view; CC BY 4.0",
+      "keywords": "",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101165550+01'00'",
+      "modDate": "D:20261101165550+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "required_updates": [
+      "Info:title",
+      "Info:author",
+      "Info:subject",
+      "Info:keywords",
+      "Info:Copyright",
+      "Info:License",
+      "Info:RightsSource",
+      "Info:EditionDate",
+      "XMP:absent"
+    ],
+    "status": "updated",
+    "published_bytes": 13109,
+    "published_sha256": "630237d4683d6ccb4ae9bf1739f3ed0726a3ec79e1daf43dcbc2f941f86d25db",
+    "source_prefix_preserved": true,
+    "render_dpi": 150,
+    "all_page_pixels_identical": true,
+    "content_streams_identical": true,
+    "geometry_links_bookmarks_identical": true,
+    "page_count": 1,
+    "bookmark_count": 0,
+    "after_info": {
+      "format": "PDF 1.4",
+      "title": "From local files to cross-company meaning",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "Both patterns ingest varied data formats; each ecosystem participant processes its own files before controlled exchange and composition of a permitted cross-company graph view.",
+      "keywords": "Industrial AI; Evidence graphs; Semantic interoperability",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101165550+01'00'",
+      "modDate": "D:20261101183353+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "xmp_present": true,
+    "page_pixel_checks": [
+      {
+        "page": 1,
+        "size": [
+          1754,
+          987
+        ],
+        "sha256": "9e654268c1f3291002ced2da17f6bc1b9b1a6f8213d36b51c33b4a152d92275c"
+      }
+    ],
+    "source_bytes": 8851,
+    "source_sha256": "999012d900daf936d4f4fb046d436e87e2f8ee62a09046de7691761da5866784"
+  },
+  {
+    "file": "docs/assets/europes-answer-to-palantir/v1.0/figures/fig02_evidence_to_decision.pdf",
+    "original_bytes": 4467,
+    "original_sha256": "14f18378153d40b0458f9fe54e730ea57cdedb0bede0a7cb1de14940b395a63b",
+    "before_info": {
+      "format": "PDF 1.4",
+      "title": "fig02 evidence to decision",
+      "author": "Dr. Carsten Stöcker, Spherity GmbH",
+      "subject": "Original executive explanation; proposed versus documented architecture; CC BY 4.0",
+      "keywords": "",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101153107+01'00'",
+      "modDate": "D:20261101153107+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "required_updates": [
+      "Info:title",
+      "Info:author",
+      "Info:subject",
+      "Info:keywords",
+      "Info:Copyright",
+      "Info:License",
+      "Info:RightsSource",
+      "Info:EditionDate",
+      "XMP:absent"
+    ],
+    "status": "updated",
+    "published_bytes": 8635,
+    "published_sha256": "687dbea3bcd8d8e005bdc8357d70e7c58d03ed39fb7ee1b25eae6b01f470d5ea",
+    "source_prefix_preserved": true,
+    "render_dpi": 150,
+    "all_page_pixels_identical": true,
+    "content_streams_identical": true,
+    "geometry_links_bookmarks_identical": true,
+    "page_count": 1,
+    "bookmark_count": 0,
+    "after_info": {
+      "format": "PDF 1.4",
+      "title": "A valve-release decision explained",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "Illustrative valve records connect to a measurement, source and acceptance rule; evidence and policy checks support an accountable decision rather than automatic approval.",
+      "keywords": "Industrial AI; Evidence graphs; Semantic interoperability",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101153107+01'00'",
+      "modDate": "D:20261101183353+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "xmp_present": true,
+    "page_pixel_checks": [
+      {
+        "page": 1,
+        "size": [
+          1754,
+          987
+        ],
+        "sha256": "70fdcb8beee695629bd1c636f7edaa71de2e163e7f2327073112973c3987a0af"
+      }
+    ],
+    "source_bytes": 4467,
+    "source_sha256": "14f18378153d40b0458f9fe54e730ea57cdedb0bede0a7cb1de14940b395a63b"
+  },
+  {
+    "file": "docs/assets/europes-answer-to-palantir/v1.0/figures/fig03_global_cooperation.pdf",
+    "original_bytes": 4930,
+    "original_sha256": "7331311a6476ab9f0191ec89c8abb6f29aaa8d11f527e39943caf8946e3a14c6",
+    "before_info": {
+      "format": "PDF 1.4",
+      "title": "fig03 global cooperation",
+      "author": "Dr. Carsten Stöcker, Spherity GmbH",
+      "subject": "Original executive explanation; proposed versus documented architecture; CC BY 4.0",
+      "keywords": "",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101153108+01'00'",
+      "modDate": "D:20261101153108+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "required_updates": [
+      "Info:title",
+      "Info:author",
+      "Info:subject",
+      "Info:keywords",
+      "Info:Copyright",
+      "Info:License",
+      "Info:RightsSource",
+      "Info:EditionDate",
+      "XMP:absent"
+    ],
+    "status": "updated",
+    "published_bytes": 9026,
+    "published_sha256": "37c0d83d672583c947388ad227b2457581f46b4b4d14c6eb922eaee52e82f5fc",
+    "source_prefix_preserved": true,
+    "render_dpi": 150,
+    "all_page_pixels_identical": true,
+    "content_streams_identical": true,
+    "geometry_links_bookmarks_identical": true,
+    "page_count": 1,
+    "bookmark_count": 0,
+    "after_info": {
+      "format": "PDF 1.4",
+      "title": "A collaborative global offer",
+      "author": "Dr. Carsten Stöcker",
+      "subject": "Europe and international partners contribute standards and interoperability profiles while participants retain authority; connecting lines represent a proposed cooperation model.",
+      "keywords": "Industrial AI; Evidence graphs; Semantic interoperability",
+      "creator": "anonymous",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20261101153108+01'00'",
+      "modDate": "D:20261101183353+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "xmp_present": true,
+    "page_pixel_checks": [
+      {
+        "page": 1,
+        "size": [
+          1754,
+          987
+        ],
+        "sha256": "56ad55f87d35e00ab0c62b294873346bb276f4047bf48c6eb104d9fdb95b9a6a"
+      }
+    ],
+    "source_bytes": 4930,
+    "source_sha256": "7331311a6476ab9f0191ec89c8abb6f29aaa8d11f527e39943caf8946e3a14c6"
+  }
+]

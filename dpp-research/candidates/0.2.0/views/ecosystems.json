@@ -1,0 +1,875 @@
+{
+  "version": "0.1.0-ui.1",
+  "dataset_version": "0.2.0",
+  "groups": [
+    {
+      "id": "aas-idta",
+      "label": "AAS / IDTA",
+      "kind": "standards",
+      "description": "Asset Administration Shell structure, IDTA and DPP4.0, with a CIRPASS-2 report that examines AAS/RDF approaches. The standard has international scope; IDTA's German base is a separate geographic association.",
+      "entity_ids": [
+        "std-idta",
+        "std-iec-63278-1",
+        "std-dpp4-0",
+        "std-cirpass2-aas-rdf"
+      ],
+      "source_ids": [
+        "src-std-idta",
+        "src-std-iec-aas",
+        "src-std-cirpass-results"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "w3c",
+      "label": "W3C — global",
+      "kind": "standards",
+      "description": "W3C standards and vocabulary work together with their documented DPP uses and discussion context. Includes EN 18219, UNTP working specifications and CIRPASS-2. Published Recommendations, drafts, references and discussion retain distinct statuses; related records are not W3C members.",
+      "entity_ids": [
+        "std-w3c-vcwg",
+        "std-w3c-dpp-bw-tf",
+        "std-w3c-vc2",
+        "std-w3c-did1",
+        "std-w3c-recognized",
+        "std-w3c-dpp-vocabulary",
+        "std-w3c-bw-vocabulary",
+        "std-w3c-ucr",
+        "std-cen-jtc24",
+        "std-cirpass2-ontology",
+        "std-en-18219-2026",
+        "std-iso-jtc5",
+        "std-untp",
+        "std-untp-dcc",
+        "std-untp-dia",
+        "std-untp-dpp-0-8",
+        "std-untp-dte",
+        "std-w3c-dpp-committee-discussion-20260727",
+        "std-w3c-jsonld11",
+        "std-w3c-owl2",
+        "std-w3c-shacl"
+      ],
+      "source_ids": [
+        "src-std-w3c-charter",
+        "src-std-w3c-tf",
+        "src-std-w3c-vc2",
+        "src-std-w3c-did1",
+        "src-std-w3c-recognized",
+        "src-std-w3c-dpp-vocabulary",
+        "src-std-w3c-repository",
+        "src-std-w3c-ucr",
+        "src-update-20261025-w3c-minutes",
+        "src-update-20261025-w3c-repository",
+        "src-update-20261025-w3c-vc2",
+        "src-update-20261025-w3c-recognized",
+        "src-update-20261025-w3c-en18219",
+        "src-update-20261025-w3c-untp-vc-profile",
+        "src-update-20261025-w3c-untp-dpp",
+        "src-update-20261025-w3c-untp-dcc",
+        "src-update-20261025-w3c-untp-dte",
+        "src-update-20261025-w3c-untp-dia",
+        "src-update-20261025-w3c-cirpass-ontology",
+        "src-update-20261025-w3c-jsonld11",
+        "src-update-20261025-w3c-owl2",
+        "src-update-20261025-w3c-shacl",
+        "src-update-20261025-w3c-vc2-jsonld"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "cen-cenelec-jtc24",
+      "label": "CEN-CENELEC / JTC 24",
+      "kind": "standards",
+      "description": "European DPP standards and their documented W3C context: EN 18219 normatively references DID Core and VC 2.0. Includes committee cooperation and a separate task-force discussion. A normative reference does not mandate every technology in every DPP.",
+      "entity_ids": [
+        "std-cen-jtc24",
+        "std-en-18216-2026",
+        "std-en-18219-2026",
+        "std-en-18220-2026",
+        "std-en-18221-2026",
+        "std-en-18222-2026",
+        "std-en-18223-2026",
+        "std-en-18239-2026",
+        "std-en-18246-2026",
+        "std-oj-2026-1736",
+        "std-w3c-vcwg",
+        "std-w3c-dpp-bw-tf",
+        "std-w3c-vc2",
+        "std-w3c-did1",
+        "std-w3c-jsonld11",
+        "std-w3c-dpp-committee-discussion-20260727",
+        "std-iso-jtc5"
+      ],
+      "source_ids": [
+        "src-std-cen-overview",
+        "src-std-en-18216",
+        "src-std-en-18219",
+        "src-std-en-18220",
+        "src-std-en-18221",
+        "src-std-en-18222",
+        "src-std-en-18223",
+        "src-std-en-18239",
+        "src-std-en-18246",
+        "src-std-oj-decision",
+        "src-std-oj-register",
+        "src-update-20261025-w3c-minutes",
+        "src-update-20261025-w3c-repository",
+        "src-update-20261025-w3c-vc2",
+        "src-update-20261025-w3c-recognized",
+        "src-update-20261025-w3c-en18219",
+        "src-update-20261025-w3c-vc2-jsonld",
+        "src-update-20261025-cen-jtc5"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "iso-iec-jtc5",
+      "label": "ISO/IEC JTC 5 — global",
+      "kind": "standards",
+      "description": "JTC 5, its two work items, cooperation with JTC 24 and nine listed Category A liaison organisations. W3C appears through task-force discussion and the JTC 24 / EN 18219 standards path. No formal W3C liaison or JTC 5 adoption of W3C technology is established.",
+      "entity_ids": [
+        "std-iso-jtc5",
+        "std-iso-25534-1",
+        "std-iso-25534-2",
+        "std-cen-jtc24",
+        "org-anec",
+        "org-astm",
+        "org-dtid",
+        "org-eclass-ev",
+        "org-gs1",
+        "std-idta",
+        "org-opc-federation",
+        "org-rain-alliance",
+        "org-sbs",
+        "std-w3c-dpp-committee-discussion-20260727",
+        "std-w3c-vcwg",
+        "std-w3c-dpp-bw-tf",
+        "std-w3c-vc2",
+        "std-w3c-did1",
+        "std-w3c-jsonld11",
+        "std-en-18219-2026"
+      ],
+      "source_ids": [
+        "src-std-iso-jtc5",
+        "src-std-iso-25534-1",
+        "src-std-iso-25534-2",
+        "src-update-20261025-cen-jtc5",
+        "src-update-20261025-iso-jtc5",
+        "src-update-20261025-w3c-minutes",
+        "src-update-20261025-w3c-repository",
+        "src-update-20261025-w3c-vc2",
+        "src-update-20261025-w3c-recognized",
+        "src-update-20261025-w3c-en18219",
+        "src-update-20261025-w3c-vc2-jsonld"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "china-sac-swg41",
+      "label": "China / SAC SWG 41",
+      "kind": "standards",
+      "description": "China's DPP working group and General requirements standardisation project. This filter identifies standards activity; it does not convert that activity into a product obligation.",
+      "entity_ids": [
+        "global-cn-dpp-working-group",
+        "global-cn-dpp-general-project"
+      ],
+      "source_ids": [
+        "src-global-cn-working-group",
+        "src-global-cn-dpp-project"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "gs1",
+      "label": "GS1",
+      "kind": "standards",
+      "description": "GS1 Digital Link and EPCIS versions recorded in the research seed, covering identifiers and event exchange.",
+      "entity_ids": [
+        "std-gs1-digital-link-1-7",
+        "std-gs1-epcis-2"
+      ],
+      "source_ids": [
+        "src-std-gs1-digital-link",
+        "src-std-gs1-epcis"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "itu",
+      "label": "ITU-T",
+      "kind": "standards",
+      "description": "ITU-T Recommendations L.1070 and L.1071, retaining each publication's scope and date.",
+      "entity_ids": [
+        "std-itu-l1070",
+        "std-itu-l1071"
+      ],
+      "source_ids": [
+        "src-std-itu-1070",
+        "src-std-itu-1071",
+        "src-std-itu-1071-summary"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "opc-foundation",
+      "label": "OPC Foundation",
+      "kind": "standards",
+      "description": "OPC Foundation and its DPP Information Model specification. The recorded cooperation with Catena-X does not by itself demonstrate cross-system interoperability.",
+      "entity_ids": [
+        "std-opc-foundation",
+        "std-opc-30450-1"
+      ],
+      "source_ids": [
+        "src-std-opc-dpp",
+        "src-std-catena-opc"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "semantic-dictionaries",
+      "label": "Semantic dictionaries",
+      "kind": "standards",
+      "description": "IEC CDD, ECLASS, ETIM, buildingSMART bSDD and DPP dictionary-referencing work. This is a comparison group of distinct resources, not a shared governance body or an equivalence claim.",
+      "entity_ids": [
+        "std-iec-cdd",
+        "std-eclass",
+        "std-etim",
+        "std-bsdd",
+        "std-dictionary-referencing"
+      ],
+      "source_ids": [
+        "src-std-dictionary"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "unece-uncefact",
+      "label": "UNECE / UN/CEFACT",
+      "kind": "standards",
+      "description": "UNECE Recommendation 49 and the UN/CEFACT P1143 business-requirements work item. These remain distinct from the UNTP implementation specifications.",
+      "entity_ids": [
+        "std-unece-rec49",
+        "std-uncefact-p1143"
+      ],
+      "source_ids": [
+        "src-std-unece-rec49",
+        "src-std-unece-rec49-adoption",
+        "src-std-unece-p1143"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "cirpass2",
+      "label": "CIRPASS-2",
+      "kind": "dpp",
+      "description": "CIRPASS-2 programme and research artifacts, with OWL 2 ontology structure, separate SHACL validation profiles and its input to W3C DPP vocabulary work. Research connections do not establish EU endorsement or successful implementation.",
+      "entity_ids": [
+        "std-cirpass2",
+        "std-cirpass2-architecture",
+        "std-cirpass2-ontology",
+        "std-cirpass2-aas-rdf",
+        "std-cirpass2-test",
+        "std-w3c-owl2",
+        "std-w3c-shacl",
+        "std-w3c-dpp-vocabulary"
+      ],
+      "source_ids": [
+        "src-std-cirpass",
+        "src-std-cirpass-dates",
+        "src-std-cirpass-architecture",
+        "src-std-cirpass-ontology",
+        "src-std-cirpass-results",
+        "src-std-cirpass-test",
+        "src-update-20261025-w3c-cirpass-ontology",
+        "src-std-w3c-dpp-vocabulary"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "gba",
+      "label": "Global Battery Alliance",
+      "kind": "dpp",
+      "description": "GBA battery passport programme, reported 2026 trials and planned certification scheme. This voluntary ecosystem is separate from legal battery-passport duties.",
+      "entity_ids": [
+        "std-gba",
+        "std-gba-trials-2026",
+        "std-gba-certification"
+      ],
+      "source_ids": [
+        "src-std-gba-trials"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "untp",
+      "label": "UNTP",
+      "kind": "dpp",
+      "description": "UNTP initiative and versioned specifications, with their documented W3C dependencies. New technical edges describe the current pre-production working profile, not the separate maintained 0.7.0 release or national adoption.",
+      "entity_ids": [
+        "std-untp",
+        "std-untp-0-7",
+        "std-untp-dpp-family",
+        "std-untp-dpp-0-8",
+        "std-untp-dcc",
+        "std-untp-dia",
+        "std-untp-dte",
+        "std-w3c-vc2",
+        "std-w3c-did1",
+        "std-w3c-jsonld11",
+        "std-w3c-recognized"
+      ],
+      "source_ids": [
+        "src-std-untp-about",
+        "src-std-untp-versions",
+        "src-std-untp-suite",
+        "src-std-untp-dpp",
+        "src-std-untp-dia",
+        "src-update-20261025-w3c-untp-vc-profile",
+        "src-update-20261025-w3c-untp-dpp",
+        "src-update-20261025-w3c-untp-dcc",
+        "src-update-20261025-w3c-untp-dte",
+        "src-update-20261025-w3c-untp-dia",
+        "src-update-20261025-w3c-vc2-jsonld"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "rain",
+      "label": "RAIN RFID",
+      "kind": "dpp",
+      "description": "RAIN's DPP identifier-encoding guidance. The seed contains one guidance record, not a complete inventory of RAIN members, deployments or certifications.",
+      "entity_ids": [
+        "std-rain-dpp-001"
+      ],
+      "source_ids": [
+        "src-std-rain"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "battery-pass",
+      "label": "Battery Pass / BatteryPass-Ready",
+      "kind": "dpp",
+      "description": "Battery Pass and BatteryPass-Ready projects, their data models and test environment, and DIN DKE SPEC 99100. Testing infrastructure is distinct from evidence that every implementation passes.",
+      "entity_ids": [
+        "std-battery-pass",
+        "std-batterypass-ready",
+        "std-battery-longlist-2",
+        "std-battery-model-2",
+        "std-battery-test",
+        "std-din-dke-spec-99100"
+      ],
+      "source_ids": [
+        "src-std-battery-materials",
+        "src-std-battery-ready",
+        "src-std-battery-model",
+        "src-std-battery-test"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "catena-x",
+      "label": "Catena-X",
+      "kind": "dpp",
+      "description": "Catena-X, its CX-0143 DPP specification and the reported Japan carbon-footprint exchange demonstration. The demonstration is shared with the Ouranos navigation group and remains bounded to its reported operation.",
+      "entity_ids": [
+        "std-catena-x",
+        "std-cx-0143",
+        "global-jp-catena-x-cfp-demo"
+      ],
+      "source_ids": [
+        "src-std-catena-standard",
+        "src-std-catena-opc",
+        "src-global-jp-catena-x-demonstration"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "we-build",
+      "label": "WE BUILD",
+      "kind": "dpp",
+      "description": "European business-wallet pilot and its architecture blueprint, including the DPP exchange use case. Pilot and simulated components do not establish legal recognition or general production readiness.",
+      "entity_ids": [
+        "std-webuild",
+        "std-webuild-blueprint"
+      ],
+      "source_ids": [
+        "src-std-webuild-ec",
+        "src-std-webuild-blueprint"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "ouranos",
+      "label": "Ouranos / Japan battery platform",
+      "kind": "dpp",
+      "description": "Japan's Ouranos programme, Battery Traceability Platform and reported Catena-X carbon-footprint demonstration. Other Japanese pilots are not automatically members of this group.",
+      "entity_ids": [
+        "global-jp-ouranos",
+        "global-jp-battery-platform",
+        "global-jp-catena-x-cfp-demo"
+      ],
+      "source_ids": [
+        "src-global-jp-ouranos",
+        "src-global-jp-catena-x-demonstration"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "dpp4-0",
+      "label": "IDTA DPP4.0",
+      "kind": "dpp",
+      "description": "AAS-based DPP initiative and its supporting association. A separate standards filter exposes the AAS structure and comparative work.",
+      "entity_ids": [
+        "std-dpp4-0",
+        "std-idta"
+      ],
+      "source_ids": [
+        "src-std-idta"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "manufacturing-x",
+      "label": "Manufacturing-X",
+      "kind": "dpp",
+      "description": "German industrial-dataspace programme adjacent to DPP implementation. This is a programme-level record, not a claim that all constituent projects implement a DPP.",
+      "entity_ids": [
+        "std-manufacturing-x"
+      ],
+      "source_ids": [
+        "src-std-manufacturing-x"
+      ],
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "aas-international",
+      "label": "AAS — international evidence",
+      "kind": "standards",
+      "entity_ids": [
+        "std-iec-63278-1",
+        "std-idta",
+        "std-cn-aas-20243452-t-604",
+        "std-kr-ks-x-iec-63278-1",
+        "global-kr-aas-reference-model-programme-2026",
+        "global-jp-aas-iec-participation-2024",
+        "global-jp-aas-roadmap-dissemination-2025",
+        "global-us-de-aas-dpp-prototypes-2024",
+        "std-cirpass2-aas-rdf-v1-3",
+        "report-grimm-aas-rdf-2026",
+        "std-cn-tc124-swg2"
+      ],
+      "source_ids": [
+        "src-tech-20261025-aas-china",
+        "src-tech-20261025-aas-korea",
+        "src-tech-20261025-aas-korea-programme",
+        "src-tech-20261025-aas-japan-committee",
+        "src-tech-20261025-aas-japan-rri",
+        "src-tech-20261025-aas-us-german-prototypes",
+        "src-tech-20261025-aas-rdf-v13",
+        "src-tech-20261025-grimm-aas-rdf",
+        "src-tech-20261025-china-aas-working-group"
+      ],
+      "description": "International evidence distinguishes global standard, national adoption/project, public programme, participation, dissemination, prototypes and research.",
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "identity-policy-evidence",
+      "label": "Identity, policy & evidence",
+      "kind": "standards",
+      "entity_ids": [
+        "std-untp",
+        "std-untp-0-7",
+        "std-untp-dia",
+        "std-w3c-vc2",
+        "std-w3c-recognized",
+        "std-untp-dia-0-7-0",
+        "std-untp-access-control-0-7-0",
+        "std-untp-digital-wallets",
+        "std-untp-identity-resolver",
+        "std-grid",
+        "std-grid-supporting-document",
+        "std-w3c-odrl-model-2-2",
+        "std-w3c-odrl-vocabulary-2-2",
+        "std-dsp-2025-1-err2",
+        "std-dcp-1-0-1",
+        "std-edc-connector-0-18-1",
+        "std-edc-policy-engine-docs",
+        "std-dssc-blueprint-3-0",
+        "std-w3c-dcat3",
+        "report-proposed-wallet-policy-evidence-architecture"
+      ],
+      "source_ids": [
+        "src-tech-20261025-untp-dia-070",
+        "src-tech-20261025-untp-dia-working",
+        "src-tech-20261025-untp-access-070",
+        "src-tech-20261025-untp-wallets",
+        "src-tech-20261025-untp-resolver",
+        "src-tech-20261025-grid-supporting",
+        "src-tech-20261025-odrl-model",
+        "src-tech-20261025-odrl-vocabulary",
+        "src-tech-20261025-dsp-2025-1-err2",
+        "src-tech-20261025-dcp-101",
+        "src-tech-20261025-edc-policy",
+        "src-tech-20261025-edc-release-0181",
+        "src-tech-20261025-dssc-blueprint-30",
+        "src-paper-global-dpp-whitepaper-v1-20261025"
+      ],
+      "description": "Identity, discovery, policy and enforcement roles; standards, drafts, software and proposals remain distinct.",
+      "membership_basis": "editorial_filter"
+    }
+  ],
+  "geographic_associations": [
+    {
+      "entity_id": "std-idta",
+      "jurisdiction_id": "jur-de",
+      "relationship": "organisation_base",
+      "note": "IDTA's own DPP4.0 page gives its Frankfurt am Main address. This additional association locates the organisation's base; the release's global technical scope is retained and no German legal obligation or exclusive national scope is inferred.",
+      "source_url": "https://industrialdigitaltwin.org/dpp4-0",
+      "source_title": "IDTA DPP4.0 page — organisation address and international AAS scope",
+      "observed_at": "2026-10-23"
+    },
+    {
+      "entity_id": "std-dpp4-0",
+      "jurisdiction_id": "jur-de",
+      "relationship": "ecosystem_activity",
+      "note": "Research navigation association with Germany through the Frankfurt-based IDTA that presents DPP4.0. It is not a deployment-location inventory, domestic mandate or limitation of the initiative's international technical scope.",
+      "source_url": "https://industrialdigitaltwin.org/dpp4-0",
+      "source_title": "IDTA DPP4.0 page — initiative, AAS basis and Frankfurt contact address",
+      "observed_at": "2026-10-23"
+    }
+  ],
+  "evidence_updates": {
+    "id": "dpp-evidence-2026-10-25",
+    "checked_at": "2026-10-25",
+    "base_version": "0.1.0",
+    "review_status": "machine_assisted_unreviewed",
+    "description": "Dated evidence additions for JTC 5 cooperation, jurisdictional policy and public programmes, W3C technical connections and the planned European Product Act. Formal liaison, technical dependencies, exporter guidance and proposed policy remain distinct. The frozen release remains unchanged.",
+    "relationship_definitions": {
+      "coordinates_with": "Source-announced committee cooperation. Does not imply adoption, equivalence, mutual recognition or completed interoperability.",
+      "liaison_with": "An organisation listed in a committee liaison register. The Category A designation is retained in the assertion and locator; no technical use or semantic compatibility is inferred.",
+      "references": "An explicit source reference or contextual discussion; it does not establish legal incorporation, conformity, standard adoption or mutual recognition.",
+      "part_of": "A provision, document or activity identified within its named instrument, programme or group; legal scope, publication status and maturity remain qualified in the records.",
+      "developed_by": "The group identified by the primary source as developing or publishing the document; the document status is retained.",
+      "normatively_references": "The cited document is explicitly listed in normative references. Applicable clauses and implementation choices still determine the requirements; universal implementation or interoperability is not inferred.",
+      "uses_standard": "The inspected specification or documentation explicitly uses the linked standard for the stated technical purpose. Scope, version and maturity qualifications remain attached; this is not proof of implementation conformance, legal adoption or interoperability."
+    },
+    "batches": [
+      {
+        "id": "jtc5-connections-2026-10-25",
+        "checked_at": "2026-10-25",
+        "description": "Dated additive evidence update for JTC 5 committee cooperation and the nine organisations in its Category A liaison register. The frozen release remains unchanged.",
+        "review_status": "machine_assisted_unreviewed",
+        "entity_ids": [
+          "org-anec",
+          "org-astm",
+          "org-dtid",
+          "org-eclass-ev",
+          "org-gs1",
+          "org-opc-federation",
+          "org-rain-alliance",
+          "org-sbs"
+        ],
+        "assertion_ids": [
+          "a-update-20261025-jtc5-jtc24",
+          "a-update-20261025-jtc5-anec",
+          "a-update-20261025-jtc5-astm",
+          "a-update-20261025-jtc5-dtid",
+          "a-update-20261025-jtc5-eclass-ev",
+          "a-update-20261025-jtc5-gs1",
+          "a-update-20261025-jtc5-idta",
+          "a-update-20261025-jtc5-opc-federation",
+          "a-update-20261025-jtc5-rain-alliance",
+          "a-update-20261025-jtc5-sbs"
+        ],
+        "source_ids": [
+          "src-update-20261025-iso-jtc5",
+          "src-update-20261025-cen-jtc5"
+        ]
+      },
+      {
+        "id": "uk-policy-additions-2026-10-25",
+        "checked_at": "2026-10-25",
+        "description": "UK policy evidence update: two sector consultations and sourced connections for the existing Great Britain DPR consultation. Policy discussion is distinguished from enacted passport duties.",
+        "review_status": "machine_assisted_unreviewed",
+        "entity_ids": [
+          "uk-construction-products-reform-white-paper",
+          "uk-toy-safety-dpp-consultation"
+        ],
+        "assertion_ids": [
+          "a-update-20261025-gb-dpr-espr",
+          "a-update-20261025-gb-dpr-batteries",
+          "a-update-20261025-gb-dpr-toys",
+          "a-update-20261025-gb-dpr-construction",
+          "a-update-20261025-gb-dpr-white-paper",
+          "a-update-20261025-gb-dpr-toy-consultation",
+          "a-update-20261025-uk-construction-eu-regulation",
+          "a-update-20261025-uk-construction-eu-passport",
+          "a-update-20261025-uk-toys-eu-regulation",
+          "a-update-20261025-uk-toys-eu-passport"
+        ],
+        "source_ids": [
+          "src-update-20261025-uk-dpr",
+          "src-update-20261025-uk-construction-white-paper",
+          "src-update-20261025-uk-toy-consultation",
+          "src-update-20261025-uk-construction-progress"
+        ]
+      },
+      {
+        "id": "jurisdiction-additions-2026-10-25",
+        "checked_at": "2026-10-25",
+        "description": "Primary-source additions for Switzerland’s THG proposal, Norway’s battery-registry consultation and Taiwan’s resource-circulation law and voluntary DPP pilot.",
+        "review_status": "machine_assisted_unreviewed",
+        "entity_ids": [
+          "global-ch-thg-dpp-proposal",
+          "global-no-battery-registry-consultation",
+          "jur-tw",
+          "global-tw-resource-circulation-act",
+          "global-tw-product-information-art22",
+          "global-tw-dpp-voluntary-pilot"
+        ],
+        "assertion_ids": [
+          "a-update-20261025-ch-thg-espr",
+          "a-update-20261025-no-battery-regulation",
+          "a-update-20261025-no-battery-espr",
+          "a-update-20261025-tw-art22-part",
+          "a-update-20261025-tw-pilot-art22",
+          "a-update-20261025-tw-pilot-eu-battery"
+        ],
+        "source_ids": [
+          "src-update-20261025-ch-thg-announcement",
+          "src-update-20261025-ch-thg-explanatory-report",
+          "src-update-20261025-no-battery-consultation",
+          "src-update-20261025-tw-resource-circulation-act",
+          "src-update-20261025-tw-dpp-pilot"
+        ]
+      },
+      {
+        "id": "w3c-committee-additions-2026-10-25",
+        "checked_at": "2026-10-25",
+        "description": "Dated W3C connections: EN 18219 normative references, W3C task-force discussion touching JTC 5 and JTC 24, and specification stewardship. Formal liaison, discussion and normative reference remain distinct.",
+        "review_status": "machine_assisted_unreviewed",
+        "entity_ids": [
+          "std-w3c-dpp-committee-discussion-20260727"
+        ],
+        "assertion_ids": [
+          "a-update-20261025-w3c-minutes-task-force",
+          "a-update-20261025-w3c-minutes-jtc5",
+          "a-update-20261025-w3c-minutes-jtc24",
+          "a-update-20261025-w3c-minutes-vc2",
+          "a-update-20261025-w3c-vc2-working-group",
+          "a-update-20261025-w3c-vc2-did",
+          "a-update-20261025-w3c-dpp-vocabulary-task-force",
+          "a-update-20261025-w3c-wallet-vocabulary-task-force",
+          "a-update-20261025-w3c-use-cases-task-force",
+          "a-update-20261025-w3c-recognized-working-group",
+          "a-update-20261025-w3c-en18219-did",
+          "a-update-20261025-w3c-en18219-vc2"
+        ],
+        "source_ids": [
+          "src-update-20261025-w3c-minutes",
+          "src-update-20261025-w3c-repository",
+          "src-update-20261025-w3c-vc2",
+          "src-update-20261025-w3c-recognized",
+          "src-update-20261025-w3c-en18219"
+        ]
+      },
+      {
+        "id": "w3c-technical-connections-2026-10-25",
+        "checked_at": "2026-10-25",
+        "description": "Dated technical relationships connecting the UNTP working profile and CIRPASS-2 ontology to W3C standards. These are specification relationships, not claims of national adoption.",
+        "review_status": "machine_assisted_unreviewed",
+        "entity_ids": [
+          "std-w3c-jsonld11",
+          "std-w3c-owl2",
+          "std-w3c-shacl"
+        ],
+        "assertion_ids": [
+          "a-update-20261025-w3c-tech-untp-vc2",
+          "a-update-20261025-w3c-tech-untp-did1",
+          "a-update-20261025-w3c-tech-untp-jsonld11",
+          "a-update-20261025-w3c-tech-dpp-vc2",
+          "a-update-20261025-w3c-tech-dcc-vc2",
+          "a-update-20261025-w3c-tech-dte-vc2",
+          "a-update-20261025-w3c-tech-dia-vc2",
+          "a-update-20261025-w3c-tech-vc2-jsonld11",
+          "a-update-20261025-w3c-tech-cirpass-owl2",
+          "a-update-20261025-w3c-tech-cirpass-shacl"
+        ],
+        "source_ids": [
+          "src-update-20261025-w3c-untp-vc-profile",
+          "src-update-20261025-w3c-untp-dpp",
+          "src-update-20261025-w3c-untp-dcc",
+          "src-update-20261025-w3c-untp-dte",
+          "src-update-20261025-w3c-untp-dia",
+          "src-update-20261025-w3c-cirpass-ontology",
+          "src-update-20261025-w3c-jsonld11",
+          "src-update-20261025-w3c-owl2",
+          "src-update-20261025-w3c-shacl",
+          "src-update-20261025-w3c-vc2-jsonld"
+        ]
+      },
+      {
+        "id": "european-product-act-2026-10-25",
+        "checked_at": "2026-10-25",
+        "description": "Adds the planned European Product Act product-rules reform and its sourced ESPR and battery-passport context; no leaked provisions or new current duties are asserted.",
+        "review_status": "machine_assisted_unreviewed",
+        "entity_ids": [
+          "eu-european-product-act"
+        ],
+        "assertion_ids": [
+          "a-update-20261025-epa-espr",
+          "a-update-20261025-epa-battery-context"
+        ],
+        "source_ids": [
+          "src-update-20261025-epa-tracker",
+          "src-update-20261025-epa-commission-followup",
+          "src-update-20261025-epa-eprs"
+        ]
+      },
+      {
+        "id": "missing-jurisdiction-readiness-2026-10-25",
+        "checked_at": "2026-10-25",
+        "description": "Adds two official readiness records for Egypt and Bangladesh. Supports qualified early public-programme and exporter-guidance profiles; no new passport mandates are asserted.",
+        "review_status": "machine_assisted_unreviewed",
+        "entity_ids": [
+          "global-eg-goeic-dpp-programme",
+          "global-bd-export-dpp-guidance"
+        ],
+        "assertion_ids": [
+          "a-update-20261025-bd-guidance-espr",
+          "a-update-20261025-bd-guidance-battery"
+        ],
+        "source_ids": [
+          "src-update-20261025-eg-goeic-programme",
+          "src-update-20261025-bd-export-guidance"
+        ]
+      }
+    ],
+    "navigation_groups": [
+      {
+        "id": "w3c",
+        "entity_ids": [
+          "std-cen-jtc24",
+          "std-cirpass2-ontology",
+          "std-en-18219-2026",
+          "std-iso-jtc5",
+          "std-untp",
+          "std-untp-dcc",
+          "std-untp-dia",
+          "std-untp-dpp-0-8",
+          "std-untp-dte",
+          "std-w3c-bw-vocabulary",
+          "std-w3c-did1",
+          "std-w3c-dpp-bw-tf",
+          "std-w3c-dpp-committee-discussion-20260727",
+          "std-w3c-dpp-vocabulary",
+          "std-w3c-jsonld11",
+          "std-w3c-owl2",
+          "std-w3c-recognized",
+          "std-w3c-shacl",
+          "std-w3c-ucr",
+          "std-w3c-vc2",
+          "std-w3c-vcwg"
+        ],
+        "source_ids": [
+          "src-update-20261025-w3c-minutes",
+          "src-update-20261025-w3c-repository",
+          "src-update-20261025-w3c-vc2",
+          "src-update-20261025-w3c-recognized",
+          "src-update-20261025-w3c-en18219",
+          "src-update-20261025-w3c-untp-vc-profile",
+          "src-update-20261025-w3c-untp-dpp",
+          "src-update-20261025-w3c-untp-dcc",
+          "src-update-20261025-w3c-untp-dte",
+          "src-update-20261025-w3c-untp-dia",
+          "src-update-20261025-w3c-cirpass-ontology",
+          "src-update-20261025-w3c-jsonld11",
+          "src-update-20261025-w3c-owl2",
+          "src-update-20261025-w3c-shacl",
+          "src-update-20261025-w3c-vc2-jsonld"
+        ],
+        "description": "W3C standards and vocabulary work together with their documented DPP uses and discussion context. Includes EN 18219, UNTP working specifications and CIRPASS-2. Published Recommendations, drafts, references and discussion retain distinct statuses; related records are not W3C members.",
+        "membership_basis": "editorial_filter"
+      },
+      {
+        "id": "iso-iec-jtc5",
+        "entity_ids": [
+          "std-w3c-vcwg",
+          "std-w3c-dpp-bw-tf",
+          "std-w3c-vc2",
+          "std-w3c-did1",
+          "std-w3c-jsonld11",
+          "std-w3c-dpp-committee-discussion-20260727",
+          "std-en-18219-2026"
+        ],
+        "source_ids": [
+          "src-update-20261025-w3c-minutes",
+          "src-update-20261025-w3c-repository",
+          "src-update-20261025-w3c-vc2",
+          "src-update-20261025-w3c-recognized",
+          "src-update-20261025-w3c-en18219",
+          "src-update-20261025-w3c-vc2-jsonld"
+        ],
+        "description": "JTC 5, its two work items, cooperation with JTC 24 and nine listed Category A liaison organisations. W3C appears through task-force discussion and the JTC 24 / EN 18219 standards path. No formal W3C liaison or JTC 5 adoption of W3C technology is established.",
+        "membership_basis": "editorial_filter"
+      },
+      {
+        "id": "cen-cenelec-jtc24",
+        "entity_ids": [
+          "std-w3c-vcwg",
+          "std-w3c-dpp-bw-tf",
+          "std-w3c-vc2",
+          "std-w3c-did1",
+          "std-w3c-jsonld11",
+          "std-w3c-dpp-committee-discussion-20260727",
+          "std-iso-jtc5"
+        ],
+        "source_ids": [
+          "src-update-20261025-w3c-minutes",
+          "src-update-20261025-w3c-repository",
+          "src-update-20261025-w3c-vc2",
+          "src-update-20261025-w3c-recognized",
+          "src-update-20261025-w3c-en18219",
+          "src-update-20261025-w3c-vc2-jsonld",
+          "src-update-20261025-cen-jtc5"
+        ],
+        "description": "European DPP standards and their documented W3C context: EN 18219 normatively references DID Core and VC 2.0. Includes committee cooperation and a separate task-force discussion. A normative reference does not mandate every technology in every DPP.",
+        "membership_basis": "editorial_filter"
+      },
+      {
+        "id": "untp",
+        "entity_ids": [
+          "std-w3c-vc2",
+          "std-w3c-did1",
+          "std-w3c-jsonld11",
+          "std-w3c-recognized"
+        ],
+        "source_ids": [
+          "src-update-20261025-w3c-untp-vc-profile",
+          "src-update-20261025-w3c-untp-dpp",
+          "src-update-20261025-w3c-untp-dcc",
+          "src-update-20261025-w3c-untp-dte",
+          "src-update-20261025-w3c-untp-dia",
+          "src-update-20261025-w3c-vc2-jsonld"
+        ],
+        "description": "UNTP initiative and versioned specifications, with their documented W3C dependencies. New technical edges describe the current pre-production working profile, not the separate maintained 0.7.0 release or national adoption.",
+        "membership_basis": "editorial_filter"
+      },
+      {
+        "id": "cirpass2",
+        "entity_ids": [
+          "std-w3c-owl2",
+          "std-w3c-shacl",
+          "std-w3c-dpp-vocabulary"
+        ],
+        "source_ids": [
+          "src-update-20261025-w3c-cirpass-ontology",
+          "src-std-w3c-dpp-vocabulary"
+        ],
+        "description": "CIRPASS-2 programme and research artifacts, with OWL 2 ontology structure, separate SHACL validation profiles and its input to W3C DPP vocabulary work. Research connections do not establish EU endorsement or successful implementation.",
+        "membership_basis": "editorial_filter"
+      }
+    ]
+  },
+  "candidate_id": "0.2.0-candidate-2026-10-25"
+}

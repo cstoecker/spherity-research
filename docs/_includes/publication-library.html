@@ -61,7 +61,7 @@
         </div>
         <h3>{{ publication.title }}</h3>
         <p>{{ publication.description }}</p>
-        {% if publication.byline %}<p class="card-byline">By {{ publication.byline }}</p>{% endif %}
+        {% if publication.byline %}<p class="card-byline">{% if publication.publication_type == "atlas" %}Research curator: {% else %}By {% endif %}{{ publication.byline }}</p>{% endif %}
         <ul class="topic-tags" aria-label="Topics">
           {% for topic in publication.topics %}
           <li>{{ topic }}</li>

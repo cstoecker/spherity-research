@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+const base='docs/assets/europes-answer-to-palantir/graph-v0.1';
+const raw=fs.readFileSync(base+'/graph-model.json','utf8'),m=JSON.parse(raw);
+const ids=new Set(m.nodes.map(n=>n.id));
+if(ids.size!==22||m.edges.length!==20||m.groups.length!==4||m.domains.length!==8||m.edges.some(e=>!ids.has(e.source)||!ids.has(e.target)))throw Error('Invalid teaching model');
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const records=m.nodes.map(n=>'<details id="record-'+esc(n.id)+'"><summary>'+esc(n.id+' · '+n.title+' · '+n.owner)+'</summary><dl>'+Object.entries(n).filter(([k])=>!['id','label','title','group'].includes(k)).map(([k,v])=>'<dt>'+esc(k)+'</dt><dd>'+esc(v)+'</dd>').join('')+'</dl></details>').join('');
+const edges=m.edges.map((e,i)=>'<tr id="relationship-'+(i+1)+'"><td><a href="#record-'+esc(e.source)+'">'+esc(e.source)+'</a></td><th scope="row">'+esc(e.relation)+'</th><td><a href="#record-'+esc(e.target)+'">'+esc(e.target)+'</a></td></tr>').join('');
+const html='<script type="application/json" id="reg-data">'+JSON.stringify(m).replaceAll('<','\u003c')+'</script><details class="palantir-records"><summary>All 22 fictional records and their evidence conditions</summary>'+records+'</details><details><summary>All 20 typed relationships</summary><div class="table-scroll" tabindex="0" role="region" aria-label="Typed graph relationships"><table class="academic-table"><thead><tr><th>Source record</th><th>Relationship</th><th>Target record</th></tr></thead><tbody>'+edges+'</tbody></table></div></details><details><summary>Seven separate assessment lenses and scope limits</summary>'+m.domains.filter(d=>d.id!=='all').map(d=>'<h4>'+esc(d.name)+'</h4><p>'+esc(d.question+' '+d.scope)+'</p>').join('')+'</details>';
+fs.writeFileSync('docs/_includes/robot-evidence-static.html',html);
+console.log('Generated 22 static records, 20 typed relationships and seven lenses from model '+m.version);

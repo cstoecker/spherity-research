@@ -1,0 +1,31 @@
+[
+  {
+    "assertion_id": "a-global-jp-cfp-exchange",
+    "dimensions": [
+      "semantic",
+      "protocol",
+      "identity_authentication"
+    ],
+    "independence": "consortium_report",
+    "limitations": [
+      "Work ran July 2024–January 2025; exact execution date unspecified.",
+      "Demonstration environments, not evidence of general production interoperability.",
+      "Institutional and operational questions remained; legal recognition was not demonstrated."
+    ],
+    "locator": "Section 2, demonstration table; Section 3",
+    "operation": "Reciprocal product carbon-footprint data retrieval using intermediary authentication, protocol and model conversion.",
+    "result": "reported_success",
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-jp-catena-x-demonstration"
+    ],
+    "statement": "An intermediate layer supported reciprocal CFP exchange in demonstration environments.",
+    "subject": "global-jp-catena-x-cfp-demo",
+    "systems": [
+      "Japan Battery Traceability Platform — version unspecified",
+      "Catena-X demonstration environment — version unspecified",
+      "Intermediate conversion layer — version unspecified"
+    ],
+    "test_date": null
+  }
+]

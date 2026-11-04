@@ -1,0 +1,959 @@
+{
+  "$defs": {
+    "Assertion": {
+      "additionalProperties": false,
+      "properties": {
+        "assertion_type": {
+          "enum": [
+            "source_statement",
+            "research_classification",
+            "reported_result"
+          ],
+          "title": "Assertion Type",
+          "type": "string"
+        },
+        "evidence_type": {
+          "enum": [
+            "legal_text",
+            "official_guidance",
+            "standard_catalogue",
+            "specification",
+            "project_report",
+            "announcement",
+            "analysis",
+            "meeting_minutes"
+          ],
+          "title": "Evidence Type",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "interoperability": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Interoperability"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "limitations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Limitations",
+          "type": "array"
+        },
+        "locator": {
+          "minLength": 1,
+          "title": "Locator",
+          "type": "string"
+        },
+        "object": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EntityObject"
+            },
+            {
+              "$ref": "#/$defs/LiteralObject"
+            }
+          ],
+          "title": "Object"
+        },
+        "observed_at": {
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Observed At",
+          "type": "string"
+        },
+        "predicate": {
+          "enum": [
+            "applies_to",
+            "requires",
+            "part_of",
+            "amends",
+            "supersedes",
+            "depends_on",
+            "has_status",
+            "has_milestone",
+            "developed_by",
+            "targets_sector",
+            "operates_in",
+            "publishes",
+            "uses_as_input",
+            "references",
+            "normatively_references",
+            "maps_to_under_conditions",
+            "implements_version",
+            "tested_with",
+            "reports_result",
+            "aligned_with_claim",
+            "recognises_authority",
+            "cites_standard",
+            "enables",
+            "coordinates_with",
+            "liaison_with",
+            "uses_standard"
+          ],
+          "title": "Predicate",
+          "type": "string"
+        },
+        "review_status": {
+          "enum": [
+            "machine_assisted_unreviewed",
+            "human_reviewed",
+            "adjudicated"
+          ],
+          "title": "Review Status",
+          "type": "string"
+        },
+        "source_ids": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "statement": {
+          "minLength": 1,
+          "title": "Statement",
+          "type": "string"
+        },
+        "subject": {
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+          "title": "Subject",
+          "type": "string"
+        },
+        "valid_from": {
+          "anyOf": [
+            {
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Valid From"
+        },
+        "valid_to": {
+          "anyOf": [
+            {
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Valid To"
+        },
+        "curation": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "const": "superseded"
+            },
+            "superseded_at": {
+              "type": "string",
+              "format": "date"
+            },
+            "replacement_ids": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "superseded_at",
+            "replacement_ids",
+            "reason"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "subject",
+        "predicate",
+        "object",
+        "statement",
+        "source_ids",
+        "locator",
+        "assertion_type",
+        "evidence_type",
+        "review_status",
+        "observed_at",
+        "valid_from",
+        "valid_to",
+        "limitations"
+      ],
+      "title": "Assertion",
+      "type": "object"
+    },
+    "Entity": {
+      "additionalProperties": false,
+      "properties": {
+        "dates": {
+          "items": {
+            "$ref": "#/$defs/EventDate"
+          },
+          "title": "Dates",
+          "type": "array"
+        },
+        "description": {
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "evidence_status": {
+          "enum": [
+            "dossier_extracted",
+            "primary_rechecked",
+            "research_defined"
+          ],
+          "title": "Evidence Status",
+          "type": "string"
+        },
+        "geography": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Geography"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "id": {
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "jurisdiction_ids": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+            "type": "string"
+          },
+          "title": "Jurisdiction Ids",
+          "type": "array"
+        },
+        "label": {
+          "minLength": 1,
+          "title": "Label",
+          "type": "string"
+        },
+        "limitations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Limitations",
+          "type": "array"
+        },
+        "review_status": {
+          "enum": [
+            "machine_assisted_unreviewed",
+            "human_reviewed",
+            "adjudicated"
+          ],
+          "title": "Review Status",
+          "type": "string"
+        },
+        "sector_ids": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+            "type": "string"
+          },
+          "title": "Sector Ids",
+          "type": "array"
+        },
+        "source_ids": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+            "type": "string"
+          },
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "status": {
+          "$ref": "#/$defs/Status"
+        },
+        "type": {
+          "enum": [
+            "LegalInstrument",
+            "Provision",
+            "Requirement",
+            "Policy",
+            "Standard",
+            "StandardisationProject",
+            "Organisation",
+            "Committee",
+            "Initiative",
+            "Specification",
+            "Ontology",
+            "Implementation",
+            "Pilot",
+            "Report",
+            "CertificationScheme",
+            "Concept",
+            "Jurisdiction",
+            "Sector"
+          ],
+          "title": "Type",
+          "type": "string"
+        },
+        "version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Version"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "label",
+        "description",
+        "version",
+        "jurisdiction_ids",
+        "sector_ids",
+        "status",
+        "dates",
+        "source_ids",
+        "evidence_status",
+        "review_status",
+        "limitations"
+      ],
+      "title": "Entity",
+      "type": "object"
+    },
+    "EntityObject": {
+      "additionalProperties": false,
+      "properties": {
+        "entity_id": {
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+          "title": "Entity Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "entity_id"
+      ],
+      "title": "EntityObject",
+      "type": "object"
+    },
+    "EventDate": {
+      "additionalProperties": false,
+      "properties": {
+        "condition": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Condition"
+        },
+        "date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Date"
+        },
+        "kind": {
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "title": "Kind",
+          "type": "string"
+        },
+        "precision": {
+          "enum": [
+            "day",
+            "month",
+            "year",
+            "conditional",
+            "unknown"
+          ],
+          "title": "Precision",
+          "type": "string"
+        },
+        "source_ids": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+            "type": "string"
+          },
+          "title": "Source Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "kind",
+        "date",
+        "precision",
+        "condition",
+        "source_ids"
+      ],
+      "title": "EventDate",
+      "type": "object"
+    },
+    "Geography": {
+      "additionalProperties": false,
+      "properties": {
+        "iso_3166_2": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Iso 3166 2"
+        },
+        "iso_alpha2": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Iso Alpha2"
+        },
+        "iso_alpha3": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Iso Alpha3"
+        },
+        "join_note": {
+          "minLength": 1,
+          "title": "Join Note",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "country",
+            "territory",
+            "subnational",
+            "supranational",
+            "region",
+            "global"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "map_code": {
+          "minLength": 1,
+          "title": "Map Code",
+          "type": "string"
+        },
+        "member_ids": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+            "type": "string"
+          },
+          "title": "Member Ids",
+          "type": "array"
+        },
+        "parent_id": {
+          "anyOf": [
+            {
+              "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Parent Id"
+        }
+      },
+      "required": [
+        "kind",
+        "iso_alpha2",
+        "iso_alpha3",
+        "iso_3166_2",
+        "map_code",
+        "parent_id",
+        "member_ids",
+        "join_note"
+      ],
+      "title": "Geography",
+      "type": "object"
+    },
+    "Interoperability": {
+      "additionalProperties": false,
+      "properties": {
+        "dimensions": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Dimensions",
+          "type": "array"
+        },
+        "independence": {
+          "enum": [
+            "self_report",
+            "consortium_report",
+            "external_report",
+            "independently_reproduced"
+          ],
+          "title": "Independence",
+          "type": "string"
+        },
+        "limitations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Limitations",
+          "type": "array"
+        },
+        "operation": {
+          "minLength": 1,
+          "title": "Operation",
+          "type": "string"
+        },
+        "result": {
+          "enum": [
+            "reported_success",
+            "pass",
+            "partial",
+            "fail",
+            "inconclusive",
+            "not_tested"
+          ],
+          "title": "Result",
+          "type": "string"
+        },
+        "systems": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Systems",
+          "type": "array"
+        },
+        "test_date": {
+          "anyOf": [
+            {
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Test Date"
+        }
+      },
+      "required": [
+        "dimensions",
+        "operation",
+        "systems",
+        "result",
+        "independence",
+        "test_date",
+        "limitations"
+      ],
+      "title": "Interoperability",
+      "type": "object"
+    },
+    "LiteralObject": {
+      "additionalProperties": false,
+      "properties": {
+        "datatype": {
+          "enum": [
+            "string",
+            "date",
+            "boolean",
+            "number"
+          ],
+          "title": "Datatype",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "value",
+        "datatype"
+      ],
+      "title": "LiteralObject",
+      "type": "object"
+    },
+    "Metadata": {
+      "additionalProperties": false,
+      "properties": {
+        "coverage_statement": {
+          "minLength": 1,
+          "title": "Coverage Statement",
+          "type": "string"
+        },
+        "evidence_cutoff": {
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Evidence Cutoff",
+          "type": "string"
+        },
+        "limitations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Limitations",
+          "type": "array"
+        },
+        "namespace": {
+          "minLength": 1,
+          "title": "Namespace",
+          "type": "string"
+        },
+        "protocol_version": {
+          "minLength": 1,
+          "title": "Protocol Version",
+          "type": "string"
+        },
+        "release_date": {
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Release Date",
+          "type": "string"
+        },
+        "release_status": {
+          "enum": [
+            "research_seed",
+            "reviewed_release",
+            "candidate"
+          ],
+          "title": "Release Status",
+          "type": "string"
+        },
+        "review_status": {
+          "enum": [
+            "machine_assisted_unreviewed",
+            "human_reviewed",
+            "adjudicated"
+          ],
+          "title": "Review Status",
+          "type": "string"
+        },
+        "rights_statement": {
+          "minLength": 1,
+          "title": "Rights Statement",
+          "type": "string"
+        },
+        "schema_version": {
+          "minLength": 1,
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "version": {
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "title": "Version",
+          "type": "string"
+        },
+        "previous_version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "candidate_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "change_manifest": {
+          "type": "string",
+          "const": "change-manifest.json"
+        },
+        "evidence_updates": {
+          "type": "object"
+        },
+        "evidence_batches": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "checked_at": {
+                "type": "string",
+                "format": "date"
+              },
+              "description": {
+                "type": "string"
+              },
+              "review_status": {
+                "const": "machine_assisted_unreviewed"
+              }
+            },
+            "required": [
+              "id",
+              "checked_at",
+              "description",
+              "review_status"
+            ]
+          }
+        }
+      },
+      "required": [
+        "title",
+        "version",
+        "schema_version",
+        "protocol_version",
+        "release_date",
+        "evidence_cutoff",
+        "namespace",
+        "release_status",
+        "review_status",
+        "coverage_statement",
+        "rights_statement",
+        "limitations",
+        "previous_version",
+        "candidate_id",
+        "change_manifest",
+        "evidence_batches"
+      ],
+      "title": "Metadata",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "access_status": {
+          "enum": [
+            "dossier_only",
+            "opened",
+            "search_snippet",
+            "unavailable"
+          ],
+          "title": "Access Status",
+          "type": "string"
+        },
+        "dossier_files": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Dossier Files",
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "language": {
+          "minLength": 1,
+          "title": "Language",
+          "type": "string"
+        },
+        "limitations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Limitations",
+          "type": "array"
+        },
+        "publisher": {
+          "minLength": 1,
+          "title": "Publisher",
+          "type": "string"
+        },
+        "retrieved_at": {
+          "anyOf": [
+            {
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Retrieved At"
+        },
+        "source_type": {
+          "enum": [
+            "legal_text",
+            "public_authority",
+            "standards_body",
+            "project_primary",
+            "academic",
+            "industry_primary",
+            "secondary",
+            "standard"
+          ],
+          "title": "Source Type",
+          "type": "string"
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "pattern": "^https?://[^\\s]+$",
+          "title": "Url",
+          "type": "string"
+        },
+        "locator": {
+          "type": "string"
+        },
+        "published_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "updated_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "source_identity_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+        },
+        "artifact_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "url",
+        "title",
+        "publisher",
+        "source_type",
+        "language",
+        "access_status",
+        "retrieved_at",
+        "dossier_files",
+        "limitations"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "Status": {
+      "additionalProperties": false,
+      "properties": {
+        "as_of": {
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "As Of",
+          "type": "string"
+        },
+        "scope_note": {
+          "minLength": 1,
+          "title": "Scope Note",
+          "type": "string"
+        },
+        "value": {
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "title": "Value",
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "as_of",
+        "scope_note"
+      ],
+      "title": "Status",
+      "type": "object"
+    }
+  },
+  "$id": "urn:spherity:dpp-atlas:schema:0.2.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Qualified documentary and analytical records, including explicit curation history and source-observation identity. Semantic and reference checks supplement this schema.",
+  "properties": {
+    "assertions": {
+      "items": {
+        "$ref": "#/$defs/Assertion"
+      },
+      "title": "Assertions",
+      "type": "array"
+    },
+    "entities": {
+      "items": {
+        "$ref": "#/$defs/Entity"
+      },
+      "title": "Entities",
+      "type": "array"
+    },
+    "metadata": {
+      "$ref": "#/$defs/Metadata"
+    },
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/Source"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "metadata",
+    "entities",
+    "assertions",
+    "sources"
+  ],
+  "title": "Global DPP Atlas candidate dataset schema 0.2.0",
+  "type": "object"
+}

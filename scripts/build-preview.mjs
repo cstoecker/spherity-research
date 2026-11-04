@@ -7,6 +7,7 @@ import { marked } from "marked";
 import { parse as parseYaml } from "yaml";
 
 const projectDirectory = process.cwd();
+await import('./prepare-dpp-atlas.mjs');
 const sourceDirectory = path.join(projectDirectory, "docs");
 const outputDirectory = path.join(projectDirectory, "_site");
 
@@ -50,7 +51,10 @@ const authors = parseYaml(
 
 const site = {
   ...config,
-  data: { publications, homepage_faq: homepageFaq, authors },
+  data: { publications, homepage_faq: homepageFaq, authors,
+    dpp_candidate: JSON.parse(await readFile(path.join(sourceDirectory, "_data", "dpp_candidate.json"), "utf8")),
+    dpp_calendar: JSON.parse(await readFile(path.join(sourceDirectory, "_data", "dpp_calendar.json"), "utf8"))
+  },
   time: new Date(),
   url: config.url,
   baseurl: config.baseurl
@@ -111,6 +115,8 @@ await mkdir(outputDirectory, { recursive: true });
 await cp(path.join(sourceDirectory, "assets"), path.join(outputDirectory, "assets"), {
   recursive: true
 });
+
+await cp(path.join(sourceDirectory, 'dpp-explorer'), path.join(outputDirectory, 'dpp-explorer'), { recursive: true });
 
 const passthroughFiles = await glob("*.{html,pdf,txt}", {
   cwd: sourceDirectory,

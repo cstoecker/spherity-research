@@ -1,0 +1,410 @@
+{
+  "id": "uk-policy-additions-2026-10-25",
+  "checked_at": "2026-10-25",
+  "base_version": "0.1.0",
+  "description": "UK policy evidence update: two sector consultations and sourced connections for the existing Great Britain DPR consultation. Policy discussion is distinguished from enacted passport duties.",
+  "review_status": "machine_assisted_unreviewed",
+  "relationship_definitions": {
+    "references": "Explicit discussion or citation in a source; does not imply adoption, legal applicability, mutual recognition or completed interoperability."
+  },
+  "entities": [
+    {
+      "id": "uk-construction-products-reform-white-paper",
+      "type": "Policy",
+      "label": "UK Construction Products Reform White Paper",
+      "description": "Proposes digital construction-product information and explores phased DPPs or equivalent records.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-gb-gbn"
+      ],
+      "sector_ids": [
+        "sec-construction"
+      ],
+      "geography": null,
+      "status": {
+        "value": "consultation_closed_policy_unresolved",
+        "as_of": "2026-10-25",
+        "scope_note": "GB digital-information proposals within wider UK reform; Northern Ireland retains separate Windsor Framework treatment."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2026-02-25",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-uk-construction-white-paper"
+          ]
+        },
+        {
+          "kind": "ends",
+          "date": "2026-05-20",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-uk-construction-white-paper"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-uk-construction-white-paper",
+        "src-update-20261025-uk-construction-progress"
+      ],
+      "limitations": [
+        "Policy proposals, not an enacted domestic DPP duty or fixed commencement date.",
+        "The 2 October progress update still describes responses under consideration; no subsequent final response was established in this check."
+      ]
+    },
+    {
+      "id": "uk-toy-safety-dpp-consultation",
+      "type": "Policy",
+      "label": "Great Britain toy safety and DPP consultation",
+      "description": "Seeks evidence on potential GB toy-safety changes, including digital product passports.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-gb-gbn"
+      ],
+      "sector_ids": [
+        "sec-toys"
+      ],
+      "geography": null,
+      "status": {
+        "value": "consultation_closed_policy_unresolved",
+        "as_of": "2026-10-25",
+        "scope_note": "GB policy development; existing EU and Northern Ireland rules are discussed separately."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2026-07-06",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-uk-toy-consultation"
+          ]
+        },
+        {
+          "kind": "ends",
+          "date": "2026-10-06",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-uk-toy-consultation"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-uk-toy-consultation"
+      ],
+      "limitations": [
+        "A closed call for evidence does not enact a GB passport requirement.",
+        "No post-consultation policy decision was established in this check."
+      ]
+    }
+  ],
+  "assertions": [
+    {
+      "id": "a-update-20261025-gb-dpr-espr",
+      "subject": "eu-gb-dpr-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "The consultation identifies ESPR as the EU DPP framework.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-dpr"
+      ],
+      "locator": "Background; Current regulatory frameworks — The EU regulatory approach",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-gb-dpr-batteries",
+      "subject": "eu-gb-dpr-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-batteries-regulation"
+      },
+      "statement": "The consultation names the EU Batteries Regulation as a sector-specific framework.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-dpr"
+      ],
+      "locator": "Background — sector-specific product information requirements",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-gb-dpr-toys",
+      "subject": "eu-gb-dpr-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-toy-safety-regulation"
+      },
+      "statement": "The consultation names the EU Toy Safety Regulation as a sector-specific framework.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-dpr"
+      ],
+      "locator": "Background — sector-specific product information requirements",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-gb-dpr-construction",
+      "subject": "eu-gb-dpr-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-construction-regulation"
+      },
+      "statement": "The consultation names the EU Construction Products Regulation as a sector-specific framework.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-dpr"
+      ],
+      "locator": "Background — sector-specific product information requirements",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-gb-dpr-white-paper",
+      "subject": "eu-gb-dpr-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "uk-construction-products-reform-white-paper"
+      },
+      "statement": "The consultation links the construction White Paper and its proposed digital-information approach.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-dpr"
+      ],
+      "locator": "Current UK regulatory approach — construction products paragraphs",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-gb-dpr-toy-consultation",
+      "subject": "eu-gb-dpr-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "uk-toy-safety-dpp-consultation"
+      },
+      "statement": "The consultation links the separate toy-safety call for evidence.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-dpr"
+      ],
+      "locator": "Current UK regulatory approach — toy safety call for evidence paragraph",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-uk-construction-eu-regulation",
+      "subject": "uk-construction-products-reform-white-paper",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-construction-regulation"
+      },
+      "statement": "The White Paper considers consistency with the EU construction framework in future GB reform.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-construction-white-paper"
+      ],
+      "locator": "Sections 4.3.1–4.3.2; 7.5.8–7.5.11",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-uk-construction-eu-passport",
+      "subject": "uk-construction-products-reform-white-paper",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-construction-passport-requirement"
+      },
+      "statement": "The White Paper considers GB–EU passport interoperability and phased DPPs or equivalents.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-construction-white-paper"
+      ],
+      "locator": "Sections 7.5.9–7.5.11",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-uk-toys-eu-regulation",
+      "subject": "uk-toy-safety-dpp-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-toy-safety-regulation"
+      },
+      "statement": "The toy consultation considers a GB approach similar to the EU Toy Safety Regulation.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-toy-consultation"
+      ],
+      "locator": "Sections 1(3–6); 2(7–10); 3(11–13)",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-uk-toys-eu-passport",
+      "subject": "uk-toy-safety-dpp-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-toy-passport-requirement"
+      },
+      "statement": "The toy consultation describes EU toy passports and seeks views on their potential GB use.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-toy-consultation"
+      ],
+      "locator": "Sections 2(7), DPP bullet; 3(13)",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-update-20261025-uk-dpr",
+      "title": "Call for evidence: digital product records policy — rechecked 25 October 2026",
+      "url": "https://www.gov.uk/government/calls-for-evidence/call-for-evidence-digital-product-record-policy/call-for-evidence-digital-product-records-policy",
+      "publisher": "UK Government",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-07-27",
+      "dossier_files": [],
+      "locator": "Background; How to respond; Current UK regulatory approach",
+      "limitations": [
+        "Recheck of the source already represented by src-eu-uk-dpr; the existing policy record is reused.",
+        "General UK policy discussion does not supersede instrument-specific EU commencement or Northern Ireland scope."
+      ]
+    },
+    {
+      "id": "src-update-20261025-uk-construction-white-paper",
+      "title": "Construction Products Reform White Paper",
+      "url": "https://www.gov.uk/government/consultations/construction-products-reform-white-paper/construction-products-reform-white-paper",
+      "publisher": "Ministry of Housing, Communities and Local Government",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-02-25",
+      "dossier_files": [],
+      "locator": "Geographical scope and Duration; sections 4.3, 7.5.8–7.5.11, 13.3.1",
+      "limitations": [
+        "Proposals require future legislation; general safety reform dates are not DPP commencement dates."
+      ],
+      "updated_at": "2026-03-30"
+    },
+    {
+      "id": "src-update-20261025-uk-toy-consultation",
+      "title": "Toys safety regulations: call for evidence",
+      "url": "https://www.gov.uk/government/calls-for-evidence/toys-safety-regulations-call-for-evidence/toys-safety-regulations-call-for-evidence",
+      "publisher": "Office for Product Safety and Standards",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-07-06",
+      "dossier_files": [],
+      "locator": "Sections 2(7–10); 3(11–15)",
+      "limitations": [
+        "Consultation on possible GB changes; references to EU rules do not establish their adoption in GB."
+      ]
+    },
+    {
+      "id": "src-update-20261025-uk-construction-progress",
+      "title": "Progress report September 2026: the construction industry",
+      "url": "https://www.gov.uk/government/publications/grenfell-tower-inquiry-government-progress-report-september-2026/progress-report-september-2026-the-construction-industry",
+      "publisher": "Ministry of Housing, Communities and Local Government",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Recommendations 13 and 14 — What we have done; updated 2 October 2026",
+      "limitations": [
+        "A progress report, not implementing legislation.",
+        "Describes responses still under consideration and an intended later government response."
+      ],
+      "updated_at": "2026-10-02"
+    }
+  ]
+}

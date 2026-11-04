@@ -16,6 +16,7 @@
 <figure class="paper-figure centered-figure{% if figure.class %} {{ figure.class | escape }}{% endif %}"
         id="{{ figure.id | escape }}-figure"
         itemscope
+        itemid="{{ figure.content_url | absolute_url }}#image-object"
         itemtype="https://schema.org/ImageObject">
   <a href="{{ figure.content_url | relative_url }}" aria-label="Open the full-size {{ figure.name | escape }} figure">
     <img src="{{ figure.content_url | relative_url }}"

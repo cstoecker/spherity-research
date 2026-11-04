@@ -1,0 +1,186 @@
+{
+  "entity_types": [
+    "CertificationScheme",
+    "Committee",
+    "Concept",
+    "Implementation",
+    "Initiative",
+    "Jurisdiction",
+    "LegalInstrument",
+    "Ontology",
+    "Organisation",
+    "Pilot",
+    "Policy",
+    "Provision",
+    "Report",
+    "Requirement",
+    "Sector",
+    "Specification",
+    "Standard",
+    "StandardisationProject"
+  ],
+  "interoperability_dimensions": [
+    "product_identity",
+    "syntactic_exchange",
+    "semantic_meaning",
+    "evidence_provenance",
+    "authentication",
+    "business_identity",
+    "delegated_authority",
+    "access_control",
+    "lifecycle_continuity",
+    "legal_acceptance"
+  ],
+  "notes": [
+    "Status values describe type-specific recorded states. They are not a single ordered maturity scale.",
+    "Interoperability dimension labels from sources may be narrower; retain original labels in claims."
+  ],
+  "predicates": [
+    "aligned_with_claim",
+    "amends",
+    "applies_to",
+    "cites_standard",
+    "depends_on",
+    "developed_by",
+    "enables",
+    "has_milestone",
+    "has_status",
+    "normatively_references",
+    "operates_in",
+    "part_of",
+    "publishes",
+    "references",
+    "reports_result",
+    "requires",
+    "targets_sector",
+    "tested_with",
+    "uses_as_input"
+  ],
+  "status_values_by_type": {
+    "CertificationScheme": [
+      "planned"
+    ],
+    "Committee": [
+      "active",
+      "established"
+    ],
+    "Concept": [
+      "research_defined"
+    ],
+    "Implementation": [
+      "operational_testing_available",
+      "published_test_environment",
+      "reported_test_capability",
+      "service_start_reported"
+    ],
+    "Initiative": [
+      "active",
+      "active_programme",
+      "completed",
+      "procurement_closed_outcome_unverified",
+      "programme_active_in_dossier",
+      "published_outputs",
+      "research_reported"
+    ],
+    "Jurisdiction": [
+      "research_defined"
+    ],
+    "LegalInstrument": [
+      "applicable_adjacent_law",
+      "enabling_framework_in_force",
+      "enacted",
+      "enacted_adjacent_law",
+      "enacted_enabling_framework",
+      "enacted_framework",
+      "enacted_future_application",
+      "enacted_implementing_measure",
+      "enacted_sector_law",
+      "in_force",
+      "legislative_proposal",
+      "published_correction"
+    ],
+    "Ontology": [
+      "exploratory",
+      "unofficial_proposal"
+    ],
+    "Organisation": [
+      "active"
+    ],
+    "Pilot": [
+      "active_pilot",
+      "demonstration_programme_listed",
+      "demonstration_reported",
+      "funded_pilot_announced",
+      "onboarding_reported",
+      "pilot_announced",
+      "procurement_closed_outcome_unverified",
+      "reported_trials",
+      "research_pilot_reported"
+    ],
+    "Policy": [
+      "adopted_action_plan",
+      "adopted_recommendation",
+      "consultation_closed_policy_unresolved",
+      "draft",
+      "indicative_plan",
+      "nonbinding_policy_commitment",
+      "proposal_outcome_unverified"
+    ],
+    "Provision": [
+      "enabling_provision_in_force",
+      "enacted_framework_provision",
+      "enacted_future_obligation"
+    ],
+    "Report": [
+      "exporter_guidance",
+      "final_report_published",
+      "guidance_published",
+      "non_binding_guidance",
+      "nonbinding_guidance",
+      "official_guidance",
+      "official_scope_statement",
+      "published",
+      "published_guidance",
+      "published_pilot_blueprint",
+      "published_report",
+      "reported_non_incorporation_current_unverified",
+      "study_reported",
+      "work_in_progress"
+    ],
+    "Requirement": [
+      "enacted_conditional_digital_information",
+      "enacted_conditional_obligation",
+      "enacted_future_obligation",
+      "in_force_officially_reported",
+      "operative_sector_duty"
+    ],
+    "Sector": [
+      "research_defined"
+    ],
+    "Specification": [
+      "available",
+      "evolving_specification_family",
+      "experimental_working_draft",
+      "identified_resource",
+      "maintained_pilot",
+      "published",
+      "published_ecosystem_standard",
+      "published_specification",
+      "work_in_progress"
+    ],
+    "Standard": [
+      "in_force_recommendation",
+      "published",
+      "published_citation_pending",
+      "published_oj_cited",
+      "ratified",
+      "recommendation"
+    ],
+    "StandardisationProject": [
+      "new_project_approved",
+      "public_draft_final_status_unverified",
+      "tentative_deliverable",
+      "under_development"
+    ]
+  }
+}

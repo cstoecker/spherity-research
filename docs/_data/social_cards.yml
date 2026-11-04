@@ -1,3 +1,133 @@
+- publication_url: /eu-dpp-registry-w3c-dpp5.html
+  output: /assets/preview-eu-dpp-registry-w3c-dpp5.webp
+  style: research-grid-v1
+  mode: generated
+  format_label: RESEARCH PAPER · DPP + W3C
+  title_size: 44
+  title_lines:
+  - EU DPP Registry
+  - and DPP5.0
+  subtitle_size: 25
+  subtitle_lines:
+  - W3C standards & trust
+  deck_lines:
+  - From semantic product data to
+  - verifiable evidence and EBW.
+  byline: Dr. Carsten Stöcker · Spherity GmbH
+  visual: /assets/eu-dpp-registry-dpp5-cover.jpg
+  visual_fit: contain
+
+- publication_url: /europes-answer-to-palantir.html
+  output: /assets/preview-europes-answer-to-palantir.webp
+  style: research-grid-v1
+  mode: generated
+  format_label: TWO PAPERS + INTERACTIVE EVIDENCE GRAPH
+  title_size: 46
+  title_lines:
+    - Europe’s answer
+    - to Palantir
+  subtitle_size: 25
+  subtitle_lines:
+    - A globally collaborative model
+  deck_lines:
+    - Open standards. Shared meaning.
+    - Participant-controlled industrial AI.
+  byline: Dr. Carsten Stöcker, Spherity GmbH
+  visual: /assets/europes-answer-to-palantir/v1.0/executive-cover.jpg
+  visual_fit: contain
+- publication_url: /global-cooperation-sovereign-industrial-ai.html
+  output: /assets/preview-global-cooperation-industrial-ai.webp
+  style: research-grid-v1
+  mode: generated
+  format_label: ACADEMIC PAPER · VERSION 1.0
+  title_size: 43
+  title_lines:
+    - Sovereign
+    - Industrial AI
+  subtitle_size: 25
+  subtitle_lines:
+    - A global cooperation model
+  deck_lines:
+    - European dataspaces, open standards
+    - and verifiable evidence.
+  byline: Dr. Carsten Stöcker, Spherity GmbH
+  visual: /assets/europes-answer-to-palantir/v1.0/academic-cover.jpg
+  visual_fit: contain
+  topics:
+    - Industrial AI
+    - Evidence graphs
+    - Open standards
+
+- publication_url: /dpp-explorer/
+  page_type: website
+  output: /assets/social/global-dpp-atlas.jpg
+  style: research-grid-v1
+  layout: atlas-map
+  mode: generated
+  format_label: INTERACTIVE DPP RESEARCH
+  title_size: 42
+  title_lines:
+    - Global
+    - DPP Atlas
+  deck_lines:
+    - Regulation, standards
+    - and ecosystems.
+  topics:
+    - World map
+    - Knowledge graph
+    - Evidence & timelines
+  byline: Dr. Carsten Stöcker · Spherity GmbH
+  visual: /assets/dpp-global/whitepaper-v1/regulatory-social-map.png
+  scope_note: Selected measures · Scope and dates matter
+  call_to_action: Explore the evidence →
+
+- publication_url: /global-digital-product-passport-regulation.html
+  output: /assets/preview-global-digital-product-passports-atlas.webp
+  style: research-grid-v1
+  mode: generated
+  format_label: WHITEPAPER + INTERACTIVE WORLD ATLAS
+  title_size: 49
+  title_lines:
+    - Global Digital
+    - Product Passports
+  subtitle_size: 25
+  subtitle_lines: []
+  deck_lines:
+    - Regulation · Interoperability
+  byline: Dr. Carsten Stöcker · Version 1.0 · 25 October 2026
+  visual: /assets/dpp-global/whitepaper-v1/paper-cover.jpg
+  visual_fit: contain
+  map_visual: /assets/dpp-global/whitepaper-v1/regulatory-social-map.png
+  map_label: DPP Atlas
+
+- publication_url: "/governed-robot-memory-physical-ai.html"
+  output: "/assets/preview-governed-robot-memory-physical-ai.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "RESEARCH PAPER · OPEN ACCESS PDF"
+  title_size: 46
+  title_lines: ["Governed Memory", "for Physical AI"]
+  subtitle_size: 26
+  subtitle_lines: ["From experience to action"]
+  deck_lines: ["Memory supply chain security,", "evidence roles and runtime revocation."]
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  visual: "/assets/governed-robot-memory-cover.jpg"
+  visual_fit: "contain"
+
+- publication_url: "/ai-agent-revocation-containment-multi-agent-systems.html"
+  output: "/assets/preview-ai-agent-revocation-containment.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "EXECUTIVE BRIEF + TWO PAPERS · 3 PDFs"
+  title_size: 46
+  title_lines: ["AI Agent Revocation", "& Containment"]
+  subtitle_size: 27
+  subtitle_lines: ["Multi-agent systems across companies"]
+  deck_lines: ["Verifiable authority, runtime control", "and credential-status privacy."]
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  visual: "/assets/ai-agent-revocation-mas-executive-brief-cover.jpg"
+  visual_fit: "contain"
+
 - publication_url: "/governing-ai-that-acts-across-companies.html"
   output: "/assets/preview-governing-ai-that-acts-across-companies.webp"
   style: "research-grid-v1"
@@ -5,8 +135,8 @@
   format_label: "EXECUTIVE BRIEF + AI SAFETY SERIES · 4 PDFs"
   title_size: 43
   title_lines:
-    - "Governing AI That Acts"
-    - "Across Companies"
+    - "Governing Safe AI That"
+    - "Acts Across Companies"
   subtitle_size: 25
   subtitle_lines:
     - "Protected execution · Runtime assurance"
@@ -294,21 +424,22 @@
   visual: "/assets/Infochart-Securing-Legal-Person-Digital-Identity-Against-Quantum-Vulnerabilities-Spherity-GmbH-05-2026.png"
   visual_fit: "contain"
 
-- publication_url: "/ebw-roadmap.html"
-  output: "/assets/preview-ebw-roadmap.webp"
-  style: "research-grid-v1"
-  mode: "generated"
-  format_label: "POLICY ROADMAP · EUROPEAN BUSINESS WALLET"
-  title_size: 44
+- publication_url: /ebw-roadmap.html
+  output: /assets/preview-ebw-roadmap.webp
+  style: research-grid-v1
+  mode: generated
+  format_label: RESEARCH PAPER · EUROPEAN BUSINESS WALLET
+  title_size: 43
   title_lines:
-    - "Legal & Operational"
-    - "EBW Roadmap Toward"
-    - "EU-Wide Acceptance"
+    - European Business
+    - "Wallets: Regulation"
+    - and Roadmap
   deck_lines:
-    - "Legal, standards, conformance and adoption"
-    - "gates from 2026 to 2029."
-  byline: "Spherity Research · European policy roadmap"
-  visual_type: "ebw-timeline"
+    - Conditional legal clocks. Practical guidance.
+    - Business value, resilience and Trusted AI.
+  byline: Dr. Carsten Stöcker · Spherity GmbH
+  visual: /assets/ebw-roadmap-paper-cover.jpg
+  visual_fit: contain
 
 - publication_url: "/threat-escalation-model-germany-eu.html"
   output: "/assets/preview-threat-escalation-model-germany-eu.webp"

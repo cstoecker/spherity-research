@@ -1,0 +1,540 @@
+.dpp-explorer{--ink:#24292f;--muted:#57606a;--line:#d8dee4;--paper:#fff;--wash:#f6f8fa;--purple:#0969da;--deep:#15375c;--soft:#e8f1fc;--teal:#167a79;--amber:#ad6f1a;--radius:12px;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#f6f8fa;font-size:14px;line-height:1.5}.dpp-explorer *{box-sizing:border-box}.dpp-explorer{margin:0}.dpp-explorer a{color:var(--purple);text-decoration:none}.dpp-explorer a:hover{text-decoration:underline}.dpp-explorer button,.dpp-explorer input,.dpp-explorer select{font:inherit}.dpp-explorer button,.dpp-explorer select{cursor:pointer}.dpp-explorer button{color:var(--ink)}.dpp-explorer button:focus-visible,.dpp-explorer a:focus-visible,.dpp-explorer input:focus-visible,.dpp-explorer select:focus-visible,.dpp-explorer summary:focus-visible,.dpp-explorer svg [tabindex]:focus-visible{outline:3px solid #a877df;outline-offset:3px}.dpp-explorer button{border:1px solid var(--line);background:#fff;border-radius:6px;padding:7px 12px;transition:background .15s,border-color .15s}.dpp-explorer button:hover{background:var(--soft);border-color:#b99cd8}.dpp-explorer button:disabled{opacity:.4;cursor:default}.dpp-explorer [hidden]{display:none!important}.dpp-explorer h1,.dpp-explorer h2,.dpp-explorer h3,.dpp-explorer p{margin-top:0}.dpp-explorer h1{font-size:clamp(29px,2.9vw,43px);line-height:1.12;font-weight:580;letter-spacing:-1.6px;margin-bottom:15px}.dpp-explorer h2{font-size:24px;line-height:1.2;font-weight:570;letter-spacing:-.6px}.dpp-explorer h3{font-size:14px;font-weight:650}.dpp-explorer small{font-size:12px}.dpp-explorer .skip{position:fixed;top:-60px;left:20px;z-index:99;background:var(--deep);color:#fff;padding:12px}.dpp-explorer .skip:focus{top:10px}.dpp-explorer .masthead{height:88px;max-width:1760px;margin:auto;padding:0 42px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.dpp-explorer .brand{display:flex;gap:9px;align-items:center;color:var(--deep);font-size:27px;font-weight:700;letter-spacing:-1.5px;line-height:.9}.dpp-explorer .brand:hover{text-decoration:none}.dpp-explorer .brand-symbol{width:38px;height:38px;display:grid;place-items:center;border:2px solid var(--purple);border-radius:50%;font-family:Georgia,serif;font-size:37px;font-style:italic;font-weight:500;line-height:1}.dpp-explorer .brand-sub{display:block;font-size:12px;letter-spacing:3px;font-weight:600;margin-top:7px}.dpp-explorer .masthead nav{display:flex;gap:26px;font-size:12px}.dpp-explorer .masthead nav a{color:#51435e}.dpp-explorer main{max-width:1760px;padding:0 42px;margin:auto}.dpp-explorer .intro{display:flex;justify-content:space-between;align-items:center;gap:36px;padding:42px 0 28px}.dpp-explorer .eyebrow{font-size:12px;font-weight:700;letter-spacing:2px;color:var(--purple);margin-bottom:20px}.dpp-explorer .eyebrow span{color:#83758f;margin-left:15px;font-size:12px;letter-spacing:1px}.dpp-explorer .dek{font-size:15px;color:var(--muted);margin-bottom:0}.dpp-explorer .edition{flex:0 0 240px;font-size:12px;position:relative;padding:10px 0 10px 19px;border-left:1px solid var(--line)}.dpp-explorer .edition strong,.dpp-explorer .edition span,.dpp-explorer .edition small,.dpp-explorer .edition a{display:block}.dpp-explorer .edition strong{font-size:12px;margin-bottom:4px}.dpp-explorer .edition small{margin:8px 0 15px;color:var(--muted)}.dpp-explorer .edition .live-dot{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--purple);left:0;top:15px;transform:translateX(-3px)}.dpp-explorer .edition a{font-size:12px;font-weight:650}.dpp-explorer .preset-strip{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:23px}.dpp-explorer .preset-strip>span{font-size:12px;font-weight:700;letter-spacing:1.4px;color:#8b7d97;margin-right:8px}.dpp-explorer .preset-strip button{font-size:12px;border-radius:30px;padding:6px 13px;background:#fff}.dpp-explorer .explorer{display:grid;grid-template-columns:227px minmax(350px,1fr) 300px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);overflow:hidden;box-shadow:0 7px 25px #371e5705;scroll-margin-top:15px;align-items:start}.dpp-explorer .filters{padding:22px 17px;background:#fbfafc;border-right:1px solid var(--line);height:100%;}.dpp-explorer .filter-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.dpp-explorer .filter-heading h2{font-size:13px;letter-spacing:0;margin:0;font-weight:650}.dpp-explorer .text-button{background:none;border:0;color:var(--purple);font-size:12px;padding:3px 0;border-radius:2px}.dpp-explorer .field-label{display:block;font-size:12px;font-weight:650;color:#5c4c6f;margin:17px 0 6px}.dpp-explorer .search-wrap{display:flex;align-items:center;border:1px solid var(--line);border-radius:6px;background:#fff;gap:5px;padding-left:8px}.dpp-explorer .search-wrap span{font-size:21px;color:#8f819d}.dpp-explorer .search-wrap input{width:100%;min-width:0;border:0;background:none;font-size:12px;padding:8px 6px;border-radius:6px}.dpp-explorer select{width:100%;background:#fff;border:1px solid var(--line);border-radius:6px;font-size:12px;color:#51445e;padding:9px 25px 9px 8px;text-overflow:ellipsis}.dpp-explorer .filter-group{border-bottom:1px solid var(--line);padding:17px 0 12px}.dpp-explorer .filter-group summary{font-size:12px;font-weight:650;display:flex;justify-content:space-between;cursor:pointer;list-style:none;gap:4px}.dpp-explorer .filter-group summary::after{content:'+';color:#9f8daf}.dpp-explorer .filter-group[open] summary::after{content:'−'}.dpp-explorer .filter-group summary span{color:var(--purple);margin-left:auto}.dpp-explorer .check-options{display:flex;flex-direction:column;margin-top:10px;gap:7px}.dpp-explorer .check-options label{display:flex;gap:7px;align-items:flex-start;font-size:12px;line-height:1.45;color:#6c5e7c;cursor:pointer}.dpp-explorer .check-options input{accent-color:var(--purple);margin:1px 0 0;width:12px;height:12px;flex:0 0 12px}.dpp-explorer .check-options label:has(input:checked){color:var(--deep);font-weight:600}.dpp-explorer .filter-hint{font-size:12px;color:#8b7d97;margin:17px 0 0}.dpp-explorer .workspace{min-width:0}.dpp-explorer .viewbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 19px 0;border-bottom:1px solid var(--line)}.dpp-explorer .tabs{display:flex;gap:17px}.dpp-explorer .tabs button{border:0;background:none;border-radius:0;font-size:12px;padding:10px 0 14px;color:#8a7c96;border-bottom:2px solid transparent;white-space:nowrap}.dpp-explorer .tabs button[aria-selected=true]{border-bottom-color:var(--purple);color:var(--deep);font-weight:700}.dpp-explorer .icon-button{border:0;font-size:12px;padding:5px 0;background:none;color:#6a517e;white-space:nowrap;margin-top:-6px}.dpp-explorer .resultbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:15px 19px 10px;gap:8px;min-height:51px}.dpp-explorer .resultbar strong{font-size:19px;font-weight:600;color:var(--deep)}.dpp-explorer #result-summary{font-size:12px;color:#897995;margin-left:5px}.dpp-explorer .chips{display:flex;gap:4px;flex-wrap:wrap}.dpp-explorer .chips button{border:0;border-radius:4px;font-size:12px;padding:3px 6px;background:var(--soft);color:var(--purple)}.dpp-explorer .canvas-title{display:flex;justify-content:space-between;align-items:center;margin:7px 19px 0;min-height:34px}.dpp-explorer .canvas-title>span{font-size:12px;letter-spacing:1.3px;font-weight:650;color:#93849f}.dpp-explorer .small-button{font-size:12px;padding:3px 7px;min-width:24px;border-color:var(--line);color:#85738f}.dpp-explorer .canvas-title>div{display:flex;gap:4px}.dpp-explorer .map-wrap{position:relative;margin:0 6px}.dpp-explorer .map-wrap svg{width:100%;height:auto;min-height:300px;max-height:530px;display:block;touch-action:none}.dpp-explorer .map-ocean{fill:#faf9fc;stroke:#e9e3f0;stroke-width:.5}.dpp-explorer .country{stroke:#fff;stroke-width:.7;cursor:pointer;transition:fill .18s}.dpp-explorer .country:hover,.dpp-explorer .country:focus{stroke:var(--deep);stroke-width:1.4}.dpp-explorer .country.selected{stroke:var(--deep);stroke-width:2}.dpp-explorer .tooltip{position:absolute;pointer-events:none;max-width:230px;background:var(--deep);color:white;border-radius:6px;padding:8px 11px;font-size:12px;box-shadow:0 4px 12px #21123422;z-index:2}.dpp-explorer .tooltip span{display:block;color:#d6c6e7;font-size:12px}.dpp-explorer .map-legend,.dpp-explorer .graph-legend{display:flex;align-items:center;flex-wrap:wrap;gap:12px;padding:8px 20px 17px;font-size:12px;color:#82728f}.dpp-explorer .map-legend>span,.dpp-explorer .graph-legend>span{display:flex;align-items:center;gap:5px;white-space:nowrap}.dpp-explorer .swatch{width:9px;height:9px;border-radius:2px;background:#6335a5;display:inline-block;flex:0 0 9px}.dpp-explorer .swatch.none{background:#e7e3ed}.dpp-explorer .swatch.light{background:#d8c6ec}.dpp-explorer .swatch.medium{background:#a680ce}.dpp-explorer .swatch.dark{background:#6335a5}.dpp-explorer .swatch.standard{background:var(--teal)}.dpp-explorer .swatch.ecosystem{background:var(--amber)}.dpp-explorer .map-legend small,.dpp-explorer .graph-legend small{font-size:12px;display:block;width:100%;color:#9a8ca5}.dpp-explorer .scope-tray{margin:0 19px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.dpp-explorer .scope-tray>span{display:block;font-size:12px;color:#93859f;font-weight:650;letter-spacing:1.1px;margin-bottom:9px}.dpp-explorer #scope-buttons{display:flex;flex-wrap:wrap;gap:6px}.dpp-explorer #scope-buttons button{font-size:12px;border-radius:5px;background:#faf8fd;padding:5px 9px}.dpp-explorer #scope-buttons button b{font-weight:500;margin-left:6px;color:#9776b7}.dpp-explorer .map-note{font-size:12px;color:#9b8fa5;padding:11px 19px 0;line-height:1.6;margin-bottom:12px}.dpp-explorer .map-note a{color:#826296}.dpp-explorer .record-shelf{padding:12px 19px 22px;border-top:1px solid var(--line)}.dpp-explorer .section-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:10px}.dpp-explorer .section-label h3{font-size:12px;margin:0}.dpp-explorer .section-label button{font-size:12px}.dpp-explorer #record-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.dpp-explorer .record-card{background:#faf9fc;border:1px solid #ece7f1;border-radius:7px;text-align:left;padding:11px;display:flex;flex-direction:column;gap:7px}.dpp-explorer .record-card strong{font-size:12px;font-weight:600;line-height:1.4}.dpp-explorer .record-card small{font-size:12px;color:#8d7e99}.dpp-explorer .card-type{font-size:12px;letter-spacing:.8px;text-transform:uppercase;color:var(--purple);font-weight:650}.dpp-explorer .card-type.standards{color:var(--teal)}.dpp-explorer .card-type.ecosystems{color:var(--amber)}.dpp-explorer .inspector{border-left:1px solid var(--line);min-height:100%;background:#fcfbfd;min-width:0}.dpp-explorer .inspector-top{display:flex;justify-content:space-between;padding:23px 20px 14px;font-size:12px;color:#9a8aa6;letter-spacing:1.2px;font-weight:650;gap:8px}.dpp-explorer .inspector-top button{font-size:12px;letter-spacing:0}.dpp-explorer #detail-content{padding:10px 20px 24px;overflow-wrap:anywhere}.dpp-explorer .detail-placeholder{padding:28px 0;color:#8a7b96}.dpp-explorer .detail-placeholder h2{font-size:22px;color:#3d2854;margin-bottom:15px}.dpp-explorer .detail-placeholder p{font-size:12px;line-height:1.8}.dpp-explorer .detail-placeholder strong{font-size:12px;color:#604c74}.dpp-explorer .orbit-mark{font-size:60px;line-height:1;color:#d4c2e5;margin-bottom:28px}.dpp-explorer .detail-rule{height:1px;background:var(--line);margin:28px 0 22px}.dpp-explorer .detail-heading h2{font-size:21px;margin:12px 0 10px;line-height:1.25}.dpp-explorer .detail-heading>p{font-size:12px;color:#7c6a8b;line-height:1.8}.dpp-explorer .badge{display:inline-block;font-size:12px;font-weight:600;padding:4px 7px;background:var(--soft);color:var(--purple);border-radius:4px}.dpp-explorer .badge.standards{background:#e7f2f0;color:var(--teal)}.dpp-explorer .badge.ecosystems{background:#faf0dd;color:var(--amber)}.dpp-explorer .detail-section{border-top:1px solid var(--line);padding-top:17px;margin-top:19px}.dpp-explorer .detail-section h3{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#847191;margin-bottom:9px}.dpp-explorer .detail-section p,.dpp-explorer .detail-section li{font-size:12px;color:#6d5a7d;line-height:1.7}.dpp-explorer .detail-section ul{padding-left:16px;margin:0}.dpp-explorer .detail-section dl{margin:0}.dpp-explorer .detail-section dt{font-size:12px;color:#9a8aa6;margin-top:9px}.dpp-explorer .detail-section dd{font-size:12px;margin:2px 0 0;color:#5c486d}.dpp-explorer .source-item{padding:10px 0;border-bottom:1px solid #eee9f3}.dpp-explorer .source-item:last-child{border:0}.dpp-explorer .source-item a{display:block;font-size:12px;line-height:1.5;font-weight:550}.dpp-explorer .source-meta{font-size:12px;color:#9b8ca6;margin-top:5px}.dpp-explorer .source-item p{margin:5px 0 0;font-size:12px;color:#9684a3}.dpp-explorer .detail-link{display:block;text-align:left;width:100%;border:0;border-bottom:1px solid var(--line);background:none;padding:10px 0;font-size:12px;color:#72518e;border-radius:0}.dpp-explorer .detail-link small{display:block;font-size:12px;color:#a28eae;margin-top:3px}.dpp-explorer .detail-callout{background:#f2ecf8;padding:10px 12px;border-radius:6px;font-size:12px;color:#816595;margin-top:15px;line-height:1.7}.dpp-explorer .detail-actions{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.dpp-explorer .detail-actions button{font-size:12px}.dpp-explorer .detail-section details>summary{font-size:12px;color:#795b92;cursor:pointer}.dpp-explorer .detail-section details{margin:8px 0}.dpp-explorer .table-scroll{overflow:auto;max-height:650px;border-top:1px solid var(--line)}.dpp-explorer table{width:100%;border-collapse:collapse;font-size:12px}.dpp-explorer th{position:sticky;top:0;background:#f8f5fc;color:#8e799f;text-align:left;padding:12px 14px;font-size:12px;text-transform:uppercase;letter-spacing:.5px}.dpp-explorer td{border-bottom:1px solid #eee8f3;padding:11px 14px;vertical-align:top;color:#8c7a9a}.dpp-explorer td:first-child{width:40%}.dpp-explorer td button{border:0;background:none;padding:0;color:#5b3b78;text-align:left;line-height:1.5;font-size:12px}.dpp-explorer td small{font-size:12px;display:block;margin-top:3px;color:#a492af}.dpp-explorer .empty{text-align:center;margin:25px;padding:35px 10px;border:1px dashed var(--line);border-radius:10px}.dpp-explorer .empty p{font-size:12px;color:var(--muted);max-width:370px;margin:0 auto 18px}.dpp-explorer .empty button{font-size:12px}.dpp-explorer .notice{padding:20px;background:#fbf2df;color:#765719;font-size:12px}.dpp-explorer #knowledge-graph{display:block;width:100%;height:auto;min-height:380px;max-height:620px;touch-action:none;background:radial-gradient(ellipse,#fdfcfe,#f8f5fb)}.dpp-explorer .graph-edge{stroke:#c9bbd8;stroke-width:1.2;cursor:pointer}.dpp-explorer .graph-edge.selected{stroke:var(--deep);stroke-width:2.5}.dpp-explorer .graph-node{cursor:pointer;outline:none}.dpp-explorer .graph-node circle{stroke:#fff;stroke-width:2}.dpp-explorer .graph-node.selected circle{stroke:var(--deep);stroke-width:3}.dpp-explorer .graph-node text{font-size:12px;fill:#6b557c;paint-order:stroke;stroke:#fcfaff;stroke-width:3px;pointer-events:none}.dpp-explorer .graph-node:focus circle{stroke:#27113e;stroke-width:3}.dpp-explorer .method{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:52px;padding:57px 6px 45px}.dpp-explorer .method .eyebrow{font-size:12px;margin-bottom:13px}.dpp-explorer .method h2{font-size:26px;max-width:260px}.dpp-explorer .method p{font-size:12px;color:#8b7c98;line-height:1.8;margin-bottom:20px}.dpp-explorer .method h3{font-size:12px;color:#59406e;margin-bottom:8px}.dpp-explorer .method strong{font-weight:550;color:#705981}.dpp-explorer .method a{font-size:12px;display:block;margin-bottom:8px}.dpp-explorer .method small{display:block;color:#ab9cb6;font-size:12px;margin-top:19px;line-height:1.7}.dpp-explorer footer{border-top:1px solid var(--line);padding:24px 42px;display:flex;justify-content:space-between;font-size:12px;color:#a795b2;max-width:1760px;margin:auto}.dpp-explorer footer>span{letter-spacing:1.3px;font-size:12px}.dpp-explorer .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--deep);color:#fff;border-radius:6px;padding:10px 18px;font-size:12px;z-index:15;pointer-events:none;opacity:0;transition:opacity .2s}.dpp-explorer .toast.active{opacity:1}
+@media(min-width:1700px){.dpp-explorer .explorer{grid-template-columns:250px minmax(350px,1fr) 340px}.dpp-explorer .filters{padding:24px}.dpp-explorer .check-options label{font-size:12px}.dpp-explorer .inspector-top,.dpp-explorer #detail-content{padding-left:25px;padding-right:25px}}
+@media(max-width:1250px){.dpp-explorer main{padding:0 25px}.dpp-explorer .masthead{padding:0 25px}.dpp-explorer .explorer{grid-template-columns:205px minmax(330px,1fr)}.dpp-explorer .inspector{grid-column:1/-1;border-left:0;border-top:1px solid var(--line);min-height:0}.dpp-explorer #detail-content{padding:10px 25px 25px;column-count:2;column-gap:40px}.dpp-explorer #detail-content>*{break-inside:avoid}.dpp-explorer .detail-placeholder{padding:0;max-width:580px}.dpp-explorer .detail-placeholder .orbit-mark{display:none}.dpp-explorer .detail-rule{margin:15px 0}.dpp-explorer .viewbar{padding-left:15px;padding-right:15px}.dpp-explorer .tabs{gap:14px}.dpp-explorer .method{gap:30px}.dpp-explorer .edition{flex-basis:210px}}
+@media(max-width:760px){.dpp-explorer main{padding:0 15px}.dpp-explorer .masthead{height:70px;padding:0 18px}.dpp-explorer .masthead nav{gap:12px;font-size:12px}.dpp-explorer .brand{font-size:23px}.dpp-explorer .brand-symbol{width:30px;height:30px;font-size:29px}.dpp-explorer .intro{padding-top:28px;display:block}.dpp-explorer .intro h1{font-size:31px;letter-spacing:-1px}.dpp-explorer .intro h1 br{display:none}.dpp-explorer .intro .dek{font-size:13px}.dpp-explorer .edition{margin-top:23px;display:flex;flex-wrap:wrap;gap:8px;padding-left:12px;font-size:12px}.dpp-explorer .edition small{margin:0;width:100%}.dpp-explorer .edition a{margin-top:3px}.dpp-explorer .edition strong{font-size:12px;margin:0}.dpp-explorer .preset-strip{gap:6px}.dpp-explorer .preset-strip>span{width:100%;font-size:12px;margin-bottom:3px}.dpp-explorer .preset-strip button{font-size:12px;padding:5px 9px}.dpp-explorer .explorer{display:flex;flex-direction:column}.dpp-explorer .filters{width:100%;height:auto;padding:16px;border-right:0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 15px}.dpp-explorer .filter-heading{grid-column:1/-1;margin-bottom:0}.dpp-explorer .field-label{margin:5px 0 0;font-size:12px}.dpp-explorer .filters>.field-label{grid-column:1/-1}.dpp-explorer .filters>.search-wrap,.dpp-explorer .filters>select{grid-column:1/-1}.dpp-explorer .filter-group{padding:8px 0}.dpp-explorer .check-options{max-height:145px;overflow:auto}.dpp-explorer .filter-hint{grid-column:1/-1;margin:0;font-size:12px}.dpp-explorer .workspace{width:100%}.dpp-explorer .viewbar{padding:10px 12px 0;flex-wrap:wrap}.dpp-explorer .tabs{gap:19px}.dpp-explorer .tabs button{font-size:12px;padding-bottom:11px}.dpp-explorer .icon-button{font-size:12px;margin:0 0 9px auto}.dpp-explorer .resultbar{padding:12px}.dpp-explorer .map-wrap svg{min-height:230px}.dpp-explorer .map-legend,.dpp-explorer .graph-legend{padding:5px 12px 13px;gap:10px}.dpp-explorer .canvas-title{margin:5px 12px 0}.dpp-explorer .canvas-title>span{font-size:12px}.dpp-explorer .scope-tray{margin:0 12px}.dpp-explorer .record-shelf{padding:12px}.dpp-explorer #record-cards{grid-template-columns:1fr 1fr}.dpp-explorer .record-card{padding:9px}.dpp-explorer .record-card strong{font-size:12px}.dpp-explorer .inspector{width:100%}.dpp-explorer #detail-content{column-count:1;padding:10px 19px 24px}.dpp-explorer .detail-placeholder h2{font-size:21px}.dpp-explorer .inspector-top{padding-top:18px}.dpp-explorer .method{grid-template-columns:1fr;gap:14px;padding-top:35px}.dpp-explorer .method h2{max-width:none}.dpp-explorer .method p{font-size:12px}.dpp-explorer .method>div+div{border-top:1px solid var(--line);padding-top:22px}.dpp-explorer footer{padding:20px 18px;gap:15px;flex-wrap:wrap}.dpp-explorer #knowledge-graph{min-height:360px}.dpp-explorer .table-scroll{max-height:550px}.dpp-explorer th,.dpp-explorer td{padding:9px}.dpp-explorer .map-note{padding-left:12px;padding-right:12px}}.dpp-explorer .masthead nav a,.dpp-explorer .field-label,.dpp-explorer select,.dpp-explorer .check-options label,.dpp-explorer .detail-heading>p,.dpp-explorer .detail-section p,.dpp-explorer .detail-section li,.dpp-explorer .detail-section dd,.dpp-explorer td,.dpp-explorer .method p{color:#57606a}.dpp-explorer .filters,.dpp-explorer .inspector,.dpp-explorer .record-card{background:#fbfcfe}.dpp-explorer .record-card{border-color:#e4e9ef}.dpp-explorer .map-ocean{fill:#f6f8fa;stroke:#d8dee4}.dpp-explorer .swatch.legal,.dpp-explorer .swatch.dark{background:#0969da}.dpp-explorer .swatch.none{background:#e4e8ed}.dpp-explorer .swatch.light{background:#c4daf3}.dpp-explorer .swatch.medium{background:#72a7e2}.dpp-explorer .detail-placeholder h2,.dpp-explorer .detail-placeholder strong,.dpp-explorer .method h3,.dpp-explorer .method strong{color:#24466a}.dpp-explorer .detail-link,.dpp-explorer td button{color:#0969da}.dpp-explorer .detail-callout{background:#e8f1fc;color:#345c88}.dpp-explorer .badge{color:#0969da}.dpp-explorer .detail-placeholder,.dpp-explorer .resultbar #result-summary,.dpp-explorer .map-legend,.dpp-explorer .graph-legend,.dpp-explorer .map-note,.dpp-explorer .filter-hint,.dpp-explorer .source-meta,.dpp-explorer .detail-link small,.dpp-explorer .source-item p,.dpp-explorer .detail-section dt,.dpp-explorer .detail-section h3,.dpp-explorer .record-card small,.dpp-explorer .canvas-title>span,.dpp-explorer .inspector-top,.dpp-explorer .method small,.dpp-explorer footer{color:#64748b}.dpp-explorer .detail-placeholder .orbit-mark{color:#b7cde6}.dpp-explorer #knowledge-graph{background:radial-gradient(ellipse,#fff,#f2f6fb)}.dpp-explorer .graph-edge{stroke:#a3b4c8;stroke-width:2.5}.dpp-explorer .graph-edge:hover,.dpp-explorer .graph-edge:focus{stroke:#0969da;stroke-width:4;outline:none}.dpp-explorer .graph-node text{fill:#354b63;stroke:#fff}.dpp-explorer .detail-actions a{font-size:12px;padding:7px 0}.dpp-explorer .detail-section details>summary{color:#345c88}.dpp-explorer .scope-tray button[aria-pressed=true]{border-color:#0969da;background:#e8f1fc!important}.dpp-explorer button:focus-visible,.dpp-explorer a:focus-visible,.dpp-explorer input:focus-visible,.dpp-explorer select:focus-visible,.dpp-explorer summary:focus-visible,.dpp-explorer svg [tabindex]:focus-visible{outline-color:#0969da}.dpp-explorer button:hover{border-color:#8cb7e8}.dpp-explorer .toast{max-width:90vw;text-align:center}.dpp-explorer .graph-node{pointer-events:bounding-box}.dpp-explorer .graph-node text{pointer-events:auto}
+@media(prefers-reduced-motion:reduce){.dpp-explorer *{transition:none!important;scroll-behavior:auto!important}}
+
+/* Atlas-only integration with the Spherity Research palette and shared assets. */
+.dpp-explorer{font-size:15px;line-height:1.55;font-family:var(--font-sans,Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif);--ink:#0c1720;--muted:#344552;--deep:#082239;--line:#dce4e8;--wash:#f7f9fa;background:var(--wash);color:var(--ink)}
+.dpp-explorer .masthead{max-width:none;min-height:88px;height:auto;padding:18px max(24px,calc((100vw - 1676px)/2));background:#061827;border-bottom:1px solid #244357;gap:24px}
+.dpp-explorer .brand{display:block;flex:0 0 auto;line-height:1;letter-spacing:normal}
+.dpp-explorer .brand img{display:block;width:152px;height:auto;filter:brightness(0) invert(1)}
+.dpp-explorer .masthead nav{gap:24px;flex-wrap:wrap;justify-content:flex-end;font-size:14px}
+.dpp-explorer .masthead nav a{color:#e3edf2;padding:10px 0}
+.dpp-explorer .masthead :focus-visible{outline-color:#23e6b6}
+.dpp-explorer .breadcrumbs{display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-size:13px;color:#576676;margin-bottom:24px}
+.dpp-explorer .intro{padding-top:32px}
+.dpp-explorer .eyebrow{color:#0969da;letter-spacing:1.5px;display:block}
+.dpp-explorer .eyebrow span{display:inline;color:#526576;letter-spacing:.6px;background:none;width:auto;height:auto}
+.dpp-explorer .edition{flex-basis:250px;font-size:14px}
+.dpp-explorer .edition time{display:block}
+.dpp-explorer .edition small{font-size:13px;line-height:1.6}
+.dpp-explorer .edition strong{font-size:14px}
+.dpp-explorer button,.dpp-explorer input,.dpp-explorer select{min-height:36px}
+.dpp-explorer .text-button{padding:7px 3px}
+.dpp-explorer .filters{padding:20px 16px}
+.dpp-explorer .filter-heading{gap:8px}
+.dpp-explorer .filter-heading h2{font-size:15px}
+.dpp-explorer .field-label,.dpp-explorer .filter-group summary{font-size:13px;color:#344552}
+.dpp-explorer .search-wrap input,.dpp-explorer select{font-size:14px;min-height:42px}
+.dpp-explorer .check-options{gap:3px}
+.dpp-explorer .check-options label{font-size:13px;min-height:32px;align-items:center;line-height:1.4;color:#344552;padding:4px 0}
+.dpp-explorer .check-options input{min-height:18px;width:18px;height:18px;flex-basis:18px;margin:0}
+.dpp-explorer .viewbar{flex-wrap:wrap;gap:4px;padding-top:8px}
+.dpp-explorer .tabs{gap:16px;flex-wrap:wrap}
+.dpp-explorer .tabs button{font-size:13px;padding:12px 0;min-height:44px;color:#526576}
+.dpp-explorer .icon-button{margin:0 0 5px auto;font-size:12px}
+.dpp-explorer .resultbar{gap:12px}
+.dpp-explorer .chips button{font-size:12px;padding:6px 8px}
+.dpp-explorer .canvas-title{flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.dpp-explorer .canvas-title>span{letter-spacing:.8px}
+.dpp-explorer .small-button{min-width:36px;color:#344552}
+.dpp-explorer .map-legend,.dpp-explorer .graph-legend,.dpp-explorer .map-note,.dpp-explorer .filter-hint,.dpp-explorer .source-meta,.dpp-explorer .detail-link small,.dpp-explorer .source-item p,.dpp-explorer .detail-section dt,.dpp-explorer .detail-section h3,.dpp-explorer .record-card small,.dpp-explorer .canvas-title>span,.dpp-explorer .inspector-top,.dpp-explorer .method small,.dpp-explorer footer,.dpp-explorer td small,.dpp-explorer .preset-strip>span,.dpp-explorer .scope-tray>span{color:#526576}
+.dpp-explorer .map-legend small,.dpp-explorer .graph-legend small{font-size:12px;color:#526576}
+.dpp-explorer .scope-tray button{background:#f3f7fb!important}
+.dpp-explorer .scope-tray button b{color:#345c88}
+.dpp-explorer .scope-territories{flex-basis:100%;min-width:0;margin-top:8px;padding-top:12px;border-top:1px solid var(--line)}
+.dpp-explorer .scope-territories>span{display:block;margin-bottom:8px;font-size:12px;font-weight:650;color:#526576}
+.dpp-explorer .scope-territory-buttons{display:flex;flex-wrap:wrap;gap:6px}
+.dpp-explorer .record-card{padding:13px;gap:8px}
+.dpp-explorer .record-card strong{font-size:14px;line-height:1.5}
+.dpp-explorer .card-type{font-size:12px;letter-spacing:.4px}
+.dpp-explorer .card-type.ecosystems{color:#84510d}
+.dpp-explorer .detail-placeholder p,.dpp-explorer .detail-heading>p,.dpp-explorer .detail-section p,.dpp-explorer .detail-section li,.dpp-explorer .detail-section dd,.dpp-explorer .source-item a,.dpp-explorer .detail-link,.dpp-explorer .detail-section details>summary{font-size:14px;line-height:1.6}
+.dpp-explorer .detail-section dt{font-size:12px}
+.dpp-explorer .detail-section h3{font-size:12px;letter-spacing:.7px}
+.dpp-explorer .detail-callout{font-size:13px}
+.dpp-explorer .detail-link small{font-size:12px}
+.dpp-explorer .detail-actions a{display:inline-flex;align-items:center;min-height:36px;font-size:13px}
+.dpp-explorer .detail-section details>summary{padding:7px 0}
+.dpp-explorer #detail-content h2:focus{outline:3px solid #0969da;outline-offset:4px}
+.dpp-explorer .badge{font-size:12px}
+.dpp-explorer .badge.ecosystems{color:#84510d}
+.dpp-explorer table{font-size:13px}
+.dpp-explorer th{background:#f1f5f8;color:#344552}
+.dpp-explorer td button{font-size:14px;min-height:36px}
+.dpp-explorer .table-scroll{overscroll-behavior:contain}
+.dpp-explorer .graph-node:focus text{display:block}
+.dpp-explorer .method p{font-size:14px;color:#526576}
+.dpp-explorer .method h3{font-size:15px}
+.dpp-explorer .method a{font-size:14px;min-height:30px}
+.dpp-explorer .method strong{color:#344552}
+.dpp-explorer footer{gap:20px;flex-wrap:wrap;font-size:13px}
+.dpp-explorer .notice{font-size:14px}
+@media(max-width:1250px){.dpp-explorer .explorer{grid-template-columns:240px minmax(0,1fr)}.dpp-explorer #detail-content{column-count:1;max-width:900px}.dpp-explorer .inspector{scroll-margin-top:18px}.dpp-explorer .method{gap:24px}.dpp-explorer .tabs{gap:14px}}
+@media(max-width:760px){.dpp-explorer .masthead{padding:16px;align-items:flex-start;gap:16px;flex-wrap:wrap}.dpp-explorer .masthead nav{font-size:13px;gap:16px;justify-content:flex-start}.dpp-explorer .brand img{width:130px}.dpp-explorer .breadcrumbs{font-size:12px;margin-bottom:18px}.dpp-explorer .intro .dek{font-size:15px}.dpp-explorer .edition{font-size:14px;gap:8px 14px}.dpp-explorer .edition strong{font-size:14px}.dpp-explorer .preset-strip button{font-size:13px;padding:8px 12px}.dpp-explorer .preset-strip>span{font-size:12px}.dpp-explorer .filters{padding:16px;gap:8px 16px}.dpp-explorer button,.dpp-explorer select,.dpp-explorer .search-wrap input{min-height:44px}.dpp-explorer .check-options input{min-height:18px}.dpp-explorer .check-options label{min-height:44px}.dpp-explorer .check-options{max-height:220px}.dpp-explorer .tabs{gap:14px}.dpp-explorer .tabs button{font-size:13px}.dpp-explorer .small-button{min-width:44px}.dpp-explorer .record-card strong{font-size:14px}.dpp-explorer #record-cards{grid-template-columns:1fr}.dpp-explorer .method p{font-size:14px}.dpp-explorer .edition small{width:100%}.dpp-explorer .eyebrow span{margin-left:10px}.dpp-explorer .map-note{font-size:13px}.dpp-explorer .scope-tray>span{line-height:1.5}.dpp-explorer .canvas-title>span{font-size:12px}.dpp-explorer .table-scroll table{min-width:520px}}
+/* Compact, interactive map for the paper page. */
+.dpp-explorer .embed-control,.dpp-explorer .embed-toolbar{display:none}
+.dpp-explorer.dpp-embedded{background:#fff}
+.dpp-explorer.dpp-embedded .masthead,.dpp-explorer.dpp-embedded .intro,.dpp-explorer.dpp-embedded .preset-strip,.dpp-explorer.dpp-embedded .method,.dpp-explorer.dpp-embedded footer,.dpp-explorer.dpp-embedded .record-shelf{display:none}
+.dpp-explorer.dpp-embedded main{max-width:none;margin:0;padding:0}
+.dpp-explorer.dpp-embedded .explorer{display:flex;flex-direction:column;min-width:0;border:0;border-radius:0;box-shadow:none;scroll-margin-top:0}
+.dpp-explorer.dpp-embedded .embed-toolbar{display:flex;align-items:center;gap:14px;width:100%;padding:8px 16px;background:#f0f6fa;border-bottom:1px solid #dce6ec;font-size:12px;color:#526576}
+.dpp-explorer.dpp-embedded .embed-toolbar button{font-size:13px;font-weight:600;min-height:36px;background:#fff}
+.dpp-explorer.dpp-embedded .embed-toolbar a{margin-left:auto;white-space:nowrap;min-height:36px;display:inline-flex;align-items:center;font-size:13px;font-weight:600}
+.dpp-explorer.dpp-embedded .filters{width:100%;height:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 20px;padding:16px 20px;border-right:0;border-bottom:1px solid #dce4e8}
+.dpp-explorer.dpp-embedded .filter-heading,.dpp-explorer.dpp-embedded .filters>.field-label,.dpp-explorer.dpp-embedded .filters>.search-wrap,.dpp-explorer.dpp-embedded .filters>select,.dpp-explorer.dpp-embedded .filter-hint{grid-column:1/-1}
+.dpp-explorer.dpp-embedded .filter-heading{margin:0}
+.dpp-explorer.dpp-embedded .field-label{margin:8px 0 0}
+.dpp-explorer.dpp-embedded .check-options{max-height:180px;overflow:auto}
+.dpp-explorer.dpp-embedded .embed-control{display:block;grid-column:1/-1;justify-self:start;margin-top:4px;color:#fff;background:#0969da}
+.dpp-explorer.dpp-embedded .workspace{width:100%}
+.dpp-explorer.dpp-embedded .viewbar{padding:0 16px;gap:0;min-height:44px}
+.dpp-explorer.dpp-embedded .tabs{gap:20px}
+.dpp-explorer.dpp-embedded .tabs button{padding:10px 0;min-height:44px}
+.dpp-explorer.dpp-embedded #share{display:none}
+.dpp-explorer.dpp-embedded .resultbar{min-height:42px;padding:7px 16px 3px;gap:6px}
+.dpp-explorer.dpp-embedded .resultbar strong{font-size:18px}
+.dpp-explorer.dpp-embedded .canvas-title{margin:0 16px 4px;min-height:40px}
+.dpp-explorer.dpp-embedded .canvas-title>span{font-size:11px;letter-spacing:.7px}
+.dpp-explorer.dpp-embedded .small-button{min-height:34px;min-width:34px}
+.dpp-explorer.dpp-embedded .map-wrap{margin:0 6px}
+.dpp-explorer.dpp-embedded .map-wrap svg{min-height:300px;max-height:380px;touch-action:pan-y}
+.dpp-explorer.dpp-embedded .map-legend,.dpp-explorer.dpp-embedded .graph-legend{padding:8px 16px 14px;gap:8px 14px}
+.dpp-explorer.dpp-embedded .scope-tray,.dpp-explorer.dpp-embedded .map-note{display:none}
+.dpp-explorer.dpp-embedded .inspector{display:none;width:100%;border-left:0;border-top:1px solid #dce4e8;scroll-margin-top:0}
+.dpp-explorer.dpp-embedded.has-detail .inspector{display:block}
+.dpp-explorer.dpp-embedded #detail-content{column-count:1;max-width:900px}
+.dpp-explorer.dpp-embedded #knowledge-graph{min-height:340px;max-height:440px;touch-action:pan-y}
+.dpp-explorer.dpp-embedded .table-scroll{max-height:470px}
+@media(max-width:600px){.dpp-explorer.dpp-embedded .embed-toolbar{padding:7px 12px;gap:10px}.dpp-explorer.dpp-embedded .embed-toolbar>span{display:none}.dpp-explorer.dpp-embedded .embed-toolbar button,.dpp-explorer.dpp-embedded .embed-toolbar a,.dpp-explorer.dpp-embedded .small-button{min-height:44px}.dpp-explorer.dpp-embedded .small-button{min-width:44px}.dpp-explorer.dpp-embedded .viewbar{padding:0 12px}.dpp-explorer.dpp-embedded .tabs{gap:14px}.dpp-explorer.dpp-embedded .tabs button{font-size:12px}.dpp-explorer.dpp-embedded .canvas-title{margin-inline:12px}.dpp-explorer.dpp-embedded .canvas-title>span{display:none}.dpp-explorer.dpp-embedded .canvas-title>div{margin-left:auto}.dpp-explorer.dpp-embedded .map-wrap svg{min-height:270px;max-height:340px}.dpp-explorer.dpp-embedded .resultbar{padding-inline:12px}.dpp-explorer.dpp-embedded .map-legend,.dpp-explorer.dpp-embedded .graph-legend{padding-inline:12px;font-size:11px;gap:8px 10px}.dpp-explorer.dpp-embedded .map-legend small{font-size:11px}}
+/* A labelled, scrollable evidence graph. Graph rules do not change map or table views. */
+.dpp-explorer #graph-panel{padding-top:4px;min-width:0}
+.dpp-explorer .graph-overview{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px;padding:18px 20px 0}
+.dpp-explorer .graph-heading{min-width:0}
+.dpp-explorer .graph-eyebrow{margin:0 0 7px;font-size:11px;font-weight:700;letter-spacing:1.2px;color:#526576}
+.dpp-explorer .graph-heading h2{margin:0;font-size:24px;font-weight:650;line-height:1.25;letter-spacing:-.6px;color:#15354f}
+.dpp-explorer .graph-tools{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.dpp-explorer .graph-tools button{min-height:40px;white-space:nowrap;font-size:13px;font-weight:600;color:#24465c;background:#fff}
+.dpp-explorer .graph-tools .small-button{width:40px;min-width:40px;font-size:20px;line-height:1;padding:6px}
+.dpp-explorer #graph-zoom-label{min-width:52px;text-align:center;font-size:13px;font-weight:650;font-variant-numeric:tabular-nums;color:#24465c}
+.dpp-explorer #graph-fullscreen{display:inline-flex;align-items:center;gap:12px;background:#edf5fc;border-color:#bfd6e9;color:#075aa7}
+.dpp-explorer #graph-fullscreen[aria-pressed=true]{background:#082239;border-color:#082239;color:#fff}
+.dpp-explorer #graph-learning{margin:12px 20px 0;font-size:14px;line-height:1.65;color:#526576;max-width:1000px}
+.dpp-explorer #graph-learning strong{font-weight:600;color:#344f63}
+.dpp-explorer .graph-examples{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin:14px 20px 16px}
+.dpp-explorer .graph-examples>span{font-size:12px;font-weight:650;color:#526576;margin-right:5px}
+.dpp-explorer .graph-examples button{padding:7px 11px;border-radius:20px;font-size:12px;line-height:1.4;min-height:36px;background:#f7fafc;border-color:#d3e0e9;color:#24465c}
+.dpp-explorer .graph-examples button:hover,.dpp-explorer .graph-examples button[aria-pressed=true]{background:#e5f0fb;border-color:#83add6;color:#075aa7}
+.dpp-explorer .graph-status-row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:10px 20px;border-block:1px solid #dce6ec;background:#f8fafc}
+.dpp-explorer #graph-summary{font-size:12px;font-weight:700;letter-spacing:.4px;color:#344f63}
+.dpp-explorer .graph-status-row>span{font-size:12px;color:#526576}
+.dpp-explorer #graph-selection{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 20px;background:#eaf3fc;border-bottom:1px solid #bfd6e9;color:#173b5d;font-size:14px;line-height:1.5}
+.dpp-explorer #graph-selection strong,.dpp-explorer #graph-selection h3{margin:0;font-size:14px;color:#173b5d}
+.dpp-explorer #graph-selection p{margin:4px 0 0;font-size:13px;color:#435f77}
+.dpp-explorer #graph-selection button{min-height:38px;font-size:12px;background:#fff;color:#075aa7}
+.dpp-explorer #graph-selection>div{min-width:0}
+.dpp-explorer #graph-stage{position:relative;width:100%;height:600px;min-height:320px;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;background:#f6f9fc;touch-action:auto}
+.dpp-explorer #graph-stage:focus-visible{outline:3px solid #0969da;outline-offset:-3px}
+.dpp-explorer #graph-surface{position:relative;min-width:1080px;width:max-content;background:linear-gradient(90deg,#f6f9fc 0 33.333%,#f0f6f8 33.333% 66.666%,#f9f7f2 66.666% 100%)}
+.dpp-explorer #graph-lanes{position:sticky;top:0;z-index:3;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));min-width:1080px;width:100%;box-shadow:0 2px 5px #0822390b}
+.dpp-explorer .graph-lane{min-width:0;padding:14px 20px 12px;border-bottom:2px solid var(--lane-color,#acc5d9);border-right:1px solid #dce6ec;background:#f4f8fc;color:#24465c}
+.dpp-explorer .graph-lane:nth-child(2){background:#edf5f4;border-bottom-color:#167a79}
+.dpp-explorer .graph-lane:nth-child(3){background:#f8f4eb;border-bottom-color:#ad6f1a}
+.dpp-explorer .graph-lane h3,.dpp-explorer .graph-lane h4,.dpp-explorer .graph-lane strong{display:block;margin:0;font-size:15px;font-weight:700;line-height:1.35;color:#24465c}
+.dpp-explorer .graph-lane p{margin:4px 0 0;font-size:12px;line-height:1.4;color:#526576}
+.dpp-explorer #graph-surface #knowledge-graph{display:block;width:auto;height:auto;min-width:0;min-height:0;max-width:none;max-height:none;overflow:visible;background:transparent;touch-action:auto}
+.dpp-explorer #graph-surface .graph-node{cursor:pointer;outline:none;pointer-events:bounding-box}
+.dpp-explorer #graph-surface .graph-card{fill:#fff;stroke:var(--node-color,#aec2d3);stroke-width:1.4;rx:10;ry:10;filter:drop-shadow(0 2px 3px #0822390a)}
+.dpp-explorer #graph-surface .graph-node text{display:block!important;opacity:1;fill:#17354b;stroke:none;paint-order:normal;pointer-events:none;font-family:var(--font-sans,Inter,ui-sans-serif,sans-serif)}
+.dpp-explorer #graph-surface .graph-node-label{font-size:16px;font-weight:650}
+.dpp-explorer #graph-surface .graph-node-type{font-size:11px;font-weight:500;fill:#526576}
+.dpp-explorer #graph-surface .graph-node.is-active .graph-card,.dpp-explorer #graph-surface .graph-node.selected .graph-card{fill:#eaf3fc;stroke:#075aa7;stroke-width:2.8}
+.dpp-explorer #graph-surface .graph-node.is-neighbor .graph-card{stroke:var(--node-color,#397aab);stroke-width:2.2}
+.dpp-explorer #graph-surface .graph-node.is-dimmed .graph-card{fill:#f7f9fb;stroke:#ccd7df;filter:none}
+.dpp-explorer #graph-surface .graph-node.is-dimmed text{fill:#526576;opacity:1}
+.dpp-explorer #graph-surface .graph-node.is-isolated .graph-card{stroke-dasharray:5 3}
+.dpp-explorer #graph-surface .graph-node:hover .graph-card,.dpp-explorer #graph-surface .graph-node:focus-visible .graph-card{stroke:#082239;stroke-width:3;filter:drop-shadow(0 3px 5px #08223920)}
+.dpp-explorer #graph-surface .graph-edge{fill:none;stroke:#99adbe;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;opacity:.7;pointer-events:none;vector-effect:non-scaling-stroke}
+.dpp-explorer #graph-surface .graph-edge.is-active,.dpp-explorer #graph-surface .graph-edge.selected{stroke:#0969da;stroke-width:2.2;opacity:1}
+.dpp-explorer #graph-surface .graph-edge.is-dimmed{stroke:#b9c7d2;opacity:.3}
+.dpp-explorer #graph-surface .graph-edge-hit{fill:none;stroke:transparent;stroke-width:16;pointer-events:stroke;cursor:pointer;vector-effect:non-scaling-stroke}
+.dpp-explorer #graph-surface .graph-link{cursor:pointer;outline:none}
+.dpp-explorer #graph-surface .graph-link:hover .graph-edge,.dpp-explorer #graph-surface .graph-link:focus-visible .graph-edge{stroke:#075aa7;stroke-width:2.4;opacity:1}
+.dpp-explorer #graph-tooltip{position:fixed;z-index:1100;pointer-events:none;max-width:min(370px,calc(100vw - 24px));padding:15px 17px;background:#082239;color:#fff;border:1px solid #355b75;border-radius:10px;box-shadow:0 8px 28px #06182735;font-size:14px;line-height:1.6;overflow-wrap:anywhere}
+.dpp-explorer #graph-tooltip strong,.dpp-explorer #graph-tooltip h3{display:block;margin:0 0 6px;color:#fff;font-size:16px;font-weight:650;line-height:1.45}
+.dpp-explorer #graph-tooltip p{margin:4px 0 0;color:#dce9f2;font-size:14px;line-height:1.6}
+.dpp-explorer #graph-tooltip small,.dpp-explorer #graph-tooltip span{font-size:13px;color:#dce9f2}
+.dpp-explorer #graph-panel .graph-legend{padding:14px 20px 6px;gap:10px 18px;font-size:12px;color:#435c70}
+.dpp-explorer #graph-panel .graph-legend small{font-size:12px;line-height:1.6;color:#526576}
+.dpp-explorer .graph-isolation-note{margin:0;padding:4px 20px 16px;font-size:12px;line-height:1.6;color:#526576}
+.dpp-explorer.is-graph-view .explorer:not(.graph-expanded):not(:fullscreen){grid-template-columns:227px minmax(0,1fr)}
+.dpp-explorer.is-graph-view .explorer>.inspector{grid-column:1/-1;border-left:0;border-top:1px solid #dce4e8;min-height:0}
+.dpp-explorer.is-graph-view .explorer:not(.graph-has-detail)>.inspector{display:none}
+.dpp-explorer.is-graph-view .explorer.graph-has-detail>.inspector{display:block}
+.dpp-explorer.is-graph-view .explorer #detail-content{column-count:1;max-width:1100px}
+.dpp-explorer.graph-expanded{overflow:hidden}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen){position:fixed;inset:0;z-index:1000;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr);align-items:stretch;gap:0;width:100vw;max-width:none;height:100vh;height:100dvh;min-height:0;margin:0;border:0;border-radius:0;background:#fff;overflow:hidden;box-shadow:none}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen).graph-has-detail{grid-template-columns:minmax(0,1fr) 340px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen)>.filters,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen)>.embed-toolbar,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .record-shelf{display:none!important}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen)>.workspace{grid-column:1;grid-row:1;display:flex;flex-direction:column;min-width:0;min-height:0;width:100%;height:100%;overflow:hidden}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .viewbar,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .resultbar{flex:0 0 auto}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-panel{display:flex;flex-direction:column;flex:1 1 auto;min-height:0;overflow:hidden;padding-top:0}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-stage{flex:1 1 auto;height:auto;min-height:160px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-overview,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-learning,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-examples,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-status-row,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-selection,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-legend,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-isolation-note{flex:0 0 auto}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-overview{padding-top:12px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-heading h2{font-size:21px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-learning{margin-top:8px;font-size:13px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-examples{margin-top:9px;margin-bottom:10px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-panel .graph-legend{padding-top:8px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-isolation-note{padding-bottom:10px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen)>.inspector{display:none;grid-column:2;grid-row:1;min-width:0;min-height:0;width:auto;height:100%;max-height:none;border-left:1px solid #dce4e8;border-top:0;overflow:auto;overscroll-behavior:contain}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen).graph-has-detail>.inspector{display:block}
+.dpp-explorer.dpp-embedded #graph-stage{height:500px;min-height:300px}
+.dpp-explorer.dpp-embedded .graph-overview{padding:14px 16px 0}
+.dpp-explorer.dpp-embedded #graph-learning{margin-inline:16px}
+.dpp-explorer.dpp-embedded .graph-examples{margin-inline:16px}
+.dpp-explorer.dpp-embedded .explorer:is(.graph-expanded,:fullscreen) #graph-stage{height:auto;min-height:160px}
+@media(min-width:1700px){.dpp-explorer.is-graph-view .explorer:not(.graph-expanded):not(:fullscreen){grid-template-columns:250px minmax(0,1fr)}}
+@media(max-width:760px){.dpp-explorer .graph-overview{padding:16px 12px 0;gap:12px}.dpp-explorer .graph-heading h2{font-size:21px}.dpp-explorer .graph-tools{gap:5px}.dpp-explorer .graph-tools button{min-height:44px;font-size:12px;padding-inline:10px}.dpp-explorer .graph-tools .small-button{width:44px;min-width:44px;font-size:20px}.dpp-explorer #graph-zoom-label{min-width:43px}.dpp-explorer #graph-learning{margin:10px 12px 0;font-size:13px}.dpp-explorer .graph-examples{margin:12px;gap:6px}.dpp-explorer .graph-examples>span{width:100%}.dpp-explorer .graph-examples button{min-height:40px}.dpp-explorer .graph-status-row{padding:10px 12px}.dpp-explorer #graph-selection{padding:12px}.dpp-explorer #graph-selection button{min-height:44px}.dpp-explorer #graph-stage{height:540px;min-height:300px}.dpp-explorer #graph-panel .graph-legend{padding-inline:12px}.dpp-explorer .graph-isolation-note{padding-inline:12px}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen).graph-has-detail{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) minmax(170px,36vh)}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen)>.inspector{grid-column:1;grid-row:2;border-left:0;border-top:1px solid #dce4e8}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-learning{font-size:12px;line-height:1.5}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-examples{margin-block:8px}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-examples>span{display:none}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-overview{gap:8px;padding-top:8px}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-heading{display:none}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-panel .graph-legend{gap:6px 10px;padding-top:6px;font-size:11px}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-legend small,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-isolation-note{font-size:11px}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-status-row>span{display:none}}
+@media(max-height:700px){.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-examples,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-eyebrow{display:none}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-learning{margin-top:6px;line-height:1.5}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-status-row{padding-block:7px}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-overview{padding-top:8px}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-legend small,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-isolation-note{font-size:11px}}
+/* Preserve usable graph space when evidence details share a small full-screen view. */
+@media(max-width:760px){.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-examples{display:none}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen).graph-has-detail .viewbar,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen).graph-has-detail .resultbar,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen).graph-has-detail #graph-learning,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen).graph-has-detail .graph-legend,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen).graph-has-detail .graph-isolation-note{display:none}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen).graph-has-detail .graph-status-row{padding-block:6px}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen).graph-has-detail #graph-selection{padding:8px 12px;font-size:12px}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen).graph-has-detail #graph-selection strong{font-size:13px}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen).graph-has-detail #graph-stage{min-height:120px}}
+.dpp-explorer #graph-surface .graph-node-count{font-size:11px;font-weight:650;fill:#526576}
+.dpp-explorer #graph-tooltip h3{font-size:19px;line-height:1.35}
+.dpp-explorer #graph-tooltip ul{margin:9px 0;padding-left:18px;font-size:13px;line-height:1.5}
+.dpp-explorer #graph-tooltip li{margin:5px 0}
+.dpp-explorer .graph-selection-actions{display:flex;gap:6px;flex-wrap:wrap}
+.dpp-explorer #graph-tools button:disabled{opacity:.45;cursor:default}
+@media(max-width:760px){.dpp-explorer.is-graph-view .explorer:not(.graph-expanded):not(:fullscreen){grid-template-columns:minmax(0,1fr)}}
+.dpp-explorer.dpp-embedded.is-graph-view .graph-heading{display:none}
+.dpp-explorer.dpp-embedded.is-graph-view .graph-overview{padding-top:8px}
+.dpp-explorer.dpp-embedded.is-graph-view .graph-examples{flex-wrap:nowrap;overflow-x:auto;margin-block:8px;padding-bottom:3px}
+.dpp-explorer.dpp-embedded.is-graph-view .graph-examples>span{display:none}
+.dpp-explorer.dpp-embedded.is-graph-view .graph-examples button{flex-shrink:0}
+.dpp-explorer.dpp-embedded.is-graph-view #graph-learning{font-size:12px;line-height:1.5;margin-top:8px}
+.dpp-explorer.dpp-embedded.is-graph-view .graph-status-row>span{display:none}
+.dpp-explorer #graph-surface{margin-inline:auto}
+.dpp-explorer .graph-tools button:disabled{opacity:.45;cursor:default}
+
+/* Global scope is a separate visual layer, never a count projected onto countries.
+   Keep the controls and chip row in place when a preset changes the scope. */
+.dpp-explorer .resultbar{flex-wrap:nowrap;min-height:73px}
+.dpp-explorer .resultbar>div:first-child{flex-shrink:0;white-space:nowrap}
+.dpp-explorer .chips{flex-wrap:nowrap;min-width:0;height:48px;align-items:center;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin}
+.dpp-explorer .chips>*{flex-shrink:0;white-space:nowrap}
+.dpp-explorer .chips .global-scope-chip{display:inline-flex;align-items:center;gap:5px;min-height:36px;padding:6px 8px;border:1px solid #9acbbf;border-radius:4px;background:#e6f4ef;color:#175d50;font-size:12px;line-height:1.5}
+.dpp-explorer .chips button.global-scope-chip:hover{background:#d5ece3;border-color:#5c9f8e}
+.dpp-explorer .map-toolbar{min-height:44px}
+.dpp-explorer .map-controls{align-items:center}
+.dpp-explorer .map-controls button{min-height:36px}
+.dpp-explorer #map-inspect-global{color:#175d50;background:#e6f4ef;border-color:#9acbbf;font-size:12px;line-height:1.4;min-width:0;padding:7px 10px}
+.dpp-explorer #map-inspect-global:hover:not(:disabled){background:#d5ece3;border-color:#5c9f8e}
+.dpp-explorer #map-inspect-global:disabled{color:#687972;background:#f2f6f4;border-color:#d4dfdb;opacity:1}
+.dpp-explorer .swatch.global{background:repeating-linear-gradient(135deg,#c5e7e1 0 3px,#a0d3ca 3px 4px);border:1px solid #6eaea1;width:14px;height:12px;flex-basis:14px}
+.dpp-explorer .has-global-scope .map-ocean{fill:#f1faf7;stroke:#70aa9c;stroke-width:1.2}
+.dpp-explorer .global-scope-country{stroke:#fff;stroke-width:.8}
+.dpp-explorer .map-legend #map-global-description{color:#315e57}
+.dpp-explorer .preset-strip button[aria-pressed=true]{background:#e5f0fb;border-color:#75a5d1;color:#075aa7;box-shadow:inset 0 0 0 1px #75a5d1}
+.dpp-explorer.dpp-embedded .resultbar{min-height:58px}
+.dpp-explorer.dpp-embedded .map-toolbar{min-height:44px}
+@media(max-width:760px){
+  .dpp-explorer .resultbar,.dpp-explorer.dpp-embedded .resultbar{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;min-height:94px}
+  .dpp-explorer .chips{height:50px;justify-content:flex-start}
+  .dpp-explorer .chips .global-scope-chip{min-height:44px}
+  .dpp-explorer .map-toolbar{display:grid;grid-template-columns:minmax(0,1fr);gap:6px}
+  .dpp-explorer .canvas-title>.map-controls{display:grid;grid-template-columns:minmax(0,1fr) auto auto auto;gap:4px;width:100%;margin-left:0}
+  .dpp-explorer .map-controls button{min-height:44px}
+  .dpp-explorer #map-inspect-global{padding-inline:7px;min-height:44px}
+}
+
+/* Editorial interpretation is visible but stays distinct from sourced graph edges. */
+.dpp-explorer .graph-outlook-signpost{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 12px;margin:12px 20px 0;padding:10px 13px;border-left:3px solid #167a79;border-radius:0 6px 6px 0;background:#eef7f5;font-size:13px;line-height:1.55;color:#315d58}
+.dpp-explorer .graph-outlook-signpost strong{color:#154d48}
+.dpp-explorer .graph-outlook-signpost a{color:#075b57;font-weight:650;text-underline-offset:3px}
+.dpp-explorer .graph-outlook{margin:4px 20px 24px;border:1px solid #b7d5cf;border-radius:12px;background:#f6faf9;scroll-margin-top:24px;color:#24465c}
+.dpp-explorer .graph-outlook>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px;cursor:pointer;list-style:none}
+.dpp-explorer .graph-outlook>summary::-webkit-details-marker{display:none}
+.dpp-explorer .graph-outlook>summary::after{content:'+';font-size:25px;font-weight:400;flex-shrink:0;color:#167a79}
+.dpp-explorer .graph-outlook[open]>summary::after{content:'−'}
+.dpp-explorer .graph-outlook>summary>span:first-child{flex:1}
+.dpp-explorer .outlook-kicker{display:block;margin-bottom:7px;font-size:10px;font-weight:750;letter-spacing:1.1px;color:#346c62}
+.dpp-explorer .graph-outlook>summary strong{display:block;font-size:23px;line-height:1.3;letter-spacing:-.5px;color:#153e3c}
+.dpp-explorer .outlook-horizon{font-size:12px;font-weight:700;padding:6px 9px;border:1px solid #b7d5cf;border-radius:20px;white-space:nowrap;background:#fff;color:#28645a}
+.dpp-explorer .graph-outlook-body{padding:0 20px 20px}
+.dpp-explorer .graph-outlook-body p{font-size:14px;line-height:1.7;margin:0 0 14px}
+.dpp-explorer .outlook-intro{color:#4b626d;max-width:950px}
+.dpp-explorer .outlook-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:20px 0}
+.dpp-explorer .outlook-steps section{border-top:2px solid #b7d5cf;padding-top:14px}
+.dpp-explorer .outlook-step{font-size:10px;letter-spacing:.7px;font-weight:750;color:#46786d}
+.dpp-explorer .graph-outlook-body h3{font-size:17px;line-height:1.35;color:#173e3d;margin:7px 0 10px}
+.dpp-explorer .outlook-steps p{margin:0}
+.dpp-explorer .outlook-thesis{margin:22px 0;padding:22px;border-radius:9px;background:#0b2c35;color:#f3faf8}
+.dpp-explorer .outlook-thesis>p{margin:0 0 10px;font-size:10px;font-weight:700;letter-spacing:1.1px;color:#b4dad1}
+.dpp-explorer .outlook-thesis blockquote{padding:0;margin:0;border:0;font-size:clamp(19px,1.6vw,24px);font-weight:550;line-height:1.55;color:#f3faf8}
+.dpp-explorer .outlook-thesis a{display:inline-block;margin-top:14px;font-size:13px;color:#bcece0;text-underline-offset:4px}
+.dpp-explorer .outlook-qualification{padding-left:13px;border-left:3px solid #a3bcb6;color:#526576}
+.dpp-explorer .graph-outlook-body .outlook-qualification{font-size:12px}
+.dpp-explorer .outlook-sources{border-top:1px solid #d6e4df;padding-top:12px;font-size:13px;line-height:1.7}
+.dpp-explorer .outlook-sources summary{cursor:pointer;min-height:32px;font-weight:650;color:#315d58}
+.dpp-explorer .outlook-sources p,.dpp-explorer .outlook-sources li{font-size:13px;line-height:1.7}
+.dpp-explorer .outlook-sources ul{margin:0 0 12px;padding-left:20px}
+.dpp-explorer .outlook-sources li+li{margin-top:7px}
+.dpp-explorer .graph-outlook :is(a,summary):focus-visible,.dpp-explorer .graph-outlook-signpost a:focus-visible{outline:3px solid #0969da;outline-offset:4px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-outlook-signpost{flex:0 0 auto;margin-top:8px;padding-block:6px;font-size:12px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-outlook{flex:0 0 auto;max-height:32vh;overflow:auto;overscroll-behavior:contain;margin-top:0;margin-bottom:8px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-outlook>summary{padding:11px 15px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-outlook>summary strong{font-size:16px;letter-spacing:0}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .outlook-kicker{font-size:9px;margin-bottom:3px}
+@media(max-width:1000px){.dpp-explorer .outlook-steps{grid-template-columns:1fr;gap:17px}.dpp-explorer .graph-outlook>summary{flex-wrap:wrap;gap:10px}.dpp-explorer .graph-outlook>summary strong{font-size:21px}}
+@media(max-width:760px){.dpp-explorer .graph-outlook-signpost{margin-inline:12px}.dpp-explorer .graph-outlook{margin-inline:12px}.dpp-explorer .graph-outlook>summary{padding:16px}.dpp-explorer .graph-outlook-body{padding:0 16px 16px}.dpp-explorer .outlook-horizon{font-size:10px}.dpp-explorer .outlook-thesis{padding:17px}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-outlook-signpost{display:none}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-outlook{max-height:25vh;margin-bottom:5px}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-outlook>summary{padding:8px 10px;gap:7px}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .outlook-horizon{display:none}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-outlook>summary strong{font-size:13px}}
+
+/* Plain-language orientation stays close to the graph and its evidence controls. */
+.dpp-explorer .graph-definition{margin:14px 20px 0;font-size:15px;line-height:1.65;color:#344f63;max-width:1050px}
+.dpp-explorer .graph-definition strong{color:#15354f;font-weight:650}
+.dpp-explorer .graph-definition a{font-size:13px;font-weight:650;white-space:normal;text-underline-offset:3px}
+.dpp-explorer .graph-guide{padding:3px 0 14px;margin-bottom:25px;border-bottom:1px solid #bfd5cf;scroll-margin-top:24px}
+.dpp-explorer .graph-outlook-body .graph-guide>.outlook-kicker{font-size:10px;margin:0 0 6px}
+.dpp-explorer .graph-outlook-body #graph-guide-heading{font-size:24px;line-height:1.3;margin:0 0 13px;letter-spacing:-.4px}
+.dpp-explorer .graph-guide-uses{margin-block:20px}
+.dpp-explorer .graph-guide-try{padding:14px 16px;background:#e8f3f0;border-radius:7px;color:#244f48}
+.dpp-explorer .graph-outlook-body .graph-guide-limit{font-size:12px;color:#526576;margin-bottom:0}
+.dpp-explorer .graph-outlook-body .graph-future-heading{font-size:22px;margin:0 0 12px;line-height:1.35;letter-spacing:-.35px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-definition{flex:0 0 auto;margin-top:8px;font-size:13px;line-height:1.5}
+.dpp-explorer.dpp-embedded .graph-definition{margin-inline:16px;font-size:13px;line-height:1.5}
+@media(max-width:760px){.dpp-explorer .graph-definition{margin-inline:12px;font-size:14px}.dpp-explorer .graph-outlook-body #graph-guide-heading{font-size:22px}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-definition{display:none}}
+@media(max-height:700px){.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-definition{display:none}}
+
+/* Semantic profiles add independent symbols; existing lane colours still mean record family. */
+.dpp-explorer .semantic-key{display:flex;align-items:center;gap:7px 10px;flex-wrap:wrap;margin:0 20px 12px;padding:11px 13px;border:1px solid #dce4e8;border-radius:8px;background:#fff;color:#435c70}
+.dpp-explorer .semantic-key-title{font-size:9px;font-weight:750;letter-spacing:.8px;margin-right:3px}
+.dpp-explorer .semantic-chip{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border:1px solid #ccd4df;border-radius:5px;font-size:11px;font-weight:650;line-height:1.5;white-space:nowrap}
+.dpp-explorer .tone-open{--semantic-fill:#f0edfa;--semantic-stroke:#c9bde7;--semantic-text:#58428c}
+.dpp-explorer .tone-validation{--semantic-fill:#faeef2;--semantic-stroke:#dbb5c5;--semantic-text:#843c59}
+.dpp-explorer .tone-licensed{--semantic-fill:#fff4dd;--semantic-stroke:#dbbf86;--semantic-text:#77530c}
+.dpp-explorer .semantic-chip{background:var(--semantic-fill,#f2f5f7);border-color:var(--semantic-stroke,#ccd4df);color:var(--semantic-text,#435c70)}
+.dpp-explorer .semantic-key>a{font-size:12px;font-weight:650;margin-left:auto;text-underline-offset:3px}
+.dpp-explorer .semantic-key>small{width:100%;font-size:11px;line-height:1.5;color:#526576}
+.dpp-explorer #graph-surface .semantic-badge rect{fill:var(--semantic-fill);stroke:var(--semantic-stroke);stroke-width:1;rx:5;ry:5}
+.dpp-explorer #graph-surface .graph-node .semantic-badge text{font-size:11px;font-weight:650;fill:var(--semantic-text);letter-spacing:0;stroke:none}
+.dpp-explorer #graph-surface .graph-node.is-dimmed .semantic-badge{opacity:.65}
+.dpp-explorer #graph-tooltip .graph-semantic-summary{border-top:1px solid #4b677b;margin-top:10px;padding-top:9px;font-size:12px;line-height:1.6;color:#e5ecf5}
+.dpp-explorer .semantic-chip-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.dpp-explorer .semantic-review{font-size:11px!important;line-height:1.6;color:#526576}
+.dpp-explorer .semantic-finding{border-top:1px solid #dce4e8;padding-top:12px;margin-top:14px}
+.dpp-explorer .semantic-finding .semantic-dimension{font-size:10px;letter-spacing:.4px;color:#526576;margin-bottom:5px}
+.dpp-explorer .semantic-finding h4{font-size:15px;color:#173e52;margin:0 0 8px}
+.dpp-explorer .semantic-source{font-size:12px;line-height:1.5;margin:8px 0}
+.dpp-explorer .semantic-source small{display:block;font-size:11px;color:#526576}
+.dpp-explorer .semantic-guide{border-bottom:1px solid #bfd5cf;margin:0 0 24px;padding-bottom:18px;scroll-margin-top:24px}
+.dpp-explorer .graph-outlook-body #semantic-guide-heading{font-size:23px;margin:0 0 12px}
+.dpp-explorer .semantic-definitions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin:20px 0}
+.dpp-explorer .semantic-definitions dt{margin:0 0 10px}
+.dpp-explorer .semantic-definitions dd{margin:0;font-size:13px;line-height:1.7;color:#435c70}
+.dpp-explorer .semantic-examples{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:18px 0}
+.dpp-explorer .semantic-examples strong{width:100%;font-size:13px}
+.dpp-explorer .semantic-examples button{min-height:36px;font-size:12px;padding:7px 10px;background:#fff;color:#315d58;border-color:#b7d5cf;border-radius:20px}
+.dpp-explorer .semantic-method-sources{font-size:12px!important}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .semantic-key{flex:0 0 auto;margin-bottom:8px;padding-block:7px}
+@media(max-width:1000px){.dpp-explorer .semantic-definitions{grid-template-columns:1fr;gap:18px}}
+@media(max-width:760px){.dpp-explorer .semantic-key{margin-inline:12px}.dpp-explorer .semantic-key>a{margin-left:0}.dpp-explorer .semantic-key-title{width:100%}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .semantic-key{display:none}}
+@media(max-height:800px){.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .semantic-key>small,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .semantic-key-title{display:none}}
+/* Alternative views preserve the same records, relationships and selection. */
+.dpp-explorer .graph-layout-picker{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin:14px 20px 0}
+.dpp-explorer .graph-layout-picker button{min-height:42px;padding:9px 14px;font-weight:650;color:#39576b;border-color:#cfdae3}
+.dpp-explorer .graph-layout-picker button span{margin-right:6px;font-size:18px;vertical-align:middle}
+.dpp-explorer .graph-layout-picker button[aria-pressed=true]{color:#fff;background:#153b59;border-color:#153b59}
+.dpp-explorer .graph-layout-picker>span{font-size:12px;color:#617585;margin-left:8px}
+.dpp-explorer .network-summary{display:flex;align-items:center;gap:8px 16px;flex-wrap:wrap;background:#f1f7f8;border-bottom:1px solid #d8e5e8;padding:10px 20px;color:#39576b}
+.dpp-explorer .network-summary p{margin:0;font-size:13px}
+.dpp-explorer .network-summary strong{font-size:15px;color:#173e55}
+.dpp-explorer .network-summary button{font-size:12px;padding:6px 10px;background:#fff;border-color:#b9ced7;color:#1d5369}
+.dpp-explorer .network-summary>span{font-size:11px;color:#617585}
+.dpp-explorer .is-network #graph-surface{background:#f5f8fb}
+.dpp-explorer #graph-surface .network-group rect{fill:#fff;stroke:#dae4ec;stroke-width:1}
+.dpp-explorer #graph-surface .network-group.isolated rect{fill:#f5f8fa;stroke:#b9c9d5;stroke-dasharray:6 4}
+.dpp-explorer #graph-surface .network-group>text{font-family:inherit;font-size:13px;font-weight:700;fill:#526a7c;letter-spacing:.1px}
+.dpp-explorer #graph-surface .network-label-back{fill:transparent;stroke:none}
+.dpp-explorer #graph-surface .network-node-label{font-size:13px;font-weight:650;fill:#24445b;line-height:16px}
+.dpp-explorer #graph-surface .network-dot{fill:var(--node-color);stroke:#fff;stroke-width:2}
+.dpp-explorer #graph-surface .network-dot-ring{fill:none;stroke:transparent;stroke-width:2}
+.dpp-explorer #graph-surface .network-node.is-isolated .network-dot{fill:#fff;stroke:var(--node-color);stroke-width:2;stroke-dasharray:3 2}
+.dpp-explorer #graph-surface .network-node.is-isolated .network-label-back{fill:transparent}
+.dpp-explorer #graph-surface .network-node.selected .network-dot-ring,.dpp-explorer #graph-surface .network-node.is-active .network-dot-ring{stroke:#153b59;fill:#e3eff9}
+.dpp-explorer #graph-surface .network-node.is-neighbor .network-dot-ring{stroke:var(--node-color);stroke-opacity:.45}
+.dpp-explorer #graph-surface .network-node.is-active .network-label-back,.dpp-explorer #graph-surface .network-node.selected .network-label-back{fill:transparent}
+.dpp-explorer #graph-surface .network-node:hover .network-dot-ring,.dpp-explorer #graph-surface .network-node:focus-visible .network-dot-ring{stroke:#082239;stroke-width:3}
+.dpp-explorer #graph-surface .network-node.is-dimmed .network-dot{fill:#c8d5df;stroke:#fff}
+.dpp-explorer #graph-surface .network-node.is-dimmed.is-isolated .network-dot{fill:#fff;stroke:#b8c7d2}
+.dpp-explorer #graph-surface .network-node.is-dimmed text{fill:#6b7e8c}
+.dpp-explorer #graph-surface .network-semantic-symbols{font-size:14px;font-weight:750;fill:#63527e;letter-spacing:2px}
+.dpp-explorer .is-network #graph-surface .graph-edge{stroke-width:1.4;opacity:.8}
+.dpp-explorer .is-network #graph-surface .graph-edge.is-active,.dpp-explorer .is-network #graph-surface .graph-edge.selected{stroke-width:2.2;opacity:1}
+.dpp-explorer .is-network #graph-surface .graph-edge.is-dimmed{opacity:.14}
+/* Reserve an independent reading panel in full screen: no hover content covers the graph. */
+.dpp-explorer #graph-hover-panel{display:none}
+.dpp-explorer.is-graph-view .explorer:is(.graph-expanded,:fullscreen){grid-template-columns:minmax(0,1fr) clamp(320px,25vw,380px)}
+.dpp-explorer.is-graph-view .explorer:is(.graph-expanded,:fullscreen)>.inspector{display:flex;flex-direction:column;grid-column:2;grid-row:1;overflow:hidden}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-hover-panel{display:block;flex:0 0 auto;max-height:48%;overflow:auto;padding:22px 20px 18px;background:#edf5fa;border-bottom:1px solid #c9dce9;overscroll-behavior:contain}
+.dpp-explorer .graph-hover-kicker{font-size:11px;font-weight:750;letter-spacing:1.5px;color:#456b85;margin:0 0 13px}
+.dpp-explorer #graph-hover-empty h3{font-size:20px;line-height:1.35;color:#193b55;margin-bottom:10px}
+.dpp-explorer #graph-hover-empty p{font-size:14px;line-height:1.7;color:#526b7c;margin:0}
+.dpp-explorer #graph-hover-panel #graph-tooltip{position:static;inset:auto;max-width:none;padding:0;border:0;border-radius:0;box-shadow:none;background:transparent;color:#193b55;pointer-events:auto}
+.dpp-explorer #graph-hover-panel #graph-tooltip h3,.dpp-explorer #graph-hover-panel #graph-tooltip strong{color:#193b55;font-size:21px}
+.dpp-explorer #graph-hover-panel #graph-tooltip p,.dpp-explorer #graph-hover-panel #graph-tooltip small,.dpp-explorer #graph-hover-panel #graph-tooltip span{color:#425f74}
+.dpp-explorer #graph-hover-panel #graph-tooltip li{color:#24465c;font-size:13px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen)>.inspector>.inspector-top{flex:0 0 auto;padding-top:18px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #detail-content{flex:1 1 auto;min-height:0;overflow:auto;overscroll-behavior:contain}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-layout-picker,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .network-summary{flex:0 0 auto}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-layout-picker{margin-top:9px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-definition,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-outlook-signpost{display:none}
+@media(max-width:760px){
+  .dpp-explorer .graph-layout-picker{margin-inline:12px}.dpp-explorer .graph-layout-picker>span{display:none}
+  .dpp-explorer .network-summary{padding-inline:12px}.dpp-explorer .network-summary>span{display:none}
+  .dpp-explorer.is-graph-view .explorer:is(.graph-expanded,:fullscreen){grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) minmax(170px,34vh)}
+  .dpp-explorer.is-graph-view .explorer:is(.graph-expanded,:fullscreen)>.inspector{grid-column:1;grid-row:2;border-left:0;border-top:1px solid #c9dce9}
+  .dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-hover-panel{max-height:100%;padding:12px 16px;flex-shrink:0}
+  .dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-hover-panel:has(#graph-tooltip:not([hidden]))~*{display:none}
+  .dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-hover-panel:has(#graph-tooltip[hidden]){max-height:95px}
+  .dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-hover-empty h3{font-size:15px;margin-bottom:4px}
+  .dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-hover-empty p{font-size:12px;line-height:1.5}
+  .dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-hover-kicker{margin-bottom:6px;font-size:10px}
+  .dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-learning,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-legend,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-isolation-note,.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .semantic-key{display:none}
+}
+
+.dpp-explorer #graph-hover-panel:focus-visible{outline:3px solid #0969da;outline-offset:-4px}
+
+.dpp-explorer #graph-surface .network-node text.network-node-label{stroke:#fff;stroke-width:4px;stroke-linejoin:round;paint-order:stroke fill}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #detail-content{column-count:auto;column-width:auto}
+
+/* A compact graph toolbar and a genuinely focused full-screen workspace. */
+.dpp-explorer .graph-overview>.graph-heading{order:0;flex:1 1 auto}
+.dpp-explorer .graph-overview>.graph-tools{order:1}
+.dpp-explorer .graph-overview>.graph-layout-picker{order:2;flex:1 0 100%;margin:0}
+.dpp-explorer #graph-stage-fullscreen{font-size:12px;font-weight:650;min-height:34px;color:#075aa7;background:#edf5fc;border-color:#bfd6e9}
+.dpp-explorer #graph-navigation-hint{margin-left:auto}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .viewbar,
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .resultbar,
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-heading,
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-definition,
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-learning,
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-examples,
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-outlook-signpost,
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .semantic-key,
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-outlook,
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-legend,
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-isolation-note,
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-selection p,
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-navigation-hint,
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-stage-fullscreen,
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-layout-picker>span,
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .network-summary>span{display:none!important}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-overview{padding:10px 16px;gap:8px 16px;align-items:center;border-bottom:1px solid #dce6ec;background:#fff}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-overview>.graph-layout-picker{order:0;flex:0 1 auto;margin:0}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-tools{order:1;margin-left:auto}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-status-row{padding:6px 16px;min-height:30px;border-top:0}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-selection{padding:7px 16px;gap:5px 12px;font-size:13px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-selection strong{font-size:13px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-selection button{min-height:32px;padding:5px 8px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .network-summary{padding:6px 16px;gap:6px 12px}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-stage{min-height:0;flex:1 1 0}
+.dpp-explorer #graph-surface .graph-emphasis,.dpp-explorer #graph-surface .graph-edge-emphasis{pointer-events:none}
+@media(max-width:760px){
+  .dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-overview{padding:6px 10px;gap:6px}
+  .dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-layout-picker button{min-height:36px;font-size:12px;padding:6px 9px}
+  .dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-tools button{min-height:36px;padding:6px 8px}
+  .dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-tools .small-button{min-width:36px;width:36px}
+  .dpp-explorer .explorer:is(.graph-expanded,:fullscreen) #graph-stage{min-height:0}
+}
+
+/* Evidence downloads remain available in the focused graph workspace. */
+.dpp-explorer .graph-download{position:relative;margin:0;border:0;padding:0;z-index:12;flex:0 0 auto}
+.dpp-explorer .graph-download>summary{display:flex;align-items:center;gap:8px;list-style:none;cursor:pointer;min-height:42px;padding:7px 12px;border:1px solid #bfd3e4;border-radius:6px;background:#f4f8fc;color:#075aa7;font-size:13px;font-weight:650}
+.dpp-explorer .graph-download>summary::-webkit-details-marker{display:none}
+.dpp-explorer .graph-download[open]>summary{background:#e6f1fb;border-color:#6b9ac2}
+.dpp-explorer .graph-download-menu{position:absolute;top:calc(100% + 7px);right:0;width:292px;max-width:calc(100vw - 32px);padding:8px;background:white;border:1px solid #cad9e5;border-radius:10px;box-shadow:0 12px 32px #16364d26}
+.dpp-explorer .graph-download-menu>a,.dpp-explorer .graph-download-menu>button{display:block;width:100%;text-align:left;margin:0;padding:11px 12px;border:0;border-radius:6px;color:#173b59;background:white;text-decoration:none;white-space:normal}
+.dpp-explorer .graph-download-menu>a:hover,.dpp-explorer .graph-download-menu>button:hover{background:#edf5fc}
+.dpp-explorer .graph-download-menu strong,.dpp-explorer .graph-download-menu small{display:block}
+.dpp-explorer .graph-download-menu strong{font-size:14px}
+.dpp-explorer .graph-download-menu small{color:#526b7c;font-size:12px;margin-top:3px;font-weight:400}
+.dpp-explorer .graph-download-menu p{font-size:11px;line-height:1.6;color:#526b7c;margin:7px 12px 4px;white-space:normal}
+.dpp-explorer .graph-update-note{margin:0 20px 14px;padding:10px 13px;border-left:3px solid #167a79;background:#eff7f5;color:#365a62;font-size:12px;line-height:1.65}
+.dpp-explorer .graph-update-note a{white-space:nowrap}
+.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-update-note{display:none}
+@media(max-width:760px){.dpp-explorer .graph-download>summary{min-height:44px;font-size:12px;padding-inline:10px}.dpp-explorer .graph-update-note{margin-inline:12px}.dpp-explorer .explorer:is(.graph-expanded,:fullscreen) .graph-download>summary{min-height:36px;padding:6px 8px}}
+
+/* A separate, explicitly researched legal lens; geometry stays shared with coverage. */
+.dpp-explorer #map-coverage-label{white-space:nowrap}
+.dpp-explorer .regulation-legend{padding:18px 20px 16px;background:#f7fafc;border-top:1px solid #e0e7ed;margin-top:8px}
+.dpp-explorer .regulation-legend-heading{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;font-size:13px;color:#254459;margin-bottom:14px}
+.dpp-explorer .regulation-legend-heading>span{font-size:11px;color:#596f7c}
+.dpp-explorer .phase-items{display:grid;grid-template-columns:1fr 1fr;gap:15px 20px}
+.dpp-explorer .phase-legend-item{display:flex;align-items:flex-start;gap:10px;font-size:12px}
+.dpp-explorer .phase-legend-item>i{display:grid;place-items:center;flex:0 0 26px;height:26px;border-radius:6px;background:var(--phase-color);color:#fff;font-style:normal;font-size:16px}
+.dpp-explorer .phase-legend-item strong,.dpp-explorer .phase-legend-item small{display:block}
+.dpp-explorer .phase-legend-item strong{color:#183c56;font-size:12px}
+.dpp-explorer .phase-legend-item small{margin-top:3px;color:#526a7a;font-size:11px;line-height:1.5}
+.dpp-explorer .phase-scope-key{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:16px;font-size:11px;color:#526a7a}
+.dpp-explorer .phase-scope-key>span{display:flex;align-items:center;gap:6px}
+.dpp-explorer .phase-scope-key i{display:inline-block;width:17px;height:13px;border:1px solid #9daebb;border-radius:2px}
+.dpp-explorer .phase-unassessed{background:#e5e9ee}
+.dpp-explorer .phase-territorial{background:repeating-linear-gradient(135deg,#6b8291 0 3px,#e5edf0 3px 5px)}
+.dpp-explorer .regulation-legend>p{font-size:11px;color:#526a7a;margin:12px 0 0}
+.dpp-explorer .regulation-kicker{font-size:10px;letter-spacing:.06em;font-weight:700;color:#39706b;margin:0 0 14px}
+.dpp-explorer .regulation-overview h2{font-size:25px;line-height:1.2;margin:0 0 14px;color:#173d55}
+.dpp-explorer .regulation-overview>p{font-size:13px;line-height:1.65}
+.dpp-explorer .regulation-overview h3{font-size:13px;margin-top:26px}
+.dpp-explorer .phase-guide{margin:22px 0}
+.dpp-explorer .phase-guide>div{display:flex;gap:9px;margin:15px 0}
+.dpp-explorer .phase-dot{color:var(--phase-color);font-size:22px;line-height:1;flex:0 0 20px}
+.dpp-explorer .phase-guide p{margin:0;font-size:12px;line-height:1.5}
+.dpp-explorer .phase-guide strong,.dpp-explorer .phase-guide small{display:block}
+.dpp-explorer .phase-guide small{color:#5b7080;font-size:11px;margin-top:4px}
+.dpp-explorer .regulation-examples{display:flex;flex-direction:column;gap:7px}
+.dpp-explorer .regulation-examples button{text-align:left;background:#fff;border:1px solid #cbd9e1;border-radius:6px;color:#254c62;padding:9px 11px;font-size:12px}
+.dpp-explorer .regulation-overview>a{font-size:12px}
+.dpp-explorer .phase-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 10px;border-left:4px solid var(--phase-color);background:#edf3f6;color:#193b53;font-weight:700;font-size:13px}
+.dpp-explorer .phase-badge>span{color:var(--phase-color)}
+.dpp-explorer .detail-section .source-meta{display:block}
+@media(max-width:760px){.dpp-explorer .regulation-legend{padding:15px 12px}.dpp-explorer .phase-items{gap:15px 12px}}
+@media(max-width:430px){.dpp-explorer .phase-items{grid-template-columns:1fr}}
+
+.dpp-explorer .regulation-kicker{display:flex;flex-wrap:wrap;gap:5px 10px}.dpp-explorer .regulation-kicker time{white-space:nowrap}
+
+.dpp-explorer .jurisdiction-hint{margin-top:7px;font-size:11px;line-height:1.5}
+.dpp-explorer .regulatory-overview-action{font-size:12px;text-align:left;width:100%;margin-top:4px}
+
+.dpp-explorer a.contact-spherity,
+.dpp-explorer .masthead nav a.contact-spherity {
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:44px;padding:10px 14px;border:1px solid #218577;border-radius:8px;
+  background:#7ee4c1;color:#102636;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap;
+}
+.dpp-explorer a.contact-spherity:hover {background:#a1efd4;border-color:#126658;color:#102636}
+.dpp-explorer a.contact-spherity:focus-visible {outline:3px solid #126658;outline-offset:3px}
+.dpp-explorer .masthead a.contact-spherity:focus-visible {outline-color:#fff}
+.dpp-explorer .masthead nav,.dpp-explorer footer nav {display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.dpp-explorer .embed-toolbar .contact-spherity {font-size:12px;padding:8px 10px;margin-left:auto}
+@media(max-width:600px){.dpp-explorer .masthead{align-items:flex-start;flex-wrap:wrap}.dpp-explorer .masthead nav{justify-content:flex-start;gap:6px 16px}.dpp-explorer footer nav{gap:12px}}
+@media print{.dpp-explorer a.contact-spherity{display:none}}
+
+.dpp-explorer.dpp-embedded .embed-toolbar{flex-wrap:wrap}
+.dpp-explorer.dpp-embedded .embed-toolbar button,.dpp-explorer.dpp-embedded .embed-toolbar a{min-height:44px}
+.dpp-explorer.dpp-embedded .embed-toolbar #embed-open-full{
+  margin-left:0;justify-content:center;gap:8px;min-height:44px;padding:10px 14px;
+  border:1px solid #213a55;border-radius:8px;background:#213a55;color:#fff;text-decoration:none;
+}
+.dpp-explorer.dpp-embedded .embed-toolbar #embed-open-full:hover{background:#142b43;border-color:#142b43}
+.dpp-explorer.dpp-embedded .embed-toolbar #embed-open-full:focus-visible{outline:3px solid #213a55;outline-offset:3px}
+@media(max-width:430px){
+  .dpp-explorer.dpp-embedded .embed-toolbar{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .dpp-explorer.dpp-embedded .embed-toolbar #embed-filters{grid-column:1/-1;justify-self:start}
+  .dpp-explorer.dpp-embedded .embed-toolbar .contact-spherity,
+  .dpp-explorer.dpp-embedded .embed-toolbar #embed-open-full{margin-left:0;width:100%;padding:8px}
+}
+
+/* Edition and calendar controls share the evidence explorer's typography. */
+.edition label,.timeline-heading label{display:block;font-size:12px;font-weight:700;margin:10px 0 5px}.edition select{max-width:100%;padding:10px;border:1px solid #cbd7df;border-radius:8px;background:white;color:#213a55}.filters input[type=date]{width:100%;padding:10px;border:1px solid #cbd7df;border-radius:7px;font:inherit}.record-id{display:block;overflow-wrap:anywhere;font-size:12px;margin:8px 0}.timeline-view{padding:24px}.timeline-heading{display:flex;justify-content:space-between;align-items:start;gap:20px}.timeline-heading h2{font-size:27px;margin:8px 0}.timeline-heading select{padding:10px;border:1px solid #cbd7df;border-radius:8px;max-width:100%;display:block}.timeline-heading a{display:block;font-size:13px;margin-top:8px}.timeline-event{display:grid;grid-template-columns:165px minmax(0,1fr);gap:24px;padding:25px 0;border-top:1px solid #dbe4ea}.timeline-event h3{font-size:19px;margin:0 0 8px}.timeline-event p,.timeline-event li{font-size:14px;line-height:1.6}.timeline-event small{display:block;font-size:12px;line-height:1.5;color:#52677a}.timeline-date{font-size:18px;font-weight:700;color:#213a55;display:block;margin-bottom:8px}.timeline-event details{margin-top:10px}.timeline-event code{overflow-wrap:anywhere;font-size:12px}.timeline-event .detail-link{display:inline-block;width:auto;margin-right:10px;font-size:13px}.graph-edge-analysis{stroke-dasharray:6 5}@media(max-width:700px){.timeline-heading{display:block}.timeline-event{grid-template-columns:1fr;gap:10px}.timeline-view{padding:18px}.tabs{overflow-x:auto}}
+
+.is-historical .semantic-key,.is-historical .graph-update-note,.is-historical #semantic-guide{display:none}

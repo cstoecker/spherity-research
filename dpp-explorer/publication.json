@@ -1,0 +1,7 @@
+{
+  "state": "released_research_snapshot",
+  "version": "0.2.0",
+  "release_directory": "dpp-research/releases/0.2.0",
+  "manifest_sha256": "adb35ca18387e7940546a8934c728b9cb5b016bb2b8f9544a87aeb63b683dfe7",
+  "dataset_sha256": "beb73345e8394cf3d553d57495243a4928145adfb049951abc8f06c678ee57d5"
+}

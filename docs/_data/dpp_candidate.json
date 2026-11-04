@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "schema_version": "0.2.0",
+  "protocol_version": "0.2.0",
+  "previous_version": "0.1.0",
+  "release_date": "2026-10-25",
+  "evidence_cutoff": "2026-10-25",
+  "candidate_id": "0.2.0-candidate-2026-10-25",
+  "entities": 268,
+  "substantive_records": 192,
+  "assertions": 364,
+  "active_assertions": 361,
+  "graph_edges": 205,
+  "sources": 188,
+  "source_identities": 171,
+  "updated_at": "2026-10-25",
+  "research_cutoff": "2026-10-25",
+  "calendar_events": 28
+}

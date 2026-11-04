@@ -3,9 +3,10 @@ publication_template_version: 2
 layout: research-respec
 css: "/assets/spherity-research-respec.css"
 
-title: "Governing AI That Acts Across Companies"
-seo_title: "AI Safety for Agents Acting Across Companies"
-og_title: "Governing AI That Acts Across Companies | AI Safety Series"
+title: "Governing Safe AI That Acts Across Companies"
+citation_title: "Governing AI That Acts Across Companies"
+seo_title: "Governing Safe AI That Acts Across Companies"
+og_title: "Governing Safe AI That Acts Across Companies | AI Safety Series"
 og_description: "A four-part Spherity research series on protected execution, runtime assurance and private verification for safe cross-company AI agents."
 subtitle: "How responsible leaders build first-mover advantage through AI safety and alignment"
 description: "An executive brief and three-paper series on protected execution, runtime assurance and private verification for cross-company AI agents."
@@ -26,7 +27,7 @@ author_affiliations:
 affiliation: "Spherity GmbH"
 
 date: "2026-09-28"
-last_modified_at: "2026-09-28"
+last_modified_at: "2026-10-16"
 research_cutoff: "2026-09-28"
 research_cutoff_label: "Research, incidents, standards and implementation evidence reviewed to this date"
 lang: "en"
@@ -91,7 +92,7 @@ license: "https://creativecommons.org/licenses/by/4.0/"
 license_scope: "This research page, the executive brief and all three linked AI Safety series papers"
 
 image: "/assets/preview-governing-ai-that-acts-across-companies.webp"
-image_alt: "Spherity AI Safety series preview for Governing AI That Acts Across Companies, showing the executive brief cover."
+image_alt: "Spherity AI Safety series preview for Governing Safe AI That Acts Across Companies, showing the executive brief cover."
 image_mime: "image/webp"
 image_width: 1200
 image_height: 630
@@ -148,14 +149,14 @@ spatial_coverage:
   - "European Union"
   - "Global"
 
-series_name: "Governing AI That Acts Across Companies"
+series_name: "Governing Safe AI That Acts Across Companies"
 series_description: "A four-part AI Safety series connecting incentive-compatible protected execution, runtime assurance and private cross-domain verification."
 series_url: "/governing-ai-that-acts-across-companies.html"
 series_position: 0
 series_items:
   - position: 0
     label: "Executive brief"
-    title: "Governing AI That Acts Across Companies"
+    title: "Governing Safe AI That Acts Across Companies"
     url: "/governing-ai-that-acts-across-companies.html"
   - position: 1
     label: "Paper 1"

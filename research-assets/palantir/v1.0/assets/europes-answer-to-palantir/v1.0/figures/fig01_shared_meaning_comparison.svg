@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="2400" height="1350" preserveAspectRatio="xMinYMin meet" viewBox="0 0 2400 1350" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="2400" height="1350"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-1350)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="2400" height="1350" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="50" y="1302" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 50px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,2604) scale(1,-1)">Local meaning, shared evidence, cross-company AI</text>
+			<text x="50" y="1250" style="font-family: Arial, sans-serif; font-size: 36px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,2500) scale(1,-1)">Each company ingests and interprets its own records. Only authorized exchanges cross boundaries.</text>
+			<rect x="50" y="1180" width="2300" height="50" rx="10" ry="10" style="stroke: rgb(83%,87%,90%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<path d="M 69,1192 L 95,1218 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 6;"/>
+			<path d="M 69,1218 L 95,1192 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 6;"/>
+			<text x="112" y="1193" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,2386) scale(1,-1)">Excel</text>
+			<circle cx="462" cy="1205" r="13" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<text x="492" y="1193" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,2386) scale(1,-1)">CSV</text>
+			<rect x="829" y="1192" width="26" height="26" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<text x="872" y="1193" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,2386) scale(1,-1)">Word / PDF</text>
+			<polygon points="1222 1218, 1209 1192, 1235 1192" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(65%,47%,14%); fill-rule: evenodd;"/>
+			<text x="1252" y="1193" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,2386) scale(1,-1)">Databases</text>
+			<polygon points="1602 1218, 1589 1205, 1602 1192, 1615 1205" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(72%,39%,39%); fill-rule: evenodd;"/>
+			<text x="1632" y="1193" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,2386) scale(1,-1)">APIs</text>
+			<rect x="1969" y="1192" width="11" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<rect x="1984" y="1192" width="11" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="1969" y="1207" width="11" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<rect x="1984" y="1207" width="11" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(65%,47%,14%); fill-rule: evenodd;"/>
+			<text x="2012" y="1193" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,2386) scale(1,-1)">Scans</text>
+			<text x="50" y="1129" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 42px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,2258) scale(1,-1)">Palantir: platform focus</text>
+			<text x="50" y="1085" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,2170) scale(1,-1)">Documented pattern; configured scope</text>
+			<text x="720" y="1139" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 42px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,2278) scale(1,-1)">Proposed open ecosystem</text>
+			<rect x="720" y="1065" width="1630" height="58" rx="10" ry="10" style="stroke: rgb(57%,60%,77%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(93%,94%,98%); fill-rule: evenodd;"/>
+			<text x="1145.786" y="1085" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 36px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,2170) scale(1,-1)">Shared meaning  |  Discovery  |  Trust / status</text>
+			<rect x="50" y="320" width="600" height="720" rx="10" ry="10" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(97%,98%,99%); fill-rule: evenodd;"/>
+			<text x="158.80249999999998" y="994" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 37px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1988) scale(1,-1)">Platform environment</text>
+			<rect x="70" y="875" width="560" height="90" rx="10" ry="10" style="stroke: rgb(72%,78%,82%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="178.045" y="932" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1864) scale(1,-1)">Local source records</text>
+			<path d="M 105,886 L 131,912 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 6;"/>
+			<path d="M 105,912 L 131,886 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 6;"/>
+			<circle cx="210.8" cy="899" r="13" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="290.6" y="886" width="26.0" height="26" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<polygon points="396.4 912, 383.4 886, 409.4 886" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(65%,47%,14%); fill-rule: evenodd;"/>
+			<polygon points="489.2 912, 476.2 899, 489.2 886, 502.2 899" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(72%,39%,39%); fill-rule: evenodd;"/>
+			<rect x="569.0" y="886" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<rect x="584.0" y="886" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="569.0" y="901" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<rect x="584.0" y="901" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(65%,47%,14%); fill-rule: evenodd;"/>
+			<rect x="70" y="785" width="560" height="70" rx="10" ry="10" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="189.367" y="808.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1616) scale(1,-1)">Parse / OCR / check</text>
+			<rect x="70" y="665" width="560" height="100" rx="10" ry="10" style="stroke: rgb(57%,60%,77%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(93%,94%,98%); fill-rule: evenodd;"/>
+			<text x="196.949" y="722.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1444) scale(1,-1)">Model / vocabulary</text>
+			<text x="226.716" y="684.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1368) scale(1,-1)">+ graph builder</text>
+			<rect x="70" y="545" width="560" height="100" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="205.982" y="602.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 36px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1204) scale(1,-1)">Ontology Engine</text>
+			<text x="215.264" y="564.0" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1128) scale(1,-1)">Local graph + logic</text>
+			<rect x="70" y="455" width="560" height="70" rx="10" ry="10" style="stroke: rgb(83%,71%,42%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(100%,97%,90%); fill-rule: evenodd;"/>
+			<text x="273.007" y="495.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,990) scale(1,-1)">AI + tools</text>
+			<text x="198.816" y="461.0" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,922) scale(1,-1)">Local action approval</text>
+			<rect x="70" y="345" width="560" height="90" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(87%,94%,92%); fill-rule: evenodd;"/>
+			<text x="174.30499999999998" y="397.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,794) scale(1,-1)">Configured interfaces</text>
+			<text x="205.04" y="359.0" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,718) scale(1,-1)">Data / APIs / actions</text>
+			<path d="M 350,875 L 350,855 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="350 855, 344 868, 356 868" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 350,785 L 350,765 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="350 765, 344 778, 356 778" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 350,665 L 350,645 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="350 645, 344 658, 356 658" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 350,545 L 350,525 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="350 525, 344 538, 356 538" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="350 545, 356 532, 344 532" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<path d="M 350,455 L 350,435 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="350 435, 344 448, 356 448" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="350 455, 356 442, 344 442" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="720" y="320" width="510" height="720" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(98%,99%,98%); fill-rule: evenodd; stroke-dasharray: 12, 8;"/>
+			<text x="900.9815" y="994" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 37px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1988) scale(1,-1)">Supplier</text>
+			<rect x="740" y="875" width="470" height="90" rx="10" ry="10" style="stroke: rgb(72%,78%,82%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="803.045" y="932" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1864) scale(1,-1)">Local source records</text>
+			<path d="M 775,886 L 801,912 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 6;"/>
+			<path d="M 775,912 L 801,886 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 6;"/>
+			<circle cx="862.8" cy="899" r="13" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="924.6" y="886" width="26.0" height="26" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<polygon points="1012.4 912, 999.4 886, 1025.4 886" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(65%,47%,14%); fill-rule: evenodd;"/>
+			<polygon points="1087.2 912, 1074.2 899, 1087.2 886, 1100.2 899" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(72%,39%,39%); fill-rule: evenodd;"/>
+			<rect x="1149.0" y="886" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<rect x="1164.0" y="886" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="1149.0" y="901" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<rect x="1164.0" y="901" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(65%,47%,14%); fill-rule: evenodd;"/>
+			<rect x="740" y="785" width="470" height="70" rx="10" ry="10" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="814.367" y="808.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1616) scale(1,-1)">Parse / OCR / check</text>
+			<rect x="740" y="665" width="470" height="100" rx="10" ry="10" style="stroke: rgb(57%,60%,77%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(93%,94%,98%); fill-rule: evenodd;"/>
+			<text x="821.9490000000001" y="722.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1444) scale(1,-1)">Model / vocabulary</text>
+			<text x="851.716" y="684.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1368) scale(1,-1)">+ graph builder</text>
+			<rect x="740" y="545" width="470" height="100" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="830.982" y="602.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 36px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1204) scale(1,-1)">Ontology Engine</text>
+			<text x="840.264" y="564.0" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1128) scale(1,-1)">Local graph + logic</text>
+			<rect x="740" y="455" width="470" height="70" rx="10" ry="10" style="stroke: rgb(83%,71%,42%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(100%,97%,90%); fill-rule: evenodd;"/>
+			<text x="898.0070000000001" y="495.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,990) scale(1,-1)">AI + tools</text>
+			<text x="823.816" y="461.0" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,922) scale(1,-1)">Local action approval</text>
+			<rect x="740" y="345" width="470" height="90" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(87%,94%,92%); fill-rule: evenodd;"/>
+			<text x="802.11" y="397.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,794) scale(1,-1)">Participant Exchange</text>
+			<text x="905.079" y="359.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,718) scale(1,-1)">Gateway</text>
+			<path d="M 975,875 L 975,855 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="975 855, 969 868, 981 868" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 975,785 L 975,765 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="975 765, 969 778, 981 778" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 975,665 L 975,645 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="975 645, 969 658, 981 658" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 975,545 L 975,525 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="975 525, 969 538, 981 538" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="975 545, 981 532, 969 532" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<path d="M 975,455 L 975,435 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="975 435, 969 448, 981 448" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="975 455, 981 442, 969 442" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<path d="M 975,1065 L 975,1040 Z" style="stroke: rgb(46%,48%,67%); stroke-linecap: butt; stroke-width: 3.2; stroke-dasharray: 10, 7;"/>
+			<polygon points="975 1040, 969 1053, 981 1053" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<polygon points="975 1065, 981 1052, 969 1052" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<rect x="1280" y="320" width="510" height="720" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(98%,99%,98%); fill-rule: evenodd; stroke-dasharray: 12, 8;"/>
+			<text x="1417.821" y="994" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 37px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1988) scale(1,-1)">Manufacturer</text>
+			<rect x="1300" y="875" width="470" height="90" rx="10" ry="10" style="stroke: rgb(72%,78%,82%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="1363.045" y="932" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1864) scale(1,-1)">Local source records</text>
+			<path d="M 1335,886 L 1361,912 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 6;"/>
+			<path d="M 1335,912 L 1361,886 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 6;"/>
+			<circle cx="1422.8" cy="899" r="13" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="1484.6" y="886" width="26.0" height="26" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<polygon points="1572.4 912, 1559.4 886, 1585.4 886" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(65%,47%,14%); fill-rule: evenodd;"/>
+			<polygon points="1647.2 912, 1634.2 899, 1647.2 886, 1660.2 899" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(72%,39%,39%); fill-rule: evenodd;"/>
+			<rect x="1709.0" y="886" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<rect x="1724.0" y="886" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="1709.0" y="901" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<rect x="1724.0" y="901" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(65%,47%,14%); fill-rule: evenodd;"/>
+			<rect x="1300" y="785" width="470" height="70" rx="10" ry="10" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="1374.367" y="808.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1616) scale(1,-1)">Parse / OCR / check</text>
+			<rect x="1300" y="665" width="470" height="100" rx="10" ry="10" style="stroke: rgb(57%,60%,77%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(93%,94%,98%); fill-rule: evenodd;"/>
+			<text x="1381.949" y="722.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1444) scale(1,-1)">Model / vocabulary</text>
+			<text x="1411.716" y="684.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1368) scale(1,-1)">+ graph builder</text>
+			<rect x="1300" y="545" width="470" height="100" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="1390.982" y="602.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 36px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1204) scale(1,-1)">Ontology Engine</text>
+			<text x="1400.2640000000001" y="564.0" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1128) scale(1,-1)">Local graph + logic</text>
+			<rect x="1300" y="455" width="470" height="70" rx="10" ry="10" style="stroke: rgb(83%,71%,42%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(100%,97%,90%); fill-rule: evenodd;"/>
+			<text x="1458.007" y="495.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,990) scale(1,-1)">AI + tools</text>
+			<text x="1383.816" y="461.0" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,922) scale(1,-1)">Local action approval</text>
+			<rect x="1300" y="345" width="470" height="90" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(87%,94%,92%); fill-rule: evenodd;"/>
+			<text x="1362.1100000000001" y="397.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,794) scale(1,-1)">Participant Exchange</text>
+			<text x="1465.079" y="359.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,718) scale(1,-1)">Gateway</text>
+			<path d="M 1535,875 L 1535,855 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="1535 855, 1529 868, 1541 868" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 1535,785 L 1535,765 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="1535 765, 1529 778, 1541 778" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 1535,665 L 1535,645 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="1535 645, 1529 658, 1541 658" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 1535,545 L 1535,525 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="1535 525, 1529 538, 1541 538" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="1535 545, 1541 532, 1529 532" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<path d="M 1535,455 L 1535,435 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="1535 435, 1529 448, 1541 448" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="1535 455, 1541 442, 1529 442" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<path d="M 1535,1065 L 1535,1040 Z" style="stroke: rgb(46%,48%,67%); stroke-linecap: butt; stroke-width: 3.2; stroke-dasharray: 10, 7;"/>
+			<polygon points="1535 1040, 1529 1053, 1541 1053" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<polygon points="1535 1065, 1541 1052, 1529 1052" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<rect x="1840" y="320" width="510" height="720" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(98%,99%,98%); fill-rule: evenodd; stroke-dasharray: 12, 8;"/>
+			<text x="1998.3745" y="994" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 37px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1988) scale(1,-1)">Laboratory</text>
+			<rect x="1860" y="875" width="470" height="90" rx="10" ry="10" style="stroke: rgb(72%,78%,82%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(96%,97%,98%); fill-rule: evenodd;"/>
+			<text x="1923.045" y="932" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1864) scale(1,-1)">Local source records</text>
+			<path d="M 1895,886 L 1921,912 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 6;"/>
+			<path d="M 1895,912 L 1921,886 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 6;"/>
+			<circle cx="1982.8" cy="899" r="13" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="2044.6" y="886" width="26.0" height="26" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<polygon points="2132.4 912, 2119.4 886, 2145.4 886" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(65%,47%,14%); fill-rule: evenodd;"/>
+			<polygon points="2207.2 912, 2194.2 899, 2207.2 886, 2220.2 899" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(72%,39%,39%); fill-rule: evenodd;"/>
+			<rect x="2269.0" y="886" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<rect x="2284.0" y="886" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="2269.0" y="901" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<rect x="2284.0" y="901" width="11.0" height="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(65%,47%,14%); fill-rule: evenodd;"/>
+			<rect x="1860" y="785" width="470" height="70" rx="10" ry="10" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="1934.367" y="808.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1616) scale(1,-1)">Parse / OCR / check</text>
+			<rect x="1860" y="665" width="470" height="100" rx="10" ry="10" style="stroke: rgb(57%,60%,77%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(93%,94%,98%); fill-rule: evenodd;"/>
+			<text x="1941.949" y="722.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1444) scale(1,-1)">Model / vocabulary</text>
+			<text x="1971.716" y="684.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1368) scale(1,-1)">+ graph builder</text>
+			<rect x="1860" y="545" width="470" height="100" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="1950.982" y="602.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 36px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1204) scale(1,-1)">Ontology Engine</text>
+			<text x="1960.2640000000001" y="564.0" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1128) scale(1,-1)">Local graph + logic</text>
+			<rect x="1860" y="455" width="470" height="70" rx="10" ry="10" style="stroke: rgb(83%,71%,42%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(100%,97%,90%); fill-rule: evenodd;"/>
+			<text x="2018.007" y="495.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,990) scale(1,-1)">AI + tools</text>
+			<text x="1943.816" y="461.0" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,922) scale(1,-1)">Local action approval</text>
+			<rect x="1860" y="345" width="470" height="90" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(87%,94%,92%); fill-rule: evenodd;"/>
+			<text x="1922.1100000000001" y="397.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,794) scale(1,-1)">Participant Exchange</text>
+			<text x="2025.079" y="359.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,718) scale(1,-1)">Gateway</text>
+			<path d="M 2095,875 L 2095,855 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="2095 855, 2089 868, 2101 868" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 2095,785 L 2095,765 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="2095 765, 2089 778, 2101 778" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 2095,665 L 2095,645 Z" style="stroke: rgb(20%,46%,64%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="2095 645, 2089 658, 2101 658" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,46%,64%); fill-rule: evenodd;"/>
+			<path d="M 2095,545 L 2095,525 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="2095 525, 2089 538, 2101 538" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="2095 545, 2101 532, 2089 532" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<path d="M 2095,455 L 2095,435 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="2095 435, 2089 448, 2101 448" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="2095 455, 2101 442, 2089 442" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<path d="M 2095,1065 L 2095,1040 Z" style="stroke: rgb(46%,48%,67%); stroke-linecap: butt; stroke-width: 3.2; stroke-dasharray: 10, 7;"/>
+			<polygon points="2095 1040, 2089 1053, 2101 1053" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<polygon points="2095 1065, 2101 1052, 2089 1052" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<path d="M 1210,390 L 1300,390 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="1300 390, 1287 384, 1287 396" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="1210 390, 1223 396, 1223 384" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<path d="M 1770,390 L 1860,390 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="1860 390, 1847 384, 1847 396" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="1770 390, 1783 396, 1783 384" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="720" y="30" width="1630" height="270" rx="10" ry="10" style="stroke: rgb(52%,61%,68%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(97%,98%,99%); fill-rule: evenodd; stroke-dasharray: 12, 8;"/>
+			<path d="M 975,345 L 975,250 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="975 250, 969 263, 981 263" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="975 345, 981 332, 969 332" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="740" y="180" width="470" height="70" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="789.1279999999999" y="220.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,440) scale(1,-1)">Selected claims / results</text>
+			<text x="827.3679999999999" y="186.0" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,372) scale(1,-1)">Provenance retained</text>
+			<path d="M 1535,345 L 1535,250 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="1535 250, 1529 263, 1541 263" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="1535 345, 1541 332, 1529 332" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="1300" y="180" width="470" height="70" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="1349.128" y="220.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,440) scale(1,-1)">Selected claims / results</text>
+			<text x="1387.368" y="186.0" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,372) scale(1,-1)">Provenance retained</text>
+			<path d="M 2095,345 L 2095,250 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="2095 250, 2089 263, 2101 263" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="2095 345, 2101 332, 2089 332" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="1860" y="180" width="470" height="70" rx="10" ry="10" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="1909.128" y="220.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,440) scale(1,-1)">Selected claims / results</text>
+			<text x="1947.368" y="186.0" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,372) scale(1,-1)">Provenance retained</text>
+			<path d="M 1210,215 L 1300,215 Z" style="stroke: rgb(46%,48%,67%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<circle cx="1210" cy="215" r="5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<circle cx="1300" cy="215" r="5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<text x="1223.0" y="232" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(46%,48%,67%); stroke:none;" transform="translate(0,464) scale(1,-1)">links</text>
+			<path d="M 1770,215 L 1860,215 Z" style="stroke: rgb(46%,48%,67%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<circle cx="1770" cy="215" r="5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<circle cx="1860" cy="215" r="5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,48%,67%); fill-rule: evenodd;"/>
+			<text x="1783.0" y="232" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(46%,48%,67%); stroke:none;" transform="translate(0,464) scale(1,-1)">links</text>
+			<text x="745" y="138" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 34px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,276) scale(1,-1)">Task-scoped cross-company graph view</text>
+			<text x="745" y="94" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,188) scale(1,-1)">At an authorized requester</text>
+			<text x="745" y="53" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,106) scale(1,-1)">Federated queries or disclosed results</text>
+			<rect x="1740" y="55" width="590" height="100" rx="10" ry="10" style="stroke: rgb(83%,71%,42%); stroke-linecap: butt; stroke-width: 2.3; fill: rgb(100%,97%,90%); fill-rule: evenodd;"/>
+			<text x="1867.135" y="112.0" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 38px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,224) scale(1,-1)">Cross-company AI</text>
+			<text x="1858.936" y="74.0" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,148) scale(1,-1)">Uses permitted evidence</text>
+			<path d="M 1535,180 L 1535,105 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<path d="M 1535,105 L 1740,105 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="1740 105, 1727 99, 1727 111" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="1535 180, 1541 167, 1529 167" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<text x="50" y="264" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,528) scale(1,-1)">Multiple organizations supported.</text>
+			<text x="50" y="218" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,436) scale(1,-1)">Industry vocabularies are possible.</text>
+			<text x="50" y="172" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,344) scale(1,-1)">No universal closed-world claim.</text>
+			<path d="M 50,117 L 105,117 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 3.2;"/>
+			<polygon points="105 117, 92 111, 92 123" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<polygon points="50 117, 63 123, 63 111" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<text x="130" y="105" style="font-family: Arial, sans-serif; font-size: 32px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,210) scale(1,-1)">Scoped requests / results</text>
+			<text x="50" y="59" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 32px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,118) scale(1,-1)">Action authority remains local.</text>
+		</g>
+	</g>
+</svg>

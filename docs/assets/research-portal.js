@@ -1,4 +1,44 @@
 (() => {
+  const paperSidebar = document.querySelector(".srespec-sidebar");
+  if (paperSidebar) {
+    const updateSidebarFit = () => {
+      const height = paperSidebar.getBoundingClientRect().height;
+      const inset = parseFloat(getComputedStyle(paperSidebar).top) || 0;
+      paperSidebar.classList.toggle("is-viewport-fit",
+        height > 0 && height + inset * 2 <= document.documentElement.clientHeight);
+    };
+    updateSidebarFit();
+    window.addEventListener("resize", updateSidebarFit, { passive: true });
+    if ("ResizeObserver" in window) new ResizeObserver(updateSidebarFit).observe(paperSidebar);
+  }
+
+  // Let the paper scroll around the embedded Atlas, including its legend and details.
+  document.querySelectorAll("iframe.dpp-map-frame").forEach((frame) => {
+    let disconnect = () => {};
+    const observeContent = () => {
+      disconnect();
+      const embeddedDocument = frame.contentDocument;
+      const body = embeddedDocument?.body;
+      if (!body || !body.classList.contains("dpp-embedded") || !("ResizeObserver" in window)) return;
+      const fitContent = () => {
+        // Fullscreen takes the explorer out of normal flow; keep the paper's height stable.
+        if (embeddedDocument.fullscreenElement || body.classList.contains("graph-expanded")) return;
+        const height = Math.ceil(body.getBoundingClientRect().height) + 1;
+        if (height > 1 && frame.style.height !== `${height}px`) frame.style.height = `${height}px`;
+      };
+      const observer = new ResizeObserver(fitContent);
+      observer.observe(body);
+      embeddedDocument.addEventListener("fullscreenchange", fitContent);
+      disconnect = () => {
+        observer.disconnect();
+        embeddedDocument.removeEventListener("fullscreenchange", fitContent);
+      };
+      fitContent();
+    };
+    frame.addEventListener("load", observeContent);
+    observeContent();
+  });
+
   const writeClipboard = async (text) => {
     if (navigator.clipboard?.writeText) {
       await navigator.clipboard.writeText(text);

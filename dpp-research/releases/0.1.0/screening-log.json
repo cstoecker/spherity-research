@@ -1,0 +1,1201 @@
+[
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://agenciagov.ebc.com.br/noticias/202408/combate-a-pirataria-e-protecao-da-propriedade-intelectual-e-prioridade-no-governo"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://app.nbn.be/data/r/platform/frontend/detail?clear=40&p40_id=3523695&p40_language_code=&session=1598555810869"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://app.nbn.be/data/r/platform/frontend/detail?clear=40&p40_id=3523696&p40_language_code=&session=14014194067451"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://assets.pc.gov.au/2025-10/circular-economy.pdf?VersionId=kzNYni.c_7M8UjMSOx3bhMmrRnJ.fWXa"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://bgmea.com.bd/page/BGMEA_Hosts_Introductory_Session_on_AWARE_Digital_Product_Passport_Pilot"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://catena-x.net/news/catena-x-and-opc-foundation-join-forces-to-enable-seamless-industrial-data-exchange-for-the-digital-product-passport/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://catenax-ev.github.io/docs/Io/standards/CX-0143-UseCaseCircularEconomyDigitalProductPassportStandard/introduction"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://ced.bracu.ac.bd/project/dpp/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "README.md",
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://cirpass-2.github.io/ontologies-docs/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://cirpass2.eu/"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://cirpass2.eu/lighthouse-pilots/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "README.md",
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://cirpass2.eu/project-results/"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://congbao.chinhphu.vn/van-ban-dang-cong-bao/chinh-phu-c1/trang-45.htm"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/156-vbhn-vpqh.pdf"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-establishment-european-business-wallets"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://docs.therainalliance.org/dpp/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://ec.europa.eu/digital-building-blocks/sites/pages/viewpage.action?navigatingVersions=true&pageId=920064578"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTITYWALLET/pages/915931903/The+legal+and+technical+road+to+EU+Digital+Identity+Wallets"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://echa.europa.eu/understanding-the-regulation-on-detergents-and-surfactants"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://ecommerce.sist.si/catalog/standards/sist/e450fa4d-0f54-4a78-8ca1-b91dff1ff498/sist-en-18222-2026"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://elstandard.se/documents/preview/3302401"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://eur-lex.europa.eu/eli/reg/2023/1542/ojn"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://eur-lex.europa.eu/eli/reg/2024/1183/oj"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://eur-lex.europa.eu/eli/reg/2024/1781/2024-06-28/eng"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md",
+      "README.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX%3A32024R3110"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1252-20240503"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX%3A32025R0040"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R0405"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R1738"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32025R2509"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "README.md",
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026D1736"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026R1778"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AL_202490330"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://github.com/uncefact/spec-untp"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://hub.unido.org/news/global-south-ready-eus-digital-product-passport-first-insights-textile-sector"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://industrialdigitaltwin.org/dpp4-0"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://ised-isde.canada.ca/site/innovative-solutions-canada/en/supply-chain-verifiable-digital-credentials"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB615"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://legiscan.com/CA/text/SB615/id/3458179"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://morth.gov.in/sites/default/files/Battery%20Pack%20Aadhaar%20Guideline_30122025_0.pdf"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://mst.gov.vn/nghi-dinh-37-ung-dung-cong-nghe-so-trong-quan-ly-chat-luong-va-truy-xuat-nguon-goc-197260812204117614.htm"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1910752"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://oeil.europarl.europa.eu/oeil/fr/procedure-file?reference=2025%2F0358%28COD%29"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=01%2F07%2F2025&jornal=515&pagina=51"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://ref.gs1.org/standards/digital-link/uri-syntax/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://ref.gs1.org/standards/epcis/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://reference.opcfoundation.org/specs/OPC-30450-1"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://single-market-economy.ec.europa.eu/news/digital-product-passport-registry-now-live-2026-07-20_en"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://single-market-economy.ec.europa.eu/news/guidance-support-preparations-digital-batteries-passport-2026-08-21_en"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://single-market-economy.ec.europa.eu/news/stronger-toy-safety-rules-enter-force-2025-12-23_en"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md",
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport_en"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/explore-our-faqs_en"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://single-market-economy.ec.europa.eu/single-market/goods/european-standards/harmonised-standards/digital-product-passport-dpp_en"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://standards.cencenelec.eu/ords/f?cs=14DC1F74D7E9F9DD3EA30959F19526334&p=205:110:::::FSP_PROJECT:79954"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://standards.cencenelec.eu/ords/f?cs=150B8E8F03843B9CC9F4CAD8E01C34DE6&p=205:110:::::FSP_PROJECT:80715"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://standards.cencenelec.eu/ords/f?cs=1606A2E7E589E0185CCA83A6D82E1C78E&p=205:110:::::FSP_PROJECT:80427"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "README.md",
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://standards.cencenelec.eu/ords/f?cs=1C627F97280D3E45FBBBED053BCCA88A9&p=205:110:::::FSP_PROJECT:81495"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "README.md",
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://standards.cencenelec.eu/ords/f?cs=1C97AB3E731BCF82E3BD2A04D9D8DC8CD&p=205:110:::::FSP_PROJECT:81494"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://standards.cencenelec.eu/ords/f?cs=1EEB1FD069281C804EC0A5EEDB8295A77&p=205:110:::::FSP_PROJECT:80081"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=1CB92886179AEDB9E06397BE0A0A064B"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://tcvn.gov.vn/5-diem-moi-dinh-hinh-quan-ly-chat-luong-hang-hoa-thoi-ky-so/27/03/2026/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://thebatterypass.eu/battery-pass/materials/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://thebatterypass.eu/news/batterypass-ready-test-environment-update-new-features-for-improved-battery-passport-preparation/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://thebatterypass.eu/news/now-published-data-attribute-longlist-v2-0-and-data-model-v2-0/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://thebatterypass.eu/press-release/the-digital-battery-passport-gathers-momentum-batterypass-ready-develops-testing-environment/"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://ticaret.gov.tr/dis-iliskiler/yesil-mutabakat/duyurular/dijital-urun-pasaportu-digital-product-passport-dpp-kayit-sisteminin-kullanima-acilmasina-iliskin-aciklama"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://ticaret.gov.tr/urun-guvenligi/ab-teknik-mevzuat-uyumu/dijital-urun-pasaportu"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://unece.org/sites/default/files/2025-10/Newsletter_Jan-Sep2025.pdf"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://unece.org/trade/documents/2026/04/recommendation-ndeg-49-transparency-scale-fostering-sustainable-value"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://unece.org/trade/uncefact"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "README.md",
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://untp.unece.org/docs/about/"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://untp.unece.org/docs/about/References/"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://untp.unece.org/docs/implementations/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://untp.unece.org/docs/specification/"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://untp.unece.org/docs/specification/Architecture/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://untp.unece.org/docs/specification/DigitalIdentityAnchor/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://untp.unece.org/docs/specification/product-passport/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "README.md",
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://untp.unece.org/versions/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "README.md",
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://w3c.github.io/vc-dpp-bw/"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://w3c.github.io/vc-dpp-bw/dpp-ucr/index.html"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://w3c.github.io/vc-dpp-bw/dpp/index.html"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://w3c.github.io/vc-dpp-bw/ucr/"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://w3c.github.io/vc-wg/minutes/2026-10-07-dpp.html"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "README.md",
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://webuild-consortium.github.io/wp4-architecture/blueprint/blueprint.html"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.bgmea.com.bd/index.php/page/DigiProd_Pass_signs_MoU_with_BGMEA%3A_Preparing_Bangladesh%E2%80%99s_Garment_Supply_Chain_for_EU_Market_Compliance"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Dossier/manufacturing-x.html"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.busan.go.kr/nbtnewsBU/1692400?curPage=207&srchBeginDt=&srchEndDt=&srchKey=&srchText="
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.canada.ca/en/natural-resources-canada/news/2025/10/roadmap-to-promote-standards-based-markets-for-critical-minerals.html"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-07-15-dpp/"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/09/european-business-wallets-council-adopts-negotiating-position/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.detran.pr.gov.br/Noticia/Passaporte-digital-motoristas-do-Parana-agora-podem-ter-registro-inovador-de-veiculos"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.dke.de/de/arbeitsfelder/industry/iec-common-data-dictionary-technik-semantik-mehrwert"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.env.go.jp/recycle/circul/achievement.html"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.erca.go.jp/sip/english/overview/a101-2024.html"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.evs.ee/en/iec-63278-1-2023"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://www.fda.gov/food/food-safety-modernization-act-fsma/fsma-final-rule-requirements-additional-traceability-records-certain-foods"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.gov.br/mdic/pt-br/assuntos/infraestrutura-da-qualidade/conhecendo%20a%20eniq/documentos-base/resolucao-conmetro-02-2025-1.pdf"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.gov.ca.gov/2026/09/20/governor-gavin-newsom-signs-legislation-to-accelerate-californias-ev-future-expand-consumer-choice-and-strengthen-energy-independence/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.gov.uk/government/calls-for-evidence/call-for-evidence-digital-product-record-policy/call-for-evidence-digital-product-records-policy"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.imda.gov.sg/-/media/imda/files/about/research-and-statictics/enterprise-digital-transformation/imda-digital-technologies-for-sustainability-playbook.pdf"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://www.industry.gov.au/publications/australian-government-response-food-thought-report"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://www.innovasjonnorge.no/en/artikkel/er-produktene-dine-omfattet-av-nye-eu-regelverk"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "README.md",
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.iso.org/cms/live/live/en/sites/isoorg/contents/data/committee/11/76/11760382/x/catalogue/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.iso.org/fr/standard/95289.html?browse=tc"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.iso.org/standard/90652.html"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://www.itu.int/dms_pubrec/itu-t/rec/l/T-REC-L.1070-202311-I!!SUM-HTM-E.htm"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.itu.int/dms_pubrec/itu-t/rec/l/T-REC-L.1071-202411-I!!SUM-HTM-E.htm"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.itu.int/rec/T-REC-L.1070-202311-I/en"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.itu.int/rec/T-REC-L.1071-202411-I/en"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.izm.fraunhofer.de/en/institut/projects/cirpass-2.html"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.kbob.admin.ch/dam/de/sd-web/XtU2aKG2mRws/20250701_Grundlagenpapier%20DPP_V1.01_DES.pdf"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148939669"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148961279&pWise=main&pWiseMain=R5"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.linkedin.com/posts/uncefact_uncefact-unece-digitalproductpassport-activity-7493212202959564801-ES5q"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.meti.go.jp/policy/mono_info_service/digital_architecture/ouranos.html"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.mfat.govt.nz/en/trade/mfat-market-reports/eu-circular-economy-ecodesign-digital-product-passports-and-green-public-procurement"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.miit.gov.cn/gyhxxhb/jgsj/cyzcyfgs/bmgz/jdcjxl/art/2026/art_392462fdc40c415ea4a4129cac3028c2.html"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://www.miit.gov.cn/xwfb/xwfbh/bxwfbh/art/2026/art_c5c9031e409e468eb4004d82fd394241.html"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://www.morth.gov.in/sites/default/files/Battery%20Pack%20Aadhaar%20Guideline_30122025.pdf"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.nedo.go.jp/news/press/AA5_101831.html"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://www.nen.nl/en/nen-en-18223-2026-en-352704"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.nist.gov/programs-projects/ev-battery-passport"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "eu-legal-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.nve.no/energi/virkemidler/oekodesign-og-energimerking-av-produkter/oekodesignforordning-for-baerekraftige-produkter-espr/"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "README.md",
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://www.oecd.org/en/publications/better-borders-for-trade-traceability-and-enforcement_b5dea5f5-en/full-report/digital-readiness-may-enable-efficient-traceability-at-scale_eaf0933a.html"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://www.oneplanetnetwork.org/news-and-events/news/african-countries-shape-future-digital-product-information-systems"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.pc.gov.au/inquiries-and-research/circular-economy/report/"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "README.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://www.renoon.com/blog/global-digital-product-passport-frameworks-requirements-beyond-the-european-union"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.s2.globalbattery.org/2026-battery-passport-pilots/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.samr.gov.cn/xw/sj/art/2026/art_8d62ff552dfc410b9fa0f594598f8e1d.html"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.teriin.org/project/battery-lifecycle-aadhaar-enabling-digitalisation-circular-economy-and-responsible-battery"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md",
+      "README.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.ungm.org/Public/Notice/294163"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "global-jurisdictions-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://www.unido.org/sites/default/files/unido-publications/2025-12/DPP-Report-V_1.6-lr.pdf"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "README.md",
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.w3.org/2026/03/vc-wg-charter.html"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.w3.org/groups/tf/vc-dbw/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://www.w3.org/TR/2026/WD-vc-recognized-entities-1.0-20260906/"
+  },
+  {
+    "disposition": "pending_not_yet_extracted",
+    "dossier_files": [
+      "README.md",
+      "untp-w3c-evidence.md"
+    ],
+    "reason": "Not yet selected for structured extraction; no exclusion or irrelevance finding.",
+    "url": "https://www.w3.org/TR/vc-data-model-2.0/"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://zenodo.org/records/20720002"
+  },
+  {
+    "disposition": "extracted",
+    "dossier_files": [
+      "standards-ecosystem-evidence.md"
+    ],
+    "reason": "Cited by at least one seed source record.",
+    "url": "https://zenodo.org/records/20749604"
+  },
+  {
+    "disposition": "added_during_extraction",
+    "dossier_files": [
+      "eu-legal-evidence.md"
+    ],
+    "reason": "Additional primary or geographic source used in seed.",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32024R3110"
+  },
+  {
+    "disposition": "added_during_extraction",
+    "dossier_files": [
+      "eu-legal-evidence.md"
+    ],
+    "reason": "Additional primary or geographic source used in seed.",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?qid=1789256683532&uri=OJ%3AL_202600405"
+  },
+  {
+    "disposition": "added_during_extraction",
+    "dossier_files": [
+      "eu-legal-evidence.md"
+    ],
+    "reason": "Additional primary or geographic source used in seed.",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026R1738"
+  },
+  {
+    "disposition": "added_during_extraction",
+    "dossier_files": [],
+    "reason": "Additional primary or geographic source used in seed.",
+    "url": "https://european-union.europa.eu/principles-countries-history/eu-countries_en"
+  },
+  {
+    "disposition": "added_during_extraction",
+    "dossier_files": [],
+    "reason": "Additional primary or geographic source used in seed.",
+    "url": "https://unstats.un.org/unsd/methodology/m49/overview/"
+  },
+  {
+    "disposition": "added_during_extraction",
+    "dossier_files": [],
+    "reason": "Additional primary or geographic source used in seed.",
+    "url": "https://www.w3.org/TR/2022/REC-did-core-20220719/"
+  }
+]

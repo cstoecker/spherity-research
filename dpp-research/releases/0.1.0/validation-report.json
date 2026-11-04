@@ -1,0 +1,166 @@
+{
+  "checks": [
+    "Pydantic strict model matching generated JSON Schema",
+    "Unique IDs",
+    "Complete entity/source references",
+    "Jurisdiction and sector reference types",
+    "Sources for substantive entities and dated events",
+    "Date precision and conditional trigger integrity",
+    "Calendar dates and observation cut-off",
+    "Source access/recheck consistency",
+    "Reported versus measured interoperability outcome consistency"
+  ],
+  "conditional_events": 6,
+  "counts": {
+    "assertions": 224,
+    "entities": 203,
+    "sources": 112
+  },
+  "entity_types": {
+    "CertificationScheme": 1,
+    "Committee": 5,
+    "Concept": 9,
+    "Implementation": 4,
+    "Initiative": 12,
+    "Jurisdiction": 52,
+    "LegalInstrument": 17,
+    "Ontology": 2,
+    "Organisation": 2,
+    "Pilot": 11,
+    "Policy": 7,
+    "Provision": 7,
+    "Report": 15,
+    "Requirement": 9,
+    "Sector": 14,
+    "Specification": 15,
+    "Standard": 15,
+    "StandardisationProject": 6
+  },
+  "human_reviewed_assertions": 0,
+  "qualified_interoperability_claims": 1,
+  "regression_checks": {
+    "count": 27,
+    "results": [
+      {
+        "check": "Missing entity references rejected",
+        "result": "passed"
+      },
+      {
+        "check": "Duplicate IDs rejected",
+        "result": "passed"
+      },
+      {
+        "check": "Unsourced substantive entities rejected",
+        "result": "passed"
+      },
+      {
+        "check": "Unsourced dated events rejected",
+        "result": "passed"
+      },
+      {
+        "check": "Conditional trigger cannot become a fabricated date",
+        "result": "passed"
+      },
+      {
+        "check": "Conditional dates require trigger text",
+        "result": "passed"
+      },
+      {
+        "check": "Impossible calendar dates rejected",
+        "result": "passed"
+      },
+      {
+        "check": "Reopened source requires retrieval date",
+        "result": "passed"
+      },
+      {
+        "check": "Geographic parents must be jurisdictions",
+        "result": "passed"
+      },
+      {
+        "check": "Geographic parent cycles rejected",
+        "result": "passed"
+      },
+      {
+        "check": "Source retrieval after cut-off rejected",
+        "result": "passed"
+      },
+      {
+        "check": "Future interoperability result rejected",
+        "result": "passed"
+      },
+      {
+        "check": "Observation beyond evidence cut-off rejected",
+        "result": "passed"
+      },
+      {
+        "check": "EU membership join has 27 explicit members",
+        "result": "passed"
+      },
+      {
+        "check": "Country rows do not inherit regional/global standards as law",
+        "result": "passed"
+      },
+      {
+        "check": "Norway receives no automatic EU scope join",
+        "result": "passed"
+      },
+      {
+        "check": "Northern Ireland scope does not become UK-wide records",
+        "result": "passed"
+      },
+      {
+        "check": "Parana-only records remain outside Brazil national row",
+        "result": "passed"
+      },
+      {
+        "check": "Conditional timeline events keep null dates",
+        "result": "passed"
+      },
+      {
+        "check": "Future legal dates remain in timeline",
+        "result": "passed"
+      },
+      {
+        "check": "Six EN citation edges remain distinct from eight EN editions",
+        "result": "passed"
+      },
+      {
+        "check": "Late EN editions are not silently OJ cited",
+        "result": "passed"
+      },
+      {
+        "check": "Graph export preserves evidence and temporal qualifiers",
+        "result": "passed"
+      },
+      {
+        "check": "Japan result remains attributed and version bounded",
+        "result": "passed"
+      },
+      {
+        "check": "Uncoded dimensions are not failed tests",
+        "result": "passed"
+      },
+      {
+        "check": "Authentication evidence is not business authority recognition",
+        "result": "passed"
+      },
+      {
+        "check": "Synthetic revision leaves previous snapshot unchanged",
+        "result": "passed"
+      }
+    ],
+    "scope": "Computer checks of seed integrity and projection semantics, including negative synthetic fixtures. Expected outcomes are researcher-defined, not independently human-adjudicated.",
+    "status": "passed"
+  },
+  "scope": "Structural, referential, temporal and provenance checks only; not independent legal or technical conformance review.",
+  "source_access": {
+    "dossier_only": 65,
+    "opened": 32,
+    "search_snippet": 4,
+    "unavailable": 11
+  },
+  "source_records_with_retrieval_dates": 32,
+  "status": "passed",
+  "unique_source_urls": 112
+}

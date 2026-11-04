@@ -1,0 +1,23 @@
+{% for work in page.research_works %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {{ work.schema_type | jsonify }},
+  "@id": {{ work.id | jsonify }},
+  "url": {{ work.url | jsonify }},
+  "name": {{ work.title | jsonify }},
+  "headline": {{ work.title | jsonify }},
+  "alternativeHeadline": {{ work.subtitle | jsonify }},
+  "description": {{ work.description | jsonify }},
+  {% if work.schema_type == "ScholarlyArticle" %}"abstract": {{ work.description | jsonify }},{% endif %}
+  "version": {{ work.version | jsonify }},
+  "datePublished": {{ work.date | jsonify }},
+  "inLanguage": "en",
+  "author": {"@type":"Person", "@id":"{{ '/' | absolute_url }}#dr-carsten-stoecker", "name":"Dr. Carsten Stöcker"},
+  "publisher": {"@id":"https://www.spherity.com/#organization"},
+  "license": {{ page.license | jsonify }},
+  "isAccessibleForFree": true,
+  "encoding": {"@id":"{{ work.pdf_url | absolute_url }}#media-object"}
+}
+</script>
+{% endfor %}

@@ -1,0 +1,2936 @@
+{
+  "entities": [
+    {
+      "id": "global-cn-order73",
+      "type": "LegalInstrument",
+      "label": "China battery recycling and traceability Order 73",
+      "description": "Sectoral recycling, identification and reporting regime.",
+      "version": "Order 73",
+      "jurisdiction_ids": [
+        "jur-cn"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "status": {
+        "value": "in_force",
+        "as_of": "2026-10-23",
+        "scope_note": "NEV power batteries; not a horizontal DPP law."
+      },
+      "dates": [
+        {
+          "kind": "adopted",
+          "date": "2025-12-31",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-cn-order73"
+          ]
+        },
+        {
+          "kind": "published",
+          "date": "2026-01-16",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-cn-order73"
+          ]
+        },
+        {
+          "kind": "entered_into_force",
+          "date": "2026-04-01",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-cn-order73"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-cn-order73"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Art. 12 details require separate provisions."
+      ]
+    },
+    {
+      "id": "global-cn-digital-id-art12",
+      "type": "Provision",
+      "label": "Order 73 Article 12: battery digital identity",
+      "description": "Establishes battery digital identity with further measures required.",
+      "version": "Article 12",
+      "jurisdiction_ids": [
+        "jur-cn"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "status": {
+        "value": "enabling_provision_in_force",
+        "as_of": "2026-10-23",
+        "scope_note": "Does not establish completed platform deployment."
+      },
+      "dates": [
+        {
+          "kind": "entered_into_force",
+          "date": "2026-04-01",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-cn-order73"
+          ]
+        },
+        {
+          "kind": "implementation_details",
+          "date": null,
+          "precision": "conditional",
+          "condition": "Separate measures under Article 12.",
+          "source_ids": [
+            "src-global-cn-order73"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-cn-order73"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Implementing measures not identified in the reviewed source."
+      ]
+    },
+    {
+      "id": "global-cn-battery-coding",
+      "type": "Requirement",
+      "label": "Order 73 battery coding requirement",
+      "description": "Unique battery codes and durable markings.",
+      "version": "Articles 9–10",
+      "jurisdiction_ids": [
+        "jur-cn"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "status": {
+        "value": "operative_sector_duty",
+        "as_of": "2026-10-23",
+        "scope_note": "Domestic production or import for sale/use."
+      },
+      "dates": [
+        {
+          "kind": "applies_from",
+          "date": "2026-04-01",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-cn-order73"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-cn-order73"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": []
+    },
+    {
+      "id": "global-cn-dpp-general-project",
+      "type": "StandardisationProject",
+      "label": "China DPP General requirements project",
+      "description": "Recommended national-standard development project.",
+      "version": "20251568-T-469",
+      "jurisdiction_ids": [
+        "jur-cn"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "under_development",
+        "as_of": "2026-10-23",
+        "scope_note": "No final standard number verified."
+      },
+      "dates": [
+        {
+          "kind": "project_record",
+          "date": "2025-06-03",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-cn-dpp-project"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-cn-dpp-project"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Eighteen-month project period is not a publication guarantee."
+      ]
+    },
+    {
+      "id": "global-cn-dpp-working-group",
+      "type": "Committee",
+      "label": "SAC/SWG 41 DPP working group",
+      "description": "National working group for the DPP standards system.",
+      "version": "SAC/SWG 41",
+      "jurisdiction_ids": [
+        "jur-cn"
+      ],
+      "sector_ids": [
+        "sec-batteries",
+        "sec-textiles",
+        "sec-electronics"
+      ],
+      "status": {
+        "value": "established",
+        "as_of": "2026-10-23",
+        "scope_note": "Standards governance institution."
+      },
+      "dates": [
+        {
+          "kind": "announced",
+          "date": "2026-03-27",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-cn-working-group"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-cn-working-group"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Formation does not create product obligations."
+      ]
+    },
+    {
+      "id": "global-vn-law78",
+      "type": "LegalInstrument",
+      "label": "Vietnam Law 78/2025/QH15",
+      "description": "Amends product-quality law and recognises DPPs.",
+      "version": "78/2025/QH15",
+      "jurisdiction_ids": [
+        "jur-vn"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "in_force",
+        "as_of": "2026-10-23",
+        "scope_note": "Enabling framework; specific rollout must be established separately."
+      },
+      "dates": [
+        {
+          "kind": "adopted",
+          "date": "2025-06-18",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-vn-law78"
+          ]
+        },
+        {
+          "kind": "entered_into_force",
+          "date": "2026-01-01",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-vn-law78"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-vn-law78"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Interpretation and consolidation require human legal review."
+      ]
+    },
+    {
+      "id": "global-vn-decree37",
+      "type": "LegalInstrument",
+      "label": "Vietnam Decree 37/2026/NĐ-CP",
+      "description": "Provides DPP content, update and connectivity conditions.",
+      "version": "37/2026/NĐ-CP",
+      "jurisdiction_ids": [
+        "jur-vn"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "enabling_framework_in_force",
+        "as_of": "2026-10-23",
+        "scope_note": "Official explanation encourages use; product rollout requires a roadmap."
+      },
+      "dates": [
+        {
+          "kind": "entered_into_force",
+          "date": "2026-01-23",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-vn-decree37-explanation"
+          ]
+        },
+        {
+          "kind": "product_rollout",
+          "date": null,
+          "precision": "conditional",
+          "condition": "Prime Minister approval of product-specific roadmap.",
+          "source_ids": [
+            "src-global-vn-decree37-explanation"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-vn-decree37-explanation"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Official ministry explanation checked; decree Articles 31–34 not directly checked."
+      ]
+    },
+    {
+      "id": "global-kr-battery-id-regime",
+      "type": "Requirement",
+      "label": "Korean battery identification and history duties",
+      "description": "MOLIT-reported battery identification and registration duties under the amended Motor Vehicle Management Act.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-kr"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "status": {
+        "value": "in_force_officially_reported",
+        "as_of": "2026-10-23",
+        "scope_note": "Reported adjacent battery identification/history duties; this record does not identify a verified statutory amendment."
+      },
+      "dates": [
+        {
+          "kind": "applies_from",
+          "date": "2025-02-17",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-kr-battery-regime"
+          ]
+        },
+        {
+          "kind": "planned_system_completion",
+          "date": "2027",
+          "precision": "year",
+          "condition": null,
+          "source_ids": [
+            "src-global-kr-battery-regime"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-kr-battery-regime"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Exact amending Act number, operative provisions and consolidated implementing rules not retrieved; legal scope relies on MOLIT's implementation announcement."
+      ]
+    },
+    {
+      "id": "global-kr-busan-pilot",
+      "type": "Pilot",
+      "label": "Busan battery passport platform pilot",
+      "description": "Regional public-blockchain demonstration programme.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-kr-26"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "status": {
+        "value": "funded_pilot_announced",
+        "as_of": "2026-10-23",
+        "scope_note": "Busan programme; no national coverage inference."
+      },
+      "dates": [
+        {
+          "kind": "announced",
+          "date": "2025-08-07",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-kr-busan-pilot"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-kr-busan-pilot"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Deployment and completion outcomes not verified."
+      ]
+    },
+    {
+      "id": "global-kr-disclosure-proposal",
+      "type": "Policy",
+      "label": "Korean battery-information disclosure proposal",
+      "description": "Proposed expansion of disclosed battery information.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-kr"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "status": {
+        "value": "proposal_outcome_unverified",
+        "as_of": "2026-10-23",
+        "scope_note": "Announcement supports proposal, not final adoption."
+      },
+      "dates": [
+        {
+          "kind": "announced",
+          "date": "2026-03-23",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-kr-battery-disclosure"
+          ]
+        },
+        {
+        "kind": "planned_consultation_close",
+          "date": "2026-05-04",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-kr-battery-disclosure"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-kr-battery-disclosure"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Final amendments not retrieved.",
+        "The announcement gives a planned consultation closing date; actual closure or extension was not verified."
+      ]
+    },
+    {
+      "id": "global-in-battery-aadhaar-draft",
+      "type": "Policy",
+      "label": "Draft Battery Pack Aadhaar guidelines",
+      "description": "Proposed battery identifiers and producer/importer uploads.",
+      "version": "Draft 2025-12-30",
+      "jurisdiction_ids": [
+        "jur-in"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "status": {
+        "value": "draft",
+        "as_of": "2026-10-23",
+        "scope_note": "Proposed EV-first scope."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2025-12-30",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-in-battery-aadhaar-draft"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-in-battery-aadhaar-draft"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Official indexed draft inherited; final adoption not verified."
+      ]
+    },
+    {
+      "id": "global-in-teri-battery-research",
+      "type": "Initiative",
+      "label": "TERI Battery Lifecycle Aadhaar research",
+      "description": "Research on digital battery lifecycle management.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-in"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "status": {
+        "value": "research_reported",
+        "as_of": "2026-10-23",
+        "scope_note": "TERI describes work with Mercedes-Benz Research and Development India."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2026-10-01",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-in-teri-research"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-in-teri-research"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Reference to draft AIS-227 is not proof of its legal adoption."
+      ]
+    },
+    {
+      "id": "global-jp-ouranos",
+      "type": "Initiative",
+      "label": "Ouranos Ecosystem",
+      "description": "Government industrial-data architecture and ecosystem programme.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-jp"
+      ],
+      "sector_ids": [
+        "sec-cross-sector",
+        "sec-batteries"
+      ],
+      "status": {
+        "value": "programme_active_in_dossier",
+        "as_of": "2026-10-23",
+        "scope_note": "Architecture, guidance and implementation activity."
+      },
+      "dates": [
+        {
+          "kind": "architecture_whitepaper_published",
+          "date": "2025-02-28",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-jp-ouranos"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-jp-ouranos"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "No domestic mandate is inferred from programme activity."
+      ]
+    },
+    {
+      "id": "global-jp-battery-platform",
+      "type": "Implementation",
+      "label": "Japan Battery Traceability Platform",
+      "description": "Battery supply-chain data platform under Ouranos.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-jp"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "status": {
+        "value": "service_start_reported",
+        "as_of": "2026-10-23",
+        "scope_note": "Platform service availability reported by NEDO."
+      },
+      "dates": [
+        {
+          "kind": "available",
+          "date": "2024-05-16",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-jp-catena-x-demonstration"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-jp-catena-x-demonstration"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current deployment scale not independently assessed."
+      ]
+    },
+    {
+      "id": "global-jp-catena-x-cfp-demo",
+      "type": "Pilot",
+      "label": "Japan–Catena-X carbon-footprint exchange demonstration",
+      "description": "Reciprocal CFP exchange through an intermediate layer.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-jp"
+      ],
+      "sector_ids": [
+        "sec-batteries",
+        "sec-vehicles"
+      ],
+      "status": {
+        "value": "demonstration_reported",
+        "as_of": "2026-10-23",
+        "scope_note": "Japanese/European demonstration environments; versions unspecified."
+      },
+      "dates": [
+        {
+          "kind": "started",
+          "date": "2024-07",
+          "precision": "month",
+          "condition": null,
+          "source_ids": [
+            "src-global-jp-catena-x-demonstration"
+          ]
+        },
+        {
+          "kind": "ended",
+          "date": "2025-01",
+          "precision": "month",
+          "condition": null,
+          "source_ids": [
+            "src-global-jp-catena-x-demonstration"
+          ]
+        },
+        {
+          "kind": "reported",
+          "date": "2025-03-31",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-jp-catena-x-demonstration"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-jp-catena-x-demonstration"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Not universal DPP interoperability or production certification."
+      ]
+    },
+    {
+      "id": "global-jp-pla-netj",
+      "type": "Pilot",
+      "label": "PLA-NETJ plastics DPP R&D",
+      "description": "DPP research tracing recycled polypropylene into vehicle parts.",
+      "version": "A1-01",
+      "jurisdiction_ids": [
+        "jur-jp"
+      ],
+      "sector_ids": [
+        "sec-plastics",
+        "sec-vehicles"
+      ],
+      "status": {
+        "value": "research_pilot_reported",
+        "as_of": "2026-10-23",
+        "scope_note": "ERCA SIP project A1-01."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-global-jp-pla-netj"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Technical choices and trial activity do not establish a legal mandate."
+      ]
+    },
+    {
+      "id": "global-jp-solar-dpp",
+      "type": "Pilot",
+      "label": "Japan photovoltaic DPP demonstrations",
+      "description": "Circularity and hazardous-substance information trials for solar panels.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-jp"
+      ],
+      "sector_ids": [
+        "sec-solar-pv"
+      ],
+      "status": {
+        "value": "demonstration_programme_listed",
+        "as_of": "2026-10-23",
+        "scope_note": "Ministry project lists cover FY2023–FY2025."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-global-jp-solar-dpp"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Fiscal-year labels are not converted into exact start/end dates."
+      ]
+    },
+    {
+      "id": "global-ca-credential-challenge",
+      "type": "Initiative",
+      "label": "Canada supply-chain verifiable credentials challenge",
+      "description": "Innovation procurement targeting credentials and DPP supply-chain transparency.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-ca"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "procurement_closed_outcome_unverified",
+        "as_of": "2026-10-23",
+        "scope_note": "Requirements apply to proposed funded solutions."
+      },
+      "dates": [
+        {
+          "kind": "opened",
+          "date": "2023-08-15",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-ca-credentials-challenge"
+          ]
+        },
+        {
+          "kind": "closed",
+          "date": "2023-09-26",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-ca-credentials-challenge"
+          ]
+        },
+        {
+          "kind": "page_updated",
+          "date": "2025-08-26",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-ca-credentials-challenge"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-ca-credentials-challenge"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Award, deployment and general legal obligation not established."
+      ]
+    },
+    {
+      "id": "global-g7-critical-minerals-roadmap",
+      "type": "Policy",
+      "label": "G7 critical-minerals standards-based markets roadmap",
+      "description": "Multilateral commitment to interoperable digital credentials and DPPs.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-critical-materials"
+      ],
+      "status": {
+        "value": "nonbinding_policy_commitment",
+        "as_of": "2026-10-23",
+        "scope_note": "G7 cooperation; jur-global is not a lawmaking territory."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2025-10-31",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-g7-minerals-roadmap"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-g7-minerals-roadmap"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current primary fetch failed; inherited dossier supports classification.",
+        "No national obligation inferred."
+      ]
+    },
+    {
+      "id": "global-us-nist-battery-research",
+      "type": "Initiative",
+      "label": "NIST EV Battery Passport research",
+      "description": "Research into passport implementation challenges and circularity.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-us"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "status": {
+        "value": "completed",
+        "as_of": "2026-10-23",
+        "scope_note": "NIST project status; no federal market mandate asserted."
+      },
+      "dates": [
+        {
+          "kind": "page_created",
+          "date": "2023-05-09",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-us-nist-battery-passport"
+          ]
+        },
+        {
+          "kind": "page_updated",
+          "date": "2025-03-26",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-us-nist-battery-passport"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-us-nist-battery-passport"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Completion date itself is not given."
+      ]
+    },
+    {
+      "id": "global-us-ca-sb615",
+      "type": "LegalInstrument",
+      "label": "California SB615: vehicle traction batteries",
+      "description": "Signed sectoral battery legislation.",
+      "version": "SB615 (2025–2026)",
+      "jurisdiction_ids": [
+        "jur-us-ca"
+      ],
+      "sector_ids": [
+        "sec-batteries",
+        "sec-vehicles"
+      ],
+      "status": {
+        "value": "enacted",
+        "as_of": "2026-10-23",
+        "scope_note": "State law; detailed duties require official chapter verification."
+      },
+      "dates": [
+        {
+          "kind": "signed",
+          "date": "2026-09-20",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-us-ca-sb615-signing"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-us-ca-sb615-signing"
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Final official text not retrieved; mirrored 2028 label deadline intentionally excluded from seed assertions."
+      ]
+    },
+    {
+      "id": "global-au-circular-economy-inquiry",
+      "type": "Report",
+      "label": "Australian circular-economy final inquiry",
+      "description": "Policy inquiry addressing battery stewardship and digital product information.",
+      "version": "Report 107",
+      "jurisdiction_ids": [
+        "jur-au"
+      ],
+      "sector_ids": [
+        "sec-batteries",
+        "sec-textiles"
+      ],
+      "status": {
+        "value": "final_report_published",
+        "as_of": "2026-10-23",
+        "scope_note": "Recommendations and discussion, not an enacted DPP duty."
+      },
+      "dates": [
+        {
+          "kind": "delivered",
+          "date": "2025-08-22",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-au-circular-economy"
+          ]
+        },
+        {
+          "kind": "published",
+          "date": "2026-01-16",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-au-circular-economy"
+          ]
+        },
+        {
+          "kind": "tabled",
+          "date": "2026-01-23",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-au-circular-economy"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-au-circular-economy"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Implementation of recommendations not established."
+      ]
+    },
+    {
+      "id": "global-sg-sustainability-guidance",
+      "type": "Report",
+      "label": "Singapore sustainability technology playbook",
+      "description": "Enterprise guidance linking EU DPP requirements to market access.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-sg"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "official_guidance",
+        "as_of": "2026-10-23",
+        "scope_note": "Exporter readiness; not domestic legislation."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-global-sg-sustainability-playbook"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "No national DPP platform or obligation inferred."
+      ]
+    },
+    {
+      "id": "global-br-eniq-plan",
+      "type": "Policy",
+      "label": "Brazil ENIQ 2025–2026 action plan",
+      "description": "Adopted quality-infrastructure plan includes a DPP benchmarking study.",
+      "version": "CONMETRO Resolution 2/2025",
+      "jurisdiction_ids": [
+        "jur-br"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "adopted_action_plan",
+        "as_of": "2026-10-23",
+        "scope_note": "Study deliverable, not a product passport duty."
+      },
+      "dates": [
+        {
+          "kind": "adopted",
+          "date": "2025-05-29",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-br-gazette-plan"
+          ]
+        },
+        {
+          "kind": "published",
+          "date": "2025-07-01",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-br-gazette-plan"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-br-eniq-plan",
+        "src-global-br-gazette-plan"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Annex DPP row previously available through indexing; direct annex verification pending."
+      ]
+    },
+    {
+      "id": "global-br-pr-vehicle-pilot",
+      "type": "Pilot",
+      "label": "Paraná digital vehicle passport pilot",
+      "description": "Vehicle-history trial operated by Detran-PR and Tecpar-PR.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-br-pr"
+      ],
+      "sector_ids": [
+        "sec-vehicles"
+      ],
+      "status": {
+        "value": "pilot_announced",
+        "as_of": "2026-10-23",
+        "scope_note": "Regional vehicle history; environmental DPP equivalence not established."
+      },
+      "dates": [
+        {
+          "kind": "announced",
+          "date": "2026-02-12",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-br-pr-vehicle-pilot"
+          ]
+        },
+        {
+          "kind": "planned_rollout",
+          "date": "2026",
+          "precision": "year",
+          "condition": null,
+          "source_ids": [
+            "src-global-br-pr-vehicle-pilot"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-br-pr-vehicle-pilot"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Announced 120-day pilot and end-2026 ambition; completion unverified."
+      ]
+    },
+    {
+      "id": "global-eg-textile-pilot-procurement",
+      "type": "Pilot",
+      "label": "Egypt textile-SME DPP pilot procurement",
+      "description": "UNIDO request for DPP implementation services.",
+      "version": "RFQ 7000008382",
+      "jurisdiction_ids": [
+        "jur-eg"
+      ],
+      "sector_ids": [
+        "sec-textiles"
+      ],
+      "status": {
+        "value": "procurement_closed_outcome_unverified",
+        "as_of": "2026-10-23",
+        "scope_note": "Beneficiary Egypt; procurement notice only."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2026-03-17",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-eg-unido-tender"
+          ]
+        },
+        {
+          "kind": "closed",
+          "date": "2026-04-01",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-eg-unido-tender"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-eg-unido-tender"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Tender does not establish award, delivered pilot or law."
+      ]
+    },
+    {
+      "id": "global-bd-bgmea-digiprod-pilot",
+      "type": "Pilot",
+      "label": "BGMEA–DigiProd Pass pilot",
+      "description": "Industry cooperation for garment-sector EU market readiness.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-bd"
+      ],
+      "sector_ids": [
+        "sec-textiles"
+      ],
+      "status": {
+        "value": "pilot_announced",
+        "as_of": "2026-10-23",
+        "scope_note": "Twenty-four-month pilot described in MoU announcement."
+      },
+      "dates": [
+        {
+          "kind": "mou_signed",
+          "date": "2025-05-17",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-bd-bgmea-mou"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-bd-bgmea-mou"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "No completion or domestic statutory obligation inferred."
+      ]
+    },
+    {
+      "id": "global-bd-bgmea-aware-pilot",
+      "type": "Pilot",
+      "label": "BGMEA–AWARE DPP pilot",
+      "description": "Industry introductory, onboarding and training activity.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-bd"
+      ],
+      "sector_ids": [
+        "sec-textiles"
+      ],
+      "status": {
+        "value": "onboarding_reported",
+        "as_of": "2026-10-23",
+        "scope_note": "Association-reported readiness activity."
+      },
+      "dates": [
+        {
+          "kind": "session",
+          "date": "2026-09-30",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-bd-bgmea-aware"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-bd-bgmea-aware"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "No independent deployment validation inspected."
+      ]
+    },
+    {
+      "id": "global-bd-brac-pilot",
+      "type": "Pilot",
+      "label": "BRAC University CED DPP pilot",
+      "description": "Research/industry pilot with MicelioData, Urmi and Epyllion.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-bd"
+      ],
+      "sector_ids": [
+        "sec-textiles"
+      ],
+      "status": {
+        "value": "research_pilot_reported",
+        "as_of": "2026-10-23",
+        "scope_note": "Data availability, prototypes and phased roadmap."
+      },
+      "dates": [
+        {
+          "kind": "mou_signed",
+          "date": "2025-12",
+          "precision": "month",
+          "condition": null,
+          "source_ids": [
+            "src-global-bd-brac-pilot"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-bd-brac-pilot"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Policy coordination participation does not prove adoption of a national strategy."
+      ]
+    },
+    {
+      "id": "global-nz-exporter-guidance",
+      "type": "Report",
+      "label": "New Zealand EU DPP market report",
+      "description": "Exporter preparation advice for evolving EU requirements.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-nz"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "exporter_guidance",
+        "as_of": "2026-10-23",
+        "scope_note": "Government-hosted market intelligence with policy disclaimer."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2025-10",
+          "precision": "month",
+          "condition": null,
+          "source_ids": [
+            "src-global-nz-exporter-guidance"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-nz-exporter-guidance"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "No New Zealand mandate inferred."
+      ]
+    },
+    {
+      "id": "global-tr-eu-dpp-guidance",
+      "type": "Report",
+      "label": "Türkiye EU DPP overview",
+      "description": "Trade ministry summary of EU DPP developments.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-tr"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "status": {
+        "value": "nonbinding_guidance",
+        "as_of": "2026-10-23",
+        "scope_note": "External-market readiness; no automatic Turkish transposition."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-global-tr-dpp-overview"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Publication date not established in this seed."
+      ]
+    },
+    {
+      "id": "global-ch-kbob-foundations",
+      "type": "Report",
+      "label": "Swiss KBOB DPP foundations paper",
+      "description": "Public construction-sector DPP assessment.",
+      "version": "1.01",
+      "jurisdiction_ids": [
+        "jur-ch"
+      ],
+      "sector_ids": [
+        "sec-construction"
+      ],
+      "status": {
+        "value": "guidance_published",
+        "as_of": "2026-10-23",
+        "scope_note": "KBOB assessment at publication."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2026-01-12",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-global-ch-kbob-foundations"
+          ]
+        }
+      ],
+      "source_ids": [
+        "src-global-ch-kbob-foundations"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Not evidence of mandatory Swiss DPP application."
+      ]
+    },
+    {
+      "id": "global-unido-textile-readiness",
+      "type": "Report",
+      "label": "UNIDO Global South textile DPP readiness study",
+      "description": "Readiness assessment of companies and associations.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-bd",
+        "jur-eg",
+        "jur-in"
+      ],
+      "sector_ids": [
+        "sec-textiles"
+      ],
+      "status": {
+        "value": "study_reported",
+        "as_of": "2026-10-23",
+        "scope_note": "Sample spans three countries; not nationally representative."
+      },
+      "dates": [],
+      "source_ids": [
+        "src-global-unido-textile-readiness"
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Readiness measures are not interoperability tests or legislation."
+      ]
+    }
+  ],
+  "assertions": [
+    {
+      "id": "a-global-cn-law-status",
+      "subject": "global-cn-order73",
+      "predicate": "has_status",
+      "object": {
+        "value": "in_force",
+        "datatype": "string"
+      },
+      "statement": "Order 73 took effect on 1 April 2026.",
+      "source_ids": [
+        "src-global-cn-order73"
+      ],
+      "locator": "Preamble; Article 50",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2026-04-01",
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-cn-law-coding",
+      "subject": "global-cn-order73",
+      "predicate": "requires",
+      "object": {
+        "entity_id": "global-cn-battery-coding"
+      },
+      "statement": "Articles 9–10 require unique coding and markings.",
+      "source_ids": [
+        "src-global-cn-order73"
+      ],
+      "locator": "Articles 9–10",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2026-04-01",
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-cn-id-part",
+      "subject": "global-cn-digital-id-art12",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "global-cn-order73"
+      },
+      "statement": "Article 12 establishes the digital-ID framework.",
+      "source_ids": [
+        "src-global-cn-order73"
+      ],
+      "locator": "Article 12",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2026-04-01",
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-cn-id-details",
+      "subject": "global-cn-digital-id-art12",
+      "predicate": "depends_on",
+      "object": {
+        "value": "Separate detailed measures",
+        "datatype": "string"
+      },
+      "statement": "Detailed digital-ID measures are reserved for separate provisions.",
+      "source_ids": [
+        "src-global-cn-order73"
+      ],
+      "locator": "Article 12",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2026-04-01",
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-cn-reporting",
+      "subject": "global-cn-order73",
+      "predicate": "requires",
+      "object": {
+        "value": "Lifecycle event reporting",
+        "datatype": "string"
+      },
+      "statement": "Article 24 assigns reporting duties to listed lifecycle actors.",
+      "source_ids": [
+        "src-global-cn-order73"
+      ],
+      "locator": "Article 24",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2026-04-01",
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-cn-coding-standard",
+      "subject": "global-cn-battery-coding",
+      "predicate": "normatively_references",
+      "object": {
+        "value": "GB/T 34014",
+        "datatype": "string"
+      },
+      "statement": "Article 9 refers to GB/T 34014 battery coding rules.",
+      "source_ids": [
+        "src-global-cn-order73"
+      ],
+      "locator": "Article 9",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2026-04-01",
+      "valid_to": null,
+      "limitations": [
+        "Referenced edition not specified here."
+      ]
+    },
+    {
+      "id": "a-global-cn-std-stage",
+      "subject": "global-cn-dpp-general-project",
+      "predicate": "has_status",
+      "object": {
+        "value": "Recommended national-standard project",
+        "datatype": "string"
+      },
+      "statement": "The catalogue identifies development of a recommended standard.",
+      "source_ids": [
+        "src-global-cn-dpp-project"
+      ],
+      "locator": "Basic information and project classification",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-cn-std-scope",
+      "subject": "global-cn-dpp-general-project",
+      "predicate": "reports_result",
+      "object": {
+        "value": "Proposed coverage: identifiers, data, access, storage and authentication",
+        "datatype": "string"
+      },
+      "statement": "Catalogue describes intended technical scope, not published conformance rules.",
+      "source_ids": [
+        "src-global-cn-dpp-project"
+      ],
+      "locator": "Scope and principal technical content",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No implementation test is claimed."
+      ]
+    },
+    {
+      "id": "a-global-cn-wg-remit",
+      "subject": "global-cn-dpp-working-group",
+      "predicate": "enables",
+      "object": {
+        "value": "National DPP standards-system development",
+        "datatype": "string"
+      },
+      "statement": "SAC/SWG 41 was established to develop the standards system.",
+      "source_ids": [
+        "src-global-cn-working-group"
+      ],
+      "locator": "Formation announcement",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-vn-law-framework",
+      "subject": "global-vn-law78",
+      "predicate": "enables",
+      "object": {
+        "value": "Digital product passports in product-quality management",
+        "datatype": "string"
+      },
+      "statement": "Law 78 recognises DPPs within the amended framework.",
+      "source_ids": [
+        "src-global-vn-law78"
+      ],
+      "locator": "Consolidated law, Article 6đ",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2026-01-01",
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-vn-decree-content",
+      "subject": "global-vn-decree37",
+      "predicate": "requires",
+      "object": {
+        "value": "Minimum content and timely truthful updates when DPPs are used",
+        "datatype": "string"
+      },
+      "statement": "MOST lists product/operator identity, provenance, relevant certificates and updates.",
+      "source_ids": [
+        "src-global-vn-decree37-explanation"
+      ],
+      "locator": "Section: Triển khai hộ chiếu số của sản phẩm, paragraphs 2–3",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2026-01-23",
+      "valid_to": null,
+      "limitations": [
+        "Conditional-use duties from ministry explanation; full decree not rechecked."
+      ]
+    },
+    {
+      "id": "a-global-vn-decree-roadmap",
+      "subject": "global-vn-decree37",
+      "predicate": "depends_on",
+      "object": {
+        "value": "Approved product-specific rollout roadmap",
+        "datatype": "string"
+      },
+      "statement": "MOST describes encouraged uptake and a future roadmap for specified products.",
+      "source_ids": [
+        "src-global-vn-decree37-explanation"
+      ],
+      "locator": "DPP section, final paragraph",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2026-01-23",
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-vn-label-substitution",
+      "subject": "global-vn-decree37",
+      "predicate": "enables",
+      "object": {
+        "value": "Conditional substitution for electronic labels",
+        "datatype": "string"
+      },
+      "statement": "A passport may replace an electronic label if required label content is included.",
+      "source_ids": [
+        "src-global-vn-decree37-explanation"
+      ],
+      "locator": "DPP section, paragraph 4",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2026-01-23",
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-kr-id-duties",
+      "subject": "global-kr-battery-id-regime",
+      "predicate": "requires",
+      "object": {
+        "value": "Battery identifiers registered and updated after replacement",
+        "datatype": "string"
+      },
+      "statement": "MOLIT reports identification/history duties effective 17 February 2025.",
+      "source_ids": [
+        "src-global-kr-battery-regime"
+      ],
+      "locator": "Battery history paragraphs; replacement registration",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2025-02-17",
+      "valid_to": null,
+      "limitations": [
+        "Consolidated legal provisions not inspected."
+      ]
+    },
+    {
+      "id": "a-global-kr-system-plan",
+      "subject": "global-kr-battery-id-regime",
+      "predicate": "has_milestone",
+      "object": {
+        "value": "Comprehensive battery-history system planned by 2027",
+        "datatype": "string"
+      },
+      "statement": "The planned system is separate from existing identification duties.",
+      "source_ids": [
+        "src-global-kr-battery-regime"
+      ],
+      "locator": "Final substantive paragraph",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Year target is not a statutory application date."
+      ]
+    },
+    {
+      "id": "a-global-kr-busan-location",
+      "subject": "global-kr-busan-pilot",
+      "predicate": "operates_in",
+      "object": {
+        "entity_id": "jur-kr-26"
+      },
+      "statement": "Busan announced selection for the public blockchain pilot programme.",
+      "source_ids": [
+        "src-global-kr-busan-pilot"
+      ],
+      "locator": "Press release subtitle and project description",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-kr-proposal-scope",
+      "subject": "global-kr-disclosure-proposal",
+      "predicate": "has_status",
+      "object": {
+        "value": "Proposed ten-category disclosure expansion",
+        "datatype": "string"
+      },
+      "statement": "The notice describes consultation on expanded disclosure and sanctions.",
+      "source_ids": [
+        "src-global-kr-battery-disclosure"
+      ],
+      "locator": "Proposed amendments and consultation period",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Final adoption outcome not established."
+      ]
+    },
+    {
+      "id": "a-global-in-draft-identifier",
+      "subject": "global-in-battery-aadhaar-draft",
+      "predicate": "requires",
+      "object": {
+        "value": "Proposed 21-character Battery Pack Aadhaar Number",
+        "datatype": "string"
+      },
+      "statement": "Draft section 7 proposes BPAN and QR/alphanumeric marking.",
+      "source_ids": [
+        "src-global-in-battery-aadhaar-draft"
+      ],
+      "locator": "Draft section 7",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Draft requirement only; not an operative duty."
+      ]
+    },
+    {
+      "id": "a-global-in-draft-path",
+      "subject": "global-in-battery-aadhaar-draft",
+      "predicate": "depends_on",
+      "object": {
+        "value": "AIS development and adoption process",
+        "datatype": "string"
+      },
+      "statement": "Draft section 16 proposes standards progression and EV-first coverage.",
+      "source_ids": [
+        "src-global-in-battery-aadhaar-draft"
+      ],
+      "locator": "Draft section 16",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No commencement date inferred."
+      ]
+    },
+    {
+      "id": "a-global-in-teri-ais-reference",
+      "subject": "global-in-teri-battery-research",
+      "predicate": "references",
+      "object": {
+        "value": "Draft AIS-227",
+        "datatype": "string"
+      },
+      "statement": "TERI's project page refers to draft AIS-227.",
+      "source_ids": [
+        "src-global-in-teri-research"
+      ],
+      "locator": "Project description",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Official AIS text and status require verification."
+      ]
+    },
+    {
+      "id": "a-global-jp-ouranos-guidance",
+      "subject": "global-jp-ouranos",
+      "predicate": "publishes",
+      "object": {
+        "value": "Architecture, battery-data guidance and open-source resources",
+        "datatype": "string"
+      },
+      "statement": "METI lists programme architecture and implementation resources.",
+      "source_ids": [
+        "src-global-jp-ouranos"
+      ],
+      "locator": "Guidelines, OSS and programme-news sections",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-jp-platform-available",
+      "subject": "global-jp-battery-platform",
+      "predicate": "has_milestone",
+      "object": {
+        "value": "Service available from 16 May 2024",
+        "datatype": "string"
+      },
+      "statement": "NEDO reports the platform service start.",
+      "source_ids": [
+        "src-global-jp-catena-x-demonstration"
+      ],
+      "locator": "Note 6",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2024-05-16",
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-jp-platform-ouranos",
+      "subject": "global-jp-battery-platform",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "global-jp-ouranos"
+      },
+      "statement": "The platform is described as built under Ouranos.",
+      "source_ids": [
+        "src-global-jp-catena-x-demonstration"
+      ],
+      "locator": "Opening summary",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-jp-demo-platform",
+      "subject": "global-jp-catena-x-cfp-demo",
+      "predicate": "tested_with",
+      "object": {
+        "entity_id": "global-jp-battery-platform"
+      },
+      "statement": "The demonstration connected the platform with Catena-X.",
+      "source_ids": [
+        "src-global-jp-catena-x-demonstration"
+      ],
+      "locator": "Section 2, demonstration table",
+      "assertion_type": "reported_result",
+      "evidence_type": "project_report",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-jp-cfp-exchange",
+      "subject": "global-jp-catena-x-cfp-demo",
+      "predicate": "reports_result",
+      "object": {
+        "value": "Reciprocal CFP exchange reported successful",
+        "datatype": "string"
+      },
+      "statement": "An intermediate layer supported reciprocal CFP exchange in demonstration environments.",
+      "source_ids": [
+        "src-global-jp-catena-x-demonstration"
+      ],
+      "locator": "Section 2, demonstration table; Section 3",
+      "assertion_type": "reported_result",
+      "evidence_type": "project_report",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No independent replication; exact system versions unreported."
+      ],
+      "interoperability": {
+        "dimensions": [
+          "semantic",
+          "protocol",
+          "identity_authentication"
+        ],
+        "operation": "Reciprocal product carbon-footprint data retrieval using intermediary authentication, protocol and model conversion.",
+        "systems": [
+          "Japan Battery Traceability Platform — version unspecified",
+          "Catena-X demonstration environment — version unspecified",
+          "Intermediate conversion layer — version unspecified"
+        ],
+        "result": "reported_success",
+        "independence": "consortium_report",
+        "test_date": null,
+        "limitations": [
+          "Work ran July 2024–January 2025; exact execution date unspecified.",
+          "Demonstration environments, not evidence of general production interoperability.",
+          "Institutional and operational questions remained; legal recognition was not demonstrated."
+        ]
+      }
+    },
+    {
+      "id": "a-global-jp-plastics-scope",
+      "subject": "global-jp-pla-netj",
+      "predicate": "targets_sector",
+      "object": {
+        "entity_id": "sec-plastics"
+      },
+      "statement": "PLA-NETJ trials include recycled-polypropylene information flows.",
+      "source_ids": [
+        "src-global-jp-pla-netj"
+      ],
+      "locator": "R&D overview",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-jp-solar-scope",
+      "subject": "global-jp-solar-dpp",
+      "predicate": "targets_sector",
+      "object": {
+        "entity_id": "sec-solar-pv"
+      },
+      "statement": "MOE lists DPP demonstrations for solar-panel circularity.",
+      "source_ids": [
+        "src-global-jp-solar-dpp"
+      ],
+      "locator": "FY2023–FY2025 project lists",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-ca-challenge-tech",
+      "subject": "global-ca-credential-challenge",
+      "predicate": "references",
+      "object": {
+        "value": "W3C DIDs, VCs, JSON-LD and wallets/agents",
+        "datatype": "string"
+      },
+      "statement": "Challenge outcomes reference credential and wallet technologies.",
+      "source_ids": [
+        "src-global-ca-credentials-challenge"
+      ],
+      "locator": "Essential outcomes 6, 10–11",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Requirements concern the funded solution, not Canadian market-wide law."
+      ]
+    },
+    {
+      "id": "a-global-ca-challenge-domains",
+      "subject": "global-ca-credential-challenge",
+      "predicate": "requires",
+      "object": {
+        "value": "Demonstration in at least two problem domains",
+        "datatype": "string"
+      },
+      "statement": "The procurement challenge requires multiple application domains.",
+      "source_ids": [
+        "src-global-ca-credentials-challenge"
+      ],
+      "locator": "Essential outcomes",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Outcome requirement is not proof the demonstrations occurred."
+      ]
+    },
+    {
+      "id": "a-global-g7-untp-alignment",
+      "subject": "global-g7-critical-minerals-roadmap",
+      "predicate": "aligned_with_claim",
+      "object": {
+        "value": "UN Transparency Protocol (UNTP)",
+        "datatype": "string"
+      },
+      "statement": "Commitment 1 calls for DPP compatibility aligned with UNTP.",
+      "source_ids": [
+        "src-global-g7-minerals-roadmap"
+      ],
+      "locator": "Commitment 1",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Policy alignment is not an interoperability test."
+      ]
+    },
+    {
+      "id": "a-global-g7-nonbinding",
+      "subject": "global-g7-critical-minerals-roadmap",
+      "predicate": "has_status",
+      "object": {
+        "value": "Non-binding multilateral policy commitment",
+        "datatype": "string"
+      },
+      "statement": "The roadmap is classified as cooperation policy, not national passport law.",
+      "source_ids": [
+        "src-global-g7-minerals-roadmap"
+      ],
+      "locator": "Roadmap commitments",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-nist-completed",
+      "subject": "global-us-nist-battery-research",
+      "predicate": "has_status",
+      "object": {
+        "value": "completed",
+        "datatype": "string"
+      },
+      "statement": "NIST explicitly lists the project as completed.",
+      "source_ids": [
+        "src-global-us-nist-battery-passport"
+      ],
+      "locator": "Project Status",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-nist-research-scope",
+      "subject": "global-us-nist-battery-research",
+      "predicate": "reports_result",
+      "object": {
+        "value": "Research on battery-passport barriers and opportunities",
+        "datatype": "string"
+      },
+      "statement": "The project description concerns literature-based implementation research.",
+      "source_ids": [
+        "src-global-us-nist-battery-passport"
+      ],
+      "locator": "Summary and Description",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No platform deployment or interoperability test inferred."
+      ]
+    },
+    {
+      "id": "a-global-ca-sb615-signed",
+      "subject": "global-us-ca-sb615",
+      "predicate": "has_status",
+      "object": {
+        "value": "signed",
+        "datatype": "string"
+      },
+      "statement": "The Governor confirms signing SB615 on 20 September 2026.",
+      "source_ids": [
+        "src-global-us-ca-sb615-signing"
+      ],
+      "locator": "Opening paragraphs and signed bills list",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": "2026-09-20",
+      "valid_to": null,
+      "limitations": [
+        "This source does not verify detailed label content or commencement dates."
+      ]
+    },
+    {
+      "id": "a-global-au-inquiry-recommendation",
+      "subject": "global-au-circular-economy-inquiry",
+      "predicate": "reports_result",
+      "object": {
+        "value": "Recommendation to investigate national EV-battery stewardship",
+        "datatype": "string"
+      },
+      "statement": "The final inquiry recommends investigating a stewardship scheme.",
+      "source_ids": [
+        "src-global-au-circular-economy"
+      ],
+      "locator": "Final report, Recommendation 5.2",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Recommendation is not enactment."
+      ]
+    },
+    {
+      "id": "a-global-au-dpp-discussion",
+      "subject": "global-au-circular-economy-inquiry",
+      "predicate": "references",
+      "object": {
+        "value": "DPP and digital-labelling opportunities and barriers",
+        "datatype": "string"
+      },
+      "statement": "The textile discussion considers digital product information.",
+      "source_ids": [
+        "src-global-au-circular-economy"
+      ],
+      "locator": "Final report, printed page 81, footnote 4",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-sg-eu-exposure",
+      "subject": "global-sg-sustainability-guidance",
+      "predicate": "references",
+      "object": {
+        "value": "EU DPP requirements as external market-access drivers",
+        "datatype": "string"
+      },
+      "statement": "IMDA advises enterprises on meeting overseas sustainability requirements.",
+      "source_ids": [
+        "src-global-sg-sustainability-playbook"
+      ],
+      "locator": "Meet requirements to access new markets",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No Singapore domestic DPP duty asserted."
+      ]
+    },
+    {
+      "id": "a-global-br-study-action",
+      "subject": "global-br-eniq-plan",
+      "predicate": "requires",
+      "object": {
+        "value": "Government DPP benchmarking study deliverable",
+        "datatype": "string"
+      },
+      "statement": "The adopted plan includes a DPP benchmarking study.",
+      "source_ids": [
+        "src-global-br-eniq-plan",
+        "src-global-br-gazette-plan"
+      ],
+      "locator": "ENIQ Axis 3 annex row; Gazette page 51",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Government programme deliverable, not product obligation; annex direct-access gap remains."
+      ]
+    },
+    {
+      "id": "a-global-br-pilot-geography",
+      "subject": "global-br-pr-vehicle-pilot",
+      "predicate": "operates_in",
+      "object": {
+        "entity_id": "jur-br-pr"
+      },
+      "statement": "The announced pilot concerns vehicle histories in Paraná.",
+      "source_ids": [
+        "src-global-br-pr-vehicle-pilot"
+      ],
+      "locator": "Pilot description",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-br-pilot-plan",
+      "subject": "global-br-pr-vehicle-pilot",
+      "predicate": "has_milestone",
+      "object": {
+        "value": "Statewide rollout ambition by end 2026",
+        "datatype": "string"
+      },
+      "statement": "The announcement describes a 120-day trial and rollout ambition.",
+      "source_ids": [
+        "src-global-br-pr-vehicle-pilot"
+      ],
+      "locator": "Pilot duration and future deployment paragraphs",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No completion evidence inspected."
+      ]
+    },
+    {
+      "id": "a-global-eg-tender-scope",
+      "subject": "global-eg-textile-pilot-procurement",
+      "predicate": "targets_sector",
+      "object": {
+        "entity_id": "sec-textiles"
+      },
+      "statement": "UNIDO requested DPP implementation services for Egyptian textile SMEs.",
+      "source_ids": [
+        "src-global-eg-unido-tender"
+      ],
+      "locator": "Notice title; beneficiary; dates",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-eg-outcome-boundary",
+      "subject": "global-eg-textile-pilot-procurement",
+      "predicate": "has_status",
+      "object": {
+        "value": "Procurement closed; award and implementation unverified",
+        "datatype": "string"
+      },
+      "statement": "The notice establishes a procurement, not successful implementation.",
+      "source_ids": [
+        "src-global-eg-unido-tender"
+      ],
+      "locator": "Closing date and notice scope",
+      "assertion_type": "research_classification",
+      "evidence_type": "analysis",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-bd-digiprod-mou",
+      "subject": "global-bd-bgmea-digiprod-pilot",
+      "predicate": "has_milestone",
+      "object": {
+        "value": "MoU for a 24-month pilot",
+        "datatype": "string"
+      },
+      "statement": "BGMEA reports the 17 May 2025 pilot agreement.",
+      "source_ids": [
+        "src-global-bd-bgmea-mou"
+      ],
+      "locator": "MoU announcement",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": []
+    },
+    {
+      "id": "a-global-bd-digiprod-exposure",
+      "subject": "global-bd-bgmea-digiprod-pilot",
+      "predicate": "references",
+      "object": {
+        "value": "EU garment-supply-chain market readiness",
+        "datatype": "string"
+      },
+      "statement": "The association frames the pilot around EU market compliance preparation.",
+      "source_ids": [
+        "src-global-bd-bgmea-mou"
+      ],
+      "locator": "Title and project objective",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No claim of legal compliance certification."
+      ]
+    },
+    {
+      "id": "a-global-bd-aware-onboarding",
+      "subject": "global-bd-bgmea-aware-pilot",
+      "predicate": "reports_result",
+      "object": {
+        "value": "Introductory factory onboarding and training session",
+        "datatype": "string"
+      },
+      "statement": "BGMEA reports a session on the AWARE pilot.",
+      "source_ids": [
+        "src-global-bd-bgmea-aware"
+      ],
+      "locator": "Session announcement",
+      "assertion_type": "reported_result",
+      "evidence_type": "announcement",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Training activity, not interoperability evidence."
+      ]
+    },
+    {
+      "id": "a-global-bd-brac-outputs",
+      "subject": "global-bd-brac-pilot",
+      "predicate": "reports_result",
+      "object": {
+        "value": "Data-availability matrices, prototype illustrations and phased roadmap",
+        "datatype": "string"
+      },
+      "statement": "The project describes pilot research outputs.",
+      "source_ids": [
+        "src-global-bd-brac-pilot"
+      ],
+      "locator": "2025–2026 project description",
+      "assertion_type": "reported_result",
+      "evidence_type": "project_report",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Project self-report; no independent testing reviewed."
+      ]
+    },
+    {
+      "id": "a-global-bd-brac-policy",
+      "subject": "global-bd-brac-pilot",
+      "predicate": "references",
+      "object": {
+        "value": "National Traceability Strategy policy coordination",
+        "datatype": "string"
+      },
+      "statement": "The project reports policy-process participation.",
+      "source_ids": [
+        "src-global-bd-brac-pilot"
+      ],
+      "locator": "Policy coordination description",
+      "assertion_type": "source_statement",
+      "evidence_type": "project_report",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Participation does not establish strategy adoption."
+      ]
+    },
+    {
+      "id": "a-global-nz-eu-exposure",
+      "subject": "global-nz-exporter-guidance",
+      "predicate": "references",
+      "object": {
+        "value": "EU DPP preparation and delegated-act uncertainty",
+        "datatype": "string"
+      },
+      "statement": "MFAT's report advises exporters to prepare data systems.",
+      "source_ids": [
+        "src-global-nz-exporter-guidance"
+      ],
+      "locator": "Opportunities, costs, risks and disclaimer",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Market intelligence is not proof of New Zealand domestic obligations."
+      ]
+    },
+    {
+      "id": "a-global-tr-eu-exposure",
+      "subject": "global-tr-eu-dpp-guidance",
+      "predicate": "references",
+      "object": {
+        "value": "EU DPP framework",
+        "datatype": "string"
+      },
+      "statement": "Türkiye's ministry supplies a non-binding EU legislative summary.",
+      "source_ids": [
+        "src-global-tr-dpp-overview"
+      ],
+      "locator": "DPP overview and disclaimer",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Does not establish Turkish transposition."
+      ]
+    },
+    {
+      "id": "a-global-ch-guidance-status",
+      "subject": "global-ch-kbob-foundations",
+      "predicate": "has_status",
+      "object": {
+        "value": "Public-sector foundations assessment",
+        "datatype": "string"
+      },
+      "statement": "KBOB presents its DPP assessment in version 1.01.",
+      "source_ids": [
+        "src-global-ch-kbob-foundations"
+      ],
+      "locator": "Imprint and scope statement",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No Swiss mandatory application inferred."
+      ]
+    },
+    {
+      "id": "a-global-unido-sample",
+      "subject": "global-unido-textile-readiness",
+      "predicate": "reports_result",
+      "object": {
+        "value": "104 companies and nine associations in Bangladesh, Egypt and India",
+        "datatype": "string"
+      },
+      "statement": "UNIDO reports a multi-country textile readiness assessment.",
+      "source_ids": [
+        "src-global-unido-textile-readiness"
+      ],
+      "locator": "Study sample and readiness dimensions",
+      "assertion_type": "reported_result",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-23",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Sample findings must not be projected onto all national firms."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-global-cn-order73",
+      "url": "https://www.miit.gov.cn/gyhxxhb/jgsj/cyzcyfgs/bmgz/jdcjxl/art/2026/art_392462fdc40c415ea4a4129cac3028c2.html",
+      "title": "Interim Measures for recycling and comprehensive utilisation of waste NEV power batteries, Order 73",
+      "publisher": "Ministry of Industry and Information Technology, China",
+      "source_type": "legal_text",
+      "language": "zh",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-23",
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": [
+        "English paraphrases are machine-assisted; no named legal translator has reviewed them."
+      ]
+    },
+    {
+      "id": "src-global-cn-dpp-project",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=1CB92886179AEDB9E06397BE0A0A064B",
+      "title": "National standard project 20251568-T-469: DPP — General requirements",
+      "publisher": "SAMR / SAC",
+      "source_type": "standards_body",
+      "language": "zh",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-23",
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-cn-working-group",
+      "url": "https://www.samr.gov.cn/xw/sj/art/2026/art_8d62ff552dfc410b9fa0f594598f8e1d.html",
+      "title": "National DPP working group SAC/SWG 41 announcement",
+      "publisher": "SAMR",
+      "source_type": "public_authority",
+      "language": "zh",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-vn-law78",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/156-vbhn-vpqh.pdf",
+      "title": "Consolidated Law on Product and Goods Quality, 156/VBHN-VPQH",
+      "publisher": "Government of Vietnam",
+      "source_type": "legal_text",
+      "language": "vi",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-vn-decree37-explanation",
+      "url": "https://mst.gov.vn/nghi-dinh-37-ung-dung-cong-nghe-so-trong-quan-ly-chat-luong-va-truy-xuat-nguon-goc-197260812204117614.htm",
+      "title": "Decree 37: Digital technologies in quality management and traceability",
+      "publisher": "Ministry of Science and Technology, Vietnam",
+      "source_type": "public_authority",
+      "language": "vi",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-23",
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": [
+        "Official explanation; decree full text was not rechecked. Displayed publication date is 2026-01-24; URL contains an August timestamp."
+      ]
+    },
+    {
+      "id": "src-global-kr-battery-regime",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148939669",
+      "title": "Battery certification and history management implemented from 17 February",
+      "publisher": "MOLIT / Korea Policy Briefing",
+      "source_type": "public_authority",
+      "language": "ko",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-23",
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": [
+        "Official implementation announcement, not consolidated statutory text."
+      ]
+    },
+    {
+      "id": "src-global-kr-busan-pilot",
+      "url": "https://www.busan.go.kr/nbtnewsBU/1692400?curPage=207&srchBeginDt=&srchEndDt=&srchKey=&srchText=",
+      "title": "Busan battery passport platform public blockchain programme",
+      "publisher": "Busan Metropolitan City",
+      "source_type": "public_authority",
+      "language": "ko",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-kr-battery-disclosure",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148961279&pWise=main&pWiseMain=R5",
+      "title": "Proposal to expand battery-information disclosure",
+      "publisher": "MOLIT / Korea Policy Briefing",
+      "source_type": "public_authority",
+      "language": "ko",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-in-battery-aadhaar-draft",
+      "url": "https://morth.gov.in/sites/default/files/Battery%20Pack%20Aadhaar%20Guideline_30122025_0.pdf",
+      "title": "Draft Guidelines for Implementation of Battery Pack Aadhaar System",
+      "publisher": "MoRTH, India",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": [
+        "Prior dossier relied on search-indexed official draft; direct PDF extraction was blocked or timed out."
+      ]
+    },
+    {
+      "id": "src-global-in-teri-research",
+      "url": "https://www.teriin.org/project/battery-lifecycle-aadhaar-enabling-digitalisation-circular-economy-and-responsible-battery",
+      "title": "Battery Lifecycle Aadhaar research project",
+      "publisher": "TERI",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": [
+        "Evidence for TERI's research and its reference to draft AIS-227; not an authoritative AIS adoption record."
+      ]
+    },
+    {
+      "id": "src-global-jp-ouranos",
+      "url": "https://www.meti.go.jp/policy/mono_info_service/digital_architecture/ouranos.html",
+      "title": "Ouranos Ecosystem programme",
+      "publisher": "METI",
+      "source_type": "public_authority",
+      "language": "ja",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-jp-catena-x-demonstration",
+      "url": "https://www.nedo.go.jp/news/press/AA5_101831.html",
+      "title": "Demonstration of interconnection between the Battery Traceability Platform and Catena-X",
+      "publisher": "NEDO and NTT DATA Group",
+      "source_type": "project_primary",
+      "language": "ja",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-23",
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": [
+        "Joint programme/implementer announcement; no independent replication or public test artefacts were inspected."
+      ]
+    },
+    {
+      "id": "src-global-jp-pla-netj",
+      "url": "https://www.erca.go.jp/sip/english/overview/a101-2024.html",
+      "title": "SIP A1-01: PLA-NETJ",
+      "publisher": "Environmental Restoration and Conservation Agency",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-jp-solar-dpp",
+      "url": "https://www.env.go.jp/recycle/circul/achievement.html",
+      "title": "Circular economy demonstration project results",
+      "publisher": "Ministry of the Environment, Japan",
+      "source_type": "public_authority",
+      "language": "ja",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-ca-credentials-challenge",
+      "url": "https://ised-isde.canada.ca/site/innovative-solutions-canada/en/supply-chain-verifiable-digital-credentials",
+      "title": "Supply chain verifiable digital credentials challenge",
+      "publisher": "Innovation, Science and Economic Development Canada",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-g7-minerals-roadmap",
+      "url": "https://www.canada.ca/en/natural-resources-canada/news/2025/10/roadmap-to-promote-standards-based-markets-for-critical-minerals.html",
+      "title": "Roadmap to Promote Standards-based Markets for Critical Minerals",
+      "publisher": "Natural Resources Canada / G7",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "unavailable",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": [
+        "Open attempt on 2026-10-23 failed; assertions are inherited from the prior dossier, not revalidated this turn."
+      ]
+    },
+    {
+      "id": "src-global-us-nist-battery-passport",
+      "url": "https://www.nist.gov/programs-projects/ev-battery-passport",
+      "title": "EV Battery Passport",
+      "publisher": "NIST",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-23",
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-us-ca-sb615-signing",
+      "url": "https://www.gov.ca.gov/2026/09/20/governor-gavin-newsom-signs-legislation-to-accelerate-californias-ev-future-expand-consumer-choice-and-strengthen-energy-independence/",
+      "title": "Governor signs legislation for California's EV future",
+      "publisher": "Governor of California",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-23",
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": [
+        "Confirms SB615 was signed; this release is not the final chapter text."
+      ]
+    },
+    {
+      "id": "src-global-au-circular-economy",
+      "url": "https://www.pc.gov.au/inquiries-and-research/circular-economy/report/",
+      "title": "Australia's circular economy: Final inquiry report",
+      "publisher": "Productivity Commission, Australia",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-sg-sustainability-playbook",
+      "url": "https://www.imda.gov.sg/-/media/imda/files/about/research-and-statictics/enterprise-digital-transformation/imda-digital-technologies-for-sustainability-playbook.pdf",
+      "title": "Digital Technologies for Sustainability Playbook",
+      "publisher": "IMDA, Singapore",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-br-eniq-plan",
+      "url": "https://www.gov.br/mdic/pt-br/assuntos/infraestrutura-da-qualidade/conhecendo%20a%20eniq/documentos-base/resolucao-conmetro-02-2025-1.pdf",
+      "title": "CONMETRO Resolution 2/2025 and ENIQ 2025–2026 action plan",
+      "publisher": "MDIC / CONMETRO, Brazil",
+      "source_type": "public_authority",
+      "language": "pt",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": [
+        "Prior dossier found DPP benchmark row through official search indexing; direct PDF opening redirected to login."
+      ]
+    },
+    {
+      "id": "src-global-br-gazette-plan",
+      "url": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=01%2F07%2F2025&jornal=515&pagina=51",
+      "title": "Official Gazette, 1 July 2025, page 51",
+      "publisher": "Diário Oficial da União, Brazil",
+      "source_type": "legal_text",
+      "language": "pt",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-br-pr-vehicle-pilot",
+      "url": "https://www.detran.pr.gov.br/Noticia/Passaporte-digital-motoristas-do-Parana-agora-podem-ter-registro-inovador-de-veiculos",
+      "title": "Digital vehicle passport pilot in Paraná",
+      "publisher": "Detran-PR",
+      "source_type": "public_authority",
+      "language": "pt",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-eg-unido-tender",
+      "url": "https://www.ungm.org/Public/Notice/294163",
+      "title": "RFQ 7000008382: DPP pilot implementation services for textile SMEs in Egypt",
+      "publisher": "UNIDO / UN Global Marketplace",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-bd-bgmea-mou",
+      "url": "https://www.bgmea.com.bd/index.php/page/DigiProd_Pass_signs_MoU_with_BGMEA%3A_Preparing_Bangladesh%E2%80%99s_Garment_Supply_Chain_for_EU_Market_Compliance",
+      "title": "DigiProd Pass signs MoU with BGMEA",
+      "publisher": "BGMEA",
+      "source_type": "industry_primary",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-bd-bgmea-aware",
+      "url": "https://bgmea.com.bd/page/BGMEA_Hosts_Introductory_Session_on_AWARE_Digital_Product_Passport_Pilot",
+      "title": "BGMEA introductory session on AWARE DPP pilot",
+      "publisher": "BGMEA",
+      "source_type": "industry_primary",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-bd-brac-pilot",
+      "url": "https://ced.bracu.ac.bd/project/dpp/",
+      "title": "Digital Product Passport project",
+      "publisher": "Centre for Entrepreneurship Development, BRAC University",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-nz-exporter-guidance",
+      "url": "https://www.mfat.govt.nz/en/trade/mfat-market-reports/eu-circular-economy-ecodesign-digital-product-passports-and-green-public-procurement",
+      "title": "EU circular economy, ecodesign, digital product passports and green public procurement",
+      "publisher": "MFAT, New Zealand",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": [
+        "Market-intelligence report disclaimer says its analysis need not represent government policy."
+      ]
+    },
+    {
+      "id": "src-global-tr-dpp-overview",
+      "url": "https://ticaret.gov.tr/urun-guvenligi/ab-teknik-mevzuat-uyumu/dijital-urun-pasaportu",
+      "title": "Digital product passport overview",
+      "publisher": "Ministry of Trade, Türkiye",
+      "source_type": "public_authority",
+      "language": "tr",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": [
+        "Page explicitly presents a non-binding legislative summary."
+      ]
+    },
+    {
+      "id": "src-global-ch-kbob-foundations",
+      "url": "https://www.kbob.admin.ch/dam/de/sd-web/XtU2aKG2mRws/20250701_Grundlagenpapier%20DPP_V1.01_DES.pdf",
+      "title": "Grundlagenpapier Digitaler Produktpass, version 1.01",
+      "publisher": "KBOB, Switzerland",
+      "source_type": "public_authority",
+      "language": "de",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "src-global-unido-textile-readiness",
+      "url": "https://hub.unido.org/news/global-south-ready-eus-digital-product-passport-first-insights-textile-sector",
+      "title": "Is the Global South ready for the EU's DPP? Textile sector insights",
+      "publisher": "UNIDO",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "dossier_only",
+      "retrieved_at": null,
+      "dossier_files": [
+        "global-jurisdictions-evidence.md"
+      ],
+      "limitations": []
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<div class="ebw-hero">
+  <a href="{{ page.pdf_url | relative_url }}" class="ebw-cover-link" aria-label="Read the European Business Wallets research manuscript PDF">
+    <img src="{{ page.cover_image | relative_url }}" alt="{{ page.cover_image_alt | escape }}" width="1061" height="1500" decoding="async">
+  </a>
+  <div>
+    <p class="ebw-eyebrow">New research · 31 October 2026</p>
+    <p><strong>A practical decision framework for European business identity.</strong> Read the legal comparison, six readiness gates and Section 19’s implementation guide.</p>
+    <p>Dr. Carsten Stöcker · Spherity GmbH<br>26 pages · Research manuscript · CC BY 4.0</p>
+    <div class="ebw-downloads">
+      <a class="ebw-button" href="{{ page.pdf_url | relative_url }}">Read the full paper · PDF</a>
+      <a class="ebw-button ebw-button-secondary" href="{{ page.pdf_url | relative_url }}" download>Download PDF</a>
+      <a class="ebw-button ebw-button-secondary" href="#ebw-roadmap">Explore the roadmap</a>
+      <a class="ebw-button ebw-button-secondary" href="{{ '/assets/Spherity-Research-European-Business-Wallet-Regulation-And-Roadmap.svg' | relative_url }}" download>Download roadmap · SVG</a>
+    </div>
+  </div>
+</div>
+<p class="ebw-launch-teaser"><strong>Planned launch: {{ page.ebw_launch.period | escape }}.</strong> Spherity’s EBW-ready Business Wallet, developed with Bundesanzeiger Verlag and tested in WE BUILD, is planned for general availability on BSI-certified infrastructure. <a href="#ebw-ready-wallet-launch">Read the launch plan</a>.</p>

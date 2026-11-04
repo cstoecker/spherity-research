@@ -1,0 +1,198 @@
+[
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig01_ontology_engine_ecosystems.svg",
+    "sha256": "f2c22ce98767680927e6dd9b23bf9fab06eb9e886ef432412c4506703bfecca5",
+    "bytes": 26826,
+    "decoded_pixels_sha256": "04fc52c622aae57256a26a572053787591f86da42291eb4e707b7ab893cf51a1",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig01_ontology_engine_ecosystems.png",
+    "sha256": "0f8c5a8dfdb8fb862722282fcaf647decf105834e6114d90425aa2e0d3793b77",
+    "bytes": 259588,
+    "decoded_pixels_sha256": "a63880c346093a1bb76234411b234209862d491b6ad0e8bca7331671986b249e",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig02_platform_architecture.svg",
+    "sha256": "bd51e01517ab239379203ddc5c8d64b3a255e2c64d5fab3ae55ddbe1613c5156",
+    "bytes": 31422,
+    "decoded_pixels_sha256": "726f98328e39de431cb81844bc2d00fd2cb88bd4873e6868cc20949e4f8784e4",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig02_platform_architecture.png",
+    "sha256": "2d55c60fc48be5f4084cd4a370177ad89547383d2797c0047709932d5b2c1f2c",
+    "bytes": 395747,
+    "decoded_pixels_sha256": "3af4bd8b42a6e37ba682a7ce02c1c7e04d8ec48fe1a40f5fa6c0a66ce06404e2",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig03_federated_architecture.svg",
+    "sha256": "e4d21c6547c24194b548432813dedb56322bf6adacf40fe6b64df88412ae5eaf",
+    "bytes": 39942,
+    "decoded_pixels_sha256": "921a84063f33858a5d5f17a51e35b6974285c4ce0d1dc579d554f72a0909dfbe",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig03_federated_architecture.png",
+    "sha256": "90b5a1a284cdaacb31f14fd00c28b7c7fe3bdcef3df16d80d8c9aca2c86c0264",
+    "bytes": 438363,
+    "decoded_pixels_sha256": "cb09e00bbb4b3be268b851e5e115a2593856a67d50ab96edf405ebbead0f5e24",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig04_control_and_dependencies.svg",
+    "sha256": "4c771ff218585c74e8ca5ac38c304af1318578209fdffe134cb5196a2cfbdc9f",
+    "bytes": 16771,
+    "decoded_pixels_sha256": "c374960d59437abbc862b36bda1951072687b08755d7857b509f30942a2f0861",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig04_control_and_dependencies.png",
+    "sha256": "92e5b997dab1393b026113c86a5a0db2c232a0a46918044e8c86fb5b53e1a606",
+    "bytes": 360196,
+    "decoded_pixels_sha256": "49bee10f0d79699a351922d8ec5cad579df707c618e570cf9aaafae5b28e17cb",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig05_evidence_and_assurance.svg",
+    "sha256": "5b0bac98725c038254b80862d70f3dfbc08523dd57898c21d3accb2f26342562",
+    "bytes": 12016,
+    "decoded_pixels_sha256": "387d2016b2b1737995dd326c6f90d7bbec1cf429cf4d6cdabeb8d363698549cf",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig05_evidence_and_assurance.png",
+    "sha256": "f0802d4859f68923d252e817fb82cba02aa45334d82752fb82082f07f660548e",
+    "bytes": 215746,
+    "decoded_pixels_sha256": "450ab04be40b6feaa1892ac54b71d2963ee7e62776e7c957600697218e12d301",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig_robot_evidence_graph.svg",
+    "sha256": "c570e620d38da5a79d39f5911ac0eef5909dd9d96aad487f2f2a3dab555991ce",
+    "bytes": 36712,
+    "decoded_pixels_sha256": "bb83482e0abf387f5da55dffbd8f51de5051d9e4158f09efc87ae4452be507e7",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig_robot_evidence_graph.png",
+    "sha256": "e768517c37f0f00630ce13c93ec678421c5c322e100035aee42935b3f61c663f",
+    "bytes": 488566,
+    "decoded_pixels_sha256": "c92748a1e8ec3672402f3b7a7aa07d9b85a0ed6f425ce4e0be6c889280d6a64f",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig_robot_evidence_actions.svg",
+    "sha256": "5c50f1703837c4046c992d79b8ca6184dc3e43216c65dff5d88332f68a22931f",
+    "bytes": 25874,
+    "decoded_pixels_sha256": "9dab8dce2d497966b25a18634cf45bf0d29776e72e13ff2b1fbd79ec1e08dc15",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig_robot_evidence_actions.png",
+    "sha256": "951275e6db6e88683b0c9474803d99f50bb72950ed34458d3b93e7d18f7d0b97",
+    "bytes": 453897,
+    "decoded_pixels_sha256": "54b399d20d0e6717d8361d34ab57733863a563fd349fcd5ec484c2f780386e8d",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig06_global_cooperation.svg",
+    "sha256": "f7ead286d88c8cb765415339af55966174bc6292576a005b0cd4f54b4cc5d6f0",
+    "bytes": 19107,
+    "decoded_pixels_sha256": "4a294e0e2bf60cc6f053d7ab3b6f38fb288af5e864f3e159fcf5074093ca0c1d",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig06_global_cooperation.png",
+    "sha256": "aa838bbe0c3aa5c772232d4b4444ebf19705b7b57580fd62107620ac80cbd30d",
+    "bytes": 258798,
+    "decoded_pixels_sha256": "d6deb9999ea23402c043ec74ffc98e1c94778873091f4978621a81f55754ae06",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig07_matched_decision_journey.svg",
+    "sha256": "7e8d3e5267bfb38c80ef3fb9b112d0947efc369acebc48dee8c2de26dc6d6397",
+    "bytes": 20496,
+    "decoded_pixels_sha256": "b1d6829b7c42f7adf24a8f96cfa2f41068f0f63c0420e058183ca88b587c13ae",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig07_matched_decision_journey.png",
+    "sha256": "32b3b2c7c522a988ba855633873cbf1f0458a291892b491ad2eaed1cad195fc0",
+    "bytes": 318264,
+    "decoded_pixels_sha256": "227024b8128a8c822d733c8005ddbe83a5eae0503bf7ff6c8c0049f63d46ee7b",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig01_shared_meaning_comparison.svg",
+    "sha256": "06777794456e8be783f48aab4083c511a76fe31b31fd6e3926ae4de475244f24",
+    "bytes": 45306,
+    "decoded_pixels_sha256": "8e852fc94dd7986d93a8c75466d5ec39e2fb8e154dd62ab55e98ca6b2ab9bc78",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig01_shared_meaning_comparison.png",
+    "sha256": "d1da4524521affb04c913398e885e7efe5d1cc214dc74644c3d7b37a43c5fdce",
+    "bytes": 309055,
+    "decoded_pixels_sha256": "94dc7c4b73b2a274055f6e7e62f91fad58ad98eb4b5e44c3f4c55f16eb2e7966",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig02_evidence_to_decision.svg",
+    "sha256": "bc78f0047871bb054760c156569bb59c899442660b9ce546a055f2274364b46e",
+    "bytes": 14831,
+    "decoded_pixels_sha256": "fab5391543240710aacfbdbe3682d68b3549bd9f7d21463c762276488180601a",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig02_evidence_to_decision.png",
+    "sha256": "4f366f3caf15fd4872d61ccb2e6c779bb6232b1f9d94577203e9eb52f15fd001",
+    "bytes": 277516,
+    "decoded_pixels_sha256": "7659dcc27c175b0d0dff53ddb37326fbc034691679f53563c2354d89ebda7a90",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig03_global_cooperation.svg",
+    "sha256": "bcf70e74d8c469e294765eed1ddcb311558a3e3a9453e95df5243669bb7d0b61",
+    "bytes": 17472,
+    "decoded_pixels_sha256": "854bd08d50528a120e595c19f9bda2215aa79a21a3213ed0ddacf503f5c37f11",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/figures/fig03_global_cooperation.png",
+    "sha256": "bd3b0f6aade83aa22f986e434b2b557ef2c24235ae8df9c933e75c2e4b5b5882",
+    "bytes": 217387,
+    "decoded_pixels_sha256": "6d608b0257657764b10e85f3595b123ceebde46d9b7a3100117e740c91dcfff9",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/executive-cover.jpg",
+    "sha256": "06752b08d613c3ded312194f53b4d6ad341f9ae840c777f14bdec75c915c4500",
+    "bytes": 124434,
+    "decoded_pixels_sha256": "51924c0519b2bb8cac2d062f4be676331d94affecbc22c76ab417063ccfa38c6",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/europes-answer-to-palantir/v1.0/academic-cover.jpg",
+    "sha256": "bfc74dc15efb21e2a2fae4e589405443959699cf2d9da5a72f59f93a71ceb6b7",
+    "bytes": 139243,
+    "decoded_pixels_sha256": "c377147ce352240b8916839f8dae3b1c6d73c593f388e0a541e7e4db9f832b3b",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/preview-europes-answer-to-palantir.webp",
+    "sha256": "dd7a96a0d304de4c8fdd3de11d784f99d1d3381487fb3fa84d9f41811452e0fa",
+    "bytes": 54754,
+    "decoded_pixels_sha256": "746f1f54f8608dbf98256d9dc21c9eb885ab96d85c60191ad5106c2137fe68eb",
+    "pixels_identical": true
+  },
+  {
+    "path": "/assets/preview-global-cooperation-industrial-ai.webp",
+    "sha256": "3e90366404ce1d03354d581d5298c5183ca6e05e31ee294d7f98c22ae72835b7",
+    "bytes": 57136,
+    "decoded_pixels_sha256": "9de363b2ab5920f0b5baf1a7003565dd8180efa0aaffff9820e061df6073ab94",
+    "pixels_identical": true
+  }
+]

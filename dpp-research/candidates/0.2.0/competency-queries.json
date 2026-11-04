@@ -1,0 +1,25 @@
+{
+  "dataset_version": "0.2.0",
+  "queries": [
+    {
+      "id": "phase-is-not-duty",
+      "question": "Which measures are adopted, proposed, planned or adjacent?",
+      "projection": "views/regulatory-calendar.json"
+    },
+    {
+      "id": "current-vs-historical-claims",
+      "question": "Which qualified assertions were replaced and why?",
+      "projection": "change-manifest.json"
+    },
+    {
+      "id": "interoperability-boundaries",
+      "question": "Which exact operations were reported and which dimensions remain unassessed?",
+      "projection": "views/interoperability-matrix.json"
+    },
+    {
+      "id": "international-aas",
+      "question": "Which international AAS records are documented without inferring country-wide adoption?",
+      "projection": "views/ecosystems.json"
+    }
+  ]
+}

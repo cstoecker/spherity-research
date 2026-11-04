@@ -1,0 +1,276 @@
+{
+  "file": "docs/Spherity-Research-European-Business-Wallet-Regulation-And-Roadmap.pdf",
+  "original_bytes": 163923,
+  "original_sha256": "d4c3304853555dba15ebdedcac366752d4d01749c0bb17b6dd5ab35340d96b6e",
+  "before_info": {
+    "format": "PDF 1.5",
+    "title": "European Business Wallets",
+    "author": "",
+    "subject": "European Business Wallets legal and operational roadmap",
+    "keywords": "",
+    "creator": "LaTeX with hyperref",
+    "producer": "XeTeX version 0.999994",
+    "creationDate": "D:20261031181803-00'00'",
+    "modDate": "",
+    "trapped": "",
+    "encryption": null
+  },
+  "required_updates": [
+    "Info:title",
+    "Info:author",
+    "Info:subject",
+    "Info:keywords",
+    "Info:Copyright",
+    "Info:License",
+    "Info:RightsSource",
+    "Info:EditionDate",
+    "XMP:dc:title",
+    "XMP:dc:description",
+    "XMP:dc:subject",
+    "XMP:dc:publisher",
+    "XMP:dc:language",
+    "XMP:dc:identifier",
+    "XMP:dc:relation",
+    "XMP:pdf:Keywords",
+    "XMP:xmpRights:UsageTerms",
+    "XMP:photoshop:Credit",
+    "XMP:cc:attributionURL",
+    "XMP:cc:license"
+  ],
+  "status": "updated",
+  "published_bytes": 178942,
+  "published_sha256": "0a921c48ff25ab258be01e97cb1febbabad13f1ddf6a00e77796325cf3cd3750",
+  "source_prefix_preserved": true,
+  "render_dpi": 150,
+  "all_page_pixels_identical": true,
+  "content_streams_identical": true,
+  "geometry_links_bookmarks_identical": true,
+  "page_count": 26,
+  "bookmark_count": 23,
+  "after_info": {
+    "format": "PDF 1.5",
+    "title": "European Business Wallets: A Conditional Roadmap for the Single Market, Cyber-Resilience and Accountable Automation",
+    "author": "Dr. Carsten Stöcker",
+    "subject": "European Business Wallets: conditional legal clocks, transaction readiness, cyber-resilience and accountable automation",
+    "keywords": "European Business Wallet; EBW; eIDAS; Single Market; transaction readiness; cyber-resilience; post-quantum cryptography; AI-agent governance; business interoperability; implementation guidance",
+    "creator": "LaTeX with hyperref",
+    "producer": "XeTeX version 0.999994",
+    "creationDate": "D:20261031181803-00'00'",
+    "modDate": "D:20261031191957+00'00'",
+    "trapped": "",
+    "encryption": null
+  },
+  "xmp_present": true,
+  "page_pixel_checks": [
+    {
+      "page": 1,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "61cf5975c91aedfec5da80ea7d09e33aae098872e2a4d933c25cd6135c5f05dc"
+    },
+    {
+      "page": 2,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "f3c38c20b16da6e05eee3249119d32c82587677ff65b749cee12c19800853795"
+    },
+    {
+      "page": 3,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "4a5e0fe0bd961a8bc81b17072519dfb806fab5f34a32afe2c06ea6ef614f4654"
+    },
+    {
+      "page": 4,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "44587b1b50e0ed236ebd4d9c491f8502ab9a0fcebacc637bb2c864767b6c946e"
+    },
+    {
+      "page": 5,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "3d21c9a04686508e3e8480865d3e7101be813533e3ae4bb7451c6548f5f565a8"
+    },
+    {
+      "page": 6,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "d44f25ddde588f7876262cd35f145121dfbe8649a3d2eb3ecf7c533f2b99ac96"
+    },
+    {
+      "page": 7,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "2a6198223cc2333fe84ef744be7b9af01728fab33cea8c422402fee6f73135f9"
+    },
+    {
+      "page": 8,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "8a19b2e3482ba6f911bd8eb6ccb5208b3179929007bc627e79bf3976ab916e91"
+    },
+    {
+      "page": 9,
+      "size": [
+        1754,
+        1241
+      ],
+      "sha256": "4ffa9088c01ae199e4324a82416eacea78ce190158cf3950616a13c0313207a0"
+    },
+    {
+      "page": 10,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "915495cea97e1de7f33fb5eea1a1aeed63826deadace57becddaee48fae801be"
+    },
+    {
+      "page": 11,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "03c3d6c93d360faa45119dffb000c8e4cae68a30889229799dd8ab01f1e54b79"
+    },
+    {
+      "page": 12,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "e9e10b198546083d265e40e77dc5968ee6285f9b524f5867a185aa54894d8a8c"
+    },
+    {
+      "page": 13,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "73b8844c63a4cb04fafb1e7b2ee18ca2e505f56c214de79e9d29f07bf376a0b1"
+    },
+    {
+      "page": 14,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "01126fbbf1d913d4885e51f0925ceed4ffc65370ed789c15b25185beb39594f2"
+    },
+    {
+      "page": 15,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "73ed5bd8596d6810b40d84ce570dba74dec4b3d264b4cca7b8809ca3dff9946a"
+    },
+    {
+      "page": 16,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "dc93e9b070f2851bb2e64bd05613b5dcb2955eb81b4365468e38db8465da08e6"
+    },
+    {
+      "page": 17,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "87ce123b50545a06cb95a75c44fe08581e00547150fce11d3c47549cfe3f847c"
+    },
+    {
+      "page": 18,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "7c8c04901a05a4d2714cb054f6533e895c99f4d69e1bcff2c340c2926f6e1d0e"
+    },
+    {
+      "page": 19,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "9cc2d7f6eb551af7ca4feea2f3a7f618a5b0f2e48e5ee136e2d37f3e9b4f3887"
+    },
+    {
+      "page": 20,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "79ca443355dacfb6483d3f815d5c1d5005f59f8f6731dce61b5651664779374a"
+    },
+    {
+      "page": 21,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "0ca4fa056e6612a865c58e29d5d0dd99dd6aac708677b65c6664b050d2edaaee"
+    },
+    {
+      "page": 22,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "3ac0b0a634e9051bfc0dc1468368838c79933e5844ecce1c03436441bac171a5"
+    },
+    {
+      "page": 23,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "7b54da681deff606b37f0aa59db08f88266d3dd01e8972352ff81dd026fda43f"
+    },
+    {
+      "page": 24,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "8dcb0c889f275bff4bcc66e070b7c67d09bef8daf2afb984a53a1137478def9a"
+    },
+    {
+      "page": 25,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "629fddacb45a067ccac7508ee0b39240358ca989ff93c4ead4d267da0b896209"
+    },
+    {
+      "page": 26,
+      "size": [
+        1241,
+        1754
+      ],
+      "sha256": "e001686c508523d889dee06df70fa9d676f8b22e2df7bfa7ce9282e7ffcc409f"
+    }
+  ],
+  "source_bytes": 163923,
+  "source_sha256": "d4c3304853555dba15ebdedcac366752d4d01749c0bb17b6dd5ab35340d96b6e"
+}

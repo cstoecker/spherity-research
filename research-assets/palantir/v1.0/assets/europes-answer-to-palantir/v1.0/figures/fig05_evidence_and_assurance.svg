@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1920" height="1080" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1920" height="1080"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-1080)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1920" height="1080" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="55" y="1025" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 37px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,2050) scale(1,-1)">Evidence must survive both interpretation and exchange</text>
+			<text x="55" y="982" style="font-family: Arial, sans-serif; font-size: 23px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,1964) scale(1,-1)">An assurance decision joins accepted assertions under explicit meaning, authority, access and time conditions</text>
+			<rect x="65" y="785" width="530" height="130" rx="8" ry="8" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="90" y="874" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 24px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1748) scale(1,-1)">SUPPLIER ASSERTION</text>
+			<text x="90" y="834" style="font-family: Arial, sans-serif; font-size: 24px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1668) scale(1,-1)">Exact component identity, type and serial</text>
+			<text x="90" y="805" style="font-family: Arial, sans-serif; font-size: 24px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1610) scale(1,-1)">binding</text>
+			<path d="M 330,785 L 330,715 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 2;"/>
+			<polygon points="330 715, 326 726, 334 726" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="695" y="785" width="530" height="130" rx="8" ry="8" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="720" y="874" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 24px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1748) scale(1,-1)">LABORATORY ASSERTION</text>
+			<text x="720" y="834" style="font-family: Arial, sans-serif; font-size: 24px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1668) scale(1,-1)">Test method, conditions, result and</text>
+			<text x="720" y="805" style="font-family: Arial, sans-serif; font-size: 24px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1610) scale(1,-1)">uncertainty</text>
+			<path d="M 960,785 L 960,715 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 2;"/>
+			<polygon points="960 715, 956 726, 964 726" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="1325" y="785" width="530" height="130" rx="8" ry="8" style="stroke: rgb(65%,74%,80%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(92%,95%,97%); fill-rule: evenodd;"/>
+			<text x="1350" y="874" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 24px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1748) scale(1,-1)">MANUFACTURER ASSERTION</text>
+			<text x="1350" y="834" style="font-family: Arial, sans-serif; font-size: 24px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1668) scale(1,-1)">Inventory state and local acceptance criteria</text>
+			<path d="M 1590,785 L 1590,715 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 2;"/>
+			<polygon points="1590 715, 1586 726, 1594 726" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="65" y="555" width="1790" height="160" rx="8" ry="8" style="stroke: rgb(57%,60%,77%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(93%,94%,98%); fill-rule: evenodd;"/>
+			<text x="95" y="672" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1344) scale(1,-1)">EVIDENCE ADMISSION AT EACH PARTICIPANT</text>
+			<text x="95" y="631" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1262) scale(1,-1)">Preserve the protected payload. Check proof, issuer authority, subject identity, semantic profile, validity and status. Apply disclosure and use policy. A</text>
+			<text x="95" y="597" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,1194) scale(1,-1)">transport-authenticated response can still be unverified evidence.</text>
+			<path d="M 485,555 L 485,497 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 2;"/>
+			<polygon points="485 497, 481 508, 489 508" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="65" y="302" width="840" height="195" rx="8" ry="8" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="95" y="452" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 27px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,904) scale(1,-1)">ATTRIBUTED EVIDENCE GRAPH</text>
+			<text x="95" y="411" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,822) scale(1,-1)">Link assertions to sources, approved mappings, snapshots and</text>
+			<text x="95" y="378" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,756) scale(1,-1)">verification states. Keep conflicts and unknowns visible. Retain the</text>
+			<text x="95" y="345" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,690) scale(1,-1)">basis of derived results.</text>
+			<rect x="1015" y="302" width="840" height="195" rx="8" ry="8" style="stroke: rgb(38%,63%,60%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(93%,97%,96%); fill-rule: evenodd;"/>
+			<text x="1045" y="452" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 25px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,904) scale(1,-1)">CONTEXT-SPECIFIC ASSURANCE ARGUMENT</text>
+			<text x="1045" y="411" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,822) scale(1,-1)">Connect accepted evidence to a bounded claim and rule. Record</text>
+			<text x="1045" y="378" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,756) scale(1,-1)">assumptions, unresolved premises and the authorized decision scope.</text>
+			<path d="M 905,390 L 1015,390 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 2;"/>
+			<polygon points="1015 390, 1004 386, 1004 394" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<path d="M 1435,302 L 1435,242 Z" style="stroke: rgb(3%,46%,43%); stroke-linecap: butt; stroke-width: 2;"/>
+			<polygon points="1435 242, 1431 253, 1439 253" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,46%,43%); fill-rule: evenodd;"/>
+			<rect x="65" y="102" width="1790" height="140" rx="8" ry="8" style="stroke: rgb(83%,71%,42%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(100%,97%,90%); fill-rule: evenodd;"/>
+			<text x="95" y="198" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 26px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,396) scale(1,-1)">AUTHORIZED ACTION AND CHANGE HANDLING</text>
+			<text x="95" y="157" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,314) scale(1,-1)">Bind the request to evidence and policy versions; recheck material preconditions. Record outcomes and reconcile external effects. Later evidence</text>
+			<text x="95" y="124" style="font-family: Arial, sans-serif; font-size: 25px;fill: rgb(8%,21%,30%); stroke:none;" transform="translate(0,248) scale(1,-1)">withdrawal triggers a new assessment, not a claim that the past decision never occurred.</text>
+			<text x="65" y="48" style="font-family: Arial, sans-serif; font-size: 22px;fill: rgb(27%,38%,47%); stroke:none;" transform="translate(0,96) scale(1,-1)">Shared Meaning, discovery and trust metadata are dependencies too: verify publisher authority, approved versions and permitted freshness.</text>
+		</g>
+	</g>
+</svg>

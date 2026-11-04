@@ -1,0 +1,2547 @@
+[
+  {
+    "condition": null,
+    "date": "2022-06",
+    "entity_id": "std-gs1-epcis-2",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "ratified",
+    "label": "GS1 EPCIS",
+    "precision": "month",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-gs1-epcis"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2022-07-19",
+    "entity_id": "std-w3c-did1",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "published",
+    "label": "W3C Decentralized Identifiers 1.0",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-w3c-did1"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2023-05-09",
+    "entity_id": "global-us-nist-battery-research",
+    "entity_type": "Initiative",
+    "jurisdiction_ids": [
+      "jur-us"
+    ],
+    "kind": "page_created",
+    "label": "NIST EV Battery Passport research",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-us-nist-battery-passport"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2023-07-12",
+    "entity_id": "eu-batteries-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "adopted",
+    "label": "Batteries Regulation (EU) 2023/1542",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-eu-battery-law"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2023-08-15",
+    "entity_id": "global-ca-credential-challenge",
+    "entity_type": "Initiative",
+    "jurisdiction_ids": [
+      "jur-ca"
+    ],
+    "kind": "opened",
+    "label": "Canada supply-chain verifiable credentials challenge",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-global-ca-credentials-challenge"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2023-09-26",
+    "entity_id": "global-ca-credential-challenge",
+    "entity_type": "Initiative",
+    "jurisdiction_ids": [
+      "jur-ca"
+    ],
+    "kind": "closed",
+    "label": "Canada supply-chain verifiable credentials challenge",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-global-ca-credentials-challenge"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2023-11-06",
+    "entity_id": "std-itu-l1070",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "approved",
+    "label": "ITU-T L.1070",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-electronics"
+    ],
+    "source_ids": [
+      "src-std-itu-1070"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2023-12-14",
+    "entity_id": "std-iec-63278-1",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "catalogue_valid_from",
+    "label": "IEC 63278-1:2023 — Asset Administration Shell structure",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-iec-aas"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2024-05",
+    "entity_id": "std-cirpass2",
+    "entity_type": "Initiative",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "started",
+    "label": "CIRPASS-2",
+    "precision": "month",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-textiles",
+      "sec-electronics",
+      "sec-tyres",
+      "sec-construction"
+    ],
+    "source_ids": [
+      "src-std-cirpass-dates"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2024-05-16",
+    "entity_id": "global-jp-battery-platform",
+    "entity_type": "Implementation",
+    "jurisdiction_ids": [
+      "jur-jp"
+    ],
+    "kind": "available",
+    "label": "Japan Battery Traceability Platform",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-jp-catena-x-demonstration"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2024-06-03",
+    "entity_id": "eu-crma-corrigendum",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "published",
+    "label": "CRMA corrigendum 2024/90330",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-critical-materials"
+    ],
+    "source_ids": [
+      "src-eu-crma-corrigendum"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2024-06-13",
+    "entity_id": "eu-espr",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "adopted",
+    "label": "ESPR — Regulation (EU) 2024/1781",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-eu-espr"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2024-07",
+    "entity_id": "global-jp-catena-x-cfp-demo",
+    "entity_type": "Pilot",
+    "jurisdiction_ids": [
+      "jur-jp"
+    ],
+    "kind": "started",
+    "label": "Japan–Catena-X carbon-footprint exchange demonstration",
+    "precision": "month",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries",
+      "sec-vehicles"
+    ],
+    "source_ids": [
+      "src-global-jp-catena-x-demonstration"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2024-07-18",
+    "entity_id": "eu-espr",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "entered_into_force",
+    "label": "ESPR — Regulation (EU) 2024/1781",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-eu-espr"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2024-11-06",
+    "entity_id": "std-itu-l1071",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "approved",
+    "label": "ITU-T L.1071",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-electronics"
+    ],
+    "source_ids": [
+      "src-std-itu-1071"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2024-11-27",
+    "entity_id": "eu-construction-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "adopted",
+    "label": "Construction Products Regulation (EU) 2024/3110",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-construction"
+    ],
+    "source_ids": [
+      "src-eu-cpr"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-01",
+    "entity_id": "global-jp-catena-x-cfp-demo",
+    "entity_type": "Pilot",
+    "jurisdiction_ids": [
+      "jur-jp"
+    ],
+    "kind": "ended",
+    "label": "Japan–Catena-X carbon-footprint exchange demonstration",
+    "precision": "month",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries",
+      "sec-vehicles"
+    ],
+    "source_ids": [
+      "src-global-jp-catena-x-demonstration"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-02-17",
+    "entity_id": "global-kr-battery-id-regime",
+    "entity_type": "Requirement",
+    "jurisdiction_ids": [
+      "jur-kr"
+    ],
+    "kind": "applies_from",
+    "label": "Korean battery identification and history duties",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-kr-battery-regime"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-02-28",
+    "entity_id": "global-jp-ouranos",
+    "entity_type": "Initiative",
+    "jurisdiction_ids": [
+      "jur-jp"
+    ],
+    "kind": "architecture_whitepaper_published",
+    "label": "Ouranos Ecosystem",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector",
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-jp-ouranos"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-03-12",
+    "entity_id": "eu-norway-espr-status",
+    "entity_type": "Report",
+    "jurisdiction_ids": [
+      "jur-no"
+    ],
+    "kind": "source_updated",
+    "label": "NVE statement on ESPR incorporation",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-eu-norway-nve"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-03-26",
+    "entity_id": "global-us-nist-battery-research",
+    "entity_type": "Initiative",
+    "jurisdiction_ids": [
+      "jur-us"
+    ],
+    "kind": "page_updated",
+    "label": "NIST EV Battery Passport research",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-us-nist-battery-passport"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-03-31",
+    "entity_id": "global-jp-catena-x-cfp-demo",
+    "entity_type": "Pilot",
+    "jurisdiction_ids": [
+      "jur-jp"
+    ],
+    "kind": "reported",
+    "label": "Japan–Catena-X carbon-footprint exchange demonstration",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries",
+      "sec-vehicles"
+    ],
+    "source_ids": [
+      "src-global-jp-catena-x-demonstration"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-04-01",
+    "entity_id": "std-batterypass-ready",
+    "entity_type": "Initiative",
+    "jurisdiction_ids": [
+      "jur-de"
+    ],
+    "kind": "started",
+    "label": "BatteryPass-Ready",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-std-battery-ready"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-05-15",
+    "entity_id": "std-w3c-vc2",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "published",
+    "label": "W3C Verifiable Credentials Data Model 2.0",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-w3c-vc2"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-05-17",
+    "entity_id": "global-bd-bgmea-digiprod-pilot",
+    "entity_type": "Pilot",
+    "jurisdiction_ids": [
+      "jur-bd"
+    ],
+    "kind": "mou_signed",
+    "label": "BGMEA–DigiProd Pass pilot",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-textiles"
+    ],
+    "source_ids": [
+      "src-global-bd-bgmea-mou"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-05-29",
+    "entity_id": "global-br-eniq-plan",
+    "entity_type": "Policy",
+    "jurisdiction_ids": [
+      "jur-br"
+    ],
+    "kind": "adopted",
+    "label": "Brazil ENIQ 2025–2026 action plan",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-global-br-gazette-plan"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-06-03",
+    "entity_id": "global-cn-dpp-general-project",
+    "entity_type": "StandardisationProject",
+    "jurisdiction_ids": [
+      "jur-cn"
+    ],
+    "kind": "project_record",
+    "label": "China DPP General requirements project",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-global-cn-dpp-project"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-06-18",
+    "entity_id": "global-vn-law78",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-vn"
+    ],
+    "kind": "adopted",
+    "label": "Vietnam Law 78/2025/QH15",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-global-vn-law78"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-07",
+    "entity_id": "std-unece-rec49",
+    "entity_type": "Policy",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "adopted",
+    "label": "UNECE Recommendation 49",
+    "precision": "month",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-unece-rec49-adoption"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-07-01",
+    "entity_id": "global-br-eniq-plan",
+    "entity_type": "Policy",
+    "jurisdiction_ids": [
+      "jur-br"
+    ],
+    "kind": "published",
+    "label": "Brazil ENIQ 2025–2026 action plan",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-global-br-gazette-plan"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-08-07",
+    "entity_id": "global-kr-busan-pilot",
+    "entity_type": "Pilot",
+    "jurisdiction_ids": [
+      "jur-kr-26"
+    ],
+    "kind": "announced",
+    "label": "Busan battery passport platform pilot",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-kr-busan-pilot"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-08-22",
+    "entity_id": "global-au-circular-economy-inquiry",
+    "entity_type": "Report",
+    "jurisdiction_ids": [
+      "jur-au"
+    ],
+    "kind": "delivered",
+    "label": "Australian circular-economy final inquiry",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries",
+      "sec-textiles"
+    ],
+    "source_ids": [
+      "src-global-au-circular-economy"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-08-26",
+    "entity_id": "global-ca-credential-challenge",
+    "entity_type": "Initiative",
+    "jurisdiction_ids": [
+      "jur-ca"
+    ],
+    "kind": "page_updated",
+    "label": "Canada supply-chain verifiable credentials challenge",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-global-ca-credentials-challenge"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-10",
+    "entity_id": "global-nz-exporter-guidance",
+    "entity_type": "Report",
+    "jurisdiction_ids": [
+      "jur-nz"
+    ],
+    "kind": "published",
+    "label": "New Zealand EU DPP market report",
+    "precision": "month",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-global-nz-exporter-guidance"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-10-31",
+    "entity_id": "global-g7-critical-minerals-roadmap",
+    "entity_type": "Policy",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "published",
+    "label": "G7 critical-minerals standards-based markets roadmap",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-critical-materials"
+    ],
+    "source_ids": [
+      "src-global-g7-minerals-roadmap"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-11-19",
+    "entity_id": "eu-business-wallet-proposal",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "proposed",
+    "label": "European Business Wallets — COM(2025)838",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-eu-ebw-proposal"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-11-26",
+    "entity_id": "eu-toy-safety-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "adopted",
+    "label": "Toy Safety Regulation (EU) 2025/2509",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-toys"
+    ],
+    "source_ids": [
+      "src-eu-toys-law"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-12",
+    "entity_id": "global-bd-brac-pilot",
+    "entity_type": "Pilot",
+    "jurisdiction_ids": [
+      "jur-bd"
+    ],
+    "kind": "mou_signed",
+    "label": "BRAC University CED DPP pilot",
+    "precision": "month",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-textiles"
+    ],
+    "source_ids": [
+      "src-global-bd-brac-pilot"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-12-30",
+    "entity_id": "global-in-battery-aadhaar-draft",
+    "entity_type": "Policy",
+    "jurisdiction_ids": [
+      "jur-in"
+    ],
+    "kind": "published",
+    "label": "Draft Battery Pack Aadhaar guidelines",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-in-battery-aadhaar-draft"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2025-12-31",
+    "entity_id": "global-cn-order73",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-cn"
+    ],
+    "kind": "adopted",
+    "label": "China battery recycling and traceability Order 73",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-cn-order73"
+    ]
+  },
+  {
+    "condition": "Iron/steel delegated-act target Q4; adoption not verified.",
+    "date": "2026",
+    "entity_id": "eu-espr-workplan",
+    "entity_type": "Policy",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "planned",
+    "label": "ESPR indicative implementation timeline",
+    "precision": "year",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-eu-timeline"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026",
+    "entity_id": "global-br-pr-vehicle-pilot",
+    "entity_type": "Pilot",
+    "jurisdiction_ids": [
+      "jur-br-pr"
+    ],
+    "kind": "planned_rollout",
+    "label": "Paraná digital vehicle passport pilot",
+    "precision": "year",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-vehicles"
+    ],
+    "source_ids": [
+      "src-global-br-pr-vehicle-pilot"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-01-01",
+    "entity_id": "eu-toy-safety-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "entered_into_force",
+    "label": "Toy Safety Regulation (EU) 2025/2509",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-toys"
+    ],
+    "source_ids": [
+      "src-eu-toys-dates"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-01-01",
+    "entity_id": "global-vn-law78",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-vn"
+    ],
+    "kind": "entered_into_force",
+    "label": "Vietnam Law 78/2025/QH15",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-global-vn-law78"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-01-08",
+    "entity_id": "eu-construction-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "applies_from",
+    "label": "Construction Products Regulation (EU) 2024/3110",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-construction"
+    ],
+    "source_ids": [
+      "src-eu-cpr"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-01-12",
+    "entity_id": "global-ch-kbob-foundations",
+    "entity_type": "Report",
+    "jurisdiction_ids": [
+      "jur-ch"
+    ],
+    "kind": "published",
+    "label": "Swiss KBOB DPP foundations paper",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-construction"
+    ],
+    "source_ids": [
+      "src-global-ch-kbob-foundations"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-01-16",
+    "entity_id": "global-au-circular-economy-inquiry",
+    "entity_type": "Report",
+    "jurisdiction_ids": [
+      "jur-au"
+    ],
+    "kind": "published",
+    "label": "Australian circular-economy final inquiry",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries",
+      "sec-textiles"
+    ],
+    "source_ids": [
+      "src-global-au-circular-economy"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-01-16",
+    "entity_id": "global-cn-order73",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-cn"
+    ],
+    "kind": "published",
+    "label": "China battery recycling and traceability Order 73",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-cn-order73"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-01-23",
+    "entity_id": "global-au-circular-economy-inquiry",
+    "entity_type": "Report",
+    "jurisdiction_ids": [
+      "jur-au"
+    ],
+    "kind": "tabled",
+    "label": "Australian circular-economy final inquiry",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries",
+      "sec-textiles"
+    ],
+    "source_ids": [
+      "src-global-au-circular-economy"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-01-23",
+    "entity_id": "global-vn-decree37",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-vn"
+    ],
+    "kind": "entered_into_force",
+    "label": "Vietnam Decree 37/2026/NĐ-CP",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-global-vn-decree37-explanation"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-02-11",
+    "entity_id": "eu-detergents-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "adopted",
+    "label": "Detergents and Surfactants Regulation (EU) 2026/405",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-detergents"
+    ],
+    "source_ids": [
+      "src-eu-detergents-law"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-02-12",
+    "entity_id": "global-br-pr-vehicle-pilot",
+    "entity_type": "Pilot",
+    "jurisdiction_ids": [
+      "jur-br-pr"
+    ],
+    "kind": "announced",
+    "label": "Paraná digital vehicle passport pilot",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-vehicles"
+    ],
+    "source_ids": [
+      "src-global-br-pr-vehicle-pilot"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-02-12",
+    "entity_id": "std-iso-25534-1",
+    "entity_type": "StandardisationProject",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "new_project_approved",
+    "label": "ISO/IEC AWI 25534-1 — Concepts and terminology",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-iso-25534-1"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-03-02",
+    "entity_id": "eu-detergents-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "published",
+    "label": "Detergents and Surfactants Regulation (EU) 2026/405",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-detergents"
+    ],
+    "source_ids": [
+      "src-eu-detergents-echa"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-03-11",
+    "entity_id": "std-w3c-vcwg",
+    "entity_type": "Committee",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "charter_started",
+    "label": "W3C Verifiable Credentials Working Group",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-w3c-charter"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-03-17",
+    "entity_id": "global-eg-textile-pilot-procurement",
+    "entity_type": "Pilot",
+    "jurisdiction_ids": [
+      "jur-eg"
+    ],
+    "kind": "published",
+    "label": "Egypt textile-SME DPP pilot procurement",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-textiles"
+    ],
+    "source_ids": [
+      "src-global-eg-unido-tender"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-03-22",
+    "entity_id": "eu-detergents-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "entered_into_force",
+    "label": "Detergents and Surfactants Regulation (EU) 2026/405",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-detergents"
+    ],
+    "source_ids": [
+      "src-eu-detergents-echa"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-03-23",
+    "entity_id": "global-kr-disclosure-proposal",
+    "entity_type": "Policy",
+    "jurisdiction_ids": [
+      "jur-kr"
+    ],
+    "kind": "announced",
+    "label": "Korean battery-information disclosure proposal",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-kr-battery-disclosure"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-03-27",
+    "entity_id": "global-cn-dpp-working-group",
+    "entity_type": "Committee",
+    "jurisdiction_ids": [
+      "jur-cn"
+    ],
+    "kind": "announced",
+    "label": "SAC/SWG 41 DPP working group",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries",
+      "sec-textiles",
+      "sec-electronics"
+    ],
+    "source_ids": [
+      "src-global-cn-working-group"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-04",
+    "entity_id": "std-unece-rec49",
+    "entity_type": "Policy",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "published",
+    "label": "UNECE Recommendation 49",
+    "precision": "month",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-unece-rec49"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-04-01",
+    "entity_id": "global-cn-battery-coding",
+    "entity_type": "Requirement",
+    "jurisdiction_ids": [
+      "jur-cn"
+    ],
+    "kind": "applies_from",
+    "label": "Order 73 battery coding requirement",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-cn-order73"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-04-01",
+    "entity_id": "global-cn-digital-id-art12",
+    "entity_type": "Provision",
+    "jurisdiction_ids": [
+      "jur-cn"
+    ],
+    "kind": "entered_into_force",
+    "label": "Order 73 Article 12: battery digital identity",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-cn-order73"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-04-01",
+    "entity_id": "global-cn-order73",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-cn"
+    ],
+    "kind": "entered_into_force",
+    "label": "China battery recycling and traceability Order 73",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-cn-order73"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-04-01",
+    "entity_id": "global-eg-textile-pilot-procurement",
+    "entity_type": "Pilot",
+    "jurisdiction_ids": [
+      "jur-eg"
+    ],
+    "kind": "closed",
+    "label": "Egypt textile-SME DPP pilot procurement",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-textiles"
+    ],
+    "source_ids": [
+      "src-global-eg-unido-tender"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-04-30",
+    "entity_id": "std-cirpass2-aas-rdf",
+    "entity_type": "Report",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "published",
+    "label": "AAS/RDF Interoperability Approaches for DPP",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-cirpass-results"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-05-04",
+    "entity_id": "global-kr-disclosure-proposal",
+    "entity_type": "Policy",
+    "jurisdiction_ids": [
+      "jur-kr"
+    ],
+    "kind": "planned_consultation_close",
+    "label": "Korean battery-information disclosure proposal",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-kr-battery-disclosure"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-05-27",
+    "entity_id": "std-en-18216-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "available",
+    "label": "EN 18216:2026 — Data exchange protocols",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-en-18216"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-05-27",
+    "entity_id": "std-en-18219-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "available",
+    "label": "EN 18219:2026 — Unique identifiers",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-en-18219"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-05-27",
+    "entity_id": "std-en-18220-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "available",
+    "label": "EN 18220:2026 — Data carriers",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-en-18220"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-05-27",
+    "entity_id": "std-en-18221-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "available",
+    "label": "EN 18221:2026 — Data storage, archiving and persistence",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-en-18221"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-05-28",
+    "entity_id": "std-en-18222-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "national_publication",
+    "label": "EN 18222:2026 — Lifecycle and searchability APIs",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-en-18222"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-05-28",
+    "entity_id": "std-en-18223-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "national_publication",
+    "label": "EN 18223:2026 — System interoperability",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-en-18223"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-06-16",
+    "entity_id": "std-cirpass2-architecture",
+    "entity_type": "Report",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "repository_publication",
+    "label": "CIRPASS-2 D4.1 Reference Architecture",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-cirpass-architecture"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-06-16",
+    "entity_id": "std-cirpass2-test",
+    "entity_type": "Implementation",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "published",
+    "label": "CIRPASS-2 Open Source Test Environment",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-cirpass-test"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-07-08",
+    "entity_id": "eu-vehicle-circularity-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "adopted",
+    "label": "Vehicle Circularity Regulation (EU) 2026/1738",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-vehicles"
+    ],
+    "source_ids": [
+      "src-eu-vehicle-law"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-07-14",
+    "entity_id": "std-oj-2026-1736",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "adopted",
+    "label": "Commission Implementing Decision (EU) 2026/1736",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-oj-decision",
+      "src-std-oj-register"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-07-15",
+    "entity_id": "std-en-18216-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "cited_in_oj",
+    "label": "EN 18216:2026 — Data exchange protocols",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-oj-decision"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-07-15",
+    "entity_id": "std-en-18219-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "cited_in_oj",
+    "label": "EN 18219:2026 — Unique identifiers",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-oj-decision"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-07-15",
+    "entity_id": "std-en-18220-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "cited_in_oj",
+    "label": "EN 18220:2026 — Data carriers",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-oj-decision"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-07-15",
+    "entity_id": "std-en-18221-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "cited_in_oj",
+    "label": "EN 18221:2026 — Data storage, archiving and persistence",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-oj-decision"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-07-15",
+    "entity_id": "std-en-18222-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "cited_in_oj",
+    "label": "EN 18222:2026 — Lifecycle and searchability APIs",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-oj-decision"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-07-15",
+    "entity_id": "std-en-18223-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "cited_in_oj",
+    "label": "EN 18223:2026 — System interoperability",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-oj-decision"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-07-15",
+    "entity_id": "std-oj-2026-1736",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "published",
+    "label": "Commission Implementing Decision (EU) 2026/1736",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-oj-decision",
+      "src-std-oj-register"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-07-16",
+    "entity_id": "eu-registry-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "adopted",
+    "label": "Commission Implementing Regulation (EU) 2026/1778",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-eu-registry-law"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-07-17",
+    "entity_id": "eu-registry-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "published",
+    "label": "Commission Implementing Regulation (EU) 2026/1778",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-eu-registry-law"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-07-20",
+    "entity_id": "eu-dpp-registry",
+    "entity_type": "Implementation",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "available",
+    "label": "EU Digital Product Passport Registry",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-eu-registry-launch"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-07-24",
+    "entity_id": "eu-vehicle-circularity-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "published",
+    "label": "Vehicle Circularity Regulation (EU) 2026/1738",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-vehicles"
+    ],
+    "source_ids": [
+      "src-eu-vehicle-law"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-07-27",
+    "entity_id": "eu-gb-dpr-consultation",
+    "entity_type": "Policy",
+    "jurisdiction_ids": [
+      "jur-gb-gbn"
+    ],
+    "kind": "published",
+    "label": "Great Britain digital product records policy consultation",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-eu-uk-dpr"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-07-27",
+    "entity_id": "eu-northern-ireland-scope",
+    "entity_type": "Report",
+    "jurisdiction_ids": [
+      "jur-gb-nir"
+    ],
+    "kind": "published",
+    "label": "UK authority statement on Northern Ireland DPP scope",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-eu-uk-dpr"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-08",
+    "entity_id": "std-gs1-digital-link-1-7",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "ratified",
+    "label": "GS1 Digital Link URI Syntax",
+    "precision": "month",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-gs1-digital-link"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-08-11",
+    "entity_id": "std-uncefact-p1143",
+    "entity_type": "StandardisationProject",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "public_review_opened",
+    "label": "UN/CEFACT P1143 DPP BRS",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-unece-p1143"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-08-12",
+    "entity_id": "eu-packaging-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "applies_from",
+    "label": "Packaging and Packaging Waste Regulation (EU) 2025/40",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-packaging"
+    ],
+    "source_ids": [
+      "src-eu-ppwr"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-08-13",
+    "entity_id": "eu-vehicle-circularity-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "entered_into_force",
+    "label": "Vehicle Circularity Regulation (EU) 2026/1738",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-vehicles"
+    ],
+    "source_ids": [
+      "src-eu-vehicle-law"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-08-21",
+    "entity_id": "eu-battery-data-guidance",
+    "entity_type": "Report",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "published",
+    "label": "Digital Batteries Passport data-point guidance",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-eu-battery-guidance"
+    ]
+  },
+  {
+    "condition": "Date of the shared release announcement; underlying artifact timestamp not independently checked.",
+    "date": "2026-08-27",
+    "entity_id": "std-battery-longlist-2",
+    "entity_type": "Report",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "publication_announced",
+    "label": "BatteryPass-Ready Data Attribute Longlist v2.0",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-std-battery-model"
+    ]
+  },
+  {
+    "condition": "Date of the shared release announcement; underlying artifact timestamp not independently checked.",
+    "date": "2026-08-27",
+    "entity_id": "std-battery-model-2",
+    "entity_type": "Specification",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "publication_announced",
+    "label": "BatteryPass-Ready Data Model v2.0",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-std-battery-model"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-09-06",
+    "entity_id": "std-w3c-recognized",
+    "entity_type": "Specification",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "published",
+    "label": "W3C Recognized Entities 1.0",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-w3c-recognized"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-09-14",
+    "entity_id": "std-iso-25534-2",
+    "entity_type": "StandardisationProject",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "new_project_approved",
+    "label": "ISO/IEC AWI 25534-2 — Overview and fundamental principles",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-iso-25534-2"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-09-16",
+    "entity_id": "std-en-18239-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "available",
+    "label": "EN 18239:2026 — Access rights, security and confidentiality",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-en-18239"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-09-16",
+    "entity_id": "std-en-18246-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "available",
+    "label": "EN 18246:2026 — Data authentication, reliability and integrity",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-en-18246"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-09-16",
+    "entity_id": "std-gba-trials-2026",
+    "entity_type": "Pilot",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "results_webinar",
+    "label": "GBA 2026 operational trials",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-std-gba-trials"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-09-20",
+    "entity_id": "global-us-ca-sb615",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-us-ca"
+    ],
+    "kind": "signed",
+    "label": "California SB615: vehicle traction batteries",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries",
+      "sec-vehicles"
+    ],
+    "source_ids": [
+      "src-global-us-ca-sb615-signing"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-09-21",
+    "entity_id": "eu-gb-dpr-consultation",
+    "entity_type": "Policy",
+    "jurisdiction_ids": [
+      "jur-gb-gbn"
+    ],
+    "kind": "ends",
+    "label": "Great Britain digital product records policy consultation",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-eu-uk-dpr"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-09-27",
+    "entity_id": "std-rain-dpp-001",
+    "entity_type": "Report",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "published",
+    "label": "RAIN-DPP-001",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-rain"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-09-30",
+    "entity_id": "global-bd-bgmea-aware-pilot",
+    "entity_type": "Pilot",
+    "jurisdiction_ids": [
+      "jur-bd"
+    ],
+    "kind": "session",
+    "label": "BGMEA–AWARE DPP pilot",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-textiles"
+    ],
+    "source_ids": [
+      "src-global-bd-bgmea-aware"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-10-01",
+    "entity_id": "global-in-teri-battery-research",
+    "entity_type": "Initiative",
+    "jurisdiction_ids": [
+      "jur-in"
+    ],
+    "kind": "published",
+    "label": "TERI Battery Lifecycle Aadhaar research",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-in-teri-research"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-10-12",
+    "entity_id": "std-cirpass2-ontology",
+    "entity_type": "Ontology",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "announced",
+    "label": "CIRPASS-2 DPP ontology network",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-cirpass-results"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-10-12",
+    "entity_id": "std-uncefact-p1143",
+    "entity_type": "StandardisationProject",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "planned_public_review_close",
+    "label": "UN/CEFACT P1143 DPP BRS",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-unece-p1143"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-10-16",
+    "entity_id": "std-opc-30450-1",
+    "entity_type": "Specification",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "published",
+    "label": "OPC 30450-1 — DPP Information Model",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-opc-dpp"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2026-10-22",
+    "entity_id": "std-battery-test",
+    "entity_type": "Implementation",
+    "jurisdiction_ids": [
+      "jur-de"
+    ],
+    "kind": "update_announced",
+    "label": "BatteryPass-Ready test environment",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-std-battery-test"
+    ]
+  },
+  {
+    "condition": "Textiles, aluminium and tyres targets Q3–Q4; adoption not verified.",
+    "date": "2027",
+    "entity_id": "eu-espr-workplan",
+    "entity_type": "Policy",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "planned",
+    "label": "ESPR indicative implementation timeline",
+    "precision": "year",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-eu-timeline"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2027",
+    "entity_id": "global-kr-battery-id-regime",
+    "entity_type": "Requirement",
+    "jurisdiction_ids": [
+      "jur-kr"
+    ],
+    "kind": "planned_system_completion",
+    "label": "Korean battery identification and history duties",
+    "precision": "year",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-kr-battery-regime"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2027",
+    "entity_id": "std-gba-certification",
+    "entity_type": "CertificationScheme",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "planned_launch",
+    "label": "GBA battery passport certification",
+    "precision": "year",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-std-gba-trials"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2027-02-18",
+    "entity_id": "eu-battery-passport-requirement",
+    "entity_type": "Requirement",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "applies_from",
+    "label": "Battery passport — Article 77",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-eu-battery-guidance"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2027-03-31",
+    "entity_id": "std-en-18239-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "national_implementation_deadline",
+    "label": "EN 18239:2026 — Access rights, security and confidentiality",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-en-18239"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2027-03-31",
+    "entity_id": "std-en-18246-2026",
+    "entity_type": "Standard",
+    "jurisdiction_ids": [
+      "jur-europe"
+    ],
+    "kind": "national_implementation_deadline",
+    "label": "EN 18246:2026 — Data authentication, reliability and integrity",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-en-18246"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2027-04",
+    "entity_id": "std-cirpass2",
+    "entity_type": "Initiative",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "planned_end",
+    "label": "CIRPASS-2",
+    "precision": "month",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-textiles",
+      "sec-electronics",
+      "sec-tyres",
+      "sec-construction"
+    ],
+    "source_ids": [
+      "src-std-cirpass-dates"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2027-08-18",
+    "entity_id": "eu-battery-due-diligence",
+    "entity_type": "Provision",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "applies_from",
+    "label": "Battery due diligence — Article 48",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-eu-battery-law"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2028-03-31",
+    "entity_id": "std-w3c-vcwg",
+    "entity_type": "Committee",
+    "jurisdiction_ids": [
+      "jur-global"
+    ],
+    "kind": "charter_ends",
+    "label": "W3C Verifiable Credentials Working Group",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-std-w3c-charter"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2028-09-01",
+    "entity_id": "eu-vehicle-circularity-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "applies_from",
+    "label": "Vehicle Circularity Regulation (EU) 2026/1738",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-vehicles"
+    ],
+    "source_ids": [
+      "src-eu-vehicle-article59"
+    ]
+  },
+  {
+    "condition": "Special Article 28(10) provision for MRI devices, motor vehicles and type-approved category-L transport.",
+    "date": "2029-05-24",
+    "entity_id": "eu-permanent-magnet-information",
+    "entity_type": "Requirement",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "applies_from",
+    "label": "Permanent-magnet information — CRMA Article 28",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-critical-materials"
+    ],
+    "source_ids": [
+      "src-eu-crma"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2029-09-23",
+    "entity_id": "eu-detergent-passport-requirement",
+    "entity_type": "Requirement",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "applies_from",
+    "label": "Detergent passport — Article 21",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-detergents"
+    ],
+    "source_ids": [
+      "src-eu-detergents-dates"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2029-09-23",
+    "entity_id": "eu-detergents-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "applies_from",
+    "label": "Detergents and Surfactants Regulation (EU) 2026/405",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-detergents"
+    ],
+    "source_ids": [
+      "src-eu-detergents-dates"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2030-08-01",
+    "entity_id": "eu-toy-passport-requirement",
+    "entity_type": "Requirement",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "applies_from",
+    "label": "Toy passport — Articles 19–22",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-toys"
+    ],
+    "source_ids": [
+      "src-eu-toys-dates"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2030-08-01",
+    "entity_id": "eu-toy-safety-regulation",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "applies_from",
+    "label": "Toy Safety Regulation (EU) 2025/2509",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-toys"
+    ],
+    "source_ids": [
+      "src-eu-toys-dates"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2030-08-14",
+    "entity_id": "eu-vehicle-passport-requirement",
+    "entity_type": "Requirement",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "implementing_act_due",
+    "label": "Digital Circularity Vehicle Passport — Article 13",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-vehicles"
+    ],
+    "source_ids": [
+      "src-eu-vehicle-law"
+    ]
+  },
+  {
+    "condition": null,
+    "date": "2032-09-01",
+    "entity_id": "eu-vehicle-passport-requirement",
+    "entity_type": "Requirement",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "applies_from",
+    "label": "Digital Circularity Vehicle Passport — Article 13",
+    "precision": "day",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-vehicles"
+    ],
+    "source_ids": [
+      "src-eu-vehicle-law"
+    ]
+  },
+  {
+    "condition": "18 months after Article 75(1) system delegated act enters into force, subject to product-family transition.",
+    "date": null,
+    "entity_id": "eu-construction-passport-requirement",
+    "entity_type": "Requirement",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "applies_from",
+    "label": "Construction DPP provision — Articles 22(7), 75–80",
+    "precision": "conditional",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-construction"
+    ],
+    "source_ids": [
+      "src-eu-cpr"
+    ]
+  },
+  {
+    "condition": "System operational six months after that delegated act enters into force.",
+    "date": null,
+    "entity_id": "eu-construction-passport-requirement",
+    "entity_type": "Requirement",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "available",
+    "label": "Construction DPP provision — Articles 22(7), 75–80",
+    "precision": "conditional",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-construction"
+    ],
+    "source_ids": [
+      "src-eu-cpr"
+    ]
+  },
+  {
+    "condition": "Two years after relevant implementing act enters into force for principal label/data-carrier requirements.",
+    "date": null,
+    "entity_id": "eu-permanent-magnet-information",
+    "entity_type": "Requirement",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "applies_from",
+    "label": "Permanent-magnet information — CRMA Article 28",
+    "precision": "conditional",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-critical-materials"
+    ],
+    "source_ids": [
+      "src-eu-crma"
+    ]
+  },
+  {
+    "condition": "12 February 2029 or 30 months after relevant implementing act enters into force, whichever is later.",
+    "date": null,
+    "entity_id": "eu-reusable-packaging-carrier",
+    "entity_type": "Requirement",
+    "jurisdiction_ids": [
+      "jur-eu"
+    ],
+    "kind": "applies_from",
+    "label": "Reusable-packaging data carrier — PPWR Article 12",
+    "precision": "conditional",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-packaging"
+    ],
+    "source_ids": [
+      "src-eu-ppwr"
+    ]
+  },
+  {
+    "condition": "Separate measures under Article 12.",
+    "date": null,
+    "entity_id": "global-cn-digital-id-art12",
+    "entity_type": "Provision",
+    "jurisdiction_ids": [
+      "jur-cn"
+    ],
+    "kind": "implementation_details",
+    "label": "Order 73 Article 12: battery digital identity",
+    "precision": "conditional",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-batteries"
+    ],
+    "source_ids": [
+      "src-global-cn-order73"
+    ]
+  },
+  {
+    "condition": "Prime Minister approval of product-specific roadmap.",
+    "date": null,
+    "entity_id": "global-vn-decree37",
+    "entity_type": "LegalInstrument",
+    "jurisdiction_ids": [
+      "jur-vn"
+    ],
+    "kind": "product_rollout",
+    "label": "Vietnam Decree 37/2026/NĐ-CP",
+    "precision": "conditional",
+    "review_status": "machine_assisted_unreviewed",
+    "sector_ids": [
+      "sec-cross-sector"
+    ],
+    "source_ids": [
+      "src-global-vn-decree37-explanation"
+    ]
+  }
+]

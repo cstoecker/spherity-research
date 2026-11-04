@@ -1,0 +1,1892 @@
+[
+  {
+    "entity_id": "eu-batteries-regulation",
+    "limitations": [
+      "Consolidated legal text not reopened."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-battery-law",
+      "src-eu-battery-guidance"
+    ]
+  },
+  {
+    "entity_id": "eu-battery-due-diligence",
+    "limitations": [
+      "Dossier-derived amendment timing; consolidated text not reopened."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-battery-law"
+    ]
+  },
+  {
+    "entity_id": "eu-battery-passport-requirement",
+    "limitations": [
+      "Scope/date rechecked in Commission announcement; access tiers remain dossier-derived."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-battery-law",
+      "src-eu-battery-guidance"
+    ]
+  },
+  {
+    "entity_id": "eu-business-wallet-proposal",
+    "limitations": [
+      "Parliament procedural record says awaiting first-reading position; no enacted EBW regulation established."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-ebw-proposal",
+      "src-eu-ebw-procedure"
+    ]
+  },
+  {
+    "entity_id": "eu-construction-passport-requirement",
+    "limitations": [
+      "Trigger act adoption/entry not verified; no calendar deadline inferred.",
+      "Dossier-derived requirement supplemented by indexed official Article 80 timing; primary full legal material was not reopened."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-cpr"
+    ]
+  },
+  {
+    "entity_id": "eu-construction-regulation",
+    "limitations": [
+      "Dossier-derived entity supplemented by indexed official Article 80/96 passages; primary full legal material was not reopened and Article 95 transitions need full review."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-cpr"
+    ]
+  },
+  {
+    "entity_id": "eu-critical-raw-materials-act",
+    "limitations": [
+      "Relevant implementing-act adoption unverified."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-crma",
+      "src-eu-crma-corrigendum"
+    ]
+  },
+  {
+    "entity_id": "eu-crma-corrigendum",
+    "limitations": [
+      "Correction does not establish that the implementing act was adopted."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-crma-corrigendum"
+    ]
+  },
+  {
+    "entity_id": "eu-detergent-passport-requirement",
+    "limitations": [
+      "Article 21 detailed scope not reopened; implementing act status unverified."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-detergents-law",
+      "src-eu-detergents-dates"
+    ]
+  },
+  {
+    "entity_id": "eu-detergents-regulation",
+    "limitations": [
+      "Article 37 timing rechecked only via indexed official passage; other dates and scope inherited."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-detergents-law",
+      "src-eu-detergents-dates",
+      "src-eu-detergents-echa"
+    ]
+  },
+  {
+    "entity_id": "eu-eidas-amendment",
+    "limitations": [
+      "Wallet provision timing depends on implementing acts; no blanket fixed start encoded."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-eidas"
+    ]
+  },
+  {
+    "entity_id": "eu-espr",
+    "limitations": [
+      "Framework classification rechecked in Commission FAQ; full legislation inaccessible."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-espr",
+      "src-eu-dpp-faq"
+    ]
+  },
+  {
+    "entity_id": "eu-espr-art-10",
+    "limitations": [
+      "Dossier-derived entity supplemented by indexed official search passages; primary full article material was not reopened."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-espr"
+    ]
+  },
+  {
+    "entity_id": "eu-espr-art-11",
+    "limitations": [
+      "Dossier-derived entity supplemented by indexed official search passages; primary full article material was not reopened."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-espr"
+    ]
+  },
+  {
+    "entity_id": "eu-espr-art-12",
+    "limitations": [
+      "Dossier-derived entity supplemented by indexed official search passages; primary full article material was not reopened."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-espr"
+    ]
+  },
+  {
+    "entity_id": "eu-espr-art-13",
+    "limitations": [
+      "Dossier-derived entity supplemented by indexed official search passages; primary full article material was not reopened."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-espr"
+    ]
+  },
+  {
+    "entity_id": "eu-espr-art-9",
+    "limitations": [
+      "Dossier-derived entity supplemented by indexed official search passages; primary full article material was not reopened."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-espr"
+    ]
+  },
+  {
+    "entity_id": "eu-packaging-regulation",
+    "limitations": [
+      "Digital-labelling implementing acts not checked."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-ppwr"
+    ]
+  },
+  {
+    "entity_id": "eu-permanent-magnet-information",
+    "limitations": [
+      "No blanket critical-material passport inference; implementing-act status unresolved."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-crma",
+      "src-eu-crma-corrigendum"
+    ]
+  },
+  {
+    "entity_id": "eu-registry-regulation",
+    "limitations": [
+      "Commencement article was not extracted; launch date must not substitute for entry into force."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-registry-law"
+    ]
+  },
+  {
+    "entity_id": "eu-reusable-packaging-carrier",
+    "limitations": [
+      "Cannot use fixed 2029 date without checking the trigger act."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-ppwr"
+    ]
+  },
+  {
+    "entity_id": "eu-toy-passport-requirement",
+    "limitations": [],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-toys-law",
+      "src-eu-toys-dates"
+    ]
+  },
+  {
+    "entity_id": "eu-toy-safety-regulation",
+    "limitations": [
+      "Status/application rechecked in Commission summary; detailed operative text inherited."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-toys-law",
+      "src-eu-toys-dates"
+    ]
+  },
+  {
+    "entity_id": "eu-vehicle-circularity-regulation",
+    "limitations": [
+      "Article 59 general date rechecked via index; Article 2 scope and Article 13 require full-text recheck."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-vehicle-law",
+      "src-eu-vehicle-article59"
+    ]
+  },
+  {
+    "entity_id": "eu-vehicle-passport-requirement",
+    "limitations": [
+      "Dossier-derived Article 13 date and scope; direct text inaccessible this turn."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-vehicle-law"
+    ]
+  },
+  {
+    "entity_id": "global-cn-battery-coding",
+    "limitations": [],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-cn-order73"
+    ]
+  },
+  {
+    "entity_id": "global-cn-digital-id-art12",
+    "limitations": [
+      "Implementing measures not identified in the reviewed source."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-cn-order73"
+    ]
+  },
+  {
+    "entity_id": "global-cn-order73",
+    "limitations": [
+      "Art. 12 details require separate provisions."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-cn-order73"
+    ]
+  },
+  {
+    "entity_id": "global-kr-battery-id-regime",
+    "limitations": [
+      "Exact amending Act number, operative provisions and consolidated implementing rules not retrieved; legal scope relies on MOLIT's implementation announcement."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-kr-battery-regime"
+    ]
+  },
+  {
+    "entity_id": "global-us-ca-sb615",
+    "limitations": [
+      "Final official text not retrieved; mirrored 2028 label deadline intentionally excluded from seed assertions."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-us-ca-sb615-signing"
+    ]
+  },
+  {
+    "entity_id": "global-vn-decree37",
+    "limitations": [
+      "Official ministry explanation checked; decree Articles 31–34 not directly checked."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-vn-decree37-explanation"
+    ]
+  },
+  {
+    "entity_id": "global-vn-law78",
+    "limitations": [
+      "Interpretation and consolidation require human legal review."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "date_or_trigger",
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-vn-law78"
+    ]
+  },
+  {
+    "entity_id": "std-oj-2026-1736",
+    "limitations": [
+      "Legal text reopening blocked; official Commission register verifies decision identity/date, detailed effect inherited from dossier."
+    ],
+    "priority": "high",
+    "reasons": [
+      "legal_scope_or_status",
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-oj-decision",
+      "src-std-oj-register"
+    ]
+  },
+  {
+    "entity_id": "eu-battery-data-guidance",
+    "limitations": [
+      "Announcement checked; linked guidance not fully examined."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-battery-guidance"
+    ]
+  },
+  {
+    "entity_id": "eu-dpp-registry",
+    "limitations": [
+      "Authority launch announcement; production integrations and service performance not independently tested."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-registry-launch"
+    ]
+  },
+  {
+    "entity_id": "eu-espr-workplan",
+    "limitations": [
+      "Not rechecked this turn.",
+      "Service-provider timetable has inconsistent Q2/Q3 2027 targets in dossier."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-timeline"
+    ]
+  },
+  {
+    "entity_id": "eu-gb-dpr-consultation",
+    "limitations": [
+      "No post-consultation government response established in this seed."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-uk-dpr"
+    ]
+  },
+  {
+    "entity_id": "eu-northern-ireland-scope",
+    "limitations": [
+      "Authority summary, not a complete legal incorporation analysis."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-uk-dpr"
+    ]
+  },
+  {
+    "entity_id": "eu-norway-espr-status",
+    "limitations": [
+      "Reopening a stale page does not prove no later incorporation."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-eu-norway-nve"
+    ]
+  },
+  {
+    "entity_id": "global-au-circular-economy-inquiry",
+    "limitations": [
+      "Implementation of recommendations not established."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-au-circular-economy"
+    ]
+  },
+  {
+    "entity_id": "global-bd-bgmea-aware-pilot",
+    "limitations": [
+      "No independent deployment validation inspected."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-bd-bgmea-aware"
+    ]
+  },
+  {
+    "entity_id": "global-bd-bgmea-digiprod-pilot",
+    "limitations": [
+      "No completion or domestic statutory obligation inferred."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-bd-bgmea-mou"
+    ]
+  },
+  {
+    "entity_id": "global-bd-brac-pilot",
+    "limitations": [
+      "Policy coordination participation does not prove adoption of a national strategy."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-bd-brac-pilot"
+    ]
+  },
+  {
+    "entity_id": "global-br-eniq-plan",
+    "limitations": [
+      "Annex DPP row previously available through indexing; direct annex verification pending."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-br-eniq-plan",
+      "src-global-br-gazette-plan"
+    ]
+  },
+  {
+    "entity_id": "global-br-pr-vehicle-pilot",
+    "limitations": [
+      "Announced 120-day pilot and end-2026 ambition; completion unverified."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-br-pr-vehicle-pilot"
+    ]
+  },
+  {
+    "entity_id": "global-ca-credential-challenge",
+    "limitations": [
+      "Award, deployment and general legal obligation not established."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-ca-credentials-challenge"
+    ]
+  },
+  {
+    "entity_id": "global-ch-kbob-foundations",
+    "limitations": [
+      "Not evidence of mandatory Swiss DPP application."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-ch-kbob-foundations"
+    ]
+  },
+  {
+    "entity_id": "global-cn-dpp-general-project",
+    "limitations": [
+      "Eighteen-month project period is not a publication guarantee."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-cn-dpp-project"
+    ]
+  },
+  {
+    "entity_id": "global-cn-dpp-working-group",
+    "limitations": [
+      "Formation does not create product obligations."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-cn-working-group"
+    ]
+  },
+  {
+    "entity_id": "global-eg-textile-pilot-procurement",
+    "limitations": [
+      "Tender does not establish award, delivered pilot or law."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-eg-unido-tender"
+    ]
+  },
+  {
+    "entity_id": "global-g7-critical-minerals-roadmap",
+    "limitations": [
+      "Current primary fetch failed; inherited dossier supports classification.",
+      "No national obligation inferred."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-g7-minerals-roadmap"
+    ]
+  },
+  {
+    "entity_id": "global-in-battery-aadhaar-draft",
+    "limitations": [
+      "Official indexed draft inherited; final adoption not verified."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-in-battery-aadhaar-draft"
+    ]
+  },
+  {
+    "entity_id": "global-in-teri-battery-research",
+    "limitations": [
+      "Reference to draft AIS-227 is not proof of its legal adoption."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-in-teri-research"
+    ]
+  },
+  {
+    "entity_id": "global-jp-battery-platform",
+    "limitations": [
+      "Current deployment scale not independently assessed."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-jp-catena-x-demonstration"
+    ]
+  },
+  {
+    "entity_id": "global-jp-catena-x-cfp-demo",
+    "limitations": [
+      "Not universal DPP interoperability or production certification."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-jp-catena-x-demonstration"
+    ]
+  },
+  {
+    "entity_id": "global-jp-ouranos",
+    "limitations": [
+      "No domestic mandate is inferred from programme activity."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-jp-ouranos"
+    ]
+  },
+  {
+    "entity_id": "global-jp-pla-netj",
+    "limitations": [
+      "Technical choices and trial activity do not establish a legal mandate."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-jp-pla-netj"
+    ]
+  },
+  {
+    "entity_id": "global-jp-solar-dpp",
+    "limitations": [
+      "Fiscal-year labels are not converted into exact start/end dates."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-jp-solar-dpp"
+    ]
+  },
+  {
+    "entity_id": "global-kr-busan-pilot",
+    "limitations": [
+      "Deployment and completion outcomes not verified."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-kr-busan-pilot"
+    ]
+  },
+  {
+    "entity_id": "global-kr-disclosure-proposal",
+    "limitations": [
+      "Final amendments not retrieved.",
+      "The announcement gives a planned consultation closing date; actual closure or extension was not verified."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-kr-battery-disclosure"
+    ]
+  },
+  {
+    "entity_id": "global-nz-exporter-guidance",
+    "limitations": [
+      "No New Zealand mandate inferred."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-nz-exporter-guidance"
+    ]
+  },
+  {
+    "entity_id": "global-sg-sustainability-guidance",
+    "limitations": [
+      "No national DPP platform or obligation inferred."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-sg-sustainability-playbook"
+    ]
+  },
+  {
+    "entity_id": "global-tr-eu-dpp-guidance",
+    "limitations": [
+      "Publication date not established in this seed."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-tr-dpp-overview"
+    ]
+  },
+  {
+    "entity_id": "global-unido-textile-readiness",
+    "limitations": [
+      "Readiness measures are not interoperability tests or legislation."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-unido-textile-readiness"
+    ]
+  },
+  {
+    "entity_id": "global-us-nist-battery-research",
+    "limitations": [
+      "Completion date itself is not given."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-global-us-nist-battery-passport"
+    ]
+  },
+  {
+    "entity_id": "std-battery-longlist-2",
+    "limitations": [
+      "Draft acts and voluntary additions require attribute-level legal tagging; full spreadsheet not inspected."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-battery-model"
+    ]
+  },
+  {
+    "entity_id": "std-battery-model-2",
+    "limitations": [
+      "Full schema not inspected; the aligned longlist includes voluntary attributes and draft-act material."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-battery-model"
+    ]
+  },
+  {
+    "entity_id": "std-battery-pass",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-battery-materials",
+      "src-std-battery-ready"
+    ]
+  },
+  {
+    "entity_id": "std-battery-test",
+    "limitations": [
+      "Passing project tests does not prove compliance with all applicable laws."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-battery-test"
+    ]
+  },
+  {
+    "entity_id": "std-batterypass-ready",
+    "limitations": [
+      "Programme funding geography; no claim all implementation sites are German."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-battery-ready"
+    ]
+  },
+  {
+    "entity_id": "std-bsdd",
+    "limitations": [
+      "Provider release unreviewed."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-dictionary"
+    ]
+  },
+  {
+    "entity_id": "std-catena-x",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-catena-standard",
+      "src-std-catena-opc"
+    ]
+  },
+  {
+    "entity_id": "std-cen-jtc24",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-cen-overview"
+    ]
+  },
+  {
+    "entity_id": "std-cirpass2",
+    "limitations": [
+      "Programme geography is not the location of every pilot."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-cirpass",
+      "src-std-cirpass-dates"
+    ]
+  },
+  {
+    "entity_id": "std-cirpass2-aas-rdf",
+    "limitations": [
+      "Full report not inspected; no result-level test assertion made."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-cirpass-results"
+    ]
+  },
+  {
+    "entity_id": "std-cirpass2-architecture",
+    "limitations": [
+      "Full attached PDF not inspected."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-cirpass-architecture"
+    ]
+  },
+  {
+    "entity_id": "std-cirpass2-ontology",
+    "limitations": [
+      "Competency questions not yet formally validated against product data in inspected dossier.",
+      "Latest page unavailable on reopening."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-cirpass-ontology",
+      "src-std-cirpass-results"
+    ]
+  },
+  {
+    "entity_id": "std-cirpass2-test",
+    "limitations": [
+      "No tests run in this research."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-cirpass-test"
+    ]
+  },
+  {
+    "entity_id": "std-cx-0143",
+    "limitations": [
+      "No cross-ecosystem compatibility conclusion from specification alone."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-catena-standard"
+    ]
+  },
+  {
+    "entity_id": "std-dictionary-referencing",
+    "limitations": [
+      "Direct catalogue check pending."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-dictionary"
+    ]
+  },
+  {
+    "entity_id": "std-din-dke-spec-99100",
+    "limitations": [
+      "Edition and exact publication date require direct catalogue follow-up."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-battery-materials"
+    ]
+  },
+  {
+    "entity_id": "std-dpp4-0",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-idta"
+    ]
+  },
+  {
+    "entity_id": "std-eclass",
+    "limitations": [
+      "Provider release unreviewed."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-dictionary"
+    ]
+  },
+  {
+    "entity_id": "std-en-18216-2026",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-en-18216",
+      "src-std-oj-decision",
+      "src-std-oj-register"
+    ]
+  },
+  {
+    "entity_id": "std-en-18219-2026",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-en-18219",
+      "src-std-oj-decision",
+      "src-std-oj-register"
+    ]
+  },
+  {
+    "entity_id": "std-en-18220-2026",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-en-18220",
+      "src-std-oj-decision",
+      "src-std-oj-register"
+    ]
+  },
+  {
+    "entity_id": "std-en-18221-2026",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-en-18221",
+      "src-std-oj-decision",
+      "src-std-oj-register"
+    ]
+  },
+  {
+    "entity_id": "std-en-18222-2026",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-en-18222",
+      "src-std-oj-decision",
+      "src-std-oj-register"
+    ]
+  },
+  {
+    "entity_id": "std-en-18223-2026",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-en-18223",
+      "src-std-oj-decision",
+      "src-std-oj-register"
+    ]
+  },
+  {
+    "entity_id": "std-en-18239-2026",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue reopening failed; publication inherited from dossier.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-en-18239",
+      "src-std-oj-register"
+    ]
+  },
+  {
+    "entity_id": "std-en-18246-2026",
+    "limitations": [
+      "Full normative clauses not reviewed; no product-specific legal sufficiency inferred.",
+      "Catalogue reopening failed; publication inherited from dossier.",
+      "Catalogue dates and individual OJ inclusion inherited from dossier; Commission register existence rechecked."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-en-18246",
+      "src-std-oj-register"
+    ]
+  },
+  {
+    "entity_id": "std-etim",
+    "limitations": [
+      "Provider release unreviewed."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-dictionary"
+    ]
+  },
+  {
+    "entity_id": "std-gba",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-gba-trials"
+    ]
+  },
+  {
+    "entity_id": "std-gba-certification",
+    "limitations": [
+      "No completed certification launch inferred."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-gba-trials"
+    ]
+  },
+  {
+    "entity_id": "std-gba-trials-2026",
+    "limitations": [
+      "Developmental methodologies; no participant sustainability ranking justified."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-gba-trials"
+    ]
+  },
+  {
+    "entity_id": "std-gs1-digital-link-1-7",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-gs1-digital-link"
+    ]
+  },
+  {
+    "entity_id": "std-gs1-epcis-2",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-gs1-epcis"
+    ]
+  },
+  {
+    "entity_id": "std-idta",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-idta"
+    ]
+  },
+  {
+    "entity_id": "std-iec-63278-1",
+    "limitations": [
+      "EVS catalogue valid-from date is recorded separately from any original IEC publication event."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-iec-aas"
+    ]
+  },
+  {
+    "entity_id": "std-iec-cdd",
+    "limitations": [
+      "Release inventory unreviewed."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-dictionary"
+    ]
+  },
+  {
+    "entity_id": "std-iso-25534-1",
+    "limitations": [
+      "Catalogue abstract retains wording inconsistent with current title."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-iso-25534-1"
+    ]
+  },
+  {
+    "entity_id": "std-iso-25534-2",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-iso-25534-2"
+    ]
+  },
+  {
+    "entity_id": "std-iso-jtc5",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-iso-jtc5"
+    ]
+  },
+  {
+    "entity_id": "std-itu-l1070",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-itu-1070"
+    ]
+  },
+  {
+    "entity_id": "std-itu-l1071",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-itu-1071",
+      "src-std-itu-1071-summary"
+    ]
+  },
+  {
+    "entity_id": "std-manufacturing-x",
+    "limitations": [
+      "Individual project maturity and international operation require separate records."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-manufacturing-x"
+    ]
+  },
+  {
+    "entity_id": "std-opc-30450-1",
+    "limitations": [
+      "Supplementary file path contains a different date; no implementation date inferred."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-opc-dpp"
+    ]
+  },
+  {
+    "entity_id": "std-opc-foundation",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-catena-opc",
+      "src-std-opc-dpp"
+    ]
+  },
+  {
+    "entity_id": "std-rain-dpp-001",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-rain"
+    ]
+  },
+  {
+    "entity_id": "std-uncefact-p1143",
+    "limitations": [
+      "Detailed draft not obtained.",
+      "Elapsed review deadline alone does not prove review completion or adoption."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-unece-p1143"
+    ]
+  },
+  {
+    "entity_id": "std-unece-rec49",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-unece-rec49",
+      "src-std-unece-rec49-adoption"
+    ]
+  },
+  {
+    "entity_id": "std-untp",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-untp-about"
+    ]
+  },
+  {
+    "entity_id": "std-untp-0-7",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-untp-versions"
+    ]
+  },
+  {
+    "entity_id": "std-untp-dcc",
+    "limitations": [
+      "Full component text not reviewed in this seed."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-untp-suite"
+    ]
+  },
+  {
+    "entity_id": "std-untp-dia",
+    "limitations": [
+      "Dependency versions require further pinning."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-untp-dia"
+    ]
+  },
+  {
+    "entity_id": "std-untp-dpp-0-8",
+    "limitations": [
+      "Live working page; no immutable repository commit captured."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-untp-dpp"
+    ]
+  },
+  {
+    "entity_id": "std-untp-dpp-family",
+    "limitations": [
+      "Charter input does not select a particular UNTP DPP schema version."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-w3c-charter",
+      "src-std-untp-dpp"
+    ]
+  },
+  {
+    "entity_id": "std-untp-dte",
+    "limitations": [
+      "Full component text not reviewed in this seed."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-untp-suite"
+    ]
+  },
+  {
+    "entity_id": "std-w3c-bw-vocabulary",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-w3c-charter",
+      "src-std-w3c-repository"
+    ]
+  },
+  {
+    "entity_id": "std-w3c-did1",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-w3c-did1"
+    ]
+  },
+  {
+    "entity_id": "std-w3c-dpp-bw-tf",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-w3c-tf"
+    ]
+  },
+  {
+    "entity_id": "std-w3c-dpp-vocabulary",
+    "limitations": [
+      "Latest page unavailable on reopening."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-w3c-dpp-vocabulary"
+    ]
+  },
+  {
+    "entity_id": "std-w3c-recognized",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-w3c-recognized"
+    ]
+  },
+  {
+    "entity_id": "std-w3c-ucr",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-w3c-ucr"
+    ]
+  },
+  {
+    "entity_id": "std-w3c-vc2",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-w3c-vc2"
+    ]
+  },
+  {
+    "entity_id": "std-w3c-vcwg",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-w3c-charter"
+    ]
+  },
+  {
+    "entity_id": "std-webuild",
+    "limitations": [],
+    "priority": "normal",
+    "reasons": [
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-webuild-ec"
+    ]
+  },
+  {
+    "entity_id": "std-webuild-blueprint",
+    "limitations": [
+      "Architecture description is not a completed interoperability test."
+    ],
+    "priority": "normal",
+    "reasons": [
+      "recorded_limitations",
+      "inherited_dossier"
+    ],
+    "review_status": "machine_assisted_unreviewed",
+    "source_ids": [
+      "src-std-webuild-blueprint"
+    ]
+  }
+]

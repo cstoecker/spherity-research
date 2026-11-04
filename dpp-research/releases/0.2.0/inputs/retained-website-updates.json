@@ -1,0 +1,2909 @@
+{
+  "id": "dpp-evidence-2026-10-25",
+  "checked_at": "2026-10-25",
+  "base_version": "0.1.0",
+  "description": "Dated evidence additions for JTC 5 cooperation, jurisdictional policy and public programmes, W3C technical connections and the planned European Product Act. Formal liaison, technical dependencies, exporter guidance and proposed policy remain distinct. The frozen release remains unchanged.",
+  "review_status": "machine_assisted_unreviewed",
+  "batches": [
+    {
+      "id": "jtc5-connections-2026-10-25",
+      "checked_at": "2026-10-25",
+      "description": "Dated additive evidence update for JTC 5 committee cooperation and the nine organisations in its Category A liaison register. The frozen release remains unchanged.",
+      "review_status": "machine_assisted_unreviewed",
+      "entity_ids": [
+        "org-anec",
+        "org-astm",
+        "org-dtid",
+        "org-eclass-ev",
+        "org-gs1",
+        "org-opc-federation",
+        "org-rain-alliance",
+        "org-sbs"
+      ],
+      "assertion_ids": [
+        "a-update-20261025-jtc5-jtc24",
+        "a-update-20261025-jtc5-anec",
+        "a-update-20261025-jtc5-astm",
+        "a-update-20261025-jtc5-dtid",
+        "a-update-20261025-jtc5-eclass-ev",
+        "a-update-20261025-jtc5-gs1",
+        "a-update-20261025-jtc5-idta",
+        "a-update-20261025-jtc5-opc-federation",
+        "a-update-20261025-jtc5-rain-alliance",
+        "a-update-20261025-jtc5-sbs"
+      ],
+      "source_ids": [
+        "src-update-20261025-iso-jtc5",
+        "src-update-20261025-cen-jtc5"
+      ]
+    },
+    {
+      "id": "uk-policy-additions-2026-10-25",
+      "checked_at": "2026-10-25",
+      "description": "UK policy evidence update: two sector consultations and sourced connections for the existing Great Britain DPR consultation. Policy discussion is distinguished from enacted passport duties.",
+      "review_status": "machine_assisted_unreviewed",
+      "entity_ids": [
+        "uk-construction-products-reform-white-paper",
+        "uk-toy-safety-dpp-consultation"
+      ],
+      "assertion_ids": [
+        "a-update-20261025-gb-dpr-espr",
+        "a-update-20261025-gb-dpr-batteries",
+        "a-update-20261025-gb-dpr-toys",
+        "a-update-20261025-gb-dpr-construction",
+        "a-update-20261025-gb-dpr-white-paper",
+        "a-update-20261025-gb-dpr-toy-consultation",
+        "a-update-20261025-uk-construction-eu-regulation",
+        "a-update-20261025-uk-construction-eu-passport",
+        "a-update-20261025-uk-toys-eu-regulation",
+        "a-update-20261025-uk-toys-eu-passport"
+      ],
+      "source_ids": [
+        "src-update-20261025-uk-dpr",
+        "src-update-20261025-uk-construction-white-paper",
+        "src-update-20261025-uk-toy-consultation",
+        "src-update-20261025-uk-construction-progress"
+      ]
+    },
+    {
+      "id": "jurisdiction-additions-2026-10-25",
+      "checked_at": "2026-10-25",
+      "description": "Primary-source additions for Switzerland’s THG proposal, Norway’s battery-registry consultation and Taiwan’s resource-circulation law and voluntary DPP pilot.",
+      "review_status": "machine_assisted_unreviewed",
+      "entity_ids": [
+        "global-ch-thg-dpp-proposal",
+        "global-no-battery-registry-consultation",
+        "jur-tw",
+        "global-tw-resource-circulation-act",
+        "global-tw-product-information-art22",
+        "global-tw-dpp-voluntary-pilot"
+      ],
+      "assertion_ids": [
+        "a-update-20261025-ch-thg-espr",
+        "a-update-20261025-no-battery-regulation",
+        "a-update-20261025-no-battery-espr",
+        "a-update-20261025-tw-art22-part",
+        "a-update-20261025-tw-pilot-art22",
+        "a-update-20261025-tw-pilot-eu-battery"
+      ],
+      "source_ids": [
+        "src-update-20261025-ch-thg-announcement",
+        "src-update-20261025-ch-thg-explanatory-report",
+        "src-update-20261025-no-battery-consultation",
+        "src-update-20261025-tw-resource-circulation-act",
+        "src-update-20261025-tw-dpp-pilot"
+      ]
+    },
+    {
+      "id": "w3c-committee-additions-2026-10-25",
+      "checked_at": "2026-10-25",
+      "description": "Dated W3C connections: EN 18219 normative references, W3C task-force discussion touching JTC 5 and JTC 24, and specification stewardship. Formal liaison, discussion and normative reference remain distinct.",
+      "review_status": "machine_assisted_unreviewed",
+      "entity_ids": [
+        "std-w3c-dpp-committee-discussion-20260727"
+      ],
+      "assertion_ids": [
+        "a-update-20261025-w3c-minutes-task-force",
+        "a-update-20261025-w3c-minutes-jtc5",
+        "a-update-20261025-w3c-minutes-jtc24",
+        "a-update-20261025-w3c-minutes-vc2",
+        "a-update-20261025-w3c-vc2-working-group",
+        "a-update-20261025-w3c-vc2-did",
+        "a-update-20261025-w3c-dpp-vocabulary-task-force",
+        "a-update-20261025-w3c-wallet-vocabulary-task-force",
+        "a-update-20261025-w3c-use-cases-task-force",
+        "a-update-20261025-w3c-recognized-working-group",
+        "a-update-20261025-w3c-en18219-did",
+        "a-update-20261025-w3c-en18219-vc2"
+      ],
+      "source_ids": [
+        "src-update-20261025-w3c-minutes",
+        "src-update-20261025-w3c-repository",
+        "src-update-20261025-w3c-vc2",
+        "src-update-20261025-w3c-recognized",
+        "src-update-20261025-w3c-en18219"
+      ]
+    },
+    {
+      "id": "w3c-technical-connections-2026-10-25",
+      "checked_at": "2026-10-25",
+      "description": "Dated technical relationships connecting the UNTP working profile and CIRPASS-2 ontology to W3C standards. These are specification relationships, not claims of national adoption.",
+      "review_status": "machine_assisted_unreviewed",
+      "entity_ids": [
+        "std-w3c-jsonld11",
+        "std-w3c-owl2",
+        "std-w3c-shacl"
+      ],
+      "assertion_ids": [
+        "a-update-20261025-w3c-tech-untp-vc2",
+        "a-update-20261025-w3c-tech-untp-did1",
+        "a-update-20261025-w3c-tech-untp-jsonld11",
+        "a-update-20261025-w3c-tech-dpp-vc2",
+        "a-update-20261025-w3c-tech-dcc-vc2",
+        "a-update-20261025-w3c-tech-dte-vc2",
+        "a-update-20261025-w3c-tech-dia-vc2",
+        "a-update-20261025-w3c-tech-vc2-jsonld11",
+        "a-update-20261025-w3c-tech-cirpass-owl2",
+        "a-update-20261025-w3c-tech-cirpass-shacl"
+      ],
+      "source_ids": [
+        "src-update-20261025-w3c-untp-vc-profile",
+        "src-update-20261025-w3c-untp-dpp",
+        "src-update-20261025-w3c-untp-dcc",
+        "src-update-20261025-w3c-untp-dte",
+        "src-update-20261025-w3c-untp-dia",
+        "src-update-20261025-w3c-cirpass-ontology",
+        "src-update-20261025-w3c-jsonld11",
+        "src-update-20261025-w3c-owl2",
+        "src-update-20261025-w3c-shacl",
+        "src-update-20261025-w3c-vc2-jsonld"
+      ]
+    },
+    {
+      "id": "european-product-act-2026-10-25",
+      "checked_at": "2026-10-25",
+      "description": "Adds the planned European Product Act product-rules reform and its sourced ESPR and battery-passport context; no leaked provisions or new current duties are asserted.",
+      "review_status": "machine_assisted_unreviewed",
+      "entity_ids": [
+        "eu-european-product-act"
+      ],
+      "assertion_ids": [
+        "a-update-20261025-epa-espr",
+        "a-update-20261025-epa-battery-context"
+      ],
+      "source_ids": [
+        "src-update-20261025-epa-tracker",
+        "src-update-20261025-epa-commission-followup",
+        "src-update-20261025-epa-eprs"
+      ]
+    },
+    {
+      "id": "missing-jurisdiction-readiness-2026-10-25",
+      "checked_at": "2026-10-25",
+      "description": "Adds two official readiness records for Egypt and Bangladesh. Supports qualified early public-programme and exporter-guidance profiles; no new passport mandates are asserted.",
+      "review_status": "machine_assisted_unreviewed",
+      "entity_ids": [
+        "global-eg-goeic-dpp-programme",
+        "global-bd-export-dpp-guidance"
+      ],
+      "assertion_ids": [
+        "a-update-20261025-bd-guidance-espr",
+        "a-update-20261025-bd-guidance-battery"
+      ],
+      "source_ids": [
+        "src-update-20261025-eg-goeic-programme",
+        "src-update-20261025-bd-export-guidance"
+      ]
+    }
+  ],
+  "relationship_definitions": {
+    "coordinates_with": "Source-announced committee cooperation. Does not imply adoption, equivalence, mutual recognition or completed interoperability.",
+    "liaison_with": "An organisation listed in a committee liaison register. The Category A designation is retained in the assertion and locator; no technical use or semantic compatibility is inferred.",
+    "references": "An explicit source reference or contextual discussion; it does not establish legal incorporation, conformity, standard adoption or mutual recognition.",
+    "part_of": "A provision, document or activity identified within its named instrument, programme or group; legal scope, publication status and maturity remain qualified in the records.",
+    "developed_by": "The group identified by the primary source as developing or publishing the document; the document status is retained.",
+    "normatively_references": "The cited document is explicitly listed in normative references. Applicable clauses and implementation choices still determine the requirements; universal implementation or interoperability is not inferred.",
+    "uses_standard": "The inspected specification or documentation explicitly uses the linked standard for the stated technical purpose. Scope, version and maturity qualifications remain attached; this is not proof of implementation conformance, legal adoption or interoperability."
+  },
+  "entities": [
+    {
+      "id": "org-anec",
+      "type": "Organisation",
+      "label": "ANEC",
+      "description": "Organisation listed by ISO as a Category A liaison to ISO/IEC JTC 5.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "listed_liaison",
+        "as_of": "2026-10-25",
+        "scope_note": "Global committee participation; no country-level implementation or mandate is inferred."
+      },
+      "dates": [],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "limitations": [
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ]
+    },
+    {
+      "id": "org-astm",
+      "type": "Organisation",
+      "label": "ASTM International",
+      "description": "Organisation listed by ISO as a Category A liaison to ISO/IEC JTC 5.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "listed_liaison",
+        "as_of": "2026-10-25",
+        "scope_note": "Global committee participation; no country-level implementation or mandate is inferred."
+      },
+      "dates": [],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "limitations": [
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ]
+    },
+    {
+      "id": "org-dtid",
+      "type": "Organisation",
+      "label": "Digital Technology Institute for Development (DTID)",
+      "description": "Organisation listed by ISO as a Category A liaison to ISO/IEC JTC 5.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "listed_liaison",
+        "as_of": "2026-10-25",
+        "scope_note": "Global committee participation; no country-level implementation or mandate is inferred."
+      },
+      "dates": [],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "limitations": [
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ]
+    },
+    {
+      "id": "org-eclass-ev",
+      "type": "Organisation",
+      "label": "ECLASS e.V.",
+      "description": "Organisation listed by ISO as a Category A liaison to ISO/IEC JTC 5.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "listed_liaison",
+        "as_of": "2026-10-25",
+        "scope_note": "Global committee participation; no country-level implementation or mandate is inferred."
+      },
+      "dates": [],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "limitations": [
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model.",
+        "This organisation is distinct from the ECLASS vocabulary record."
+      ]
+    },
+    {
+      "id": "org-gs1",
+      "type": "Organisation",
+      "label": "GS1",
+      "description": "Organisation listed by ISO as a Category A liaison to ISO/IEC JTC 5.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "listed_liaison",
+        "as_of": "2026-10-25",
+        "scope_note": "Global committee participation; no country-level implementation or mandate is inferred."
+      },
+      "dates": [],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "limitations": [
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ]
+    },
+    {
+      "id": "org-opc-federation",
+      "type": "Organisation",
+      "label": "OPC Federation",
+      "description": "Organisation listed by ISO as a Category A liaison to ISO/IEC JTC 5.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "listed_liaison",
+        "as_of": "2026-10-25",
+        "scope_note": "Global committee participation; no country-level implementation or mandate is inferred."
+      },
+      "dates": [],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "limitations": [
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ]
+    },
+    {
+      "id": "org-rain-alliance",
+      "type": "Organisation",
+      "label": "RAIN Alliance",
+      "description": "Organisation listed by ISO as a Category A liaison to ISO/IEC JTC 5.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "listed_liaison",
+        "as_of": "2026-10-25",
+        "scope_note": "Global committee participation; no country-level implementation or mandate is inferred."
+      },
+      "dates": [],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "limitations": [
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ]
+    },
+    {
+      "id": "org-sbs",
+      "type": "Organisation",
+      "label": "Small Business Standards (SBS)",
+      "description": "Organisation listed by ISO as a Category A liaison to ISO/IEC JTC 5.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "listed_liaison",
+        "as_of": "2026-10-25",
+        "scope_note": "Global committee participation; no country-level implementation or mandate is inferred."
+      },
+      "dates": [],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "limitations": [
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ]
+    },
+    {
+      "id": "uk-construction-products-reform-white-paper",
+      "type": "Policy",
+      "label": "UK Construction Products Reform White Paper",
+      "description": "Proposes digital construction-product information and explores phased DPPs or equivalent records.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-gb-gbn"
+      ],
+      "sector_ids": [
+        "sec-construction"
+      ],
+      "geography": null,
+      "status": {
+        "value": "consultation_closed_policy_unresolved",
+        "as_of": "2026-10-25",
+        "scope_note": "GB digital-information proposals within wider UK reform; Northern Ireland retains separate Windsor Framework treatment."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2026-02-25",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-uk-construction-white-paper"
+          ]
+        },
+        {
+          "kind": "ends",
+          "date": "2026-05-20",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-uk-construction-white-paper"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-uk-construction-white-paper",
+        "src-update-20261025-uk-construction-progress"
+      ],
+      "limitations": [
+        "Policy proposals, not an enacted domestic DPP duty or fixed commencement date.",
+        "The 2 October progress update still describes responses under consideration; no subsequent final response was established in this check."
+      ]
+    },
+    {
+      "id": "uk-toy-safety-dpp-consultation",
+      "type": "Policy",
+      "label": "Great Britain toy safety and DPP consultation",
+      "description": "Seeks evidence on potential GB toy-safety changes, including digital product passports.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-gb-gbn"
+      ],
+      "sector_ids": [
+        "sec-toys"
+      ],
+      "geography": null,
+      "status": {
+        "value": "consultation_closed_policy_unresolved",
+        "as_of": "2026-10-25",
+        "scope_note": "GB policy development; existing EU and Northern Ireland rules are discussed separately."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2026-07-06",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-uk-toy-consultation"
+          ]
+        },
+        {
+          "kind": "ends",
+          "date": "2026-10-06",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-uk-toy-consultation"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-uk-toy-consultation"
+      ],
+      "limitations": [
+        "A closed call for evidence does not enact a GB passport requirement.",
+        "No post-consultation policy decision was established in this check."
+      ]
+    },
+    {
+      "id": "global-ch-thg-dpp-proposal",
+      "type": "Policy",
+      "label": "Swiss THG proposal: digital product information system",
+      "description": "The June 2026 consultation draft would authorise a digital product information system, with sector decisions and compatibility with trading-partner systems considered separately.",
+      "version": "Consultation draft 2026-06-05",
+      "jurisdiction_ids": [
+        "jur-ch"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "draft_consultation_closed",
+        "as_of": "2026-10-25",
+        "scope_note": "Consultation closed on 28 September 2026. The reviewed proposal is not an enacted Swiss DPP requirement."
+      },
+      "dates": [
+        {
+          "kind": "consultation_opened",
+          "date": "2026-06-05",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-ch-thg-announcement"
+          ]
+        },
+        {
+          "kind": "consultation_closed",
+          "date": "2026-09-28",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-ch-thg-announcement"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-ch-thg-announcement",
+        "src-update-20261025-ch-thg-explanatory-report"
+      ],
+      "limitations": [
+        "The consultation announcement and explanatory report do not establish subsequent enactment or a mandatory DPP for any product category.",
+        "A domestic system or participation in a trading-partner system remains an option; no mutual recognition or completed interoperability is established."
+      ]
+    },
+    {
+      "id": "global-no-battery-registry-consultation",
+      "type": "Policy",
+      "label": "Norway battery regulation consultation: passport registry",
+      "description": "The Norwegian Environment Agency consulted on amendments to its proposed battery regulation, including the use of the product-passport registry for battery-passport identifiers.",
+      "version": "Consultation 2026/4456",
+      "jurisdiction_ids": [
+        "jur-no"
+      ],
+      "sector_ids": [
+        "sec-batteries"
+      ],
+      "geography": null,
+      "status": {
+        "value": "closed_consultation_current_adoption_unverified",
+        "as_of": "2026-10-25",
+        "scope_note": "Consultation 2026/4456 closed on 11 May 2026. Subsequent adoption and current Norwegian applicability were not established by this source."
+      },
+      "dates": [
+        {
+          "kind": "consultation_opened",
+          "date": "2026-04-27",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-no-battery-consultation"
+          ]
+        },
+        {
+          "kind": "consultation_closed",
+          "date": "2026-05-11",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-no-battery-consultation"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-no-battery-consultation"
+      ],
+      "limitations": [
+        "The source records a proposal and an expired consultation, not final enactment or EEA incorporation.",
+        "The source does not establish that the EU battery-passport application date already applies domestically in Norway."
+      ]
+    },
+    {
+      "id": "jur-tw",
+      "type": "Jurisdiction",
+      "label": "Taiwan",
+      "description": "Geographic join for the assessed Taiwanese legal framework and voluntary DPP pilot.",
+      "version": null,
+      "jurisdiction_ids": [],
+      "sector_ids": [],
+      "geography": {
+        "kind": "country",
+        "iso_alpha2": "TW",
+        "iso_alpha3": "TWN",
+        "iso_3166_2": null,
+        "map_code": "TWN",
+        "parent_id": null,
+        "member_ids": [],
+        "join_note": "TWN is used solely to join the assessed records to the existing map boundary dataset; the map is a geographic research index."
+      },
+      "status": {
+        "value": "research_defined",
+        "as_of": "2026-10-25",
+        "scope_note": "Geographic research scope only; the presence of a record does not establish a universal DPP obligation."
+      },
+      "dates": [],
+      "evidence_status": "research_defined",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-tw-resource-circulation-act",
+        "src-update-20261025-tw-dpp-pilot"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "global-tw-resource-circulation-act",
+      "type": "LegalInstrument",
+      "label": "Taiwan Resource Circulation Promotion Act",
+      "description": "The amended Act establishes a resource-circulation framework including powers for product-information disclosure under Article 22.",
+      "version": "Amended 2026-06-17",
+      "jurisdiction_ids": [
+        "jur-tw"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "in_force_with_deferred_provisions",
+        "as_of": "2026-10-25",
+        "scope_note": "Amended on 17 June 2026. Article 52 brings the Act into force on promulgation, except Article 14 and Article 38(1), which take effect two years later."
+      },
+      "dates": [
+        {
+          "kind": "amended",
+          "date": "2026-06-17",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-tw-resource-circulation-act"
+          ]
+        },
+        {
+          "kind": "entered_into_force",
+          "date": "2026-06-17",
+          "precision": "day",
+          "condition": "Article 52; excludes Article 14 and Article 38(1).",
+          "source_ids": [
+            "src-update-20261025-tw-resource-circulation-act"
+          ]
+        },
+        {
+          "kind": "deferred_provisions_enter_into_force",
+          "date": "2028-06-17",
+          "precision": "day",
+          "condition": "Article 14 and Article 38(1), two years after promulgation.",
+          "source_ids": [
+            "src-update-20261025-tw-resource-circulation-act"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-tw-resource-circulation-act"
+      ],
+      "limitations": [
+        "The Act is an enabling framework; designated products, disclosure methods and deadlines require the relevant announcements and rules.",
+        "This record does not establish a general mandatory DPP rollout or a single DPP compliance date.",
+        "The official English translation states that the Chinese text prevails in case of discrepancy."
+      ]
+    },
+    {
+      "id": "global-tw-product-information-art22",
+      "type": "Provision",
+      "label": "Taiwan product-information disclosure: Article 22",
+      "description": "Article 22 enables designated products to carry material, repairability and circularity information; where a unique product code is used, traceability and quality-verification information must be updated.",
+      "version": "Article 22",
+      "jurisdiction_ids": [
+        "jur-tw"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "enabling_provision_in_force",
+        "as_of": "2026-10-25",
+        "scope_note": "The authority must specify covered products, deadlines and methods. Products outside those designations may disclose information voluntarily."
+      },
+      "dates": [
+        {
+          "kind": "entered_into_force",
+          "date": "2026-06-17",
+          "precision": "day",
+          "condition": "Article 52; product-specific duties depend on implementing announcements.",
+          "source_ids": [
+            "src-update-20261025-tw-resource-circulation-act"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-tw-resource-circulation-act",
+        "src-update-20261025-tw-dpp-pilot"
+      ],
+      "limitations": [
+        "No product-specific designation or implementing disclosure rule was verified for this update.",
+        "Article 22 does not itself prescribe W3C, UNTP or a particular DPP data model."
+      ]
+    },
+    {
+      "id": "global-tw-dpp-voluntary-pilot",
+      "type": "Pilot",
+      "label": "Taiwan voluntary DPP pilot programme",
+      "description": "The Resource Circulation Administration reports a voluntary programme across batteries, textiles, ICT equipment and circular materials, alongside an open-source module and cross-border data-exchange testing.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-tw"
+      ],
+      "sector_ids": [
+        "sec-batteries",
+        "sec-textiles",
+        "sec-electronics",
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "voluntary_pilot_reported",
+        "as_of": "2026-10-25",
+        "scope_note": "The 7 September 2026 agency report describes 28 participating companies and more than 20,000 product records. This is pilot evidence, not nationwide compliance."
+      },
+      "dates": [
+        {
+          "kind": "programme_started",
+          "date": "2023",
+          "precision": "year",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-tw-dpp-pilot"
+          ]
+        },
+        {
+          "kind": "results_reported",
+          "date": "2026-09-07",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-tw-dpp-pilot"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-tw-dpp-pilot"
+      ],
+      "limitations": [
+        "Reported pilot results were not independently reproduced.",
+        "Cross-border tests do not establish formal mutual recognition, EU conformity or adoption of a named international technical standard.",
+        "The source places the pilot alongside Article 22 but does not establish a universal domestic DPP duty."
+      ]
+    },
+    {
+      "id": "std-w3c-dpp-committee-discussion-20260727",
+      "type": "Report",
+      "label": "W3C DPP discussion with JTC 5 / JTC 24 context",
+      "description": "W3C task-force discussion of verifiable credentials and DPP schemas, with participant-reported JTC 24 work and planned JTC 5 work.",
+      "version": "Meeting minutes 2026-07-27",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "recorded_technical_discussion",
+        "as_of": "2026-10-25",
+        "scope_note": "Discussion evidence, not a formal liaison, committee decision or adoption of W3C standards."
+      },
+      "dates": [
+        {
+          "kind": "meeting",
+          "date": "2026-07-27",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-w3c-minutes"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-w3c-minutes"
+      ],
+      "limitations": [
+        "Participant affiliation is self-reported in a transcript; this does not establish institutional representation."
+      ]
+    },
+    {
+      "id": "std-w3c-jsonld11",
+      "type": "Standard",
+      "label": "W3C JSON-LD 1.1",
+      "description": "JSON syntax for expressing linked data and shared term identifiers.",
+      "version": "1.1",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "recommendation",
+        "as_of": "2026-10-25",
+        "scope_note": "Global web standard; use alone does not establish DPP compliance."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2020-07-16",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-w3c-jsonld11"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-w3c-jsonld11"
+      ],
+      "limitations": [
+        "Serialization format; does not itself prescribe a product vocabulary or access policy."
+      ]
+    },
+    {
+      "id": "std-w3c-owl2",
+      "type": "Standard",
+      "label": "W3C OWL 2",
+      "description": "Ontology language for describing classes, properties and formal relationships.",
+      "version": "2, Second Edition",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "recommendation",
+        "as_of": "2026-10-25",
+        "scope_note": "Global ontology language; applications choose applicable profiles and semantics."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2012-12-11",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-w3c-owl2"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-w3c-owl2"
+      ],
+      "limitations": [
+        "The overview is informative; no particular OWL profile is inferred for a connected implementation."
+      ]
+    },
+    {
+      "id": "std-w3c-shacl",
+      "type": "Standard",
+      "label": "W3C SHACL",
+      "description": "Language for checking RDF data against explicitly supplied shapes.",
+      "version": "2017 Recommendation",
+      "jurisdiction_ids": [
+        "jur-global"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "recommendation",
+        "as_of": "2026-10-25",
+        "scope_note": "Validation rules apply to specified data and shapes; this does not define a universal closed-world ontology."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2017-07-20",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-w3c-shacl"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-w3c-shacl"
+      ],
+      "limitations": [
+        "A SHACL relationship does not imply that every shape is closed or that an entire ecosystem uses closed-world semantics."
+      ]
+    },
+    {
+      "id": "eu-european-product-act",
+      "type": "Policy",
+      "label": "European Product Act — planned product-rules reform",
+      "description": "Planned EU reform of horizontal product rules and market surveillance. The Commission is examining a horizontal DPP tool that can use ESPR infrastructure.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "planned_initiative_not_adopted",
+        "as_of": "2026-10-25",
+        "scope_note": "The Commission tracker, updated 7 October, still lists the NLF and market-surveillance reform as planned. A formally published product-rules proposal was not established in this review."
+      },
+      "dates": [],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-epa-tracker",
+        "src-update-20261025-epa-commission-followup",
+        "src-update-20261025-epa-eprs"
+      ],
+      "limitations": [
+        "This is a policy initiative, not adopted EU law or a current horizontal DPP duty. Product coverage, obligations and commencement remain unsettled.",
+        "The wider package originally also included standardisation reform. The tracker separately records that standardisation proposal on 6 October 2026; that does not mean this product-rules reform has been adopted.",
+        "Connections below record policy context and intended compatibility, not legal incorporation or proof that ESPR is replaced. No leaked-draft provisions are treated as requirements."
+      ]
+    },
+    {
+      "id": "global-eg-goeic-dpp-programme",
+      "type": "Initiative",
+      "label": "Egypt GOEIC digital product-traceability programme",
+      "description": "Public digital inspection and product-traceability programme announced by Egypt's GOEIC with Korean support. Its planned 2025–2029 components include a DPP system for locally manufactured industrial products.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eg"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "public_programme_announced",
+        "as_of": "2026-10-25",
+        "scope_note": "March 2025 official announcement describes a June 2025–end-2029 project schedule. Current delivery, deployment and compulsory passport requirements were not established."
+      },
+      "dates": [
+        {
+          "kind": "announced",
+          "date": "2025-03-14",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-update-20261025-eg-goeic-programme"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-eg-goeic-programme"
+      ],
+      "limitations": [
+        "A public implementation programme is not itself a legal passport obligation.",
+        "Planned system components do not establish a completed or deployed platform. No organisational link to the separate UNIDO textile pilot procurement is asserted.",
+        "The official indexed text was inspected; direct page retrieval timed out."
+      ]
+    },
+    {
+      "id": "global-bd-export-dpp-guidance",
+      "type": "Report",
+      "label": "Bangladesh official EU DPP exporter guidance",
+      "description": "The Ministry of Commerce's Export Bangladesh portal explains EU product-passport developments and exporter traceability readiness, drawing on export data and industry reporting.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-bd"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "official_guidance",
+        "as_of": "2026-10-25",
+        "scope_note": "Government-portal publication about EU market access; not a domestic Bangladeshi DPP instrument. Publication date is not stated."
+      },
+      "dates": [],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-bd-export-guidance"
+      ],
+      "limitations": [
+        "Official publication of exporter guidance does not establish adoption of a domestic passport law, national strategy or mandatory platform.",
+        "The article reports industry statements and calls for support; these are not treated as adopted government policy."
+      ]
+    }
+  ],
+  "assertions": [
+    {
+      "id": "a-update-20261025-jtc5-jtc24",
+      "subject": "std-iso-jtc5",
+      "predicate": "coordinates_with",
+      "object": {
+        "entity_id": "std-cen-jtc24"
+      },
+      "statement": "CEN-CENELEC announced close cooperation between JTC 5 and JTC 24, with the international programme building on European DPP work.",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-cen-jtc5"
+      ],
+      "locator": "Announcement dated 29 July 2026, paragraphs on building on JTC 24 and close cooperation",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Announced coordination is not evidence of completed standards alignment, mutual recognition or tested interoperability.",
+        "The announcement does not establish that JTC 5 has adopted every JTC 24 standard."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-jtc5-anec",
+      "subject": "org-anec",
+      "predicate": "liaison_with",
+      "object": {
+        "entity_id": "std-iso-jtc5"
+      },
+      "statement": "ISO lists ANEC as a Category A liaison to ISO/IEC JTC 5.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "locator": "Organizations in liaison (Category A and B), ANEC row, Category A",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The listing was checked on 25 October 2026; the liaison start date is not asserted.",
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-jtc5-astm",
+      "subject": "org-astm",
+      "predicate": "liaison_with",
+      "object": {
+        "entity_id": "std-iso-jtc5"
+      },
+      "statement": "ISO lists ASTM International as a Category A liaison to ISO/IEC JTC 5.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "locator": "Organizations in liaison (Category A and B), ASTM International row, Category A",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The listing was checked on 25 October 2026; the liaison start date is not asserted.",
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-jtc5-dtid",
+      "subject": "org-dtid",
+      "predicate": "liaison_with",
+      "object": {
+        "entity_id": "std-iso-jtc5"
+      },
+      "statement": "ISO lists Digital Technology Institute for Development (DTID) as a Category A liaison to ISO/IEC JTC 5.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "locator": "Organizations in liaison (Category A and B), Digital Technology Institute for Development (DTID) row, Category A",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The listing was checked on 25 October 2026; the liaison start date is not asserted.",
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-jtc5-eclass-ev",
+      "subject": "org-eclass-ev",
+      "predicate": "liaison_with",
+      "object": {
+        "entity_id": "std-iso-jtc5"
+      },
+      "statement": "ISO lists ECLASS e.V. as a Category A liaison to ISO/IEC JTC 5.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "locator": "Organizations in liaison (Category A and B), ECLASS e.V. row, Category A",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The listing was checked on 25 October 2026; the liaison start date is not asserted.",
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-jtc5-gs1",
+      "subject": "org-gs1",
+      "predicate": "liaison_with",
+      "object": {
+        "entity_id": "std-iso-jtc5"
+      },
+      "statement": "ISO lists GS1 as a Category A liaison to ISO/IEC JTC 5.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "locator": "Organizations in liaison (Category A and B), GS1 row, Category A",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The listing was checked on 25 October 2026; the liaison start date is not asserted.",
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-jtc5-idta",
+      "subject": "std-idta",
+      "predicate": "liaison_with",
+      "object": {
+        "entity_id": "std-iso-jtc5"
+      },
+      "statement": "ISO lists Industrial Digital Twin Association as a Category A liaison to ISO/IEC JTC 5.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "locator": "Organizations in liaison (Category A and B), Industrial Digital Twin Association row, Category A",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The listing was checked on 25 October 2026; the liaison start date is not asserted.",
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-jtc5-opc-federation",
+      "subject": "org-opc-federation",
+      "predicate": "liaison_with",
+      "object": {
+        "entity_id": "std-iso-jtc5"
+      },
+      "statement": "ISO lists OPC Federation as a Category A liaison to ISO/IEC JTC 5.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "locator": "Organizations in liaison (Category A and B), OPC Federation row, Category A",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The listing was checked on 25 October 2026; the liaison start date is not asserted.",
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-jtc5-rain-alliance",
+      "subject": "org-rain-alliance",
+      "predicate": "liaison_with",
+      "object": {
+        "entity_id": "std-iso-jtc5"
+      },
+      "statement": "ISO lists RAIN Alliance as a Category A liaison to ISO/IEC JTC 5.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "locator": "Organizations in liaison (Category A and B), RAIN Alliance row, Category A",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The listing was checked on 25 October 2026; the liaison start date is not asserted.",
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-jtc5-sbs",
+      "subject": "org-sbs",
+      "predicate": "liaison_with",
+      "object": {
+        "entity_id": "std-iso-jtc5"
+      },
+      "statement": "ISO lists Small Business Standards (SBS) as a Category A liaison to ISO/IEC JTC 5.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-iso-jtc5"
+      ],
+      "locator": "Organizations in liaison (Category A and B), Small Business Standards (SBS) row, Category A",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The listing was checked on 25 October 2026; the liaison start date is not asserted.",
+        "A committee liaison does not establish use of the organisation’s specifications, completed interoperability or domestic adoption.",
+        "This update does not assess the organisation’s licensing or semantic model."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-gb-dpr-espr",
+      "subject": "eu-gb-dpr-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "The consultation identifies ESPR as the EU DPP framework.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-dpr"
+      ],
+      "locator": "Background; Current regulatory frameworks — The EU regulatory approach",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-gb-dpr-batteries",
+      "subject": "eu-gb-dpr-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-batteries-regulation"
+      },
+      "statement": "The consultation names the EU Batteries Regulation as a sector-specific framework.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-dpr"
+      ],
+      "locator": "Background — sector-specific product information requirements",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-gb-dpr-toys",
+      "subject": "eu-gb-dpr-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-toy-safety-regulation"
+      },
+      "statement": "The consultation names the EU Toy Safety Regulation as a sector-specific framework.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-dpr"
+      ],
+      "locator": "Background — sector-specific product information requirements",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-gb-dpr-construction",
+      "subject": "eu-gb-dpr-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-construction-regulation"
+      },
+      "statement": "The consultation names the EU Construction Products Regulation as a sector-specific framework.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-dpr"
+      ],
+      "locator": "Background — sector-specific product information requirements",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-gb-dpr-white-paper",
+      "subject": "eu-gb-dpr-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "uk-construction-products-reform-white-paper"
+      },
+      "statement": "The consultation links the construction White Paper and its proposed digital-information approach.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-dpr"
+      ],
+      "locator": "Current UK regulatory approach — construction products paragraphs",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-gb-dpr-toy-consultation",
+      "subject": "eu-gb-dpr-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "uk-toy-safety-dpp-consultation"
+      },
+      "statement": "The consultation links the separate toy-safety call for evidence.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-dpr"
+      ],
+      "locator": "Current UK regulatory approach — toy safety call for evidence paragraph",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-uk-construction-eu-regulation",
+      "subject": "uk-construction-products-reform-white-paper",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-construction-regulation"
+      },
+      "statement": "The White Paper considers consistency with the EU construction framework in future GB reform.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-construction-white-paper"
+      ],
+      "locator": "Sections 4.3.1–4.3.2; 7.5.8–7.5.11",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-uk-construction-eu-passport",
+      "subject": "uk-construction-products-reform-white-paper",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-construction-passport-requirement"
+      },
+      "statement": "The White Paper considers GB–EU passport interoperability and phased DPPs or equivalents.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-construction-white-paper"
+      ],
+      "locator": "Sections 7.5.9–7.5.11",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-uk-toys-eu-regulation",
+      "subject": "uk-toy-safety-dpp-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-toy-safety-regulation"
+      },
+      "statement": "The toy consultation considers a GB approach similar to the EU Toy Safety Regulation.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-toy-consultation"
+      ],
+      "locator": "Sections 1(3–6); 2(7–10); 3(11–13)",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-uk-toys-eu-passport",
+      "subject": "uk-toy-safety-dpp-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-toy-passport-requirement"
+      },
+      "statement": "The toy consultation describes EU toy passports and seeks views on their potential GB use.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-uk-toy-consultation"
+      ],
+      "locator": "Sections 2(7), DPP bullet; 3(13)",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A policy reference does not establish GB adoption, equivalence or completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-ch-thg-espr",
+      "subject": "global-ch-thg-dpp-proposal",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "The Swiss explanatory report discusses the EU ESPR DPP framework when explaining the proposed Swiss product-information system.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-ch-thg-explanatory-report"
+      ],
+      "locator": "Draft Article 6b explanation, printed pages 19–20; explicit reference to EU Regulation 2024/1781",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A reference to the EU framework does not establish Swiss incorporation, equivalence or mutual recognition."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-no-battery-regulation",
+      "subject": "global-no-battery-registry-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-batteries-regulation"
+      },
+      "statement": "The Norwegian consultation concerns amendments to the proposed national regulation implementing the EU Batteries Regulation.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-no-battery-consultation"
+      ],
+      "locator": "Introductory sentence and proposal item 2",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "This records the subject of a consultation, not final Norwegian implementation."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-no-battery-espr",
+      "subject": "global-no-battery-registry-consultation",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "The consultation explicitly describes an amendment arising from the EU ecodesign regulation concerning product-passport registry use for battery-passport identifiers.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-no-battery-consultation"
+      ],
+      "locator": "Proposal item 2",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The proposed registry linkage does not prove that ESPR or the registry obligations are currently incorporated in Norwegian law."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-tw-art22-part",
+      "subject": "global-tw-product-information-art22",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "global-tw-resource-circulation-act"
+      },
+      "statement": "Article 22 is a provision of Taiwan’s Resource Circulation Promotion Act.",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-tw-resource-circulation-act"
+      ],
+      "locator": "Article 22",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Product-specific scope and deadlines are established through implementing announcements."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-tw-pilot-art22",
+      "subject": "global-tw-dpp-voluntary-pilot",
+      "predicate": "references",
+      "object": {
+        "entity_id": "global-tw-product-information-art22"
+      },
+      "statement": "The Resource Circulation Administration’s pilot report identifies Article 22 as the legal framework for product-information disclosure while describing the voluntary DPP pilot.",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-tw-dpp-pilot"
+      ],
+      "locator": "Paragraph connecting Article 22 to voluntary trials before implementation of the disclosure system",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The agency report links the policy context and pilot; this does not make pilot participation mandatory."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-tw-pilot-eu-battery",
+      "subject": "global-tw-dpp-voluntary-pilot",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-battery-passport-requirement"
+      },
+      "statement": "The Taiwan pilot report discusses the EU battery-passport requirement as an international driver for supply-chain preparation.",
+      "assertion_type": "source_statement",
+      "evidence_type": "announcement",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-tw-dpp-pilot"
+      ],
+      "locator": "Paragraph on EU battery passports and the 18 February 2027 date",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A reference to the EU requirement does not establish pilot conformity, legal recognition or adoption of an EU technical standard."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-minutes-task-force",
+      "subject": "std-w3c-dpp-committee-discussion-20260727",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "std-w3c-dpp-bw-tf"
+      },
+      "statement": "These minutes document a W3C product-and-wallet vocabulary task-force meeting.",
+      "assertion_type": "source_statement",
+      "evidence_type": "meeting_minutes",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-minutes"
+      ],
+      "locator": "Document heading and meeting date",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Discussion record; no formal coordination agreement is inferred."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-minutes-jtc5",
+      "subject": "std-w3c-dpp-committee-discussion-20260727",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-iso-jtc5"
+      },
+      "statement": "The discussion includes a participant reporting planned JTC 5 work.",
+      "assertion_type": "source_statement",
+      "evidence_type": "meeting_minutes",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-minutes"
+      ],
+      "locator": "VCs And Digital Product Passports; Michael Linck",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Self-reported participation; not a formal W3C liaison."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-minutes-jtc24",
+      "subject": "std-w3c-dpp-committee-discussion-20260727",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-cen-jtc24"
+      },
+      "statement": "The discussion includes a participant reporting JTC 24 work.",
+      "assertion_type": "source_statement",
+      "evidence_type": "meeting_minutes",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-minutes"
+      ],
+      "locator": "VCs And Digital Product Passports; Michael Linck",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Self-reported participation; not a formal W3C liaison."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-minutes-vc2",
+      "subject": "std-w3c-dpp-committee-discussion-20260727",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-w3c-vc2"
+      },
+      "statement": "The discussion explicitly considers VC Data Model 2.0 and DPP schemas.",
+      "assertion_type": "source_statement",
+      "evidence_type": "meeting_minutes",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-minutes"
+      ],
+      "locator": "VCs And Digital Product Passports; Ingo Wolf",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Discussion does not establish adoption by either committee."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-vc2-working-group",
+      "subject": "std-w3c-vc2",
+      "predicate": "developed_by",
+      "object": {
+        "entity_id": "std-w3c-vcwg"
+      },
+      "statement": "The Recommendation identifies the Verifiable Credentials Working Group as its publishing group.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-vc2"
+      ],
+      "locator": "Status of This Document",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Publication responsibility does not establish DPP adoption.",
+        "Published in 2025 under an earlier charter; the linked committee record describes its current 2026 charter."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-vc2-did",
+      "subject": "std-w3c-vc2",
+      "predicate": "references",
+      "object": {
+        "entity_id": "std-w3c-did1"
+      },
+      "statement": "VC Data Model 2.0 lists DID Core 1.0 as an informative reference.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-vc2"
+      ],
+      "locator": "G.2 Informative references, DID entry",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Informative reference; this does not require every credential to use a DID."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-dpp-vocabulary-task-force",
+      "subject": "std-w3c-dpp-vocabulary",
+      "predicate": "developed_by",
+      "object": {
+        "entity_id": "std-w3c-dpp-bw-tf"
+      },
+      "statement": "The task-force repository lists the DPP vocabulary document among its development work.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-repository"
+      ],
+      "locator": "Repository introduction and provisional document list",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Repository development is not W3C endorsement or a completed Recommendation."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-wallet-vocabulary-task-force",
+      "subject": "std-w3c-bw-vocabulary",
+      "predicate": "developed_by",
+      "object": {
+        "entity_id": "std-w3c-dpp-bw-tf"
+      },
+      "statement": "The task-force repository lists the business-wallet vocabulary document among its development work.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-repository"
+      ],
+      "locator": "Repository introduction and provisional document list",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Repository development is not W3C endorsement or a completed Recommendation."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-use-cases-task-force",
+      "subject": "std-w3c-ucr",
+      "predicate": "developed_by",
+      "object": {
+        "entity_id": "std-w3c-dpp-bw-tf"
+      },
+      "statement": "The task-force repository lists the vocabulary use-cases and requirements document among its development work.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-repository"
+      ],
+      "locator": "Repository introduction and provisional document list",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Repository development is not W3C endorsement or a completed Recommendation."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-recognized-working-group",
+      "subject": "std-w3c-recognized",
+      "predicate": "developed_by",
+      "object": {
+        "entity_id": "std-w3c-vcwg"
+      },
+      "statement": "The Recognized Entities Working Draft identifies the VC Working Group as its publishing group.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-recognized"
+      ],
+      "locator": "Status of This Document",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Experimental draft; not fit for production deployment."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-en18219-did",
+      "subject": "std-en-18219-2026",
+      "predicate": "normatively_references",
+      "object": {
+        "entity_id": "std-w3c-did1"
+      },
+      "statement": "EN 18219:2026 clause 2 lists W3C DID Core 1.0:2022 among its normative references.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-en18219"
+      ],
+      "locator": "Clause 2, printed page 8 (PDF page 10)",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The applicable identifier scheme and clauses still determine which requirements apply.",
+        "This reference does not mandate W3C technology in every DPP or show completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-en18219-vc2",
+      "subject": "std-en-18219-2026",
+      "predicate": "normatively_references",
+      "object": {
+        "entity_id": "std-w3c-vc2"
+      },
+      "statement": "EN 18219:2026 clause 2 lists W3C VC Data Model v2:2025 among its normative references.",
+      "assertion_type": "source_statement",
+      "evidence_type": "standard_catalogue",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-en18219"
+      ],
+      "locator": "Clause 2, printed page 8 (PDF page 10)",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The applicable identifier scheme and clauses still determine which requirements apply.",
+        "This reference does not mandate W3C technology in every DPP or show completed interoperability."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-untp-vc2",
+      "subject": "std-untp",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-vc2"
+      },
+      "statement": "The current UNTP credential profile requires VCDM 2.0.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-untp-vc-profile"
+      ],
+      "locator": "Verifiable Credential Profile: VCDM profile",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current UNTP working-profile requirement; no production adoption, complete interoperability or obligation under DPP law is established.",
+        "This is not a claim about the separate maintained 0.7.0 release."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-untp-did1",
+      "subject": "std-untp",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-did1"
+      },
+      "statement": "The current UNTP credential profile requires DID Core with supported DID methods.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-untp-vc-profile"
+      ],
+      "locator": "Verifiable Credential Profile: VCDM profile, linked DID Core specification",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current UNTP working-profile requirement; no production adoption, complete interoperability or obligation under DPP law is established.",
+        "This is not a claim about the separate maintained 0.7.0 release."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-untp-jsonld11",
+      "subject": "std-untp",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-jsonld11"
+      },
+      "statement": "The current UNTP profile uses compacted JSON-LD through VCDM 2.0.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-untp-vc-profile",
+        "src-update-20261025-w3c-vc2-jsonld"
+      ],
+      "locator": "VCDM profile and Vocabularies; VCDM 2.0 section 6.1",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current UNTP working-profile requirement; no production adoption, complete interoperability or obligation under DPP law is established.",
+        "This is not a claim about the separate maintained 0.7.0 release."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-dpp-vc2",
+      "subject": "std-untp-dpp-0-8",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-vc2"
+      },
+      "statement": "The UNTP DPP working schema wraps product data in a W3C v2 credential envelope.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-untp-dpp",
+        "src-update-20261025-w3c-untp-vc-profile"
+      ],
+      "locator": "v0.8.0 schema and samples; VCDM profile",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current UNTP working-profile requirement; no production adoption, complete interoperability or obligation under DPP law is established.",
+        "This is not a claim about the separate maintained 0.7.0 release."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-dcc-vc2",
+      "subject": "std-untp-dcc",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-vc2"
+      },
+      "statement": "The working Conformity Credential specification uses a VCDM 2.0 envelope.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-untp-dcc"
+      ],
+      "locator": "Credential Envelope",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current UNTP working-profile requirement; no production adoption, complete interoperability or obligation under DPP law is established.",
+        "This is not a claim about the separate maintained 0.7.0 release."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-dte-vc2",
+      "subject": "std-untp-dte",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-vc2"
+      },
+      "statement": "The working traceability-event envelope uses the W3C v2 credential context.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-untp-dte"
+      ],
+      "locator": "Vocabulary and Context",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current UNTP working-profile requirement; no production adoption, complete interoperability or obligation under DPP law is established.",
+        "This is not a claim about the separate maintained 0.7.0 release."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-dia-vc2",
+      "subject": "std-untp-dia",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-vc2"
+      },
+      "statement": "The working Digital Identity Anchor uses the W3C v2 credential context.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-untp-dia"
+      ],
+      "locator": "v0.8.0 Schema and Samples",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Current UNTP working-profile requirement; no production adoption, complete interoperability or obligation under DPP law is established.",
+        "This is not a claim about the separate maintained 0.7.0 release."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-vc2-jsonld11",
+      "subject": "std-w3c-vc2",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-jsonld11"
+      },
+      "statement": "VCDM 2.0 specifies JSON-LD 1.1 serialization for its data model.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-vc2-jsonld"
+      ],
+      "locator": "Sections 6 and 6.1",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Other representations can map back to the defined media types. Generalized JSON-LD processing is not required for every consumer."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-cirpass-owl2",
+      "subject": "std-cirpass2-ontology",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-owl2"
+      },
+      "statement": "CIRPASS-2 CORE combines modules using OWL imports and cites OWL 2.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-cirpass-ontology"
+      ],
+      "locator": "The EU DPP Core Ontology; OWL2-OVERVIEW reference",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Research ontology; no particular OWL 2 profile, formal conformance test or legal endorsement is established."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-w3c-tech-cirpass-shacl",
+      "subject": "std-cirpass2-ontology",
+      "predicate": "uses_standard",
+      "object": {
+        "entity_id": "std-w3c-shacl"
+      },
+      "statement": "CIRPASS-2 separates ontology meaning from application profiles validated with SHACL shapes.",
+      "assertion_type": "source_statement",
+      "evidence_type": "specification",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-w3c-cirpass-ontology"
+      ],
+      "locator": "Architecture; application profiles, DPP templates and SHACL shapes",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The shapes are a separate validation layer; this does not make the ontology closed-world or establish successful product validation."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-epa-espr",
+      "subject": "eu-european-product-act",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "The Commission plans a horizontal DPP tool through the European Product Act and is assessing use of the infrastructure developed under ESPR.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-epa-commission-followup"
+      ],
+      "locator": "Page 3, Digital Product Passport (paragraphs 9–20), paragraph beginning “The European Product Act”.",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "A stated policy direction under assessment, not a binding extension, amendment or replacement of ESPR."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-epa-battery-context",
+      "subject": "eu-european-product-act",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-battery-passport-requirement"
+      },
+      "statement": "The Commission discusses planned horizontal DPP work alongside the existing battery-passport deployment scheduled for February 2027.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-epa-commission-followup",
+        "src-update-20261025-epa-eprs"
+      ],
+      "locator": "Commission follow-up page 3, consecutive battery-implementation and European Product Act paragraphs; EPRS New Legislative Framework → Digital product passport.",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Contextual reference only. The battery duty comes from the Batteries Regulation; this does not make the planned Product Act its legal basis."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-bd-guidance-espr",
+      "subject": "global-bd-export-dpp-guidance",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Bangladesh's official export portal discusses the EU ESPR and product-specific Digital Product Passport requirements as considerations for exporters.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-bd-export-guidance"
+      ],
+      "locator": "EU Sustainability Rules Raise the Compliance Bar; the article expressly distinguishes product-specific delegated acts from an obligation on all electronics today.",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "Exporter guidance references an EU instrument; this is not domestic incorporation, legal equivalence or a Bangladesh passport mandate."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-update-20261025-bd-guidance-battery",
+      "subject": "global-bd-export-dpp-guidance",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-battery-passport-requirement"
+      },
+      "statement": "Bangladesh's official export portal describes the EU battery-passport requirement beginning in February 2027 as a consideration for manufacturers seeking EU market access.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "source_ids": [
+        "src-update-20261025-bd-export-guidance"
+      ],
+      "locator": "Battery Rules Add Another Upcoming Requirement; 18 February 2027 and specified EU-market battery categories.",
+      "review_status": "machine_assisted_unreviewed",
+      "limitations": [
+        "The relationship records guidance about the EU market, not an equivalent Bangladeshi obligation or independently proven exporter compliance."
+      ],
+      "interoperability": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-update-20261025-iso-jtc5",
+      "title": "ISO/IEC JTC 5 — committee and liaison register",
+      "url": "https://www.iso.org/committee/11760382.html",
+      "publisher": "ISO",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Organizations in liaison (Category A and B)",
+      "limitations": [
+        "Public committee register checked; no restricted working documents or complete standard texts were reviewed.",
+        "The committee register can change after the retrieval date."
+      ]
+    },
+    {
+      "id": "src-update-20261025-cen-jtc5",
+      "title": "CEN-CENELEC announcement: JTC 5 international coordination",
+      "url": "https://www.cencenelec.eu/news-events/news/2026/newsletter/ots-75-din/",
+      "publisher": "CEN-CENELEC",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-07-29",
+      "dossier_files": [],
+      "locator": "Paragraphs describing JTC 5 building on JTC 24 and planned close cooperation",
+      "limitations": [
+        "An institutional announcement describes intended cooperation; it does not demonstrate technical interoperability."
+      ]
+    },
+    {
+      "id": "src-update-20261025-uk-dpr",
+      "title": "Call for evidence: digital product records policy — rechecked 25 October 2026",
+      "url": "https://www.gov.uk/government/calls-for-evidence/call-for-evidence-digital-product-record-policy/call-for-evidence-digital-product-records-policy",
+      "publisher": "UK Government",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-07-27",
+      "dossier_files": [],
+      "locator": "Background; How to respond; Current UK regulatory approach",
+      "limitations": [
+        "Recheck of the source already represented by src-eu-uk-dpr; the existing policy record is reused.",
+        "General UK policy discussion does not supersede instrument-specific EU commencement or Northern Ireland scope."
+      ]
+    },
+    {
+      "id": "src-update-20261025-uk-construction-white-paper",
+      "title": "Construction Products Reform White Paper",
+      "url": "https://www.gov.uk/government/consultations/construction-products-reform-white-paper/construction-products-reform-white-paper",
+      "publisher": "Ministry of Housing, Communities and Local Government",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-02-25",
+      "dossier_files": [],
+      "locator": "Geographical scope and Duration; sections 4.3, 7.5.8–7.5.11, 13.3.1",
+      "limitations": [
+        "Proposals require future legislation; general safety reform dates are not DPP commencement dates."
+      ],
+      "updated_at": "2026-03-30"
+    },
+    {
+      "id": "src-update-20261025-uk-toy-consultation",
+      "title": "Toys safety regulations: call for evidence",
+      "url": "https://www.gov.uk/government/calls-for-evidence/toys-safety-regulations-call-for-evidence/toys-safety-regulations-call-for-evidence",
+      "publisher": "Office for Product Safety and Standards",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-07-06",
+      "dossier_files": [],
+      "locator": "Sections 2(7–10); 3(11–15)",
+      "limitations": [
+        "Consultation on possible GB changes; references to EU rules do not establish their adoption in GB."
+      ]
+    },
+    {
+      "id": "src-update-20261025-uk-construction-progress",
+      "title": "Progress report September 2026: the construction industry",
+      "url": "https://www.gov.uk/government/publications/grenfell-tower-inquiry-government-progress-report-september-2026/progress-report-september-2026-the-construction-industry",
+      "publisher": "Ministry of Housing, Communities and Local Government",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Recommendations 13 and 14 — What we have done; updated 2 October 2026",
+      "limitations": [
+        "A progress report, not implementing legislation.",
+        "Describes responses still under consideration and an intended later government response."
+      ],
+      "updated_at": "2026-10-02"
+    },
+    {
+      "id": "src-update-20261025-ch-thg-announcement",
+      "title": "Bundesrat will Gesetz über technische Handelshemmnisse modernisieren",
+      "url": "https://www.kmu.admin.ch/de/newnsb/k4JemTZmDs6ON5OOOP--_",
+      "publisher": "Swiss Federal Council / SECO",
+      "source_type": "public_authority",
+      "language": "de",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-06-05",
+      "dossier_files": [],
+      "locator": "Announcement: proposed legal basis for a digital product passport; consultation dates",
+      "limitations": [
+        "Consultation-stage announcement; subsequent enactment is not established."
+      ]
+    },
+    {
+      "id": "src-update-20261025-ch-thg-explanatory-report",
+      "title": "Teilrevision des Bundesgesetzes über die technischen Handelshemmnisse: Erläuternder Bericht zur Eröffnung des Vernehmlassungsverfahrens",
+      "url": "https://cms.news.admin.ch/fileservice/sdweb-docs-prod-nsbcch-files/files/2026/06/05/7da6b141-a858-4d2d-a24b-deb9935b58a5.pdf",
+      "publisher": "Swiss Federal Council / SECO",
+      "source_type": "public_authority",
+      "language": "de",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-06-05",
+      "dossier_files": [],
+      "locator": "Discussion of draft Article 6b, printed pages 18–20 (PDF pages 18–20): product-information systems and EU Regulation 2024/1781",
+      "limitations": [
+        "Explanatory report accompanying a consultation draft, not the final law."
+      ]
+    },
+    {
+      "id": "src-update-20261025-no-battery-consultation",
+      "title": "Høring av endringer i batteriforskriften",
+      "url": "https://www.miljodirektoratet.no/hoeringer/2026/april-2026/horing-av-endringer-i-batteriforskriften/",
+      "publisher": "Norwegian Environment Agency",
+      "source_type": "public_authority",
+      "language": "no",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-04-27",
+      "dossier_files": [],
+      "locator": "Consultation 2026/4456; proposal item 2 on product-passport registry use for battery-passport identifiers",
+      "limitations": [
+        "The official page confirms the consultation is closed; final adoption and EEA incorporation were not verified."
+      ]
+    },
+    {
+      "id": "src-update-20261025-tw-resource-circulation-act",
+      "title": "Resource Circulation Promotion Act — amended 17 June 2026",
+      "url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=O0050049",
+      "publisher": "Taiwan Ministry of Justice, Laws & Regulations Database",
+      "source_type": "legal_text",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-06-17",
+      "dossier_files": [],
+      "locator": "Articles 22 and 52; amendment date in header",
+      "limitations": [
+        "Official English translation; the Chinese text prevails in case of discrepancy.",
+        "Product-specific implementing announcements and disclosure rules were not reviewed."
+      ]
+    },
+    {
+      "id": "src-update-20261025-tw-dpp-pilot",
+      "title": "透明循環．數位賦能！環境部偕同 28 家企業 展現產品數位護照跨業應用實績",
+      "url": "https://prcp.moenv.gov.tw/Public/views/news_detailed.aspx?id=9c70b479-f62d-4a55-9300-0cfe4d340b10",
+      "publisher": "Taiwan Ministry of Environment, Resource Circulation Administration",
+      "source_type": "public_authority",
+      "language": "zh",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-09-07",
+      "dossier_files": [],
+      "locator": "Opening paragraphs; Article 22, voluntary pilot since 2023, open-source module and cross-border testing",
+      "limitations": [
+        "Agency account of voluntary pilot results; not independently replicated.",
+        "No named international technical standard or formal mutual recognition is established."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-minutes",
+      "title": "W3C Product and Wallet Vocabularies minutes, 27 July 2026",
+      "url": "https://w3c.github.io/vc-wg/minutes/2026-07-27-dbw.html",
+      "publisher": "W3C Verifiable Credentials Working Group",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Meeting minutes; VCs And Digital Product Passports; Michael Linck and following discussion",
+      "limitations": [
+        "Public meeting transcript; participant statements are not committee resolutions.",
+        "Computer-generated transcript; possible transcription errors. No institutional representation is inferred from participant statements."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-repository",
+      "title": "W3C DPP and Business Wallet task-force repository",
+      "url": "https://w3c.github.io/vc-dpp-bw/",
+      "publisher": "W3C VC DPP & Business Wallet Task Force",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Repository introduction and document list",
+      "limitations": [
+        "Document titles are provisional; development does not establish Recommendation status."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-vc2",
+      "title": "W3C Verifiable Credentials Data Model 2.0, dated Recommendation",
+      "url": "https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/",
+      "publisher": "W3C",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Status of This Document; G.2 Informative references, DID entry",
+      "limitations": [
+        "DID Core is an informative reference in this document."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-recognized",
+      "title": "W3C Recognized Entities 1.0, dated Working Draft",
+      "url": "https://www.w3.org/TR/2026/WD-vc-recognized-entities-1.0-20260906/",
+      "publisher": "W3C",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Status of This Document",
+      "limitations": [
+        "Experimental Working Draft, expressly unsuitable for production deployment."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-en18219",
+      "title": "EN 18219:2026 normative references, public SIST standard preview",
+      "url": "https://cdn.standards.iteh.ai/samples/sist/sist-en-18219-2026/6091e9d2b2484b96adc84fecf46f58cb/sist-en-18219-2026.pdf",
+      "publisher": "CEN-CENELEC / SIST; public preview hosted by iTeh",
+      "source_type": "standard",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Clause 2, printed pages 7-8; W3C references on printed page 8 (PDF page 10)",
+      "limitations": [
+        "Only the public standard preview was reviewed, not the complete licensed text.",
+        "A normative-reference listing does not require every identifier scheme to use the referenced technology."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-untp-vc-profile",
+      "title": "UNTP Verifiable Credentials — working profile",
+      "url": "https://untp.unece.org/docs/specification/VerifiableCredentials/",
+      "publisher": "UNECE / UN/CEFACT",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Verifiable Credential Profile: VCDM profile and Vocabularies",
+      "limitations": [
+        "Live pre-production working specification; no immutable commit captured. This evidence is not a statement about every historical UNTP release."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-untp-dpp",
+      "title": "UNTP Digital Product Passport — working schema",
+      "url": "https://untp.unece.org/docs/specification/product-passport/",
+      "publisher": "UNECE / UN/CEFACT",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "v0.8.0 schema and samples; credential envelope",
+      "limitations": [
+        "Live pre-production working specification; no immutable commit captured. This evidence is not a statement about every historical UNTP release."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-untp-dcc",
+      "title": "UNTP Conformity Credential — working specification",
+      "url": "https://untp.unece.org/docs/specification/conformity-credential/",
+      "publisher": "UNECE / UN/CEFACT",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Credential Envelope: VCDM 2.0",
+      "limitations": [
+        "Live pre-production working specification; no immutable commit captured. This evidence is not a statement about every historical UNTP release."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-untp-dte",
+      "title": "UNTP Digital Traceability Events — working specification",
+      "url": "https://untp.unece.org/docs/specification/DigitalTraceabilityEvents/",
+      "publisher": "UNECE / UN/CEFACT",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "v0.8.0 schema and samples; Vocabulary and Context",
+      "limitations": [
+        "Live pre-production working specification; no immutable commit captured. This evidence is not a statement about every historical UNTP release."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-untp-dia",
+      "title": "UNTP Digital Identity Anchor — working specification",
+      "url": "https://untp.unece.org/docs/specification/DigitalIdentityAnchor/",
+      "publisher": "UNECE / UN/CEFACT",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "v0.8.0 schema and samples; W3C v2 credential context",
+      "limitations": [
+        "Live pre-production working specification; no immutable commit captured. This evidence is not a statement about every historical UNTP release."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-cirpass-ontology",
+      "title": "CIRPASS-2 ontology overview — official documentation source",
+      "url": "https://github.com/CIRPASS-2/ontologies-docs/blob/main/index.html",
+      "publisher": "CIRPASS-2",
+      "source_type": "project_primary",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Architecture; The EU DPP Core Ontology; bibliography entries OWL2-OVERVIEW and SHACL",
+      "limitations": [
+        "The published documentation site was unavailable; its official source was inspected instead.",
+        "Development-branch documentation; no immutable commit captured. Research model, not a mandated EU ontology."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-jsonld11",
+      "title": "JSON-LD 1.1 — W3C Recommendation",
+      "url": "https://www.w3.org/TR/2020/REC-json-ld11-20200716/",
+      "publisher": "W3C",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Title, status, abstract and section 10",
+      "limitations": []
+    },
+    {
+      "id": "src-update-20261025-w3c-owl2",
+      "title": "OWL 2 Web Ontology Language Document Overview (Second Edition)",
+      "url": "https://www.w3.org/TR/2012/REC-owl2-overview-20121211/",
+      "publisher": "W3C",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Title, status and sections 2.1–2.3",
+      "limitations": [
+        "This overview introduces the OWL 2 specification family; individual profiles have distinct conformance conditions."
+      ]
+    },
+    {
+      "id": "src-update-20261025-w3c-shacl",
+      "title": "Shapes Constraint Language (SHACL) — W3C Recommendation",
+      "url": "https://www.w3.org/TR/2017/REC-shacl-20170720/",
+      "publisher": "W3C",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Abstract and Status of This Document",
+      "limitations": []
+    },
+    {
+      "id": "src-update-20261025-w3c-vc2-jsonld",
+      "title": "Verifiable Credentials Data Model v2.0 — JSON-LD syntax",
+      "url": "https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/",
+      "publisher": "W3C",
+      "source_type": "standards_body",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Section 6.1 JSON-LD; section 6 Syntaxes and section 6.3 processing",
+      "limitations": []
+    },
+    {
+      "id": "src-update-20261025-epa-tracker",
+      "title": "European Commission — Prosperity and competitiveness implementation tracker",
+      "url": "https://commission.europa.eu/priorities-2024-2029/competitiveness/implementation-tracker_en",
+      "publisher": "European Commission",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Page last updated 7 October 2026. Legislative items → Planned: European product act (NLF and market-surveillance updates); Proposed: standardisation update, 6 October 2026.",
+      "limitations": [
+        "The tracker retains an indicative Q3 2026 timing that has passed. It does not establish a new proposal date or adopted requirements."
+      ]
+    },
+    {
+      "id": "src-update-20261025-epa-commission-followup",
+      "title": "European Commission — Follow-up to Parliament resolution on a New Legislative Framework for the digital and sustainable transition",
+      "url": "https://data.europarl.europa.eu/distribution/doc/SP-2026-03-05-TA-10-2025-0242_en.pdf",
+      "publisher": "European Commission; distributed by European Parliament",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "Page 2: package and consultation context. Page 3, Digital Product Passport (paragraphs 9–20): planned horizontal DPP tool, ESPR infrastructure and battery deployment.",
+      "limitations": [
+        "Policy intentions and impact-assessment questions, not an enacted act or a formally tabled proposal. Historical expected timing is not a legal commencement date."
+      ]
+    },
+    {
+      "id": "src-update-20261025-epa-eprs",
+      "title": "European Parliamentary Research Service — European product act",
+      "url": "https://eprs.europarl.europa.eu/cms/render/live/en/sites/eprsweb/contents/publications/EPRS/2026/06/EPRS_BRI(2026)789349.html?locale=EN",
+      "publisher": "European Parliamentary Research Service",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2026-06-17",
+      "dossier_files": [],
+      "locator": "Commission initiative in preparation; Developments and insights; New Legislative Framework → Digital product passport.",
+      "limitations": [
+        "Pre-proposal parliamentary briefing reflects June 2026 information. The Commission tracker supplies the more recent procedural distinction."
+      ]
+    },
+    {
+      "id": "src-update-20261025-eg-goeic-programme",
+      "title": "GOEIC — Korean-supported digital risk management and product-tracking programme",
+      "url": "https://www.goeic.gov.eg/en/media-center/news/1356",
+      "publisher": "General Organization for Export and Import Control, Egyptian Ministry of Investment and Foreign Trade",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "search_snippet",
+      "retrieved_at": "2026-10-25",
+      "published_at": "2025-03-14",
+      "dossier_files": [],
+      "locator": "Paragraphs on the June 2025–end-2029 schedule and DPP creation for industrial goods in the local market and locally manufactured Egyptian products.",
+      "limitations": [
+        "Official indexed text inspected; direct page retrieval timed out. Announcement supplies planned components, not verified completion or operative legal duties."
+      ]
+    },
+    {
+      "id": "src-update-20261025-bd-export-guidance",
+      "title": "Export Bangladesh — electrical exports and EU compliance readiness",
+      "url": "https://exportbangladesh.gov.bd/insights/bangladesh-electrical-exports-eu-compliance",
+      "publisher": "Export Bangladesh, an initiative of Bangladesh's Ministry of Commerce",
+      "source_type": "public_authority",
+      "language": "en",
+      "access_status": "opened",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [],
+      "locator": "EU Sustainability Rules Raise the Compliance Bar; Battery Rules Add Another Upcoming Requirement; government initiative identified in footer.",
+      "limitations": [
+        "Publication date is not stated. The official portal draws on EPB data and industry reporting; publication is evidence of guidance, not adoption of industry policy requests."
+      ]
+    }
+  ],
+  "navigation_groups": [
+    {
+      "id": "w3c",
+      "entity_ids": [
+        "std-cen-jtc24",
+        "std-cirpass2-ontology",
+        "std-en-18219-2026",
+        "std-iso-jtc5",
+        "std-untp",
+        "std-untp-dcc",
+        "std-untp-dia",
+        "std-untp-dpp-0-8",
+        "std-untp-dte",
+        "std-w3c-bw-vocabulary",
+        "std-w3c-did1",
+        "std-w3c-dpp-bw-tf",
+        "std-w3c-dpp-committee-discussion-20260727",
+        "std-w3c-dpp-vocabulary",
+        "std-w3c-jsonld11",
+        "std-w3c-owl2",
+        "std-w3c-recognized",
+        "std-w3c-shacl",
+        "std-w3c-ucr",
+        "std-w3c-vc2",
+        "std-w3c-vcwg"
+      ],
+      "source_ids": [
+        "src-update-20261025-w3c-minutes",
+        "src-update-20261025-w3c-repository",
+        "src-update-20261025-w3c-vc2",
+        "src-update-20261025-w3c-recognized",
+        "src-update-20261025-w3c-en18219",
+        "src-update-20261025-w3c-untp-vc-profile",
+        "src-update-20261025-w3c-untp-dpp",
+        "src-update-20261025-w3c-untp-dcc",
+        "src-update-20261025-w3c-untp-dte",
+        "src-update-20261025-w3c-untp-dia",
+        "src-update-20261025-w3c-cirpass-ontology",
+        "src-update-20261025-w3c-jsonld11",
+        "src-update-20261025-w3c-owl2",
+        "src-update-20261025-w3c-shacl",
+        "src-update-20261025-w3c-vc2-jsonld"
+      ],
+      "description": "W3C standards and vocabulary work together with their documented DPP uses and discussion context. Includes EN 18219, UNTP working specifications and CIRPASS-2. Published Recommendations, drafts, references and discussion retain distinct statuses; related records are not W3C members.",
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "iso-iec-jtc5",
+      "entity_ids": [
+        "std-w3c-vcwg",
+        "std-w3c-dpp-bw-tf",
+        "std-w3c-vc2",
+        "std-w3c-did1",
+        "std-w3c-jsonld11",
+        "std-w3c-dpp-committee-discussion-20260727",
+        "std-en-18219-2026"
+      ],
+      "source_ids": [
+        "src-update-20261025-w3c-minutes",
+        "src-update-20261025-w3c-repository",
+        "src-update-20261025-w3c-vc2",
+        "src-update-20261025-w3c-recognized",
+        "src-update-20261025-w3c-en18219",
+        "src-update-20261025-w3c-vc2-jsonld"
+      ],
+      "description": "JTC 5, its two work items, cooperation with JTC 24 and nine listed Category A liaison organisations. W3C appears through task-force discussion and the JTC 24 / EN 18219 standards path. No formal W3C liaison or JTC 5 adoption of W3C technology is established.",
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "cen-cenelec-jtc24",
+      "entity_ids": [
+        "std-w3c-vcwg",
+        "std-w3c-dpp-bw-tf",
+        "std-w3c-vc2",
+        "std-w3c-did1",
+        "std-w3c-jsonld11",
+        "std-w3c-dpp-committee-discussion-20260727",
+        "std-iso-jtc5"
+      ],
+      "source_ids": [
+        "src-update-20261025-w3c-minutes",
+        "src-update-20261025-w3c-repository",
+        "src-update-20261025-w3c-vc2",
+        "src-update-20261025-w3c-recognized",
+        "src-update-20261025-w3c-en18219",
+        "src-update-20261025-w3c-vc2-jsonld",
+        "src-update-20261025-cen-jtc5"
+      ],
+      "description": "European DPP standards and their documented W3C context: EN 18219 normatively references DID Core and VC 2.0. Includes committee cooperation and a separate task-force discussion. A normative reference does not mandate every technology in every DPP.",
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "untp",
+      "entity_ids": [
+        "std-w3c-vc2",
+        "std-w3c-did1",
+        "std-w3c-jsonld11",
+        "std-w3c-recognized"
+      ],
+      "source_ids": [
+        "src-update-20261025-w3c-untp-vc-profile",
+        "src-update-20261025-w3c-untp-dpp",
+        "src-update-20261025-w3c-untp-dcc",
+        "src-update-20261025-w3c-untp-dte",
+        "src-update-20261025-w3c-untp-dia",
+        "src-update-20261025-w3c-vc2-jsonld"
+      ],
+      "description": "UNTP initiative and versioned specifications, with their documented W3C dependencies. New technical edges describe the current pre-production working profile, not the separate maintained 0.7.0 release or national adoption.",
+      "membership_basis": "editorial_filter"
+    },
+    {
+      "id": "cirpass2",
+      "entity_ids": [
+        "std-w3c-owl2",
+        "std-w3c-shacl",
+        "std-w3c-dpp-vocabulary"
+      ],
+      "source_ids": [
+        "src-update-20261025-w3c-cirpass-ontology",
+        "src-std-w3c-dpp-vocabulary"
+      ],
+      "description": "CIRPASS-2 programme and research artifacts, with OWL 2 ontology structure, separate SHACL validation profiles and its input to W3C DPP vocabulary work. Research connections do not establish EU endorsement or successful implementation.",
+      "membership_basis": "editorial_filter"
+    }
+  ]
+}

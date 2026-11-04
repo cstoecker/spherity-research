@@ -1,0 +1,18 @@
+DPP Explorer third-party assets
+
+Map geometry: Made with Natural Earth.
+Natural Earth 1:110m Admin 0 Countries, repository release v5.1.2.
+https://www.naturalearthdata.com/
+Public domain; full notice and source credits are in NATURAL-EARTH-LICENSE.md.
+
+Natural Earth depicts de facto boundaries. The map is a generalised visual aid,
+not an authoritative determination of legal jurisdiction or territorial status.
+Some small jurisdictions are absent from the 1:110m geometry. Use the dataset
+selector and table for complete research coverage.
+
+Visualisation library: D3 7.9.0 by Mike Bostock and contributors.
+https://d3js.org/
+ISC license; full notice is in D3-LICENSE.txt.
+
+Both files are unmodified, version-pinned local copies. Source URLs, retrieval
+date, checksums and limitations are recorded in provenance.json.

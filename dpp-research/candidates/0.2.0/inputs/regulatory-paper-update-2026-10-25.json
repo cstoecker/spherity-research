@@ -1,0 +1,2259 @@
+{
+  "id": "regulatory-paper-update-2026-10-25",
+  "checked_at": "2026-10-25",
+  "description": "Regulatory reconciliation of whitepaper v1.0: registry events and guide limits, product planning, sector transitions, adjacent regimes and separate European Product Act tracks. No live service test or independent human review.",
+  "review_status": "machine_assisted_unreviewed",
+  "entities": [
+    {
+      "id": "eu-espr-steel-measure-plan",
+      "type": "Policy",
+      "label": "Iron and steel — planned ESPR measure",
+      "description": "Planned product or horizontal measure for iron and steel.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "indicative_adoption_target",
+        "as_of": "2026-10-25",
+        "scope_note": "Planning record; not an adopted product obligation."
+      },
+      "dates": [
+        {
+          "kind": "planned_adoption",
+          "date": "2026",
+          "precision": "year",
+          "condition": "Q4 2026 indicative adoption.",
+          "source_ids": [
+            "src-candidate-reg-workplan",
+            "src-candidate-reg-steel"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-candidate-reg-workplan",
+        "src-candidate-reg-steel"
+      ],
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions."
+      ]
+    },
+    {
+      "id": "eu-espr-textiles-measure-plan",
+      "type": "Policy",
+      "label": "Textiles and apparel — planned ESPR measure",
+      "description": "Planned product or horizontal measure for textiles and apparel.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-textiles"
+      ],
+      "geography": null,
+      "status": {
+        "value": "indicative_adoption_target",
+        "as_of": "2026-10-25",
+        "scope_note": "Planning record; not an adopted product obligation."
+      },
+      "dates": [
+        {
+          "kind": "planned_adoption",
+          "date": "2027",
+          "precision": "year",
+          "condition": "Q4 2027; broader timeline Q3–Q4 indicative adoption.",
+          "source_ids": [
+            "src-candidate-reg-workplan",
+            "src-candidate-reg-textiles",
+            "src-candidate-reg-timeline"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-candidate-reg-workplan",
+        "src-candidate-reg-textiles",
+        "src-candidate-reg-timeline"
+      ],
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions."
+      ]
+    },
+    {
+      "id": "eu-espr-aluminium-measure-plan",
+      "type": "Policy",
+      "label": "Aluminium — planned ESPR measure",
+      "description": "Planned product or horizontal measure for aluminium.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "indicative_adoption_target",
+        "as_of": "2026-10-25",
+        "scope_note": "Planning record; not an adopted product obligation."
+      },
+      "dates": [
+        {
+          "kind": "planned_adoption",
+          "date": "2027",
+          "precision": "year",
+          "condition": "Q3–Q4 2027 indicative adoption.",
+          "source_ids": [
+            "src-candidate-reg-workplan",
+            "src-candidate-reg-timeline"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-candidate-reg-workplan",
+        "src-candidate-reg-timeline"
+      ],
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions."
+      ]
+    },
+    {
+      "id": "eu-espr-tyres-measure-plan",
+      "type": "Policy",
+      "label": "Tyres — planned ESPR measure",
+      "description": "Planned product or horizontal measure for tyres.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-tyres"
+      ],
+      "geography": null,
+      "status": {
+        "value": "indicative_adoption_target",
+        "as_of": "2026-10-25",
+        "scope_note": "Planning record; not an adopted product obligation."
+      },
+      "dates": [
+        {
+          "kind": "planned_adoption",
+          "date": "2027",
+          "precision": "year",
+          "condition": "Q3–Q4 2027 indicative adoption.",
+          "source_ids": [
+            "src-candidate-reg-workplan",
+            "src-candidate-reg-timeline"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-candidate-reg-workplan",
+        "src-candidate-reg-timeline"
+      ],
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions."
+      ]
+    },
+    {
+      "id": "eu-espr-furniture-measure-plan",
+      "type": "Policy",
+      "label": "Furniture — planned ESPR measure",
+      "description": "Planned product or horizontal measure for furniture.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "indicative_adoption_target",
+        "as_of": "2026-10-25",
+        "scope_note": "Planning record; not an adopted product obligation."
+      },
+      "dates": [
+        {
+          "kind": "planned_adoption",
+          "date": "2028",
+          "precision": "year",
+          "condition": "2028 indicative adoption.",
+          "source_ids": [
+            "src-candidate-reg-workplan"
+          ]
+        }
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-candidate-reg-workplan"
+      ],
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions.",
+        "Official indexed passages were rechecked on 25 October 2026; full primary text was not reopened. Evidence status remains conservative under the frozen protocol."
+      ]
+    },
+    {
+      "id": "eu-espr-mattresses-measure-plan",
+      "type": "Policy",
+      "label": "Mattresses — planned ESPR measure",
+      "description": "Planned product or horizontal measure for mattresses.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "indicative_adoption_target",
+        "as_of": "2026-10-25",
+        "scope_note": "Planning record; not an adopted product obligation."
+      },
+      "dates": [
+        {
+          "kind": "planned_adoption",
+          "date": "2029",
+          "precision": "year",
+          "condition": "2029 indicative adoption.",
+          "source_ids": [
+            "src-candidate-reg-workplan"
+          ]
+        }
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-candidate-reg-workplan"
+      ],
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions.",
+        "Official indexed passages were rechecked on 25 October 2026; full primary text was not reopened. Evidence status remains conservative under the frozen protocol."
+      ]
+    },
+    {
+      "id": "eu-espr-repairability-measure-plan",
+      "type": "Policy",
+      "label": "Horizontal repairability — planned ESPR measure",
+      "description": "Planned product or horizontal measure for horizontal repairability.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "indicative_adoption_target",
+        "as_of": "2026-10-25",
+        "scope_note": "Planning record; not an adopted product obligation."
+      },
+      "dates": [
+        {
+          "kind": "planned_adoption",
+          "date": "2027",
+          "precision": "year",
+          "condition": "2027 indicative adoption.",
+          "source_ids": [
+            "src-candidate-reg-workplan"
+          ]
+        }
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-candidate-reg-workplan"
+      ],
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions.",
+        "Official indexed passages were rechecked on 25 October 2026; full primary text was not reopened. Evidence status remains conservative under the frozen protocol."
+      ]
+    },
+    {
+      "id": "eu-espr-eee-recyclability-measure-plan",
+      "type": "Policy",
+      "label": "EEE recycled content and recyclability — planned ESPR measure",
+      "description": "Planned product or horizontal measure for eee recycled content and recyclability.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-electronics"
+      ],
+      "geography": null,
+      "status": {
+        "value": "indicative_adoption_target",
+        "as_of": "2026-10-25",
+        "scope_note": "Planning record; not an adopted product obligation."
+      },
+      "dates": [
+        {
+          "kind": "planned_adoption",
+          "date": "2029",
+          "precision": "year",
+          "condition": "2029 indicative adoption.",
+          "source_ids": [
+            "src-candidate-reg-workplan"
+          ]
+        }
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-candidate-reg-workplan"
+      ],
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions.",
+        "Official indexed passages were rechecked on 25 October 2026; full primary text was not reopened. Evidence status remains conservative under the frozen protocol."
+      ]
+    },
+    {
+      "id": "eu-construction-dpp-system-plan",
+      "type": "Policy",
+      "label": "Construction passport system — planned delegated act",
+      "description": "Commission planning target for the construction passport-system measure.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-construction"
+      ],
+      "geography": null,
+      "status": {
+        "value": "indicative_adoption_target",
+        "as_of": "2026-10-25",
+        "scope_note": "Planned adoption is separate from Article 80 conditional dates."
+      },
+      "dates": [
+        {
+          "kind": "planned_adoption",
+          "date": "2027",
+          "precision": "year",
+          "condition": "Indicative Q2 2027; trigger-act entry into force unverified.",
+          "source_ids": [
+            "src-candidate-reg-timeline"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-candidate-reg-timeline",
+        "src-candidate-reg-construction-art80"
+      ],
+      "limitations": [
+        "The relevant trigger act and product-family transitions require checking."
+      ]
+    },
+    {
+      "id": "eu-dpp-service-provider-rules-plan",
+      "type": "Policy",
+      "label": "DPP service-provider rules — planned delegated act",
+      "description": "Planned requirements for DPP service providers.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "indicative_plan_quarter_unresolved",
+        "as_of": "2026-10-25",
+        "scope_note": "2027 planning year; Commission timeline lists both Q2 and Q3."
+      },
+      "dates": [
+        {
+          "kind": "planned_adoption",
+          "date": "2027",
+          "precision": "year",
+          "condition": "Quarter unresolved: Q2 and Q3 both listed.",
+          "source_ids": [
+            "src-candidate-reg-timeline"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-candidate-reg-timeline"
+      ],
+      "limitations": [
+        "Do not resolve the conflict by inventing an exact date or assuming adoption."
+      ]
+    },
+    {
+      "id": "eu-registry-user-guide-v1-03",
+      "type": "Report",
+      "label": "DPP Registry user guide — v1.03",
+      "description": "Dated operator guide documents registry workflows and then-unavailable battery registration and semantic validation.",
+      "version": "1.03",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "published_guidance_documentary_limitations",
+        "as_of": "2026-10-25",
+        "scope_note": "Document state dated 16 September 2026; not a live test."
+      },
+      "dates": [
+        {
+          "kind": "published",
+          "date": "2026-09-16",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-candidate-reg-registry-guide-v103"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-candidate-reg-registry-guide-v103"
+      ],
+      "limitations": [
+        "Dated 63-page guide inspected. Its documented limitations are not a live service test on 25 October; later resolution was not established."
+      ]
+    },
+    {
+      "id": "eu-standardisation-proposal-2026-780",
+      "type": "LegalInstrument",
+      "label": "European Standardisation proposal — COM(2026)780",
+      "description": "Commission proposal, procedure 2026/0307(COD).",
+      "version": "COM(2026)780 final; 2026/0307(COD)",
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "legislative_proposal_parliament_preparatory",
+        "as_of": "2026-10-25",
+        "scope_note": "Published 6 October 2026; not adopted replacement law."
+      },
+      "dates": [
+        {
+          "kind": "proposal_published",
+          "date": "2026-10-06",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-candidate-reg-epa-procedure"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-candidate-reg-epa-procedure",
+        "src-update-20261025-epa-tracker"
+      ],
+      "limitations": [
+        "Proposed repeal of Regulation 1025/2012 is not accomplished repeal. No clause-by-clause review."
+      ]
+    },
+    {
+      "id": "eu-product-act-nlf-track",
+      "type": "Policy",
+      "label": "European Product Act — New Legislative Framework track",
+      "description": "Planned horizontal product-rules reform.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "planned_reform_track",
+        "as_of": "2026-10-25",
+        "scope_note": "Tracker still labels this track planned at observation."
+      },
+      "dates": [],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-epa-tracker",
+        "src-update-20261025-epa-eprs"
+      ],
+      "limitations": [
+        "Elapsed Q3 target is not proof of proposal adoption; obligations/dates unsettled."
+      ]
+    },
+    {
+      "id": "eu-product-act-market-surveillance-track",
+      "type": "Policy",
+      "label": "European Product Act — market-surveillance track",
+      "description": "Planned market-surveillance reform.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "planned_reform_track",
+        "as_of": "2026-10-25",
+        "scope_note": "Separate from the published standardisation proposal."
+      },
+      "dates": [],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-update-20261025-epa-tracker",
+        "src-update-20261025-epa-eprs"
+      ],
+      "limitations": [
+        "Package label does not establish an adopted new DPP duty."
+      ]
+    },
+    {
+      "id": "eu-machinery-regulation",
+      "type": "LegalInstrument",
+      "label": "Machinery Regulation (EU) 2023/1230",
+      "description": "Adjacent safety regime with main application from 20 January 2027.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-cross-sector"
+      ],
+      "geography": null,
+      "status": {
+        "value": "enacted_adjacent_regime_future_main_application",
+        "as_of": "2026-10-25",
+        "scope_note": "Safety obligations; not a DPP mandate."
+      },
+      "dates": [
+        {
+          "kind": "main_application",
+          "date": "2027-01-20",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-candidate-reg-machinery-art54"
+          ]
+        }
+      ],
+      "evidence_status": "dossier_extracted",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-candidate-reg-machinery-art54"
+      ],
+      "limitations": [
+        "Earlier provisions have their own dates; no mandatory DPP architecture inferred.",
+        "Official indexed passages were rechecked on 25 October 2026; full primary text was not reopened. Evidence status remains conservative under the frozen protocol."
+      ]
+    },
+    {
+      "id": "eu-cyber-resilience-act",
+      "type": "LegalInstrument",
+      "label": "Cyber Resilience Act — Regulation (EU) 2024/2847",
+      "description": "Adjacent cybersecurity regime with staged reporting and main application.",
+      "version": null,
+      "jurisdiction_ids": [
+        "jur-eu"
+      ],
+      "sector_ids": [
+        "sec-electronics"
+      ],
+      "geography": null,
+      "status": {
+        "value": "enacted_adjacent_regime_staged_application",
+        "as_of": "2026-10-25",
+        "scope_note": "Manufacturer reporting from 11 September 2026; main application/steward reporting from 11 December 2027."
+      },
+      "dates": [
+        {
+          "kind": "manufacturer_reporting_applies",
+          "date": "2026-09-11",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-candidate-reg-cra-art71",
+            "src-candidate-reg-cra-reporting"
+          ]
+        },
+        {
+          "kind": "main_application",
+          "date": "2027-12-11",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-candidate-reg-cra-art71"
+          ]
+        },
+        {
+          "kind": "steward_reporting_applies",
+          "date": "2027-12-11",
+          "precision": "day",
+          "condition": null,
+          "source_ids": [
+            "src-candidate-reg-cra-reporting"
+          ]
+        }
+      ],
+      "evidence_status": "primary_rechecked",
+      "review_status": "machine_assisted_unreviewed",
+      "source_ids": [
+        "src-candidate-reg-cra-art71",
+        "src-candidate-reg-cra-reporting",
+        "src-candidate-reg-cra-implementation"
+      ],
+      "limitations": [
+        "Cybersecurity duties are not additional DPP mandates; actor and product scope matter."
+      ]
+    }
+  ],
+  "assertions": [
+    {
+      "id": "a-candidate-reg-steel-plan-parent",
+      "subject": "eu-espr-steel-measure-plan",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-espr-workplan"
+      },
+      "statement": "Iron and steel is a planned measure in the Commission work programme.",
+      "source_ids": [
+        "src-candidate-reg-workplan",
+        "src-candidate-reg-steel"
+      ],
+      "locator": "COM(2025)187 section 2.2.1; relevant sector/timeline entry.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-steel-plan-espr",
+      "subject": "eu-espr-steel-measure-plan",
+      "predicate": "depends_on",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Final requirements depend on the ESPR delegated-act process.",
+      "source_ids": [
+        "src-candidate-reg-espr",
+        "src-candidate-reg-workplan"
+      ],
+      "locator": "ESPR Articles 4 and 72; COM(2025)187 section 2.2.1.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No adoption or application is asserted by this planning connection."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-textiles-plan-parent",
+      "subject": "eu-espr-textiles-measure-plan",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-espr-workplan"
+      },
+      "statement": "Textiles and apparel is a planned measure in the Commission work programme.",
+      "source_ids": [
+        "src-candidate-reg-workplan",
+        "src-candidate-reg-textiles",
+        "src-candidate-reg-timeline"
+      ],
+      "locator": "COM(2025)187 section 2.2.1; relevant sector/timeline entry.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-textiles-plan-espr",
+      "subject": "eu-espr-textiles-measure-plan",
+      "predicate": "depends_on",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Final requirements depend on the ESPR delegated-act process.",
+      "source_ids": [
+        "src-candidate-reg-espr",
+        "src-candidate-reg-workplan"
+      ],
+      "locator": "ESPR Articles 4 and 72; COM(2025)187 section 2.2.1.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No adoption or application is asserted by this planning connection."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-aluminium-plan-parent",
+      "subject": "eu-espr-aluminium-measure-plan",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-espr-workplan"
+      },
+      "statement": "Aluminium is a planned measure in the Commission work programme.",
+      "source_ids": [
+        "src-candidate-reg-workplan",
+        "src-candidate-reg-timeline"
+      ],
+      "locator": "COM(2025)187 section 2.2.1; relevant sector/timeline entry.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-aluminium-plan-espr",
+      "subject": "eu-espr-aluminium-measure-plan",
+      "predicate": "depends_on",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Final requirements depend on the ESPR delegated-act process.",
+      "source_ids": [
+        "src-candidate-reg-espr",
+        "src-candidate-reg-workplan"
+      ],
+      "locator": "ESPR Articles 4 and 72; COM(2025)187 section 2.2.1.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No adoption or application is asserted by this planning connection."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-tyres-plan-parent",
+      "subject": "eu-espr-tyres-measure-plan",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-espr-workplan"
+      },
+      "statement": "Tyres is a planned measure in the Commission work programme.",
+      "source_ids": [
+        "src-candidate-reg-workplan",
+        "src-candidate-reg-timeline"
+      ],
+      "locator": "COM(2025)187 section 2.2.1; relevant sector/timeline entry.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-tyres-plan-espr",
+      "subject": "eu-espr-tyres-measure-plan",
+      "predicate": "depends_on",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Final requirements depend on the ESPR delegated-act process.",
+      "source_ids": [
+        "src-candidate-reg-espr",
+        "src-candidate-reg-workplan"
+      ],
+      "locator": "ESPR Articles 4 and 72; COM(2025)187 section 2.2.1.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No adoption or application is asserted by this planning connection."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-furniture-plan-parent",
+      "subject": "eu-espr-furniture-measure-plan",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-espr-workplan"
+      },
+      "statement": "Furniture is a planned measure in the Commission work programme.",
+      "source_ids": [
+        "src-candidate-reg-workplan"
+      ],
+      "locator": "COM(2025)187 section 2.2.1; relevant sector/timeline entry.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-furniture-plan-espr",
+      "subject": "eu-espr-furniture-measure-plan",
+      "predicate": "depends_on",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Final requirements depend on the ESPR delegated-act process.",
+      "source_ids": [
+        "src-candidate-reg-espr",
+        "src-candidate-reg-workplan"
+      ],
+      "locator": "ESPR Articles 4 and 72; COM(2025)187 section 2.2.1.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No adoption or application is asserted by this planning connection."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-mattresses-plan-parent",
+      "subject": "eu-espr-mattresses-measure-plan",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-espr-workplan"
+      },
+      "statement": "Mattresses is a planned measure in the Commission work programme.",
+      "source_ids": [
+        "src-candidate-reg-workplan"
+      ],
+      "locator": "COM(2025)187 section 2.2.1; relevant sector/timeline entry.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-mattresses-plan-espr",
+      "subject": "eu-espr-mattresses-measure-plan",
+      "predicate": "depends_on",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Final requirements depend on the ESPR delegated-act process.",
+      "source_ids": [
+        "src-candidate-reg-espr",
+        "src-candidate-reg-workplan"
+      ],
+      "locator": "ESPR Articles 4 and 72; COM(2025)187 section 2.2.1.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No adoption or application is asserted by this planning connection."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-repairability-plan-parent",
+      "subject": "eu-espr-repairability-measure-plan",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-espr-workplan"
+      },
+      "statement": "Horizontal repairability is a planned measure in the Commission work programme.",
+      "source_ids": [
+        "src-candidate-reg-workplan"
+      ],
+      "locator": "COM(2025)187 section 2.2.1; relevant sector/timeline entry.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-repairability-plan-espr",
+      "subject": "eu-espr-repairability-measure-plan",
+      "predicate": "depends_on",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Final requirements depend on the ESPR delegated-act process.",
+      "source_ids": [
+        "src-candidate-reg-espr",
+        "src-candidate-reg-workplan"
+      ],
+      "locator": "ESPR Articles 4 and 72; COM(2025)187 section 2.2.1.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No adoption or application is asserted by this planning connection."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-eee-recyclability-plan-parent",
+      "subject": "eu-espr-eee-recyclability-measure-plan",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-espr-workplan"
+      },
+      "statement": "EEE recycled content and recyclability is a planned measure in the Commission work programme.",
+      "source_ids": [
+        "src-candidate-reg-workplan"
+      ],
+      "locator": "COM(2025)187 section 2.2.1; relevant sector/timeline entry.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Indicative adoption only. Final measure determines scope, entry into force and application. Normal ESPR transition is at least 18 months from entry into force, with exceptions."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-eee-recyclability-plan-espr",
+      "subject": "eu-espr-eee-recyclability-measure-plan",
+      "predicate": "depends_on",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Final requirements depend on the ESPR delegated-act process.",
+      "source_ids": [
+        "src-candidate-reg-espr",
+        "src-candidate-reg-workplan"
+      ],
+      "locator": "ESPR Articles 4 and 72; COM(2025)187 section 2.2.1.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No adoption or application is asserted by this planning connection."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-construction-system-parent",
+      "subject": "eu-construction-dpp-system-plan",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-construction-regulation"
+      },
+      "statement": "The planned system act is under the Construction Products Regulation.",
+      "source_ids": [
+        "src-candidate-reg-timeline",
+        "src-candidate-reg-construction-art80"
+      ],
+      "locator": "Commission Q2 2027 entry; CPR Articles 75 and 80.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-construction-system-duty",
+      "subject": "eu-construction-passport-requirement",
+      "predicate": "depends_on",
+      "object": {
+        "entity_id": "eu-construction-dpp-system-plan"
+      },
+      "statement": "The Article 75(1) system act entry into force triggers Article 80 timing; the planning quarter does not.",
+      "source_ids": [
+        "src-candidate-reg-construction-art80"
+      ],
+      "locator": "Article 80.",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "The target record is not an adopted act."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-providers-espr",
+      "subject": "eu-dpp-service-provider-rules-plan",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-espr"
+      },
+      "statement": "Commission timeline identifies planned ESPR service-provider rules.",
+      "source_ids": [
+        "src-candidate-reg-timeline"
+      ],
+      "locator": "Timeline Q2 and Q3 2027 entries.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-guide-registry",
+      "subject": "eu-registry-user-guide-v1-03",
+      "predicate": "references",
+      "object": {
+        "entity_id": "eu-dpp-registry"
+      },
+      "statement": "The guide describes registry workflows and dated operational limitations.",
+      "source_ids": [
+        "src-candidate-reg-registry-guide-v103"
+      ],
+      "locator": "Cover; §§6.2.1–6.2.2 pp.48/54; p.56.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No present service failure is inferred."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-registry-guide-limit",
+      "subject": "eu-dpp-registry",
+      "predicate": "has_status",
+      "object": {
+        "value": "Guide v1.03 documents unavailable battery registration and semantic validation.",
+        "datatype": "string"
+      },
+      "statement": "The 16 September guide qualifies the availability announcement without establishing live service status on 25 October.",
+      "source_ids": [
+        "src-candidate-reg-registry-guide-v103"
+      ],
+      "locator": "§§6.2.1–6.2.2 pp.48/54; p.56.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Dated 63-page guide inspected. Its documented limitations are not a live service test on 25 October; later resolution was not established."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-registry-deadline",
+      "subject": "eu-espr-art-13",
+      "predicate": "has_milestone",
+      "object": {
+        "value": "2026-07-19",
+        "datatype": "date"
+      },
+      "statement": "ESPR sets 19 July 2026 as the deadline to establish the registry.",
+      "source_ids": [
+        "src-candidate-reg-espr"
+      ],
+      "locator": "Article 13(1).",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Legal deadline, not a service-completeness result."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-registry-force",
+      "subject": "eu-registry-regulation",
+      "predicate": "has_milestone",
+      "object": {
+        "value": "2026-08-06",
+        "datatype": "date"
+      },
+      "statement": "Entry into force is 6 August 2026, calculated from OJ publication and Article 24.",
+      "source_ids": [
+        "src-candidate-reg-registry-law"
+      ],
+      "locator": "OJ publication 17 July 2026; Article 24.",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": "2026-08-06",
+      "valid_to": null,
+      "limitations": [
+        "Calculated using the twentieth-day rule."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-espr-transition",
+      "subject": "eu-espr",
+      "predicate": "has_milestone",
+      "object": {
+        "value": "Normally at least 18 months from delegated-act entry into force; specified exceptions apply.",
+        "datatype": "string"
+      },
+      "statement": "The transition runs from entry into force, not the indicative adoption target.",
+      "source_ids": [
+        "src-candidate-reg-espr"
+      ],
+      "locator": "Article 4(4).",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-battery-date-scope",
+      "subject": "eu-battery-passport-requirement",
+      "predicate": "has_milestone",
+      "object": {
+        "value": "2027-02-18",
+        "datatype": "date"
+      },
+      "statement": "From 18 February 2027, passports apply to LMT batteries, EV batteries, and industrial batteries with capacity greater than 2 kWh placed on the market or put into service.",
+      "source_ids": [
+        "src-candidate-reg-battery-art77"
+      ],
+      "locator": "Article 77(1).",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": "2027-02-18",
+      "valid_to": null,
+      "limitations": [
+        "Capacity threshold qualifies industrial batteries only. Individual information/access rules require separate assessment."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-detergent-transition",
+      "subject": "eu-detergent-passport-requirement",
+      "predicate": "has_status",
+      "object": {
+        "value": "Article 36 transitional routes qualify the 23 September 2029 date.",
+        "datatype": "string"
+      },
+      "statement": "Qualifying legacy products placed before 23 September 2029 may remain available indefinitely; the specified following-year route ends on 23 September 2030.",
+      "source_ids": [
+        "src-candidate-reg-detergents-transitions"
+      ],
+      "locator": "Article 36(1)–(2).",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Not an individual product compliance determination."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-toy-transition",
+      "subject": "eu-toy-passport-requirement",
+      "predicate": "has_status",
+      "object": {
+        "value": "Article 57 legacy products and certificates qualify the 1 August 2030 date.",
+        "datatype": "string"
+      },
+      "statement": "Toys lawfully placed under the prior directive before 1 August 2030 can remain available; qualifying certificates remain valid until 1 February 2031 unless they expire earlier.",
+      "source_ids": [
+        "src-candidate-reg-toys-transitions"
+      ],
+      "locator": "Article 57.",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Not a blanket exemption for products newly placed after application."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-vehicle-date",
+      "subject": "eu-vehicle-passport-requirement",
+      "predicate": "has_milestone",
+      "object": {
+        "value": "2032-09-01",
+        "datatype": "date"
+      },
+      "statement": "Article 13(1) sets 1 September 2032 for passports on covered vehicles placed on the market.",
+      "source_ids": [
+        "src-candidate-reg-vehicle-art13"
+      ],
+      "locator": "Article 13(1), distinguished from Article 59.",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": "2032-09-01",
+      "valid_to": null,
+      "limitations": [
+        "Article 2 scope exclusions remain relevant."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-eu-standardisation-proposal-2026-780-package",
+      "subject": "eu-standardisation-proposal-2026-780",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-european-product-act"
+      },
+      "statement": "Standardisation proposal is a separate European Product Act track.",
+      "source_ids": [
+        "src-candidate-reg-epa-procedure",
+        "src-update-20261025-epa-tracker",
+        "src-update-20261025-epa-eprs"
+      ],
+      "locator": "EPRS June 2026 package briefing; Commission tracker updated 7 October; OEIL procedure where applicable.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Package association does not mean component adoption."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-eu-product-act-nlf-track-package",
+      "subject": "eu-product-act-nlf-track",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-european-product-act"
+      },
+      "statement": "Planned NLF reform is a separate European Product Act track.",
+      "source_ids": [
+        "src-update-20261025-epa-tracker",
+        "src-update-20261025-epa-eprs"
+      ],
+      "locator": "EPRS June 2026 package briefing; Commission tracker updated 7 October; OEIL procedure where applicable.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Package association does not mean component adoption."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-eu-product-act-market-surveillance-track-package",
+      "subject": "eu-product-act-market-surveillance-track",
+      "predicate": "part_of",
+      "object": {
+        "entity_id": "eu-european-product-act"
+      },
+      "statement": "Planned market-surveillance reform is a separate European Product Act track.",
+      "source_ids": [
+        "src-update-20261025-epa-tracker",
+        "src-update-20261025-epa-eprs"
+      ],
+      "locator": "EPRS June 2026 package briefing; Commission tracker updated 7 October; OEIL procedure where applicable.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Package association does not mean component adoption."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-standardisation-proposed-repeal",
+      "subject": "eu-standardisation-proposal-2026-780",
+      "predicate": "has_status",
+      "object": {
+        "value": "Proposes repeal of Regulation (EU) No 1025/2012; not enacted.",
+        "datatype": "string"
+      },
+      "statement": "Procedure identifies a proposed replacement subject to the legislative process.",
+      "source_ids": [
+        "src-candidate-reg-epa-procedure"
+      ],
+      "locator": "Basic information and stage reached.",
+      "assertion_type": "source_statement",
+      "evidence_type": "official_guidance",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "No unconditional supersedes edge."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-machinery-eu",
+      "subject": "eu-machinery-regulation",
+      "predicate": "applies_to",
+      "object": {
+        "entity_id": "jur-eu"
+      },
+      "statement": "Machinery Regulation establishes EU machinery-safety requirements.",
+      "source_ids": [
+        "src-candidate-reg-machinery-art54"
+      ],
+      "locator": "Article 54.",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Adjacent regime, not a passport requirement."
+      ],
+      "interoperability": null
+    },
+    {
+      "id": "a-candidate-reg-cra-eu",
+      "subject": "eu-cyber-resilience-act",
+      "predicate": "applies_to",
+      "object": {
+        "entity_id": "jur-eu"
+      },
+      "statement": "CRA establishes EU cybersecurity requirements for covered products with digital elements.",
+      "source_ids": [
+        "src-candidate-reg-cra-art71"
+      ],
+      "locator": "Article 71.",
+      "assertion_type": "source_statement",
+      "evidence_type": "legal_text",
+      "review_status": "machine_assisted_unreviewed",
+      "observed_at": "2026-10-25",
+      "valid_from": null,
+      "valid_to": null,
+      "limitations": [
+        "Adjacent regime, not a passport requirement."
+      ],
+      "interoperability": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-candidate-reg-espr",
+      "title": "ESPR Articles 4(4) and 13 — observation 25 October 2026",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1781/oj",
+      "access_status": "search_snippet",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Indexed official passages inspected; direct full-text access challenged. Complete legal text not reviewed."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-workplan",
+      "title": "Ecodesign and Energy Labelling Working Plan 2025–2030",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0187",
+      "access_status": "search_snippet",
+      "publisher": "European Commission",
+      "source_type": "public_authority",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Official indexed section 2.2.1 table inspected. Indicative adoption years, not application dates."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-timeline",
+      "title": "Commission DPP indicative timeline — observation 25 October 2026",
+      "url": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport_en",
+      "access_status": "opened",
+      "publisher": "European Commission",
+      "source_type": "public_authority",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Same page lists service-provider rules in Q2 and Q3 2027. Conflict retained. Transition shorthand must be read against ESPR Article 4(4)."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-steel",
+      "title": "Digital Product Passport — iron and steel",
+      "url": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/iron-steel_en",
+      "access_status": "opened",
+      "publisher": "European Commission",
+      "source_type": "public_authority",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Planning page, not an adopted delegated act."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-textiles",
+      "title": "Digital Product Passport — textiles and apparel",
+      "url": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/textile-apparel_en",
+      "access_status": "opened",
+      "publisher": "European Commission",
+      "source_type": "public_authority",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Q4 2027 sector target is within the broader Q3–Q4 window. Neither establishes application."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-registry-law",
+      "title": "Implementing Regulation (EU) 2026/1778 — legal dates",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026R1778",
+      "access_status": "search_snippet",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Official indexed front matter and Article 24 inspected; direct full text challenged. 6 August 2026 is calculated from publication on 17 July and the twentieth-day rule."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-registry-launch",
+      "title": "The Digital Product Passport Registry is now live — 20 July 2026",
+      "url": "https://single-market-economy.ec.europa.eu/news/digital-product-passport-registry-now-live-2026-07-20_en",
+      "access_status": "opened",
+      "publisher": "European Commission",
+      "source_type": "public_authority",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Availability announcement; no authenticated registration, semantic-validation or recovery test performed."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-registry-guide-v103",
+      "title": "DPP Registry User Guide for Economic Operators — v1.03, 16 September 2026",
+      "url": "https://single-market-economy.ec.europa.eu/document/download/079a45e2-469f-4eec-b1e5-32e8e05d1357_en?filename=dpp_registry_user_guide_for_economic_operators.pdf",
+      "access_status": "opened",
+      "publisher": "European Commission",
+      "source_type": "public_authority",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Dated 63-page guide inspected. Its documented limitations are not a live service test on 25 October; later resolution was not established."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-battery-art77",
+      "title": "Battery Regulation Article 77 — observation 25 October 2026",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1542/ojn",
+      "access_status": "search_snippet",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Official indexed Article 77(1) scope/date inspected; direct full text challenged. Detailed information conditions/access tiers not comprehensively re-reviewed."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-construction-art80",
+      "title": "Construction Products Regulation — Article 80 conditional dates",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32024R3110",
+      "access_status": "search_snippet",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Official indexed Article 80 inspected. Product-family transitions and adoption of the trigger act require separate checking."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-detergents-transitions",
+      "title": "Detergents Regulation — Articles 36–37",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?qid=1789256683532&uri=OJ%3AL_202600405",
+      "access_status": "search_snippet",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Official indexed Articles 36–37 inspected. Article 21 detailed scope and implementing-act status not fully rechecked."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-toys-transitions",
+      "title": "Toy Safety Regulation — Articles 57 and 59",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32025R2509",
+      "access_status": "search_snippet",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Official indexed provisions inspected; not a full assessment of every exclusion or transitional case."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-vehicle-art13",
+      "title": "Vehicle Circularity Regulation — Article 13 passport application",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026R1738",
+      "access_status": "search_snippet",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Official indexed Article 13 inspected. Article 2 scope exclusions and implementing-act deadline remain separately qualified inherited evidence."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-epa-procedure",
+      "title": "Standardisation Regulation — procedure 2026/0307(COD)",
+      "url": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F0307%28COD%29",
+      "access_status": "opened",
+      "publisher": "European Parliament",
+      "source_type": "public_authority",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Procedural record inspected, not a clause-by-clause proposal review. Proposed repeal is not accomplished repeal."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-machinery-art54",
+      "title": "Machinery Regulation — corrected Article 54 date",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02023R1230-20230629",
+      "access_status": "search_snippet",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Official indexed consolidated Article 54 inspected, including corrected dates; authentic act/corrigenda govern. Adjacent safety regime, not a DPP mandate."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-cra-art71",
+      "title": "Cyber Resilience Act — Article 71 application dates",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R2847",
+      "access_status": "search_snippet",
+      "publisher": "European Union",
+      "source_type": "legal_text",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Official indexed Article 71 inspected. Cybersecurity duties, not DPP duties; actor/product scope matters."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-cra-reporting",
+      "title": "Cyber Resilience Act — reporting obligations",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting",
+      "access_status": "opened",
+      "publisher": "European Commission",
+      "source_type": "public_authority",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Official guidance distinguishes manufacturers and open-source software stewards. No platform or compliance test."
+      ]
+    },
+    {
+      "id": "src-candidate-reg-cra-implementation",
+      "title": "Cyber Resilience Act — implementation timeline",
+      "url": "https://digital-strategy.ec.europa.eu/en/factpages/cyber-resilience-act-implementation",
+      "access_status": "opened",
+      "publisher": "European Commission",
+      "source_type": "public_authority",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "Whitepaper v1.0 regulatory reconciliation, 25 October 2026"
+      ],
+      "limitations": [
+        "Main application is distinct from earlier actor-specific provisions."
+      ]
+    },
+    {
+      "id": "src-paper-global-dpp-whitepaper-v1-20261025",
+      "title": "Global Digital Product Passports: Regulation, Interoperability and Shared Evidence Infrastructure — v1.0",
+      "url": "https://spherity.github.io/spherity-research/Spherity-Research-Global-DPP-Whitepaper.pdf",
+      "access_status": "opened",
+      "publisher": "Dr. Carsten Stöcker / Spherity GmbH",
+      "source_type": "academic",
+      "language": "en",
+      "retrieved_at": "2026-10-25",
+      "dossier_files": [
+        "docs/Spherity-Research-Global-DPP-Whitepaper.pdf"
+      ],
+      "limitations": [
+        "Supplied PDF inspected locally; public URL is publication locator, not a verified live fetch.",
+        "Prepared 25 October 2026; SHA-256 92e535b89ba11b2c3ca2d20835d06dfad0c8a1401d6e00084c54607aa3fc3d87.",
+        "Author analysis and review checkpoints are not legal duties or independent human review."
+      ]
+    }
+  ],
+  "revisions": [
+    {
+      "kind": "entities",
+      "id": "eu-dpp-registry",
+      "record": {
+        "dates": [
+          {
+            "condition": null,
+            "date": "2026-07-20",
+            "kind": "available",
+            "precision": "day",
+            "source_ids": [
+              "src-eu-registry-launch"
+            ]
+          }
+        ],
+        "description": "Registry and testing environment announced available on 20 July 2026; later guide documents battery-registration and semantic-validation limitations.",
+        "evidence_status": "primary_rechecked",
+        "geography": null,
+        "id": "eu-dpp-registry",
+        "jurisdiction_ids": [
+          "jur-eu"
+        ],
+        "label": "EU Digital Product Passport Registry",
+        "limitations": [
+          "Launch is an authority announcement, not proof of service completeness.",
+          "Guide v1.03 (16 September 2026) documents then-unavailable battery registration and semantic validation. Later resolution is unverified; no current failure inferred.",
+          "Infrastructure availability does not activate every sector duty."
+        ],
+        "review_status": "machine_assisted_unreviewed",
+        "sector_ids": [
+          "sec-cross-sector"
+        ],
+        "source_ids": [
+          "src-eu-registry-launch",
+          "src-candidate-reg-registry-launch",
+          "src-candidate-reg-registry-guide-v103"
+        ],
+        "status": {
+          "value": "announced_available_documented_limitations",
+          "as_of": "2026-10-25",
+          "scope_note": "Availability announcement and dated guidance are separate; no authenticated end-to-end test performed."
+        },
+        "type": "Implementation",
+        "version": null
+      },
+      "reason": "Qualify launch wording using dated guide evidence and preserve absence of live testing.",
+      "source_ids": [
+        "src-candidate-reg-registry-launch",
+        "src-candidate-reg-registry-guide-v103"
+      ],
+      "observed_at": "2026-10-25"
+    },
+    {
+      "kind": "entities",
+      "id": "eu-registry-regulation",
+      "record": {
+        "dates": [
+          {
+            "condition": null,
+            "date": "2026-07-16",
+            "kind": "adopted",
+            "precision": "day",
+            "source_ids": [
+              "src-eu-registry-law"
+            ]
+          },
+          {
+            "condition": null,
+            "date": "2026-07-17",
+            "kind": "published",
+            "precision": "day",
+            "source_ids": [
+              "src-eu-registry-law"
+            ]
+          },
+          {
+            "kind": "entered_into_force",
+            "date": "2026-08-06",
+            "precision": "day",
+            "condition": "Calculated: twentieth day after OJ publication on 17 July 2026.",
+            "source_ids": [
+              "src-candidate-reg-registry-law"
+            ]
+          }
+        ],
+        "description": "Practical arrangements for the EU DPP registry.",
+        "evidence_status": "dossier_extracted",
+        "geography": null,
+        "id": "eu-registry-regulation",
+        "jurisdiction_ids": [
+          "jur-eu"
+        ],
+        "label": "Commission Implementing Regulation (EU) 2026/1778",
+        "limitations": [
+          "Official indexed front matter and Article 24 inspected; direct full text challenged. 6 August 2026 is calculated from publication on 17 July and the twentieth-day rule.",
+          "Official indexed passages were rechecked on 25 October 2026; full primary text was not reopened. Evidence status remains conservative under the frozen protocol."
+        ],
+        "review_status": "machine_assisted_unreviewed",
+        "sector_ids": [
+          "sec-cross-sector"
+        ],
+        "source_ids": [
+          "src-eu-registry-law",
+          "src-candidate-reg-registry-law"
+        ],
+        "status": {
+          "as_of": "2026-10-25",
+          "scope_note": "Covers ESPR and specified sector passports requiring registration.",
+          "value": "enacted_implementing_measure"
+        },
+        "type": "LegalInstrument",
+        "version": "2026/1778"
+      },
+      "reason": "Add entry into force separately from launch.",
+      "source_ids": [
+        "src-candidate-reg-registry-law"
+      ],
+      "observed_at": "2026-10-25"
+    },
+    {
+      "kind": "entities",
+      "id": "eu-battery-passport-requirement",
+      "record": {
+        "dates": [
+          {
+            "condition": null,
+            "date": "2027-02-18",
+            "kind": "applies_from",
+            "precision": "day",
+            "source_ids": [
+              "src-eu-battery-guidance"
+            ]
+          }
+        ],
+        "description": "Passports for LMT batteries, EV batteries, and industrial batteries with capacity greater than 2 kWh.",
+        "evidence_status": "primary_rechecked",
+        "geography": null,
+        "id": "eu-battery-passport-requirement",
+        "jurisdiction_ids": [
+          "jur-eu"
+        ],
+        "label": "Battery passport — Article 77",
+        "limitations": [
+          "Indexed Article 77(1) scope/date rechecked; detailed information and access-tier rules remain separately qualified."
+        ],
+        "review_status": "machine_assisted_unreviewed",
+        "sector_ids": [
+          "sec-batteries"
+        ],
+        "source_ids": [
+          "src-eu-battery-law",
+          "src-eu-battery-guidance",
+          "src-candidate-reg-battery-art77"
+        ],
+        "status": {
+          "as_of": "2026-10-25",
+          "scope_note": "The capacity threshold applies to industrial batteries; placing on market or putting into service triggers scope.",
+          "value": "enacted_future_obligation"
+        },
+        "type": "Requirement",
+        "version": "Article 77"
+      },
+      "reason": "Clarify industrial-only capacity threshold.",
+      "source_ids": [
+        "src-candidate-reg-battery-art77"
+      ],
+      "observed_at": "2026-10-25"
+    },
+    {
+      "kind": "entities",
+      "id": "eu-detergent-passport-requirement",
+      "record": {
+        "dates": [
+          {
+            "condition": null,
+            "date": "2029-09-23",
+            "kind": "applies_from",
+            "precision": "day",
+            "source_ids": [
+              "src-eu-detergents-dates"
+            ]
+          }
+        ],
+        "description": "Passport before market placement of detergent or end-user surfactant.",
+        "evidence_status": "dossier_extracted",
+        "geography": null,
+        "id": "eu-detergent-passport-requirement",
+        "jurisdiction_ids": [
+          "jur-eu"
+        ],
+        "label": "Detergent passport — Article 21",
+        "limitations": [
+          "Article 21 detailed scope not reopened; implementing act status unverified.",
+          "Article 36(1) permits qualifying legacy products placed before 23 September 2029 to remain available indefinitely. Article 36(2) permits a specified old-rule route for products placed in the following year, ending 23 September 2030."
+        ],
+        "review_status": "machine_assisted_unreviewed",
+        "sector_ids": [
+          "sec-detergents"
+        ],
+        "source_ids": [
+          "src-eu-detergents-law",
+          "src-eu-detergents-dates",
+          "src-candidate-reg-detergents-transitions"
+        ],
+        "status": {
+          "as_of": "2026-10-25",
+          "scope_note": "Normally model-level; technical details require an implementing act.",
+          "value": "enacted_future_obligation"
+        },
+        "type": "Requirement",
+        "version": "Articles 21–25; Annex VI"
+      },
+      "reason": "Add transitions without upgrading unreviewed Article 21 detail.",
+      "source_ids": [
+        "src-candidate-reg-detergents-transitions"
+      ],
+      "observed_at": "2026-10-25"
+    },
+    {
+      "kind": "entities",
+      "id": "eu-toy-passport-requirement",
+      "record": {
+        "dates": [
+          {
+            "condition": null,
+            "date": "2030-08-01",
+            "kind": "applies_from",
+            "precision": "day",
+            "source_ids": [
+              "src-eu-toys-dates"
+            ]
+          }
+        ],
+        "description": "Toy safety and compliance passport.",
+        "evidence_status": "primary_rechecked",
+        "geography": null,
+        "id": "eu-toy-passport-requirement",
+        "jurisdiction_ids": [
+          "jur-eu"
+        ],
+        "label": "Toy passport — Articles 19–22",
+        "limitations": [
+          "Article 57 legacy-product/certificate transitions apply. Specified provisions apply earlier under Article 59; not a comprehensive scope assessment."
+        ],
+        "review_status": "machine_assisted_unreviewed",
+        "sector_ids": [
+          "sec-toys"
+        ],
+        "source_ids": [
+          "src-eu-toys-law",
+          "src-eu-toys-dates",
+          "src-candidate-reg-toys-transitions"
+        ],
+        "status": {
+          "as_of": "2026-10-25",
+          "scope_note": "Toys placed on EU market; statutory exclusions remain relevant.",
+          "value": "enacted_future_obligation"
+        },
+        "type": "Requirement",
+        "version": "Articles 19–22"
+      },
+      "reason": "Add legacy-product/certificate transition qualification.",
+      "source_ids": [
+        "src-candidate-reg-toys-transitions"
+      ],
+      "observed_at": "2026-10-25"
+    },
+    {
+      "kind": "entities",
+      "id": "eu-vehicle-passport-requirement",
+      "record": {
+        "dates": [
+          {
+            "condition": null,
+            "date": "2032-09-01",
+            "kind": "applies_from",
+            "precision": "day",
+            "source_ids": [
+              "src-eu-vehicle-law"
+            ]
+          },
+          {
+            "condition": null,
+            "date": "2030-08-14",
+            "kind": "implementing_act_due",
+            "precision": "day",
+            "source_ids": [
+              "src-eu-vehicle-law"
+            ]
+          }
+        ],
+        "description": "Circularity information passport for relevant vehicles.",
+        "evidence_status": "dossier_extracted",
+        "geography": null,
+        "id": "eu-vehicle-passport-requirement",
+        "jurisdiction_ids": [
+          "jur-eu"
+        ],
+        "label": "Digital Circularity Vehicle Passport — Article 13",
+        "limitations": [
+          "Article 13(1) date rechecked through official indexed text. Article 2 exclusions and 14 August 2030 implementing-act deadline remain inherited and were not independently rechecked here."
+        ],
+        "review_status": "machine_assisted_unreviewed",
+        "sector_ids": [
+          "sec-vehicles"
+        ],
+        "source_ids": [
+          "src-eu-vehicle-law",
+          "src-candidate-reg-vehicle-art13"
+        ],
+        "status": {
+          "as_of": "2026-10-25",
+          "scope_note": "Do not apply Article 13 to heavy-duty/trailer categories excluded by Article 2.",
+          "value": "enacted_future_obligation"
+        },
+        "type": "Requirement",
+        "version": "Article 13"
+      },
+      "reason": "Add indexed date evidence without upgrading unchecked scope/deadline details.",
+      "source_ids": [
+        "src-candidate-reg-vehicle-art13"
+      ],
+      "observed_at": "2026-10-25"
+    },
+    {
+      "kind": "entities",
+      "id": "eu-espr-workplan",
+      "record": {
+        "dates": [
+          {
+            "condition": "Iron/steel delegated-act target Q4; adoption not verified.",
+            "date": "2026",
+            "kind": "planned",
+            "precision": "year",
+            "source_ids": [
+              "src-eu-timeline"
+            ]
+          },
+          {
+            "condition": "Textiles, aluminium and tyres targets Q3–Q4; adoption not verified.",
+            "date": "2027",
+            "kind": "planned",
+            "precision": "year",
+            "source_ids": [
+              "src-eu-timeline"
+            ]
+          }
+        ],
+        "description": "Commission timetable for planned sector and implementation acts.",
+        "evidence_status": "primary_rechecked",
+        "geography": null,
+        "id": "eu-espr-workplan",
+        "jurisdiction_ids": [
+          "jur-eu"
+        ],
+        "label": "ESPR indicative implementation timeline",
+        "limitations": [
+          "Targets concern adoption, not application. Individual measures are separate connected records.",
+          "Commission page lists service-provider measures in both Q2 and Q3 2027; unresolved.",
+          "No final steel act identified in targeted check; this is not proof none exists."
+        ],
+        "review_status": "machine_assisted_unreviewed",
+        "sector_ids": [
+          "sec-cross-sector"
+        ],
+        "source_ids": [
+          "src-eu-timeline",
+          "src-candidate-reg-workplan",
+          "src-candidate-reg-timeline",
+          "src-candidate-reg-steel",
+          "src-candidate-reg-textiles"
+        ],
+        "status": {
+          "as_of": "2026-10-25",
+          "scope_note": "Adoption targets are not product compliance dates.",
+          "value": "indicative_plan"
+        },
+        "type": "Policy",
+        "version": null
+      },
+      "reason": "Replace stale recheck note with source-specific observations and unresolved-quarter qualification.",
+      "source_ids": [
+        "src-candidate-reg-workplan",
+        "src-candidate-reg-timeline",
+        "src-candidate-reg-steel",
+        "src-candidate-reg-textiles"
+      ],
+      "observed_at": "2026-10-25"
+    },
+    {
+      "kind": "entities",
+      "id": "eu-european-product-act",
+      "record": {
+        "id": "eu-european-product-act",
+        "type": "Policy",
+        "label": "European Product Act — product-rules reform agenda",
+        "description": "EU reform agenda with standardisation, New Legislative Framework and market-surveillance tracks at different procedural stages.",
+        "version": null,
+        "jurisdiction_ids": [
+          "jur-eu"
+        ],
+        "sector_ids": [
+          "sec-cross-sector"
+        ],
+        "geography": null,
+        "status": {
+          "value": "policy_package_tracks_at_different_stages",
+          "as_of": "2026-10-25",
+          "scope_note": "Standardisation proposal published 6 October; product-framework/market-surveillance reforms remain planned on inspected tracker."
+        },
+        "dates": [],
+        "evidence_status": "primary_rechecked",
+        "review_status": "machine_assisted_unreviewed",
+        "source_ids": [
+          "src-update-20261025-epa-tracker",
+          "src-update-20261025-epa-commission-followup",
+          "src-update-20261025-epa-eprs",
+          "src-candidate-reg-epa-procedure"
+        ],
+        "limitations": [
+          "Package is not an enacted horizontal DPP law.",
+          "Proposed repeal is not enacted repeal.",
+          "Horizontal DPP tool is policy direction; no leaked provisions treated as requirements."
+        ]
+      },
+      "reason": "Separate package stages and preserve proposal status.",
+      "source_ids": [
+        "src-candidate-reg-epa-procedure",
+        "src-update-20261025-epa-tracker",
+        "src-update-20261025-epa-eprs"
+      ],
+      "observed_at": "2026-10-25"
+    },
+    {
+      "kind": "entities",
+      "id": "global-eg-goeic-dpp-programme",
+      "record": {
+        "id": "global-eg-goeic-dpp-programme",
+        "type": "Initiative",
+        "label": "Egypt GOEIC digital product-traceability programme",
+        "description": "Public digital inspection and product-traceability programme announced by Egypt's GOEIC with Korean support. Its planned 2025–2029 components include a DPP system for locally manufactured industrial products.",
+        "version": null,
+        "jurisdiction_ids": [
+          "jur-eg"
+        ],
+        "sector_ids": [
+          "sec-cross-sector"
+        ],
+        "geography": null,
+        "status": {
+          "value": "public_programme_announced",
+          "as_of": "2026-10-25",
+          "scope_note": "March 2025 official announcement describes a June 2025–end-2029 project schedule. Current delivery, deployment and compulsory passport requirements were not established."
+        },
+        "dates": [
+          {
+            "kind": "announced",
+            "date": "2025-03-14",
+            "precision": "day",
+            "condition": null,
+            "source_ids": [
+              "src-update-20261025-eg-goeic-programme"
+            ]
+          }
+        ],
+        "evidence_status": "dossier_extracted",
+        "review_status": "machine_assisted_unreviewed",
+        "source_ids": [
+          "src-update-20261025-eg-goeic-programme"
+        ],
+        "limitations": [
+          "A public implementation programme is not itself a legal passport obligation.",
+          "Planned system components do not establish a completed or deployed platform. No organisational link to the separate UNIDO textile pilot procurement is asserted.",
+          "The official indexed text was inspected; direct page retrieval timed out.",
+          "The official indexed page was rechecked on 25 October 2026, but direct retrieval timed out. Candidate evidence category is conservative; no full-text reopening is claimed."
+        ]
+      },
+      "reason": "Align fresh official-index access with frozen protocol: direct source was not reopened; preserve original record in candidate history.",
+      "source_ids": [
+        "src-update-20261025-eg-goeic-programme"
+      ],
+      "observed_at": "2026-10-25"
+    }
+  ],
+  "supersessions": [
+    {
+      "assertion_id": "a-eu-battery-date",
+      "replacement_ids": [
+        "a-candidate-reg-battery-date-scope"
+      ],
+      "reason": "Clarify industrial-only threshold and add indexed legal evidence.",
+      "source_ids": [
+        "src-candidate-reg-battery-art77"
+      ],
+      "observed_at": "2026-10-25"
+    },
+    {
+      "assertion_id": "a-eu-vehicle-date",
+      "replacement_ids": [
+        "a-candidate-reg-vehicle-date"
+      ],
+      "reason": "Replace dossier-only date evidence with indexed Article 13(1) observation; preserve historical claim.",
+      "source_ids": [
+        "src-candidate-reg-vehicle-art13"
+      ],
+      "observed_at": "2026-10-25"
+    }
+  ],
+  "navigation_groups": []
+}
