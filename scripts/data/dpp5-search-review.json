@@ -1,0 +1,79 @@
+{
+  "reviewed_on": "2026-11-04",
+  "source": "Google Trends Explore, visible charts and related queries",
+  "method": "Eight live comparisons. All inputs were literal search terms, not Topics. All categories. Relative normalized interest is not absolute search volume. Rounded zero or insufficient data does not mean no demand. Topic suggestions for maturity labels were unrelated, so literal search terms were retained.",
+  "evidence": [
+    {
+      "comparison": "Digital Product Passport; EU DPP Registry; European Business Wallet",
+      "input_type": "Search terms",
+      "geography": "Germany",
+      "time_range": "Past 12 months",
+      "search_type": "Web Search",
+      "url": "https://trends.google.com/trends/explore?geo=DE&q=Digital%20Product%20Passport,EU%20DPP%20Registry,European%20Business%20Wallet&hl=en",
+      "result": "Digital Product Passport has substantially more relative interest; EU DPP Registry and European Business Wallet have sparse or rounded-zero series. Rising related query: eu digital product passport (+60%)."
+    },
+    {
+      "comparison": "Digital Product Passport; EU DPP Registry; European Business Wallet",
+      "input_type": "Search terms",
+      "geography": "Germany",
+      "time_range": "Past 5 years",
+      "search_type": "Web Search",
+      "url": "https://trends.google.com/trends/explore?date=today%205-y&geo=DE&q=Digital%20Product%20Passport,EU%20DPP%20Registry,European%20Business%20Wallet&hl=en",
+      "result": "Digital Product Passport leads this comparison; specialist Registry and wallet queries have sparse data. Related DPP query is ambiguous and was not adopted as an unqualified keyword."
+    },
+    {
+      "comparison": "Digital Product Passport; EU DPP Registry; European Business Wallet",
+      "input_type": "Search terms",
+      "geography": "France",
+      "time_range": "Past 5 years",
+      "search_type": "Web Search",
+      "url": "https://trends.google.com/trends/explore?date=today%205-y&geo=FR&q=Digital%20Product%20Passport,EU%20DPP%20Registry,European%20Business%20Wallet&hl=en",
+      "result": "Digital Product Passport leads; Registry and wallet terms are sparse. Related rising searches include digital product passport eu and espr."
+    },
+    {
+      "comparison": "Digital Product Passport; EU DPP Registry; European Business Wallet",
+      "input_type": "Search terms",
+      "geography": "Netherlands",
+      "time_range": "Past 5 years",
+      "search_type": "Web Search",
+      "url": "https://trends.google.com/trends/explore?date=today%205-y&geo=NL&q=Digital%20Product%20Passport,EU%20DPP%20Registry,European%20Business%20Wallet&hl=en",
+      "result": "Digital Product Passport leads; Registry and wallet terms have insufficient related-query data. Related query: digital product passport eu."
+    },
+    {
+      "comparison": "Digital Product Passport; EU DPP Registry; European Business Wallet",
+      "input_type": "Search terms",
+      "geography": "Worldwide",
+      "time_range": "Past 5 years",
+      "search_type": "Web Search",
+      "url": "https://trends.google.com/trends/explore?date=today%205-y&q=Digital%20Product%20Passport,EU%20DPP%20Registry,European%20Business%20Wallet&hl=en",
+      "result": "Digital Product Passport leads this comparison. Related rising queries include espr, eu digital product passport (+140%) and battery passport (+90%)."
+    },
+    {
+      "comparison": "Digital Product Passport; EU DPP Registry; European Business Wallet",
+      "input_type": "Search terms",
+      "geography": "Worldwide",
+      "time_range": "Past 5 years",
+      "search_type": "News Search",
+      "url": "https://trends.google.com/trends/explore?date=today%205-y&gprop=news&q=Digital%20Product%20Passport,EU%20DPP%20Registry,European%20Business%20Wallet&hl=en",
+      "result": "News Search is sparse across the comparison. No robust news-demand ranking inferred from rounded averages."
+    },
+    {
+      "comparison": "Digital Product Passport; digitaler Produktpass; DPP5.0",
+      "input_type": "Search terms",
+      "geography": "Germany",
+      "time_range": "Past 5 years",
+      "search_type": "Web Search",
+      "url": "https://trends.google.com/trends/explore?date=today%205-y&geo=DE&q=Digital%20Product%20Passport,digitaler%20Produktpass,DPP5.0&hl=en",
+      "result": "Digital Product Passport has more relative interest than digitaler Produktpass. DPP5.0 has insufficient regional and related-query data."
+    },
+    {
+      "comparison": "Digital Product Passport; digitaler Produktpass; DPP4.0",
+      "input_type": "Search terms",
+      "geography": "Germany",
+      "time_range": "Past 5 years",
+      "search_type": "Web Search",
+      "url": "https://trends.google.com/trends/explore?date=today%205-y&geo=DE&q=Digital%20Product%20Passport,digitaler%20Produktpass,DPP4.0&hl=en",
+      "result": "Digital Product Passport has more relative interest than digitaler Produktpass. DPP4.0 has insufficient regional and related-query data."
+    }
+  ]
+}

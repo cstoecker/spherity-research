@@ -1,0 +1,298 @@
+{
+  "schema": "Spherity research media manifest, 2026-11-04",
+  "canonical_url": "https://spherity.github.io/spherity-research/eu-dpp-registry-w3c-dpp5.html",
+  "source": "EU DPP Registry, W3C Standards and DPP5.0, pages 25, 26, 27, 28 and 32",
+  "rights_notice": "Original figure artwork CC BY 4.0 except protected Spherity logos/trademarks; original full visual paper remains unchanged",
+  "figures": [
+    {
+      "id": "dpp5-ai-physical-ai-evidence",
+      "name": "Verifiable evidence for AI and Physical AI",
+      "content_url": "/assets/eu-dpp-registry-dpp5/dpp5-ai-physical-ai-evidence.svg",
+      "raster_url": "/assets/eu-dpp-registry-dpp5/dpp5-ai-physical-ai-evidence.png",
+      "alt": "Four needs for AI and physical AI: grounded answers, provenance, SHACL-based data validation and change propagation, with a fictional humanoid test-report withdrawal example.",
+      "width": 1620,
+      "height": 1720,
+      "description": "Four needs for AI and physical AI: grounded answers, provenance, SHACL-based data validation and change propagation, with a fictional humanoid test-report withdrawal example.",
+      "caption": "Semantic grounding and provenance help AI systems use attributable product evidence. SHACL validates declared data constraints, not physical safety or permission to act. The robot-release HOLD example is fictional; a real result depends on verified dependencies, current evidence and enforcement. Adapted from the visual paper, page 25.",
+      "creator_type": "Person",
+      "creator_name": "Dr. Carsten Stöcker",
+      "creator_url": "https://spherity.github.io/spherity-research/#dr-carsten-stoecker",
+      "credit_text": "Dr. Carsten Stöcker / Spherity GmbH; standalone figure adapted from the visual paper",
+      "copyright_notice": "© 2026 Dr. Carsten Stöcker, Spherity GmbH",
+      "copyright_holder": {
+        "type": "Person",
+        "name": "Dr. Carsten Stöcker",
+        "url": "https://spherity.github.io/spherity-research/#dr-carsten-stoecker"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "acquire_license_page": "https://spherity.github.io/spherity-research/eu-dpp-registry-w3c-dpp5.html#license-and-citation",
+      "keywords": [
+        "EU DPP Registry",
+        "EU DPP Register",
+        "Digital Product Passport",
+        "DPP4.0",
+        "DPP 4.0",
+        "DPP5.0",
+        "DPP 5.0",
+        "W3C",
+        "Verifiable Credentials",
+        "European Business Wallet",
+        "evidence graphs",
+        "CC BY 4.0"
+      ],
+      "downloads": [
+        {
+          "name": "Verifiable evidence for AI and Physical AI — vector PDF",
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-ai-physical-ai-evidence.pdf"
+        }
+      ],
+      "canonical_figure_url": "https://spherity.github.io/spherity-research/eu-dpp-registry-w3c-dpp5.html#dpp5-ai-physical-ai-evidence-figure",
+      "files": {
+        "svg": {
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-ai-physical-ai-evidence.svg",
+          "sha256": "ce13abada5d8869901ff90bd574b094c7a8b6f7133869fb62c214071e906b2de"
+        },
+        "png": {
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-ai-physical-ai-evidence.png",
+          "sha256": "5c2fd16c4b6e5bd69c8a1df284b4fd04d8bfd0005619c48c63f805c0987cb843"
+        },
+        "pdf": {
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-ai-physical-ai-evidence.pdf",
+          "sha256": "ab413f387fc53f88c41bf6f3977a3959101185946107d40916ecf4f9951ec18e"
+        }
+      }
+    },
+    {
+      "id": "dpp5-maturity-ladder",
+      "name": "DPP5.0 maturity ladder",
+      "content_url": "/assets/eu-dpp-registry-dpp5/dpp5-maturity-ladder.svg",
+      "raster_url": "/assets/eu-dpp-registry-dpp5/dpp5-maturity-ladder.png",
+      "alt": "Five levels of Spherity’s proposed DPP model: DPP1.0 document, DPP2.0 structured data, DPP3.0 semantics, DPP4.0 verifiable claims and DPP5.0 evidence graphs.",
+      "width": 1620,
+      "height": 1660,
+      "description": "Five levels of Spherity’s proposed DPP model: DPP1.0 document, DPP2.0 structured data, DPP3.0 semantics, DPP4.0 verifiable claims and DPP5.0 evidence graphs.",
+      "caption": "The Spherity DPP1.0–DPP5.0 maturity ladder separates documents, structured data, common semantics, verifiable claims and access-controlled evidence graphs. The EU Registry is positioned at the semantic stage for this analysis. These levels are research categories, not EU legal classifications. Adapted from the visual paper, page 26.",
+      "creator_type": "Person",
+      "creator_name": "Dr. Carsten Stöcker",
+      "creator_url": "https://spherity.github.io/spherity-research/#dr-carsten-stoecker",
+      "credit_text": "Dr. Carsten Stöcker / Spherity GmbH; standalone figure adapted from the visual paper",
+      "copyright_notice": "© 2026 Dr. Carsten Stöcker, Spherity GmbH",
+      "copyright_holder": {
+        "type": "Person",
+        "name": "Dr. Carsten Stöcker",
+        "url": "https://spherity.github.io/spherity-research/#dr-carsten-stoecker"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "acquire_license_page": "https://spherity.github.io/spherity-research/eu-dpp-registry-w3c-dpp5.html#license-and-citation",
+      "keywords": [
+        "EU DPP Registry",
+        "EU DPP Register",
+        "Digital Product Passport",
+        "DPP4.0",
+        "DPP 4.0",
+        "DPP5.0",
+        "DPP 5.0",
+        "W3C",
+        "Verifiable Credentials",
+        "European Business Wallet",
+        "evidence graphs",
+        "CC BY 4.0"
+      ],
+      "downloads": [
+        {
+          "name": "DPP5.0 maturity ladder — vector PDF",
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-maturity-ladder.pdf"
+        }
+      ],
+      "canonical_figure_url": "https://spherity.github.io/spherity-research/eu-dpp-registry-w3c-dpp5.html#dpp5-maturity-ladder-figure",
+      "files": {
+        "svg": {
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-maturity-ladder.svg",
+          "sha256": "9a7241411338009ea6fc66cf124181ce71f6b4883de0bcd21862162883f74b8a"
+        },
+        "png": {
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-maturity-ladder.png",
+          "sha256": "86aacd494d12429a723edaa5e34d5362e2803c78f58b0b2785a0a1e167e55253"
+        },
+        "pdf": {
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-maturity-ladder.pdf",
+          "sha256": "567cf0d7833e4d1a3148c8a91242e5be6ca2beb4ef7fa8cafdf3d62e7d5d43f3"
+        }
+      }
+    },
+    {
+      "id": "dpp5-definition",
+      "name": "DPP5.0: definition and seven properties",
+      "content_url": "/assets/eu-dpp-registry-dpp5/dpp5-definition.svg",
+      "raster_url": "/assets/eu-dpp-registry-dpp5/dpp5-definition.png",
+      "alt": "Seven DPP5.0 properties: graph evidence, issuer-bound verification, access control, open standards, open-world semantics, accountability and cross-organization sharing.",
+      "width": 1620,
+      "height": 1810,
+      "description": "Seven DPP5.0 properties: graph evidence, issuer-bound verification, access control, open standards, open-world semantics, accountability and cross-organization sharing.",
+      "caption": "DPP5.0 combines verifiable provenance, governed actor authority, explicit permission, extensible semantics and cross-organization evidence. A signed credential does not by itself prove truth or legal competence. This is a target definition, not an adopted EU/W3C profile. Adapted from the visual paper, page 27.",
+      "creator_type": "Person",
+      "creator_name": "Dr. Carsten Stöcker",
+      "creator_url": "https://spherity.github.io/spherity-research/#dr-carsten-stoecker",
+      "credit_text": "Dr. Carsten Stöcker / Spherity GmbH; standalone figure adapted from the visual paper",
+      "copyright_notice": "© 2026 Dr. Carsten Stöcker, Spherity GmbH",
+      "copyright_holder": {
+        "type": "Person",
+        "name": "Dr. Carsten Stöcker",
+        "url": "https://spherity.github.io/spherity-research/#dr-carsten-stoecker"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "acquire_license_page": "https://spherity.github.io/spherity-research/eu-dpp-registry-w3c-dpp5.html#license-and-citation",
+      "keywords": [
+        "EU DPP Registry",
+        "EU DPP Register",
+        "Digital Product Passport",
+        "DPP4.0",
+        "DPP 4.0",
+        "DPP5.0",
+        "DPP 5.0",
+        "W3C",
+        "Verifiable Credentials",
+        "European Business Wallet",
+        "evidence graphs",
+        "CC BY 4.0"
+      ],
+      "downloads": [
+        {
+          "name": "DPP5.0: definition and seven properties — vector PDF",
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-definition.pdf"
+        }
+      ],
+      "canonical_figure_url": "https://spherity.github.io/spherity-research/eu-dpp-registry-w3c-dpp5.html#dpp5-definition-figure",
+      "files": {
+        "svg": {
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-definition.svg",
+          "sha256": "90bf07029f87d9605e1aa74b709720b7f41974d3056a75a893d60bbc900895be"
+        },
+        "png": {
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-definition.png",
+          "sha256": "9830b3f7e7c019772b81eed7bbc6402b4a2e1fed8f01291ca9216aa032fa2949"
+        },
+        "pdf": {
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-definition.pdf",
+          "sha256": "e6a7a122b3260b9c4e7a09d78409f786da22c55dd293612032bc0ff0671f1f0d"
+        }
+      }
+    },
+    {
+      "id": "eu-dpp-registry-dpp5-gap-analysis",
+      "name": "EU DPP Registry compared with DPP5.0",
+      "content_url": "/assets/eu-dpp-registry-dpp5/eu-dpp-registry-dpp5-gap-analysis.svg",
+      "raster_url": "/assets/eu-dpp-registry-dpp5/eu-dpp-registry-dpp5-gap-analysis.png",
+      "alt": "Spherity assessment of the October 2026 EU DPP Registry package: strong common semantics and sharing, with gaps in claim-level verifiability, access policy and accountable authority.",
+      "width": 1620,
+      "height": 1760,
+      "description": "Spherity assessment of the October 2026 EU DPP Registry package: strong common semantics and sharing, with gaps in claim-level verifiability, access policy and accountable authority.",
+      "caption": "Spherity’s comparison against the technical package dated 30 October 2026. “Missing” describes absent general functionality in the Registry package, not a prohibition on operators implementing it elsewhere. The DPP + EBW convergence table below sets out additional components, governance and tests needed to address each gap. Adapted from the visual paper, page 28.",
+      "creator_type": "Person",
+      "creator_name": "Dr. Carsten Stöcker",
+      "creator_url": "https://spherity.github.io/spherity-research/#dr-carsten-stoecker",
+      "credit_text": "Dr. Carsten Stöcker / Spherity GmbH; standalone figure adapted from the visual paper",
+      "copyright_notice": "© 2026 Dr. Carsten Stöcker, Spherity GmbH",
+      "copyright_holder": {
+        "type": "Person",
+        "name": "Dr. Carsten Stöcker",
+        "url": "https://spherity.github.io/spherity-research/#dr-carsten-stoecker"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "acquire_license_page": "https://spherity.github.io/spherity-research/eu-dpp-registry-w3c-dpp5.html#license-and-citation",
+      "keywords": [
+        "EU DPP Registry",
+        "EU DPP Register",
+        "Digital Product Passport",
+        "DPP4.0",
+        "DPP 4.0",
+        "DPP5.0",
+        "DPP 5.0",
+        "W3C",
+        "Verifiable Credentials",
+        "European Business Wallet",
+        "evidence graphs",
+        "CC BY 4.0"
+      ],
+      "downloads": [
+        {
+          "name": "EU DPP Registry compared with DPP5.0 — vector PDF",
+          "url": "/assets/eu-dpp-registry-dpp5/eu-dpp-registry-dpp5-gap-analysis.pdf"
+        }
+      ],
+      "canonical_figure_url": "https://spherity.github.io/spherity-research/eu-dpp-registry-w3c-dpp5.html#eu-dpp-registry-dpp5-gap-analysis-figure",
+      "files": {
+        "svg": {
+          "url": "/assets/eu-dpp-registry-dpp5/eu-dpp-registry-dpp5-gap-analysis.svg",
+          "sha256": "332c1da9bfeddb3bb2f4132c272b796f4a7bb2e4a3f3719867f67f555b8d9074"
+        },
+        "png": {
+          "url": "/assets/eu-dpp-registry-dpp5/eu-dpp-registry-dpp5-gap-analysis.png",
+          "sha256": "7ba1cf0ec9f60a180591e324b64929cc4d7195a814d7602df22ebfb7a574f9dd"
+        },
+        "pdf": {
+          "url": "/assets/eu-dpp-registry-dpp5/eu-dpp-registry-dpp5-gap-analysis.pdf",
+          "sha256": "fbf405881742ac0dabf26ce9b0b633e3722abf0e0d9dff4882b8e1a7f903b154"
+        }
+      }
+    },
+    {
+      "id": "dpp5-w3c-trust-policy-stack",
+      "name": "Open standards stack: from semantics to organizational authority and policy",
+      "content_url": "/assets/eu-dpp-registry-dpp5/dpp5-w3c-trust-policy-stack.svg",
+      "raster_url": "/assets/eu-dpp-registry-dpp5/dpp5-w3c-trust-policy-stack.png",
+      "alt": "Five-layer proposed stack: DCAT catalogue, SKOS/SHACL/OWL meaning, JSON-LD/RDF evidence, W3C verifiable credentials/DIDs and European Business Wallet identity, and ODRL policy.",
+      "width": 1620,
+      "height": 1680,
+      "description": "Five-layer proposed stack: DCAT catalogue, SKOS/SHACL/OWL meaning, JSON-LD/RDF evidence, W3C verifiable credentials/DIDs and European Business Wallet identity, and ODRL policy.",
+      "caption": "The lower layers reflect semantic technologies present in the Commission DPP package. Credentials, organizational identity and policy are proposed extensions. EBW is a proposed EU framework, not a W3C standard; ODRL expresses policy but requires separate decision and enforcement. Adapted from the visual paper, page 32.",
+      "creator_type": "Person",
+      "creator_name": "Dr. Carsten Stöcker",
+      "creator_url": "https://spherity.github.io/spherity-research/#dr-carsten-stoecker",
+      "credit_text": "Dr. Carsten Stöcker / Spherity GmbH; standalone figure adapted from the visual paper",
+      "copyright_notice": "© 2026 Dr. Carsten Stöcker, Spherity GmbH",
+      "copyright_holder": {
+        "type": "Person",
+        "name": "Dr. Carsten Stöcker",
+        "url": "https://spherity.github.io/spherity-research/#dr-carsten-stoecker"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "acquire_license_page": "https://spherity.github.io/spherity-research/eu-dpp-registry-w3c-dpp5.html#license-and-citation",
+      "keywords": [
+        "EU DPP Registry",
+        "EU DPP Register",
+        "Digital Product Passport",
+        "DPP4.0",
+        "DPP 4.0",
+        "DPP5.0",
+        "DPP 5.0",
+        "W3C",
+        "Verifiable Credentials",
+        "European Business Wallet",
+        "evidence graphs",
+        "CC BY 4.0"
+      ],
+      "downloads": [
+        {
+          "name": "Open standards stack: from semantics to organizational authority and policy — vector PDF",
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-w3c-trust-policy-stack.pdf"
+        }
+      ],
+      "canonical_figure_url": "https://spherity.github.io/spherity-research/eu-dpp-registry-w3c-dpp5.html#dpp5-w3c-trust-policy-stack-figure",
+      "files": {
+        "svg": {
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-w3c-trust-policy-stack.svg",
+          "sha256": "fa11969900cf33c154d93c3069c9cd100c6a47fb72a83bd6565e2c3acef7f9f2"
+        },
+        "png": {
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-w3c-trust-policy-stack.png",
+          "sha256": "25895446cb806bd6e0f54f3b06b25198bb440acd9f74a6ba451ffedc245a8d3c"
+        },
+        "pdf": {
+          "url": "/assets/eu-dpp-registry-dpp5/dpp5-w3c-trust-policy-stack.pdf",
+          "sha256": "ee0fdafb35873464bf5de9f465807adfe5ecd78af82cbe2190a8e35f69ea8207"
+        }
+      }
+    }
+  ]
+}

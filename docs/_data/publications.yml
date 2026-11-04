@@ -1,3 +1,35 @@
+- title: EU DPP Registry, W3C Standards and DPP5.0
+  publication_type: paper
+  type: Visual research paper · W3C semantic stack and verifiable DPP evidence
+  date_label: 3 November 2026
+  date_iso: '2026-11-03'
+  description: The EU DPP Registry technical stack, W3C semantics, DPP4.0 / DPP5.0 maturity, and a proposed DPP + EBW trust architecture.
+  byline: Dr. Carsten Stöcker · Spherity GmbH
+  topics:
+  - DPP & DBP
+  - Evidence graphs
+  - Identity
+  filters: dpp identity wallets infrastructure ai
+  search: eu dpp registry eu dpp register digital product passport register registry dpp4.0 dpp 4.0 dpp5.0 dpp 5.0 dpp maturity model
+    w3c semantics json-ld rdf skos shacl sparql owl xsd dcat dcat-ap eu digital product passport registry semantic data guide implementing
+    regulation 2026/1778 espr digitaler produktpass digitales produktregister europäisches unternehmenswallet ebw european business
+    wallet legal person identity verifiable credentials verifiable evidence graph data provenance product passport battery passport
+    policy odrl ai physical ai carsten stöcker carsten stoecker spherity
+  image: /assets/preview-eu-dpp-registry-w3c-dpp5.webp
+  image_alt: EU DPP Registry and DPP5.0 research with W3C semantic standards and a visual-paper cover.
+  image_width: 1200
+  image_height: 630
+  media_class: card-media-wide
+  format: HTML overview + 36-page PDF + figures
+  links:
+  - label: Explore the research
+    url: /eu-dpp-registry-w3c-dpp5.html
+    arrow: →
+  - label: Download visual paper
+    url: /Spherity_Research_EU_DPP_Registry_W3C_Standards_DPP5.0.pdf
+    arrow: ↓
+    secondary: true
+
 - title: Europe’s answer to Palantir
   type: Two research papers · Interactive evidence graph
   date_label: Papers 1.0 · 1 November 2026
