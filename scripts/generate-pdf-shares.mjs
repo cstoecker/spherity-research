@@ -1,3 +1,4 @@
+import {dpp5PaperPath, loadDpp5ImageMetadata} from "./lib/dpp5-image-metadata.mjs";
 import { access, mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
@@ -16,7 +17,7 @@ const siteDirectory = path.resolve(option("--site-dir", "_site"));
 const { config, records } = await loadPdfShares(sourceDirectory);
 const dppImageMetadata = records.some(record => record.pagePath === dppPaperPath)
   ? await loadDppImageMetadata(sourceDirectory) : {};
-const imageMetadata = {...dppImageMetadata, ...(records.some(record => record.pagePath === ebwPaperPath)
+const imageMetadata = {...dppImageMetadata, ...(records.some(record => record.pagePath === dpp5PaperPath) ? await loadDpp5ImageMetadata(sourceDirectory) : {}), ...(records.some(record => record.pagePath === ebwPaperPath)
   ? await loadEbwImageMetadata(sourceDirectory) : {}), ...(records.some(record => palantirPages.includes(record.pagePath))
   ? await loadPalantirImageMetadata(sourceDirectory) : {})};
 const escape = (value) => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;")

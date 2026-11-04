@@ -1,3 +1,4 @@
+import {dpp5PaperPath, loadDpp5ImageMetadata} from "./lib/dpp5-image-metadata.mjs";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -17,7 +18,7 @@ const publicationsPath = path.join(sourceDirectory, "_data", "publications.yml")
 const manifest = parseYaml(await readFile(manifestPath, "utf8"));
 const dppImageMetadata = manifest.some(card => card.publication_url === dppPaperPath)
   ? await loadDppImageMetadata(sourceDirectory) : {};
-const imageMetadata = {...dppImageMetadata, ...(manifest.some(card => card.publication_url === ebwPaperPath)
+const imageMetadata = {...dppImageMetadata, ...(manifest.some(card => card.publication_url === dpp5PaperPath) ? await loadDpp5ImageMetadata(sourceDirectory) : {}), ...(manifest.some(card => card.publication_url === ebwPaperPath)
   ? await loadEbwImageMetadata(sourceDirectory) : {}), ...(manifest.some(card => palantirPages.includes(card.publication_url))
   ? await loadPalantirImageMetadata(sourceDirectory) : {})};
 const publications = parseYaml(await readFile(publicationsPath, "utf8"));

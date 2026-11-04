@@ -1,3 +1,22 @@
+- publication_url: /eu-dpp-registry-w3c-dpp5.html
+  output: /assets/preview-eu-dpp-registry-w3c-dpp5.webp
+  style: research-grid-v1
+  mode: generated
+  format_label: RESEARCH PAPER · DPP + W3C
+  title_size: 44
+  title_lines:
+  - EU DPP Registry
+  - and DPP5.0
+  subtitle_size: 25
+  subtitle_lines:
+  - W3C standards & trust
+  deck_lines:
+  - From semantic product data to
+  - verifiable evidence and EBW.
+  byline: Dr. Carsten Stöcker · Spherity GmbH
+  visual: /assets/eu-dpp-registry-dpp5-cover.jpg
+  visual_fit: contain
+
 - publication_url: /europes-answer-to-palantir.html
   output: /assets/preview-europes-answer-to-palantir.webp
   style: research-grid-v1

@@ -154,6 +154,13 @@ layout: default
       <p>This is an unpublished local preview. Public sharing will become available after publication.</p>
       {% endif %}
 
+      {% if page.abstract_before_toc and page.abstract %}
+      <section class="abstract-box" aria-labelledby="abstract">
+        <h2 id="abstract">Abstract</h2>
+        <p>{{ page.abstract | escape }}</p>
+      </section>
+      {% endif %}
+
       {% if page.toc_items %}
       <details class="mobile-article-nav">
         <summary>Browse this {% if page.paper_in_preparation or page.dpp_paper %}paper page{% elsif page.publication_type == "atlas" %}atlas{% else %}paper{% endif %}</summary>
