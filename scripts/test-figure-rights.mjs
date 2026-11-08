@@ -98,3 +98,19 @@ test("an explicit organization holder may differ from the creator", async () => 
   assert.deepEqual(json.copyrightHolder, { "@type": "Organization", name: "Example rights holder", url: "https://example.org/" });
   assert.equal(json.creator["@type"], "Person");
 });
+
+test("figure distributions link matching SVG, PNG and PDF formats in visible and structured output", async () => {
+  const distributions = [
+    { label: "SVG", url: "/assets/figure.svg", encoding_format: "image/svg+xml" },
+    { label: "PNG", url: "/assets/figure.png", encoding_format: "image/png" },
+    { label: "PDF", url: "/assets/figure.pdf", encoding_format: "application/pdf" }
+  ];
+  const { json, visible } = await render(fixture({ distributions }));
+  assert.equal(json.encoding.length, 3);
+  for (const [index, item] of distributions.entries()) {
+    assert.equal(json.encoding[index].contentUrl, origin + item.url);
+    assert.equal(json.encoding[index].encodingFormat, item.encoding_format);
+    assert.equal(json.encoding[index].license, pageLicense);
+    assert.ok(visible.includes(`href="/spherity-research${item.url}" download>${item.label}</a>`));
+  }
+});

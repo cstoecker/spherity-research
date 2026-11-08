@@ -1,0 +1,27 @@
+/* Article-scoped additions to the shared research typography. */
+.safety-actions{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;margin:1.5rem 0}
+.safety-download{display:inline-block;background:#075e52;color:#fff!important;padding:.85rem 1.15rem;border-radius:.35rem;font-weight:700;text-decoration:none}
+.safety-download:hover,.safety-download:focus-visible{background:#044c43;text-decoration:underline}
+.safety-proposition{background:#f0f4f2;border:1px solid #dce7e1;border-radius:.6rem;padding:1.25rem 1.5rem;margin:2rem 0}
+.safety-proposition h2{margin-top:0!important}
+.safety-table-scroll{max-width:100%;overflow-x:auto;margin:1.5rem 0;scroll-margin-top:2rem}
+.safety-table-scroll table{width:100%;border-collapse:collapse;font-size:.95rem;line-height:1.5}
+.safety-table-scroll caption{text-align:left;font-weight:600;padding:0 0 .75rem;color:#253b35}
+.safety-table-scroll th,.safety-table-scroll td{vertical-align:top;text-align:left;padding:.8rem;border-bottom:1px solid #dce5e0}
+.safety-table-scroll thead th{background:#edf3ef}
+.safety-table-scroll tbody th{font-weight:500}
+.safety-assurance-pair{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:1.25rem;align-items:center}
+.safety-assurance-pair>*{min-width:0}
+.safety-assurance-pair .paper-figure{margin:1rem 0}
+.figure-downloads{font-size:.92rem;display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.figure-downloads a{padding:.35rem .5rem;min-height:24px}
+#figure-4-ai-safety-atlas-figure{padding:1rem;background:#f7faf8;border:1px solid #dbe6df;border-radius:.5rem}
+.safety-references{padding-left:2.25rem;overflow-wrap:anywhere}
+.safety-references li{padding-left:.35rem;margin-bottom:1rem;scroll-margin-top:2rem}
+.safety-references li:target{background:#fff5cf}
+.safety-copyright{font-size:.9rem;margin:2rem 0}
+.safety-atlas-key{background:#f7faf8;border:1px solid #dbe6df;border-radius:.5rem;padding:1.25rem;margin:1.25rem 0 2rem}
+.safety-atlas-key dt{font-weight:700;margin-top:.6rem}.safety-atlas-key dd{margin-left:0}
+.safety-atlas-key summary{cursor:pointer;font-weight:700;padding:.75rem 0}
+@media(max-width:1100px){.safety-assurance-pair{grid-template-columns:1fr}.safety-assurance-pair .paper-figure{max-width:560px;margin-inline:auto}}
+@media(max-width:600px){.safety-table-scroll table{min-width:560px}.safety-proposition{padding:1rem}.safety-actions{align-items:stretch;flex-direction:column}#figure-4-ai-safety-atlas-figure{padding:.25rem}.figure-downloads{gap:.35rem}}

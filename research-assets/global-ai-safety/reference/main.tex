@@ -1,0 +1,116 @@
+\RequirePackage{iftex}
+\ifPDFTeX\pdfoutput=1\relax\fi
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf
+  ]
+\fi
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx,xcolor}
+\usepackage{booktabs,longtable,array,tabularx}
+\usepackage{ragged2e}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{placeins}
+\usepackage{cite}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage{hyperxmp}
+\usepackage{bookmark}
+
+\newcolumntype{P}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\setlength{\emergencystretch}{3em}
+\raggedbottom
+\urlstyle{same}
+
+\newcommand{\PaperTitle}{Top 10 Global AI Safety Companies}
+\newcommand{\PaperSubtitle}{With 10 leading R\&D institutes and foundations}
+\newcommand{\PaperAuthor}{Dr. Carsten Stöcker}
+\newcommand{\PaperAffiliation}{Spherity GmbH}
+\newcommand{\PaperYear}{2026}
+\newcommand{\PaperRightsHolders}{\PaperAuthor, \PaperAffiliation}
+\newcommand{\PaperKeywords}{AI safety, runtime assurance, verifiable credentials, evidence graphs, business wallets, agent authorization}
+\newcommand{\LicenseURL}{https://creativecommons.org/licenses/by/4.0/}
+
+\hypersetup{
+  pdftitle={\PaperTitle},
+  pdfauthor={\PaperAuthor},
+  pdfsubject={Technology Outlook 2026. Global AI safety disciplines, company and research organization selections, and cryptographic runtime assurance.},
+  pdfkeywords={\PaperKeywords},
+  pdfcopyright={Copyright \PaperYear\space \PaperRightsHolders. Except where otherwise noted, this work is licensed under CC BY 4.0.},
+  pdflicenseurl={\LicenseURL},
+  pdfdisplaydoctitle=true
+}
+
+\addto\captionsenglish{\renewcommand{\contentsname}{Table of Contents}}
+\setcounter{tocdepth}{1}
+
+\newcommand{\LicenseBlock}{%
+  \par\medskip
+  \begin{minipage}{0.94\textwidth}
+    \centering
+    \href{\LicenseURL}{\includegraphics[width=2.35cm,keepaspectratio]{assets/cc-by-4.0.png}}\par
+    \vspace{0.15em}
+    {\footnotesize Except where otherwise noted, this work is licensed under the
+    \href{\LicenseURL}{Creative Commons Attribution 4.0 International License (CC BY 4.0)}.
+    \textcopyright{} \PaperYear\ \PaperRightsHolders.\par}
+  \end{minipage}\par
+}
+
+\begin{document}
+\begin{center}
+  {\small\bfseries\color{black!72} SPHERITY RESEARCH \,/\, TECHNOLOGY OUTLOOK 2026\par}
+  \vspace{0.85em}
+  {\LARGE\bfseries \PaperTitle\par}
+  \vspace{0.35em}
+  {\large \PaperSubtitle\par}
+  \vspace{0.25em}
+  {\normalsize\itshape A comparative framework for model reliability, bounded execution and verifiable assurance across organizations\par}
+  \vspace{0.55em}
+  {\normalsize\bfseries \PaperAuthor\par}
+  \vspace{-0.25em}
+  {\normalsize \PaperAffiliation, Germany\par}
+  \vspace{0.3em}
+  {\small\color{black!78} Revised edition 2.6 \enspace\textbullet\enspace Evidence cut-off 8 November 2026\par}
+  \LicenseBlock
+\end{center}
+
+\pdfbookmark[1]{The 2027 Proposition}{proposition}
+\begingroup
+  \setlength{\fboxsep}{0.9em}
+  \noindent\colorbox{black!7}{%
+    \begin{minipage}{\dimexpr\linewidth-2\fboxsep\relax}
+      {\small\bfseries THE 2027 PROPOSITION\par}
+      As AI agents move from giving advice to taking consequential actions, we expect safety to become a defining condition for deployment in 2027. Improving model reliability, validating and monitoring systems, isolating workloads, and enforcing deterministic controls for safe intervention must work together. Trust chains and cryptographically verifiable assurance graphs let organizations check who issued evidence, whether it has changed, and who delegated authority. At the point of action, controllers can verify the scope and current status of that authority, including revocation.
+    \end{minipage}%
+  }\par
+\endgroup
+
+\begin{abstract}
+As AI systems acquire tools and delegated authority, improving their behavior and controlling their effects become distinct safety tasks. This paper develops a four-part framework that separates design and qualification from live operation, and model or system behavior from external actions. It applies the framework to a purposive selection of ten companies and examines the complementary work of ten research organizations. Public evidence shows different concentrations in frontier evaluation, application monitoring, and execution controls. Cryptographic verifiability can connect these activities by preserving the provenance, meaning and status of evidence, while each relying party remains responsible for deciding whether that evidence authorizes an action.
+
+Spherity is the sole small-company selection. Its specialization combines registry-anchored organizational authority and semantic assurance graphs with proposed runtime checks and revocation. An aerospace maintenance example illustrates how a supervisor can evaluate sector, company and use-case requirements against the exact action. The analysis distinguishes operating trust infrastructure, documented tests and proposed integration. The selections describe evidenced contributions within a defined sample.
+\end{abstract}
+
+\noindent\textbf{Keywords.} \PaperKeywords
+
+\clearpage
+\pdfbookmark[1]{Table of Contents}{contents}
+\tableofcontents
+\clearpage
+
+\input{body}
+\input{references}
+\end{document}

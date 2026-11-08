@@ -1,3 +1,22 @@
+- publication_url: /top-10-global-ai-safety-companies-2026.html
+  output: /assets/preview-global-ai-safety-2026.webp
+  style: research-grid-v1
+  mode: generated
+  format_label: TECHNOLOGY OUTLOOK · EDITION 2.6
+  title_size: 44
+  title_lines:
+  - Top 10 Global
+  - AI Safety Companies
+  subtitle_size: 25
+  subtitle_lines:
+  - Research, controls & assurance
+  deck_lines:
+  - Ten companies. Ten research bodies.
+  - Five disciplines. One global Atlas.
+  byline: Dr. Carsten Stöcker · Spherity GmbH
+  visual: /assets/global-ai-safety/paper-cover.png
+  visual_fit: contain
+
 - publication_url: /eu-dpp-registry-w3c-dpp5.html
   output: /assets/preview-eu-dpp-registry-w3c-dpp5.webp
   style: research-grid-v1

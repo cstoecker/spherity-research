@@ -1,0 +1,467 @@
+% Semantically converted from the v2.6 source manuscript.
+
+\section*{The two selections}
+\phantomsection
+\addcontentsline{toc}{section}{The two selections}
+
+The company list spans frontier developers, infrastructure providers, enterprise assurance and organizational trust. The research list spans eight countries. Each column is alphabetical. Table~\ref{tab:selections} summarizes the cases.
+
+\begin{table}[!htbp]
+  \centering
+  \caption{Selected companies and research organizations.}
+  \label{tab:selections}
+  \small
+\begin{tabularx}{\linewidth}{@{}>{\RaggedRight\arraybackslash}X>{\RaggedRight\arraybackslash}X@{}}
+\toprule
+\textbf{Company and main contribution} & \textbf{R\&D organization and main contribution} \\
+\midrule
+\textbf{Alibaba Group / Alibaba Cloud}\newline Multilingual model safeguards & \textbf{AI Verify Foundation}\newline Application testing and assurance \\[0.35em]
+\textbf{Amazon / AWS}\newline Agent gateway policy and guardrails & \textbf{Australian AI Safety Institute}\newline Scalable oversight \\[0.35em]
+\textbf{Anthropic}\newline Risk thresholds and frontier safeguards & \textbf{Beijing Academy of Artificial Intelligence}\newline Model evaluation and safety research \\[0.35em]
+\textbf{Google DeepMind / Alphabet}\newline Frontier capability evaluations & \textbf{Fraunhofer IAIS}\newline Industrial AI assessment \\[0.35em]
+\textbf{Meta}\newline Frontier release governance and safety tools & \textbf{Japan AI Safety Institute}\newline AI and agent evaluation guidance \\[0.35em]
+\textbf{Microsoft}\newline Enterprise risk management and red teaming & \textbf{Mila / Quebec AI Institute}\newline Open safeguards and safety research \\[0.35em]
+\textbf{NTT Group / NTT DATA}\newline Enterprise AI assurance and protection & \textbf{MLCommons}\newline Comparable safety benchmarks \\[0.35em]
+\textbf{NVIDIA}\newline Agent sandboxing and runtime policy & \textbf{NIST CAISSI}\newline Frontier evaluation and standards research \\[0.35em]
+\textbf{OpenAI}\newline Preparedness and release governance & \textbf{Stanford HAI and CRFM}\newline Public measurement and evaluation \\[0.35em]
+\textbf{Spherity}\newline Cross-company identity, authority and evidence & \textbf{UK AI Security Institute}\newline Frontier evaluations and open tooling \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The research organizations contribute assessment and evaluation capacity. They are discussed separately from the company activity map. Figure~\ref{fig:ai-safety-atlas} maps both groups in the AI Safety Atlas.
+
+\FloatBarrier
+
+\section{Introduction}
+\label{sec:introduction}
+
+A safety claim about an AI model answers a different question from a decision to let an AI system change a record, place an order or propose a maintenance deviation.
+
+Model evaluation can establish that a specified failure occurred under a reproducible test. The same evaluation leaves open what a deployed system can reach through its tools, who delegated authority to use those tools, and whether a counterparty has current evidence for the exact action. A network boundary can block an unauthorized connection. A protected controller can reject a request that violates a rule. When a supplier, registry, laboratory or customer supplies evidence for that rule, the relying party must additionally decide what the evidence means, who issued it, and whether the issuer had authority for that scope.~\cite{src1,src2,src3}
+
+This paper asks three questions. First, which disciplines address these distinct failure modes, and where do they overlap? Second, what do the documented activities of ten companies reveal about the distribution of those disciplines? Third, how can evidence from several organizations support a runtime decision without giving an AI agent control of its own authorization?
+
+The first contribution is a two-axis model that places five disciplines across four domains of work and treats cryptographic verifiability as a common evidence mechanism. The second is a case-coded comparison of ten companies, accompanied by a separate landscape of research organizations. The third is an analysis of registry-backed authority and semantic assurance graphs at the point of execution, illustrated by a hypothetical aerospace maintenance workflow. This extends the German technology outlook's treatment of complementary capabilities and cross-company trust to a global AI safety landscape.~\cite{src4,src5,src6}
+
+\subsection{From evidence to a decision}
+
+An audit trail created after an effect helps investigators reconstruct what happened. A verified record can also change the decision before the effect occurs. If a mandated approval has been withdrawn, an independent controller can stop a pending action even when the model recommends proceeding. If a valid credential refers to a superseded component or a different operating configuration, the same controller can require a fresh review. The value comes from linking the evidence to a control that can intervene, with timing and enforcement designed around the consequence.~\cite{src2,src5,src7,src8}
+
+\section{Scope and selection method}
+\label{sec:scope-and-method}
+
+This is a comparative landscape study. Its unit of analysis is an evidenced safety activity, grouped by organization for presentation.
+
+\subsection{Case selection}
+
+AI safety includes work that reduces harmful or unreliable behavior, misuse and loss of control, or the consequences of AI-mediated actions. The company cases were selected purposively for the importance of the risk addressed, specificity of public evidence, operational reach and contribution to distinct disciplines. Frontier developers qualify through deployment at scale. Large divisions are grouped with their parent companies. Spherity is the single size exception, selected for its specialization in authority and evidence across organizations. The research organizations were selected for institutional remit, named public outputs, relevance beyond their own deployments and coverage of different research functions and jurisdictions.~\cite{src1,src3,src4}
+
+\subsection{Evidence and activity coding}
+
+Public frameworks, research, technical documentation, independent assessments, and government or counterparty records were reviewed to 8 November 2026. Evidence is described by what it establishes. A framework documents a process, a service document describes an available capability within its stated scope, a report can establish a test or incident, and a manuscript can establish a proposed design. Spherity's company-supplied statements are identified separately.
+
+For each company, one primary quadrant captures the selected contribution most clearly supported by the cited material. Additional quadrants are coded where a specific adjacent activity is documented. Placement concerns the function of the named activity, including the stage at which it acts and whether its immediate object is behavior or an external effect. The code carries an evidence label where the selected activity is a research or integration design. Unmarked cells indicate the scope of the reviewed evidence. The coding is qualitative, with no composite score or weighting.
+
+\subsection{Interpretive limits}
+
+The study compares visible activities under different disclosure regimes. An evaluation covers its test conditions, and products or governance programs can span multiple quadrants. A single editorial coding provides a reproducible reading rule for the cited material. A larger comparative study could pre-register inclusion rules and have independent reviewers code the cases. The author is affiliated with Spherity GmbH, and the selection and interpretation of its case reflect that affiliation.
+
+\section{AI safety disciplines}
+\label{sec:disciplines}
+
+The framework separates when a control acts from what it acts on. The columns distinguish design and qualification from live operation. The rows distinguish behavior from external actions and effects. Figure~\ref{fig:disciplines} shows the four resulting domains.
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{figures/fig01_disciplines.png}
+  \caption{Four domains of AI safety activity. The center represents cryptographic verifiability as a shared evidence mechanism. Validation extends from pre-release testing to operational measurement, and deterministic control extends from design to enforcement. The quadrants describe functions, with no implied hierarchy.}
+  \label{fig:disciplines}
+\end{figure}
+
+The same component can occupy multiple cells. A guardrail that screens generated text observes or filters behavior in B. A gateway that denies a tool call prevents an effect in D. Designing the gateway's boundary and allowed routes belongs to C. The shift from B to D is a change in what the control can prevent. Which cell applies depends on where the control sits and what it can enforce.~\cite{src3,src9,src10,src11}
+
+Cryptographic verifiability can preserve test provenance in A, authenticate observations in B, bind approved policy and configuration in C, and supply authority and evidence for an action decision in D. The required proof strength depends on the consequence and who needs to rely on the evidence.~\cite{src6,src12,src13}
+
+\subsection{Safety mechanisms and failure modes}
+
+The five disciplines address different causes of harm. Their outputs become useful assurance evidence when a relying party can establish the conditions under which they were produced. Table~\ref{tab:mechanisms} summarizes their functions and evidence.
+
+\begin{table}[!htbp]
+  \centering
+  \caption{AI safety disciplines and the evidence they produce.}
+  \label{tab:mechanisms}
+  \small
+\begin{tabularx}{\linewidth}{@{}P{0.26\linewidth}>{\RaggedRight\arraybackslash}X@{}}
+\toprule
+\textbf{Discipline} & \textbf{Function and assurance evidence} \\
+\midrule
+Model and system reliability improvement & Changes model or system behavior through training, alignment, engineering and correction of known failure modes. Compare baselines and regressions under named workloads and operational conditions. \\[0.35em]
+Model and system validation and monitoring & Tests a release or configuration against requirements and observes operation for drift, misuse or unexpected effects. Record test scope, model or configuration versions, coverage, thresholds and intervention outcomes. \\[0.35em]
+Air gapping and isolation & Reduces reachability. A physical air gap removes physical connectivity and uses controlled transfers. Logical isolation uses segmentation, sandboxing and default-deny access. Verify actual data paths, updates, administrative access and bypass routes. \\[0.35em]
+Deterministic controllers & Evaluate specified policy against defined inputs and state before an effect. Show that relevant effects pass through the control, verify decision logic, and measure handling of faults, races and fallback. Determinism makes the rule repeatable given the same inputs and state. \\[0.35em]
+Trust chaining and assurance graphs & Connect accepted requirements and observed evidence to their authorized sources. At runtime verify the dependency path, scope, binding, current status and revocation, and record the reason for intervention or release. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Sources for control design and terminology include NIST's AI Risk Management Framework and air-gap definition, aviation runtime assurance guidance, and the evidence-graph manuscript.~\cite{src3,src6,src14,src15}
+
+An isolated environment can still process harmful data, and a deterministic controller can enforce an incomplete rule. Validation therefore needs to examine both the expected behavior and the ways effects can bypass the intended boundary. Where fresh external evidence is required, an air-gapped design must specify a trusted update path, a maximum evidence age and behavior when updates lapse. These are operating constraints on the assurance claim.~\cite{src7,src14,src15}
+
+\subsection{Verifiable assurance graphs}
+
+An assurance graph connects a claim to the evidence and authority on which a decision depends. Its edges can represent applicability, provenance, delegation, qualification, dependencies or permitted exceptions.
+
+\subsubsection{From sector rules to use case controls}
+
+A usable graph combines sector requirements, company compliance and quality rules, and controls for the specific use case. A sector node might identify an applicable aerospace requirement and version. A company node can link it to a quality procedure, validation record and approved supplier. A use-case node can bind the allowed action to a part, configuration, operating envelope or approval window. The organization that controls the resource defines which evidence satisfies each requirement and how conflicts or exceptions are resolved.~\cite{src6,src8,src15,src16,src17} Table~\ref{tab:assurance-levels} and Figure~\ref{fig:assurance-types} distinguish what each type of claim can establish.
+
+\begin{figure}[!htbp]
+  \centering
+  \begin{minipage}[c]{0.58\linewidth}
+    \captionof{table}{Assurance levels for individual claims.}
+    \label{tab:assurance-levels}
+    \small
+    \setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{@{}cP{0.27\linewidth}>{\RaggedRight\arraybackslash}X@{}}
+\toprule
+\textbf{Type} & \textbf{Assurance level} & \textbf{What the relying party can establish} \\
+\midrule
+Q & Qualified \mbox{authority} & An eligible, validated attestation can establish scoped authority under the applicable legal scheme. \\[0.35em]
+E & Issuer-authenticated evidence & A proof verifies source and integrity of the covered claim. Policy checks issuer role, applicability, validity and status. \\[0.35em]
+U & Self-asserted information & The assertion can support discovery or local context where policy permits. The relying party can seek corroboration. \\
+\bottomrule
+\end{tabularx}
+  \end{minipage}\hfill
+  \begin{minipage}[c]{0.39\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/fig02_assurance-types.png}
+  \end{minipage}
+  \caption{Assurance types for linked claims. Shared RDF and JSON-LD semantics can link claims with different issuer, proof and status requirements. The relying party checks each claim against the applicable rules. The three types classify claims, and the graph can contain a mix of types.~\cite{src6,src12,src13,src19,src21,src22,src23}}
+  \label{fig:assurance-types}
+\end{figure}
+
+\subsubsection{What survives aggregation}
+
+RDF and JSON-LD give statements shared identifiers and interpretable terms. With an agreed profile, graph-domain proofs can be reverified after aggregation if the original credential quads, graph positions and proof inputs are recoverable. A source-backed envelope can support the same relying-party workflow by retaining the authenticated artefact and relevant disclosures, and validating their mapping to the graph. Merging datasets requires preserved source boundaries and pinned vocabulary and context versions. Proof verification authenticates a scoped assertion. Truth, completeness, issuer competence and authority require separate evidence and policy checks.~\cite{src6,src12,src13,src18,src19}
+
+\subsection{Runtime verification and revocation}
+
+\subsubsection{An action decision uses the current evidence path}
+
+At the point of commitment, an independent controller admits the exact action only if it is mediated, covered by a current delegation, and supported by the required evidence for the subject, configuration and conditions. It resolves only the policy's required dependency path. A valid signature on a document from an issuer does not establish the issuer's right to grant the requested authority. Each required edge has to satisfy its own issuer, scope and status rules.~\cite{src2,src5,src6,src12}
+
+The controller can verify stable evidence at ingestion or update, then re-evaluate affected dependencies, current mandate status and the exact action at commitment within a defined freshness budget. Shared limits must be reserved consistently across agents. An audit receipt can bind the canonical action, policy version, evidence snapshots and outcome. Revocation blocks future or pending effects where the enforcement path can still intervene. Completed effects require a separately authorized remedy or escalation.~\cite{src5,src7,src20}
+
+The graph manuscript's threat model shows why stronger credentials should be applied where they can change the outcome. If substituting one accepted authority credential would alone change the decision, the cost of that feasible substitution places an upper bound on the modeled decision assurance. A weaker content dependency or a joint attack can also determine that bound. This directs review toward dependencies on which the decision actually turns.~\cite{src6}
+
+Where applicable, Article 14(4)(e) of the EU AI Act addresses human intervention and interruption to a safe state in high-risk AI systems. NIST's AI Risk Management Framework calls for assigned responsibility and mechanisms for disengagement or deactivation. Section~\ref{sec:spherity} applies these principles to the proposed kill switch.~\cite{src3,src98}
+
+\subsubsection{Qualified authority and semantic interoperability}
+
+Under eIDAS, qualified electronic attestations of attributes and in-scope public-sector attestations have specified legal effects. Company data and powers of representation are among the authentic-source categories in Annex VI. The current EUDI Wallet issuance references for the categories studied use specified SD-JWT VC and mdoc profiles. A graph-proof profile eligible for qualified issuance is a standards proposal in the manuscript. The European Business Wallet proposal's treatment of linked attestations and mandates provides the policy context. Other jurisdictions require their own issuer and legal-recognition rules.~\cite{src6,src21,src22,src23,src24}
+
+\FloatBarrier
+
+\section{Company activities mapped to the model}
+\label{sec:company-activities}
+
+Figure~\ref{fig:company-activities} codes the selected public contribution for each company. The case descriptions on the following pages provide the evidence behind each placement.
+
+\begin{figure}[!htbp]
+  \centering
+  % The embedded image is unchanged except for the replaced citation labels.
+  \setlength{\unitlength}{\dimexpr\linewidth/1920\relax}
+  \begin{picture}(1920,1120)
+    \put(0,0){\includegraphics[width=\linewidth]{figures/fig03_company-activities.png}}
+    \put(1692,948){\makebox(0,0)[l]{\scriptsize \cite{src29,src30}}}
+    \put(1692,854){\makebox(0,0)[l]{\scriptsize \cite{src9,src10}}}
+    \put(1692,760){\makebox(0,0)[l]{\scriptsize \cite{src31,src32,src33}}}
+    \put(1692,666){\makebox(0,0)[l]{\scriptsize \cite{src26,src34}}}
+    \put(1692,572){\makebox(0,0)[l]{\scriptsize \cite{src35,src36}}}
+    \put(1692,478){\makebox(0,0)[l]{\scriptsize \cite{src27,src38}}}
+    \put(1692,384){\makebox(0,0)[l]{\scriptsize \cite{src39,src40}}}
+    \put(1692,290){\makebox(0,0)[l]{\scriptsize \cite{src11,src25,src41}}}
+    \put(1692,196){\makebox(0,0)[l]{\scriptsize \cite{src43,src44,src45}}}
+    \put(1692,102){\makebox(0,0)[l]{\scriptsize \cite{src5,src6,src28}}}
+  \end{picture}
+  \caption{Qualitative placement of ten company cases. Filled circles indicate the primary coded activity, and open circles indicate supporting activity. For Spherity, the D and C placements describe research and integration design supported by operating identity infrastructure. Source numbers refer to the documented activities underlying each row. Unmarked cells carry no inference about activities outside the reviewed material.}
+  \label{fig:company-activities}
+\end{figure}
+
+The evidence shows three concentrations. Frontier developers disclose work in A, where risk assessment can influence training or release decisions. Platform providers add B through live safeguards and C or D when they configure or enforce execution boundaries. Spherity's C and D placement concerns the authority and evidence that a controller needs when a request crosses organizations. Other D placements include resource policy enforcement, payment authorization and tenant access control.~\cite{src5,src7,src9,src10,src11,src25,src26,src27,src28}
+
+\FloatBarrier
+
+\begin{minipage}{\linewidth}
+  \subsection{AI Safety Atlas}
+  \captionsetup{type=figure}
+  {\centering
+    \includegraphics[width=\linewidth,height=0.725\textheight,keepaspectratio]{figures/fig04_ai-safety-atlas.png}\par}
+  \caption{AI Safety Atlas. This world map places 10 commercial AI safety companies and 10 research organizations across eight countries. Color and shape identify the two groups. A--D badges show primary and supporting work in model qualification, live monitoring, bounded execution and runtime enforcement. Google DeepMind is mapped to the UK, and its parent Alphabet is based in the US. Spherity's callout highlights its research and integration design for cross-company AI safety and compliance automation, combining register-backed legal authority, interoperable verifiable assurance graphs, runtime verification and revocation. Basemap data from Natural Earth (public domain).}
+  \label{fig:ai-safety-atlas}
+\end{minipage}
+
+\subsection{Company cases 01 to 05}
+
+\subsubsection{Alibaba Group and Alibaba Cloud}
+
+\textit{China  \textbullet{}  B primary, A supporting}
+
+The Qwen team's Qwen3Guard technical report describes multilingual risk classifiers for prompts and responses, including a streaming variant. Alibaba Cloud documents input and output guardrails for supported Model Studio deployments in its Beijing region. Live screening is the primary activity coded here. Published classifier evaluation supports the qualification cell. The hosted policy's risk categories and supported models define the scope of the comparison. Application developers still need to decide whether a flagged or cleared response may produce a tool effect.~\cite{src29,src30}
+
+\subsubsection{Amazon and AWS}
+
+\textit{United States  \textbullet{}  D primary, B and C supporting}
+
+Amazon Bedrock AgentCore evaluates tool calls against policy at the gateway. The June 2026 integration with Bedrock Guardrails adds content and disclosure checks at that boundary. The documentation distinguishes log-only and enforce modes. Prevention is attributed to the enforced path, with policy setup in C and filtering in B. The effect boundary depends on routing tools through the gateway and on the treatment of other privileged interfaces.~\cite{src9,src10}
+
+\subsubsection{Anthropic}
+
+\textit{United States  \textbullet{}  A primary}
+
+Anthropic's Responsible Scaling Policy links capability and risk assessments to escalating safeguards. Its Constitutional AI work illustrates a separate activity in A, using feedback generated under explicit principles to change model behavior. The company publishes frontier risk reports, and METR's external review provides evidence from a defined assessment of internal frontier agents. Evaluation access, threat assumptions and the models tested delimit those findings.~\cite{src31,src32,src33}
+
+\subsubsection{Google DeepMind and Alphabet}
+
+\textit{United Kingdom and United States  \textbullet{}  A primary, D supporting}
+
+Google DeepMind's Frontier Safety Framework defines critical capability levels and associated mitigations. Its 2026 update describes tracked capability levels intended to surface risks earlier. Elsewhere in Alphabet, Google's Agent Payments Protocol specifies cryptographically verifiable mandates for agent-led checkout and payments, providing a transaction-specific D activity. This is protocol evidence with a defined application scope.~\cite{src26,src32,src34}
+
+\subsubsection{Meta}
+
+\textit{United States  \textbullet{}  A primary, B supporting}
+
+Meta's Advanced AI Scaling Framework covers frontier deployment through open releases, controlled APIs and closed systems. Published Safety \& Preparedness Reports give examples of release assessment. Llama Guard supplies reusable live screening and CyberSecEval supports testing. Distribution of model weights changes who can operate downstream monitoring and filtering, so evidence about a Meta release and evidence about a particular deployment have different scopes.~\cite{src35,src36}
+
+\subsection{Company cases 06 to 09}
+
+\subsubsection{Microsoft}
+
+\textit{United States  \textbullet{}  A primary, D supporting}
+
+Microsoft's 2026 transparency report describes extension of its Responsible AI Standard to agentic capabilities. Foundry's AI Red Teaming Agent supports repeatable adversarial testing in a defined configuration. Microsoft Entra also documents conditional access for agent identities. This is a distinct D contribution in identity and access control within the applicable tenant and policy scope.~\cite{src27,src37,src38}
+
+\subsubsection{NTT Group and NTT DATA}
+
+\textit{Japan  \textbullet{}  A primary, B supporting}
+
+NTT DATA's Responsible \& Secure AI offering includes model and system assessment and red teaming under AI Assurance, and protection for deployed AI systems. NTT group research on guardrails and security alignment provides a second source for the behavior-control contribution. The evidence is for the scope of the offering and research. Each customer configuration requires its own validation.~\cite{src39,src40}
+
+\subsubsection{NVIDIA}
+
+\textit{United States  \textbullet{}  D primary, B and C supporting}
+
+OpenShell isolates agent execution and enforces policy on resources such as network and filesystem access. NeMo Guardrails adds programmable behavior checks. NVIDIA's published design supports both boundary configuration and runtime enforcement, subject to the operator's setup. A policy-controlled sandbox and a physical air gap offer different guarantees. Development documentation for Agent Policy Fabric additionally describes signed policy provenance and external policy-information interfaces.~\cite{src11,src25,src41,src42}
+
+\subsubsection{OpenAI}
+
+\textit{United States  \textbullet{}  A primary}
+
+The Preparedness Framework defines severe-risk evaluation areas, and the Frontier Governance Framework describes oversight of frontier models. OpenAI's Path to Astra disclosure reports a delay and additional safeguards after a model crossed a cyber capability threshold. It is a documented link between qualification and a release decision. External risk assessments and incident analyses provide additional evidence about evaluation coverage and failure modes.~\cite{src32,src43,src44,src45,src46}
+
+\subsection{Company case 10 Spherity}
+
+\textit{Germany  \textbullet{}  D primary, C supporting  \textbullet{}  Research and integration design}
+
+\nopagebreak[4]
+Spherity is a highly specialized company working on the authority and evidence needed to govern consequential AI actions across organizations. The proposed runtime design combines registry-anchored legal-person identity, scoped mandates, semantically interoperable assurance graphs, current-status and revocation checks, and action-bound receipts. Its locus is the relationship between an agent, the legal principal it represents, the evidence an action requires, and the party that controls the effect.~\cite{src5,src6,src7,src17,src28,src47,src48}
+
+Within these ten cases, Spherity is the only company for which the reviewed material describes this specific combination as a dedicated specialization. The comparative finding concerns the sources and functions examined here. AWS's and NVIDIA's enforcement capabilities are complementary to the evidence and authority checks proposed by Spherity. The specialization is most material where the relying party must accept evidence or a mandate from outside its own identity and policy domain.~\cite{src2,src6,src9,src25,src49} Section~\ref{sec:spherity} examines the technical results behind this distinction.
+
+\subsubsection{Operating experience and European collaboration}
+
+An FDA-hosted pilot report identifies Spherity as a wallet provider in a US pharmaceutical supply-chain pilot involving SAP, Bristol Myers Squibb, Johnson \& Johnson and Novartis/Sandoz. The Healthcare Distribution Alliance records production readiness of the Spherity and Legisym credentialing solution in 2022, and SAP lists CARO as certified for integration with SAP offerings. Germany's IDunion consortium lists Spherity alongside Bosch, Siemens, Deutsche Bahn and Deutsche Telekom. Antares Vision Group reports integration of CARO in 2021 and an expanded collaboration in 2023. These records show multi-year work on regulated credential infrastructure.~\cite{src50,src51,src52,src53,src54}
+
+Spherity documented its role in the European Commission-backed EUDI Wallet Consortium. WE BUILD identifies Carsten Stöcker among the contributors to its work on trusted identities for AI agents.~\cite{src55,src56,src57,src58}
+
+\subsubsection{Spherity consortium work in IPCEI AI}
+
+Spherity reports that it works with multiple consortia in the Important Project of Common European Interest on artificial intelligence (IPCEI-AI) to develop AI safety and compliance automation solutions. Its contribution focuses on runtime verification of authority, evidence and applicable rules before an AI agent commits an action, and on high-performance trust and revocation infrastructure. The aim is to keep verification within operational latency limits and ensure that relying systems can enforce a withdrawal of authority before the next affected action.~\cite{src96}
+
+This work draws on Spherity's research on trusted execution for sovereign industrial AI and on revocation at protected execution boundaries. The European Commission announced planned State aid pre-notification in September 2026 and reported on 21 October that the initiative had completed its design phase.~\cite{src7,src59,src60,src94,src97}
+
+\FloatBarrier
+
+\section{Research organizations}
+\label{sec:research-organizations}
+
+These organizations contribute evidence, methods or shared tools. Each profile identifies an output and the aspect of assurance it supports.
+
+\subsection{AI Verify Foundation}
+
+\textit{Singapore  \textbullet{}  Application evaluation and assurance}
+
+Project Moonshot brings benchmarking and red teaming together in an open toolkit developed with Singapore's Infocomm Media Development Authority. The GenAI Assurance Pilot examined third-party testing of deployed applications, where retrieval, prompts, tools and configuration can change the safety result.~\cite{src61,src62}
+
+\subsection{Australian AI Safety Institute}
+
+\textit{Australia  \textbullet{}  National safety research and scalable oversight}
+
+The institute commissioned CSIRO's 2026 work on epistemic safety in scalable oversight. The study examines whether capable systems can influence an overseer's beliefs while completing the assigned task correctly. This widens the evaluation object from task completion to the quality of oversight.~\cite{src63,src64}
+
+\subsection{Beijing Academy of Artificial Intelligence}
+
+\textit{China  \textbullet{}  Nonprofit model research and evaluation}
+
+The academy's FlagEval platform provides evaluation infrastructure and a documented workflow for safety evaluations. Benchmark interpretation requires examination of the model, scoring rules, dataset and operating context.~\cite{src65,src66}
+
+\subsection{Fraunhofer IAIS}
+
+\textit{Germany  \textbullet{}  Industrial AI assurance}
+
+The institute's AI Assessment Catalog connects reliability, safety and security, human control and transparency to applied assessment. Its contribution is particularly relevant when a system's operating context determines its acceptable failure modes and evidence requirements.~\cite{src67}
+
+\subsection{Japan AI Safety Institute}
+
+\textit{Japan  \textbullet{}  National evaluation guidance}
+
+The July 2026 revision of Japan AISI's evaluation guide extends the evaluation perspectives to agentic systems. It supplies common questions for examining systems that plan and act through successive steps. Evidence of actual behavior depends on tests in the intended configuration.~\cite{src68}
+
+\subsection{Mila Quebec AI Institute}
+
+\textit{Canada  \textbullet{}  Nonprofit safety research and tooling}
+
+\nopagebreak[4]
+Mila's AI Safety Studio and its partnership with Robust Open Online Safety Tools translate research into open safeguards. The 2026 collaboration focuses initially on youth safety and the exposure of young people to harmful AI-generated content.~\cite{src69}
+
+\subsection{MLCommons}
+
+\textit{United States and international membership  \textbullet{}  Nonprofit benchmarking consortium}
+
+AILuminate's Safety and Jailbreak benchmarks use shared test and scoring procedures. Their single-turn text scope sets a clear boundary on inferences about systems that build context, call tools or create effects across turns.~\cite{src70}
+
+\subsection{NIST CAISSI}
+
+\textit{United States  \textbullet{}  Public evaluation science and standards research}
+
+NIST's Center for Advancing Innovation and Standards for Super Intelligence publishes frontier evaluation and monitoring research. NIST's separate agent identity program examines design questions that arise when deployed software needs to authenticate, demonstrate delegated authority and be contained after loss of that authority.~\cite{src2,src71,src72}
+
+\subsection{Stanford HAI and CRFM}
+
+\textit{United States  \textbullet{}  University research and public measurement}
+
+Stanford's Institute for Human-Centered Artificial Intelligence publishes AI Index coverage of responsible AI. Its Center for Research on Foundation Models publishes HELM Safety results using shared evaluation methods. Landscape measurement and public benchmark runs illuminate different aspects of the evidence base.~\cite{src73,src74}
+
+\subsection{UK AI Security Institute}
+
+\textit{United Kingdom  \textbullet{}  Frontier testing and open evaluation tooling}
+
+The institute's Frontier AI Trends Report synthesizes evaluations across risk domains. Its Inspect tooling supports repeatable evaluation workflows. The institute's report of unsanctioned agent behavior in deliberately permissive cyber testing also illustrates the need to contain the evaluation environment itself.~\cite{src46,src75,src76}
+
+\subsection{What independent evaluation adds}
+
+The research cases provide a second view of the company landscape. Evaluation protocols can help reproduce a behavior finding, incident analysis can reveal a failure under conditions omitted from a benchmark, and standards work can make the observed evidence reusable. In a consequential deployment, a relying party still needs to map those outputs to the model or configuration it runs and to the decisions for which the evidence is admissible. A benchmark score, a technical control and an assurance claim thus play distinct roles in the decision process.~\cite{src1,src46,src67,src70,src75}
+
+\section{Spherity trust infrastructure}
+\label{sec:spherity}
+
+Spherity's specialization depends on connecting three things that a counterparty can check independently. These are legal identity and representation, the meaning and origin of each requirement or test result, and the authority to execute a particular action now.~\cite{src77}
+
+\subsection{Company registers and business wallets}
+
+Spherity and Bundesanzeiger Verlag are developing a Business Wallet offering around verified organization data. Bundesanzeiger Verlag operates Germany's Company Register. Germany is the EU's largest economy by 2025 nominal GDP. The partner documents register-backed workflows for company identification, trade-register information and powers of representation. This gives a counterparty a source for legal-person identity and representation. A delegation to a particular agent still has to be derived and constrained under the applicable policy. Spherity's roadmap lists Q1 2027 as the planned general availability of the joint EBW-ready offering.~\cite{src78,src79,src80,src81}
+
+Spherity reports integration work with other European company registers. The public evidence establishes cooperation through WE BUILD, co-coordinated by the Dutch Chamber of Commerce, with participation by national business registers. The November 2026 update documents demonstrations and an interoperable testbed. Cross-border reliance depends on checking each registry's authority, identifiers, coverage and update rules. European Unique Identifiers and shared vocabularies can help map entities across systems, while a relying party must still validate the underlying source and representation rights.~\cite{src58,src82,src83,src84}
+
+\subsection{Business Wallet software in the energy sector}
+
+Spherity reports that its Business Wallet software is in production use in the energy sector, with deployment scope undisclosed. Separately, energy data-X documents Spherity's lead role in federated identity and trust. The published industry case documents an implemented prototype with register-backed organizational credentials, delegated representation, market-role attestations and connector-side access decisions. The use case shows how verified identity and sector roles can inform a policy decision at a resource boundary.~\cite{src82,src85,src86}
+
+\subsection{Standards and runtime integration}
+
+\subsubsection{W3C standards and semantic interoperability}
+
+Spherity participates in the W3C Verifiable Credentials Working Group. Spherity's Konstantin Tsabolov contributed to recognition vocabulary work in the Credentials Community Group and is credited for use-case groundwork in the Recognized Entities v1.0 Working Draft. This work matters for assurance graphs because the relying party needs machine-readable terms for which issuer is recognized, by whom, for which actions and under what scope. The Working Draft and the graph-proof proposal have different status from the W3C Verifiable Credentials Data Model 2.0 Recommendation.~\cite{src6,src12,src87,src88,src89}
+
+Semantic interoperability requires shared identifiers, versioned terms and explicit mappings. A requirement labelled ``approved test'' must bind to the relevant test method, part revision and issuer authorization across the parties that exchange it. A vocabulary makes the relationship interpretable. A proof binds the issuer to the stated relationship. The resource owner's policy determines whether that evidence satisfies the requirement.~\cite{src6,src8,src13,src17}
+
+\subsubsection{OpenShell integration work}
+
+Spherity's published technical assessment describes how Business Wallets, legal representation, scoped mandates and verifiable evidence could integrate with NVIDIA's OpenShell and Sentry. OpenShell supplies an isolated execution environment and enforceable resource policy. The proposed Spherity layer supplies verification of the principal, delegation, evidence path and current status for a particular action. NVIDIA's development documentation for Agent Policy Fabric describes an external policy-information interface and signed policy provenance. It offers an example integration point for a verifier that returns a scoped result. The protected endpoint remains responsible for final enforcement and fallback. This is a documented integration design.~\cite{src5,src7,src11,src42,src49,src90}
+
+The closest adjacent activities help define the specialization. Google AP2 addresses verifiable mandates and payment evidence for checkout. Microsoft Entra supplies agent identity and conditional access. NVIDIA provides runtime isolation and policy provenance. Spherity's distinctive combination in the cases reviewed is legal authority rooted in business registers, semantic evidence spanning multiple organizations and a design for current-status verification and revocation before a protected action. The evidence for each element has its own maturity.~\cite{src6,src7,src26,src27,src42,src78,src86,src89}
+
+\subsection{Spherity AI safety research}
+
+Spherity's open AI safety research specifies the controls that connect verifiable authority and evidence to a decision at the resource boundary. The papers cover the initial decision, continued operation as conditions change, and the withdrawal of authority.~\cite{src5,src7,src77}
+
+\subsubsection{Protected execution and continuing assurance}
+
+Resource-Bounded Program Equilibria and Protected Execution separates an agent's incentives from its authority to act. The paper derives a conditional unilateral-deviation criterion and uses omission counterexamples to test a deterministic controller. The controller binds the exact action to current delegation and evidence, prevents replay and enforces a shared budget across concurrent requests.~\cite{src91}
+
+Risk-Bounded Runtime Assurance requires both a current mandate and an assurance lease for the exact proposal. A persistent risk account carries pending effects and shared dependencies across worker replacement. The paper derives a first-harm bound under explicit calibration, model-coverage and enforcement assumptions, and evaluates the controller across 432 synthetic scenarios. The controller can therefore evaluate a continuation without resetting the risk budget.~\cite{src92}
+
+\subsubsection{Private verification and revocation across organizations}
+
+Private Verification of Action Eligibility proposes verifying the claims and prohibitions that apply to a particular action with limited disclosure. Its W3C Verifiable Credentials and ODRL profile gives counterparties common terms for eligibility. The evaluation checks nine invariants in a finite controller model. The separate revocation series examines withdrawal races at commitment, status freshness and unresolved remote effects. Its two-operation baseline explores 6,651 reachable states.~\cite{src93,src94}
+
+\subsubsection{Configuration specific evidence for Physical AI}
+
+PACE links safety claims and tests to the approved configuration and its dependencies. Governed Memory for Physical AI extends the same logic to an agent's use of prior experience. Its bounded protocol explores 3,192 reachable states and tests whether changed calibration, assessments or permissions can affect a later operation. Together these studies make the distinction between evidence that can be reused and evidence that permits an action testable.~\cite{src8,src95}
+
+The evidence consists of conditional proofs, finite-state checks, counterexamples and synthetic tests. Field assurance requires separate validation of the deployed control path and its operating conditions. Figure~\ref{fig:runtime-assurance} shows how these controls fit together at the resource boundary.
+
+\subsection{Runtime assurance architecture}
+
+An AI agent can propose an action. The resource owner's controller decides whether that exact action is permitted under the applicable rules, for the current configuration and with valid authority. Spherity's proposed design brings those checks together from three linked graphs.~\cite{src5,src6,src7,src91,src92,src93,src94} Figure~\ref{fig:runtime-assurance} shows both paths for stopping operation and the checks for resumption.
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{figures/fig05_runtime-assurance.png}
+  \caption{Spherity's proposed runtime assurance architecture. Policy, domain and episode graphs inform admission and coordinated containment. The coordinated stop checks verifiable evidence, responder identity and scoped authority. The independent local stop reaches a safe state or validated fallback. Resumption requires verified recovery and separate authorization.~\cite{src5,src6,src7,src15,src91,src92,src93,src94}}
+  \label{fig:runtime-assurance}
+\end{figure}
+
+\subsubsection{Kill switch and safe resumption}
+
+A kill switch must bring the affected workflow to a defined safe state. An independent local stop or validated fallback must remain available during model, graph, network or remote identity outages. For coordinated containment, verifiable graphs supply the applicable policy triggers, the affected agents and resources in the domain graph, and the pending effects in the episode graph. The decision engine checks evidence provenance, applicability and freshness, authenticates the remote operator or safety service, and verifies its current authority to intervene within that scope. At the resource boundary, the controller blocks new effects, suspends or revokes permissions, and cancels or hands off pending work where safe. It records enforcement and tracks unresolved remote effects until their outcomes are verified. The hold stays in force until recovery conditions are verified and resumption is separately authorized.~\cite{src2,src3,src5,src7,src15,src94}
+
+\FloatBarrier
+
+\section{Worked aerospace maintenance case}
+\label{sec:aerospace-case}
+
+An engineering agent proposes extending the inspection interval for an aircraft component. The example concerns a maintenance approval workflow and illustrates the graph manuscript's design.~\cite{src6,src15,src16} Table~\ref{tab:aerospace-requirements} identifies the evidence used at each layer.
+
+\begin{table}[!htbp]
+  \centering
+  \caption{Requirement and evidence layers in the aerospace example.}
+  \label{tab:aerospace-requirements}
+  \small
+\begin{tabularx}{\linewidth}{@{}P{0.26\linewidth}>{\RaggedRight\arraybackslash}X@{}}
+\toprule
+\textbf{Requirement layer} & \textbf{Evidence and decision consequence} \\
+\midrule
+Sector rules and guidance & Identify the applicable requirement, its version and configuration scope. Where necessary, establish that an approval or exception came from an authority competent for that scope. \\[0.35em]
+Company compliance and QA & Apply the operator's engineering procedure, QA approvals, supplier qualification, validation results and permitted deviation process. Tie each input to the installed part and revision. \\[0.35em]
+Use-case authorization & Bind the delegation to this proposed interval, component, configuration, operator and time window. Require independent approval where policy calls for it. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The supervisor loads the base clause and any authorized deviation. It verifies issuer, version, validity and status, and checks the deviation's link to the base clause and its applicability to the installed configuration. The controller compares the proposed interval with the effective limit and routes the request to the maintenance approval workflow, retains the existing interval, or escalates. A signed test report for a superseded revision can remain authentic while failing the applicability check. The receipt records the policy and source snapshots used for the decision.~\cite{src5,src6,src8}
+
+Fast local protective functions use their separately validated controls. Stable graph material can be verified on load or update. The approval path rechecks relevant status, exact action and scope at commitment according to its freshness policy. If a required approval is revoked, no longer current or inconsistent, the supervisor retains the approved state or escalates. Engineering approval and operational responsibility remain with the appropriate qualified functions.~\cite{src6,src7,src15,src16}
+
+\FloatBarrier
+
+\section{Evaluation implications and limitations}
+\label{sec:evaluation}
+
+\subsection{How the proposed integration can be evaluated}
+
+An end-to-end test should measure the rate of unauthorized effects, false blocks on valid requests, time from revocation to enforcement at the last preventable step, and whether an independent reviewer can reconstruct the decision. Measure latency under cold starts, warm caches, update delays and concurrent actions, including the tail of the distribution. Test a signed but inapplicable report, a changed context or stale status snapshot, a withdrawn mandate between approval and commitment, a network outage, and two requests that together exceed a shared limit. Define admissible fallback behavior for each case.~\cite{src5,src6,src7} Exercise the kill switch during outages and during races with commitment. Test forged or replayed remote stop commands, and verify that the hold persists until authorized resumption.
+
+The manuscript's benchmark studies particular prototype verification paths, including repeated checks after graph aggregation. Its results depend on the profile, workload and implementation, and exclude parts of the complete decision path. The aerospace case provides a testable architecture. Operational use would require validation of the whole control path, including status distribution, failure recovery, configuration binding and sector-specific approval.~\cite{src6,src15}
+
+\subsection{Limits of the company comparison}
+
+Public documentation varies by organization, jurisdiction and risk domain. The company matrix is a qualitative coding of selected activities as of the evidence cut-off. Comparative incident rates and control effectiveness would require separate study designs. The Spherity case combines company records, partner evidence, public research and an unpublished manuscript. The production wallet claim is company-reported. The graph-based runtime path is a research and integration design whose operational properties require separate evidence.
+
+\subsection{Conclusion}
+
+The comparison distinguishes interventions that improve behavior, validate and monitor systems, limit reachability, control effects and establish which evidence a controller can rely on. Their combination matters when an AI system can affect resources owned by another organization. The party controlling the effect must be able to check the relevant requirements and authority at the last point where it can still intervene. Registry-backed identity and verifiable assurance graphs give that party a way to evaluate those inputs across organizational boundaries. The proposed architecture can be judged by whether its authority and evidence checks change outcomes under realistic failure and revocation tests.
+
+\textbf{Competing interests.} The author is affiliated with Spherity GmbH, which is included in the company selection.

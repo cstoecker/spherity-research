@@ -605,7 +605,7 @@
     "encodingFormat": "text/html",
     "isAccessibleForFree": true,
     "license": {{ content_license | jsonify }},
-    "copyrightNotice": {{ site.copyright_holder | default: "The author or co-authors named on this publication" | jsonify }}{% if page.about %},
+    "copyrightNotice": {{ page.copyright_notice | default: site.copyright_holder | default: "The author or co-authors named on this publication" | jsonify }}{% if page.about %},
     "about": {{ page.about | jsonify }}{% endif %}{% if page.mentions %},
     "mentions": {{ page.mentions | jsonify }}{% endif %}{% if page.citations %},
     "citation": {{ page.citations | jsonify }}{% endif %}{% if page.associated_media %},
@@ -845,7 +845,16 @@
     "name": {{ figure.name | jsonify }},
     "description": {{ figure.description | jsonify }},
     "caption": {{ figure.caption | jsonify }},
-    "encodingFormat": "image/svg+xml",
+    "encodingFormat": {{ figure.encoding_format | default: "image/svg+xml" | jsonify }},
+    {% if figure.distributions %}"encoding": [
+      {% for distribution in figure.distributions %}{
+        "@type": "MediaObject",
+        "name": {{ figure.name | append: ' — ' | append: distribution.label | jsonify }},
+        "contentUrl": {{ distribution.url | absolute_url | jsonify }},
+        "encodingFormat": {{ distribution.encoding_format | jsonify }},
+        "license": {{ figure.license | default: content_license | jsonify }}
+      }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ],{% endif %}
     "width": {{ figure.width }},
     "height": {{ figure.height }},
     "inLanguage": {{ page.lang | default: "en" | jsonify }},

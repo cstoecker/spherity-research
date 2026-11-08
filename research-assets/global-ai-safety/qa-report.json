@@ -1,0 +1,74 @@
+{
+  "figures": [
+    {
+      "figure": "figure-1-ai-safety-disciplines",
+      "pdf_vector": true,
+      "svg_self_contained_outlined_text": true,
+      "text_within_page": true,
+      "png_dimensions": [
+        2880,
+        1770
+      ],
+      "visual_review": "Pass: compared reconstruction with published source raster; all labels, badges, counts and diagram paths retained."
+    },
+    {
+      "figure": "figure-2-assurance-levels",
+      "pdf_vector": true,
+      "svg_self_contained_outlined_text": true,
+      "text_within_page": true,
+      "png_dimensions": [
+        1541,
+        1821
+      ],
+      "visual_review": "Pass: compared reconstruction with published source raster; all labels, badges, counts and diagram paths retained."
+    },
+    {
+      "figure": "figure-3-company-activity-matrix",
+      "pdf_vector": true,
+      "svg_self_contained_outlined_text": true,
+      "text_within_page": true,
+      "png_dimensions": [
+        2880,
+        1680
+      ],
+      "visual_review": "Pass: compared reconstruction with published source raster; all labels, badges, counts and diagram paths retained."
+    },
+    {
+      "figure": "figure-4-ai-safety-atlas",
+      "pdf_vector": true,
+      "svg_self_contained_outlined_text": true,
+      "text_within_page": true,
+      "png_dimensions": [
+        2160,
+        2616
+      ],
+      "visual_review": "Pass: compared reconstruction with published source raster; all labels, badges, counts and diagram paths retained."
+    },
+    {
+      "figure": "figure-5-runtime-assurance",
+      "pdf_vector": true,
+      "svg_self_contained_outlined_text": true,
+      "text_within_page": true,
+      "png_dimensions": [
+        2795,
+        1968
+      ],
+      "visual_review": "Pass: compared reconstruction with published source raster; all labels, badges, counts and diagram paths retained."
+    }
+  ],
+  "pdf_24_pages": true,
+  "paper_byte_identical": true,
+  "figure_3_citations_match_published_page_8": [
+    "[26,27]",
+    "[9,10]",
+    "[28–30]",
+    "[31,32]",
+    "[33,34]",
+    "[35,36]",
+    "[37,38]",
+    "[11,39,40]",
+    "[41–43]",
+    "[5,6,44]"
+  ],
+  "source_sha256": "fad276eb3f52d6152af02327db80f6e2dc2a58dc06e79ac613915bb6d18690e9"
+}

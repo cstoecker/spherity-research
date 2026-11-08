@@ -1,3 +1,31 @@
+- title: Top 10 Global AI Safety Companies
+  publication_type: paper
+  type: Technology Outlook 2026 · AI Safety Atlas
+  date_label: Edition 2.6 · 8 November 2026
+  date_iso: '2026-11-08'
+  description: Ten companies, ten research organizations and five safety disciplines, with an AI Safety Atlas and a framework for verifiable runtime assurance.
+  byline: Dr. Carsten Stöcker · Spherity GmbH
+  topics:
+  - Trusted AI
+  - Identity
+  - Resilience
+  filters: ai identity resilience infrastructure
+  search: global ai safety companies research organizations institutes foundations atlas runtime assurance verifiable assurance graphs ai agents governance agent authorization revocation kill switch safety disciplines q e u ipcei-ai business wallets register backed authority semantically interoperable evidence graphs ki sicherheit carsten stöcker spherity
+  image: /assets/preview-global-ai-safety-2026.webp
+  image_alt: Global AI safety research with the edition 2.6 paper cover.
+  image_width: 1200
+  image_height: 630
+  media_class: card-media-wide
+  format: HTML + 24-page PDF + 5 figures
+  links:
+  - label: Read the research
+    url: /top-10-global-ai-safety-companies-2026.html
+    arrow: →
+  - label: Download full paper
+    url: /top-10-global-ai-safety-companies-2026.pdf
+    arrow: ↓
+    secondary: true
+
 - title: EU DPP Registry, W3C Standards and DPP5.0
   publication_type: paper
   type: Visual research paper · W3C semantic stack and verifiable DPP evidence

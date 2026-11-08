@@ -38,4 +38,7 @@
     <meta itemprop="name" content="{{ figure_creator_name | escape }}">
     <link itemprop="url" href="{{ figure_creator_url | escape }}">
   </span>
+  {% if figure.distributions %}
+<div class="figure-downloads" aria-label="Download {{ figure.name | escape }}"><strong>Download figure:</strong> {% for distribution in figure.distributions %}<a href="{{ distribution.url | relative_url }}" download>{{ distribution.label | escape }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</div>
+  {% endif %}
 </figure>

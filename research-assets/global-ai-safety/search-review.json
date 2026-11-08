@@ -1,0 +1,40 @@
+{
+  "status": "author-approved-source-based-review",
+  "reviewed_on": "2026-11-08",
+  "source": "Google Trends",
+  "source_url": "https://trends.google.com/trends/explore",
+  "geographies": ["Worldwide", "Germany"],
+  "time_ranges": ["Past 12 months", "Past 5 years"],
+  "search_types": ["Web Search"],
+  "authority_terms": ["runtime assurance", "verifiable assurance graphs"],
+  "discovery_terms": ["AI safety", "AI agents", "AI governance", "KI Sicherheit"],
+  "audience_questions": [
+    "Which companies and research organizations contribute to AI safety?",
+    "How does runtime assurance govern consequential AI-agent actions?",
+    "How do identity, evidence and delegated authority support safe execution?"
+  ],
+  "evidence": [
+    {
+      "comparison": "AI safety; AI agents; runtime assurance",
+      "input_type": "Search terms",
+      "geography": "Worldwide",
+      "time_range": "Past 12 months",
+      "search_type": "Web Search",
+      "result": "Access unsuccessful: public Explore and API returned HTTP 429; a later requested retry through web access also failed. No relative-interest or related-query finding is asserted. The publisher explicitly authorized release using the verified paper's terminology if the retry failed."
+    },
+    {
+      "comparison": "AI safety; KI Sicherheit",
+      "input_type": "Search terms",
+      "geography": "Germany",
+      "time_range": "Past 5 years",
+      "search_type": "Web Search",
+      "result": "Requested retry could not access Explore. This records the attempted scope, not zero or insufficient search demand. Editorial wording was reviewed against the verified edition 2.6."
+    }
+  ],
+  "editorial_decisions": [
+    "Retain the approved manuscript title and explicit purposive-sample caveat; avoid claims of a measured global ranking.",
+    "Use AI safety, AI agents and AI governance only where supported by the paper. Retain runtime assurance and verifiable assurance graphs as technically precise authority terms.",
+    "Include KI Sicherheit only in the homepage search vocabulary, without implying that a translation exists.",
+    "Preserve the distinction between operating infrastructure, company-reported deployments, research tests and integration proposals. No public notice or claim about Trends results is added."
+  ]
+}

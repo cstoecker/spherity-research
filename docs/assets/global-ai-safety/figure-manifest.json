@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "figure-1-ai-safety-disciplines",
+    "title": "Four domains of AI safety activity",
+    "alt": "A: improve and qualify behavior. B: observe and manage live behavior. C: design bounded execution. D: verify and enforce each action. Cryptographic verifiability connects all four domains.",
+    "width": 1920,
+    "height": 1180,
+    "png_width": 2880,
+    "png_height": 1770,
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ]
+  },
+  {
+    "slug": "figure-2-assurance-levels",
+    "title": "Assurance types for linked claims",
+    "alt": "Shared RDF and JSON-LD semantics link Q qualified authority, E issuer-authenticated verifiable evidence and U self-asserted information. Each claim requires its own issuer, proof and status checks.",
+    "width": 1027,
+    "height": 1214,
+    "png_width": 1541,
+    "png_height": 1821,
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ]
+  },
+  {
+    "slug": "figure-3-company-activity-matrix",
+    "title": "Qualitative placement of ten company cases",
+    "alt": "Filled circles mark primary and open circles supporting activities across A to D. Spherity D and C are research and integration design. Citation labels match the edition 2.6 published overlays.",
+    "width": 1920,
+    "height": 1120,
+    "png_width": 2880,
+    "png_height": 1680,
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ]
+  },
+  {
+    "slug": "figure-4-ai-safety-atlas",
+    "title": "AI Safety Atlas: twenty selected organizations in eight countries",
+    "alt": "Map and alphabetical lists of ten commercial companies and ten research organizations in the United States, United Kingdom, Canada, Germany, China, Japan, Singapore and Australia. Teal circles represent companies; ochre diamonds represent research organizations. Filled A–D badges show primary activity and outlined badges supporting activity.",
+    "width": 1440,
+    "height": 1744,
+    "png_width": 2160,
+    "png_height": 2616,
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ]
+  },
+  {
+    "slug": "figure-5-runtime-assurance",
+    "title": "Spherity’s proposed runtime assurance architecture",
+    "alt": "Policy, domain and episode graphs feed admission and coordinated containment. An independent local stop works during model, graph, network and identity-service outages. Stops override admission at the resource boundary. Safe resumption requires verified recovery and separate authorization.",
+    "width": 1863,
+    "height": 1312,
+    "png_width": 2795,
+    "png_height": 1968,
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ]
+  }
+]
