@@ -8,9 +8,9 @@
 "citation_title": "Top 10 Global AI Safety Companies: With 10 leading R&D institutes and foundations"
 "seo_title": "Top 10 Global AI Safety Companies — 2026 Research & Atlas"
 "og_title": "Top 10 Global AI Safety Companies"
-"og_description": "Ten companies, ten research organizations and five safety disciplines: explore the AI Safety Atlas and evidence-led runtime assurance framework."
+"og_description": "Compare global AI safety companies, explore the AI Safety Atlas, and examine cryptographic verifiability, eIDAS 2.0 and European Business Wallets."
 "subtitle": "With 10 leading R&D institutes and foundations"
-"description": "Compare ten global AI safety companies and ten research organizations through five disciplines, an AI Safety Atlas and evidence-led runtime assurance."
+"description": "Compare global AI safety companies, explore the AI Safety Atlas, and examine cryptographic verifiability, eIDAS 2.0 and European Business Wallets."
 "paper_status": "Spherity Research / Technology Outlook 2026 · Revised edition 2.6"
 "authors":
   - "Dr. Carsten Stöcker"
@@ -248,7 +248,18 @@
   - "revocation"
   - "IPCEI-AI"
   - "Q/E/U assurance"
-"answer_summary": "The paper maps ten companies and ten research organizations across complementary AI safety disciplines. It distinguishes improving behavior from controlling external effects, and examines how current identity, authority and evidence can inform an independent runtime decision. The selection is a dated, purposive qualitative study; Spherity’s graph-based runtime path is research and integration design."
+  - "AI safety companies"
+  - "global AI safety"
+  - "verifiable AI safety"
+  - "high-assurance AI safety"
+  - "cryptographic verifiability"
+  - "eIDAS 2.0"
+  - "European Business Wallet"
+  - "qualified electronic attestations of attributes"
+  - "AI agent identity"
+  - "register-backed authority"
+  - "Spherity AI safety"
+"answer_summary": "The paper maps ten companies and ten research organizations across complementary AI safety disciplines. It distinguishes improving behavior from controlling external effects, and examines how current identity, authority and evidence can inform an independent runtime decision. The selection is a dated, purposive qualitative study; Spherity’s graph-based runtime path is research and integration design. A separate strategic outlook examines eIDAS 2.0, the proposed European Business Wallet Regulation and potential European–US trust partnerships."
 "key_takeaways":
   - "Five disciplines connect behavior improvement, validation and monitoring, isolation, deterministic control, and trust chaining with assurance graphs."
   - "A–D classify design and qualification, live monitoring, bounded execution design and runtime enforcement. Q/E/U classify individual claims, not entire organizations."
@@ -259,6 +270,8 @@
   - "AI safety"
   - "runtime assurance"
   - "verifiable assurance graphs"
+  - "cryptographic verifiability"
+  - "verifiable AI safety"
 "mentions":
   - "W3C Verifiable Credentials"
   - "RDF"
@@ -267,6 +280,8 @@
   - "European Business Wallet"
   - "eIDAS"
   - "NVIDIA OpenShell"
+  - "eIDAS 2.0"
+  - "qualified electronic attestations of attributes"
 "citations":
   - "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
   - "https://www.nist.gov/blogs/cybersecurity-insights/design-tenets-agent-identity-management-systems"
@@ -363,6 +378,8 @@
   - "https://spherity.github.io/spherity-research/risk-bounded-runtime-assurance-multi-agent-systems.html"
   - "https://spherity.github.io/spherity-research/private-verification-action-eligibility-trust-domains.html"
   - "https://spherity.github.io/spherity-research/governed-robot-memory-physical-ai.html"
+  - "https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-establishment-european-business-wallets"
+  - "https://www.consilium.europa.eu/en/press/press-releases/2026/06/09/european-business-wallets-council-adopts-negotiating-position/"
 "audiences":
   - "AI safety researchers"
   - "Industry leaders"
@@ -387,8 +404,15 @@
   "authority_terms":
     - "runtime assurance"
     - "verifiable assurance graphs"
+    - "cryptographic verifiability"
+    - "eIDAS 2.0"
+    - "European Business Wallet"
+    - "qualified electronic attestations of attributes"
   "discovery_terms":
     - "AI safety"
+    - "AI safety companies"
+    - "verifiable AI safety"
+    - "AI agent identity"
     - "AI agents"
     - "AI governance"
     - "KI Sicherheit"
@@ -414,6 +438,8 @@
     - "Use AI safety, AI agents and AI governance only where supported by the paper. Retain runtime assurance and verifiable assurance graphs as technically precise authority terms."
     - "Include KI Sicherheit only in the homepage search vocabulary, without implying that a translation exists."
     - "Preserve the distinction between operating infrastructure, company-reported deployments, research tests and integration proposals. No public notice or claim about Trends results is added."
+    - "For the publisher-requested European trust positioning, add source-grounded eIDAS 2.0, European Business Wallet and cryptographic verifiability vocabulary across visible commentary, answer content, metadata and catalog search. No search-volume or ranking claim is made."
+    - "Scope the distinctive Spherity specialization to the ten-company sample. Distinguish enacted eIDAS rules from the Business Wallet proposal and identify expected US–European partnerships as a strategic forecast. Regulatory and implementation sources are recorded in european-trust-positioning.json."
 "questions_answered":
   - "question": "Which ten companies are selected for the global AI safety outlook?"
     "answer": "The alphabetical selection is Alibaba Group / Alibaba Cloud, Amazon / AWS, Anthropic, Google DeepMind / Alphabet, Meta, Microsoft, NTT Group / NTT DATA, NVIDIA, OpenAI and Spherity. It is a purposive qualitative sample of documented activities, not a measured global ranking."
@@ -431,6 +457,12 @@
     "answer": "An independent local stop or validated fallback must remain available during model, graph, network and remote identity outages. Coordinated containment checks verifiable evidence, responder identity and scoped authority. The hold remains until recovery conditions are verified and resumption is separately authorized."
   - "question": "What is The 2027 Proposition?"
     "answer": "The paper expects safety to become a defining deployment condition as agents take consequential actions in 2027. Reliability, validation, monitoring, isolation and deterministic intervention must work together, supported by verifiable evidence and current delegated authority. This is an outlook, not an observed 2027 result."
+  - "question": "Is Spherity the only company providing cryptographic verifiability for AI safety?"
+    "answer": "Within this paper’s ten-company sample, Spherity is the only company identified with a dedicated specialization combining register-backed business identity, delegated authority and semantically interoperable assurance graphs for verifiable AI safety. This is a scoped comparative finding, not proof of worldwide exclusivity. Its operating identity infrastructure and its proposed graph-based runtime integration have different maturity levels."
+  - "question": "Why do eIDAS 2.0 and European Business Wallets matter for verifiable AI safety?"
+    "answer": "eIDAS 2.0 provides a legal framework for trusted identity and attestations, including legal effects for qualifying attestations. The proposed European Business Wallet Regulation would extend business-facing digital identity and representation workflows. AI safety additionally requires current, scoped authority, revocation and independently checked evidence. Neither a valid signature nor wallet compliance alone certifies AI safety; the Business Wallet Regulation remains a proposal at the 8 November 2026 research cutoff."
+  - "question": "Why might US AI companies partner with European trust providers?"
+    "answer": "European providers integrated with company registers, qualified trust services and cross-border wallet pilots are well placed to connect cryptographic evidence with European legal authority. We expect US AI companies serving European regulated workflows to rely increasingly on such partnerships for verifiable identity, authority and compliance evidence. This is the author’s strategic expectation, not a universal legal requirement or an observed market outcome."
 "related_publications":
   - "title": "Top 10 German Technology Companies"
     "url": "/top-german-technology-companies-industrial-ai-agentic-commerce-2026.html"
@@ -466,6 +498,8 @@
     "href": "#worked-aerospace-maintenance-case"
   - "title": "Evaluation implications and limitations"
     "href": "#evaluation-implications-and-limitations"
+  - "title": "Verifiable AI safety and European trust"
+    "href": "#verifiable-ai-safety-european-trust"
   - "title": "References (98)"
     "href": "#references"
   - "title": "License and citation"
@@ -828,6 +862,13 @@
 <p>The comparison distinguishes interventions that improve behavior, validate and monitor systems, limit reachability, control effects and establish which evidence a controller can rely on. Their combination matters when an AI system can affect resources owned by another organization. The party controlling the effect must be able to check the relevant requirements and authority at the last point where it can still intervene. Registry-backed identity and verifiable assurance graphs give that party a way to evaluate those inputs across organizational boundaries. The proposed architecture can be judged by whether its authority and evidence checks change outcomes under realistic failure and revocation tests.</p>
 
 <p><strong>Competing interests.</strong> The author is affiliated with Spherity GmbH, which is included in the company selection.</p>
+
+<section aria-labelledby="verifiable-ai-safety-european-trust"><h2 id="verifiable-ai-safety-european-trust">Verifiable AI safety: eIDAS 2.0 and European Business Wallets</h2>
+<p class="safety-edition">Strategic outlook · HTML commentary added 8 November 2026; separate from the edition 2.6 PDF. The European Business Wallet Regulation remains a proposal at this research cutoff.</p>
+<p>Within the ten companies reviewed in this paper, Spherity is the only company identified with a dedicated specialization combining register-backed business identity, delegated authority and semantically interoperable assurance graphs for verifiable AI safety. Its high-assurance cryptographic verifiability approach builds on eIDAS 2.0 trust infrastructure and anticipates the proposed European Business Wallet Regulation. Operating identity infrastructure provides the foundation; graph-based runtime assurance remains a research and integration design.</p>
+<p>Compliance matters because a valid signature alone does not establish who may authorize an AI agent to act for a company. eIDAS provides a legal framework for trusted identity and attestations; qualifying attestations can carry recognized legal effects. Verifiable AI safety also needs scoped mandates, current status, revocation and evidence that a relying party can check. These mechanisms help connect technical proof with accountable business authority. Qualified status depends on the issuer and applicable attestation requirements; wallet compliance alone does not certify AI safety.</p>
+<p>European providers embedded in company registers, qualified trust services and cross-border wallet pilots are especially well equipped to connect these legal and technical layers. That advantage comes from institutional integration and regulatory experience. We expect US AI companies serving European regulated workflows to rely increasingly on European partnerships for verifiable identity, authority and compliance evidence, while contributing models and platforms. This is a strategic expectation, not a universal legal requirement or an observed market outcome.</p>
+<p>Regulatory and implementation sources: <a href="https://eur-lex.europa.eu/eli/reg/2024/1183/oj/eng">eIDAS amendment: Regulation (EU) 2024/1183, including Articles 45b–45e</a>; <a href="https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-establishment-european-business-wallets">European Commission: European Business Wallet Regulation proposal</a>; <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/06/09/european-business-wallets-council-adopts-negotiating-position/">Council: European Business Wallets negotiating position, 9 June 2026</a>; <a href="https://www.bundesanzeiger-verlag.de/evidenzwesen/eubw/">Bundesanzeiger Verlag: European Business Wallet development and register integration</a>. The ten-company comparison and maturity distinctions are documented in the paper above.</p></section>
 
 <h2 id="references">References</h2>
 <ol class="safety-references"><li id="ref-1" data-source-key="src1">International AI Safety Report. <em>International AI Safety Report 2026</em>. <a href="https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026">https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026</a></li>

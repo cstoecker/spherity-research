@@ -17,6 +17,24 @@ const entityChars={amp:'&',lt:'<',gt:'>',quot:'"',apos:"'",nbsp:' ',ndash:'–',
 const decodeHTML=s=>s.replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi,(m,key)=>key[0]==='#'?String.fromCodePoint(key[1].toLowerCase()==='x'?parseInt(key.slice(2),16):Number(key.slice(1))):entityChars[key]??m);
 const plain=s=>decodeHTML(s.replace(/<[^>]*>/g,' ')).replace(/[“”]/g,'"').replace(/[‘’]/g,"'").replace(/\s+/g,' ').trim();
 
+test('European trust positioning is visible, scoped and consistent with answer structured data',()=>{
+ const positioning=JSON.parse(fs.readFileSync('research-assets/global-ai-safety/european-trust-positioning.json','utf8'));
+ const rendered=plain(html);
+ assert.ok(rendered.includes(plain(positioning.heading)));
+ for(const paragraph of positioning.paragraphs)assert.ok(rendered.includes(plain(paragraph)));
+ for(const keyword of positioning.keywords)assert.ok(page.keywords.includes(keyword));
+ const faq=schemas.find(s=>s['@type']==='FAQPage');
+ assert.ok(faq);
+ for(const item of positioning.questions_answered){
+  assert.ok(rendered.includes(plain(item.question)));
+  assert.ok(rendered.includes(plain(item.answer)));
+  assert.ok(faq.mainEntity.some(q=>q.name===item.question&&q.acceptedAnswer.text===item.answer));
+ }
+ assert.ok(rendered.includes('separate from the edition 2.6 PDF'));
+ assert.ok(rendered.includes('not proof of worldwide exclusivity'));
+ for(const s of positioning.sources)assert.ok(html.includes(s.url));
+});
+
 test('the unchanged 24-page edition, 98 reference identities and published citation order are preserved',()=>{
  const provenance=JSON.parse(fs.readFileSync('research-assets/global-ai-safety/provenance.json','utf8'));
  assert.equal(crypto.createHash('sha256').update(fs.readFileSync(`docs/${slug}.pdf`)).digest('hex'),provenance.source_pdf_sha256);

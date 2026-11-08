@@ -6,8 +6,8 @@
   "geographies": ["Worldwide", "Germany"],
   "time_ranges": ["Past 12 months", "Past 5 years"],
   "search_types": ["Web Search"],
-  "authority_terms": ["runtime assurance", "verifiable assurance graphs"],
-  "discovery_terms": ["AI safety", "AI agents", "AI governance", "KI Sicherheit"],
+  "authority_terms": ["runtime assurance", "verifiable assurance graphs", "cryptographic verifiability", "eIDAS 2.0", "European Business Wallet", "qualified electronic attestations of attributes"],
+  "discovery_terms": ["AI safety", "AI safety companies", "verifiable AI safety", "AI agent identity", "AI agents", "AI governance", "KI Sicherheit"],
   "audience_questions": [
     "Which companies and research organizations contribute to AI safety?",
     "How does runtime assurance govern consequential AI-agent actions?",
@@ -35,6 +35,8 @@
     "Retain the approved manuscript title and explicit purposive-sample caveat; avoid claims of a measured global ranking.",
     "Use AI safety, AI agents and AI governance only where supported by the paper. Retain runtime assurance and verifiable assurance graphs as technically precise authority terms.",
     "Include KI Sicherheit only in the homepage search vocabulary, without implying that a translation exists.",
-    "Preserve the distinction between operating infrastructure, company-reported deployments, research tests and integration proposals. No public notice or claim about Trends results is added."
+    "Preserve the distinction between operating infrastructure, company-reported deployments, research tests and integration proposals. No public notice or claim about Trends results is added.",
+    "For the publisher-requested European trust positioning, add source-grounded eIDAS 2.0, European Business Wallet and cryptographic verifiability vocabulary across visible commentary, answer content, metadata and catalog search. No search-volume or ranking claim is made.",
+    "Scope the distinctive Spherity specialization to the ten-company sample. Distinguish enacted eIDAS rules from the Business Wallet proposal and identify expected US–European partnerships as a strategic forecast. Regulatory and implementation sources are recorded in european-trust-positioning.json."
   ]
 }

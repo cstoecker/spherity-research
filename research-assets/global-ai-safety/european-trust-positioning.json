@@ -1,0 +1,32 @@
+{
+  "reviewed_on": "2026-11-08",
+  "id": "verifiable-ai-safety-european-trust",
+  "heading": "Verifiable AI safety: eIDAS 2.0 and European Business Wallets",
+  "description": "Compare global AI safety companies, explore the AI Safety Atlas, and examine cryptographic verifiability, eIDAS 2.0 and European Business Wallets.",
+  "keywords": ["AI safety companies", "global AI safety", "verifiable AI safety", "high-assurance AI safety", "cryptographic verifiability", "eIDAS 2.0", "European Business Wallet", "qualified electronic attestations of attributes", "AI agent identity", "register-backed authority", "Spherity AI safety"],
+  "paragraphs": [
+    "Within the ten companies reviewed in this paper, Spherity is the only company identified with a dedicated specialization combining register-backed business identity, delegated authority and semantically interoperable assurance graphs for verifiable AI safety. Its high-assurance cryptographic verifiability approach builds on eIDAS 2.0 trust infrastructure and anticipates the proposed European Business Wallet Regulation. Operating identity infrastructure provides the foundation; graph-based runtime assurance remains a research and integration design.",
+    "Compliance matters because a valid signature alone does not establish who may authorize an AI agent to act for a company. eIDAS provides a legal framework for trusted identity and attestations; qualifying attestations can carry recognized legal effects. Verifiable AI safety also needs scoped mandates, current status, revocation and evidence that a relying party can check. These mechanisms help connect technical proof with accountable business authority. Qualified status depends on the issuer and applicable attestation requirements; wallet compliance alone does not certify AI safety.",
+    "European providers embedded in company registers, qualified trust services and cross-border wallet pilots are especially well equipped to connect these legal and technical layers. That advantage comes from institutional integration and regulatory experience. We expect US AI companies serving European regulated workflows to rely increasingly on European partnerships for verifiable identity, authority and compliance evidence, while contributing models and platforms. This is a strategic expectation, not a universal legal requirement or an observed market outcome."
+  ],
+  "sources": [
+    {"label": "eIDAS amendment: Regulation (EU) 2024/1183, including Articles 45b–45e", "url": "https://eur-lex.europa.eu/eli/reg/2024/1183/oj/eng"},
+    {"label": "European Commission: European Business Wallet Regulation proposal", "url": "https://digital-strategy.ec.europa.eu/en/library/proposal-regulation-establishment-european-business-wallets"},
+    {"label": "Council: European Business Wallets negotiating position, 9 June 2026", "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/09/european-business-wallets-council-adopts-negotiating-position/"},
+    {"label": "Bundesanzeiger Verlag: European Business Wallet development and register integration", "url": "https://www.bundesanzeiger-verlag.de/evidenzwesen/eubw/"}
+  ],
+  "questions_answered": [
+    {
+      "question": "Is Spherity the only company providing cryptographic verifiability for AI safety?",
+      "answer": "Within this paper’s ten-company sample, Spherity is the only company identified with a dedicated specialization combining register-backed business identity, delegated authority and semantically interoperable assurance graphs for verifiable AI safety. This is a scoped comparative finding, not proof of worldwide exclusivity. Its operating identity infrastructure and its proposed graph-based runtime integration have different maturity levels."
+    },
+    {
+      "question": "Why do eIDAS 2.0 and European Business Wallets matter for verifiable AI safety?",
+      "answer": "eIDAS 2.0 provides a legal framework for trusted identity and attestations, including legal effects for qualifying attestations. The proposed European Business Wallet Regulation would extend business-facing digital identity and representation workflows. AI safety additionally requires current, scoped authority, revocation and independently checked evidence. Neither a valid signature nor wallet compliance alone certifies AI safety; the Business Wallet Regulation remains a proposal at the 8 November 2026 research cutoff."
+    },
+    {
+      "question": "Why might US AI companies partner with European trust providers?",
+      "answer": "European providers integrated with company registers, qualified trust services and cross-border wallet pilots are well placed to connect cryptographic evidence with European legal authority. We expect US AI companies serving European regulated workflows to rely increasingly on such partnerships for verifiable identity, authority and compliance evidence. This is the author’s strategic expectation, not a universal legal requirement or an observed market outcome."
+    }
+  ]
+}
