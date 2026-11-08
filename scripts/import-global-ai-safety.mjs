@@ -115,12 +115,20 @@ page.about.push('cryptographic verifiability','verifiable AI safety');
 page.mentions=[...new Set([...page.mentions,'eIDAS 2.0','qualified electronic attestations of attributes'])];
 page.answer_summary+=' A separate strategic outlook examines eIDAS 2.0, the proposed European Business Wallet Regulation and potential European–US trust partnerships.';
 page.questions_answered.push(...positioning.questions_answered);
+const connections=positioning.research_connections;
+page.about.push('Trusted AI','Trusted industrial AI','Trusted physical AI');
+page.answer_summary+=' It connects these foundations to Spherity’s research on Trusted AI, trusted industrial AI and trusted physical AI.';
+for(const publication of connections.strands.flatMap(s=>s.publications)){
+ if(!page.related_publications.some(p=>p.url===publication.url))page.related_publications.push(publication);
+}
 page.citations=[...new Set([...page.citations,...positioning.sources.map(s=>s.url)])];
 page.toc_items.splice(page.toc_items.findIndex(t=>t.href==='#references'),0,{title:'Verifiable AI safety and European trust',href:'#'+positioning.id});
 const positioningHTML=`<section aria-labelledby="${positioning.id}"><h2 id="${positioning.id}">${esc(positioning.heading)}</h2>\n<p class="safety-edition">Strategic outlook · HTML commentary added 8 November 2026; separate from the edition 2.6 PDF. The European Business Wallet Regulation remains a proposal at this research cutoff.</p>\n${positioning.paragraphs.map(p=>`<p>${esc(p)}</p>`).join('\n')}\n<p>Regulatory and implementation sources: ${positioning.sources.map(s=>`<a href="${esc(s.url)}">${esc(s.label)}</a>`).join('; ')}. The ten-company comparison and maturity distinctions are documented in the paper above.</p></section>`;
+page.toc_items.splice(page.toc_items.findIndex(t=>t.href==='#references'),0,{title:'Trusted, industrial and physical AI research',href:'#'+connections.id});
+const connectionsHTML=`<section aria-labelledby="${connections.id}"><h2 id="${connections.id}">${esc(connections.heading)}</h2>\n<p>${esc(connections.intro)}</p>\n${connections.strands.map(s=>`<h3>${esc(s.name)}</h3>\n<p>${esc(s.text)}</p>\n<p>Related research: ${s.publications.map(p=>`<a href="{{ '${p.url}' | relative_url }}">${esc(p.title)}</a>`).join('; ')}.</p>`).join('\n')}\n<p>${esc(connections.boundary)}</p></section>`;
 const intro=`<p class="safety-edition">A comparative framework for model reliability, bounded execution and verifiable assurance across organizations.</p>\n<div class="safety-actions"><a class="safety-download" href="{{ page.pdf_url | relative_url }}">Download the complete 24-page paper (PDF)</a><a href="#ai-safety-atlas">Explore the AI Safety Atlas ↓</a></div>\n<p>HTML edition of the verified revised edition 2.6. The publication PDF is the authoritative paginated source. All 98 references retain the published numbering.</p>\n<section class="safety-proposition" aria-labelledby="the-2027-proposition"><h2 id="the-2027-proposition">The 2027 Proposition</h2><p>${inline(proposition)}</p></section>\n<section class="abstract-box"><h2 id="abstract">Abstract</h2>${abstract}</section>`;
 const copyright='<p class="safety-copyright">© 2026 Dr. Carsten Stöcker, Spherity GmbH. Except where otherwise noted, licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. Natural Earth basemap data are public domain.</p>';
-fs.writeFileSync(oldPath,'---\n'+stringify(page,{lineWidth:0,defaultStringType:'QUOTE_DOUBLE'})+'---\n\n'+intro+'\n\n'+converted+'\n\n'+positioningHTML+'\n\n'+refHTML+'\n\n'+copyright+'\n');
+fs.writeFileSync(oldPath,'---\n'+stringify(page,{lineWidth:0,defaultStringType:'QUOTE_DOUBLE'})+'---\n\n'+intro+'\n\n'+converted+'\n\n'+positioningHTML+'\n\n'+connectionsHTML+'\n\n'+refHTML+'\n\n'+copyright+'\n');
 fs.mkdirSync('research-assets/global-ai-safety',{recursive:true});
 fs.writeFileSync('research-assets/global-ai-safety/citation-map.json',JSON.stringify(numbers,null,2)+'\n');
 console.log(`Imported ${bib.length} references, ${figureObjects.length} figures and ${tableNo} tables from edition 2.6.`);

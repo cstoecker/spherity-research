@@ -3,7 +3,38 @@
   "id": "verifiable-ai-safety-european-trust",
   "heading": "Verifiable AI safety: eIDAS 2.0 and European Business Wallets",
   "description": "Compare global AI safety companies, explore the AI Safety Atlas, and examine cryptographic verifiability, eIDAS 2.0 and European Business Wallets.",
-  "keywords": ["AI safety companies", "global AI safety", "verifiable AI safety", "high-assurance AI safety", "cryptographic verifiability", "eIDAS 2.0", "European Business Wallet", "qualified electronic attestations of attributes", "AI agent identity", "register-backed authority", "Spherity AI safety"],
+  "keywords": ["AI safety companies", "global AI safety", "verifiable AI safety", "high-assurance AI safety", "cryptographic verifiability", "eIDAS 2.0", "European Business Wallet", "qualified electronic attestations of attributes", "AI agent identity", "register-backed authority", "Spherity AI safety", "Trusted AI", "trusted industrial AI", "trusted physical AI"],
+  "research_connections": {
+    "id": "trusted-ai-industrial-physical-ai-research",
+    "heading": "How this connects to Trusted AI, trusted industrial AI and trusted physical AI",
+    "intro": "Verifiable AI safety connects three strands of Spherity’s research: establishing accountable authority, checking evidence for the intended use, and enforcing the resulting decision at the point of action. The eIDAS and Business Wallet trust foundation contributes identity and authority; the related research develops the evidence and control mechanisms needed to make that foundation useful in operational systems.",
+    "strands": [
+      {
+        "name": "Trusted AI: verifiable authority for action",
+        "text": "Trusted AI asks whether the actor, represented company, mandate, system state and supporting evidence can be verified when an agent acts. It connects the qualities sought in trustworthy AI with an operational decision to permit, restrict, escalate or deny a specific action. Our cross-company AI safety series develops protected execution, continuing runtime assurance and private verification of action eligibility.",
+        "publications": [
+          {"title": "From Trustworthy AI to Trusted, Operational Agentic Systems", "url": "/trusted-agentic-ai-china-eu-us-comparative-analysis.html", "context": "Defines the operational trust layer connecting identity, legal authority, provenance, policy and action evidence."},
+          {"title": "Governing Safe AI That Acts Across Companies", "url": "/governing-ai-that-acts-across-companies.html", "context": "Develops protected execution, runtime assurance and private verification for cross-company actions."}
+        ]
+      },
+      {
+        "name": "Trusted industrial AI: evidence across companies",
+        "text": "Industrial decisions depend on evidence distributed across suppliers, operators and assessors. Our evidence-graph research preserves source, meaning, transformation history, validity, status and validation context so an AI-supported workflow can inspect the evidence for a particular decision. This data plane complements the legal-authority control plane: permission to act and adequate evidence for the action are separate requirements.",
+        "publications": [
+          {"title": "Evidence Graphs for Industrial AI", "url": "/evidence-graphs-industrial-ai-data-plane.html", "context": "Proposes the complementary data plane for traceable, validated and current industrial evidence."}
+        ]
+      },
+      {
+        "name": "Trusted physical AI: evidence tied to the acting system",
+        "text": "When AI influences robots or machines, assurance must address the installed configuration, task and operating conditions. PACE connects product identity with safety and cyber evidence for commissioning, controlled change and continuous assurance. Governed robot memory extends this work to the provenance, assessed reuse and withdrawal of experience that can influence a robot’s next action. Immediate protective functions remain in the local safety path.",
+        "publications": [
+          {"title": "PACE: Verifiable Safety and Cyber Evidence Graphs for Physical AI", "url": "/physical-ai-compliance-evidence-pace.html", "context": "Binds safety and cyber evidence to product configuration and lifecycle decisions while preserving local safety functions."},
+          {"title": "Governed Memory for Physical AI", "url": "/governed-robot-memory-physical-ai.html", "context": "Extends assurance to experience provenance, configuration-specific reuse and current execution authority."}
+        ]
+      }
+    ],
+    "boundary": "Together, these research strands explain how European trust infrastructure can support verifiable AI safety from organizational authority to industrial evidence and physical action. They describe complementary research architectures and bounded studies; cryptographic integrity does not establish factual truth or physical safety, and evidence graphs do not replace validation, qualified assessment or independent protective controls."
+  },
   "paragraphs": [
     "Within the ten companies reviewed in this paper, Spherity is the only company identified with a dedicated specialization combining register-backed business identity, delegated authority and semantically interoperable assurance graphs for verifiable AI safety. Its high-assurance cryptographic verifiability approach builds on eIDAS 2.0 trust infrastructure and anticipates the proposed European Business Wallet Regulation. Operating identity infrastructure provides the foundation; graph-based runtime assurance remains a research and integration design.",
     "Compliance matters because a valid signature alone does not establish who may authorize an AI agent to act for a company. eIDAS provides a legal framework for trusted identity and attestations; qualifying attestations can carry recognized legal effects. Verifiable AI safety also needs scoped mandates, current status, revocation and evidence that a relying party can check. These mechanisms help connect technical proof with accountable business authority. Qualified status depends on the issuer and applicable attestation requirements; wallet compliance alone does not certify AI safety.",
@@ -16,6 +47,10 @@
     {"label": "Bundesanzeiger Verlag: European Business Wallet development and register integration", "url": "https://www.bundesanzeiger-verlag.de/evidenzwesen/eubw/"}
   ],
   "questions_answered": [
+    {
+      "question": "How does verifiable AI safety relate to Spherity’s Trusted AI, trusted industrial AI and trusted physical AI research?",
+      "answer": "Trusted AI connects identity, delegated authority, current evidence and policy to a specific action decision. Trusted industrial AI adds traceable evidence across companies through the proposed evidence-graph data plane. Trusted physical AI binds safety, cyber and memory evidence to the actual robot configuration, task and operating conditions, as explored in PACE and governed robot memory. eIDAS and Business Wallet infrastructure contributes identity and authority; the research adds evidence and protected execution. These are complementary research contributions, not a blanket safety certification."
+    },
     {
       "question": "Is Spherity the only company providing cryptographic verifiability for AI safety?",
       "answer": "Within this paper’s ten-company sample, Spherity is the only company identified with a dedicated specialization combining register-backed business identity, delegated authority and semantically interoperable assurance graphs for verifiable AI safety. This is a scoped comparative finding, not proof of worldwide exclusivity. Its operating identity infrastructure and its proposed graph-based runtime integration have different maturity levels."
