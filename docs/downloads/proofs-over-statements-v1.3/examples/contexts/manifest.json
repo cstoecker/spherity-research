@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://www.w3.org/ns/credentials/v2",
+    "file": "contexts/credentials-v2-official.jsonld",
+    "source": "https://www.w3.org/ns/credentials/v2",
+    "sha256": "59955ced6697d61e03f2b2556febe5308ab16842846f5b586d7f1f7adec92734"
+  },
+  {
+    "url": "https://w3id.org/security/multikey/v1",
+    "file": "contexts/multikey-v1.jsonld",
+    "source": "https://w3id.org/security/multikey/v1",
+    "sha256": "ba2c182de2d92f7e47184bcca8fcf0beaee6d3986c527bf664c195bbc7c58597"
+  },
+  {
+    "url": "https://w3id.org/security/v1",
+    "file": "contexts/security-v1.jsonld",
+    "source": "@digitalbazaar/security-context 1.0.1",
+    "sha256": "e2d146cd556f6fa5f14996c6f1749667d5a14073fa30f0643990068e2c0b1bac"
+  },
+  {
+    "url": "https://w3id.org/security/v2",
+    "file": "contexts/security-v2.jsonld",
+    "source": "@digitalbazaar/security-context 1.0.1",
+    "sha256": "4cb186bc29c08af6e40c58178c22dd84d542f2871a063afed6e648b47abc3cf6"
+  }
+]

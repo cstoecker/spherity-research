@@ -92,6 +92,7 @@ const files = await glob("**/*.{html,pdf}", {
   nodir: true,
   ignore: [
     "404.html",
+    "downloads/**/*.html",
     "google*.html",
     // These directories contain source downloads, not canonical HTML pages.
     // Also guard against aliases produced by optional Jekyll Markdown plugins.

@@ -9,6 +9,7 @@ import { embedImageXmp } from "./lib/image-metadata.mjs";
 import { dppPaperPath, loadDppImageMetadata } from "./lib/dpp-image-metadata.mjs";
 import { ebwPaperPath, loadEbwImageMetadata } from "./lib/ebw-image-metadata.mjs";
 import { palantirPages, loadPalantirImageMetadata } from "./lib/palantir-image-metadata.mjs";
+import { proofsPaperPath, loadProofsImageMetadata } from "./lib/proofs-image-metadata.mjs";
 
 const projectDirectory = process.cwd();
 const sourceDirectory = path.join(projectDirectory, "docs");
@@ -20,7 +21,8 @@ const dppImageMetadata = manifest.some(card => card.publication_url === dppPaper
   ? await loadDppImageMetadata(sourceDirectory) : {};
 const imageMetadata = {...dppImageMetadata, ...(manifest.some(card => card.publication_url === dpp5PaperPath) ? await loadDpp5ImageMetadata(sourceDirectory) : {}), ...(manifest.some(card => card.publication_url === ebwPaperPath)
   ? await loadEbwImageMetadata(sourceDirectory) : {}), ...(manifest.some(card => palantirPages.includes(card.publication_url))
-  ? await loadPalantirImageMetadata(sourceDirectory) : {})};
+  ? await loadPalantirImageMetadata(sourceDirectory) : {}), ...(manifest.some(card => card.publication_url === proofsPaperPath)
+  ? await loadProofsImageMetadata(sourceDirectory) : {})};
 const publications = parseYaml(await readFile(publicationsPath, "utf8"));
 const publicationsByUrl = new Map(
   publications.map((publication) => [publication.links?.[0]?.url, publication])

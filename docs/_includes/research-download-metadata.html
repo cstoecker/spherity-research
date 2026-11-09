@@ -1,0 +1,37 @@
+{% if page.canonical_url %}
+  {% assign download_canonical = page.canonical_url %}
+{% else %}
+  {% assign download_canonical = page.url | absolute_url %}
+{% endif %}
+{% for media in page.supplementary_media %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MediaObject",
+  "@id": {{ media.url | absolute_url | append: '#media-object' | jsonify }},
+  "url": {{ media.url | absolute_url | jsonify }},
+  "contentUrl": {{ media.url | absolute_url | jsonify }},
+  "name": {{ media.name | jsonify }},
+  "description": {{ media.description | jsonify }},
+  "encodingFormat": {{ media.encoding_format | jsonify }},
+  "contentSize": {{ media.content_size | jsonify }},
+  "sha256": {{ media.sha256 | jsonify }},
+  "isAccessibleForFree": true,
+  "inLanguage": {{ page.lang | default: 'en' | jsonify }},
+  {% if media.license %}"license": {{ media.license | jsonify }},{% endif %}
+  {% if media.usage_info %}"usageInfo": {% if media.usage_info contains '://' %}{{ media.usage_info | jsonify }}{% else %}{{ media.usage_info | absolute_url | jsonify }}{% endif %},{% endif %}
+  {% if media.copyright_notice %}"copyrightNotice": {{ media.copyright_notice | jsonify }},{% endif %}
+  {% if media.date_modified %}"dateModified": {{ media.date_modified | jsonify }},{% endif %}
+  {% if page.author_entities %}"creator": [
+    {% for author in page.author_entities %}{
+      "@type": "Person",
+      "name": {{ author.name | jsonify }}{% if author.url %},
+      "url": {{ author.url | jsonify }}{% endif %}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ],{% elsif page.authors %}"creator": [
+    {% for author in page.authors %}{"@type": "Person", "name": {{ author | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}
+  ],{% endif %}
+  "isPartOf": {"@id": {{ download_canonical | append: '#article' | jsonify }}}
+}
+</script>
+{% endfor %}

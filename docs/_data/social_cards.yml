@@ -460,6 +460,23 @@
   visual: /assets/ebw-roadmap-paper-cover.jpg
   visual_fit: contain
 
+- publication_url: "/proofs-over-statements-evidence-graphs.html"
+  output: "/assets/proofs-over-statements-social.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "RESEARCH PAPER · EVIDENCE GRAPHS"
+  title_size: 46
+  title_lines:
+    - "Proofs over Statements"
+    - "Verifiable Evidence"
+    - "Graphs"
+  deck_lines:
+    - "JSON-LD, Data Integrity and business wallets."
+    - "Full paper, brief and validated examples."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  visual: "/assets/proofs-over-statements/full-paper-cover.jpg"
+  visual_fit: "contain"
+
 - publication_url: "/threat-escalation-model-germany-eu.html"
   output: "/assets/preview-threat-escalation-model-germany-eu.webp"
   style: "research-grid-v1"

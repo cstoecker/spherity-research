@@ -28,6 +28,14 @@ Canonical library: {{ "/" | absolute_url }}
 {% endif %}
 {% endfor %}
 
+## Publication packages and verification resources
+
+{% for paper in paper_pages %}
+{% for media in paper.supplementary_media %}
+- [{{ media.name }}]({{ media.url | absolute_url }}): {{ media.description }} ({{ media.encoding_format }})
+{% endfor %}
+{% endfor %}
+
 ## Site resources
 
 - [XML sitemap]({{ "/sitemap.xml" | absolute_url }})

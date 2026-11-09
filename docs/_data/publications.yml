@@ -1,3 +1,39 @@
+- title: "Proofs over Statements: Verifiable Evidence Graphs"
+  publication_type: paper
+  type: Research paper and executive brief · Credential formats for industrial graphs
+  date_label: Final version 1.3 · 9 November 2026
+  date_iso: '2026-11-09'
+  description: JSON-LD evidence graphs, Data Integrity and business wallet credentials, with final full paper, executive brief, all figures and validated nested credential examples.
+  byline: Dr. Carsten Stöcker · Spherity GmbH
+  topics:
+  - Evidence graphs
+  - Identity
+  - Trusted AI
+  filters: ai identity wallets infrastructure dpp
+  search: proofs over statements verifiable evidence graphs knowledge graphs assurance graphs json-ld rdf w3c vcdm 2.0 data integrity sd-jwt vc nested credentials eidas 2.0 european business wallet qeaa eaa qualified electronic attestations of attributes trusted ai industrial ai physical ai digital product passport credential verification cryptographic proofs hybrid signatures post quantum pqc wissensgraph verifizierbare nachweise unternehmenswallet industrielle ki digitale identität carsten stöcker spherity
+  image: /assets/proofs-over-statements-social.webp
+  image_alt: Proofs over Statements research on JSON-LD evidence graphs with the final paper cover.
+  image_width: 1200
+  image_height: 630
+  media_class: card-media-wide
+  format: HTML + 2 PDFs + 13 figures + validated examples
+  links:
+  - label: Read the research
+    url: /proofs-over-statements-evidence-graphs.html
+    arrow: →
+  - label: Full paper PDF
+    url: /Stoecker-2026-Proofs-over-Statements-v1.3.pdf
+    arrow: ↓
+    secondary: true
+  - label: Executive brief PDF
+    url: /Stoecker-2026-Proofs-over-Statements-v1.3-executive-brief.pdf
+    arrow: ↓
+    secondary: true
+  - label: Publication ZIP
+    url: /downloads/Stoecker-2026-Proofs-over-Statements-v1.3-publication-package-2026-11-09.zip
+    arrow: ↓
+    secondary: true
+
 - title: Top 10 Global AI Safety Companies
   publication_type: paper
   type: Technology Outlook 2026 · AI Safety Atlas

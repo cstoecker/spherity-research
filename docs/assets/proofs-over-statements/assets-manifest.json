@@ -1,0 +1,677 @@
+{
+  "version": "1.3",
+  "date": "2026-11-09",
+  "canonical_url": "https://spherity.github.io/spherity-research/proofs-over-statements-evidence-graphs.html",
+  "author": "Carsten Stöcker",
+  "copyright_holder": "Carsten Stöcker, Spherity GmbH",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "figures": [
+    {
+      "id": "full-figure-01-argument-structure",
+      "document": "full",
+      "figure_number": 1,
+      "name": "Structure of the proof-domain and assurance argument",
+      "alt": "Results, assumptions and worked designs connect the RDF encoding, proof recovery, reuse cost and assurance arguments.",
+      "description": "Results, assumptions and worked designs connect the RDF encoding, proof recovery, reuse cost and assurance arguments.",
+      "caption": "Structure of the argument. Rounded boxes are results. Grey boxes identify modelling conditions and premises. Arrows show how the results and worked designs are related.",
+      "width": 1000,
+      "height": 480,
+      "png_width": 2400,
+      "png_height": 1152,
+      "creator": "Carsten Stöcker",
+      "copyright_holder": "Carsten Stöcker, Spherity GmbH",
+      "copyright_notice": "Copyright 2026 Carsten Stöcker, Spherity GmbH. Licensed under CC BY 4.0.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "verifiable evidence graphs",
+        "proof domains",
+        "RDF",
+        "decision assurance"
+      ],
+      "source_pdf_sha256": "b023f97840e228be41ed0dd17bb34ebe2d3f0677fee8d4cb42d517a9cd5891ce",
+      "artwork": "Original vector PDF with lettering converted to outlines for self-contained SVG delivery.",
+      "content_url": "/assets/proofs-over-statements/full-figure-01-argument-structure.svg",
+      "downloads": [
+        {
+          "format": "SVG",
+          "encoding_format": "image/svg+xml",
+          "url": "/assets/proofs-over-statements/full-figure-01-argument-structure.svg",
+          "bytes": 621514,
+          "sha256": "d46530819c050fab0dcb191ad83bbacafdfca283235c653b6fea2897e7b42964"
+        },
+        {
+          "format": "PNG",
+          "encoding_format": "image/png",
+          "url": "/assets/proofs-over-statements/full-figure-01-argument-structure.png",
+          "bytes": 325090,
+          "sha256": "3e5be0d66df5c3903122fea1bd9e7e534778a25456ee3033c30cca9f6058411e"
+        },
+        {
+          "format": "PDF",
+          "encoding_format": "application/pdf",
+          "url": "/assets/proofs-over-statements/full-figure-01-argument-structure.pdf",
+          "bytes": 154387,
+          "sha256": "deb2d2fe9fbdac9ef9266239e0ef6a359696461be74c4cb1eee2f057caa04e96"
+        }
+      ]
+    },
+    {
+      "id": "full-figure-02-linked-data-and-qualified-authority",
+      "document": "full",
+      "figure_number": 2,
+      "name": "One linked-data model for web markup, evidence and qualified authority",
+      "alt": "Three layers connect schema.org JSON-LD, verifiable evidence graphs and the proposed graph-proof profile for qualified authority attestations.",
+      "description": "Three layers connect schema.org JSON-LD, verifiable evidence graphs and the proposed graph-proof profile for qualified authority attestations.",
+      "caption": "Web markup (schema.org in JSON-LD), a verifiable evidence graph and qualified authority edges share one data model. The qualified layer shows the graph-proof profile proposed in Section 9.",
+      "width": 960,
+      "height": 600,
+      "png_width": 2400,
+      "png_height": 1500,
+      "creator": "Carsten Stöcker",
+      "copyright_holder": "Carsten Stöcker, Spherity GmbH",
+      "copyright_notice": "Copyright 2026 Carsten Stöcker, Spherity GmbH. Licensed under CC BY 4.0.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "JSON-LD",
+        "schema.org",
+        "qualified electronic attestations of attributes",
+        "eIDAS 2.0"
+      ],
+      "source_pdf_sha256": "9674b110a17d475e6638addc9e184bc30e75f993f667393e18101f66f0ea66f3",
+      "artwork": "Original vector PDF with lettering converted to outlines for self-contained SVG delivery.",
+      "content_url": "/assets/proofs-over-statements/full-figure-02-linked-data-and-qualified-authority.svg",
+      "downloads": [
+        {
+          "format": "SVG",
+          "encoding_format": "image/svg+xml",
+          "url": "/assets/proofs-over-statements/full-figure-02-linked-data-and-qualified-authority.svg",
+          "bytes": 290139,
+          "sha256": "c9bfb1cdde731e6a73cc8593bf55c81d360881ab199d3617afbe32983edecfb4"
+        },
+        {
+          "format": "PNG",
+          "encoding_format": "image/png",
+          "url": "/assets/proofs-over-statements/full-figure-02-linked-data-and-qualified-authority.png",
+          "bytes": 368573,
+          "sha256": "68d20b205f34a82919436fbd66d8daef067cfdcd39ffa854b344339971b1ef26"
+        },
+        {
+          "format": "PDF",
+          "encoding_format": "application/pdf",
+          "url": "/assets/proofs-over-statements/full-figure-02-linked-data-and-qualified-authority.pdf",
+          "bytes": 78047,
+          "sha256": "0668eb03b8494214b399da4cb53ad044360108e684cfadcd020c6474ebe02a68"
+        }
+      ]
+    },
+    {
+      "id": "full-figure-03-graph-and-envelope-proof-domains",
+      "document": "full",
+      "figure_number": 3,
+      "name": "Graph proofs and envelope proofs authenticate different inputs",
+      "alt": "Architecture A authenticates canonical RDF quads and proof configuration; architecture B authenticates envelope bytes and needs recoverable source evidence after a merge.",
+      "description": "Architecture A authenticates canonical RDF quads and proof configuration; architecture B authenticates envelope bytes and needs recoverable source evidence after a merge.",
+      "caption": "The architectures can convey the same RDF dataset. A checks a proof over the canonical quads and the canonical proof configuration. B checks a proof over the protected envelope input. In the erasure case of L2(b), B needs retained source evidence for direct verification after a merge.",
+      "width": 960,
+      "height": 520,
+      "png_width": 2400,
+      "png_height": 1300,
+      "creator": "Carsten Stöcker",
+      "copyright_holder": "Carsten Stöcker, Spherity GmbH",
+      "copyright_notice": "Copyright 2026 Carsten Stöcker, Spherity GmbH. Licensed under CC BY 4.0.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "W3C VCDM 2.0",
+        "RDF Data Integrity",
+        "SD-JWT",
+        "credential verification"
+      ],
+      "source_pdf_sha256": "c96446424a31c4c30e322904de0c8ad3579d5df31291016b6e2ac20f0ee272c9",
+      "artwork": "Original vector PDF with lettering converted to outlines for self-contained SVG delivery.",
+      "content_url": "/assets/proofs-over-statements/full-figure-03-graph-and-envelope-proof-domains.svg",
+      "downloads": [
+        {
+          "format": "SVG",
+          "encoding_format": "image/svg+xml",
+          "url": "/assets/proofs-over-statements/full-figure-03-graph-and-envelope-proof-domains.svg",
+          "bytes": 251790,
+          "sha256": "79918f8af4c51963bd2d3f4b0f2a5b2e2d9984b073b15828c63a0cbefd7a289d"
+        },
+        {
+          "format": "PNG",
+          "encoding_format": "image/png",
+          "url": "/assets/proofs-over-statements/full-figure-03-graph-and-envelope-proof-domains.png",
+          "bytes": 322891,
+          "sha256": "8447da7e8bbc9da718a5109726a2d69b5b2a589267e9f43bfaecf42cac71f505"
+        },
+        {
+          "format": "PDF",
+          "encoding_format": "application/pdf",
+          "url": "/assets/proofs-over-statements/full-figure-03-graph-and-envelope-proof-domains.pdf",
+          "bytes": 58990,
+          "sha256": "c4cf21f2d97f64a19ff54eba3fd7bc5cb10fd457877aa94467aa60d885f330ca"
+        }
+      ]
+    },
+    {
+      "id": "full-figure-04-verification-cost-crossover",
+      "document": "full",
+      "figure_number": 4,
+      "name": "Prototype cost crossover for repeated credential verification",
+      "alt": "Cumulative and per-check prototype costs compare graph proofs, fresh envelope-to-graph expansion and an envelope-only check with a trusted cached mapping.",
+      "description": "Cumulative and per-check prototype costs compare graph proofs, fresh envelope-to-graph expansion and an envelope-only check with a trusted cached mapping.",
+      "caption": "Cost model using run-3 prototype timings for IRI-only credentials on one thread. (a) The curves sum median batch means for issuance, ingestion and R re-verifications of a 146-quad credential. The calculated crossover is R*=4.24 for the envelope path with fresh expansion: at that point both paths have accumulated about 6.1 ms; left of it B costs less because its issuance and ingestion are cheaper, right of it A costs less because each further check costs 0.28 ms in A and 1.06 ms in B, so that at R=10 B has cost 1.6 times A. The dashed envelope-only curve excludes checks on a cached RDF view. (b) Measured A1, B1 and B1s by credential size. The crossover labels use B1 and include issuance.",
+      "width": 1000,
+      "height": 440,
+      "png_width": 2400,
+      "png_height": 1056,
+      "creator": "Carsten Stöcker",
+      "copyright_holder": "Carsten Stöcker, Spherity GmbH",
+      "copyright_notice": "Copyright 2026 Carsten Stöcker, Spherity GmbH. Licensed under CC BY 4.0.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "credential verification cost",
+        "RDF canonicalisation",
+        "SD-JWT",
+        "evidence reuse"
+      ],
+      "source_pdf_sha256": "2e11bfd0cb24bbd731b833cc53d949774318b545e14f3074507ab25edb58ed31",
+      "artwork": "Original vector PDF with lettering converted to outlines for self-contained SVG delivery.",
+      "content_url": "/assets/proofs-over-statements/full-figure-04-verification-cost-crossover.svg",
+      "downloads": [
+        {
+          "format": "SVG",
+          "encoding_format": "image/svg+xml",
+          "url": "/assets/proofs-over-statements/full-figure-04-verification-cost-crossover.svg",
+          "bytes": 243272,
+          "sha256": "ced84a8affe588a83e7f35527c36d9b56157012833585c0063e2ecd979b47fdb"
+        },
+        {
+          "format": "PNG",
+          "encoding_format": "image/png",
+          "url": "/assets/proofs-over-statements/full-figure-04-verification-cost-crossover.png",
+          "bytes": 217770,
+          "sha256": "61c45eff828c40487cffaf388eeb842cc988ad77a8c148c1d8a217c4f69beebc"
+        },
+        {
+          "format": "PDF",
+          "encoding_format": "application/pdf",
+          "url": "/assets/proofs-over-statements/full-figure-04-verification-cost-crossover.pdf",
+          "bytes": 81562,
+          "sha256": "d034db1d636a3e01298d94d690670c83701737a0d70239702b5b957390b6a7d0"
+        }
+      ]
+    },
+    {
+      "id": "full-figure-05-authority-and-content-assurance",
+      "document": "full",
+      "figure_number": 5,
+      "name": "Qualified authority and content assurance remain distinct",
+      "alt": "Qualified authority checks do not eliminate a feasible independent attack on an ordinary content declaration that changes the accepted outcome.",
+      "description": "Qualified authority checks do not eliminate a feasible independent attack on an ordinary content declaration that changes the accepted outcome.",
+      "caption": "An illustrative policy under A2. (a) An authority edge validated at E bounds the decision by K(E) if it is a single direct attack target satisfying T3(c). (b) If graph-profile issuance and validation make those edges Q, an E declaration that can independently change the accepted outcome still bounds the decision. Equality requires a matching lower bound from T3(a).",
+      "width": 1000,
+      "height": 471,
+      "png_width": 2400,
+      "png_height": 1130,
+      "creator": "Carsten Stöcker",
+      "copyright_holder": "Carsten Stöcker, Spherity GmbH",
+      "copyright_notice": "Copyright 2026 Carsten Stöcker, Spherity GmbH. Licensed under CC BY 4.0.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "QEAA",
+        "EAA",
+        "authority assurance",
+        "content integrity",
+        "trust graph"
+      ],
+      "source_pdf_sha256": "4e448805533cf2ca3d27d6e799b25a90ce9498f0077c5fdc5f7fdd8f0fdcc6d4",
+      "artwork": "Original vector PDF with lettering converted to outlines for self-contained SVG delivery.",
+      "content_url": "/assets/proofs-over-statements/full-figure-05-authority-and-content-assurance.svg",
+      "downloads": [
+        {
+          "format": "SVG",
+          "encoding_format": "image/svg+xml",
+          "url": "/assets/proofs-over-statements/full-figure-05-authority-and-content-assurance.svg",
+          "bytes": 246781,
+          "sha256": "f18fbbf56673b3148cd55add3f4ca660b522fb6d5f801230fcb86d1c468fd87e"
+        },
+        {
+          "format": "PNG",
+          "encoding_format": "image/png",
+          "url": "/assets/proofs-over-statements/full-figure-05-authority-and-content-assurance.png",
+          "bytes": 241562,
+          "sha256": "b38c58d6fedcae35dd726cb29473c2d396259aeb5c2e60e784a3f2580f1d9357"
+        },
+        {
+          "format": "PDF",
+          "encoding_format": "application/pdf",
+          "url": "/assets/proofs-over-statements/full-figure-05-authority-and-content-assurance.pdf",
+          "bytes": 61118,
+          "sha256": "9e220fee17110d4625ac528fb8ec65ae5361cfd3c66aa7e9148cadbfe0f57f2b"
+        }
+      ]
+    },
+    {
+      "id": "full-figure-06-battery-passport-evidence-graph",
+      "document": "full",
+      "figure_number": 6,
+      "name": "Battery passport evidence graph and reporting decision",
+      "alt": "A battery passport joins issuer declarations, verification statements, digest links and authority checks for a carbon-footprint reporting decision.",
+      "description": "A battery passport joins issuer declarations, verification statements, digest links and authority checks for a carbon-footprint reporting decision.",
+      "caption": "Evidence graph behind one battery passport. Solid grey arrows are digest links. Dashed arrows show authority checks. The orange path shows the declaration and verification statement used by the reporting decision. The example applies the decision rule in Section 6.1.",
+      "width": 1000,
+      "height": 655,
+      "png_width": 2400,
+      "png_height": 1572,
+      "creator": "Carsten Stöcker",
+      "copyright_holder": "Carsten Stöcker, Spherity GmbH",
+      "copyright_notice": "Copyright 2026 Carsten Stöcker, Spherity GmbH. Licensed under CC BY 4.0.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Digital Product Passport",
+        "battery passport",
+        "evidence graph",
+        "supply chain"
+      ],
+      "source_pdf_sha256": "2a3d103e28b8ff3efcdca06c3a5b6dd6ae242f4a1c10aa9e6634b2f2e4a3f16c",
+      "artwork": "Original vector PDF with lettering converted to outlines for self-contained SVG delivery.",
+      "content_url": "/assets/proofs-over-statements/full-figure-06-battery-passport-evidence-graph.svg",
+      "downloads": [
+        {
+          "format": "SVG",
+          "encoding_format": "image/svg+xml",
+          "url": "/assets/proofs-over-statements/full-figure-06-battery-passport-evidence-graph.svg",
+          "bytes": 272018,
+          "sha256": "5f7173653aac7c4c843b7d9693f3eee3df04bc81ccaf87749c4a763eec527ed5"
+        },
+        {
+          "format": "PNG",
+          "encoding_format": "image/png",
+          "url": "/assets/proofs-over-statements/full-figure-06-battery-passport-evidence-graph.png",
+          "bytes": 269237,
+          "sha256": "da7093a42f443fd8e1361ecaff28713f51133ebb4f67788ae5b4b851ae5562ec"
+        },
+        {
+          "format": "PDF",
+          "encoding_format": "application/pdf",
+          "url": "/assets/proofs-over-statements/full-figure-06-battery-passport-evidence-graph.pdf",
+          "bytes": 62311,
+          "sha256": "4d213e23c7b20f548157d6a6564c4e36481512aef8670c10bd8c930c23a24296"
+        }
+      ]
+    },
+    {
+      "id": "full-figure-07-customs-shipment-evidence-graph",
+      "document": "full",
+      "figure_number": 7,
+      "name": "Customs shipment evidence graph at the port of entry",
+      "alt": "Authority facts, signed shipment evidence, digest links and release-decision inputs form a cross-organisation customs evidence graph.",
+      "description": "Authority facts, signed shipment evidence, digest links and release-decision inputs form a cross-organisation customs evidence graph.",
+      "caption": "Evidence graph of one e-commerce shipment at the port of entry. Blue boxes are authority facts, green boxes issuer-signed evidence, solid arrows digest links, dashed arrows authority checks, orange arrows the evidence used by the release decision. The data model is reconstructed from the public pilot demonstration.",
+      "width": 1000,
+      "height": 640,
+      "png_width": 2400,
+      "png_height": 1536,
+      "creator": "Carsten Stöcker",
+      "copyright_holder": "Carsten Stöcker, Spherity GmbH",
+      "copyright_notice": "Copyright 2026 Carsten Stöcker, Spherity GmbH. Licensed under CC BY 4.0.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "B2G",
+        "customs",
+        "shipment evidence",
+        "European Business Wallet"
+      ],
+      "source_pdf_sha256": "2e66ebd47d50ff5533cfcdd658d54e7c90cda01b6e90090c68ecae70668c01bb",
+      "artwork": "Original vector PDF with lettering converted to outlines for self-contained SVG delivery.",
+      "content_url": "/assets/proofs-over-statements/full-figure-07-customs-shipment-evidence-graph.svg",
+      "downloads": [
+        {
+          "format": "SVG",
+          "encoding_format": "image/svg+xml",
+          "url": "/assets/proofs-over-statements/full-figure-07-customs-shipment-evidence-graph.svg",
+          "bytes": 349891,
+          "sha256": "d75ca3e4931a2738b7eaf5eca555ecd7e62cb4f75499cd72cc664bccb9f27b0f"
+        },
+        {
+          "format": "PNG",
+          "encoding_format": "image/png",
+          "url": "/assets/proofs-over-statements/full-figure-07-customs-shipment-evidence-graph.png",
+          "bytes": 321922,
+          "sha256": "a2a5c0c5cb6e38a5cb43ecf54a5e77e4f5f42337e3d9528648cd173c8f7fbaf0"
+        },
+        {
+          "format": "PDF",
+          "encoding_format": "application/pdf",
+          "url": "/assets/proofs-over-statements/full-figure-07-customs-shipment-evidence-graph.pdf",
+          "bytes": 63524,
+          "sha256": "f0bebeb40027aa37822a839a55f4d57210799b6e0cbd794925c4a1914d9ff7b7"
+        }
+      ]
+    },
+    {
+      "id": "full-figure-08-ai-safety-supervisor",
+      "document": "full",
+      "figure_number": 8,
+      "name": "AI safety supervisor with a verifiable requirements graph",
+      "alt": "A safety supervisor checks proposed actions against authenticated requirements, records its decision and keeps local protective functions separate.",
+      "description": "A safety supervisor checks proposed actions against authenticated requirements, records its decision and keeps local protective functions separate.",
+      "caption": "Safety supervisor consuming a verifiable requirements graph. The supervisor evaluates proposed actions against authenticated requirements and records the outcome. Supporting credentials are checked at load and update, and again per decision if the policy requires it. Local protective functions operate separately. Timing examples come from the prototype measurements and the projections in Tables 6 and 7.",
+      "width": 1000,
+      "height": 560,
+      "png_width": 2400,
+      "png_height": 1344,
+      "creator": "Carsten Stöcker",
+      "copyright_holder": "Carsten Stöcker, Spherity GmbH",
+      "copyright_notice": "Copyright 2026 Carsten Stöcker, Spherity GmbH. Licensed under CC BY 4.0.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Trusted AI",
+        "trusted industrial AI",
+        "trusted physical AI",
+        "AI safety",
+        "assurance graph"
+      ],
+      "source_pdf_sha256": "9428fab00f980373c50ca827dfa342e1fcba1b335f9263d3d6f3298148234bc7",
+      "artwork": "Original vector PDF with lettering converted to outlines for self-contained SVG delivery.",
+      "content_url": "/assets/proofs-over-statements/full-figure-08-ai-safety-supervisor.svg",
+      "downloads": [
+        {
+          "format": "SVG",
+          "encoding_format": "image/svg+xml",
+          "url": "/assets/proofs-over-statements/full-figure-08-ai-safety-supervisor.svg",
+          "bytes": 277797,
+          "sha256": "a53787b2c8091287b679ee88423cedb67b19d37f0943fe6317efe9cdc440387c"
+        },
+        {
+          "format": "PNG",
+          "encoding_format": "image/png",
+          "url": "/assets/proofs-over-statements/full-figure-08-ai-safety-supervisor.png",
+          "bytes": 292230,
+          "sha256": "2d310b47a10a23d2f5d0879817e9c01f74ed1dc52b718b7058c18d0b616dc8d9"
+        },
+        {
+          "format": "PDF",
+          "encoding_format": "application/pdf",
+          "url": "/assets/proofs-over-statements/full-figure-08-ai-safety-supervisor.pdf",
+          "bytes": 63365,
+          "sha256": "c9fa54dac2a2ec51c62d45611fbc73ebd0cd6bd26bbddc1526c36f09eff15518"
+        }
+      ]
+    },
+    {
+      "id": "brief-figure-01-citizen-and-business-wallets",
+      "document": "brief",
+      "figure_number": 1,
+      "name": "Citizen presentations and business-wallet evidence graphs",
+      "alt": "A citizen presents selected credentials while organisations combine EAA-backed evidence with selected policy-required QEAA relationships in a common graph stack.",
+      "description": "A citizen presents selected credentials while organisations combine EAA-backed evidence with selected policy-required QEAA relationships in a common graph stack.",
+      "caption": "Citizen presentation and retained business evidence. Green relationships are EAA-backed; blue dashed relationships require QEAAs under the decision policy. The proposed common graph stack preserves issuer, scope, status and assurance level. Colour denotes supporting attestations, not independently signed edges. The examples illustrate workloads, not exclusive wallet capabilities.",
+      "width": 1400,
+      "height": 900,
+      "png_width": 2400,
+      "png_height": 1544,
+      "creator": "Carsten Stöcker",
+      "copyright_holder": "Carsten Stöcker, Spherity GmbH",
+      "copyright_notice": "Copyright 2026 Carsten Stöcker, Spherity GmbH. Licensed under CC BY 4.0.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "European Business Wallet",
+        "EUDI Wallet",
+        "QEAA",
+        "EAA",
+        "verifiable evidence graph"
+      ],
+      "source_pdf_sha256": "319d020d56b3f68fe46a2892d854442ddf75329cd958adc757647e10c5c33541",
+      "artwork": "Original vector PDF with lettering converted to outlines for self-contained SVG delivery.",
+      "content_url": "/assets/proofs-over-statements/brief-figure-01-citizen-and-business-wallets.svg",
+      "downloads": [
+        {
+          "format": "SVG",
+          "encoding_format": "image/svg+xml",
+          "url": "/assets/proofs-over-statements/brief-figure-01-citizen-and-business-wallets.svg",
+          "bytes": 366642,
+          "sha256": "36dbae6063562601b589ce209247301d5684d2757329dfef69c6e0c9f76bffe6"
+        },
+        {
+          "format": "PNG",
+          "encoding_format": "image/png",
+          "url": "/assets/proofs-over-statements/brief-figure-01-citizen-and-business-wallets.png",
+          "bytes": 452957,
+          "sha256": "fc2e9e0273c453f0b3bd880169dee5e3c32152bbf43f848d92fea217c17aced9"
+        },
+        {
+          "format": "PDF",
+          "encoding_format": "application/pdf",
+          "url": "/assets/proofs-over-statements/brief-figure-01-citizen-and-business-wallets.pdf",
+          "bytes": 79062,
+          "sha256": "956902f6f2428b53a5e0b414e672e9dd3ab4a35dc2c44430fc695c25d82d0778"
+        }
+      ]
+    },
+    {
+      "id": "brief-figure-02-verification-and-unnesting",
+      "document": "brief",
+      "figure_number": 2,
+      "name": "How a machine verifies and unnests an industrial credential",
+      "alt": "Side-by-side steps compare stored graph-proof verification with envelope-only B1 processing, disclosure reconstruction, expansion and source binding.",
+      "description": "Side-by-side steps compare stored graph-proof verification with envelope-only B1 processing, disclosure reconstruction, expansion and source binding.",
+      "caption": "A machine checking the same stored battery claim through A and envelope-only B1. The dual-proof nested example in Appendix A additionally verifies the inner graph proof. Unnesting includes authentication, disclosure reconstruction and controlled interpretation; decoding alone proves nothing. The displayed timings cover prototype portions of the process, not all steps or complete security checks. A cached mapping can replace fresh expansion only under a policy protecting its source binding, freshness and status. Source: paper [full paper], Sections 5.2–5.5; explanatory diagram added in this edition.",
+      "width": 1200,
+      "height": 1375,
+      "png_width": 2095,
+      "png_height": 2400,
+      "creator": "Carsten Stöcker",
+      "copyright_holder": "Carsten Stöcker, Spherity GmbH",
+      "copyright_notice": "Copyright 2026 Carsten Stöcker, Spherity GmbH. Licensed under CC BY 4.0.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "nested credentials",
+        "SD-JWT verification",
+        "Data Integrity proof",
+        "credential verification steps"
+      ],
+      "source_pdf_sha256": "8bbcdbd914aaf0b7aa44d9e65c30df0edc771413b0e7c6283d422ec2d7ea06d9",
+      "artwork": "Original vector PDF with lettering converted to outlines for self-contained SVG delivery.",
+      "content_url": "/assets/proofs-over-statements/brief-figure-02-verification-and-unnesting.svg",
+      "downloads": [
+        {
+          "format": "SVG",
+          "encoding_format": "image/svg+xml",
+          "url": "/assets/proofs-over-statements/brief-figure-02-verification-and-unnesting.svg",
+          "bytes": 350009,
+          "sha256": "21382c3d64b1d5f52c92309b964f321f3051c39f1c4c32538ebc223c51ac67a0"
+        },
+        {
+          "format": "PNG",
+          "encoding_format": "image/png",
+          "url": "/assets/proofs-over-statements/brief-figure-02-verification-and-unnesting.png",
+          "bytes": 545576,
+          "sha256": "367bb237defdaecaa515e9c245c7f4109d337ceb793c16be0703fbd02841ce11"
+        },
+        {
+          "format": "PDF",
+          "encoding_format": "application/pdf",
+          "url": "/assets/proofs-over-statements/brief-figure-02-verification-and-unnesting.pdf",
+          "bytes": 67966,
+          "sha256": "e6033319512f67df98df54070c038dea146d324d4ea8bafcf379401ef33c0b9d"
+        }
+      ]
+    },
+    {
+      "id": "brief-figure-03-per-check-verification-cost",
+      "document": "brief",
+      "figure_number": 3,
+      "name": "Prototype cost of an additional verification by credential size",
+      "alt": "Measured prototype times compare a stored graph-proof check with envelope processing and fresh RDF expansion; the caption distinguishes cached-view checks.",
+      "description": "Measured prototype times compare a stored graph-proof check with envelope processing and fresh RDF expansion; the caption distinguishes cached-view checks.",
+      "caption": "Prototype times per additional verification, by credential size. The orange path verifies the retained envelope and freshly expands its payload; comparison with a cached graph is outside that timed path. The blue path retrieves and verifies the stored credential and proof inputs. At 146 quads, the separately measured envelope-only path took 0.25 ms, excluding validation of the cached view and source binding. Source: paper [full paper], Table 3.",
+      "width": 1000,
+      "height": 440,
+      "png_width": 2400,
+      "png_height": 1056,
+      "creator": "Carsten Stöcker",
+      "copyright_holder": "Carsten Stöcker, Spherity GmbH",
+      "copyright_notice": "Copyright 2026 Carsten Stöcker, Spherity GmbH. Licensed under CC BY 4.0.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "credential verification performance",
+        "JSON-LD expansion",
+        "RDF",
+        "SD-JWT"
+      ],
+      "source_pdf_sha256": "1227c5ebe8a1856eb76ae97d175d40a7dc6c7d73897cc3f57c745a5a4e999799",
+      "artwork": "Original vector PDF with lettering converted to outlines for self-contained SVG delivery.",
+      "content_url": "/assets/proofs-over-statements/brief-figure-03-per-check-verification-cost.svg",
+      "downloads": [
+        {
+          "format": "SVG",
+          "encoding_format": "image/svg+xml",
+          "url": "/assets/proofs-over-statements/brief-figure-03-per-check-verification-cost.svg",
+          "bytes": 126596,
+          "sha256": "36af4df91bf5ed30131cb8e11243a61abf8feb564699edbd0be4772f6ed24ff7"
+        },
+        {
+          "format": "PNG",
+          "encoding_format": "image/png",
+          "url": "/assets/proofs-over-statements/brief-figure-03-per-check-verification-cost.png",
+          "bytes": 106101,
+          "sha256": "a9c10867dfc250b6065dfa884970604b10ad652f9c49f049c2a71f7d09aa2925"
+        },
+        {
+          "format": "PDF",
+          "encoding_format": "application/pdf",
+          "url": "/assets/proofs-over-statements/brief-figure-03-per-check-verification-cost.pdf",
+          "bytes": 52288,
+          "sha256": "94fc4be921246d61c27efbc2344fb9d8daf224027f3c46bc576e9881fcbaf67c"
+        }
+      ]
+    },
+    {
+      "id": "brief-figure-04-cumulative-verification-cost",
+      "document": "brief",
+      "figure_number": 4,
+      "name": "Cumulative verification cost and the cached-envelope alternative",
+      "alt": "The graph-proof path costs more initially and crosses the fresh-expansion path at 4.24 additional checks for the 146-quad fixture; the cached-envelope path has a different scope.",
+      "description": "The graph-proof path costs more initially and crosses the fresh-expansion path at 4.24 additional checks for the 146-quad fixture; the cached-envelope path has a different scope.",
+      "caption": "Cumulative processing and per-check costs from the full paper, including the envelope-only alternative. The graph path costs more initially and crosses over against fresh expansion at 4.24 additional checks for the 146-quad fixture. The dashed envelope-only curve assumes a trusted cached mapping and excludes its validation. These are prototype processing costs, not complete service latencies. Source: paper [full paper], Figure 4.",
+      "width": 1000,
+      "height": 440,
+      "png_width": 2400,
+      "png_height": 1056,
+      "creator": "Carsten Stöcker",
+      "copyright_holder": "Carsten Stöcker, Spherity GmbH",
+      "copyright_notice": "Copyright 2026 Carsten Stöcker, Spherity GmbH. Licensed under CC BY 4.0.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "repeated verification",
+        "credential cost model",
+        "Data Integrity",
+        "cached mapping"
+      ],
+      "source_pdf_sha256": "88a97a5a1e4a30f8602f6d0c87472c8aad61c373276212a93a9f99fc4efac41e",
+      "artwork": "Original vector PDF with lettering converted to outlines for self-contained SVG delivery.",
+      "content_url": "/assets/proofs-over-statements/brief-figure-04-cumulative-verification-cost.svg",
+      "downloads": [
+        {
+          "format": "SVG",
+          "encoding_format": "image/svg+xml",
+          "url": "/assets/proofs-over-statements/brief-figure-04-cumulative-verification-cost.svg",
+          "bytes": 242758,
+          "sha256": "9d819de080f10232b17c91978eebeaf8c554f77d993e1709a7f628eefd1001b6"
+        },
+        {
+          "format": "PNG",
+          "encoding_format": "image/png",
+          "url": "/assets/proofs-over-statements/brief-figure-04-cumulative-verification-cost.png",
+          "bytes": 217260,
+          "sha256": "cb9d299c0287f2fece5787eb9274defaf7de93f78f8046715e1cd9e3d75e1ea8"
+        },
+        {
+          "format": "PDF",
+          "encoding_format": "application/pdf",
+          "url": "/assets/proofs-over-statements/brief-figure-04-cumulative-verification-cost.pdf",
+          "bytes": 81046,
+          "sha256": "acd873322f1d099b7d95c2d60c04054911e8e472b04620d25f0a64a32319320e"
+        }
+      ]
+    },
+    {
+      "id": "brief-figure-05-battery-content-and-authority",
+      "document": "brief",
+      "figure_number": 5,
+      "name": "Battery evidence separates content claims from authority checks",
+      "alt": "The battery-passport graph illustrates why a valid mandate or qualified authority does not itself authenticate the exact reported carbon-footprint class.",
+      "description": "The battery-passport graph illustrates why a valid mandate or qualified authority does not itself authenticate the exact reported carbon-footprint class.",
+      "caption": "The battery-passport design distinguishes content, evidence links and authority checks. A valid mandate and accredited issuer do not by themselves authenticate the exact reported carbon-footprint class. The diagram includes a content attack that can remain possible even when authority attestations are qualified. Source: paper [full paper], Figure 6.",
+      "width": 1000,
+      "height": 655,
+      "png_width": 2400,
+      "png_height": 1572,
+      "creator": "Carsten Stöcker",
+      "copyright_holder": "Carsten Stöcker, Spherity GmbH",
+      "copyright_notice": "Copyright 2026 Carsten Stöcker, Spherity GmbH. Licensed under CC BY 4.0.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "battery passport",
+        "qualified authority",
+        "content attacks",
+        "industrial evidence"
+      ],
+      "source_pdf_sha256": "2a3d103e28b8ff3efcdca06c3a5b6dd6ae242f4a1c10aa9e6634b2f2e4a3f16c",
+      "artwork": "Original vector PDF with lettering converted to outlines for self-contained SVG delivery.",
+      "content_url": "/assets/proofs-over-statements/brief-figure-05-battery-content-and-authority.svg",
+      "downloads": [
+        {
+          "format": "SVG",
+          "encoding_format": "image/svg+xml",
+          "url": "/assets/proofs-over-statements/brief-figure-05-battery-content-and-authority.svg",
+          "bytes": 272206,
+          "sha256": "28d94c008c34fe3e3c7bfb3942136786e978bd6bff8419d948b3b1031ae04dff"
+        },
+        {
+          "format": "PNG",
+          "encoding_format": "image/png",
+          "url": "/assets/proofs-over-statements/brief-figure-05-battery-content-and-authority.png",
+          "bytes": 269427,
+          "sha256": "b75ddfc360eac4568dda747a8623c96a053e574cb45d0e93a551f0b4309647f9"
+        },
+        {
+          "format": "PDF",
+          "encoding_format": "application/pdf",
+          "url": "/assets/proofs-over-statements/brief-figure-05-battery-content-and-authority.pdf",
+          "bytes": 62502,
+          "sha256": "857514f21f05ab84350466319cb82c46df2870d3ae81139341f44a8aaa0bcb75"
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "document": "full",
+      "url": "/assets/proofs-over-statements/full-paper-cover.jpg",
+      "width": 1132,
+      "height": 1600,
+      "alt": "Complete first page of the final full paper, including title, author and CC BY 4.0 notice.",
+      "bytes": 360390,
+      "sha256": "38955f7e83ae74ce22d86fd4621d43675c96daa303d90a58efad2dee6a7ee861"
+    },
+    {
+      "document": "brief",
+      "url": "/assets/proofs-over-statements/executive-brief-cover.jpg",
+      "width": 1132,
+      "height": 1600,
+      "alt": "Complete first page of the final executive brief, including title, author and CC BY 4.0 notice.",
+      "bytes": 371922,
+      "sha256": "5ded8e64d305ab009aeda88fe5f149920371ff2ba7b5c6af7e1d56ea817ac72c"
+    }
+  ],
+  "validation": {
+    "figures": 13,
+    "formats_per_figure": 3,
+    "all_vector_svg_text_outlined": true,
+    "pdf_content_streams_and_pixels_unchanged": true,
+    "all_formats_have_embedded_metadata": true
+  }
+}

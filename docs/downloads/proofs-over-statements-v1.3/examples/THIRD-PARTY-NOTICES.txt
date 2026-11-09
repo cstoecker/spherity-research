@@ -1,0 +1,30 @@
+Third-party material in the complete credential verification package
+
+W3C context documents
+This package includes context material from Verifiable Credentials Data Model
+v2.0 (https://www.w3.org/ns/credentials/v2) and the Multikey context used by
+Verifiable Credential Data Integrity
+(https://www.w3.org/2025/credentials/vcdi/multikey/context/v1.jsonld).
+Copyright © 2025 World Wide Web Consortium. Licensed under the W3C Software
+and Document License: https://www.w3.org/copyright/software-license-2023/.
+The downloaded context files are unmodified. The full licence notice is
+preserved in licenses/w3c-software-document-license-2023.html.
+
+Digital Bazaar security contexts
+contexts/security-v1.jsonld and contexts/security-v2.jsonld are exported from
+@digitalbazaar/security-context 1.0.1 and pretty-printed without semantic changes.
+Copyright (c) 2021 Digital Bazaar, Inc. BSD 3-Clause licence preserved in
+licenses/security-context-LICENSE.txt.
+
+The credentials-context package's own notice, including its distinction between
+W3C context data and library code, is preserved in
+licenses/credentials-context-LICENSE.md.
+
+Software libraries
+The dependency versions and exact resolved packages are recorded in package.json
+and package-lock.json. Dependencies are installed by npm and retain their own
+copyright notices and licences. They are not included as node_modules in the
+publication package and are not relicensed under the paper's CC BY 4.0 notice.
+
+Generated fixture values and example domains do not represent an endorsement
+by W3C, Digital Bazaar or any other standards body or software maintainer.

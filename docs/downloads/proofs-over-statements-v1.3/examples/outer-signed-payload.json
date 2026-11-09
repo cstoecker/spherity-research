@@ -1,0 +1,9 @@
+{
+  "iss": "https://issuer.example",
+  "iat": 1794182400,
+  "vct": "https://issuer.example/type/nested-material",
+  "_sd_alg": "sha-256",
+  "_sd": [
+    "TqMFz3Asrf4bO_jEX_avXVLNzLfZ-P-KSxU4FnAxcM0"
+  ]
+}

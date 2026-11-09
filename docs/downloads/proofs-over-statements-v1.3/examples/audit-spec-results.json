@@ -1,0 +1,39 @@
+{
+  "result": "PASS",
+  "scope": "Independent direct Node/OpenSSL signature audit; JSON-LD/RDFC libraries are shared dependencies, not a fully independent normalization implementation. No general VC/SD-JWT conformance or live issuer discovery claimed.",
+  "node": "v24.21.0",
+  "assertions": {
+    "plainEd25519": true,
+    "canonicalDocumentMatches": true,
+    "canonicalProofConfigurationMatches": true,
+    "reorderedJsonStillVerifies": true,
+    "outerEs256": true,
+    "disclosureCommitmentMatches": true,
+    "recoveredInnerEqualsPlain": true,
+    "issuerAndAssertionAuthorizationBound": true,
+    "validOuterInvalidInnerIndependentlyConfirmed": true
+  },
+  "negativeChecks": [
+    "changed-claim",
+    "changed-context-meaning",
+    "changed-proof-purpose",
+    "changed-ed25519-signature",
+    "changed-es256-signature",
+    "changed-jwt-payload",
+    "changed-disclosure",
+    "valid-outer-envelope-does-not-validate-invalid-inner-proof"
+  ],
+  "documentSha256": "c7319e1bf2b85cfe3f5e78ba557c9667bb36e15517a56c7c12df7f6c6aee28e6",
+  "proofConfigurationSha256": "580215d82917724ff298835c6bbf99f22d38ffac802f3a36c307af48b724cff6",
+  "inputArtifacts": {
+    "plain-vc.json": "7cf4836b1c2fd1021036c2ba9425e9ba3056f953d56420404c915674d67c76a6",
+    "verification-method.json": "51a4b6fba326672effd64e9f471715376584874a26a9098bfa54373f209abd15",
+    "controller.json": "024c24d0c8284562fca38156badf01d8a9494349f9810c92934c7907e4bbe8af",
+    "outer-public-jwk.json": "40ff1c55d657084d906ec2c2db333f1ebd583e99911b9df8c115bc4880b85209",
+    "issuer-metadata.json": "4073e76c991a432921b253147babefe1642760060ea0e1b0e90042ae76f3a33c",
+    "nested.sd-jwt": "bb9d1a649e295397f336a889ce361d4488c31500bac6fa2efe75688e73924039"
+  },
+  "contexts": [
+    "https://www.w3.org/ns/credentials/v2"
+  ]
+}

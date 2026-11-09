@@ -7,6 +7,7 @@ import { embedImageXmp } from "./lib/image-metadata.mjs";
 import { dppPaperPath, loadDppImageMetadata } from "./lib/dpp-image-metadata.mjs";
 import { ebwPaperPath, loadEbwImageMetadata } from "./lib/ebw-image-metadata.mjs";
 import { palantirPages, loadPalantirImageMetadata } from "./lib/palantir-image-metadata.mjs";
+import { proofsPaperPath, loadProofsImageMetadata } from "./lib/proofs-image-metadata.mjs";
 
 const option = (key, fallback) => {
   const index = process.argv.indexOf(key);
@@ -19,7 +20,8 @@ const dppImageMetadata = records.some(record => record.pagePath === dppPaperPath
   ? await loadDppImageMetadata(sourceDirectory) : {};
 const imageMetadata = {...dppImageMetadata, ...(records.some(record => record.pagePath === dpp5PaperPath) ? await loadDpp5ImageMetadata(sourceDirectory) : {}), ...(records.some(record => record.pagePath === ebwPaperPath)
   ? await loadEbwImageMetadata(sourceDirectory) : {}), ...(records.some(record => palantirPages.includes(record.pagePath))
-  ? await loadPalantirImageMetadata(sourceDirectory) : {})};
+  ? await loadPalantirImageMetadata(sourceDirectory) : {}), ...(records.some(record => record.pagePath === proofsPaperPath)
+  ? await loadProofsImageMetadata(sourceDirectory) : {})};
 const escape = (value) => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;")
   .replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#39;");
 const relativeUrl = (value) => `${config.baseurl || ""}${value.split("/").map(encodeURIComponent).join("/")}`;

@@ -7,7 +7,7 @@ import sharp from 'sharp';
 
 const slug='top-10-global-ai-safety-companies-2026';
 const source=fs.readFileSync(`docs/${slug}.md`,'utf8');
-const page=parse(source.match(/^---\n([\s\S]*?)\n---/)[1]);
+const page=parse(source.match(/^---\r?\n([\s\S]*?)\r?\n---/)[1]);
 const html=fs.readFileSync(`_site/${slug}.html`,'utf8');
 const schemas=[...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1]));
 const reference='research-assets/global-ai-safety/reference/';

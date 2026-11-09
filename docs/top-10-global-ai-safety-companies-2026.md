@@ -21,7 +21,7 @@
   - "Dr. Carsten Stöcker — Spherity GmbH"
 "affiliation": "Spherity GmbH"
 "date": "2026-11-08"
-"last_modified_at": "2026-11-08"
+"last_modified_at": "2026-11-09"
 "research_cutoff": "2026-11-08"
 "research_cutoff_label": "Evidence reviewed to this date · Revised edition 2.6"
 "lang": "en"
@@ -912,7 +912,7 @@
 <li id="ref-3" data-source-key="src3">NIST. <em>Artificial Intelligence Risk Management Framework 1.0</em>. <a href="https://doi.org/10.6028/NIST.AI.100-1">https://doi.org/10.6028/NIST.AI.100-1</a></li>
 <li id="ref-4" data-source-key="src4">Spherity Research. <em>Top 10 German Technology Companies technology outlook</em>. <a href="https://spherity.github.io/spherity-research/top-german-technology-companies-industrial-ai-agentic-commerce-2026.html">https://spherity.github.io/spherity-research/top-german-technology-companies-industrial-ai-agentic-commerce-2026.html</a></li>
 <li id="ref-5" data-source-key="src5">Spherity Research. <em>Governing Safe AI That Acts Across Companies</em>. <a href="https://spherity.github.io/spherity-research/governing-ai-that-acts-across-companies.html">https://spherity.github.io/spherity-research/governing-ai-that-acts-across-companies.html</a></li>
-<li id="ref-6" data-source-key="src6">Stöcker, C. (2026). Proofs over Statements in Verifiable Evidence Graphs for the European Business Wallet. Version 8.2, 7 November. Unpublished manuscript.</li>
+<li id="ref-6" data-source-key="src6">Stöcker, C. (2026). <a href="{{ '/proofs-over-statements-evidence-graphs.html' | relative_url }}">Proofs over Statements in Verifiable Evidence Graphs for the European Business Wallet</a>. Final publication version 1.3, 9 November. <a href="{{ '/Stoecker-2026-Proofs-over-Statements-v1.3.pdf' | relative_url }}">Full paper PDF</a>; <a href="{{ '/Stoecker-2026-Proofs-over-Statements-v1.3-executive-brief.pdf' | relative_url }}">executive brief</a>.</li>
 <li id="ref-7" data-source-key="src7">Spherity Research. <em>AI Agent Revocation and Containment in Multi-Agent Systems</em>. <a href="https://spherity.github.io/spherity-research/ai-agent-revocation-containment-multi-agent-systems.html">https://spherity.github.io/spherity-research/ai-agent-revocation-containment-multi-agent-systems.html</a></li>
 <li id="ref-8" data-source-key="src8">Spherity Research. <em>PACE Verifiable Safety and Cyber Evidence Graphs for Physical AI</em>. <a href="https://spherity.github.io/spherity-research/physical-ai-compliance-evidence-pace.html">https://spherity.github.io/spherity-research/physical-ai-compliance-evidence-pace.html</a></li>
 <li id="ref-9" data-source-key="src9">AWS. <em>Amazon Bedrock AgentCore Guardrails in Policy</em>. <a href="https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-bedrock-agentcore-policy-guardrails-generally-available/">https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-bedrock-agentcore-policy-guardrails-generally-available/</a></li>

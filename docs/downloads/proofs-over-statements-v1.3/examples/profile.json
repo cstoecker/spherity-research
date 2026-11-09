@@ -1,0 +1,15 @@
+{
+  "purpose": "Publication worked example, not production or qualified issuance",
+  "verificationTime": "2026-11-09T12:00:00Z",
+  "issuer": "https://issuer.example",
+  "vct": "https://issuer.example/type/nested-material",
+  "innerCryptosuite": "eddsa-rdfc-2022",
+  "outerAlgorithm": "ES256",
+  "holderBindingRequired": false,
+  "credentialDisclosureRequired": true,
+  "bothProofsRequired": true,
+  "issuerBinding": "Same pinned issuer for inner and outer; local metadata/key documents",
+  "unit": "https://example.org/percentagePoint is an illustrative vocabulary term for percentage points",
+  "status": "No credentialStatus property; no revocation or live trust service test",
+  "privateKeys": "Fresh demonstration keys used only in memory; not saved"
+}

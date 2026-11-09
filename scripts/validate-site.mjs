@@ -813,6 +813,46 @@ for (const markdownFile of markdownFiles) {
     }
   }
 
+  if (data.supplementary_media !== undefined) {
+    if (!Array.isArray(data.supplementary_media) || data.supplementary_media.length === 0) {
+      errors.push(`${markdownFile}: supplementary_media must be a non-empty list.`);
+    } else {
+      const supplementaryUrls = new Set();
+      for (const [index, media] of data.supplementary_media.entries()) {
+        const label = `${markdownFile}: supplementary_media item ${index + 1}`;
+        for (const field of ["name", "description", "url", "encoding_format", "content_size", "sha256", "usage_info"]) {
+          if (typeof media?.[field] !== "string" || !media[field].trim()) errors.push(`${label} requires a non-empty ${field}.`);
+        }
+        let pathname;
+        try { pathname = decodeURIComponent(String(media?.url || "")); } catch { pathname = ""; }
+        const safeLocalUrl = /^\/(?!\/)[^?#\\]+$/.test(pathname) && !pathname.split("/").some(part => part === "." || part === "..");
+        if (!safeLocalUrl) errors.push(`${label}: url must identify a local file without traversal, query or fragment.`);
+        if (supplementaryUrls.has(media?.url)) errors.push(`${label}: duplicate supplementary download ${media?.url}.`);
+        supplementaryUrls.add(media?.url);
+        if (!/^[a-z0-9!#$&^_.+-]+\/[a-z0-9!#$&^_.+-]+$/i.test(media?.encoding_format || "") || media?.encoding_format === "application/pdf" || /\.pdf$/i.test(pathname)) {
+          errors.push(`${label}: encoding_format must be a non-PDF MIME type; PDFs belong in associated_media.`);
+        }
+        const expectedMime = {".zip":"application/zip", ".json":"application/json", ".txt":"text/plain", ".sd-jwt":"application/dc+sd-jwt"}[path.extname(pathname).toLowerCase()];
+        if (expectedMime && media?.encoding_format !== expectedMime) errors.push(`${label}: filename requires MIME type ${expectedMime}.`);
+        if (!/^(?:0|[1-9]\d*) bytes$/.test(media?.content_size || "")) errors.push(`${label}: content_size must give the exact byte count as 'N bytes'.`);
+        if (!/^[a-f0-9]{64}$/.test(media?.sha256 || "")) errors.push(`${label}: sha256 must be a lowercase SHA-256 digest.`);
+        if (media?.license !== undefined && !isHttpsUrl(media.license)) errors.push(`${label}: license must be an absolute HTTPS URL.`);
+        if (!isHttpsUrl(media?.usage_info) && !/^\/(?!\/)/.test(media?.usage_info || "")) errors.push(`${label}: usage_info must be an HTTPS or root-relative URL.`);
+        if (media?.copyright_notice !== undefined && (typeof media.copyright_notice !== "string" || !media.copyright_notice.trim())) errors.push(`${label}: copyright_notice must be non-empty text.`);
+        if (media?.date_modified !== undefined && !/^\d{4}-\d{2}-\d{2}$/.test(media.date_modified)) errors.push(`${label}: date_modified must be an ISO date.`);
+        if (safeLocalUrl) {
+          const filePath = sourcePathFromPublicUrl(media.url);
+          if (!(await exists(filePath))) errors.push(`${label}: supplementary download does not exist: ${media.url}`);
+          else {
+            const bytes = await readFile(filePath);
+            if (media.content_size !== `${bytes.length} bytes`) errors.push(`${label}: content_size differs from the source file.`);
+            if (media.sha256 !== createHash("sha256").update(bytes).digest("hex")) errors.push(`${label}: sha256 differs from the source file.`);
+          }
+        }
+      }
+    }
+  }
+
   if (data.figure_objects !== undefined) {
     if (!Array.isArray(data.figure_objects) || data.figure_objects.length === 0) {
       errors.push(`${markdownFile}: figure_objects must be a non-empty list.`);
@@ -1318,11 +1358,23 @@ if (!(await exists(configuredSocialImage))) {
   }
 }
 
-const htmlFiles = await glob("**/*.html", {
+const builtHtmlFiles = await glob("**/*.html", {
   cwd: siteDirectory,
   nodir: true,
   windowsPathsNoEscape: true
 });
+// Downloaded source artifacts (including third-party licence documents) are
+// preserved verbatim. They are not site pages, so their upstream HTML, links and
+// indexing metadata must not be rewritten to satisfy the publication template.
+const isDownloadArtifact = filename => filename.split(path.sep).join("/").startsWith("downloads/");
+for (const filename of builtHtmlFiles.filter(isDownloadArtifact)) {
+  const sourceFile = path.join(sourceDirectory, filename);
+  if (!(await exists(sourceFile))) errors.push(`${filename}: raw HTML download has no source artifact.`);
+  else if (!(await readFile(sourceFile)).equals(await readFile(path.join(siteDirectory, filename)))) {
+    errors.push(`${filename}: raw HTML download must retain its exact source bytes.`);
+  }
+}
+const htmlFiles = builtHtmlFiles.filter(filename => !isDownloadArtifact(filename));
 
 // Only mapped, generated PDF share pages may be noindex aliases. An arbitrary
 // file under /share/ must still satisfy the ordinary public-page rules below.
@@ -1930,14 +1982,16 @@ for (const htmlFile of htmlFiles) {
         /<link\b[^>]*rel=["']alternate["'][^>]*type=["']application\/pdf["'][^>]*href=["']([^"']+)["'][^>]*>/gi
       )
     ].map((match) => match[1]);
-    const pdfMediaUrls = new Set(
-      parsedSchemas
-        .filter((schema) => schema?.["@type"] === "MediaObject")
-        .map((schema) => schema.contentUrl)
-    );
-    const pdfMediaSchemas = parsedSchemas.filter(
+    const supplementaryDeclarations = asArray(sourcePageForHtml?.data?.supplementary_media);
+    const supplementaryByUrl = new Map(supplementaryDeclarations.map(media => [`${canonicalOrigin}${media.url}`, media]));
+    const allMediaSchemas = parsedSchemas.filter(
       (schema) => schema?.["@type"] === "MediaObject"
     );
+    // Only explicitly declared supplemental files leave the PDF path. An
+    // undeclared object still fails the existing PDF checks and alternate match.
+    const supplementaryMediaSchemas = allMediaSchemas.filter(media => supplementaryByUrl.has(media.contentUrl));
+    const pdfMediaSchemas = allMediaSchemas.filter(media => !supplementaryByUrl.has(media.contentUrl));
+    const pdfMediaUrls = new Set(pdfMediaSchemas.map(media => media.contentUrl));
     for (const media of pdfMediaSchemas) {
       if (
         !media?.["@id"] ||
@@ -1961,6 +2015,40 @@ for (const htmlFile of htmlFiles) {
       errors.push(
         `${htmlFile}: PDF alternate links and top-level MediaObject declarations must match one-to-one.`
       );
+    }
+    for (const [url, declaration] of supplementaryByUrl) {
+      const matches = supplementaryMediaSchemas.filter(media => media.contentUrl === url);
+      if (matches.length !== 1) {
+        errors.push(`${htmlFile}: supplementary download ${url} must have exactly one top-level MediaObject.`);
+        continue;
+      }
+      const media = matches[0];
+      const usageInfo = /^https:\/\//.test(declaration.usage_info || "") ? declaration.usage_info : `${canonicalOrigin}${declaration.usage_info}`;
+      const expectedFields = {
+        "@id": `${url}#media-object`, url, contentUrl: url,
+        name: declaration.name, description: declaration.description,
+        encodingFormat: declaration.encoding_format, contentSize: declaration.content_size,
+        sha256: declaration.sha256, usageInfo,
+        license: declaration.license, copyrightNotice: declaration.copyright_notice,
+        dateModified: declaration.date_modified, isAccessibleForFree: true,
+        inLanguage: sourcePageForHtml.data.lang || "en"
+      };
+      for (const [field, expected] of Object.entries(expectedFields)) {
+        if (media[field] !== expected) errors.push(`${htmlFile}: supplementary download ${url} has mismatched ${field}.`);
+      }
+      if (media.isPartOf?.["@id"] !== `${canonical}#article`) errors.push(`${htmlFile}: supplementary download ${url} must identify its canonical article in isPartOf.`);
+      const expectedCreators = sourcePageForHtml.data.author_entities
+        ? asArray(sourcePageForHtml.data.author_entities).map(author => ({"@type":"Person", name:author.name, ...(author.url ? {url:author.url} : {})}))
+        : asArray(sourcePageForHtml.data.authors).map(name => ({"@type":"Person", name}));
+      if (JSON.stringify(media.creator) !== JSON.stringify(expectedCreators)) errors.push(`${htmlFile}: supplementary download ${url} must retain the article author identities.`);
+      // The output must contain the bytes described by the metadata, not just a
+      // matching source file that the publishing build forgot to copy.
+      const outputFile = path.join(siteDirectory, declaration.url.replace(/^\/+/, ""));
+      if (!(await exists(outputFile))) errors.push(`${htmlFile}: supplementary download is missing from the built site: ${declaration.url}`);
+      else {
+        const bytes = await readFile(outputFile);
+        if (`${bytes.length} bytes` !== declaration.content_size || createHash("sha256").update(bytes).digest("hex") !== declaration.sha256) errors.push(`${htmlFile}: built supplementary download differs from its declared bytes: ${declaration.url}`);
+      }
     }
 
     const articleSchema = parsedSchemas.find(
@@ -2050,6 +2138,9 @@ for (const htmlFile of htmlFiles) {
       if (!referencedMediaIds.has(media["@id"])) {
         errors.push(`${htmlFile}: PDF MediaObject is not linked from the ScholarlyArticle.`);
       }
+    }
+    for (const media of supplementaryMediaSchemas) {
+      if (!referencedMediaIds.has(media["@id"])) errors.push(`${htmlFile}: supplementary MediaObject is not linked from the article.`);
     }
 
     const articleHtml = html.match(
@@ -2388,6 +2479,7 @@ if (await exists(path.join(siteDirectory, "sitemap.xml"))) {
   });
   for (const sitemapFile of sitemapFiles) {
     const normalizedFile = sitemapFile.split(path.sep).join("/");
+    if (isDownloadArtifact(sitemapFile) && normalizedFile.toLowerCase().endsWith(".html")) continue;
     if ((figureDownloads.has(`/${normalizedFile}`) && !sitemapDownloads.has(`/${normalizedFile}`)) || placeholderDownloads.has(`/${normalizedFile}`)) continue;
     let expectedUrl = `${canonicalOrigin}/${normalizedFile}`;
     if (normalizedFile === "index.html") expectedUrl = `${canonicalOrigin}/`;

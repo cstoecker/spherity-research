@@ -12,3 +12,8 @@ docs/assets/eu-dpp-registry-dpp5/** -text whitespace=cr-at-eol
 docs/assets/eu-dpp-registry-dpp5/*.pdf binary
 docs/Spherity_Research_EU_DPP_Registry_W3C_Standards_DPP5.0.pdf -text
 research-assets/dpp5/approved/** -text
+docs/Stoecker-2026-Proofs-over-Statements-v1.3*.pdf binary
+docs/downloads/** -text whitespace=cr-at-eol
+docs/assets/proofs-over-statements/** -text whitespace=cr-at-eol
+docs/assets/proofs-over-statements-file-catalog.json -text
+research-assets/proofs-over-statements/** -text

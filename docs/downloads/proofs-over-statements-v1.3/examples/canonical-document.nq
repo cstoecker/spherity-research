@@ -1,0 +1,7 @@
+<https://id.example/battery/4711> <https://example.org/recycledCobaltShare> "16"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://id.example/battery/4711> <https://example.org/unit> <https://example.org/percentagePoint> .
+<https://issuer.example/vc/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://example.org/MaterialCredential> .
+<https://issuer.example/vc/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2018/credentials#VerifiableCredential> .
+<https://issuer.example/vc/1> <https://www.w3.org/2018/credentials#credentialSubject> <https://id.example/battery/4711> .
+<https://issuer.example/vc/1> <https://www.w3.org/2018/credentials#issuer> <https://issuer.example> .
+<https://issuer.example/vc/1> <https://www.w3.org/2018/credentials#validFrom> "2026-11-09T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
