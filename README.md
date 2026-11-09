@@ -27,6 +27,14 @@ The publication cards on the homepage are generated from one catalog:
 metadata from drifting apart.
 
 Social-card art direction is recorded in `docs/_data/social_cards.yml` and
+includes a dedicated homepage entry (`publication_url: /`, `layout: research-collection`).
+Its collection-level card represents Trusted AI, digital identity, product passports
+and data spaces. Never use an individual paper's cover or preview as the homepage
+Open Graph/X image. `docs/index.md` and the site image fallback use
+`/assets/spherity-research-home.webp`. Regenerate it through the existing generator
+and inspect both full-size and thumbnail output.
+
+Publication social cards are
 rendered by `scripts/generate-social-cards.mjs`. The shared 1200 × 630 research
 grid style is regenerated before local checks and deployment. A mandatory
 preflight measures every title, subtitle, description, byline, and topic row
@@ -193,7 +201,7 @@ does not establish that a diagram is visible or correctly framed.
 
 ## SEO, AEO and GEO research
 
-The EBW roadmap page opts into image discovery with `image_sitemap: true`.
+The EBW roadmap page participates in automatic image discovery.
 The sitemap generator includes its reviewed figure, paper cover and social image;
 it verifies that each local image exists. Run
 `node scripts/update-ebw-image-metadata.mjs` after changing the EBW image metadata.
@@ -220,9 +228,13 @@ pixel-equivalence checks and published hashes. Original release hashes remain
 in `scripts/data/palantir-release-integrity.json`; do not repin them for metadata
 changes. Social-card and PDF-share generators retain the image metadata.
 
-`image_sitemap: true` includes declared SVG/PNG figures, paper covers, social
-cards and optional `sitemap_images`. Explicit `sitemap_downloads` adds standalone
-PDF figures and research JSON using the publication's source date. The paired
+Every full build includes declared SVG/PNG figures, paper covers, social cards,
+inline and linked images, and existing same-stem image alternatives automatically.
+`image_sitemap` is legacy metadata, not an inclusion gate. Figure PDF downloads and
+`supplementary_media` are automatic; `sitemap_images` and `sitemap_downloads` remain
+additive for additional research assets. Draft/noindex owners and placeholder PDFs
+remain excluded, as do PDF-share aliases. Always regenerate the whole sitemap after
+building and check all new assets against it. Validation fails on omissions. The paired
 publication covers both HTML pages, 14 PDFs, 30 images and the graph model.
 Noindex sharing aliases, archived originals, scripts and styles remain excluded.
 

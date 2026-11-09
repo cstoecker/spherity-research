@@ -1,3 +1,14 @@
+- publication_url: /
+  page_type: website
+  style: research-grid-v1
+  layout: research-collection
+  mode: generated
+  output: /assets/spherity-research-home.webp
+  format_label: OPEN RESEARCH · SPHERITY
+  title_lines: [Spherity, Research]
+  deck_lines: [Building trust in the, digital economy.]
+  topics: [Trusted AI, Digital identity, Product passports, Data spaces]
+
 - publication_url: /top-10-global-ai-safety-companies-2026.html
   output: /assets/preview-global-ai-safety-2026.webp
   style: research-grid-v1

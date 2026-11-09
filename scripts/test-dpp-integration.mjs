@@ -219,7 +219,10 @@ test('the finished paper and all five canonical Atlas pages are discoverable wit
     assert.equal(locations.filter(location => location === `${canonical}${route}`).length, 1, page);
   }
   assert.deepEqual(locations.filter(location => location.startsWith(canonical)).sort(), routes.map(([, route]) => `${canonical}${route}`).sort());
-  assert.doesNotMatch(sitemap, /dpp-explorer\/(?:releases|candidates|data|vendor)\/|assets\/dpp-global|\/share\//);
+  assert.doesNotMatch(sitemap, /dpp-explorer\/(?:releases|candidates|data|vendor)\/|\/share\//);
+  assert.ok(locations.includes('https://spherity.github.io/spherity-research/assets/dpp-global/whitepaper-v1/fig01_world_map.pdf'));
+  assert.ok(locations.includes('https://spherity.github.io/spherity-research/assets/dpp-global/figures/0.1.0/dpp-world-map.pdf'));
+  assert.doesNotMatch(sitemap, /<loc>[^<]*assets\/dpp-global[^<]*\.html<\/loc>/);
 });
 
 test('raw research downloads do not acquire unreviewed HTML aliases during the site build', async () => {

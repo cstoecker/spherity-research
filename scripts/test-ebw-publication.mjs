@@ -42,7 +42,11 @@ test('roadmap stays a distinct discoverable research image with coherent rights 
   const sitemap = await readFile('_site/sitemap.xml', 'utf8');
   const pageEntry = [...sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)].find(match => match[1].includes(`<loc>${origin}/ebw-roadmap.html</loc>`))?.[1];
   assert.ok(pageEntry.includes(`<image:loc>${figure.contentUrl}</image:loc>`));
-  assert.equal((pageEntry.match(/<image:image>/g) || []).length, 4);
+  const images = [...pageEntry.matchAll(/<image:loc>(.*?)<\/image:loc>/g)].map(m => m[1]);
+  assert.equal(images.length, new Set(images).size);
+  for (const asset of Object.keys(await loadEbwImageMetadata()).filter(asset => !asset.includes('/pdf-share/'))) {
+    assert.ok(images.includes(origin + asset.split('/').map(encodeURIComponent).join('/')), `Missing EBW image ${asset}`);
+  }
   assert.ok(pageEntry.includes(figure.contentUrl.replace(/\.svg$/, '.png')));
 });
 

@@ -116,7 +116,7 @@ for (const file of files.filter((candidate) => candidate.toLowerCase().endsWith(
   if (metadata.pdfUrl) lastModifiedByUrl.set(metadata.pdfUrl, date.slice(0, 10));
 }
 
-// Figure PDFs remain excluded unless the publication explicitly opts them in.
+// Released figure PDFs are discovered automatically; draft-only assets stay excluded.
 const { figureDownloads, placeholderDownloads } = await loadPdfShares(getArgument("--source-dir", "docs"));
 const extraDownloads = await loadSitemapDownloads(getArgument("--source-dir", "docs"), siteDirectory);
 for (const [asset, modified] of extraDownloads) {

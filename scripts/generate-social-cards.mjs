@@ -1,4 +1,5 @@
 import {dpp5PaperPath, loadDpp5ImageMetadata} from "./lib/dpp5-image-metadata.mjs";
+import {prepareHomepageCard, renderHomepageCard} from "./lib/homepage-social-card.mjs";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -149,6 +150,7 @@ const prepareAtlasLayout = async (card) => {
 };
 
 const prepareCardLayout = async (card, publication) => {
+  if (card.layout === "research-collection") return prepareHomepageCard(card, measureTextWidth);
   if (card.layout === "atlas-map") return prepareAtlasLayout(card);
   const titleSize = Number(card.title_size || 48);
   const titleLineHeight = Math.round(titleSize * 1.16);
@@ -335,6 +337,7 @@ const renderAtlasCard = async (card, layout) => {
 };
 
 const renderGeneratedCard = async (card, publication, layout) => {
+  if (card.layout === "research-collection") return renderHomepageCard(card);
   if (card.layout === "atlas-map") return renderAtlasCard(card, layout);
   const {
     titleSize,

@@ -144,9 +144,9 @@ permalink: /
 schema_type: "CollectionPage"
 og_type: "website"
 robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-last_modified_at: "2026-10-11"
-image: "/assets/preview-global-digital-product-passports-atlas.webp"
-image_alt: "Global Digital Product Passports — a prominent regulatory world map with a vertical DPP Atlas label beside the whitepaper's first page."
+last_modified_at: "2026-11-09"
+image: "/assets/spherity-research-home.webp"
+image_alt: "Spherity Research collection: Trusted AI, digital identity, product passports and data spaces, connected through open standards, verifiable evidence and resilient trust."
 image_mime: image/webp
 image_width: 1200
 image_height: 630

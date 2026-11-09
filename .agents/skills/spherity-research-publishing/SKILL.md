@@ -140,7 +140,15 @@ Keep all borders, connectors, arrowheads and labels inside the viewBox/crop.
   user supplies renewed approval. Inspect regenerated cards at full and thumbnail
   size, including any incidental changes caused by platform font differences.
 
-For PDF previews, distinguish three assets: the homepage/social card, the actual
+The site homepage must
+use its own collection-level card: `/assets/spherity-research-home.webp`, generated
+from the `/` entry with `layout: research-collection`. Represent Spherity Research's
+themes and brand; never replace it with the newest paper's card, cover or figure.
+Keep the homepage Open Graph/X image, alt text, dimensions and site fallback in
+sync. Check the card at full size and thumbnail size. Paper catalog cards continue
+to represent their individual publications.
+
+For PDF previews, distinguish the paper's social card, the actual
 first-page screenshot, and the generated cover-sharing preview. Each
 `associated_media` entry needs its own document's cover and alt text. The
 [PDF-share generator](../../../scripts/generate-pdf-shares.mjs) creates
@@ -173,8 +181,18 @@ against the source PDF and confirm typography and all four edges. Passing schema
 checks or an image HTTP response does not prove that the picture is visible.
 
 Review the final diff for unrelated changes and preserve existing user work.
-Do not hand-maintain an incomplete sitemap; use the existing generator and confirm
-all intended HTML/PDF URLs while excluding sharing aliases. For crawler/security
+Every publication or asset update must regenerate the **full site sitemap**, not
+only the changed paper. Run the existing sitemap generator after the complete
+build and PDF-share generation, and run the complete validation checks. Discovery
+automatically covers published figure declarations, inline/linked images and their
+existing alternate image formats, figure PDFs and declared supplementary media.
+`image_sitemap` is no longer an opt-in requirement; `sitemap_downloads` is additive
+for other research data. Do not restore per-publication inclusion gates. Maintain
+draft/noindex and placeholder exclusions; generated PDF share aliases, scripts,
+styles and third-party dependency/license pages are not canonical research pages.
+Compare the full build inventory and new files with the generated sitemap. Fail
+validation on missing figures or downloads; after authorized deployment, verify
+the live sitemap and new asset URLs. For crawler/security
 work, inspect the actual origin-root behavior rather than assuming a file inside
 the project subpath controls the whole origin.
 

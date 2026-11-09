@@ -5,7 +5,7 @@ import process from "node:process";
 import { glob } from "glob";
 import { parse as parseYaml } from "yaml";
 import { loadPdfShares, publicUrl } from "./lib/pdf-sharing.mjs";
-import { loadSitemapDownloads } from "./lib/sitemap-images.mjs";
+import { loadSitemapDownloads, loadSitemapImages } from "./lib/sitemap-images.mjs";
 import { verifyAtlasPublication } from "../dpp-explorer/scripts/publication-release.mjs";
 
 const getArgument = (name, fallback) => {
@@ -1115,13 +1115,16 @@ for (const card of asArray(socialCards)) {
     errors.push(`${card.publication_url}: unsupported social-card mode ${card.mode}.`);
   }
   if (card.mode === "generated") {
-    for (const field of ["format_label", "title_lines", "deck_lines", "byline"]) {
+    const homepageCollection = card.publication_url === "/" && card.page_type === "website" && card.layout === "research-collection";
+    if (card.layout === "research-collection" && !homepageCollection) errors.push(`${card.publication_url}: collection layout is reserved for the site homepage.`);
+    if (homepageCollection && (card.visual || card.output !== "/assets/spherity-research-home.webp")) errors.push("Homepage must use its dedicated collection card, without a paper cover.");
+    for (const field of ["format_label", "title_lines", "deck_lines", ...(homepageCollection ? [] : ["byline"])]) {
       const value = card[field];
       if (!value || (Array.isArray(value) && value.length === 0)) {
         errors.push(`${card.publication_url}: generated social card requires ${field}.`);
       }
     }
-    if (!card.visual && !card.visual_type) {
+    if (!homepageCollection && !card.visual && !card.visual_type) {
       errors.push(`${card.publication_url}: generated social card requires visual or visual_type.`);
     }
     if (
@@ -2470,6 +2473,11 @@ if (await exists(path.join(siteDirectory, "sitemap.xml"))) {
   }
 
   const sitemapDownloads = await loadSitemapDownloads(sourceDirectory, siteDirectory);
+  const expectedImages = await loadSitemapImages(sourceDirectory, siteDirectory, canonicalOrigin);
+  for (const [owner, images] of expectedImages) {
+    const block = [...sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)].find(m => m[1].includes(`<loc>${owner.replaceAll('&','&amp;')}</loc>`))?.[1];
+    for (const image of images) if (!block?.includes(`<image:loc>${image.replaceAll('&','&amp;')}</image:loc>`)) errors.push(`sitemap.xml: missing image ${image} on ${owner}.`);
+  }
   const expectedSitemapUrls = new Set([...sitemapDownloads.keys()].map(asset => canonicalOrigin + asset));
   const sitemapFiles = await glob("**/*.{html,pdf}", {
     cwd: siteDirectory,
