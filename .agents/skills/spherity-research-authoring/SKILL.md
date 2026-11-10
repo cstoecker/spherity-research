@@ -17,12 +17,12 @@ Archival deposits follow [zenodo/README.md](../../../zenodo/README.md).
 
 ## Non-negotiables
 
-1. **Confidentiality.** Use only public material and material the user clears
-   for publication. Consortium deliverables, funded-project designs, NDA
-   documents and co-authored confidential drafts may inform the questions you
-   ask. Do not reproduce their specifics, names, partner roles, figures,
-   performance claims or business cases. Where a public paper is derived from
-   project work, it must stand on public sources alone.
+1. **Confidentiality.** Use public material and material the user owns or
+   clears. Publish an author-owned design by its mechanisms, but leave out
+   third-party context from confidential documents: project and partner
+   names, partner roles, internal plans, figures and business cases. Do not
+   use confidential material co-authored with others, or its performance
+   claims, without their agreement.
 2. **Publish, don't patent.** Spherity publishes its research and does not
    file patents. Write new contributions as *enabling* disclosures, which
    establish prior art: give enough technical detail that a skilled

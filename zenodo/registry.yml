@@ -211,5 +211,5 @@ entries:
 
   - id: planned-agent-key-management-safety-kernel
     status: hold
-    reason: "Manuscript in preparation. Must be written from non-confidential sources only, and any consortium dissemination approval obtained first. Publication policy decided (publish, no patent filing)."
-    gates: { confidentiality: open, disclosure: open, coauthors: open, rights: open, metadata_review: open }
+    reason: "Manuscript in preparation. The mechanisms are the author's own IP (confirmed 10 Nov 2026); third-party project context is left out. Publication policy decided (publish, no patent filing)."
+    gates: { confidentiality: open, disclosure: pass, coauthors: open, rights: open, metadata_review: open }
