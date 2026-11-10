@@ -1,0 +1,213 @@
+# Zenodo deposit registry for Spherity Research.
+#
+# One entry per citable work (not per web page). Metadata is generated from the
+# page front matter and docs/_data/authors.yml; this file records only archival
+# decisions. Read zenodo/README.md before changing a status or gate.
+#
+# A Zenodo publication is effectively irreversible: files cannot be replaced and
+# the DOI is permanent. Every gate must be "pass" or "n/a" before an entry may
+# move to "cleared". Gates:
+#   confidentiality  no NDA/consortium-internal material
+#   disclosure       public disclosure intended; patent/consortium IP decision taken
+#   coauthors        every co-author approved deposit, author order and licence
+#   rights           CC BY 4.0 grantable for every page, figure, quotation and logo
+#   metadata_review  a person reviewed the generated metadata and a sandbox preview
+#
+# For pages already public on the website, confidentiality and disclosure are
+# "pass": archiving the identical file adds no new disclosure. Rights and
+# metadata review stay "open" until a person has checked the PDF itself.
+
+defaults:
+  publication_type: workingpaper
+  # Add the community identifier after the "Spherity Research" Zenodo community
+  # has been created; Zenodo rejects unknown identifiers.
+  communities: []
+
+entries:
+  # ---- Governing Safe AI That Acts Across Companies (series) ----------------
+  - id: ai-safety-series-executive-brief
+    page: docs/governing-ai-that-acts-across-companies.md
+    files: [/Spherity-AI-Safety-Three-Paper-Series-Executive-Brief.pdf]
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: ai-safety-paper-1-program-equilibria
+    page: docs/resource-bounded-program-equilibria-ai-safety.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: ai-safety-paper-2-runtime-assurance
+    page: docs/risk-bounded-runtime-assurance-multi-agent-systems.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: ai-safety-paper-3-private-verification
+    page: docs/private-verification-action-eligibility-trust-domains.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  # ---- AI agent revocation and containment ---------------------------------
+  # Three documents share one topic page, so each needs its own title and
+  # abstract taken from its PDF before it can be deposited.
+  - id: revocation-mas-executive-brief
+    page: docs/ai-agent-revocation-containment-multi-agent-systems.md
+    files: [/Spherity-Reseach-AI-Agent-Revocation-in-MAS-Executive-Brief.pdf]
+    title: "Revocation and Containment in AI Agent Networks — Executive Brief"
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: revocation-mas-cascading-trust-failures
+    page: docs/ai-agent-revocation-containment-multi-agent-systems.md
+    files: [/Spherity-Reseach-AI-Agent-Cascading-Trust-Failures-in-MAS.pdf]
+    title: "Cascading Trust Failures in AI Agent Networks: A Trust Architecture for Scalable Revocation and Bounded Containment"
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: revocation-mas-runtime-revocation
+    page: docs/ai-agent-revocation-containment-multi-agent-systems.md
+    files: [/Spherity-Reseach-AI-Agent-Runtime-Revocation-in-MAS.pdf]
+    title: "Runtime Revocation in Multi-Agent Systems"
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  # ---- Trusted AI, agents and control plane -------------------------------
+  - id: ebw-legal-control-plane-zero-trust-ai-agents
+    page: docs/ebw-zero-trust-ai-agents.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: beyond-zero-trust-m-trust
+    page: docs/beyond-zero-trust-m-trust-authorised-agentic-actors.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: trusted-agentic-ai-china-eu-us
+    page: docs/trusted-agentic-ai-china-eu-us-comparative-analysis.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: governed-memory-physical-ai
+    page: docs/governed-robot-memory-physical-ai.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: pace-physical-ai-compliance-evidence
+    page: docs/physical-ai-compliance-evidence-pace.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  # ---- Evidence graphs and industrial AI ----------------------------------
+  - id: evidence-graphs-industrial-ai
+    page: docs/evidence-graphs-industrial-ai-data-plane.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: european-industrial-ai-executive-brief
+    page: docs/europes-answer-to-palantir.md
+    files: [/European_Industrial_AI_Executive_Brief_v1.0.pdf]
+    title: "A European Answer to Palantir: A globally collaborative counter model for industrial AI"
+    version: "1.0"
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: global-cooperation-sovereign-industrial-ai
+    page: docs/global-cooperation-sovereign-industrial-ai.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: deutschland-ag-2-0
+    page: docs/deutschland-ag-2-0-industrial-ai-federated-transformation.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: europes-fundamental-ai-opportunity
+    page: docs/europes-fundamental-ai-opportunity.md
+    status: candidate
+    reason: "Co-authored with Bo Harald (Why Advisory Oy); needs his consent and, if available, his ORCID."
+    gates: { confidentiality: pass, disclosure: pass, coauthors: open, rights: open, metadata_review: open }
+
+  # ---- Digital Product Passports ------------------------------------------
+  - id: verifiable-access-controlled-dpp
+    page: docs/verifiable-access-controlled-digital-product-passports.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: cra-capable-dpp
+    page: docs/cra-capable-digital-product-passports.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: global-dpp-regulation
+    page: docs/global-digital-product-passport-regulation.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: eu-dpp-registry-w3c-dpp5
+    page: docs/eu-dpp-registry-w3c-dpp5.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: energy-data-x-ebw-market-role-credentials
+    page: docs/energy-data-x-ebw-market-role-credentials-dpp-access-control.md
+    publication_type: report
+    status: candidate
+    reason: "Five co-authors from Amprion, Westnetz, TenneT and Fraunhofer IOSB-AST; each must consent, and their ORCIDs should be added."
+    gates: { confidentiality: pass, disclosure: pass, coauthors: open, rights: open, metadata_review: open }
+
+  # ---- Business wallets and identity --------------------------------------
+  - id: ebw-regulation-roadmap
+    page: docs/ebw-roadmap.md
+    publication_type: report
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: quantum-resilient-organizational-identity
+    page: docs/quantum-resilient-organizational-identity.md
+    publication_type: preprint
+    status: existing-record
+    reason: "Already deposited on Zenodo on 2026-05-31 (preprint V1, CC BY 4.0, three ORCID-linked creators). Link the DOI from the website; deposit only a new version of that concept if the website PDF is a true revision."
+    zenodo:
+      doi: 10.5281/zenodo.20474401
+      concept_doi: 10.5281/zenodo.20474400
+      record_id: 20474401
+    gates: { confidentiality: pass, disclosure: pass, coauthors: pass, rights: pass, metadata_review: pass }
+
+  - id: securing-digital-identity-quantum
+    page: docs/Securing-Digital-Identity-Quantum-Vulnerabilities.md
+    status: hold
+    reason: "HTML edition only. Produce a dated PDF version of record before depositing."
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  # ---- Strategy, market and briefing material ------------------------------
+  - id: spherity-dpp-strategy-market-positioning
+    page: docs/spherity-dpp-dbp-strategy-market-positioning.md
+    status: hold
+    reason: "Company strategy paper quoting a Gartner Emerging Market Quadrant. Gartner content-use approval does not automatically extend to a permanent CC BY archive; decide whether this belongs in a scholarly record at all."
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: top-german-technology-companies-2026
+    page: docs/top-german-technology-companies-industrial-ai-agentic-commerce-2026.md
+    publication_type: report
+    status: hold
+    reason: "Dated analytical ranking of named third-party companies; decide whether a permanent archive is wanted and check third-party logos and marks."
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: threat-escalation-model-germany-eu
+    page: docs/threat-escalation-model-germany-eu.md
+    status: hold
+    reason: "HTML infographic only; no PDF version of record."
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  # ---- Planned research (no page yet) ---------------------------------------
+  # Planned works are registered as "hold" without a page. Do not describe
+  # unpublished claims here: this repository is public, and a public commit is
+  # a disclosure in the same way as a Zenodo deposit.
+  - id: planned-semantic-supply-chain-assurance
+    status: hold
+    reason: "Manuscript in preparation. Disclosure decision and prior-art ledger required before any public draft."
+    gates: { confidentiality: open, disclosure: open, coauthors: open, rights: open, metadata_review: open }
+
+  - id: planned-agent-key-management-safety-kernel
+    status: hold
+    reason: "Manuscript in preparation. Must be written from non-confidential sources only; disclosure decision and prior-art ledger required before any public draft."
+    gates: { confidentiality: open, disclosure: open, coauthors: open, rights: open, metadata_review: open }
