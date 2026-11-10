@@ -23,10 +23,15 @@ Archival deposits follow [zenodo/README.md](../../../zenodo/README.md).
    ask. Do not reproduce their specifics, names, partner roles, figures,
    performance claims or business cases. Where a public paper is derived from
    project work, it must stand on public sources alone.
-2. **Disclosure.** This repository is public. A commit, a website page or a
-   Zenodo deposit is a public disclosure. Before a draft with new claims leaves
-   private storage, ask whether a patent filing or consortium IP decision is
-   pending.
+2. **Publish, don't patent.** Spherity publishes its research and does not
+   file patents. Write new contributions as *enabling* disclosures, which
+   establish prior art: give enough technical detail that a skilled
+   reader could implement them, include the variants and alternative
+   embeddings you can foresee, and use stable claim IDs and the established
+   terms, so that examiners and search engines find them. This repository is
+   public, so a commit is already a publication. Results shared with a
+   consortium or co-authors still need their approval before they are
+   published.
 3. **No re-documentation.** Before drafting a section, list the Spherity
    papers that already make the point (see `docs/_data/publications.yml` and
    each page's `answer_summary` and `key_takeaways`). Cite them by URL or DOI.

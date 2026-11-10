@@ -8,7 +8,9 @@
 # the DOI is permanent. Every gate must be "pass" or "n/a" before an entry may
 # move to "cleared". Gates:
 #   confidentiality  no NDA/consortium-internal material
-#   disclosure       public disclosure intended; patent/consortium IP decision taken
+#   disclosure       public disclosure intended. Spherity publishes and does not
+#                    file patents (decision of 10 Nov 2026); the gate stays open
+#                    only where a consortium or co-author must still agree
 #   coauthors        every co-author approved deposit, author order and licence
 #   rights           CC BY 4.0 grantable for every page, figure, quotation and logo
 #   metadata_review  a person reviewed the generated metadata and a sandbox preview
@@ -204,10 +206,10 @@ entries:
   # a disclosure in the same way as a Zenodo deposit.
   - id: planned-semantic-supply-chain-assurance
     status: hold
-    reason: "Manuscript in preparation. Disclosure decision and prior-art ledger required before any public draft."
-    gates: { confidentiality: open, disclosure: open, coauthors: open, rights: open, metadata_review: open }
+    reason: "Manuscript in preparation. Publication policy decided (publish, no patent filing); prior-art ledger required before the first public draft."
+    gates: { confidentiality: open, disclosure: pass, coauthors: open, rights: open, metadata_review: open }
 
   - id: planned-agent-key-management-safety-kernel
     status: hold
-    reason: "Manuscript in preparation. Must be written from non-confidential sources only; disclosure decision and prior-art ledger required before any public draft."
+    reason: "Manuscript in preparation. Must be written from non-confidential sources only, and any consortium dissemination approval obtained first. Publication policy decided (publish, no patent filing)."
     gates: { confidentiality: open, disclosure: open, coauthors: open, rights: open, metadata_review: open }

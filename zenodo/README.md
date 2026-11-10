@@ -38,12 +38,11 @@ set to `cleared`. The scripts enforce this.
    papers are never deposited as such. Publish a separately written research
    paper built only from public sources, and only after any approval the
    consortium or funding agreement requires.
-2. **Disclosure.** Depositing a work, or committing it to this public
-   repository, is a public disclosure. European patent law applies absolute
-   novelty (EPC Art. 54) with no general grace period, so decide on any patent
-   filing before the first public appearance. The US grace period does not help
-   in Europe. Defensive publication is a legitimate choice, but it must be a
-   deliberate decision.
+2. **Disclosure.** Spherity's policy is to publish, not to patent (decided on
+   10 November 2026). A deposit is therefore also a defensive publication:
+   it establishes dated prior art. The gate stays open only while a
+   consortium agreement, funding terms or a co-author still has to approve
+   publication of results they share.
 3. **Co-authors.** Every co-author approves the deposit, the author order and
    CC BY 4.0. Add their ORCID iDs to `docs/_data/authors.yml` after
    verification. Open items: Bo Harald, and the energy data-X co-authors.
