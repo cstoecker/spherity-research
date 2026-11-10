@@ -209,6 +209,11 @@ entries:
     reason: "Manuscript in preparation. Publication policy decided (publish, no patent filing); prior-art ledger required before the first public draft."
     gates: { confidentiality: open, disclosure: pass, coauthors: open, rights: open, metadata_review: open }
 
+  - id: planned-haip-w3c-profile
+    status: hold
+    reason: "Companion profile paper in preparation. Publication policy decided (publish, no patent filing); review by the profile's community contributors pending."
+    gates: { confidentiality: open, disclosure: pass, coauthors: open, rights: open, metadata_review: open }
+
   - id: planned-agent-key-management-safety-kernel
     status: hold
     reason: "Manuscript in preparation. The mechanisms are the author's own IP (confirmed 10 Nov 2026); third-party project context is left out. Publication policy decided (publish, no patent filing)."
