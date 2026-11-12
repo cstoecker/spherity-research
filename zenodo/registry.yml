@@ -202,13 +202,14 @@ entries:
 
   # ---- Software and research assets -----------------------------------------
   # Build the archive before depositing:
-  #   git archive --format=zip --prefix=ssc-harness-v0.2.0/ -o _zenodo/ssc-harness-v0.2.0.zip \
-  #     359c9df8574a87cccd653357cabac8339dfba19e:research-assets/semantic-supply-chain/harness-v0.2
-  - id: ssc-harness-v0-2-0
+  #   git archive --format=zip --prefix=ssc-harness-v0.3.0/ -o _zenodo/ssc-harness-v0.3.0.zip \
+  #     257d1c79114532e454736255d127f53e5161f639:research-assets/semantic-supply-chain/harness-v0.3
+  # v0.2.0 (commit 359c9df, timestamped 12:03:59 GMT) stays GitHub-only; v0.3.0 is the first Zenodo version.
+  - id: ssc-harness-v0-3-0
     upload_type: software
     title: "Semantic supply chain harness: worked examples for securing the meaning of verifiable credentials"
     creators: ["Dr. Carsten Stöcker"]
-    version: "0.2.0"
+    version: "0.3.0"
     publication_date: "2026-11-12"
     license: apache-2.0
     description: >-
@@ -217,7 +218,9 @@ entries:
       while signatures stay valid, and that RDFC proofs, relatedResource digests and an experimental lexical-first,
       semantic-committed cryptosuite (ecdsa-lfsc-2026) detect it. WE-2 shows that a routine context update makes
       CBOR-LD labels unreadable or silently changes their meaning, and that a codec binding outside the payload with a
-      lifetime archive restores it. WE-4 measures pre-authentication canonicalisation cost, including symmetric acyclic
+      lifetime archive restores it. WE-3 shows, on a software TPM, that measured semantics (PCR extension with the
+      closure digest of the loaded vocabularies, quote bound to the verification receipt) lets a relying party reject an
+      edge verifier that applied substituted or withdrawn meaning, including a device that forges its event log. WE-4 measures pre-authentication canonicalisation cost, including symmetric acyclic
       blank-node trees. WE-5 shows that wall-clock limits make verification verdicts load-dependent while operation
       bounds do not. Includes W3C test vectors, cross-checks against jsonld 9.0.0 / rdf-canonize 5.0.0, PyLD and
       Digital Bazaar's official ecdsa-jcs-2019 implementation, and a fact-check record. Single-environment measurements.
@@ -231,7 +234,7 @@ entries:
       - high assurance
     related_identifiers:
       - relation: isSupplementTo
-        identifier: "https://github.com/cstoecker/spherity-research/tree/359c9df8574a87cccd653357cabac8339dfba19e/research-assets/semantic-supply-chain/harness-v0.2"
+        identifier: "https://github.com/cstoecker/spherity-research/tree/257d1c79114532e454736255d127f53e5161f639/research-assets/semantic-supply-chain/harness-v0.3"
       - relation: references
         identifier: "https://spherity.github.io/spherity-research/Stoecker-2026-Proofs-over-Statements-v1.3.pdf"
       - relation: references
@@ -241,10 +244,10 @@ entries:
     notes_for_zenodo: >-
       Contains third-party material under the W3C Software and Document License (contexts and test vectors), listed in
       NOTICE. The secret keys in the test vectors are the W3C specification's published test keys. RFC 3161 timestamp
-      of SHA256SUMS: FreeTSA, 2026-11-12 12:03:59 GMT (see research-assets/semantic-supply-chain/timestamps).
-    files: [_zenodo/ssc-harness-v0.2.0.zip]
+      of SHA256SUMS: FreeTSA, 2026-11-12 12:12:09 GMT (see research-assets/semantic-supply-chain/timestamps).
+    files: [_zenodo/ssc-harness-v0.3.0.zip]
     status: candidate
-    reason: "Public on GitHub since 12 Nov 2026 (commit 359c9df). Third-party W3C files are under the W3C Software and Document License, compatible with redistribution; listed in NOTICE."
+    reason: "Public on GitHub since 12 Nov 2026 (v0.2.0 commit 359c9df; v0.3.0 commit 257d1c7). Third-party W3C files are under the W3C Software and Document License, compatible with redistribution; listed in NOTICE."
     gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: pass, metadata_review: open }
 
   # ---- Planned research (no page yet) ---------------------------------------
