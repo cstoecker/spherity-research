@@ -36,8 +36,9 @@ Only the manifest's hash was sent to the time-stamp authority, never the content
 |---|---|
 | GitHub release | [ssc-harness-v0.3.0](https://github.com/cstoecker/spherity-research/releases/tag/ssc-harness-v0.3.0), published **12 November 2026, 14:45:14 UTC** |
 | Tag | `ssc-harness-v0.3.0` → `ddf09f17693fcb1db81c33e290a28b88622d75d5` (adds this timestamp evidence to 257d1c7; the harness files are byte-identical) |
-| Release asset | `ssc-harness-v0.3.0.zip`, SHA-256 `ca79751494f80dfada60e1a8ab9e3892efef595a8312e3a36550b3efa6f3ee76` (content identical to `research-assets/semantic-supply-chain/harness-v0.3/` at 257d1c7) |
-| Web archive | pending |
+| Release assets | `ssc-harness-v0.3.0.zip`, SHA-256 `ca79751494f80dfada60e1a8ab9e3892efef595a8312e3a36550b3efa6f3ee76` (content identical to `research-assets/semantic-supply-chain/harness-v0.3/` at 257d1c7); `SHA256SUMS.tsr`, byte-identical to `harness-v0.3-SHA256SUMS.tsr` here |
+| Web archive: release page | [captured 12 November 2026, 15:13:36 UTC](https://web.archive.org/web/20261112151336/https://github.com/cstoecker/spherity-research/releases/tag/ssc-harness-v0.3.0) (after both assets were attached) |
+| Web archive: harness folder at the tag | [captured 12 November 2026, 15:15:56 UTC](https://web.archive.org/web/20261112151556/https://github.com/cstoecker/spherity-research/tree/ssc-harness-v0.3.0/research-assets/semantic-supply-chain/harness-v0.3) |
 
 The timestamp (12:12:09 GMT) predates the release (14:45:14 UTC). It proves that the manifest, and so every file it lists, existed by that time.
 
