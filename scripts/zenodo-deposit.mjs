@@ -66,7 +66,7 @@ if (entryProblems.length) fail(`${entryId}:\n- ${entryProblems.join("\n- ")}`);
 if (!depositable(entry)) fail(`${entryId} has status ${entry.status}; only cleared entries may be deposited.`);
 if (newVersion && !entry.zenodo?.record_id) fail("--new-version needs zenodo.record_id of the latest published version.");
 
-const page = await loadPage(root, entry.page);
+const page = entry.page ? await loadPage(root, entry.page) : {};
 const { metadata, files, problems } = buildDeposit(entry, page, authors, registry.defaults);
 const blockers = [...problems, ...depositBlockers(entry, registry.entries)];
 if (blockers.length) fail(`${entryId} cannot be deposited:\n- ${blockers.join("\n- ")}`);

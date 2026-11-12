@@ -200,6 +200,53 @@ entries:
     reason: "HTML infographic only; no PDF version of record."
     gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
 
+  # ---- Software and research assets -----------------------------------------
+  # Build the archive before depositing:
+  #   git archive --format=zip --prefix=ssc-harness-v0.2.0/ -o _zenodo/ssc-harness-v0.2.0.zip \
+  #     359c9df8574a87cccd653357cabac8339dfba19e:research-assets/semantic-supply-chain/harness-v0.2
+  - id: ssc-harness-v0-2-0
+    upload_type: software
+    title: "Semantic supply chain harness: worked examples for securing the meaning of verifiable credentials"
+    creators: ["Dr. Carsten Stöcker"]
+    version: "0.2.0"
+    publication_date: "2026-11-12"
+    license: apache-2.0
+    description: >-
+      Research software accompanying the Spherity Research paper "Securing the Semantic Supply Chain" (in preparation).
+      WE-1 shows that context substitution changes the meaning of credentials secured with ecdsa-jcs-2019 or vc+jwt
+      while signatures stay valid, and that RDFC proofs, relatedResource digests and an experimental lexical-first,
+      semantic-committed cryptosuite (ecdsa-lfsc-2026) detect it. WE-2 shows that a routine context update makes
+      CBOR-LD labels unreadable or silently changes their meaning, and that a codec binding outside the payload with a
+      lifetime archive restores it. WE-4 measures pre-authentication canonicalisation cost, including symmetric acyclic
+      blank-node trees. WE-5 shows that wall-clock limits make verification verdicts load-dependent while operation
+      bounds do not. Includes W3C test vectors, cross-checks against jsonld 9.0.0 / rdf-canonize 5.0.0, PyLD and
+      Digital Bazaar's official ecdsa-jcs-2019 implementation, and a fact-check record. Single-environment measurements.
+    keywords:
+      - verifiable credentials
+      - JSON-LD
+      - RDF canonicalization
+      - Data Integrity
+      - CBOR-LD
+      - semantic supply chain
+      - high assurance
+    related_identifiers:
+      - relation: isSupplementTo
+        identifier: "https://github.com/cstoecker/spherity-research/tree/359c9df8574a87cccd653357cabac8339dfba19e/research-assets/semantic-supply-chain/harness-v0.2"
+      - relation: references
+        identifier: "https://spherity.github.io/spherity-research/Stoecker-2026-Proofs-over-Statements-v1.3.pdf"
+      - relation: references
+        identifier: "https://arxiv.org/abs/2611.04461"
+      - relation: references
+        identifier: "https://arxiv.org/abs/2611.03493"
+    notes_for_zenodo: >-
+      Contains third-party material under the W3C Software and Document License (contexts and test vectors), listed in
+      NOTICE. The secret keys in the test vectors are the W3C specification's published test keys. RFC 3161 timestamp
+      of SHA256SUMS: FreeTSA, 2026-11-12 12:03:59 GMT (see research-assets/semantic-supply-chain/timestamps).
+    files: [_zenodo/ssc-harness-v0.2.0.zip]
+    status: candidate
+    reason: "Public on GitHub since 12 Nov 2026 (commit 359c9df). Third-party W3C files are under the W3C Software and Document License, compatible with redistribution; listed in NOTICE."
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: pass, metadata_review: open }
+
   # ---- Planned research (no page yet) ---------------------------------------
   # Planned works are registered as "hold" without a page. Do not describe
   # unpublished claims here: this repository is public, and a public commit is

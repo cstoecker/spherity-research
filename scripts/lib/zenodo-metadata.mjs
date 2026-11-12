@@ -132,11 +132,63 @@ function licenseId(page) {
   return undefined;
 }
 
+const LICENSE_IDS = Object.freeze(["cc-by-4.0", "apache-2.0", "mit"]);
+
+/** Repository-relative file entries; "/..." means a published docs/ URL. */
+function resolveFiles(entryFiles) {
+  return asArray(entryFiles).map((url) => ({
+    url,
+    source: url.startsWith("/") ? path.join("docs", url.replace(/^\//, "")) : url
+  }));
+}
+
+/**
+ * Software records (upload_type "software") carry their metadata in the
+ * registry entry, because they have no website page.
+ */
+export function buildSoftwareDeposit(entry, authorRegistry) {
+  const problems = [];
+  const creators = asArray(entry.creators).map((name) => {
+    const profile = authorRegistry[name] ?? {};
+    const creator = { name: toZenodoName(profile.canonical_name ?? name), affiliation: profile.affiliation };
+    const orcid = bareOrcid(profile.orcid);
+    if (orcid) creator.orcid = orcid;
+    if (!creator.affiliation) problems.push(`missing affiliation for ${creator.name}`);
+    return creator;
+  });
+  if (!creators.length) problems.push("no creators");
+  for (const field of ["title", "description", "version", "publication_date", "license"]) {
+    if (!entry[field]) problems.push(`software entry needs ${field}`);
+  }
+  if (entry.license && !LICENSE_IDS.includes(entry.license)) problems.push(`unsupported licence ${entry.license}`);
+  const related = asArray(entry.related_identifiers).map((item) => ({ ...item }));
+  for (const item of related) if (!RELATIONS.includes(item.relation)) problems.push(`unknown relation ${item.relation}`);
+  const metadata = {
+    upload_type: "software",
+    title: entry.title,
+    creators,
+    description: `<p>${escapeHtml(String(entry.description ?? "").trim())}</p>`,
+    publication_date: entry.publication_date,
+    version: String(entry.version ?? ""),
+    access_right: "open",
+    license: entry.license,
+    language: "eng",
+    keywords: asArray(entry.keywords).map(String).slice(0, 15),
+    related_identifiers: related,
+    prereserve_doi: true
+  };
+  if (entry.notes_for_zenodo) metadata.notes = entry.notes_for_zenodo;
+  const files = resolveFiles(entry.files);
+  if (!files.length) problems.push("no files to deposit");
+  return { metadata, files, problems };
+}
+
 /**
  * Returns { metadata, files, problems } for one registry entry.
  * `problems` lists blocking issues; metadata is still returned for review.
  */
 export function buildDeposit(entry, page, authorRegistry, defaults = {}) {
+  if (entry.upload_type === "software") return buildSoftwareDeposit(entry, authorRegistry);
   const problems = [];
   const creators = resolveCreators(page, authorRegistry, entry.creators);
   if (!creators.length) problems.push("no creators could be resolved");
@@ -194,10 +246,7 @@ export function buildDeposit(entry, page, authorRegistry, defaults = {}) {
   if (entry.grants?.length) metadata.grants = entry.grants.map((id) => ({ id }));
   if (!/^\d{4}-\d{2}-\d{2}$/.test(metadata.publication_date ?? "")) problems.push("publication_date must be an ISO date");
 
-  const files = asArray(entry.files ?? pagePdfUrls(page)).map((url) => ({
-    url,
-    source: path.join("docs", url.replace(/^\//, ""))
-  }));
+  const files = resolveFiles(entry.files ?? pagePdfUrls(page));
   if (!files.length) problems.push("no PDF file to deposit; publish a PDF edition first or exclude the entry");
 
   return { metadata, files, problems };
@@ -224,7 +273,7 @@ export function validateRegistryEntry(entry) {
     problems.push(`status ${entry.status} requires zenodo.doi`);
   }
   if (entry.zenodo?.concept_doi && !DOI_PATTERN.test(entry.zenodo.concept_doi)) problems.push("invalid zenodo.concept_doi");
-  if (!entry.page && !["excluded", "hold"].includes(entry.status)) problems.push("page is required");
+  if (!entry.page && entry.upload_type !== "software" && !["excluded", "hold"].includes(entry.status)) problems.push("page is required");
   return problems;
 }
 

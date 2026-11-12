@@ -89,3 +89,21 @@ test("a non-CC-BY page is not silently deposited under CC BY", () => {
   const { problems } = buildDeposit({ id: "a" }, { title: "T", date: "2026-01-01", abstract: "x", authors: ["X Y"], affiliation: "Org", pdf_url: "/a.pdf", license: "https://example.org/all-rights-reserved" }, {});
   assert.ok(problems.some((problem) => problem.includes("licence")));
 });
+
+test("software entries carry their own metadata, licence and repository files", () => {
+  const authors = { "Dr. Carsten Stöcker": { canonical_name: "Dr. Carsten Stöcker", affiliation: "Spherity GmbH", orcid: "https://orcid.org/0009-0003-7417-8872" } };
+  const entry = {
+    id: "tool", upload_type: "software", creators: ["Dr. Carsten Stöcker"], title: "Tool", description: "A <tool>.",
+    version: "0.2.0", publication_date: "2026-11-12", license: "apache-2.0", files: ["_zenodo/tool.zip"],
+    related_identifiers: [{ relation: "isSupplementTo", identifier: "https://example.org/repo" }]
+  };
+  const { metadata, files, problems } = buildDeposit(entry, {}, authors);
+  assert.deepEqual(problems, []);
+  assert.equal(metadata.upload_type, "software");
+  assert.equal(metadata.publication_type, undefined);
+  assert.equal(metadata.license, "apache-2.0");
+  assert.match(metadata.description, /A &lt;tool&gt;\./);
+  assert.deepEqual(files, [{ url: "_zenodo/tool.zip", source: "_zenodo/tool.zip" }]);
+  assert.deepEqual(validateRegistryEntry({ ...entry, status: "candidate", gates: passed }), []);
+  assert.ok(buildDeposit({ ...entry, license: "proprietary" }, {}, authors).problems.some((p) => p.includes("licence")));
+});

@@ -38,17 +38,19 @@ const fileOwners = new Map();
 const rows = [];
 for (const entry of entries) {
   for (const problem of validateRegistryEntry(entry)) errors.push(`${entry.id}: ${problem}`);
-  if (!entry.page) {
+  if (!entry.page && entry.upload_type !== "software") {
     rows.push({ id: entry.id, status: entry.status, open: openGates(entry), files: 0, note: entry.reason ?? "" });
     continue;
   }
-  try {
-    await access(path.join(root, entry.page));
-  } catch {
-    errors.push(`${entry.id}: page ${entry.page} does not exist`);
-    continue;
+  if (entry.page) {
+    try {
+      await access(path.join(root, entry.page));
+    } catch {
+      errors.push(`${entry.id}: page ${entry.page} does not exist`);
+      continue;
+    }
   }
-  const page = await loadPage(root, entry.page);
+  const page = entry.page ? await loadPage(root, entry.page) : {};
   const deposit = buildDeposit(entry, page, authors, registry.defaults);
   const facts = [];
   for (const file of deposit.files) {
@@ -58,7 +60,9 @@ for (const entry of entries) {
     try {
       facts.push({ ...file, ...(await fileFacts(root, file.source)) });
     } catch {
-      errors.push(`${entry.id}: file ${file.source} does not exist`);
+      // Build products (for example a release archive under _zenodo/) may not
+      // exist yet; they only block an entry that is about to be deposited.
+      if (["cleared", "deposited"].includes(entry.status)) errors.push(`${entry.id}: file ${file.source} does not exist`);
     }
   }
   const blocking = [...deposit.problems, ...depositBlockers(entry, registry.entries)];
