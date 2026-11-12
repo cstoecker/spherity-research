@@ -249,9 +249,9 @@ entries:
       of SHA256SUMS: FreeTSA, 2026-11-12 12:12:09 GMT (see research-assets/semantic-supply-chain/timestamps). The same
       archive is attached to the GitHub release ssc-harness-v0.3.0 (sha256 ca79751494f80dfada60e1a8ab9e3892efef595a8312e3a36550b3efa6f3ee76).
     files: [_zenodo/ssc-harness-v0.3.0.zip]
-    status: candidate
+    status: cleared
     reason: "Public on GitHub since 12 Nov 2026 (v0.2.0 commit 359c9df; v0.3.0 commit 257d1c7; GitHub release ssc-harness-v0.3.0 published 12 Nov 2026 14:45 UTC, tag on ddf09f1). Third-party W3C files are under the W3C Software and Document License, compatible with redistribution; listed in NOTICE."
-    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: pass, metadata_review: open }
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: pass, metadata_review: pass }
 
   # ---- Planned research (no page yet) ---------------------------------------
   # Planned works are registered as "hold" without a page. Do not describe
