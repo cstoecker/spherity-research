@@ -1,0 +1,17 @@
+{
+  "name": "ssc-harness-crosscheck",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "description": "Cross-checks of the harness findings against the latest JSON-LD stack, PyLD and Digital Bazaar's official ecdsa-jcs-2019 implementation.",
+  "dependencies": {
+    "@digitalbazaar/data-integrity": "2.5.0",
+    "@digitalbazaar/ecdsa-jcs-2019-cryptosuite": "1.0.0",
+    "@digitalbazaar/ecdsa-multikey": "1.8.0",
+    "@digitalbazaar/multikey-context": "2.0.1",
+    "jsonld": "9.0.0",
+    "jsonld-document-loader": "2.3.0",
+    "jsonld-signatures": "11.6.0",
+    "rdf-canonize": "5.0.0"
+  }
+}

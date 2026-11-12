@@ -1,0 +1,27 @@
+
+WE-4: cost to reject an attacker document with a forged proof (p50 ms)
+
+family          n    bytes |  naive, no limit           |  naive, limit 1            | LFSC: as sent / allowlisted ctx + blank nodes / no blank nodes, forged proof
+complete         3      849 |      5.048 verified=false |      4.614 verified=false | 0.033 s0 context not allowlisted / 0.039 s0 blank nodes > 0 / 0.082 s1 issuer not allowlisted
+complete         4      956 |      3.562 verified=false |      3.018 Maximum deep i | 0.028 s0 context not allowlisted / 0.022 s0 blank nodes > 0 / 0.025 s1 issuer not allowlisted
+complete         5     1091 |      9.849 verified=false |      3.531 Maximum deep i | 0.024 s0 context not allowlisted / 0.021 s0 blank nodes > 0 / 0.044 s1 issuer not allowlisted
+complete         6     1254 |     23.193 verified=false |      4.775 Maximum deep i | 0.022 s0 context not allowlisted / 0.020 s0 blank nodes > 0 / 0.025 s1 issuer not allowlisted
+complete         7     1445 |    278.308 verified=false |      9.419 Maximum deep i | 0.015 s0 context not allowlisted / 0.018 s0 blank nodes > 0 / 0.023 s1 issuer not allowlisted
+complete         8     1664 |   1558.331 verified=false |      5.588 Maximum deep i | 0.028 s0 context not allowlisted / 0.042 s0 blank nodes > 0 / 0.114 s1 issuer not allowlisted
+ring             6     1002 |      5.483 verified=false |      3.163 Maximum deep i | 0.022 s0 context not allowlisted / 0.021 s0 blank nodes > 0 / 0.026 s1 issuer not allowlisted
+ring             8     1104 |      9.819 verified=false |      2.554 Maximum deep i | 0.023 s0 context not allowlisted / 0.027 s0 blank nodes > 0 / 0.028 s1 issuer not allowlisted
+ring            10     1206 |     10.157 verified=false |      4.052 Maximum deep i | 0.026 s0 context not allowlisted / 0.039 s0 blank nodes > 0 / 0.042 s1 issuer not allowlisted
+ring            12     1314 |     10.584 verified=false |      3.768 Maximum deep i | 0.020 s0 context not allowlisted / 0.019 s0 blank nodes > 0 / 0.022 s1 issuer not allowlisted
+ring            16     1530 |     10.973 verified=false |      4.554 Maximum deep i | 0.025 s0 context not allowlisted / 0.021 s0 blank nodes > 0 / 0.026 s1 issuer not allowlisted
+binary-tree     63     3151 |     42.359 verified=false |     12.492 Maximum deep i | 0.037 s0 context not allowlisted / 0.037 s0 blank nodes > 0 / 0.036 s1 issuer not allowlisted
+binary-tree    127     5733 |    296.718 verified=false |     10.163 Maximum deep i | 0.113 s0 context not allowlisted / 0.027 s0 blank nodes > 0 / 0.027 s1 issuer not allowlisted
+binary-tree    255    11045 |   2956.275 verified=false |     11.060 Maximum deep i | 0.063 s0 context not allowlisted / 0.022 s0 blank nodes > 0 / 0.030 s1 issuer not allowlisted
+binary-tree    511    21668 |     >20000 exceeded 20 s  |     16.817 Maximum deep i | 0.110 s0 context not allowlisted / 0.050 s0 blank nodes > 0 / 0.035 s1 issuer not allowlisted
+labelled-tree 1500    79102 |     73.883 verified=false |     66.631 verified=false | 0.268 s0 size 79102 > 65536 / 0.020 s0 blank nodes > 0 / 0.024 s1 issuer not allowlisted
+
+Legitimate market-role credential (p50 ms over 200 runs)
+  rdfc        1.939  verified=true
+  jcs         0.204  verified=true
+  lfscFirst   1.085  verified=true
+  lfscGraphNative 0.182  verified=true
+  lfscCached  0.247  verified=true

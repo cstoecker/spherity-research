@@ -14,7 +14,9 @@ changes were made. Attribution must not imply endorsement by the author(s),
 Spherity GmbH, or any affiliated institution.
 
 Source code, build scripts, templates, stylesheets, and configuration files are
-licensed separately under the repository's [MIT License](LICENSE).
+licensed separately under the repository's [MIT License](LICENSE), except the
+research harness in `research-assets/semantic-supply-chain/`, which is licensed
+under the Apache License 2.0 as stated in its own `LICENSE` and `NOTICE` files.
 
 The Spherity name, logos, and trademarks are not licensed under CC BY 4.0 or
 the MIT License. Third-party material remains subject to its original terms.

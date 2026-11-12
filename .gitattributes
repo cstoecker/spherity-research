@@ -12,3 +12,6 @@ docs/assets/eu-dpp-registry-dpp5/** -text whitespace=cr-at-eol
 docs/assets/eu-dpp-registry-dpp5/*.pdf binary
 docs/Spherity_Research_EU_DPP_Registry_W3C_Standards_DPP5.0.pdf -text
 research-assets/dpp5/approved/** -text
+
+# Semantic supply chain harness: SRI digests and SHA256SUMS cover exact bytes.
+research-assets/semantic-supply-chain/** -text
