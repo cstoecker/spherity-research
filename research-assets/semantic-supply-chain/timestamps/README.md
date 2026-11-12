@@ -28,7 +28,7 @@ Then check every file against the manifest:
 cd ../harness-v0.2 && sha256sum -c SHA256SUMS
 ```
 
-Only the manifest's hash was sent to the time-stamp authority, never the content. The Zenodo record for this release, when deposited, provides a second, archival timestamp and a DOI.
+Only the manifest's hash was sent to the time-stamp authority, never the content. v0.2.0 stays GitHub-only; v0.3.0 is archived on Zenodo (see below), which provides a second, archival timestamp and a DOI.
 
 ## v0.3.0
 
@@ -37,6 +37,7 @@ Only the manifest's hash was sent to the time-stamp authority, never the content
 | GitHub release | [ssc-harness-v0.3.0](https://github.com/cstoecker/spherity-research/releases/tag/ssc-harness-v0.3.0), published **12 November 2026, 14:45:14 UTC** |
 | Tag | `ssc-harness-v0.3.0` → `ddf09f17693fcb1db81c33e290a28b88622d75d5` (adds this timestamp evidence to 257d1c7; the harness files are byte-identical) |
 | Release assets | `ssc-harness-v0.3.0.zip`, SHA-256 `ca79751494f80dfada60e1a8ab9e3892efef595a8312e3a36550b3efa6f3ee76` (content identical to `research-assets/semantic-supply-chain/harness-v0.3/` at 257d1c7); `SHA256SUMS.tsr`, byte-identical to `harness-v0.3-SHA256SUMS.tsr` here |
+| Zenodo (archival copy and DOI) | Version DOI [10.5281/zenodo.24168347](https://doi.org/10.5281/zenodo.24168347); concept DOI (all versions) [10.5281/zenodo.24168346](https://doi.org/10.5281/zenodo.24168346); published **12 November 2026, 16:50 UTC**; the deposited `ssc-harness-v0.3.0.zip` has the same SHA-256 as the release asset |
 | Web archive: release page | [captured 12 November 2026, 15:13:36 UTC](https://web.archive.org/web/20261112151336/https://github.com/cstoecker/spherity-research/releases/tag/ssc-harness-v0.3.0) (after both assets were attached) |
 | Web archive: harness folder at the tag | [captured 12 November 2026, 15:15:56 UTC](https://web.archive.org/web/20261112151556/https://github.com/cstoecker/spherity-research/tree/ssc-harness-v0.3.0/research-assets/semantic-supply-chain/harness-v0.3) |
 
