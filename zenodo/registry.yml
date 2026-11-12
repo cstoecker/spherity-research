@@ -235,6 +235,8 @@ entries:
     related_identifiers:
       - relation: isSupplementTo
         identifier: "https://github.com/cstoecker/spherity-research/tree/257d1c79114532e454736255d127f53e5161f639/research-assets/semantic-supply-chain/harness-v0.3"
+      - relation: isIdenticalTo
+        identifier: "https://github.com/cstoecker/spherity-research/releases/tag/ssc-harness-v0.3.0"
       - relation: references
         identifier: "https://spherity.github.io/spherity-research/Stoecker-2026-Proofs-over-Statements-v1.3.pdf"
       - relation: references
@@ -244,10 +246,11 @@ entries:
     notes_for_zenodo: >-
       Contains third-party material under the W3C Software and Document License (contexts and test vectors), listed in
       NOTICE. The secret keys in the test vectors are the W3C specification's published test keys. RFC 3161 timestamp
-      of SHA256SUMS: FreeTSA, 2026-11-12 12:12:09 GMT (see research-assets/semantic-supply-chain/timestamps).
+      of SHA256SUMS: FreeTSA, 2026-11-12 12:12:09 GMT (see research-assets/semantic-supply-chain/timestamps). The same
+      archive is attached to the GitHub release ssc-harness-v0.3.0 (sha256 ca79751494f80dfada60e1a8ab9e3892efef595a8312e3a36550b3efa6f3ee76).
     files: [_zenodo/ssc-harness-v0.3.0.zip]
     status: candidate
-    reason: "Public on GitHub since 12 Nov 2026 (v0.2.0 commit 359c9df; v0.3.0 commit 257d1c7). Third-party W3C files are under the W3C Software and Document License, compatible with redistribution; listed in NOTICE."
+    reason: "Public on GitHub since 12 Nov 2026 (v0.2.0 commit 359c9df; v0.3.0 commit 257d1c7; GitHub release ssc-harness-v0.3.0 published 12 Nov 2026 14:45 UTC, tag on ddf09f1). Third-party W3C files are under the W3C Software and Document License, compatible with redistribution; listed in NOTICE."
     gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: pass, metadata_review: open }
 
   # ---- Planned research (no page yet) ---------------------------------------

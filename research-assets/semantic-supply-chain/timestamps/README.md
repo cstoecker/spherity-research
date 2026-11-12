@@ -32,6 +32,15 @@ Only the manifest's hash was sent to the time-stamp authority, never the content
 
 ## v0.3.0
 
+| Item | Value |
+|---|---|
+| GitHub release | [ssc-harness-v0.3.0](https://github.com/cstoecker/spherity-research/releases/tag/ssc-harness-v0.3.0), published **12 November 2026, 14:45:14 UTC** |
+| Tag | `ssc-harness-v0.3.0` → `ddf09f17693fcb1db81c33e290a28b88622d75d5` (adds this timestamp evidence to 257d1c7; the harness files are byte-identical) |
+| Release asset | `ssc-harness-v0.3.0.zip`, SHA-256 `ca79751494f80dfada60e1a8ab9e3892efef595a8312e3a36550b3efa6f3ee76` (content identical to `research-assets/semantic-supply-chain/harness-v0.3/` at 257d1c7) |
+| Web archive | pending |
+
+The timestamp (12:12:09 GMT) predates the release (14:45:14 UTC). It proves that the manifest, and so every file it lists, existed by that time.
+
 ```bash
 openssl ts -verify -in harness-v0.3-SHA256SUMS.tsr -data ../harness-v0.3/SHA256SUMS -CAfile freetsa-cacert.pem -untrusted freetsa-tsa.crt
 cd ../harness-v0.3 && sha256sum -c SHA256SUMS
