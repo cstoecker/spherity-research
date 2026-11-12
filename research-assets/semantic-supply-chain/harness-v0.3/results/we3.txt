@@ -1,0 +1,25 @@
+
+WE-3: measured semantics on a software TPM (swtpm 0.7.3, tpm2-tools 5.6), PCR 23, ECDSA P-256 attestation key
+
+approved closure:    0d19fa52c2748209…   substituted closure: 286fe64f293031d4…
+
+[A] Device runs the approved semantic bundle
+     device verdict: true; meaning applied: https://vocab.example/battery#PublicData
+     relying party: ACCEPT — device ran approved closure energy-roles 1.0; receipt verdict: true
+
+[B] Device runs a substituted context under the same URL (its JCS verifier still says valid)
+     device verdict: true; meaning applied: https://vocab.example/battery#RestrictedData
+     relying party: REJECT — attested semantic closure is not approved (energy-roles 1.0)
+
+[C] Compromised device forges its event log and receipt to claim the approved closure
+     device verdict: true; meaning applied: https://vocab.example/battery#RestrictedData
+     relying party: REJECT — event log does not replay to the quoted PCR value (device log forged)
+
+[D] Old genuine quote replayed against a fresh challenge
+     device verdict: true; meaning applied: https://vocab.example/battery#PublicData
+     relying party: REJECT — quote invalid for this nonce and receipt (stale, replayed or swapped)
+
+[E] Publisher withdrew the bundle; device still runs it
+     device verdict: true; meaning applied: https://vocab.example/battery#PublicData
+     relying party: REJECT — attested semantic closure is withdrawn (energy-roles 1.0)
+
