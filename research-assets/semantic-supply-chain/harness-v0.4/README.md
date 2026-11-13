@@ -105,7 +105,64 @@ Reference case: a market-role credential grants a *Distribution System Operator*
 
 ## WE-2: CBOR-LD labels and the full decoding manifest
 
-<!-- WE2-SECTION -->
+The credential is encoded as CBOR-LD (registry entry 100). A verifier later holds a routinely updated context, a substituted registry entry, a substituted transitive context, or a different decoder.
+
+The v0.4 envelope `["ssc-m15/v2", profile, registryEntryId, manifestDigest, cborldBytes, verificationMethod, signature]` binds a **full decoding manifest** with a 256-bit typed digest. The manifest lists:
+- the registry entry and type tables;
+- the decoder name and version, and its keyword and URL-codec tables, read from the installed build;
+- every context the encoder's loader requested, transitive and imported ones included, each with the digest of its bytes;
+- the decoding options.
+
+Two profiles are accepted:
+- **B:** the issuer signs the envelope, which is checked before decoding.
+- **I-RDFC:** an `ecdsa-rdfc-2019` proof is signed before encoding and checked after decoding with pinned contexts.
+
+Profiles **A** (a signature over the CBOR-LD bytes only) and **I-JCS** are rejected by policy. The script shows the attacks they would allow.
+
+The verifier works in this order:
+1. it compares the manifest digest before decoding;
+2. it decodes with a loader that serves only manifest-listed, digest-matching bytes;
+3. it checks that the authenticating key is the issuer's;
+4. it hands on the RDF graph under the pinned contexts as the output to consume.
+
+| # | Scenario | Result |
+|---|---|---|
+| S1 | Baseline, no binding | proof valid |
+| **S2** | Signed label (proof before encoding, as in VC Barcodes) after a routine context update | **unreadable**: "Improperly formatted bytes", which does not name the cause |
+| **S3** | Signature over the CBOR-LD bytes, after the same update | **signature valid; scope becomes restricted** |
+| S4 | Registry entry substituted, no binding | decode error |
+| S5 / S6 | v0.4 I-RDFC label, context updated; without / with the lifetime archive | rejected before decoding / accepted from the archive, public |
+| S7 | Registry entry substituted; the issuer's manifest is published | rejected before decoding; names both swapped context codes |
+| S8 / S9 | Profile B / I-RDFC, honest | accepted, public |
+| **S10** | **X4:** profile A with a rewritten envelope | rejected by policy; if accepted, signature valid and **restricted** |
+| S11 | X4 against profile B | rejected: envelope signature invalid |
+| **S12** | **X8:** profile I-JCS with a rewritten envelope | rejected by policy; if accepted, JCS proof valid and **restricted** |
+| S13 | X8 against profile I-RDFC | rejected: inner proof invalid |
+| **S14** | **X7:** substituted transitive context, v0.3 manifest scope, unpinned decoding | signature valid; **restricted** |
+| S15–S17 | X7 against v0.4: no archive / issuer's manifest published / archive | rejected / rejected naming the context / accepted from the archive |
+| S18 | Signed manifest with top-level contexts only | rejected during decoding: the transitive context is not in the manifest |
+| S19 | Different decoder version (simulated), archive present | rejected before decoding; the archive restores data, not decoder code |
+| S20 | Extra URL codec under the same version (simulated) | rejected; names `urlCodecs` |
+
+**Sizes:**
+
+| Label | Bytes |
+|---|---|
+| CBOR-LD with its inner RDFC proof | 314 |
+| v0.3 envelope | 337 (+23) |
+| **v0.4 I-RDFC envelope** | **374 (+60)** |
+| CBOR-LD without a proof, the B payload | 129 |
+| **v0.4 B envelope** | **356 (+227)** |
+
+The I-RDFC overhead breaks down as 17 bytes for the 256-bit digest over v0.3, and 20 bytes for the text tag, profile name and empty fields; integer codes would save about 16. For B the parts are:
+- the digest, 34 bytes;
+- the signature, 66 bytes;
+- the did:key verification method, 109 bytes, where a compact key reference would save about 70;
+- framing, 18 bytes.
+
+These supersede the v0.3 figures.
+
+Why the binding sits outside the payload: semantic compression assigns term codes from the contexts, so a changed context reassigns them. A commitment inside the compressed payload would be decoded with the same wrong codes.
 
 ## WE-3: attested decisions, simulated on a software TPM
 
