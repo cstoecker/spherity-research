@@ -33,7 +33,7 @@ import { DIGEST, sri, typedId } from "./crypto.mjs";
 
 export const ENGINE_ID = "ssc-decision-engine/0.4.0";
 export const RULE_ID = "ssc:rule/energy-data-access/v1";
-export const ENGINE_PCR = 15; // PC Client PCR 0-15: not resettable at any locality (WE-3 D1)
+export const ENGINE_PCR = 15; // PC Client profile: PCR 0-15 resettable at no locality; reset refused here (WE-3 D1)
 export const MONITOR_PCR = 23; // resettable at locality 0: bundle-load monitoring only (WE-3 D2)
 
 // Attributes of both engine keys:

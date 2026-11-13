@@ -1,0 +1,57 @@
+WE-3: attested decisions (M24, theorem T11, MC-3), harness v0.4.0
+swtpm 0.7.3, tpm2-tools 5.6, Node v22.23.4
+
+The test exercises receipt construction, policy-gated signing and appraisal under an idealised boundary, in which the test adversary has no access to authorisation secrets, protected memory or bypass paths. Ordinary host root is not excluded by such process boundaries, so isolation is not demonstrated; that requires a TEE or a confidential VM.
+
+Measured launch: SHA-256 over the engine's modules (engine-process.mjs, crypto.mjs) as a typed engine-launch event,
+extended into PCR 15 (PC Client profile: resettable at no locality); the engine runs as a separate OS process.
+  engine code 869222d0c11203e2…  approved PCR 15 8f7e925d5135f29f…  modified engine code 04a1f0fc107384af…
+Receipt keys: ECDSA P-256, attributes fixedtpm|fixedparent|sensitivedataorigin|sign|noda (userWithAuth clear), certified by the attestation key:
+  PCR-only  (MC-3 V4)  PolicyPCR(sha256:15 = approved engine)                     fb9e18877130ee17…
+  exclusive (MC-3 V5)  PolicyPCR(sha256:15 = approved engine) AND PolicyAuthValue  d3a9f28b4fac80d9…
+  trial-session digests equal the TPM 2.0 Part 3 computation: yes
+Closures: approved sha256-Ywx3H4TNB… (rule: public), substituted sha256-YSUBVmKm7… (rule: restricted)
+Bundle loads extend PCR 23 for monitoring only (M23); they bind no decision.
+
+as predicted A1   honest engine, approved closure, exclusive key (V5 appraisal)
+                  -> accepted public (signed by the enrolled MC-3 V5 exclusive key; closure energy-roles 1.0 approved and current)
+as predicted A2   honest engine runs a substituted context under the same URL; its receipt names that closure
+                  -> rejected (engine decided 'restricted'; named semantic closure is not approved)
+as predicted A3   honest engine, approved closure, PCR-only key (V4 appraisal; MC-3: V4 holds for an honest device)
+                  -> accepted public (signed by the enrolled MC-3 V4 PCR-only key; closure energy-roles 1.0 approved and current)
+as predicted B    host signs a forged receipt with the PCR-only key: decided under the substituted closure, names the approved one
+                  -> accepted restricted (signed by the enrolled MC-3 V4 PCR-only key; closure energy-roles 1.0 approved and current. V4 defect reproduced: PolicyPCR is satisfied for any caller while PCR 15 shows the approved engine; the approved closure gives 'public', the receipt says 'restricted')
+as predicted C1   host signs the B forgery with the exclusive key: PolicyPCR + PolicyAuthValue, no authorisation value
+                  -> TPM refused: TPM_RC_BAD_AUTH (tpm:session(1):authorization failure without DA implications; no forged receipt exists)
+as predicted C2   host signs the B forgery with the exclusive key: PolicyPCR + PolicyAuthValue, guessed 256-bit authorisation value
+                  -> TPM refused: TPM_RC_BAD_AUTH (tpm:session(1):authorization failure without DA implications; no forged receipt exists)
+as predicted C3   host signs the B forgery with the exclusive key: PolicyPCR only, omitting PolicyAuthValue
+                  -> TPM refused: TPM_RC_POLICY_FAIL (tpm:session(1):a policy check failed; no forged receipt exists)
+as predicted C4   host signs the B forgery with the exclusive key: plain password authorisation, bypassing the policy
+                  -> TPM refused: TPM_RC_AUTH_UNAVAILABLE (tpm:error(2.0): authValue or authPolicy is not available for selected entity: userWithAuth is clear)
+as predicted C5   host alters the outcome of a receipt the engine signed
+                  -> rejected (receipt signature invalid under the enrolled engine key)
+as predicted D1   host resets the engine register PCR 15
+                  -> TPM refused: TPM_RC_LOCALITY (tpm:warn(2.0): bad locality (locality 0); the PC Client profile makes PCR 0-15 resettable at no locality; PCR 15 unchanged)
+as predicted D2   host resets the monitoring register PCR 23 and re-extends only the approved bundle event (the v0.3 attack, X6)
+                  -> reset succeeded; register rewritten (PCR 23 now replays to the approved bundle event alone, although the engine's log shows it loaded the substituted bundle in A2; bundle-load measurement is monitoring only (M23))
+as predicted E1   modified engine (holding the authorisation value) signs a receipt naming the approved closure for a substituted-closure decision
+                  -> TPM refused: TPM_RC_POLICY_FAIL (PCR 15 shows the modified code 04a1f0fc1073…, not the approved code 869222d0c112…; tpm2_sign: tpm:session(1):a policy check failed)
+as predicted E2   modified engine creates and certifies a new key bound to its own measured state
+                  -> key rejected (key policy is not the approved engine's policy)
+as predicted E3   limit: host creates a key with the approved policy and its own authorisation value
+                  -> certification check passes (certification proves the key's policy, not who holds its authorisation value; the relying party excludes this key only because it pinned the engine's key at enrolment, and that the engine created that key is part of the idealised boundary)
+as predicted F1   after a reboot, the approved engine (with its authorisation value) before it is measured again
+                  -> TPM refused: TPM_RC_POLICY_FAIL (PCR 15 cleared to zero by TPM2_Startup(CLEAR); tpm2_sign: tpm:session(1):a policy check failed)
+as predicted F2   after a reboot, measured launch of the approved engine: same enrolled key
+                  -> accepted public (signed by the enrolled MC-3 V5 exclusive key; closure energy-roles 1.0 approved and current)
+as predicted F3   receipt A1, signed before the reboot, verified later
+                  -> signature valid (verifies under the enrolled key; its challenge was consumed in A1, so it is evidence of a past decision, not a fresh acceptance: see G1)
+as predicted G1   receipt A1 presented again (replayed challenge)
+                  -> rejected (challenge already used: replay)
+as predicted G2   receipt for a challenge the relying party never issued (pre-computed)
+                  -> rejected (challenge not issued by this relying party)
+as predicted H    publisher withdrew the approved closure; the engine still runs it
+                  -> rejected (named semantic closure is withdrawn)
+
+20 of 20 scenarios as predicted

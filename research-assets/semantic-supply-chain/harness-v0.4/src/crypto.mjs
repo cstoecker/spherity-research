@@ -135,7 +135,13 @@ export const DIGEST = Object.freeze({
   admission: "ssc:admission-certificate/v1",       // blank-node-free admission certificate (PRD-10)
   certificate: "ssc:evidence-certificate/v1",      // evidence-graph certificate core (DEC-10)
   coverage: "ssc:coverage/v1",                     // coverage evidence for a compliance decision (DEC-9)
-  archive: "ssc:archive/v1"                        // encrypted archive deposited with a custodian (DEC-13)
+  archive: "ssc:archive/v1",                       // encrypted archive deposited with a custodian (DEC-13)
+  // Used by the WE-3 engine (src/engine-process.mjs), which computes them with an identical local
+  // encoder so that its measured code depends only on node: built-ins and this file:
+  attestedReceipt: "ssc:attested-decision-receipt/v1", // receipt signed by the isolated engine (T11)
+  engineCode: "ssc:engine-code/v1",                // digest of the measured engine code
+  engineLaunch: "ssc:engine-launch/v1",            // launch event extended into the engine PCR
+  semanticBundle: "ssc:semantic-bundle/v1"         // bundle-load event (monitoring only, M23)
 });
 const u32 = (n) => { const b = Buffer.alloc(4); b.writeUInt32BE(n); return b; };
 const u64 = (n) => { const b = Buffer.alloc(8); b.writeBigUInt64BE(BigInt(n)); return b; };
