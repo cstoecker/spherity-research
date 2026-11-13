@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "Semantic supply chain harness: worked examples for securing the meaning of verifiable credentials"
 version: 0.4.0
-date-released: 2026-11-13
+# date-released is set when the release is tagged
 license: Apache-2.0
 type: software
 authors:
@@ -10,7 +10,7 @@ authors:
     given-names: "Carsten"
     affiliation: "Spherity GmbH"
     orcid: "https://orcid.org/0009-0003-7417-8872"
-repository-code: "https://github.com/cstoecker/spherity-research/tree/claude/elegant-babbage-pe1vwn/research-assets/semantic-supply-chain/harness-v0.4"
+repository-code: "https://github.com/cstoecker/spherity-research/tree/ssc-harness-v0.4.0/research-assets/semantic-supply-chain/harness-v0.4"
 keywords:
   - verifiable credentials
   - JSON-LD

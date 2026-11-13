@@ -104,7 +104,7 @@ export async function replayScenarios() {
     return acc.accepted ? { actual: "accepted", detail: "" } : { actual: "rejected by relying party", detail: acc.reason };
   });
   // Offline co-signer and the effect gate (MC-6 offline, DEC-7).
-  const actuator = new ProtectedActuator({ currentEpoch: () => epoch });
+  const actuator = new ProtectedActuator({ currentEpoch: () => epoch, clock: () => clock });
   await run("R18", "co-signer offline; device tries to act on its provisional GRANT", "effect refused", async () => {
     const r = actuator.execute("release restricted data", { provisional: true });
     return { actual: r.executed ? "effect executed" : "effect refused", detail: r.reason };
@@ -114,7 +114,7 @@ export async function replayScenarios() {
     const p = proposal(tso);
     const produced = await produceReceipt({ device, coSigner: coSigner(), proposal: p, rp });
     const acceptance = acceptReceipt(produced.receipt, { request: p.request, deviceParty, coSignerParty: coParty, consumed: new Set() });
-    const r = actuator.execute("release restricted data", { acceptance, decidedAtEpoch: epoch });
+    const r = actuator.execute(p.request.body.action, { acceptance, decidedAtEpoch: epoch });
     return { actual: r.executed ? "effect executed" : "effect refused", detail: r.reason ?? "receipt accepted, epoch current" };
   });
   await run("R21", "authority epoch advances between receipt and effect", "effect refused", async () => {
@@ -123,7 +123,7 @@ export async function replayScenarios() {
     const acceptance = acceptReceipt(produced.receipt, { request: p.request, deviceParty, coSignerParty: coParty, consumed: new Set() });
     const decidedAt = epoch;
     epoch = 2; // withdrawal advances the epoch (M25)
-    const r = actuator.execute("release restricted data", { acceptance, decidedAtEpoch: decidedAt });
+    const r = actuator.execute(p.request.body.action, { acceptance, decidedAtEpoch: decidedAt });
     epoch = 1;
     return { actual: r.executed ? "effect executed" : "effect refused", detail: r.reason };
   });

@@ -493,6 +493,7 @@ function mc6() {
   offline("MC6.offline.deferEffect", "offline co-signer; effects deferred until a valid receipt and the commit-point check; property: safety (holds with no receipt: an availability failure, not a success)", { provisionalEffects: false, online: () => false, property: safety });
   offline("MC6.offline.deadline", "offline co-signer; effects deferred; property: a definitive receipt by phase 2 (bounded completion)", { provisionalEffects: false, online: () => false, property: ({ receipt }) => (receipt ? null : "no definitive receipt by the deadline (phase 2)") });
   offline("MC6.offline.returnsOnline", "co-signer back online at phase 1; effects deferred; property: safety and a definitive receipt by phase 2", { provisionalEffects: false, online: (ph) => ph >= 1, property: (x) => safety(x) || (x.receipt ? null : "no receipt by the deadline") });
+  offline("MC6.offline.onlineBeforeWithdrawal", "co-signer online at phase 0; GRANT receipt exists before withdrawal; property: effect allowed before withdrawal only", { provisionalEffects: false, online: () => true, property: safety });
 }
 mc6();
 // cases whose HOLDS verdict is reached without any acceptance by design (reported, not counted as success)
@@ -515,7 +516,7 @@ const EXPECTED = {
   "MC6.input.asGiven": false, "MC6.input.authenticated": true, "MC6.status.asGiven": false, "MC6.status.authenticated": true,
   "MC6.oldStatus.expiryOnly": false, "MC6.oldStatus.epochBound": true, "MC6.oldStatus.windowClaim": true,
   "MC6.closure.deviceChoice": false, "MC6.closure.requestBound": true,
-  "MC6.offline.provisionalEffect": false, "MC6.offline.deferEffect": true, "MC6.offline.deadline": false, "MC6.offline.returnsOnline": true,
+  "MC6.offline.provisionalEffect": false, "MC6.offline.deferEffect": true, "MC6.offline.deadline": false, "MC6.offline.returnsOnline": true, "MC6.offline.onlineBeforeWithdrawal": true,
 };
 if (process.argv.includes("--json")) console.log(JSON.stringify(results, null, 2));
 else for (const r of results) {

@@ -135,6 +135,7 @@ test("soundness cross-check: every accepted random document expands without blan
   const terms = ["credentialSubject", "issuer", "validFrom", "marketRole", "dataAccessScope", "evidence", "note", "@reverse", "proof", "relatedResource"];
   const values = () => pick(["urn:x:" + rnd(9), "_:b" + rnd(3), "DistributionSystemOperator", "2026-01-01T00:00:00Z", 42, true, null, ["urn:a", "urn:b"], { id: "urn:n:" + rnd(9) }, {}, { "@value": "v" }]);
   let accepted = 0;
+  let expanded = 0;
   // Biased towards valid structure, so that a meaningful share is accepted and cross-checked.
   const often = (good, bad) => (rnd(10) < 7 ? good : bad);
   for (let i = 0; i < 400; i++) {
@@ -150,8 +151,10 @@ test("soundness cross-check: every accepted random document expands without blan
     accepted++;
     let n;
     try { n = await blankNodes(doc, energyBytes); } catch { continue; } // processing errors are rejections, not blank nodes
+    expanded++;
     assert.equal(n, 0, `accepted document produced blank nodes: ${JSON.stringify(doc)}`);
   }
+  assert.ok(expanded > 10, `enough successful expansions to be meaningful (${expanded})`);
   assert.ok(accepted > 10, `enough accepted documents to be meaningful (${accepted})`);
 });
 
@@ -169,4 +172,32 @@ test("LFSC 0.4 with certified admission instead of the lexical pre-scan", async 
   const r = await verifyLfsc(attack, opts);
   assert.equal(r.stage, 0);
   assert.match(r.reason, /term not admitted: note/);
+});
+
+
+test("excluded absolute and compact type terms cannot activate a rejected scoped context", async () => {
+  for (const type of ["https://example.test/Evil", "ex:Evil"]) {
+    const ctx = { "@context": { id: "@id", type: "@type", [type]: { "@id": type, "@context": { id: "https://example.test/identifier" } } } };
+    const bytes = bytesOf({ [X]: JSON.stringify(ctx) });
+    const analysis = analyse([X], bytes);
+    assert.equal(analysis.admissible, true);
+    assert.ok(analysis.excluded[type]);
+    const admission = createAdmission(certify(analysis, { signer: publisher, verificationMethod: pubVm }), { publishers, bytes });
+    const doc = { "@context": X, id: "urn:s", type };
+    assert.ok(await blankNodes(doc, bytes) > 0, "fixture really produces a blank node");
+    assert.equal(admission.check(doc).ok, false);
+  }
+});
+
+test("admission certificates must match the supported processor profile", () => {
+  for (const field of ["version", "rdfDirection"]) {
+    const analysis = structuredClone(analyse([V2, ENERGY], energyBytes));
+    if (field === "version") analysis.processor.version = "0.0.0-other";
+    else analysis.processor.options.rdfDirection = "compound-literal";
+    const cert = certify(analysis, { signer: publisher, verificationMethod: pubVm });
+    assert.equal(createAdmission(cert, { publishers, bytes: energyBytes }).ok, false);
+  }
+  const mutable = analyse([V2, ENERGY], energyBytes);
+  mutable.processor.options.rdfDirection = "compound-literal";
+  assert.equal(analyse([V2, ENERGY], energyBytes).processor.options.rdfDirection, null);
 });

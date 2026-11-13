@@ -2,16 +2,22 @@ Semantic supply chain harness
 Copyright 2026 Spherity GmbH (author: Dr. Carsten Stöcker)
 Licensed under the Apache License, Version 2.0 (see LICENSE).
 
-This product includes third-party material under the W3C Software and Document
-License (https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document):
+This product includes third-party material, copied without modification, that is
+distributed under the W3C Software and Document License. Its full text (2023 version,
+in effect for documents published from 1 January 2023) is in LICENSE-W3C.
 
-- contexts/credentials-v2.jsonld, from https://www.w3.org/ns/credentials/v2
-- contexts/credentials-examples-v2.jsonld, from https://www.w3.org/ns/credentials/examples/v2
-- contexts/citizenship-v4rc1.jsonld, from https://w3id.org/citizenship/v4rc1
-  (W3C Credentials Community Group, citizenship-vocab)
-- test/vector-*.json, test vectors from W3C "Data Integrity ECDSA Cryptosuites
-  v1.0" (https://www.w3.org/TR/vc-di-ecdsa/). The secret keys in these files
-  are the specification's published test keys, not operational keys.
+- contexts/credentials-v2.jsonld, copied from https://www.w3.org/ns/credentials/v2
+  ("Verifiable Credentials Data Model v2.0"). Copyright © 2025 World Wide Web Consortium.
+- contexts/credentials-examples-v2.jsonld, copied from
+  https://www.w3.org/ns/credentials/examples/v2. Copyright © World Wide Web Consortium.
+- test/vector-*.json, test vectors copied from "Data Integrity ECDSA Cryptosuites v1.0"
+  (https://www.w3.org/TR/vc-di-ecdsa/). Copyright © 2025 World Wide Web Consortium.
+  The secret keys in these files are the specification's published test keys, not
+  operational keys.
+- contexts/citizenship-v4rc1.jsonld, copied from https://w3id.org/citizenship/v4rc1
+  (W3C Credentials Community Group, citizenship-vocab). We understand it to be
+  published under the same W3C license; we have not independently verified the terms
+  of this Community Group file.
 
 contexts/energy-roles-v1*.jsonld are fictitious example vocabularies written
 for this harness (https://vocab.example/ is not a real namespace).

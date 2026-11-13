@@ -192,9 +192,33 @@ test("LFSC-G re-verifies the whole dataset from stored quads, configuration and 
   const unsecured = structuredClone(signed); delete unsecured.proof;
   const nquads = await rdfc(unsecured, honest(), UNBOUNDED, "sha256");
   const proof = storedConfiguration(signed);
+  const invalidSignature = { ...proof, proofValue: "z" + base58Encode(Buffer.alloc(64, 1)) };
+  assert.match((await verifyFromQuads({ nquads, proof: invalidSignature, issuer: issuerDid, issuers: policy.issuers })).reason, /signature invalid/);
   assert.equal((await verifyFromQuads({ nquads, proof, issuer: issuerDid, issuers: policy.issuers })).verified, true);
   assert.equal((await verifyFromQuads({ nquads: nquads.replace("PublicData", "RestrictedData"), proof, issuer: issuerDid, issuers: policy.issuers })).verified, false);
   // X10: graph-native re-verification now also binds the issuer and its authorisation.
   assert.match((await verifyFromQuads({ nquads, proof, issuer: "did:example:someone-else", issuers: policy.issuers })).reason, /does not belong/);
   assert.match((await verifyFromQuads({ nquads, proof, issuer: issuerDid, issuers: new Map() })).reason, /not authorised/);
+});
+
+test("LFSC ingestion and graph re-verification reject signed proofs for another purpose or type", async () => {
+  const signed = await issueLfsc(credential, { signer, verificationMethod: vm, loader: honest() });
+  const accepted = await verifyLfsc(signed, { loader: honest(), ...policy });
+  assert.equal(accepted.verified, true);
+  const variants = [
+    ["authentication purpose", (proof) => { proof.proofPurpose = "authentication"; }],
+    ["missing purpose", (proof) => { delete proof.proofPurpose; }],
+    ["wrong type", (proof) => { proof.type = "NotADataIntegrityProof"; }]
+  ];
+  for (const [name, edit] of variants) {
+    const changed = structuredClone(signed);
+    edit(changed.proof);
+    const config = storedConfiguration(changed); delete config.proofValue;
+    changed.proof.proofValue = "z" + base58Encode(ecdsaSign(signer.crv, signer.key, digest("sha256", canonicalize(config))));
+    const ingestion = await verifyLfsc(changed, { loader: honest(), ...policy });
+    assert.equal(ingestion.verified, false, `${name}: ingestion`);
+    assert.equal(ingestion.stage, 1, `${name}: rejected before semantic processing`);
+    const graph = await verifyFromQuads({ nquads: accepted.view.nquads, proof: storedConfiguration(changed), issuer: issuerDid, issuers: policy.issuers });
+    assert.equal(graph.verified, false, `${name}: graph re-verification`);
+  }
 });

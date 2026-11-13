@@ -17,8 +17,9 @@
 //  - extends a typed bundle-load event into the resettable PCR 23, for monitoring only (M23).
 //
 // Why no package imports: decision logic loaded from node_modules would run unmeasured. The engine
-// therefore implements only the small term-resolution subset its rule needs, and answers "unknown"
-// outside it. Its one local import, ./crypto.mjs, uses only node:crypto and is measured with it.
+// therefore implements a small flat term-resolution rule, not a JSON-LD processor. Its rejection
+// checks cover the cases below, not every unsupported JSON-LD feature. Its one local import,
+// ./crypto.mjs, uses only node:crypto and is measured with it.
 //
 // The pure functions exported here (receipt encoding, digests, the rule, the TPM policy steps) are
 // shared with the relying party and with the test adversary, who runs the same code outside the
@@ -150,10 +151,10 @@ const OUTCOME_OF_SCOPE = new Map([
 /**
  * Which Battery Passport data does this market-role credential open: "public", "restricted" or
  * "unknown"? Terms are resolved only through the contexts in the snapshot: flat term definitions,
- * later contexts overriding earlier ones except for protected terms. Anything outside that subset
- * (a context missing from the closure, an undefined term, a redefined protected term, a property
- * that is not the rule's property) yields "unknown", never a guess. Input authenticity (the proof)
- * is checked upstream (WE-1, LFSC-G); this rule decides what an authentic input means.
+ * later contexts overriding earlier ones except for protected terms. Missing contexts, nested input
+ * contexts, undefined values, redefined protected terms and unsupported rule properties yield
+ * "unknown". This does not establish exhaustive JSON-LD subset admission: callers must constrain
+ * input/context forms independently. Input authenticity is checked upstream (WE-1, LFSC-G).
  */
 export function evaluateRule(snapshot) {
   let credential;
@@ -162,6 +163,14 @@ export function evaluateRule(snapshot) {
   } catch {
     return "unknown";
   }
+  // This evaluator supports only the document's top-level context list. A nested
+  // context changes active JSON-LD semantics and must not be silently ignored.
+  const hasNestedContext = (value, root = false) => {
+    if (!value || typeof value !== "object") return false;
+    if (!root && Object.hasOwn(value, "@context")) return true;
+    return Object.entries(value).some(([key, child]) => key !== "@context" && hasNestedContext(child));
+  };
+  if (hasNestedContext(credential, true)) return "unknown";
   const bytesOf = new Map(snapshot.closure.map(({ url, bytes }) => [url, bytes]));
   const terms = new Map();
   for (const url of [credential?.["@context"]].flat()) {

@@ -73,15 +73,15 @@ export async function complianceScenarios() {
   });
 
   // ---- regime B: commit-and-certify -----------------------------------------------------------
-  const custodian = new Custodian(p.custodian);
+  const custodian = new Custodian(p.custodian, { ctx: ctx(), policies: new Map([[POLICY_V1.digest, POLICY_V1], [POLICY_V2.digest, POLICY_V2]]) });
   const certifiers = new Map([[p.certifier.id, { party: p.certifier, decisionClasses: [DECISION_CLASS] }]]);
   const statusService = { entries: new Map() };
   const log = new SelectionLog(p.logOperator);
   const scopeFor = (batch) => ({ subject: `${PRODUCT}#${batch}`, action: DECISION_CLASS, purpose: "import-control", audience: "customs:authority-DE", validFrom: T, validUntil: T + 30 });
   const requestFor = (batch, extra = {}) => ({ subject: `${PRODUCT}#${batch}`, action: DECISION_CLASS, purpose: "import-control", audience: "customs:authority-DE", time: T + 1, ...extra });
-  const issue = async (certificateId, policy, ev, batch, { mode = "contract" } = {}) => {
+  const issue = async (certificateId, policy, ev, batch, { mode = "contract", archiveCustodian = custodian } = {}) => {
     const covered = mode === "contract" ? withCoverage(ev, batch) : { ...ev, coverage: { status: statusOf() } };
-    const out = await certify({ certifier: p.certifier, tsa: p.tsa, custodian, policy, ev: { declaration: covered.declaration, statements: covered.statements }, coverage: covered.coverage, ctx: ctx({ mode }), scope: scopeFor(batch), certificateId, authorization: "urn:accreditation:certifier-7" });
+    const out = await certify({ certifier: p.certifier, tsa: p.tsa, custodian: archiveCustodian, policy, ev: { declaration: covered.declaration, statements: covered.statements }, coverage: covered.coverage, ctx: ctx({ mode }), scope: scopeFor(batch), certificateId, authorization: "urn:accreditation:certifier-7" });
     if (out.ok) statusService.entries.set(out.certificate.signed.body.statusEntry, "current");
     return out;
   };
@@ -98,8 +98,10 @@ export async function complianceScenarios() {
     return { actual: `opening ${d.opening}, outcome ${d.outcomeEqual ? "equal" : "different"}`, detail: d.note };
   });
   await run("B3", "B", "N1: certifier without the coverage contract certifies the omission; replay agrees", "certified GRANT, replay matches", async () => {
-    const c = await issue("urn:cert:0002", POLICY_V1, evB7, "B7", { mode: "holder-only" });
-    const d = await disputeReport(c.certificate, { custodian, certifiers, ctx: ctx({ mode: "holder-only" }), policies });
+    // Deliberately deficient coverage profile, independently selected by both actors.
+    const holderOnlyCustodian = new Custodian(p.custodian, { ctx: ctx({ mode: "holder-only" }), policies });
+    const c = await issue("urn:cert:0002", POLICY_V1, evB7, "B7", { mode: "holder-only", archiveCustodian: holderOnlyCustodian });
+    const d = await disputeReport(c.certificate, { custodian: holderOnlyCustodian, certifiers, ctx: ctx({ mode: "holder-only" }), policies });
     return { actual: `certified ${c.certificate.signed.body.outcome}, replay ${d.outcomeEqual ? "matches" : "differs"}`, detail: "replay cannot reveal evidence that was never in the graph" };
   });
   await run("B4", "B", "with the coverage contract the same batch is not certifiable as compliant", "DENY certified", async () => {
@@ -126,6 +128,7 @@ export async function complianceScenarios() {
   await run("B10", "B", "certificate core altered after timestamping", "rejected", () => {
     const forged = structuredClone(c1.certificate);
     forged.signed.body.scope.validUntil = T + 400;
+    forged.signed = signObject(p.certifier, forged.signed.body); // isolate the stale timestamp check
     return accept(forged, "B8");
   });
   await run("B11", "B", "N9: archived evidence altered at the custodian", "opening invalid", async () => {
@@ -135,7 +138,7 @@ export async function complianceScenarios() {
     return { actual: `opening ${d.opening}`, detail: `${d.detail}; attribution: ${d.attribution}` };
   });
   await run("B12", "B", "N8: custodian loses the archive key", "opening unavailable", async () => {
-    const lost = new Custodian(p.custodian);
+    const lost = new Custodian(p.custodian, { ctx: ctx(), policies });
     const c = await certify({ certifier: p.certifier, tsa: p.tsa, custodian: lost, policy: POLICY_V1, ev: { declaration: evB8.declaration, statements: withCoverage(evB8, "B8").statements }, coverage: withCoverage(evB8, "B8").coverage, ctx: ctx(), scope: scopeFor("B8"), certificateId: "urn:cert:0007", authorization: "urn:accreditation:certifier-7" });
     lost.loseKey();
     const d = await disputeReport(c.certificate, { custodian: lost, certifiers, ctx: ctx(), policies });

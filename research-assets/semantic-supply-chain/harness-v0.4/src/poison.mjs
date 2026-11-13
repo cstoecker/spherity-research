@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 // Poison-graph generators following the families of arXiv:2611.04461.
-import { randomBytes } from "node:crypto";
+import { createHash } from "node:crypto";
 import { base58Encode, generateKeyPair } from "./crypto.mjs";
 
 const EX = "https://www.w3.org/ns/credentials/examples/v2";
@@ -37,7 +37,8 @@ export function poison(family, n, suite = "ecdsa-rdfc-2019", { blankNodes = true
       created: "2026-11-10T00:00:00Z",
       verificationMethod: attackerVm,
       proofPurpose: "assertionMethod",
-      proofValue: "z" + base58Encode(randomBytes(64)) // forged: no key needed
+      // forged: no key needed; fixed bytes so that fixture sizes are reproducible (review R4-30)
+      proofValue: "z" + base58Encode(createHash("sha512").update(`forged:${family}:${n}:${suite}`).digest())
     }
   };
 }

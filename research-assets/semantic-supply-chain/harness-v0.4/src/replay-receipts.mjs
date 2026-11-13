@@ -19,8 +19,8 @@ import { DIGEST, ecdsaSign, ecdsaVerify, typedDigest, typedId } from "./crypto.m
 import { newParty, publicOf, signObject, verifyObject } from "./signed.mjs";
 import { verifyLfsc } from "./lfsc.mjs";
 
-export const RECEIPT_PROFILE = "ssc-replay-receipt/v1";
-const FIELDS = ["profile", "groupKey", "keyEpoch", "challenge", "audience", "purpose", "decisionId", "action", "scope",
+export const RECEIPT_PROFILE = "ssc-replay-receipt/v2";
+const FIELDS = ["profile", "groupKey", "keyEpoch", "authorityEpoch", "statusExpires", "challenge", "audience", "purpose", "decisionId", "action", "scope",
   "outcome", "inputDigest", "semanticClosure", "decisionContext", "admissibilityPolicy"];
 
 /** One injective encoding: a fixed-position JCS array, hashed under its own digest type. */
@@ -57,15 +57,31 @@ export function decide(closures, closureId, view, status) {
  * to the proposed definitive outcome.
  */
 export class CoSigner {
-  constructor({ party, verifier, closures, approvedClosures, statusIssuer, currentEpoch, admissibility = "current-status", windowTicks = 0, clock, tolerance = 2, online = true, honest = true }) {
-    Object.assign(this, { party, verifier, closures, approvedClosures, statusIssuer, currentEpoch, admissibility, windowTicks, clock, tolerance, online, honest });
+  constructor({ party, verifier, closures, approvedClosures, statusIssuer, currentEpoch, admissibility = "current-status", windowTicks = 0, clock, tolerance = 2, online = true, honest = true, maxApprovals = 1024, approvalTtlTicks = 2 }) {
+    Object.assign(this, { party, verifier, closures, approvedClosures, statusIssuer, currentEpoch, admissibility, windowTicks, clock, tolerance, online, honest, maxApprovals, approvalTtlTicks });
+    if (!Number.isSafeInteger(maxApprovals) || maxApprovals < 1 || !Number.isFinite(approvalTtlTicks) || approvalTtlTicks <= 0 ||
+        !Number.isFinite(tolerance) || tolerance < 0 || !Number.isFinite(windowTicks) || windowTicks < 0 ||
+        !["current-status", "window"].includes(admissibility)) throw new TypeError("invalid co-signer resource/time profile");
     this.approvals = new Map(); // message digest (hex) -> approval
+  }
+
+  pruneApprovals(t) {
+    for (const [digest, approval] of this.approvals) {
+      if (approval.expiresAt <= t || !this.approvedClosures.has(approval.fields.semanticClosure) ||
+          (this.admissibility === "current-status" && approval.authorityEpoch !== this.currentEpoch()) ||
+          (this.admissibility === "window" && approval.statusIssued < t - this.windowTicks)) this.approvals.delete(digest);
+    }
   }
 
   /** Validate a proposal and approve the exact message bytes it yields. */
   async approve(proposal, { rp, groupKey, keyEpoch }) {
     if (!this.online) return { ok: false, reason: "co-signer unreachable" };
     const refuse = (reason) => ({ ok: false, reason });
+    // One owned snapshot across asynchronous authentication, replay and commitment.
+    const inputWasBuffer = Buffer.isBuffer(proposal?.input);
+    try { proposal = structuredClone(proposal); } catch { return refuse("proposal is not cloneable data"); }
+    if (inputWasBuffer) proposal.input = Buffer.from(proposal.input);
+    let approvedAt;
     if (this.honest) {
       // 1. The request is the relying party's, for this audience, and fresh.
       if (!verifyObject(proposal.request, rp)) return refuse("request not authenticated");
@@ -80,6 +96,10 @@ export class CoSigner {
       const st = proposal.status.body;
       if (st.credential !== input.view.document.id) return refuse("status object is for another credential");
       const t = this.clock();
+      if (![t, proposal.time, st.issued, st.expires].every(Number.isFinite) ||
+          !Number.isSafeInteger(st.epoch) || st.epoch < 0 || !Number.isSafeInteger(this.currentEpoch()) ||
+          st.issued > t + this.tolerance || st.expires <= st.issued) return refuse("invalid status or clock fields");
+      approvedAt = t;
       if (st.expires <= t) return refuse("status object expired");
       if (this.admissibility === "current-status" && st.epoch !== this.currentEpoch()) return refuse(`status object is from epoch ${st.epoch}, current epoch is ${this.currentEpoch()}`);
       if (this.admissibility === "window" && st.issued < t - this.windowTicks) return refuse("status object older than the declared window");
@@ -92,7 +112,7 @@ export class CoSigner {
     // 5. The co-signer itself computes the message from the validated fields.
     const req = proposal.request.body;
     const fields = {
-      profile: RECEIPT_PROFILE, groupKey, keyEpoch, challenge: req.challenge, audience: req.audience, purpose: req.purpose,
+      profile: RECEIPT_PROFILE, groupKey, keyEpoch, authorityEpoch: proposal.status.body.epoch, statusExpires: proposal.status.body.expires, challenge: req.challenge, audience: req.audience, purpose: req.purpose,
       decisionId: proposal.decisionId, action: req.action, scope: req.scope, outcome: proposal.outcome,
       inputDigest: typedId(DIGEST.input, canonicalize(proposal.input)),
       semanticClosure: proposal.claimedClosure,
@@ -100,13 +120,22 @@ export class CoSigner {
       admissibilityPolicy: this.admissibility === "window" ? `window:${this.windowTicks}` : "current-status"
     };
     const message = encodeMessage(fields);
-    const approval = { digest: message.digest.toString("hex"), fields };
+    const t = approvedAt ?? this.clock();
+    if (!Number.isFinite(t)) return refuse("invalid local clock");
+    this.pruneApprovals(t);
+    const approval = { digest: message.digest.toString("hex"), fields,
+      authorityEpoch: proposal.status.body.epoch, statusIssued: proposal.status.body.issued,
+      expiresAt: Math.min(proposal.status.body.expires, t + this.approvalTtlTicks) };
     this.approvals.set(approval.digest, approval);
+    while (this.approvals.size > this.maxApprovals) this.approvals.delete(this.approvals.keys().next().value);
     return { ok: true, approval, message };
   }
 
   /** Sign only bytes whose digest was approved: approval is keyed to the exact message. */
   sign(messageBytes) {
+    const t = this.clock();
+    if (!Number.isFinite(t)) return { ok: false, reason: "invalid local clock" };
+    this.pruneApprovals(t);
     const d = typedDigest(DIGEST.receipt, messageBytes).toString("hex");
     if (this.honest && !this.approvals.has(d)) return { ok: false, reason: "no approval for these exact bytes" };
     this.approvals.delete(d);
@@ -158,12 +187,17 @@ export function acceptReceipt(receipt, { request, deviceParty, coSignerParty, ke
  * epoch is still current at the effect's linearisation point. Provisional decisions never pass.
  */
 export class ProtectedActuator {
-  constructor({ currentEpoch }) { this.currentEpoch = currentEpoch; this.effects = []; }
-  execute(action, { acceptance, decidedAtEpoch, provisional = false }) {
+  constructor({ currentEpoch, clock }) { this.currentEpoch = currentEpoch; this.clock = clock; this.effects = []; this.consumed = new Set(); }
+  execute(action, { acceptance, provisional = false }) {
     if (provisional) return { executed: false, reason: "provisional decision: effect deferred until a valid receipt" };
     if (!acceptance?.accepted) return { executed: false, reason: "no accepted receipt" };
     if (acceptance.outcome !== "GRANT") return { executed: false, reason: `receipt outcome ${acceptance.outcome}` };
-    if (decidedAtEpoch !== this.currentEpoch()) return { executed: false, reason: "authority epoch changed since the decision" };
+    if (acceptance.fields?.authorityEpoch !== this.currentEpoch()) return { executed: false, reason: "authority epoch changed since the decision" };
+    const now = this.clock?.();
+    if (!Number.isFinite(now) || !Number.isFinite(acceptance.fields.statusExpires) || now >= acceptance.fields.statusExpires) return { executed: false, reason: "receipt status expired or clock unavailable" };
+    if (action !== acceptance.fields.action) return { executed: false, reason: "action differs from accepted receipt" };
+    if (this.consumed.has(acceptance.fields.challenge)) return { executed: false, reason: "receipt effect already consumed" };
+    this.consumed.add(acceptance.fields.challenge);
     this.effects.push(action);
     return { executed: true };
   }

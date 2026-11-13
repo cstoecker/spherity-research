@@ -3,7 +3,7 @@
 // mitigations. Reference case: a market-role credential that controls access to
 // restricted Battery Passport data.
 
-import { writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import jsonld from "jsonld";
 import { generateKeyPair, sri } from "./src/crypto.mjs";
 import { issueLfsc, verifyLfsc } from "./src/lfsc.mjs";
@@ -138,7 +138,8 @@ record("H", "two loaders with different 'static' copies of one URL in one proces
     ? "GAP: the honest loader's copy is never consulted; the first resolution wins process-wide"
     : "no cross-loader effect");
 
-console.log("\nWE-1 results (jsonld 8.3.3 / rdf-canonize 3.4.0, Node " + process.version + ")\n");
+const versionOf = (name) => JSON.parse(readFileSync(new URL(`./node_modules/${name}/package.json`, import.meta.url), "utf8")).version;
+console.log(`\nWE-1 results (jsonld ${versionOf("jsonld")} / rdf-canonize ${versionOf("rdf-canonize")}, Node ${process.version})\n`);
 for (const row of rows) {
   console.log(`[${row.id}] ${row.scenario}`);
   console.log(`     signature valid: ${row.signature}`);

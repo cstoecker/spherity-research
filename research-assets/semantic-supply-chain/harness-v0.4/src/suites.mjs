@@ -18,6 +18,11 @@ import { base58Decode, base58Encode, digest, ecdsaSign, ecdsaVerify, hashFor, pu
 const clone = (value) => structuredClone(value);
 
 export function resolveVerificationMethod(verificationMethod) {
+  // Bound before the BigInt base58 decoder. A P-384 SEC1 public point, even
+  // uncompressed and with its two-byte multicodec, is at most 99 bytes.
+  if (typeof verificationMethod !== "string" || verificationMethod.length > 283) {
+    throw new Error("verification method malformed or too long");
+  }
   // did:key Multikey only; the fragment is the publicKeyMultibase.
   const match = /^did:key:(z[1-9A-HJ-NP-Za-km-z]+)#(z[1-9A-HJ-NP-Za-km-z]+)$/.exec(verificationMethod ?? "");
   if (!match || match[1] !== match[2]) throw new Error(`unsupported verification method ${verificationMethod}`);

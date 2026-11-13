@@ -24,6 +24,8 @@ function isNoncharacter(cp) {
  * @returns {{ok: true, value: any, bytes: number} | {ok: false, reason: string}}
  */
 export function checkIJson(raw, { maxBytes = 64 * 1024, maxDepth = 32 } = {}) {
+  // Buffer.from replaces lone UTF-16 surrogates with U+FFFD; reject before that loss.
+  if (typeof raw === "string" && !raw.isWellFormed()) return { ok: false, reason: "unpaired surrogate in raw UTF-16 text" };
   const bytes = typeof raw === "string" ? Buffer.from(raw, "utf8") : Buffer.from(raw);
   if (bytes.length > maxBytes) return { ok: false, reason: `size ${bytes.length} > ${maxBytes}` };
   if (bytes[0] === 0xef && bytes[1] === 0xbb && bytes[2] === 0xbf) return { ok: false, reason: "byte-order mark not permitted" };
@@ -69,7 +71,9 @@ export function checkIJson(raw, { maxBytes = 64 * 1024, maxDepth = 32 } = {}) {
     return out;
   }
   function num() {
-    const m = /^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?/.exec(text.slice(i, i + 400));
+    const pattern = /-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?/y;
+    pattern.lastIndex = i;
+    const m = pattern.exec(text);
     if (!m) fail("invalid number");
     i += m[0].length;
     const value = Number(m[0]);

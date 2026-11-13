@@ -211,13 +211,20 @@ class EngineProcess {
  * source tree) as a separate process, so that measured and executed code are the same bytes.
  * `measured: false` starts the engine without the extend (WE-3 F1 only).
  */
+/**
+ * The engine's whole environment (review R4-15). Only the tool path and the TPM connection are
+ * passed: NODE_OPTIONS (for example --import or --require), NODE_PATH, LD_PRELOAD and every other
+ * inherited variable could load unmeasured code into the engine or into the tpm2-tools it calls.
+ */
+export const engineEnvironment = (tcti) => ({ PATH: process.env.PATH ?? "/usr/local/bin:/usr/bin:/bin", TPM2TOOLS_TCTI: tcti });
+
 export async function launchEngine(tpm, { modules = engineModules(), stateDir, measured = true }) {
   const launchDir = mkdtempSync(path.join(tpm.dir, "launch-"));
   for (const { name, bytes } of modules) writeFileSync(path.join(launchDir, name), bytes);
   const launch = { ...engineReference(modules), measured };
   if (measured) tpm.run("tpm2_pcrextend", [`${ENGINE_PCR}:sha256=${launch.digest}`]);
   const child = fork(path.join(launchDir, modules[0].name), [stateDir], {
-    env: { ...process.env, TPM2TOOLS_TCTI: tpm.tcti }, execArgv: [], stdio: ["ignore", "ignore", "pipe", "ipc"]
+    env: engineEnvironment(tpm.tcti), execArgv: [], stdio: ["ignore", "ignore", "pipe", "ipc"]
   });
   const engine = new EngineProcess(child, launch);
   await engine.ready;
@@ -597,7 +604,11 @@ export async function runMeasuredSemantics({ port }) {
         `PCR 15 ${pcr.equals(modifiedReference.pcrValue) ? "shows" : "does NOT show"} the modified code ${modifiedReference.codeDigest.slice(0, 12)}…, ` +
           `not the approved code ${reference.codeDigest.slice(0, 12)}…; ${v.detail}`);
       const rogueEnrolment = await rogue.call("enrol", { parent: HANDLES.srk, ak: HANDLES.ak, handles: { pcrOnly: HANDLES.modifiedPcrOnly, exclusive: HANDLES.modifiedExclusive } });
-      const check = rogueEnrolment.ok ? rpV5.checkKey(rogueEnrolment.certifications.exclusive) : { ok: false, reason: rogueEnrolment.error.text };
+      if (!rogueEnrolment.ok) throw new Error(`E2 did not create a certified key: ${rogueEnrolment.error.text}`);
+      const check = rpV5.checkKey(rogueEnrolment.certifications.exclusive);
+      if (!check.ok && check.reason !== "key policy is not the approved engine's policy") {
+        throw new Error(`E2 rejected for the wrong reason: ${check.reason}`);
+      }
       row("E2", "modified engine creates and certifies a new key bound to its own measured state", "key rejected", check.ok ? "key accepted" : "key rejected", check.reason);
       await stop(rogue);
       // The limit of certification: a key created by the host itself with the approved policy.

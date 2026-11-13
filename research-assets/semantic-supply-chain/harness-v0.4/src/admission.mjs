@@ -180,7 +180,7 @@ export function analyse(topLevel, bytes) {
   const closure = [...used].sort().map((id) => ({ id, digestSRI: sri(bytes.get(id)) }));
   return {
     grammar: GRAMMAR,
-    processor: PROCESSOR,
+    processor: structuredClone(PROCESSOR),
     topLevel: [...topLevel],
     closure,
     contextManifest: typedId(DIGEST.contextManifest, canonicalize(closure)),
@@ -210,16 +210,18 @@ export function createAdmission(certificate, { publishers, bytes, maxDepth = 16,
   delete body.proofValue;
   const fail = (reason) => ({ ok: false, reason, check: () => ({ ok: false, reason: `admission unavailable: ${reason}` }) });
   if (body.grammar !== GRAMMAR) return fail(`unsupported grammar ${body.grammar}`);
+  if (canonicalize(body.processor) !== canonicalize(PROCESSOR)) return fail("unsupported admission processor profile");
   if (!publishers.get(body.publisher)?.has(body.verificationMethod) || body.verificationMethod.split("#")[0] !== body.publisher) return fail("certificate publisher not authorised");
   const { key, crv } = resolveVerificationMethod(body.verificationMethod);
   if (!ecdsaVerify(crv, key, Buffer.from(typedId(DIGEST.admission, canonicalize(body))), base58Decode(String(proofValue).slice(1)))) return fail("certificate signature invalid");
   for (const { id, digestSRI } of body.closure) if (!bytes.get(id) || sri(bytes.get(id)) !== digestSRI) return fail(`verifier context differs from the certified closure: ${id}`);
   if (typedId(DIGEST.contextManifest, canonicalize(body.closure)) !== body.contextManifest) return fail("closure digest mismatch");
   const terms = new Map(Object.entries(body.terms));
+  const excluded = new Set(Object.keys(body.excluded ?? {}));
   const expectedContext = JSON.stringify(body.topLevel.length === 1 ? body.topLevel[0] : body.topLevel);
 
   const iriOk = (value) => typeof value === "string" && !isBlank(value) && ABSOLUTE_IRI.test(value);
-  const vocabOk = (value) => typeof value === "string" && !isBlank(value) && (terms.has(value) || ABSOLUTE_IRI.test(value));
+  const vocabOk = (value) => typeof value === "string" && !isBlank(value) && !excluded.has(value) && (terms.has(value) || ABSOLUTE_IRI.test(value));
 
   function check(document) {
     if (Buffer.byteLength(JSON.stringify(document)) > maxBytes) return { ok: false, reason: `size > ${maxBytes}` };

@@ -69,6 +69,18 @@ function deepFreeze(value) {
   return value;
 }
 
+// This profile accepts four-digit, timezone-qualified timestamps; reject invalid
+// calendar dates as well as Date.parse's NaN and permissive non-date inputs.
+function parseTimestamp(value) {
+  if (typeof value !== "string") return NaN;
+  const match = /^(\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])T(?:[01]\d|2[0-3]):[0-5]\d:[0-5]\d(?:\.\d+)?(?:Z|[+-](?:[01]\d|2[0-3]):[0-5]\d)$/.exec(value);
+  if (!match) return NaN;
+  const [, y, m, d] = match.map(Number);
+  const leap = y % 4 === 0 && (y % 100 !== 0 || y % 400 === 0);
+  const days = [31, leap ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  return d <= days[m - 1] ? Date.parse(value) : NaN;
+}
+
 const issuerOf = (document) => (typeof document.issuer === "string" ? document.issuer : document.issuer?.id);
 const didOf = (verificationMethod) => String(verificationMethod ?? "").split("#")[0];
 
@@ -148,8 +160,10 @@ function boundedSet(cache, key, value, max) {
 export async function verifyLfsc(input, options) {
   const {
     loader, allowedContexts, admission, bound = DEFAULT_BOUND, cache, negativeCache,
-    epoch = 0, validAt, maxCacheEntries = 1024
+    epoch = 0, validAt, maxCacheEntries = 1024, negativeCacheTtlMs = 30_000
   } = options;
+  if (!Number.isSafeInteger(maxCacheEntries) || maxCacheEntries < 0) throw new TypeError("invalid maxCacheEntries");
+  if (!Number.isFinite(negativeCacheTtlMs) || negativeCacheTtlMs < 0) throw new TypeError("invalid negativeCacheTtlMs");
   const issuers = issuerMap(options);
   const timings = {};
   let start = now();
@@ -163,22 +177,31 @@ export async function verifyLfsc(input, options) {
     secured = raw.value;
     rawChecked = true;
   } else secured = structuredClone(input);
-  const negativeKey = negativeCache ? digest("sha256", canonicalize(secured)).toString("base64") : null;
-  if (negativeKey && negativeCache.has(negativeKey)) return { verified: false, stage: negativeCache.get(negativeKey).stage, reason: negativeCache.get(negativeKey).reason, negativeCached: true, timings };
-  const reject = (stage, reason, extra = {}) => {
-    if (stage <= 1 && negativeKey) boundedSet(negativeCache, negativeKey, { stage, reason }, maxCacheEntries);
+  const negativeKey = negativeCache ? digest("sha256", canonicalize({ secured, epoch })).toString("base64") : null;
+  const reject = (stage, reason, extra = {}, cacheable = true) => {
+    // Cache only intrinsic stage-1 failures, never admission or authorization policy.
+    if (stage === 1 && negativeKey && cacheable) boundedSet(negativeCache, negativeKey,
+      { stage, reason, expiresAt: Date.now() + negativeCacheTtlMs }, maxCacheEntries);
     return { verified: false, stage, reason, rawChecked, timings, ...extra };
   };
   const scan = admission ? admission.check(secured) : prescan(secured, { allowedContexts });
   timings.stage0 = ms(start);
   if (!scan.ok) return reject(0, scan.reason);
+  if (negativeKey) {
+    const rejected = negativeCache.get(negativeKey);
+    if (rejected && rejected.expiresAt > Date.now()) return { verified: false, stage: rejected.stage,
+      reason: rejected.reason, negativeCached: true, rawChecked, timings };
+    negativeCache.delete(negativeKey);
+  }
 
   // ---- stage 1: proof decoding, issuer binding, lexical digest, signature ----------------
   start = now();
   const proof = secured.proof ?? {};
-  const fail1 = (reason) => { timings.stage1 = ms(start); return reject(1, reason); };
+  const fail1 = (reason, cacheable = true) => { timings.stage1 = ms(start); return reject(1, reason, {}, cacheable); };
   if (proof.cryptosuite !== SUITE) return fail1("not an LFSC proof (must-understand)");
   if (proof.profile !== PROFILE) return fail1(`unsupported LFSC profile ${proof.profile ?? "(none)"} (must-understand)`);
+  if (proof.type !== "DataIntegrityProof") return fail1("unsupported proof type");
+  if (proof.proofPurpose !== "assertionMethod") return fail1("proof purpose must be assertionMethod");
   if (!proof.semanticCommitment || !proof.lexicalDigest) return fail1("LFSC proof incomplete");
   let key, crv;
   try { ({ key, crv } = resolveVerificationMethod(proof.verificationMethod)); } catch (error) { return fail1(error.message); }
@@ -188,7 +211,7 @@ export async function verifyLfsc(input, options) {
   delete unsecured.proof;
   const issuer = issuerOf(unsecured);
   const binding = issuerBinding(issuer, proof.verificationMethod, issuers);
-  if (binding) return fail1(binding);
+  if (binding) return fail1(binding, false);
   if (typedId(DIGEST.lexical, canonicalize(unsecured)) !== proof.lexicalDigest) return fail1("lexical digest mismatch");
   const config = configOf(unsecured, proof);
   if (!ecdsaVerify(crv, key, signingInput(config), decoded.signature)) return fail1("signature invalid");
@@ -226,10 +249,16 @@ export async function verifyLfsc(input, options) {
   }
   timings.stage2 = ms(start);
   // Validity is checked on the authenticated view at every use, never cached.
-  if (validAt) {
-    const t = Date.parse(validAt);
-    if (view.document.validFrom && t < Date.parse(view.document.validFrom)) return { verified: false, stage: 2, reason: "not yet valid", rawChecked, timings };
-    if (view.document.validUntil && t > Date.parse(view.document.validUntil)) return { verified: false, stage: 2, reason: "expired", rawChecked, timings };
+  if (validAt !== undefined) {
+    const t = parseTimestamp(validAt);
+    if (!Number.isFinite(t)) return fail2("invalid validAt");
+    for (const field of ["validFrom", "validUntil"]) {
+      if (view.document[field] === undefined) continue;
+      const boundary = parseTimestamp(view.document[field]);
+      if (!Number.isFinite(boundary)) return fail2(`invalid ${field}`);
+      if (field === "validFrom" && t < boundary) return fail2("not yet valid");
+      if (field === "validUntil" && t > boundary) return fail2("expired");
+    }
   }
   return { verified: true, stage: 2, cached, view, rawChecked, timings };
 }
@@ -245,6 +274,8 @@ export async function verifyFromQuads({ nquads, proof, issuer, bound = DEFAULT_B
   const proofValue = config.proofValue;
   delete config.proofValue;
   if (config.cryptosuite !== SUITE || config.profile !== PROFILE) return { verified: false, reason: "not an LFSC 0.4 proof" };
+  if (config.type !== "DataIntegrityProof") return { verified: false, reason: "unsupported proof type" };
+  if (config.proofPurpose !== "assertionMethod") return { verified: false, reason: "proof purpose must be assertionMethod" };
   const binding = issuerBinding(issuer, config.verificationMethod, issuers);
   if (binding) return { verified: false, reason: binding };
   let key, crv;

@@ -35,7 +35,7 @@
       "name": "N2: complete-list response older than the profile's maximum age",
       "expected": "UNKNOWN",
       "actual": "UNKNOWN",
-      "detail": "coverage stale",
+      "detail": "coverage stale or invalid time",
       "ok": true
     },
     {
@@ -161,7 +161,7 @@
       "name": "certificate core altered after timestamping",
       "expected": "rejected",
       "actual": "rejected",
-      "detail": "certificate signature or certifier unknown",
+      "detail": "trusted time missing or not over this certificate core",
       "ok": true
     },
     {
@@ -206,7 +206,7 @@
       "name": "N12: worlds that differ only in an unseen report give the same transcript and the same output",
       "expected": "same output, wrong in one world",
       "actual": "same output, wrong in one world",
-      "detail": "identical transcript (a46bb20b3b5f9687…); output GRANT in both worlds; correct decision in world 1: DENY",
+      "detail": "identical transcript (04dc8d4bade8f725…); output GRANT in both worlds; correct decision in world 1: DENY",
       "ok": true
     }
   ]

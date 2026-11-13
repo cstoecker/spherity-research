@@ -1,5 +1,5 @@
 
-WE-1 results (jsonld 8.3.3 / rdf-canonize 3.4.0, Node v22.23.4)
+WE-1 results (jsonld 9.0.0 / rdf-canonize 5.0.0, Node v22.23.4)
 
 [A] ecdsa-jcs-2019, context as issued
      signature valid: true

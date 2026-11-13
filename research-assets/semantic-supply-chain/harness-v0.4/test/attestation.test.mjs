@@ -59,7 +59,7 @@ test("policy digest: TPM 2.0 Part 3 computation reproduces digests recorded from
   assert.equal(policyDigest({ pcrValue, withAuthValue: true }).toString("hex"), "66ce647446d280bd44f12f2cfdd7204797f70c62eda87ec36c48c5440a8353b7");
 });
 
-test("engine rule: the closure decides the meaning; anything outside the supported subset is unknown", () => {
+test("engine rule: the closure decides the meaning; tested unsupported forms are unknown", () => {
   const decide = (input, closure) => evaluateRule(snapshotOf({ input, closure }));
   assert.equal(decide(credential(), closureWith("energy-roles-v1.jsonld")), "public");
   assert.equal(decide(credential(), closureWith("energy-roles-v1.SUBSTITUTED.jsonld")), "restricted");
@@ -69,6 +69,23 @@ test("engine rule: the closure decides the meaning; anything outside the support
   const input = Buffer.from(JSON.stringify({ ...JSON.parse(credential()), "@context": [V2, EN, "https://example.org/redefine"] }));
   assert.equal(decide(input, [...closureWith("energy-roles-v1.jsonld"), { url: "https://example.org/redefine", bytes: redefining }]), "unknown", "protected term redefined");
   assert.equal(decide(Buffer.from("not json"), closureWith("energy-roles-v1.jsonld")), "unknown");
+});
+
+test("engine rule refuses nested input contexts instead of ignoring their semantics", () => {
+  const url = "https://example.test/flat";
+  const context = { "@context": {
+    id: "@id", credentialSubject: "https://www.w3.org/2018/credentials#credentialSubject",
+    dataAccessScope: { "@id": "https://vocab.example/energy#dataAccessScope", "@type": "@vocab" },
+    Choice: "https://vocab.example/battery#RestrictedData"
+  } };
+  const doc = { "@context": url, id: "urn:credential", credentialSubject: {
+    "@context": { Choice: "https://vocab.example/battery#PublicData" },
+    id: "urn:subject", dataAccessScope: "Choice"
+  } };
+  const closure = [{ url, bytes: Buffer.from(JSON.stringify(context)) }];
+  assert.equal(evaluateRule(snapshotOf({ input: Buffer.from(JSON.stringify(doc)), closure })), "unknown");
+  delete doc.credentialSubject["@context"];
+  assert.equal(evaluateRule(snapshotOf({ input: Buffer.from(JSON.stringify(doc)), closure })), "restricted");
 });
 
 test("engine snapshot: own frozen copy; context manifest equals the JCS form LFSC-G commits to", () => {

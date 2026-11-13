@@ -15,7 +15,7 @@ as predicted A2   [A] N1: holder omits the failed retest of batch B7; coverage o
 as predicted A3   [A] N1: same omission, no coverage (holder-supplied evidence only)
                   -> GRANT (all relevant reports current, accredited and below the limits; absence attested)
 as predicted A4   [A] N2: complete-list response older than the profile's maximum age
-                  -> UNKNOWN (coverage stale)
+                  -> UNKNOWN (coverage stale or invalid time)
 as predicted A5   [A] N3: test report re-signed by an unaccredited key (source validation)
                   -> UNKNOWN (test report urn:report:lab1:2026-0501 not authenticated by the laboratory)
 as predicted A6   [A] N4: test method outside the laboratory's accreditation
@@ -43,7 +43,7 @@ as predicted B8   [B] N10: a second certificate for the same scope and epoch
 as predicted B9   [B] certificate revoked at its status entry
                   -> rejected (certificate status revoked)
 as predicted B10  [B] certificate core altered after timestamping
-                  -> rejected (certificate signature or certifier unknown)
+                  -> rejected (trusted time missing or not over this certificate core)
 as predicted B11  [B] N9: archived evidence altered at the custodian
                   -> opening invalid (the archived evidence does not open the certified commitment; attribution: not determined by this report)
 as predicted B12  [B] N8: custodian loses the archive key
@@ -53,7 +53,7 @@ as predicted B13  [B] N11: dictionary over two candidate graphs (R3-12): plain d
 as predicted S1   [SD] N12: two authentic views of batch B7 under a policy with an exception
                   -> views disagree ({R1}: GRANT; {R1, R2}: DENY)
 as predicted S2   [SD] N12: worlds that differ only in an unseen report give the same transcript and the same output
-                  -> same output, wrong in one world (identical transcript (a46bb20b3b5f9687…); output GRANT in both worlds; correct decision in world 1: DENY)
+                  -> same output, wrong in one world (identical transcript (04dc8d4bade8f725…); output GRANT in both worlds; correct decision in world 1: DENY)
 
 23 of 23 scenarios as predicted
 

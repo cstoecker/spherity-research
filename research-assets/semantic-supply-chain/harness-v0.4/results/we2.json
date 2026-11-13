@@ -7,7 +7,7 @@
   },
   "formats": {
     "envelope": "ssc-m15/v2",
-    "manifest": "ssc-decoding-manifest/v1",
+    "manifest": "ssc-decoding-manifest/v2",
     "status": "experimental, not a standard"
   },
   "policy": {
@@ -36,7 +36,7 @@
   "vectors": {
     "issuer": "did:key:zDnaezpMR3RpByA12JifUfWjK84YgsM4kbhmSgsNCaHSjTUN1",
     "manifest": {
-      "manifestVersion": "ssc-decoding-manifest/v1",
+      "manifestVersion": "ssc-decoding-manifest/v2",
       "registryEntryId": 100,
       "decoder": {
         "name": "@digitalbazaar/cborld",
@@ -234,9 +234,36 @@
       ],
       "options": {
         "base": null
+      },
+      "graphProcessing": {
+        "processors": [
+          {
+            "name": "jsonld",
+            "version": "9.0.0"
+          },
+          {
+            "name": "rdf-canonize",
+            "version": "5.0.0"
+          }
+        ],
+        "options": {
+          "processingMode": "json-ld-1.1",
+          "base": null,
+          "safe": true,
+          "rdfDirection": null,
+          "skipExpansion": false,
+          "produceGeneralizedRdf": false,
+          "format": "application/n-quads",
+          "canonizeOptions": {
+            "algorithm": "RDFC-1.0",
+            "messageDigestAlgorithm": "sha256",
+            "rejectURDNA2015": true,
+            "maxWorkFactor": 1
+          }
+        }
       }
     },
-    "manifestDigestHex": "8c6478b1e0233051178738e8477bc7d8fe403ccf3c3edb764c4d13eaa9b914c0"
+    "manifestDigestHex": "dd779188d26ebf1606448d72ab7ba152d28d104f2f7e20df75a82f8a131dd01f"
   },
   "rows": [
     {
@@ -319,9 +346,9 @@
     },
     {
       "id": "S10",
-      "scenario": "X4: profile A (signature over CBOR-LD bytes only), envelope rewritten to match a verifier with the updated context",
+      "scenario": "X4: profile A (signature over CBOR-LD bytes only), envelope rewritten to match a verifier with the substituted context",
       "outcome": "REJECTED at policy: profile A rejected by policy: its signature covers only the CBOR-LD bytes, so the registry entry id and manifest digest can be rewritten to match a drifted verifier (X4). If A were accepted: signature valid: true; ACCEPTED (A, local registry); graph: dataAccessScope = battery#RestrictedData",
-      "detail": "{\"topLevelKeys\":[\"credentialStatus\",\"evidence\",\"id\",\"type\"],\"type\":[\"VerifiableCredential\",\"DistributionSystemOperator\"],\"subject\":\"(missing)\",\"scope\":\"BatteryPassportRestrictedData\"}",
+      "detail": "{\"topLevelKeys\":[\"credentialSubject\",\"id\",\"issuer\",\"type\"],\"type\":[\"VerifiableCredential\",\"MarketRoleCredential\"],\"subject\":{\"dataAccessScope\":\"BatteryPassportPublicData\",\"id\":\"did:example:grid-operator-42\",\"marketRole\":\"DistributionSystemOperator\"},\"scope\":\"BatteryPassportPublicData\"}",
       "part": 2,
       "accepted": false,
       "stage": "policy",

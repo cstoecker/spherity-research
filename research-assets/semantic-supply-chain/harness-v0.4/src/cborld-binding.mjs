@@ -26,6 +26,7 @@
 //   ["ssc-m15/v2", profile, registryEntryId, manifestDigest32, cborldBytes, verificationMethod|null, signature|null]
 
 import canonicalize from "canonicalize";
+import jsonld from "jsonld";
 import { decode as cborDecode, decodeFirst as cborDecodeFirst, encode as cborEncode } from "cborg";
 import { decode as cborldDecode, encode as cborldEncode } from "@digitalbazaar/cborld";
 import { readFileSync } from "node:fs";
@@ -34,10 +35,10 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { DIGEST, ecdsaSign, ecdsaVerify, sri, typedDigest } from "./crypto.mjs";
 import { pinnedLoader } from "./loader.mjs";
-import { rdfc, resolveVerificationMethod, verifyProof } from "./suites.mjs";
+import { canonizeOptions, freshResolver, resolveVerificationMethod, verifyProof } from "./suites.mjs";
 
 export const ENVELOPE_TAG = "ssc-m15/v2";
-export const MANIFEST_VERSION = "ssc-decoding-manifest/v1";
+export const MANIFEST_VERSION = "ssc-decoding-manifest/v2";
 export const PROCESSING_MODEL = "cbor-ld/registry-entry";
 export const PROFILES = Object.freeze(["A", "B", "I-RDFC", "I-JCS"]);
 /** DST-9: the only profiles whose authenticated output binds meaning. */
@@ -94,11 +95,35 @@ export const INSTALLED_DECODER = deepFreeze({
   }
 });
 
+// Installed implementation is trusted; package versions do not attest binary integrity.
+// Use this same explicit profile to both bind and execute graph processing.
+export const INSTALLED_GRAPH_PROCESSING = deepFreeze({
+  processors: ["jsonld", "rdf-canonize"].map((name) => {
+    const pkg = require(`${name}/package.json`);
+    return { name: pkg.name, version: pkg.version };
+  }),
+  options: {
+    processingMode: "json-ld-1.1", base: null, safe: true,
+    rdfDirection: null, skipExpansion: false, produceGeneralizedRdf: false,
+    format: "application/n-quads", canonizeOptions: canonizeOptions()
+  }
+});
+
 // ---- Decoding manifest --------------------------------------------------------------------------
 
 /** Type tables as sorted pairs, with the core tables the library adds when they are absent. */
 export function canonicalTypeTables(typeTable) {
   const normalised = new Map(typeTable);
+  for (const [type, table] of normalised) {
+    const codes = new Set();
+    for (const [value, code] of table) {
+      if (typeof type !== "string" || typeof value !== "string" ||
+          !Number.isSafeInteger(code) || code < 0 || codes.has(code)) {
+        throw new Error(`invalid or duplicate code in type table ${type}`);
+      }
+      codes.add(code);
+    }
+  }
   for (const core of ["context", "url", "none"]) if (!normalised.has(core)) normalised.set(core, new Map());
   return sortedPairs(normalised).map(([type, table]) => [type, sortedPairs(table)]);
 }
@@ -111,7 +136,7 @@ export const tableContextIds = (typeTable) => [...(typeTable.get("context") ?? n
  * With allowMissing, a context whose bytes are not held gets digestSRI null, so a verifier can
  * still say what differs; such a manifest never matches a digest.
  */
-export function buildManifest({ registryEntryId, typeTable, contextIds, contextBytes, decoder = INSTALLED_DECODER, options = DECODING_OPTIONS, allowMissing = false }) {
+export function buildManifest({ registryEntryId, typeTable, contextIds, contextBytes, decoder = INSTALLED_DECODER, options = DECODING_OPTIONS, graphProcessing = INSTALLED_GRAPH_PROCESSING, allowMissing = false }) {
   const typeTables = canonicalTypeTables(typeTable);
   const contexts = [...new Set(contextIds)].sort().map((id) => {
     const bytes = contextBytes.get(id);
@@ -126,7 +151,8 @@ export function buildManifest({ registryEntryId, typeTable, contextIds, contextB
     codecs: { implementation: `${decoder.name}@${decoder.version}`, ...decoder.codecs, typeTableKeys: typeTables.map(([type]) => type) },
     typeTables,
     contexts,
-    options: { ...options }
+    options: { ...options },
+    graphProcessing: structuredClone(graphProcessing)
   };
 }
 
@@ -195,6 +221,10 @@ export function explainDifferences(issuer, verifier) {
     else if (b === null) add("context", id, a, null, `context ${id} is not held by the verifier`);
     else add("context", id, a, b, `context ${id}: the verifier's bytes (${abbreviate(b)}) differ from the issuer's (${abbreviate(a)})`);
   }
+  if (canonicalize(issuer.graphProcessing ?? null) !== canonicalize(verifier.graphProcessing ?? null)) {
+    add("graphProcessing", null, issuer.graphProcessing ?? null, verifier.graphProcessing ?? null,
+      "graph processing implementation/version or options differ");
+  }
   if (canonicalize(issuer.options) !== canonicalize(verifier.options)) add("options", null, issuer.options, verifier.options, "decoding options differ");
   return out;
 }
@@ -247,7 +277,6 @@ export function parseEnvelope(envelope) {
 }
 
 const didOf = (verificationMethod) => String(verificationMethod).split("#")[0];
-const issuerOf = (document) => (typeof document?.issuer === "string" ? document.issuer : document?.issuer?.id);
 
 /** Profile B: signature over the first five fields. Profile A: over the CBOR-LD bytes only. */
 export function verifyEnvelopeSignature(fields) {
@@ -401,7 +430,12 @@ export async function decodeBound(envelope, { registry = new Map(), archive = ne
     signer = check.signer;
   }
 
-  const pinned = pinDecodingInputs(fields, { registry, archive, decoder });
+  let pinned;
+  try {
+    pinned = pinDecodingInputs(fields, { registry, archive, decoder });
+  } catch (error) {
+    return fail("manifest", `invalid decoding material: ${error.message}`);
+  }
   if (!pinned.ok) return fail("manifest", pinned.reason, { differences: pinned.differences ?? [] });
   const listed = new Set(pinned.manifest.contexts.map(({ id }) => id));
   const freshPinnedLoader = () => pinnedLoader(pinned.contextBytes, pinned.manifest.contexts, sriOf);
@@ -435,13 +469,26 @@ export async function decodeBound(envelope, { registry = new Map(), archive = ne
   }
 
   // Issuer-key binding: the key that authenticated the label must be the credential issuer's.
-  const issuer = issuerOf(document);
-  if (issuer !== undefined && issuer !== signer) return fail("issuer-binding", `authenticated by ${signer}, but the document names issuer ${issuer}`);
+  let expanded;
+  try {
+    expanded = await jsonld.expand(withoutProof(document), {
+      documentLoader: freshPinnedLoader(), safe: true, contextResolver: freshResolver()
+    });
+  } catch (error) {
+    return fail("issuer-binding", `cannot resolve credential issuer: ${error.message}`);
+  }
+  const issuers = expanded.length === 1 && expanded[0]["https://www.w3.org/2018/credentials#issuer"];
+  if (!Array.isArray(issuers) || issuers.length !== 1 || issuers[0]["@id"] !== signer) {
+    return fail("issuer-binding", `credential must name exactly one issuer matching ${signer}`);
+  }
 
   const graphLoader = freshPinnedLoader();
   let graph;
   try {
-    graph = await rdfc(withoutProof(document), graphLoader);
+    graph = await jsonld.canonize(withoutProof(document), {
+      ...structuredClone(INSTALLED_GRAPH_PROCESSING.options),
+      documentLoader: graphLoader, contextResolver: freshResolver()
+    });
   } catch (error) {
     const url = undeclared(graphLoader);
     return fail("graph", url ? `undeclared URL requested while computing the graph: ${url}` : `no RDF graph under the pinned contexts: ${error.message}`);

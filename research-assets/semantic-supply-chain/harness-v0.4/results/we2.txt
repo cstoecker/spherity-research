@@ -1,5 +1,5 @@
 WE-2 results, harness v0.4.0 (@digitalbazaar/cborld 8.1.0, Node v22.23.4)
-Experimental formats, not standards: envelope "ssc-m15/v2", manifest "ssc-decoding-manifest/v1".
+Experimental formats, not standards: envelope "ssc-m15/v2", manifest "ssc-decoding-manifest/v2".
 Verifier policy (DST-9): profiles B and I-RDFC accepted; A and I-JCS rejected.
 
 Label sizes (bytes):
@@ -10,7 +10,7 @@ Label sizes (bytes):
   v0.4 envelope, profile B (256-bit digest, ECDSA P-256 signature, did:key verification method): 356 (+227 over 129)
     of which: digest 34, signature 66, verification method 109, tag, profile, id and framing 18
 
-Decoding manifest digest of the WE-2 label (typed SHA-256, ssc:decoding-manifest/v1): 8c6478b1e0233051178738e8477bc7d8fe403ccf3c3edb764c4d13eaa9b914c0
+Decoding manifest digest of the WE-2 label (typed SHA-256, ssc:decoding-manifest/v1): dd779188d26ebf1606448d72ab7ba152d28d104f2f7e20df75a82f8a131dd01f
 
 Part 1: the problem, unbound CBOR-LD as deployed today
 
@@ -48,9 +48,9 @@ Part 2: M15 v0.4 (envelope v2, complete decoding manifest, pinned decoding)
      => ACCEPTED (I-RDFC, local registry); graph: dataAccessScope = battery#PublicData
      decoded: {"topLevelKeys":["credentialSubject","id","issuer","type"],"type":["VerifiableCredential","MarketRoleCredential"],"subject":{"dataAccessScope":"BatteryPassportPublicData","id":"did:example:grid-operator-42","marketRole":"DistributionSystemOperator"},"scope":"BatteryPassportPublicData"}
 
-[S10] X4: profile A (signature over CBOR-LD bytes only), envelope rewritten to match a verifier with the updated context
+[S10] X4: profile A (signature over CBOR-LD bytes only), envelope rewritten to match a verifier with the substituted context
      => REJECTED at policy: profile A rejected by policy: its signature covers only the CBOR-LD bytes, so the registry entry id and manifest digest can be rewritten to match a drifted verifier (X4). If A were accepted: signature valid: true; ACCEPTED (A, local registry); graph: dataAccessScope = battery#RestrictedData
-     decoded: {"topLevelKeys":["credentialStatus","evidence","id","type"],"type":["VerifiableCredential","DistributionSystemOperator"],"subject":"(missing)","scope":"BatteryPassportRestrictedData"}
+     decoded: {"topLevelKeys":["credentialSubject","id","issuer","type"],"type":["VerifiableCredential","MarketRoleCredential"],"subject":{"dataAccessScope":"BatteryPassportPublicData","id":"did:example:grid-operator-42","marketRole":"DistributionSystemOperator"},"scope":"BatteryPassportPublicData"}
 
 [S11] X4 against profile B: the same rewrite
      => REJECTED at signature: envelope signature invalid for did:key:zDnaezpMR3RpByA12JifUfWjK84YgsM4kbhmSgsNCaHSjTUN1#zDnaezpMR3RpByA12JifUfWjK84YgsM4kbhmSgsNCaHSjTUN1 (profile B)

@@ -155,11 +155,11 @@ test("profile A (signature over CBOR-LD bytes only) is rejected by policy", asyn
 
 test("why A is rejected (X4): accepted, the rewritten label decodes into restricted data under a valid signature", async () => {
   const { envelope } = await encodeBound(credential, { registryEntryId: REG, typeTable: table, documentLoader: loaderWith(original), profile: "A", signer, verificationMethod: vm });
-  const forged = rewrite(envelope, localDigest(table, loaderWith(updated)));
+  const forged = rewrite(envelope, localDigest(table, loaderWith(substituted)));
   assert.equal(verifyEnvelopeSignature(parseEnvelope(forged)).ok, true);
-  const unsafe = await decodeBound(forged, { registry: registry(table, loaderWith(updated)), acceptProfiles: ["A"] });
+  const unsafe = await decodeBound(forged, { registry: registry(table, loaderWith(substituted)), acceptProfiles: ["A"] });
   assert.equal(unsafe.ok, true, unsafe.reason);
-  assert.equal(unsafe.document.credentialSubject, undefined);
+  assert.equal(unsafe.document.credentialSubject.dataAccessScope, "BatteryPassportPublicData");
   assert.equal(scopeOf(unsafe.graph), RESTRICTED);
 });
 

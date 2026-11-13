@@ -161,10 +161,10 @@ record("S9", "Profile I-RDFC (inner ecdsa-rdfc-2019 proof), honest round trip", 
 
 // X4: the attacker rewrites the manifest digest to the one a drifted verifier computes locally.
 const forgedUpdated = localDigest(tableV1, loaderWith(updated));
-const forgedA = rewrite(labelA.envelope, forgedUpdated);
+const forgedA = rewrite(labelA.envelope, localDigest(tableV1, loaderWith(substituted)));
 r = await decodeBound(forgedA, { registry: registryUpdated });
-const unsafeA = await decodeBound(forgedA, { registry: registryUpdated, acceptProfiles: ["A"] });
-record("S10", "X4: profile A (signature over CBOR-LD bytes only), envelope rewritten to match a verifier with the updated context",
+const unsafeA = await decodeBound(forgedA, { registry: registry(tableV1, loaderWith(substituted)), acceptProfiles: ["A"] });
+record("S10", "X4: profile A (signature over CBOR-LD bytes only), envelope rewritten to match a verifier with the substituted context",
   `${describe(r)}. If A were accepted: signature valid: ${verifyEnvelopeSignature(parseEnvelope(forgedA)).ok}; ${describe(unsafeA)}`,
   summary(unsafeA.document), { part: 2, ...meaningRow(r), ifAccepted: meaningRow(unsafeA) });
 
