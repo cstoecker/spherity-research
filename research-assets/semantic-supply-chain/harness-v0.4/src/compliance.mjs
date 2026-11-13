@@ -30,7 +30,7 @@ export const CLOSURE = typedId(DIGEST.semanticClosure, "compliance-vocabulary/v1
 export const DECISION_CLASS = "customs-release-risk-assessment";
 export const policyVersion = (version, limits) => {
   const body = { id: "urn:policy:battery-release", version, limits, closure: CLOSURE, freshness: 30, decisionClass: DECISION_CLASS };
-  return { ...body, digest: typedId(DIGEST.semanticClosure, canonicalize(body)) };
+  return { ...body, digest: typedId(DIGEST.policy, canonicalize(body)) };
 };
 // Illustrative limits in mg/kg; not regulatory values.
 export const POLICY_V1 = policyVersion("1", { Hg: 5, Cd: 20, Pb: 100 });

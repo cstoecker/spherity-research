@@ -16,32 +16,32 @@
         "engine-process.mjs",
         "crypto.mjs"
       ],
-      "codeDigest": "869222d0c11203e2982c6fe6c5cd9ec5d42060a366a3ce20dab4fea419a73885",
-      "launchEvent": "8425a77afdacece5d4598a507f9380d9b3c3340fab6a9b3e3966d43806568952",
-      "pcrValue": "8f7e925d5135f29ff135449e48236ddce5efb4cd28c175f4d6dd53419d7280b6"
+      "codeDigest": "cc98a085203ed5ccdb9960664bcf09e134921ef78ea7c90df3436328b8786f0d",
+      "launchEvent": "7f4d71b609abdbaef7531b37d2354d86f5dfbcc43ff1e2b46b627dffaf7fa6b7",
+      "pcrValue": "12a237231f8786114400f20d12fca3b880b2b64c4e7948ff918c79e763ab7319"
     },
     "modifiedEngine": {
-      "codeDigest": "04a1f0fc107384af1f40296ebdfabd2b75ad5390d57a874ed1a6f7c803b6b347",
-      "pcrValue": "d06e4e05aa1c9ffba0f100da34434939b51e603d2f5f4742a6a7e404b89a6976"
+      "codeDigest": "af463d068da7e2448dfc39f63ae4597056e84956ae62773ff0551f0830ce0fe8",
+      "pcrValue": "285d0bc3c69a8625f8080a16decc16079fce9bb07a3b22c379d22a8087faf517"
     },
     "policies": {
       "trial": {
-        "pcrOnly": "fb9e18877130ee17a8aacd71896bd7a547ccaf1338db614baeffb673f19e76dd",
-        "exclusive": "d3a9f28b4fac80d9e03867d3f4e42e546938d44cb595993b9a9ac4f2939466b5"
+        "pcrOnly": "e598fb1bcfec9e903a765dca9feaaeb67eaf5a946ad24b0a1cfa32c4076d9f3c",
+        "exclusive": "b980e9990a5dc2efb2cc139f3998da33fb2e87422a3149b61ae0ae669e6ce5a3"
       },
       "computed": {
-        "pcrOnly": "fb9e18877130ee17a8aacd71896bd7a547ccaf1338db614baeffb673f19e76dd",
-        "exclusive": "d3a9f28b4fac80d9e03867d3f4e42e546938d44cb595993b9a9ac4f2939466b5"
+        "pcrOnly": "e598fb1bcfec9e903a765dca9feaaeb67eaf5a946ad24b0a1cfa32c4076d9f3c",
+        "exclusive": "b980e9990a5dc2efb2cc139f3998da33fb2e87422a3149b61ae0ae669e6ce5a3"
       }
     },
     "keys": {
       "pcrOnly": {
         "handle": "0x81010010",
-        "name": "000b8d8c587f36f4ee97e5daa51330d16b9d4fb55c79b9ab1d7dbb12f1a95f9c8219"
+        "name": "000b6f579602d500a2bbbf8503e3490a5aba668bb6b1b8a26253bfd7e3eceae4e555"
       },
       "exclusive": {
         "handle": "0x81010011",
-        "name": "000ba76f5a0ff2f45c45d2685696b7a222feaea76984cd9f35097cc92bcfc74466f1"
+        "name": "000b8c87c76fc52bdec5e71504c6cc14a3969de82efe795937e7be9ddf6bd50427c0"
       }
     },
     "pcrOnlyKeyUnderExclusivePolicy": "key policy is not the approved engine's policy",
@@ -148,7 +148,7 @@
       "name": "modified engine (holding the authorisation value) signs a receipt naming the approved closure for a substituted-closure decision",
       "expected": "TPM refused: TPM_RC_POLICY_FAIL",
       "actual": "TPM refused: TPM_RC_POLICY_FAIL",
-      "detail": "PCR 15 shows the modified code 04a1f0fc1073…, not the approved code 869222d0c112…; tpm2_sign: tpm:session(1):a policy check failed",
+      "detail": "PCR 15 shows the modified code af463d068da7…, not the approved code cc98a085203e…; tpm2_sign: tpm:session(1):a policy check failed",
       "ok": true
     },
     {

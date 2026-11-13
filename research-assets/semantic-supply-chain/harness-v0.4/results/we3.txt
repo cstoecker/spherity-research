@@ -5,10 +5,10 @@ The test exercises receipt construction, policy-gated signing and appraisal unde
 
 Measured launch: SHA-256 over the engine's modules (engine-process.mjs, crypto.mjs) as a typed engine-launch event,
 extended into PCR 15 (PC Client profile: resettable at no locality); the engine runs as a separate OS process.
-  engine code 869222d0c11203e2…  approved PCR 15 8f7e925d5135f29f…  modified engine code 04a1f0fc107384af…
+  engine code cc98a085203ed5cc…  approved PCR 15 12a237231f878611…  modified engine code af463d068da7e244…
 Receipt keys: ECDSA P-256, attributes fixedtpm|fixedparent|sensitivedataorigin|sign|noda (userWithAuth clear), certified by the attestation key:
-  PCR-only  (MC-3 V4)  PolicyPCR(sha256:15 = approved engine)                     fb9e18877130ee17…
-  exclusive (MC-3 V5)  PolicyPCR(sha256:15 = approved engine) AND PolicyAuthValue  d3a9f28b4fac80d9…
+  PCR-only  (MC-3 V4)  PolicyPCR(sha256:15 = approved engine)                     e598fb1bcfec9e90…
+  exclusive (MC-3 V5)  PolicyPCR(sha256:15 = approved engine) AND PolicyAuthValue  b980e9990a5dc2ef…
   trial-session digests equal the TPM 2.0 Part 3 computation: yes
 Closures: approved sha256-Ywx3H4TNB… (rule: public), substituted sha256-YSUBVmKm7… (rule: restricted)
 Bundle loads extend PCR 23 for monitoring only (M23); they bind no decision.
@@ -36,7 +36,7 @@ as predicted D1   host resets the engine register PCR 15
 as predicted D2   host resets the monitoring register PCR 23 and re-extends only the approved bundle event (the v0.3 attack, X6)
                   -> reset succeeded; register rewritten (PCR 23 now replays to the approved bundle event alone, although the engine's log shows it loaded the substituted bundle in A2; bundle-load measurement is monitoring only (M23))
 as predicted E1   modified engine (holding the authorisation value) signs a receipt naming the approved closure for a substituted-closure decision
-                  -> TPM refused: TPM_RC_POLICY_FAIL (PCR 15 shows the modified code 04a1f0fc1073…, not the approved code 869222d0c112…; tpm2_sign: tpm:session(1):a policy check failed)
+                  -> TPM refused: TPM_RC_POLICY_FAIL (PCR 15 shows the modified code af463d068da7…, not the approved code cc98a085203e…; tpm2_sign: tpm:session(1):a policy check failed)
 as predicted E2   modified engine creates and certifies a new key bound to its own measured state
                   -> key rejected (key policy is not the approved engine's policy)
 as predicted E3   limit: host creates a key with the approved policy and its own authorisation value

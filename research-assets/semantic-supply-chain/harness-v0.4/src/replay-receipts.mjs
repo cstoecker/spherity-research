@@ -29,7 +29,7 @@ export function encodeMessage(fields) {
   const bytes = Buffer.from(canonicalize([RECEIPT_PROFILE, ...FIELDS.map((f) => fields[f])]), "utf8");
   return { bytes, digest: typedDigest(DIGEST.receipt, bytes) };
 }
-export const groupKeyId = (publicKeys, epoch) => typedId(DIGEST.receipt, canonicalize({ keys: [...publicKeys].sort(), epoch }));
+export const groupKeyId = (publicKeys, epoch) => typedId(DIGEST.groupKey, canonicalize({ keys: [...publicKeys].sort(), epoch }));
 
 // ---- signed helper objects (request, status) ---------------------------------------------
 export { newParty };
@@ -94,7 +94,7 @@ export class CoSigner {
     const fields = {
       profile: RECEIPT_PROFILE, groupKey, keyEpoch, challenge: req.challenge, audience: req.audience, purpose: req.purpose,
       decisionId: proposal.decisionId, action: req.action, scope: req.scope, outcome: proposal.outcome,
-      inputDigest: typedId(DIGEST.lexical, canonicalize(proposal.input)),
+      inputDigest: typedId(DIGEST.input, canonicalize(proposal.input)),
       semanticClosure: proposal.claimedClosure,
       decisionContext: typedId(DIGEST.decisionContext, canonicalize({ status: proposal.status, time: proposal.time, closure: proposal.claimedClosure, request: proposal.request })),
       admissibilityPolicy: this.admissibility === "window" ? `window:${this.windowTicks}` : "current-status"
