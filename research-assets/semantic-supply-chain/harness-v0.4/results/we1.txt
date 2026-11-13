@@ -1,0 +1,53 @@
+
+WE-1 results (jsonld 8.3.3 / rdf-canonize 3.4.0, Node v22.23.4)
+
+[A] ecdsa-jcs-2019, context as issued
+     signature valid: true
+     meaning: {"marketRole":"https://vocab.example/energy#DistributionSystemOperator","dataAccessScope":"https://vocab.example/battery#PublicData","terms":3}
+     => baseline
+
+[B] ecdsa-jcs-2019, context substituted behind the same URL
+     signature valid: true
+     meaning: {"marketRole":"https://vocab.example/energy#TransmissionSystemOperator","dataAccessScope":"https://vocab.example/battery#RestrictedData","terms":3}
+     => GAP: valid signature, different meaning
+
+[C] ecdsa-rdfc-2019, context substituted
+     signature valid: false
+     meaning: {"marketRole":"https://vocab.example/energy#TransmissionSystemOperator","dataAccessScope":"https://vocab.example/battery#RestrictedData","terms":3}
+     => detected: signature fails (meaning is in the signing input)
+
+[D] vc+jwt envelope (ES256), context substituted
+     signature valid: true
+     meaning: {"marketRole":"https://vocab.example/energy#TransmissionSystemOperator","dataAccessScope":"https://vocab.example/battery#RestrictedData","terms":3}
+     => GAP: valid signature, different meaning
+
+[E] ecdsa-jcs-2019 + relatedResource digestSRI (HW-S3), context substituted
+     signature valid: true
+     meaning: {"marketRole":"https://vocab.example/energy#TransmissionSystemOperator","dataAccessScope":"https://vocab.example/battery#RestrictedData","terms":3}
+     => detected: context digest mismatch
+
+[F1] LFSC-G (M17), context as issued
+     signature valid: true
+     meaning: {"marketRole":"https://vocab.example/energy#DistributionSystemOperator","dataAccessScope":"https://vocab.example/battery#PublicData","terms":3}
+     => accepted at stage 2
+
+[F2] LFSC-G (M17), context substituted
+     signature valid: false
+     meaning: {"marketRole":"https://vocab.example/energy#TransmissionSystemOperator","dataAccessScope":"https://vocab.example/battery#RestrictedData","terms":3}
+     => detected at stage 2: dependency digest mismatch: https://contexts.example/energy-roles/v1
+
+[G] ecdsa-jcs-2019 with an undefined term (JSON view has it, RDF view drops it)
+     signature valid: true
+     meaning: {"marketRole":"https://vocab.example/energy#DistributionSystemOperator","dataAccessScope":"https://vocab.example/battery#PublicData","terms":3,"note":"JSON terms in subject: 4; RDF terms: 3"}
+     => GAP: signed claim invisible to RDF consumers. jsonld safe mode: "Safe mode validation error."; RDFC issuance: "Safe mode validation error."
+
+[I] context URL pointing at a cloud metadata endpoint
+     signature valid: n/a
+     meaning: {"naiveLoaderRequests":["http://169.254.169.254/latest/meta-data/"],"lfscLoaderRequests":[]}
+     => naive processing asks for the URL; LFSC stage 0 rejects before any request (context not allowlisted: http://169.254.169.254/latest/meta-data/)
+
+[H] two loaders with different 'static' copies of one URL in one process (default jsonld.js cache)
+     signature valid: n/a
+     meaning: {"firstLoader":"https://vocab.example/battery#RestrictedData","secondLoader":"https://vocab.example/battery#RestrictedData","secondLoaderAskedFor":[]}
+     => GAP: the honest loader's copy is never consulted; the first resolution wins process-wide
+

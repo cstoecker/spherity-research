@@ -251,10 +251,10 @@ Attacker documents carry forged proofs. Single environment (4 vCPU cloud contain
 
 | Input | Naive verifier, no limit | Naive, default bound (`maxWorkFactor` 1) | LFSC-G 0.4 rejection |
 |---|---|---|---|
-| complete graph K₈ (1.7 kB) | 1.8 s | aborts, ~5 ms | 0.04–0.21 ms |
-| symmetric binary tree, 255 nodes (11 kB) | 3.6 s | aborts, ~15 ms | 0.04–0.46 ms |
-| symmetric binary tree, 511 nodes (22 kB) | > 20 s | aborts, ~32 ms | 0.05–1.2 ms |
-| labelled tree, 1,500 nodes (benign, 79 kB) | ~87 ms | completes (~82 ms) | rejected by size bound (2.4 ms) or the blank-node rule (0.06 ms) |
+| complete graph K₈ (1.7 kB) | 1.8 s | aborts, ~6 ms | 0.06–0.18 ms |
+| symmetric binary tree, 255 nodes (11 kB) | 3.8 s | aborts, ~16 ms | 0.04–0.51 ms |
+| symmetric binary tree, 511 nodes (22 kB) | > 20 s | aborts, ~29 ms | 0.05–0.94 ms |
+| labelled tree, 1,500 nodes (benign, 79 kB) | ~67 ms | completes (~81 ms) | rejected by size bound (2.3 ms) or the blank-node rule (0.03 ms) |
 
 The three LFSC figures are: the document as sent (stage 0, context not allowlisted), the same graph with allowlisted contexts (stage 0, blank nodes), and the same graph without blank nodes and with a forged LFSC 0.4 proof (stage 1, the key is not authorised for the named issuer).
 
@@ -262,11 +262,11 @@ Legitimate market-role credential, p50 over 200 runs:
 
 | Verification | v0.4.0 | v0.3.0 |
 |---|---|---|
-| `ecdsa-rdfc-2019` | 2.16 ms | 1.94 ms |
-| `ecdsa-jcs-2019` | 0.21 ms | 0.20 ms |
-| **LFSC-G, first verification** | **1.50 ms** | 1.09 ms |
-| **LFSC-G, graph-native from stored quads** | **0.28 ms** | 0.18 ms |
-| LFSC-G, cached | 0.44 ms | 0.25 ms |
+| `ecdsa-rdfc-2019` | 2.19 ms | 1.94 ms |
+| `ecdsa-jcs-2019` | 0.23 ms | 0.20 ms |
+| **LFSC-G, first verification** | **1.48 ms** | 1.09 ms |
+| **LFSC-G, graph-native from stored quads** | **0.26 ms** | 0.18 ms |
+| LFSC-G, cached | 0.39 ms | 0.25 ms |
 
 The corrections cost time on the honest path. The dependency digests are now checked on every verification, **before** any cache lookup, which is what closes X13. The issuer binding and the pinned loader add a little more. All figures are single-environment.
 
@@ -276,10 +276,10 @@ A **legitimate** credential (600 blank nodes with unique literals) is canonicali
 
 | Host | p50 | Time-limit policy | Operation-bound policy |
 |---|---|---|---|
-| idle | 16.7 ms | 21/21 accepted | 21/21 accepted |
-| loaded | 31 ms | **7/21 accepted** | 21/21 accepted |
+| idle | 11.9 ms | **20/21 accepted** | 21/21 accepted |
+| loaded | 33 ms | **0/21 accepted** | 21/21 accepted |
 
-(v0.3.0 on `rdf-canonize` 3.4.0: 0/21 under load. The share flips with the load; any wall-clock threshold has a load at which the verdict changes.)
+In this run the time limit rejected the legitimate credential once even on the idle host. In an earlier run of the same code it accepted 7/21 under load. The share moves with the load; the operation bound does not.
 
 M19: decide *invalid* only on deterministic operation bounds; let a time limit yield *unknown*, never *invalid*.
 
