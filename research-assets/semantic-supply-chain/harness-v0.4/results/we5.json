@@ -1,0 +1,20 @@
+{
+  "node": "v22.23.4",
+  "cpus": 4,
+  "input": "labelled tree, 600 blank nodes with unique literals (legitimate)",
+  "quads": 1203,
+  "timeLimitMs": 25,
+  "operationBound": "maxDeepIterations=1",
+  "idle": {
+    "p50": 16.7,
+    "max": 22.7,
+    "timePolicy": "21/21 accepted",
+    "operationPolicy": "21/21 accepted"
+  },
+  "loaded": {
+    "p50": 31,
+    "max": 52.6,
+    "timePolicy": "7/21 accepted",
+    "operationPolicy": "21/21 accepted"
+  }
+}

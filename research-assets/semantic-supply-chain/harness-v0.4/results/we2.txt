@@ -1,0 +1,87 @@
+WE-2 results, harness v0.4.0 (@digitalbazaar/cborld 8.1.0, Node v22.23.4)
+Experimental formats, not standards: envelope "ssc-m15/v2", manifest "ssc-decoding-manifest/v1".
+Verifier policy (DST-9): profiles B and I-RDFC accepted; A and I-JCS rejected.
+
+Label sizes (bytes):
+  plain CBOR-LD, WE-2 credential with inner ecdsa-rdfc-2019 proof: 314
+  plain CBOR-LD, same credential without inner proof (profile B payload): 129
+  v0.3 envelope (unsigned, 128-bit digest), for comparison: 337 (+23)
+  v0.4 envelope, profile I-RDFC (256-bit digest, unsigned envelope): 374 (+60 over 314)
+  v0.4 envelope, profile B (256-bit digest, ECDSA P-256 signature, did:key verification method): 356 (+227 over 129)
+    of which: digest 34, signature 66, verification method 109, tag, profile, id and framing 18
+
+Decoding manifest digest of the WE-2 label (typed SHA-256, ssc:decoding-manifest/v1): 8c6478b1e0233051178738e8477bc7d8fe403ccf3c3edb764c4d13eaa9b914c0
+
+Part 1: the problem, unbound CBOR-LD as deployed today
+
+[S1] Baseline: label decoded with the issuer's registry entry and contexts
+     => proof valid: true
+     decoded: {"topLevelKeys":["credentialSubject","id","issuer","type"],"type":["VerifiableCredential","MarketRoleCredential"],"subject":{"dataAccessScope":"BatteryPassportPublicData","id":"did:example:grid-operator-42","marketRole":"DistributionSystemOperator"},"scope":"BatteryPassportPublicData"}
+
+[S2] Signed label after a routine vocabulary update (one term added under the same URL)
+     => label UNREADABLE: decode error "Improperly formatted bytes <payload bytes> found."; the reason (codec drift) is not reported, and the label stays unusable for its lifetime
+
+[S3] Compact profile signing the CBOR-LD bytes, after the same update
+     => signature valid: true; meaning changed silently; graph: dataAccessScope = battery#RestrictedData
+     decoded: {"topLevelKeys":["credentialStatus","evidence","id","type"],"type":["VerifiableCredential","DistributionSystemOperator"],"subject":"(missing)","scope":"BatteryPassportRestrictedData"}
+
+[S4] Registry entry substituted at the verifier (context codes swapped)
+     => decode error: Unknown term ID "180" was detected in the CBOR-LD input.
+
+Part 2: M15 v0.4 (envelope v2, complete decoding manifest, pinned decoding)
+
+[S5] M15 v0.4, WE-2 label (I-RDFC); verifier's context was updated; no archive
+     => REJECTED at manifest: decoding manifest mismatch: the verifier's inputs for registry entry 100 do not reproduce the bound digest, and the issuer's manifest is not in the archive, so the differing input cannot be named
+
+[S6] M15 v0.4, WE-2 label (I-RDFC) + lifetime archive of the issuer's manifest and material
+     => ACCEPTED (I-RDFC, lifetime archive (resolved by manifest digest)); graph: dataAccessScope = battery#PublicData
+     decoded: {"topLevelKeys":["credentialSubject","id","issuer","type"],"type":["VerifiableCredential","MarketRoleCredential"],"subject":{"dataAccessScope":"BatteryPassportPublicData","id":"did:example:grid-operator-42","marketRole":"DistributionSystemOperator"},"scope":"BatteryPassportPublicData"}
+
+[S7] M15 v0.4, WE-2 label (I-RDFC); registry entry substituted at the verifier; issuer's manifest published
+     => REJECTED at manifest: decoding manifest mismatch: type table "context": https://contexts.example/energy-roles/v1 is 32769 at the issuer, 32768 at the verifier; type table "context": https://www.w3.org/ns/credentials/v2 is 32768 at the issuer, 32769 at the verifier; the archive holds the issuer's manifest but not its material
+
+[S8] Profile B (issuer signs the envelope), honest round trip
+     => ACCEPTED (B, local registry); graph: dataAccessScope = battery#PublicData
+     decoded: {"topLevelKeys":["credentialSubject","id","issuer","type"],"type":["VerifiableCredential","MarketRoleCredential"],"subject":{"dataAccessScope":"BatteryPassportPublicData","id":"did:example:grid-operator-42","marketRole":"DistributionSystemOperator"},"scope":"BatteryPassportPublicData"}
+
+[S9] Profile I-RDFC (inner ecdsa-rdfc-2019 proof), honest round trip
+     => ACCEPTED (I-RDFC, local registry); graph: dataAccessScope = battery#PublicData
+     decoded: {"topLevelKeys":["credentialSubject","id","issuer","type"],"type":["VerifiableCredential","MarketRoleCredential"],"subject":{"dataAccessScope":"BatteryPassportPublicData","id":"did:example:grid-operator-42","marketRole":"DistributionSystemOperator"},"scope":"BatteryPassportPublicData"}
+
+[S10] X4: profile A (signature over CBOR-LD bytes only), envelope rewritten to match a verifier with the updated context
+     => REJECTED at policy: profile A rejected by policy: its signature covers only the CBOR-LD bytes, so the registry entry id and manifest digest can be rewritten to match a drifted verifier (X4). If A were accepted: signature valid: true; ACCEPTED (A, local registry); graph: dataAccessScope = battery#RestrictedData
+     decoded: {"topLevelKeys":["credentialStatus","evidence","id","type"],"type":["VerifiableCredential","DistributionSystemOperator"],"subject":"(missing)","scope":"BatteryPassportRestrictedData"}
+
+[S11] X4 against profile B: the same rewrite
+     => REJECTED at signature: envelope signature invalid for did:key:zDnaezpMR3RpByA12JifUfWjK84YgsM4kbhmSgsNCaHSjTUN1#zDnaezpMR3RpByA12JifUfWjK84YgsM4kbhmSgsNCaHSjTUN1 (profile B)
+
+[S12] X8: profile I-JCS (inner ecdsa-jcs-2019 proof), envelope rewritten to match a verifier with the substituted context
+     => REJECTED at policy: profile I-JCS rejected by policy: an ecdsa-jcs-2019 inner proof binds the JSON, not the RDF graph, so a rewritten envelope can decode into another meaning under a valid proof (X8). If I-JCS were accepted: inner JCS proof valid; ACCEPTED (I-JCS, local registry); graph: dataAccessScope = battery#RestrictedData
+     decoded: {"topLevelKeys":["credentialSubject","id","issuer","type"],"type":["VerifiableCredential","MarketRoleCredential"],"subject":{"dataAccessScope":"BatteryPassportPublicData","id":"did:example:grid-operator-42","marketRole":"DistributionSystemOperator"},"scope":"BatteryPassportPublicData"}
+
+[S13] X8 against profile I-RDFC: the same rewrite
+     => REJECTED at inner-proof: inner ecdsa-rdfc-2019 proof invalid with the pinned inputs (signature)
+
+[S14] X7 with the v0.3 manifest scope: profile B over a top-level manifest; imported context substituted; unpinned decoding
+     => signature valid: true; top-level contexts match; decodes; graph: dataAccessScope = battery#RestrictedData
+     decoded: {"topLevelKeys":["credentialSubject","id","issuer","type"],"type":["VerifiableCredential","MarketRoleCredential"],"subject":{"dataAccessScope":"BatteryPassportPublicData","id":"did:example:grid-operator-42","marketRole":"DistributionSystemOperator"},"scope":"BatteryPassportPublicData"}
+
+[S15] X7 with v0.4 (transitive manifest, profile B); imported context substituted; no archive
+     => REJECTED at manifest: decoding manifest mismatch: the verifier's inputs for registry entry 100 do not reproduce the bound digest, and the issuer's manifest is not in the archive, so the differing input cannot be named
+
+[S16] X7 with v0.4; issuer's manifest published, material not archived
+     => REJECTED at manifest: decoding manifest mismatch: context https://contexts.example/battery-scopes/v1: the verifier's bytes (sha384-mchJMzoXGB+g…) differ from the issuer's (sha384-We59d6Uy53Kg…); the archive holds the issuer's manifest but not its material
+
+[S17] X7 with v0.4 + lifetime archive of the issuer's material
+     => ACCEPTED (B, lifetime archive (resolved by manifest digest)); graph: dataAccessScope = battery#PublicData
+     decoded: {"topLevelKeys":["credentialSubject","id","issuer","type"],"type":["VerifiableCredential","MarketRoleCredential"],"subject":{"dataAccessScope":"BatteryPassportPublicData","id":"did:example:grid-operator-42","marketRole":"DistributionSystemOperator"},"scope":"BatteryPassportPublicData"}
+
+[S18] v0.4 decoder given a signed top-level manifest (v0.3 scope); verifier holds the issuer's bytes
+     => REJECTED at decode: undeclared URL requested during decoding: https://contexts.example/battery-scopes/v1 (not in the decoding manifest)
+
+[S19] Decoder drift (MC-4): profile B; verifier's decoder reports version 9.0.0 (simulated); archive holds the issuer's material
+     => REJECTED at manifest: decoding manifest mismatch that the archive cannot repair: decoder: the issuer used @digitalbazaar/cborld 8.1.0, the verifier runs @digitalbazaar/cborld 9.0.0
+
+[S20] Codec drift under an unchanged version string: verifier's build adds a URL codec (simulated)
+     => REJECTED at manifest: decoding manifest mismatch that the archive cannot repair: codec semantics differ: urlCodecs
+

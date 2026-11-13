@@ -1,0 +1,300 @@
+{
+  "harness": "0.4.0",
+  "example": "WE-6",
+  "versions": {
+    "jsonld": "9.0.0",
+    "rdfCanonize": "5.0.0",
+    "jsonldV8": "8.3.3"
+  },
+  "matrix": [
+    {
+      "values": [
+        1,
+        2,
+        2,
+        3
+      ],
+      "default": {
+        "completes": false,
+        "ms": 2.3349119999999743,
+        "error": "Maximum deep iterations exceeded (2)."
+      },
+      "maxWorkFactor2": {
+        "completes": true,
+        "ms": 0.5130159999999933
+      },
+      "pinnedV03": {
+        "completes": true,
+        "ms": 7.157681000000025
+      }
+    },
+    {
+      "values": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "default": {
+        "completes": false,
+        "ms": 0.3897230000000036,
+        "error": "Maximum deep iterations exceeded (2)."
+      },
+      "maxWorkFactor2": {
+        "completes": true,
+        "ms": 0.23562700000002224
+      },
+      "pinnedV03": {
+        "completes": true,
+        "ms": 0.9836090000000013
+      }
+    },
+    {
+      "values": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "default": {
+        "completes": false,
+        "ms": 0.21978900000004842,
+        "error": "Maximum deep iterations exceeded (2)."
+      },
+      "maxWorkFactor2": {
+        "completes": true,
+        "ms": 0.18801200000001472
+      },
+      "pinnedV03": {
+        "completes": true,
+        "ms": 0.737214999999992
+      }
+    },
+    {
+      "values": [
+        1,
+        2,
+        3,
+        3,
+        4,
+        5
+      ],
+      "default": {
+        "completes": false,
+        "ms": 1.5720610000000192,
+        "error": "Maximum deep iterations exceeded (2)."
+      },
+      "maxWorkFactor2": {
+        "completes": true,
+        "ms": 0.1620070000000169
+      },
+      "pinnedV03": {
+        "completes": true,
+        "ms": 0.40417600000000675
+      }
+    },
+    {
+      "values": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "default": {
+        "completes": false,
+        "ms": 0.23277899999999363,
+        "error": "Maximum deep iterations exceeded (4)."
+      },
+      "maxWorkFactor2": {
+        "completes": true,
+        "ms": 0.2255660000000148
+      },
+      "pinnedV03": {
+        "completes": true,
+        "ms": 0.5908400000000142
+      }
+    },
+    {
+      "values": [
+        1,
+        2,
+        3,
+        1
+      ],
+      "default": {
+        "completes": true,
+        "ms": 0.08744599999999991
+      },
+      "maxWorkFactor2": {
+        "completes": true,
+        "ms": 0.05108899999999039
+      },
+      "pinnedV03": {
+        "completes": true,
+        "ms": 0.31205899999997655
+      }
+    },
+    {
+      "values": [
+        1,
+        2,
+        3,
+        2,
+        4
+      ],
+      "default": {
+        "completes": true,
+        "ms": 0.11665999999996757
+      },
+      "maxWorkFactor2": {
+        "completes": true,
+        "ms": 0.0998260000000073
+      },
+      "pinnedV03": {
+        "completes": true,
+        "ms": 0.33636200000000827
+      }
+    },
+    {
+      "values": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "default": {
+        "completes": true,
+        "ms": 0.15044399999999314
+      },
+      "maxWorkFactor2": {
+        "completes": true,
+        "ms": 0.10046599999998307
+      },
+      "pinnedV03": {
+        "completes": true,
+        "ms": 0.250583000000006
+      }
+    },
+    {
+      "values": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "default": {
+        "completes": true,
+        "ms": 0.05824999999998681
+      },
+      "maxWorkFactor2": {
+        "completes": true,
+        "ms": 0.04543100000000777
+      },
+      "pinnedV03": {
+        "completes": true,
+        "ms": 0.3154660000000149
+      }
+    },
+    {
+      "values": [
+        0,
+        0,
+        0
+      ],
+      "default": {
+        "completes": true,
+        "ms": 0.051084000000003016
+      },
+      "maxWorkFactor2": {
+        "completes": true,
+        "ms": 0.03635300000001962
+      },
+      "pinnedV03": {
+        "completes": true,
+        "ms": 0.19155399999999645
+      }
+    },
+    {
+      "values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "default": {
+        "completes": false,
+        "ms": 0.14287999999999101,
+        "error": "Maximum deep iterations exceeded (2)."
+      },
+      "maxWorkFactor2": {
+        "completes": true,
+        "ms": 0.12082500000002483
+      },
+      "pinnedV03": {
+        "completes": true,
+        "ms": 0.2408500000000231
+      }
+    },
+    {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "default": {
+        "completes": false,
+        "ms": 0.16638500000004797,
+        "error": "Maximum deep iterations exceeded (3)."
+      },
+      "maxWorkFactor2": {
+        "completes": true,
+        "ms": 0.23714200000000574
+      },
+      "pinnedV03": {
+        "completes": false,
+        "ms": 0.31330900000000383,
+        "error": "Maximum deep iterations (1) exceeded."
+      }
+    }
+  ],
+  "equalValuesV03": [
+    {
+      "n": 3,
+      "completes": true
+    },
+    {
+      "n": 4,
+      "completes": true
+    },
+    {
+      "n": 5,
+      "completes": false
+    },
+    {
+      "n": 6,
+      "completes": false
+    }
+  ],
+  "unbounded": [
+    {
+      "n": 50,
+      "ms": 64
+    },
+    {
+      "n": 100,
+      "ms": 186
+    },
+    {
+      "n": 200,
+      "ms": 1039
+    }
+  ],
+  "admission": {
+    "listTermExcluded": true
+  }
+}

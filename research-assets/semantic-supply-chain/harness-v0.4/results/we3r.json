@@ -1,0 +1,174 @@
+{
+  "harness": "0.4.0",
+  "example": "WE-3 R",
+  "scenarios": [
+    {
+      "id": "R1",
+      "name": "honest device, TSO credential, strict closure",
+      "expected": "accepted GRANT",
+      "actual": "accepted GRANT",
+      "detail": "receipt binds current-status",
+      "ok": true
+    },
+    {
+      "id": "R2",
+      "name": "honest device, DSO credential, strict closure",
+      "expected": "accepted DENY",
+      "actual": "accepted DENY",
+      "detail": "receipt binds current-status",
+      "ok": true
+    },
+    {
+      "id": "R3",
+      "name": "outcome lie: device proposes GRANT where replay gives DENY",
+      "expected": "refused by co-signer",
+      "actual": "refused by co-signer",
+      "detail": "replay under the claimed closure gives DENY, proposal says GRANT",
+      "ok": true
+    },
+    {
+      "id": "R4",
+      "name": "input lie (MC-6 input): device edits the credential to TSO",
+      "expected": "refused by co-signer",
+      "actual": "refused by co-signer",
+      "detail": "input not authenticated: lexical digest mismatch",
+      "ok": true
+    },
+    {
+      "id": "R5",
+      "name": "counterfeit status (MC-6 status): 'current' object signed by a forger",
+      "expected": "refused by co-signer",
+      "actual": "refused by co-signer",
+      "detail": "status object not authenticated",
+      "ok": true
+    },
+    {
+      "id": "R6",
+      "name": "older authentic status (MC-6 oldStatus, epoch-bound co-signer): epoch-0 'current' after withdrawal in epoch 1",
+      "expected": "refused by co-signer",
+      "actual": "refused by co-signer",
+      "detail": "status object is from epoch 0, current epoch is 1",
+      "ok": true
+    },
+    {
+      "id": "R7",
+      "name": "same, co-signer with a declared 2-tick window: receipt says window:2; RP requiring current status rejects it",
+      "expected": "rejected by relying party",
+      "actual": "rejected by relying party",
+      "detail": "receipt admissibility window:2, required current-status",
+      "ok": true
+    },
+    {
+      "id": "R8",
+      "name": "same, RP that accepts the declared window policy",
+      "expected": "accepted GRANT",
+      "actual": "accepted GRANT",
+      "detail": "receipt binds window:2",
+      "ok": true
+    },
+    {
+      "id": "R9",
+      "name": "device-chosen approved closure (MC-6 closure): DSO under the lenient closure, request authorises strict",
+      "expected": "refused by co-signer",
+      "actual": "refused by co-signer",
+      "detail": "closure is not the one the request authorises",
+      "ok": true
+    },
+    {
+      "id": "R10",
+      "name": "execution not established (MC-3 V6x): device ran the lenient closure on a TSO credential, claims strict; outcomes agree",
+      "expected": "accepted GRANT",
+      "actual": "accepted GRANT",
+      "detail": "receipt binds current-status",
+      "ok": true
+    },
+    {
+      "id": "R11",
+      "name": "compromised co-signer (MC-3 V6c): signs a DSO GRANT under the strict closure",
+      "expected": "accepted GRANT",
+      "actual": "accepted GRANT",
+      "detail": "receipt binds current-status",
+      "ok": true
+    },
+    {
+      "id": "R12",
+      "name": "unknown outcome: approved closure whose executable rule the co-signer cannot reconstruct",
+      "expected": "refused by co-signer",
+      "actual": "refused by co-signer",
+      "detail": "replay indeterminate: no share for unknown",
+      "ok": true
+    },
+    {
+      "id": "R13",
+      "name": "claimed time outside the declared clock tolerance",
+      "expected": "refused by co-signer",
+      "actual": "refused by co-signer",
+      "detail": "claimed decision time outside the declared clock tolerance",
+      "ok": true
+    },
+    {
+      "id": "R14",
+      "name": "field substitution after signing: outcome changed in the message",
+      "expected": "rejected by relying party",
+      "actual": "rejected by relying party",
+      "detail": "device signature invalid",
+      "ok": true
+    },
+    {
+      "id": "R15",
+      "name": "confused session: approval for message A presented with the bytes of message B",
+      "expected": "refused by co-signer",
+      "actual": "refused by co-signer",
+      "detail": "no approval for these exact bytes",
+      "ok": true
+    },
+    {
+      "id": "R16",
+      "name": "challenge replayed to the same relying party",
+      "expected": "rejected by relying party",
+      "actual": "rejected by relying party",
+      "detail": "challenge already used",
+      "ok": true
+    },
+    {
+      "id": "R17",
+      "name": "receipt presented for another action with the same challenge",
+      "expected": "rejected by relying party",
+      "actual": "rejected by relying party",
+      "detail": "receipt action does not match the request",
+      "ok": true
+    },
+    {
+      "id": "R18",
+      "name": "co-signer offline; device tries to act on its provisional GRANT",
+      "expected": "effect refused",
+      "actual": "effect refused",
+      "detail": "provisional decision: effect deferred until a valid receipt",
+      "ok": true
+    },
+    {
+      "id": "R19",
+      "name": "co-signer offline: no receipt, the action stays unavailable (safe, not a success)",
+      "expected": "refused by co-signer",
+      "actual": "refused by co-signer",
+      "detail": "co-signer unreachable",
+      "ok": true
+    },
+    {
+      "id": "R20",
+      "name": "co-signer back online: receipt produced and the effect passes the commit-point check",
+      "expected": "effect executed",
+      "actual": "effect executed",
+      "detail": "receipt accepted, epoch current",
+      "ok": true
+    },
+    {
+      "id": "R21",
+      "name": "authority epoch advances between receipt and effect",
+      "expected": "effect refused",
+      "actual": "effect refused",
+      "detail": "authority epoch changed since the decision",
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+WE-7: compliance evidence (M31, T19), harness v0.4.0
+
+SYNTHETIC worked example: a low-value consignment of portable Li-ion battery packs at a customs risk engine.
+Parties, identifiers, methods and substance limits are illustrative; the key-claim set is inspired by, but
+is not, the legal H7 data set. Coverage sources: one testing laboratory (complete-list responses and an
+absence attestation) and one status service. Regime A: full disclosure of the sufficient key-claim set,
+evaluated once by the relying party. Regime B: commit-and-certify with a salted commitment, a signed
+certificate core, an external timestamp, a verified deposit with a custodian, scope-checked reliance,
+lifecycle, a selection log and a dispute report. SD: selective disclosure, for comparison.
+
+as predicted A1   [A] batch B8, sufficient key claims, coverage contract applied
+                  -> GRANT (all relevant reports current, accredited and below the limits; absence attested)
+as predicted A2   [A] N1: holder omits the failed retest of batch B7; coverage obtains it from the laboratory
+                  -> DENY (urn:report:lab1:2026-0533: Pb 160 mg/kg above the limit 100)
+as predicted A3   [A] N1: same omission, no coverage (holder-supplied evidence only)
+                  -> GRANT (all relevant reports current, accredited and below the limits; absence attested)
+as predicted A4   [A] N2: complete-list response older than the profile's maximum age
+                  -> UNKNOWN (coverage stale)
+as predicted A5   [A] N3: test report re-signed by an unaccredited key (source validation)
+                  -> UNKNOWN (test report urn:report:lab1:2026-0501 not authenticated by the laboratory)
+as predicted A6   [A] N4: test method outside the laboratory's accreditation
+                  -> UNKNOWN (method M-ICP-9 outside the laboratory's accreditation)
+as predicted A7   [A] N5: the declared test report is revoked at the status service
+                  -> DENY (declared test report urn:report:lab1:2026-0501 is revoked)
+as predicted A8   [A] declaration outside the closed key-claim profile (an extra claim)
+                  -> UNKNOWN (declaration outside the closed key-claim profile)
+as predicted B1   [B] certificate for batch B8, presented for the same scope
+                  -> accepted, authorises (certificate outcome GRANT)
+as predicted B2   [B] dispute: open the archive, recompute the commitment, replay
+                  -> opening valid, outcome equal (a matching replay shows a consistent computation, not that the evidence was true or complete)
+as predicted B3   [B] N1: certifier without the coverage contract certifies the omission; replay agrees
+                  -> certified GRANT, replay matches (replay cannot reveal evidence that was never in the graph)
+as predicted B4   [B] with the coverage contract the same batch is not certifiable as compliant
+                  -> DENY certified (urn:report:lab1:2026-0533: Pb 160 mg/kg above the limit 100)
+as predicted B5   [B] N6: certificate for batch B8 presented for batch B7 (scope substitution)
+                  -> rejected (scope subject does not match the request (urn:gtin:04012345000017#B8 vs urn:gtin:04012345000017#B7))
+as predicted B6   [B] N7: policy-only correction (v1 to v2, closure unchanged): current reliance suspended
+                  -> rejected (suspended: policy 1 superseded by 2, re-evaluation required)
+as predicted B7   [B] N7: re-evaluation under policy v2 (stricter lead limit)
+                  -> DENY (urn:report:lab1:2026-0501: Pb 60 mg/kg above the limit 40)
+as predicted B8   [B] N10: a second certificate for the same scope and epoch
+                  -> rejected (not the authoritative certificate for this scope and epoch (selected: urn:cert:0001))
+as predicted B9   [B] certificate revoked at its status entry
+                  -> rejected (certificate status revoked)
+as predicted B10  [B] certificate core altered after timestamping
+                  -> rejected (certificate signature or certifier unknown)
+as predicted B11  [B] N9: archived evidence altered at the custodian
+                  -> opening invalid (the archived evidence does not open the certified commitment; attribution: not determined by this report)
+as predicted B12  [B] N8: custodian loses the archive key
+                  -> opening unavailable (archive cannot be opened: custodian key lost; attribution: not determined by this report)
+as predicted B13  [B] N11: dictionary over two candidate graphs (R3-12): plain digest vs salted binding
+                  -> plain identifies, salted 0 (2 candidates)
+as predicted S1   [SD] N12: two authentic views of batch B7 under a policy with an exception
+                  -> views disagree ({R1}: GRANT; {R1, R2}: DENY)
+as predicted S2   [SD] N12: worlds that differ only in an unseen report give the same transcript and the same output
+                  -> same output, wrong in one world (identical transcript (aa943918dbaa2770…); output GRANT in both worlds; correct decision in world 1: DENY)
+
+23 of 23 scenarios as predicted
+
+Reading: coverage, not the disclosure format, decides whether omitted adverse evidence is caught (A2 vs A3,
+B3 vs B4). A matching replay shows a consistent computation, not complete evidence (B3). Without coverage,
+two worlds that differ only in evidence the verifier cannot see give the same output (S2).

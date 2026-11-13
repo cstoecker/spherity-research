@@ -1,0 +1,31 @@
+{
+  "name": "ssc-harness",
+  "version": "0.4.0",
+  "private": true,
+  "description": "Worked examples WE-1 to WE-7 and the SSC-FM model checker for 'Securing the Semantic Supply Chain'.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "we1": "node we1-jcs-meaning-gap.mjs",
+    "we2": "node we2-cborld-codec-binding.mjs",
+    "we3": "node we3-measured-semantics.mjs",
+    "we3r": "node we3-replay-receipts.mjs",
+    "we4": "node we4-preauth-gate.mjs",
+    "we5": "node we5-replay-determinism.mjs",
+    "we6": "node we6-list-canonicalisation.mjs",
+    "we7": "node we7-compliance-evidence.mjs",
+    "model": "node model/mc.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@digitalbazaar/cborld": "8.1.0",
+    "canonicalize": "1.0.8",
+    "cborg": "5.1.11",
+    "jsonld": "9.0.0",
+    "rdf-canonize": "5.0.0",
+    "jsonld-v8": "npm:jsonld@8.3.3"
+  }
+}

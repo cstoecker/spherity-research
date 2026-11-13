@@ -1,0 +1,438 @@
+{
+  "harness": "0.4.0",
+  "node": "v22.23.4",
+  "decoder": {
+    "name": "@digitalbazaar/cborld",
+    "version": "8.1.0"
+  },
+  "formats": {
+    "envelope": "ssc-m15/v2",
+    "manifest": "ssc-decoding-manifest/v1",
+    "status": "experimental, not a standard"
+  },
+  "policy": {
+    "accepted": [
+      "B",
+      "I-RDFC"
+    ],
+    "rejected": [
+      "A",
+      "I-JCS"
+    ]
+  },
+  "sizes": {
+    "cborldSigned": 314,
+    "cborldUnsigned": 129,
+    "v03EnvelopeWith128BitDigest": 337,
+    "envelopeIRdfc": 374,
+    "envelopeB": 356,
+    "envelopeBParts": {
+      "digest": 34,
+      "signature": 66,
+      "verificationMethod": 109,
+      "framing": 18
+    }
+  },
+  "vectors": {
+    "issuer": "did:key:zDnaezpMR3RpByA12JifUfWjK84YgsM4kbhmSgsNCaHSjTUN1",
+    "manifest": {
+      "manifestVersion": "ssc-decoding-manifest/v1",
+      "registryEntryId": 100,
+      "decoder": {
+        "name": "@digitalbazaar/cborld",
+        "version": "8.1.0"
+      },
+      "processingModel": "cbor-ld/registry-entry",
+      "codecs": {
+        "implementation": "@digitalbazaar/cborld@8.1.0",
+        "format": "cbor-ld-1.0",
+        "keywordTermIds": [
+          [
+            "@base",
+            26
+          ],
+          [
+            "@container",
+            28
+          ],
+          [
+            "@context",
+            0
+          ],
+          [
+            "@default",
+            30
+          ],
+          [
+            "@direction",
+            8
+          ],
+          [
+            "@embed",
+            32
+          ],
+          [
+            "@explicit",
+            34
+          ],
+          [
+            "@graph",
+            10
+          ],
+          [
+            "@id",
+            4
+          ],
+          [
+            "@included",
+            12
+          ],
+          [
+            "@index",
+            14
+          ],
+          [
+            "@json",
+            16
+          ],
+          [
+            "@language",
+            18
+          ],
+          [
+            "@list",
+            20
+          ],
+          [
+            "@nest",
+            22
+          ],
+          [
+            "@none",
+            36
+          ],
+          [
+            "@omitDefault",
+            38
+          ],
+          [
+            "@prefix",
+            40
+          ],
+          [
+            "@preserve",
+            42
+          ],
+          [
+            "@propagate",
+            54
+          ],
+          [
+            "@protected",
+            44
+          ],
+          [
+            "@requireAll",
+            46
+          ],
+          [
+            "@reverse",
+            24
+          ],
+          [
+            "@set",
+            48
+          ],
+          [
+            "@type",
+            2
+          ],
+          [
+            "@value",
+            6
+          ],
+          [
+            "@version",
+            50
+          ],
+          [
+            "@vocab",
+            52
+          ]
+        ],
+        "firstCustomTermId": 100,
+        "urlCodecs": [
+          [
+            "data:",
+            4
+          ],
+          [
+            "did:key:",
+            1025
+          ],
+          [
+            "did:v1:nym:",
+            1024
+          ],
+          [
+            "http://",
+            1
+          ],
+          [
+            "https://",
+            2
+          ],
+          [
+            "urn:uuid:",
+            3
+          ]
+        ],
+        "valueCodecs": [
+          "http://www.w3.org/2001/XMLSchema#date",
+          "http://www.w3.org/2001/XMLSchema#dateTime",
+          "https://w3id.org/security#multibase",
+          "url"
+        ],
+        "typeTableKeys": [
+          "context",
+          "none",
+          "url"
+        ]
+      },
+      "typeTables": [
+        [
+          "context",
+          [
+            [
+              "https://contexts.example/energy-roles/v1",
+              32769
+            ],
+            [
+              "https://www.w3.org/ns/credentials/v2",
+              32768
+            ]
+          ]
+        ],
+        [
+          "none",
+          []
+        ],
+        [
+          "url",
+          []
+        ]
+      ],
+      "contexts": [
+        {
+          "id": "https://contexts.example/energy-roles/v1",
+          "digestSRI": "sha384-5KgB0ckRdH17ARkyVJBTTZepKe4J1+yE0wPxRHTenyqJfwM4+Om4kVM3m4toFZAa"
+        },
+        {
+          "id": "https://www.w3.org/ns/credentials/v2",
+          "digestSRI": "sha384-l/HrjlBCNWyAX91hr6LFV2Y3heB5Tcr6IeE4/Tje8YyzYBM8IhqjHWiWpr8+ZbYU"
+        }
+      ],
+      "options": {
+        "base": null
+      }
+    },
+    "manifestDigestHex": "8c6478b1e0233051178738e8477bc7d8fe403ccf3c3edb764c4d13eaa9b914c0"
+  },
+  "rows": [
+    {
+      "id": "S1",
+      "scenario": "Baseline: label decoded with the issuer's registry entry and contexts",
+      "outcome": "proof valid: true",
+      "detail": "{\"topLevelKeys\":[\"credentialSubject\",\"id\",\"issuer\",\"type\"],\"type\":[\"VerifiableCredential\",\"MarketRoleCredential\"],\"subject\":{\"dataAccessScope\":\"BatteryPassportPublicData\",\"id\":\"did:example:grid-operator-42\",\"marketRole\":\"DistributionSystemOperator\"},\"scope\":\"BatteryPassportPublicData\"}",
+      "part": 1
+    },
+    {
+      "id": "S2",
+      "scenario": "Signed label after a routine vocabulary update (one term added under the same URL)",
+      "outcome": "label UNREADABLE: decode error \"Improperly formatted bytes <payload bytes> found.\"; the reason (codec drift) is not reported, and the label stays unusable for its lifetime",
+      "detail": "",
+      "part": 1
+    },
+    {
+      "id": "S3",
+      "scenario": "Compact profile signing the CBOR-LD bytes, after the same update",
+      "outcome": "signature valid: true; meaning changed silently; graph: dataAccessScope = battery#RestrictedData",
+      "detail": "{\"topLevelKeys\":[\"credentialStatus\",\"evidence\",\"id\",\"type\"],\"type\":[\"VerifiableCredential\",\"DistributionSystemOperator\"],\"subject\":\"(missing)\",\"scope\":\"BatteryPassportRestrictedData\"}",
+      "part": 1
+    },
+    {
+      "id": "S4",
+      "scenario": "Registry entry substituted at the verifier (context codes swapped)",
+      "outcome": "decode error: Unknown term ID \"180\" was detected in the CBOR-LD input.",
+      "detail": "",
+      "part": 1
+    },
+    {
+      "id": "S5",
+      "scenario": "M15 v0.4, WE-2 label (I-RDFC); verifier's context was updated; no archive",
+      "outcome": "REJECTED at manifest: decoding manifest mismatch: the verifier's inputs for registry entry 100 do not reproduce the bound digest, and the issuer's manifest is not in the archive, so the differing input cannot be named",
+      "detail": "",
+      "part": 2,
+      "accepted": false,
+      "stage": "manifest",
+      "scope": null
+    },
+    {
+      "id": "S6",
+      "scenario": "M15 v0.4, WE-2 label (I-RDFC) + lifetime archive of the issuer's manifest and material",
+      "outcome": "ACCEPTED (I-RDFC, lifetime archive (resolved by manifest digest)); graph: dataAccessScope = battery#PublicData",
+      "detail": "{\"topLevelKeys\":[\"credentialSubject\",\"id\",\"issuer\",\"type\"],\"type\":[\"VerifiableCredential\",\"MarketRoleCredential\"],\"subject\":{\"dataAccessScope\":\"BatteryPassportPublicData\",\"id\":\"did:example:grid-operator-42\",\"marketRole\":\"DistributionSystemOperator\"},\"scope\":\"BatteryPassportPublicData\"}",
+      "part": 2,
+      "accepted": true,
+      "stage": null,
+      "scope": "https://vocab.example/battery#PublicData"
+    },
+    {
+      "id": "S7",
+      "scenario": "M15 v0.4, WE-2 label (I-RDFC); registry entry substituted at the verifier; issuer's manifest published",
+      "outcome": "REJECTED at manifest: decoding manifest mismatch: type table \"context\": https://contexts.example/energy-roles/v1 is 32769 at the issuer, 32768 at the verifier; type table \"context\": https://www.w3.org/ns/credentials/v2 is 32768 at the issuer, 32769 at the verifier; the archive holds the issuer's manifest but not its material",
+      "detail": "",
+      "part": 2,
+      "accepted": false,
+      "stage": "manifest",
+      "scope": null
+    },
+    {
+      "id": "S8",
+      "scenario": "Profile B (issuer signs the envelope), honest round trip",
+      "outcome": "ACCEPTED (B, local registry); graph: dataAccessScope = battery#PublicData",
+      "detail": "{\"topLevelKeys\":[\"credentialSubject\",\"id\",\"issuer\",\"type\"],\"type\":[\"VerifiableCredential\",\"MarketRoleCredential\"],\"subject\":{\"dataAccessScope\":\"BatteryPassportPublicData\",\"id\":\"did:example:grid-operator-42\",\"marketRole\":\"DistributionSystemOperator\"},\"scope\":\"BatteryPassportPublicData\"}",
+      "part": 2,
+      "accepted": true,
+      "stage": null,
+      "scope": "https://vocab.example/battery#PublicData"
+    },
+    {
+      "id": "S9",
+      "scenario": "Profile I-RDFC (inner ecdsa-rdfc-2019 proof), honest round trip",
+      "outcome": "ACCEPTED (I-RDFC, local registry); graph: dataAccessScope = battery#PublicData",
+      "detail": "{\"topLevelKeys\":[\"credentialSubject\",\"id\",\"issuer\",\"type\"],\"type\":[\"VerifiableCredential\",\"MarketRoleCredential\"],\"subject\":{\"dataAccessScope\":\"BatteryPassportPublicData\",\"id\":\"did:example:grid-operator-42\",\"marketRole\":\"DistributionSystemOperator\"},\"scope\":\"BatteryPassportPublicData\"}",
+      "part": 2,
+      "accepted": true,
+      "stage": null,
+      "scope": "https://vocab.example/battery#PublicData"
+    },
+    {
+      "id": "S10",
+      "scenario": "X4: profile A (signature over CBOR-LD bytes only), envelope rewritten to match a verifier with the updated context",
+      "outcome": "REJECTED at policy: profile A rejected by policy: its signature covers only the CBOR-LD bytes, so the registry entry id and manifest digest can be rewritten to match a drifted verifier (X4). If A were accepted: signature valid: true; ACCEPTED (A, local registry); graph: dataAccessScope = battery#RestrictedData",
+      "detail": "{\"topLevelKeys\":[\"credentialStatus\",\"evidence\",\"id\",\"type\"],\"type\":[\"VerifiableCredential\",\"DistributionSystemOperator\"],\"subject\":\"(missing)\",\"scope\":\"BatteryPassportRestrictedData\"}",
+      "part": 2,
+      "accepted": false,
+      "stage": "policy",
+      "scope": null,
+      "ifAccepted": {
+        "accepted": true,
+        "stage": null,
+        "scope": "https://vocab.example/battery#RestrictedData"
+      }
+    },
+    {
+      "id": "S11",
+      "scenario": "X4 against profile B: the same rewrite",
+      "outcome": "REJECTED at signature: envelope signature invalid for did:key:zDnaezpMR3RpByA12JifUfWjK84YgsM4kbhmSgsNCaHSjTUN1#zDnaezpMR3RpByA12JifUfWjK84YgsM4kbhmSgsNCaHSjTUN1 (profile B)",
+      "detail": "",
+      "part": 2,
+      "accepted": false,
+      "stage": "signature",
+      "scope": null
+    },
+    {
+      "id": "S12",
+      "scenario": "X8: profile I-JCS (inner ecdsa-jcs-2019 proof), envelope rewritten to match a verifier with the substituted context",
+      "outcome": "REJECTED at policy: profile I-JCS rejected by policy: an ecdsa-jcs-2019 inner proof binds the JSON, not the RDF graph, so a rewritten envelope can decode into another meaning under a valid proof (X8). If I-JCS were accepted: inner JCS proof valid; ACCEPTED (I-JCS, local registry); graph: dataAccessScope = battery#RestrictedData",
+      "detail": "{\"topLevelKeys\":[\"credentialSubject\",\"id\",\"issuer\",\"type\"],\"type\":[\"VerifiableCredential\",\"MarketRoleCredential\"],\"subject\":{\"dataAccessScope\":\"BatteryPassportPublicData\",\"id\":\"did:example:grid-operator-42\",\"marketRole\":\"DistributionSystemOperator\"},\"scope\":\"BatteryPassportPublicData\"}",
+      "part": 2,
+      "accepted": false,
+      "stage": "policy",
+      "scope": null,
+      "ifAccepted": {
+        "accepted": true,
+        "stage": null,
+        "scope": "https://vocab.example/battery#RestrictedData"
+      }
+    },
+    {
+      "id": "S13",
+      "scenario": "X8 against profile I-RDFC: the same rewrite",
+      "outcome": "REJECTED at inner-proof: inner ecdsa-rdfc-2019 proof invalid with the pinned inputs (signature)",
+      "detail": "",
+      "part": 2,
+      "accepted": false,
+      "stage": "inner-proof",
+      "scope": null
+    },
+    {
+      "id": "S14",
+      "scenario": "X7 with the v0.3 manifest scope: profile B over a top-level manifest; imported context substituted; unpinned decoding",
+      "outcome": "signature valid: true; top-level contexts match; decodes; graph: dataAccessScope = battery#RestrictedData",
+      "detail": "{\"topLevelKeys\":[\"credentialSubject\",\"id\",\"issuer\",\"type\"],\"type\":[\"VerifiableCredential\",\"MarketRoleCredential\"],\"subject\":{\"dataAccessScope\":\"BatteryPassportPublicData\",\"id\":\"did:example:grid-operator-42\",\"marketRole\":\"DistributionSystemOperator\"},\"scope\":\"BatteryPassportPublicData\"}",
+      "part": 2
+    },
+    {
+      "id": "S15",
+      "scenario": "X7 with v0.4 (transitive manifest, profile B); imported context substituted; no archive",
+      "outcome": "REJECTED at manifest: decoding manifest mismatch: the verifier's inputs for registry entry 100 do not reproduce the bound digest, and the issuer's manifest is not in the archive, so the differing input cannot be named",
+      "detail": "",
+      "part": 2,
+      "accepted": false,
+      "stage": "manifest",
+      "scope": null
+    },
+    {
+      "id": "S16",
+      "scenario": "X7 with v0.4; issuer's manifest published, material not archived",
+      "outcome": "REJECTED at manifest: decoding manifest mismatch: context https://contexts.example/battery-scopes/v1: the verifier's bytes (sha384-mchJMzoXGB+g…) differ from the issuer's (sha384-We59d6Uy53Kg…); the archive holds the issuer's manifest but not its material",
+      "detail": "",
+      "part": 2,
+      "accepted": false,
+      "stage": "manifest",
+      "scope": null
+    },
+    {
+      "id": "S17",
+      "scenario": "X7 with v0.4 + lifetime archive of the issuer's material",
+      "outcome": "ACCEPTED (B, lifetime archive (resolved by manifest digest)); graph: dataAccessScope = battery#PublicData",
+      "detail": "{\"topLevelKeys\":[\"credentialSubject\",\"id\",\"issuer\",\"type\"],\"type\":[\"VerifiableCredential\",\"MarketRoleCredential\"],\"subject\":{\"dataAccessScope\":\"BatteryPassportPublicData\",\"id\":\"did:example:grid-operator-42\",\"marketRole\":\"DistributionSystemOperator\"},\"scope\":\"BatteryPassportPublicData\"}",
+      "part": 2,
+      "accepted": true,
+      "stage": null,
+      "scope": "https://vocab.example/battery#PublicData"
+    },
+    {
+      "id": "S18",
+      "scenario": "v0.4 decoder given a signed top-level manifest (v0.3 scope); verifier holds the issuer's bytes",
+      "outcome": "REJECTED at decode: undeclared URL requested during decoding: https://contexts.example/battery-scopes/v1 (not in the decoding manifest)",
+      "detail": "",
+      "part": 2,
+      "accepted": false,
+      "stage": "decode",
+      "scope": null
+    },
+    {
+      "id": "S19",
+      "scenario": "Decoder drift (MC-4): profile B; verifier's decoder reports version 9.0.0 (simulated); archive holds the issuer's material",
+      "outcome": "REJECTED at manifest: decoding manifest mismatch that the archive cannot repair: decoder: the issuer used @digitalbazaar/cborld 8.1.0, the verifier runs @digitalbazaar/cborld 9.0.0",
+      "detail": "",
+      "part": 2,
+      "accepted": false,
+      "stage": "manifest",
+      "scope": null
+    },
+    {
+      "id": "S20",
+      "scenario": "Codec drift under an unchanged version string: verifier's build adds a URL codec (simulated)",
+      "outcome": "REJECTED at manifest: decoding manifest mismatch that the archive cannot repair: codec semantics differ: urlCodecs",
+      "detail": "",
+      "part": 2,
+      "accepted": false,
+      "stage": "manifest",
+      "scope": null
+    }
+  ]
+}

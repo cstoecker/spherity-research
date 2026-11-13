@@ -1,0 +1,17 @@
+Semantic supply chain harness
+Copyright 2026 Spherity GmbH (author: Dr. Carsten Stöcker)
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This product includes third-party material under the W3C Software and Document
+License (https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document):
+
+- contexts/credentials-v2.jsonld, from https://www.w3.org/ns/credentials/v2
+- contexts/credentials-examples-v2.jsonld, from https://www.w3.org/ns/credentials/examples/v2
+- contexts/citizenship-v4rc1.jsonld, from https://w3id.org/citizenship/v4rc1
+  (W3C Credentials Community Group, citizenship-vocab)
+- test/vector-*.json, test vectors from W3C "Data Integrity ECDSA Cryptosuites
+  v1.0" (https://www.w3.org/TR/vc-di-ecdsa/). The secret keys in these files
+  are the specification's published test keys, not operational keys.
+
+contexts/energy-roles-v1*.jsonld are fictitious example vocabularies written
+for this harness (https://vocab.example/ is not a real namespace).

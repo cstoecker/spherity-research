@@ -1,0 +1,33 @@
+WE-6: lists with repeated interior values (F5). jsonld 9.0.0 / rdf-canonize 5.0.0; pinned v0.3 stack jsonld 8.3.3 (rdf-canonize 3.4.0).
+Measured outcomes for this generated graph (named subject, one @list property, literal items, default graph); not a general criterion.
+
+| List | 5.0.0 default (maxWorkFactor 1) | maxWorkFactor 2 | v0.3 stack, maxDeepIterations 1 |
+|---|---|---|---|
+| `[1,2,2,3]` | fails (Maximum deep iterations exceeded (2)) | completes | completes |
+| `[0,0,0,1]` | fails (Maximum deep iterations exceeded (2)) | completes | completes |
+| `[0,1,1,0]` | fails (Maximum deep iterations exceeded (2)) | completes | completes |
+| `[1,2,3,3,4,5]` | fails (Maximum deep iterations exceeded (2)) | completes | completes |
+| `[1,2,1,2,1,2]` | fails (Maximum deep iterations exceeded (4)) | completes | completes |
+| `[1,2,3,1]` | completes | completes | completes |
+| `[1,2,3,2,4]` | completes | completes | completes |
+| `[0,1,0,1,0]` | completes | completes | completes |
+| `[1,2,1,2]` | completes | completes | completes |
+| `[0,0,0]` | completes | completes | completes |
+| `[0,0,0,0]` | fails (Maximum deep iterations exceeded (2)) | completes | completes |
+| `[0,0,0,0,0]` | fails (Maximum deep iterations exceeded (3)) | completes | fails (Maximum deep iterations (1) exceeded) |
+
+Default-bound outcomes match the matrix of 13 November 2026.
+
+v0.3 stack, all values equal, maxDeepIterations 1:
+  3 equal values: completes
+  4 equal values: completes
+  5 equal values: fails
+  6 equal values: fails
+
+Unbounded (maxWorkFactor Infinity), all values equal, single runs on this machine:
+  50 values: 64 ms
+  100 values: 186 ms
+  200 values: 1039 ms
+
+Under the v0.4 admission grammar the list term is excluded (container @list): certified credentials never carry RDF lists,
+so F5 cannot arise in admitted input. Applications that need ordered values model them without @list (for example indexed items).

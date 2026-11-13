@@ -1,0 +1,213 @@
+{
+  "harness": "0.4.0",
+  "example": "WE-7",
+  "scenarios": [
+    {
+      "id": "A1",
+      "regime": "A",
+      "name": "batch B8, sufficient key claims, coverage contract applied",
+      "expected": "GRANT",
+      "actual": "GRANT",
+      "detail": "all relevant reports current, accredited and below the limits; absence attested",
+      "ok": true
+    },
+    {
+      "id": "A2",
+      "regime": "A",
+      "name": "N1: holder omits the failed retest of batch B7; coverage obtains it from the laboratory",
+      "expected": "DENY",
+      "actual": "DENY",
+      "detail": "urn:report:lab1:2026-0533: Pb 160 mg/kg above the limit 100",
+      "ok": true
+    },
+    {
+      "id": "A3",
+      "regime": "A",
+      "name": "N1: same omission, no coverage (holder-supplied evidence only)",
+      "expected": "GRANT",
+      "actual": "GRANT",
+      "detail": "all relevant reports current, accredited and below the limits; absence attested",
+      "ok": true
+    },
+    {
+      "id": "A4",
+      "regime": "A",
+      "name": "N2: complete-list response older than the profile's maximum age",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "detail": "coverage stale",
+      "ok": true
+    },
+    {
+      "id": "A5",
+      "regime": "A",
+      "name": "N3: test report re-signed by an unaccredited key (source validation)",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "detail": "test report urn:report:lab1:2026-0501 not authenticated by the laboratory",
+      "ok": true
+    },
+    {
+      "id": "A6",
+      "regime": "A",
+      "name": "N4: test method outside the laboratory's accreditation",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "detail": "method M-ICP-9 outside the laboratory's accreditation",
+      "ok": true
+    },
+    {
+      "id": "A7",
+      "regime": "A",
+      "name": "N5: the declared test report is revoked at the status service",
+      "expected": "DENY",
+      "actual": "DENY",
+      "detail": "declared test report urn:report:lab1:2026-0501 is revoked",
+      "ok": true
+    },
+    {
+      "id": "A8",
+      "regime": "A",
+      "name": "declaration outside the closed key-claim profile (an extra claim)",
+      "expected": "UNKNOWN",
+      "actual": "UNKNOWN",
+      "detail": "declaration outside the closed key-claim profile",
+      "ok": true
+    },
+    {
+      "id": "B1",
+      "regime": "B",
+      "name": "certificate for batch B8, presented for the same scope",
+      "expected": "accepted, authorises",
+      "actual": "accepted, authorises",
+      "detail": "certificate outcome GRANT",
+      "ok": true
+    },
+    {
+      "id": "B2",
+      "regime": "B",
+      "name": "dispute: open the archive, recompute the commitment, replay",
+      "expected": "opening valid, outcome equal",
+      "actual": "opening valid, outcome equal",
+      "detail": "a matching replay shows a consistent computation, not that the evidence was true or complete",
+      "ok": true
+    },
+    {
+      "id": "B3",
+      "regime": "B",
+      "name": "N1: certifier without the coverage contract certifies the omission; replay agrees",
+      "expected": "certified GRANT, replay matches",
+      "actual": "certified GRANT, replay matches",
+      "detail": "replay cannot reveal evidence that was never in the graph",
+      "ok": true
+    },
+    {
+      "id": "B4",
+      "regime": "B",
+      "name": "with the coverage contract the same batch is not certifiable as compliant",
+      "expected": "DENY certified",
+      "actual": "DENY certified",
+      "detail": "urn:report:lab1:2026-0533: Pb 160 mg/kg above the limit 100",
+      "ok": true
+    },
+    {
+      "id": "B5",
+      "regime": "B",
+      "name": "N6: certificate for batch B8 presented for batch B7 (scope substitution)",
+      "expected": "rejected",
+      "actual": "rejected",
+      "detail": "scope subject does not match the request (urn:gtin:04012345000017#B8 vs urn:gtin:04012345000017#B7)",
+      "ok": true
+    },
+    {
+      "id": "B6",
+      "regime": "B",
+      "name": "N7: policy-only correction (v1 to v2, closure unchanged): current reliance suspended",
+      "expected": "rejected",
+      "actual": "rejected",
+      "detail": "suspended: policy 1 superseded by 2, re-evaluation required",
+      "ok": true
+    },
+    {
+      "id": "B7",
+      "regime": "B",
+      "name": "N7: re-evaluation under policy v2 (stricter lead limit)",
+      "expected": "DENY",
+      "actual": "DENY",
+      "detail": "urn:report:lab1:2026-0501: Pb 60 mg/kg above the limit 40",
+      "ok": true
+    },
+    {
+      "id": "B8",
+      "regime": "B",
+      "name": "N10: a second certificate for the same scope and epoch",
+      "expected": "rejected",
+      "actual": "rejected",
+      "detail": "not the authoritative certificate for this scope and epoch (selected: urn:cert:0001)",
+      "ok": true
+    },
+    {
+      "id": "B9",
+      "regime": "B",
+      "name": "certificate revoked at its status entry",
+      "expected": "rejected",
+      "actual": "rejected",
+      "detail": "certificate status revoked",
+      "ok": true
+    },
+    {
+      "id": "B10",
+      "regime": "B",
+      "name": "certificate core altered after timestamping",
+      "expected": "rejected",
+      "actual": "rejected",
+      "detail": "certificate signature or certifier unknown",
+      "ok": true
+    },
+    {
+      "id": "B11",
+      "regime": "B",
+      "name": "N9: archived evidence altered at the custodian",
+      "expected": "opening invalid",
+      "actual": "opening invalid",
+      "detail": "the archived evidence does not open the certified commitment; attribution: not determined by this report",
+      "ok": true
+    },
+    {
+      "id": "B12",
+      "regime": "B",
+      "name": "N8: custodian loses the archive key",
+      "expected": "opening unavailable",
+      "actual": "opening unavailable",
+      "detail": "archive cannot be opened: custodian key lost; attribution: not determined by this report",
+      "ok": true
+    },
+    {
+      "id": "B13",
+      "regime": "B",
+      "name": "N11: dictionary over two candidate graphs (R3-12): plain digest vs salted binding",
+      "expected": "plain identifies, salted 0",
+      "actual": "plain identifies, salted 0",
+      "detail": "2 candidates",
+      "ok": true
+    },
+    {
+      "id": "S1",
+      "regime": "SD",
+      "name": "N12: two authentic views of batch B7 under a policy with an exception",
+      "expected": "views disagree",
+      "actual": "views disagree",
+      "detail": "{R1}: GRANT; {R1, R2}: DENY",
+      "ok": true
+    },
+    {
+      "id": "S2",
+      "regime": "SD",
+      "name": "N12: worlds that differ only in an unseen report give the same transcript and the same output",
+      "expected": "same output, wrong in one world",
+      "actual": "same output, wrong in one world",
+      "detail": "identical transcript (aa943918dbaa2770…); output GRANT in both worlds; correct decision in world 1: DENY",
+      "ok": true
+    }
+  ]
+}
