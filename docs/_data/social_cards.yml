@@ -512,13 +512,13 @@
   title_size: 44
   title_lines:
     - Verifiable AI
-    - Lab Results
+    - Lab Analysis
   subtitle_size: 25
   subtitle_lines:
-    - From scan to certificate
+    - From measurement to evidence
   deck_lines:
-    - An evidence graph for AI-evaluated
-    - measurements, labs and vehicle data.
+    - Calibration. Materials. Agent validation.
+    - Business wallets and accountable results.
   byline: Dr. Carsten Stöcker · Spherity GmbH
   visual_type: case-evidence
   visual_fit: contain

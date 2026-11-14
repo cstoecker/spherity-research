@@ -2,12 +2,12 @@
 publication_template_version: 2
 layout: research-respec
 css: /assets/spherity-research-respec.css
-title: "Verifiable AI Lab Results: From Scan to Certificate"
-seo_title: "Verifiable AI Lab Results: A Case Study in Evidence Graphs"
-og_title: "Verifiable AI Lab Results: From Scan to Certificate"
-og_description: "A conceptual case study of verifiable AI lab results: evidence graphs connect model, input, device and authority, with material, vehicle and forensic scenarios."
-subtitle: A conceptual case study in material verification, with vehicle-data and forensic laboratory variants
-description: "A conceptual case study of verifiable AI lab results: evidence graphs connect model, input, device and authority, with material, vehicle and forensic scenarios."
+title: "Verifiable AI Lab Analysis: From Measurement to Evidence"
+seo_title: "Verifiable AI Lab Analysis: Calibration, Wallets and Evidence"
+og_title: "Verifiable AI Lab Analysis: From Measurement to Evidence"
+og_description: "How verifiable AI lab results connect calibration, materials, validation profiles and business wallets: food, product authenticity, cleaning and forensic use cases."
+subtitle: An educational case study of results, calibration, materials, agent validation and accountable decisions
+description: "How verifiable AI lab results connect calibration, materials, validation profiles and business wallets: food, product authenticity, cleaning and forensic use cases."
 paper_status: Spherity Research · Conceptual case study
 authors:
   - Dr. Carsten Stöcker
@@ -20,37 +20,47 @@ author_affiliations:
   - Dr. Carsten Stöcker — Spherity GmbH
 affiliation: Spherity GmbH
 date: "2026-11-13"
-last_modified_at: "2026-11-13"
-research_cutoff: "2026-11-13"
+last_modified_at: "2026-11-14"
+research_cutoff: "2026-11-14"
 research_cutoff_label: Standards and public product descriptions checked to this date; the design itself is a proposal
 lang: en
 permalink: /case-studies/verifiable-ai-lab-results.html
 canonical_url: https://spherity.github.io/spherity-research/case-studies/verifiable-ai-lab-results.html
 latest_version: https://spherity.github.io/spherity-research/case-studies/verifiable-ai-lab-results.html
+pdf_url: /Spherity-Verifiable-AI-Lab-Analysis-Carousel-v12.pdf
+citation_title: "Verifiable AI Lab Analysis: Measured. Signed. Trusted?"
+cover_image: /assets/verifiable-ai-lab-results/carousel-v12-cover.png
+cover_image_alt: "First slide of Verifiable AI Lab Analysis: Measured. Signed. Trusted?"
+associated_media:
+  - name: "Verifiable AI Lab Analysis: Measured. Signed. Trusted? — 19-slide carousel, version 12"
+    url: /Spherity-Verifiable-AI-Lab-Analysis-Carousel-v12.pdf
+    cover_image: /assets/verifiable-ai-lab-results/carousel-v12-cover.png
+    cover_image_alt: "First slide of Verifiable AI Lab Analysis: Measured. Signed. Trusted?"
+    license: https://creativecommons.org/licenses/by/4.0/
 figure_objects:
   - id: figure-1-problem-framing
-    name: What a verifier needs to trust an AI test result
+    name: Six questions behind a verifiable test result
     content_url: /assets/verifiable-ai-lab-results/figure-1-problem-framing.svg
-    alt: "An AI analysis agent in the centre takes a spectrum and an object description and sends an AI test result to a verifier. Around the agent, six questions the verifier must be able to answer: who is accountable, which agent and model, which set-up, which input, which device, which object and is it still valid. Today only the verdict and a confidence value travel to the verifier."
+    alt: "Six evidence questions surround a result: accountable organisation, AI service, set-up, actual input, device and sample or lot. A result may be a measured value, finding, match or optional verdict."
     width: 1280
-    height: 640
-    description: The AI agent sits between the measurement and the receiver; everything that would let the receiver judge the result stays inside the lab, and only the verdict travels.
-    caption: Six verifier questions connect an AI verdict to its accountable organisation, agent and model, set-up, input, device and object. Validity and status apply across every question. The figure describes the assumed portal-only baseline, not a finding about all laboratory systems.
+    height: 760
+    description: "Revised problem framing: the result can be quantitative or qualitative. All six questions require scoped evidence, including calibration, material lots, validation profiles and current applicability; the diagram makes no claim that these records are absent from all laboratories."
+    caption: "Revised problem framing: the result can be quantitative or qualitative. All six questions require scoped evidence, including calibration, material lots, validation profiles and current applicability; the diagram makes no claim that these records are absent from all laboratories."
     credit_text: Carsten Stöcker / Spherity GmbH
     copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
     license: https://creativecommons.org/licenses/by/4.0/
     creator_type: Person
     creator_name: Dr. Carsten Stöcker
     creator_url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
-    copyright_holder:
+    copyright_holder: &a1
       type: Person
       name: Dr. Carsten Stöcker
       url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
     keywords:
-      - AI test result
-      - verifier
-      - trust gap
-      - AI agent accountability
+      - Six questions behind a verifiable test result
+      - verifiable AI lab analysis
+      - evidence graph
+      - scope-specific assurance
     raster_url: /assets/verifiable-ai-lab-results/figure-1-problem-framing.png
     distributions:
       - url: /assets/verifiable-ai-lab-results/figure-1-problem-framing.svg
@@ -60,13 +70,13 @@ figure_objects:
         label: PNG
         encoding_format: image/png
   - id: figure-2-system-view
-    name: "System view: from scan to Verification Certificate"
+    name: "System view: from sample to accountable result"
     content_url: /assets/verifiable-ai-lab-results/figure-2-system-view.svg
-    alt: A marked object is scanned by a Tailor-Scan reader, an AI analysis agent issues an AI Analysis Result credential, and a verification portal issues a Verification Certificate credential to the verifier. Tailorlux GmbH, identified by an EUCC from Bundesanzeiger Verlag, issues device identity, Agent Card and Task Authorization. TÜV SÜD issues a reader certificate to the reader and an AI credential to the AI agent. Example identifiers only.
+    alt: Sample identity leads to measurement, AI analysis and receiver decision. A result credential links separate records for identity and authority, calibration and materials, and validation and assurance.
     width: 1280
-    height: 660
-    description: "Two chains meet at the portal: the operational chain carries the scan, the AI result and the certificate; the authority chain carries legal-person identity, device identity, agent identity, task mandate and third-party conformity, including an AI credential issued to the AI agent."
-    caption: Conceptual design; all identifiers and role assignments are illustrative. System view. Solid arrows carry the scan and its results; dashed arrows carry identity, authorisation and conformity. TÜV SÜD issues the reader certificate to the reader and the AI credential to the AI agent. The verifier's six checks answer the six questions of Figure 1. All identifiers are examples; the design is a concept, not a product description.
+    height: 760
+    description: Revised system view. Generic roles replace hypothetical named issuers. The actual run links calibration, material and AI-validation evidence without treating calibration as type conformity or a cryptographic proof as scientific validation.
+    caption: Revised system view. Generic roles replace hypothetical named issuers. The actual run links calibration, material and AI-validation evidence without treating calibration as type conformity or a cryptographic proof as scientific validation.
     credit_text: Carsten Stöcker / Spherity GmbH
     copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
     license: https://creativecommons.org/licenses/by/4.0/
@@ -78,10 +88,10 @@ figure_objects:
       name: Dr. Carsten Stöcker
       url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
     keywords:
-      - verification certificate
-      - verifiable credentials
-      - AI agent authorisation
-      - NIR spectroscopy
+      - "System view: from sample to accountable result"
+      - verifiable AI lab analysis
+      - evidence graph
+      - scope-specific assurance
     raster_url: /assets/verifiable-ai-lab-results/figure-2-system-view.png
     distributions:
       - url: /assets/verifiable-ai-lab-results/figure-2-system-view.svg
@@ -91,13 +101,13 @@ figure_objects:
         label: PNG
         encoding_format: image/png
   - id: figure-3-evidence-graph
-    name: Evidence graph of the Verification Certificate
+    name: "Evidence graph: follow claims to scoped sources"
     content_url: /assets/verifiable-ai-lab-results/figure-3-evidence-graph.svg
-    alt: "The Verification Certificate links by hash to the AI Analysis Result, which is issued by the agent holding an Agent Card and carries task, object, input, reader and set-up assertions. Each assertion references a supporting credential: Task Authorization, Marker Registration, Reader Identity, TÜV SÜD reader certificate and TÜV SÜD AI certificate, issued by Tailorlux GmbH or TÜV SÜD. Tailorlux is identified by an EUCC issued by Bundesanzeiger Verlag."
-    width: 1460
-    height: 640
-    description: Every claim in the certificate resolves to a signed credential and ends at a public trust anchor; a verifier walks the arrows and checks proof, status and validity at every node.
-    caption: "Conceptual design; all identifiers and role assignments are illustrative. Evidence graph. Read left to right: the certificate hashes the AI result; the result is issued by the agent named in the Agent Card and carries five assertions; each assertion references the credential that backs it; those credentials are issued by Tailorlux GmbH or TÜV SÜD; Tailorlux is identified by an EUCC from Bundesanzeiger Verlag. Example identifiers only."
+    alt: A report references an analysis result and actual run, which link sample and observation records, device and material records, and service and authority records. Each evidence node retains its issuer, scope and status.
+    width: 1280
+    height: 760
+    description: Revised evidence graph. Arrows follow typed evidence references. Laboratories, calibration providers, material producers, assessors and identity registers make different claims; the receiver checks each issuer and action under its trust policy. No universal public trust anchor is assumed.
+    caption: Revised evidence graph. Arrows follow typed evidence references. Laboratories, calibration providers, material producers, assessors and identity registers make different claims; the receiver checks each issuer and action under its trust policy. No universal public trust anchor is assumed.
     credit_text: Carsten Stöcker / Spherity GmbH
     copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
     license: https://creativecommons.org/licenses/by/4.0/
@@ -109,10 +119,10 @@ figure_objects:
       name: Dr. Carsten Stöcker
       url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
     keywords:
-      - verifiable evidence graph
-      - credential chaining
-      - W3C Recognized Entities
-      - EU Company Certificate
+      - "Evidence graph: follow claims to scoped sources"
+      - verifiable AI lab analysis
+      - evidence graph
+      - scope-specific assurance
     raster_url: /assets/verifiable-ai-lab-results/figure-3-evidence-graph.png
     distributions:
       - url: /assets/verifiable-ai-lab-results/figure-3-evidence-graph.svg
@@ -122,13 +132,13 @@ figure_objects:
         label: PNG
         encoding_format: image/png
   - id: figure-4-vehicle-data-variant
-    name: The same set-up for vehicle data processing and labelling
+    name: "Automotive Driving Labels: provenance with limits"
     content_url: /assets/verifiable-ai-lab-results/figure-4-vehicle-data-variant.svg
-    alt: A vehicle streams sensor data to a gateway that signs frames, an AI labelling agent issues an AI Labelling Result credential, and a data product portal issues a Data Provenance Certificate credential to the data consumer. A fictional processor identified by an EUCC issues device identity, Agent Card and Task Authorization; TÜV SÜD issues a gateway certificate to the gateway and an AI credential to the labelling agent.
+    alt: A trip segment goes through sensor acquisition and model-based labelling to a data consumer. Supporting records separate identity and mandate, sensor evidence and intended-use validation with ground truth.
     width: 1280
-    height: 660
-    description: "The system view of Figure 2 with the nouns of a vehicle data chain: vehicle trip, gateway, labelling agent, labelled dataset and data consumer; identity, authority and assurance links are unchanged."
-    caption: "Conceptual design; all identifiers and role assignments are illustrative. The same set-up for vehicle data processing and labelling. Only the nouns change: the object is a vehicle trip, the reader is the vehicle gateway, the agent labels events, and the certificate attests the provenance of a labelled dataset. The processor is fictional."
+    height: 760
+    description: Revised automotive transfer case. A signed gateway record is not sensor calibration. Label taxonomy, ground truth, operating conditions and model validation must fit the intended use; no unexplained confidence percentage or dangerous-conduct verdict is asserted.
+    caption: Revised automotive transfer case. A signed gateway record is not sensor calibration. Label taxonomy, ground truth, operating conditions and model validation must fit the intended use; no unexplained confidence percentage or dangerous-conduct verdict is asserted.
     credit_text: Carsten Stöcker / Spherity GmbH
     copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
     license: https://creativecommons.org/licenses/by/4.0/
@@ -140,10 +150,10 @@ figure_objects:
       name: Dr. Carsten Stöcker
       url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
     keywords:
-      - vehicle data provenance
-      - data labelling
-      - verifiable credentials
-      - AI agent authorisation
+      - "Automotive Driving Labels: provenance with limits"
+      - verifiable AI lab analysis
+      - evidence graph
+      - scope-specific assurance
     raster_url: /assets/verifiable-ai-lab-results/figure-4-vehicle-data-variant.png
     distributions:
       - url: /assets/verifiable-ai-lab-results/figure-4-vehicle-data-variant.svg
@@ -153,13 +163,13 @@ figure_objects:
         label: PNG
         encoding_format: image/png
   - id: figure-5-forensic-laboratory-variant
-    name: "Forensic laboratory variant: third-party AI models on lab data"
+    name: "Forensic analysis: evidence, authority and review"
     content_url: /assets/verifiable-ai-lab-results/figure-5-forensic-laboratory-variant.svg
-    alt: An exhibit is measured by an instrument with a LIMS gateway that signs raw data, an AI evaluation service running a third-party chemistry model issues an AI Analysis Result credential, and the laboratory's report service issues a Forensic Result Certificate to court, prosecutor or defence expert. The laboratory, a public body accredited by DAkkS, issues instrument identity, Agent Card and Task Authorization; the AI model vendor issues a model credential to the AI service; a calibration laboratory issues a Digital Calibration Certificate to the instrument.
+    alt: Exhibit collection and custody lead to laboratory measurement, discipline-specific analysis and an authorised recipient. Separate evidence covers public-body identity and accreditation, DCC and material controls, and model and reference validation.
     width: 1280
-    height: 660
-    description: A conceptual forensic evidence graph separates official laboratory identity, scope-specific accreditation, vendor model assertions, instrument calibration and exhibit custody.
-    caption: Conceptual forensic scenario, not an existing project. Official identity establishes the public body; accreditation supports competence for a defined scope. The model vendor’s credential is a vendor assertion, distinct from independent model assessment. DCC is a proposed machine-readable calibration format.
+    height: 760
+    description: Revised forensic case. Vendor assertions remain separate from independent assessment. DNA, fingerprint and substance analysis require their own profiles and review; custody, material lots and contamination controls support scrutiny without establishing guilt or legal admissibility.
+    caption: Revised forensic case. Vendor assertions remain separate from independent assessment. DNA, fingerprint and substance analysis require their own profiles and review; custody, material lots and contamination controls support scrutiny without establishing guilt or legal admissibility.
     credit_text: Carsten Stöcker / Spherity GmbH
     copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
     license: https://creativecommons.org/licenses/by/4.0/
@@ -171,10 +181,10 @@ figure_objects:
       name: Dr. Carsten Stöcker
       url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
     keywords:
-      - forensic laboratory
-      - Digital Calibration Certificate
-      - model credential
-      - chain of custody
+      - "Forensic analysis: evidence, authority and review"
+      - verifiable AI lab analysis
+      - evidence graph
+      - scope-specific assurance
     raster_url: /assets/verifiable-ai-lab-results/figure-5-forensic-laboratory-variant.png
     distributions:
       - url: /assets/verifiable-ai-lab-results/figure-5-forensic-laboratory-variant.svg
@@ -183,12 +193,205 @@ figure_objects:
       - url: /assets/verifiable-ai-lab-results/figure-5-forensic-laboratory-variant.png
         label: PNG
         encoding_format: image/png
+  - id: figure-6-calibration-matching
+    name: Calibration, measurement and reference matching
+    content_url: /assets/verifiable-ai-lab-results/figure-6-calibration-matching.svg
+    alt: A Digital Calibration Request goes to a calibration laboratory, which produces a Digital Calibration Certificate. Device and set-up, sample identity, consumables and reference materials feed the measurement. Reference data and a validation profile support matching; the result credential links all evidence.
+    width: 1280
+    height: 760
+    description: Calibration characterises the instrument; matching compares the observed data with a versioned reference. The result links the actual run and its supporting evidence. A DCR requests calibration; a DCC records its results.
+    caption: Calibration characterises the instrument; matching compares the observed data with a versioned reference. The result links the actual run and its supporting evidence. A DCR requests calibration; a DCC records its results.
+    credit_text: Carsten Stöcker / Spherity GmbH
+    copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
+    license: https://creativecommons.org/licenses/by/4.0/
+    creator_type: Person
+    creator_name: Dr. Carsten Stöcker
+    creator_url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    copyright_holder: *a1
+    keywords:
+      - Calibration, measurement and reference matching
+      - verifiable AI lab analysis
+      - evidence graph
+    raster_url: /assets/verifiable-ai-lab-results/figure-6-calibration-matching.png
+    distributions:
+      - url: /assets/verifiable-ai-lab-results/figure-6-calibration-matching.svg
+        label: SVG
+        encoding_format: image/svg+xml
+      - url: /assets/verifiable-ai-lab-results/figure-6-calibration-matching.png
+        label: PNG
+        encoding_format: image/png
+  - id: figure-7-material-assurance
+    name: Four checks for consumables and reference materials
+    content_url: /assets/verifiable-ai-lab-results/figure-7-material-assurance.svg
+    alt: Four material-assurance cards separate identity and authenticity, certificate scope, condition at use and run controls. All four feed the run record and result credential.
+    width: 1280
+    height: 760
+    description: A genuine lot and certificate are starting points. Suitability, storage, expiry and controls must also support the specific use; a consumable is not automatically a certified reference material.
+    caption: A genuine lot and certificate are starting points. Suitability, storage, expiry and controls must also support the specific use; a consumable is not automatically a certified reference material.
+    credit_text: Carsten Stöcker / Spherity GmbH
+    copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
+    license: https://creativecommons.org/licenses/by/4.0/
+    creator_type: Person
+    creator_name: Dr. Carsten Stöcker
+    creator_url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    copyright_holder: *a1
+    keywords:
+      - Four checks for consumables and reference materials
+      - verifiable AI lab analysis
+      - evidence graph
+    raster_url: /assets/verifiable-ai-lab-results/figure-7-material-assurance.png
+    distributions:
+      - url: /assets/verifiable-ai-lab-results/figure-7-material-assurance.svg
+        label: SVG
+        encoding_format: image/svg+xml
+      - url: /assets/verifiable-ai-lab-results/figure-7-material-assurance.png
+        label: PNG
+        encoding_format: image/png
+  - id: figure-8-service-passport-validation
+    name: AI Service Passport and validation profiles
+    content_url: /assets/verifiable-ai-lab-results/figure-8-service-passport-validation.svg
+    alt: An AI Service Passport links a verifiable Agent Card, execution configuration, validation profile and TEVV evidence to the actual analysis run. Version or scope changes trigger an applicability review.
+    width: 1280
+    height: 760
+    description: "Proposed AI Service Passport: identity and declared capabilities remain distinct from validated performance. The actual run must match the assessed configuration, reference release and intended-use profile."
+    caption: "Proposed AI Service Passport: identity and declared capabilities remain distinct from validated performance. The actual run must match the assessed configuration, reference release and intended-use profile."
+    credit_text: Carsten Stöcker / Spherity GmbH
+    copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
+    license: https://creativecommons.org/licenses/by/4.0/
+    creator_type: Person
+    creator_name: Dr. Carsten Stöcker
+    creator_url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    copyright_holder: *a1
+    keywords:
+      - AI Service Passport and validation profiles
+      - verifiable AI lab analysis
+      - evidence graph
+    raster_url: /assets/verifiable-ai-lab-results/figure-8-service-passport-validation.png
+    distributions:
+      - url: /assets/verifiable-ai-lab-results/figure-8-service-passport-validation.svg
+        label: SVG
+        encoding_format: image/svg+xml
+      - url: /assets/verifiable-ai-lab-results/figure-8-service-passport-validation.png
+        label: PNG
+        encoding_format: image/png
+  - id: figure-9-wallet-recognition
+    name: Business wallets, sources and scoped recognition
+    content_url: /assets/verifiable-ai-lab-results/figure-9-wallet-recognition.svg
+    alt: Official registers, accreditation sources and original producer records supply scoped evidence to an organisation using a business wallet. The organisation delegates a bounded mandate to an agent. A receiver checks evidence, authority and policy before deciding.
+    width: 1280
+    height: 760
+    description: The business wallet presents organisational evidence and supports delegation. Source authority, CAB competence and receiver acceptance remain separate checks. W3C Recognized Entities is an experimental draft, not a production dependency.
+    caption: The business wallet presents organisational evidence and supports delegation. Source authority, CAB competence and receiver acceptance remain separate checks. W3C Recognized Entities is an experimental draft, not a production dependency.
+    credit_text: Carsten Stöcker / Spherity GmbH
+    copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
+    license: https://creativecommons.org/licenses/by/4.0/
+    creator_type: Person
+    creator_name: Dr. Carsten Stöcker
+    creator_url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    copyright_holder: *a1
+    keywords:
+      - Business wallets, sources and scoped recognition
+      - verifiable AI lab analysis
+      - evidence graph
+    raster_url: /assets/verifiable-ai-lab-results/figure-9-wallet-recognition.png
+    distributions:
+      - url: /assets/verifiable-ai-lab-results/figure-9-wallet-recognition.svg
+        label: SVG
+        encoding_format: image/svg+xml
+      - url: /assets/verifiable-ai-lab-results/figure-9-wallet-recognition.png
+        label: PNG
+        encoding_format: image/png
+  - id: figure-10-measurement-uncertainty
+    name: Synthetic normal measurement-uncertainty distribution
+    content_url: /assets/verifiable-ai-lab-results/figure-10-measurement-uncertainty.svg
+    alt: A normal probability-density curve centred at 10.0 milligrams per litre with standard uncertainty 0.20. The shaded interval from 9.60 to 10.40 contains 95.45 percent under the assumed normal model; the vertical axis is probability density in inverse milligrams per litre.
+    width: 1280
+    height: 760
+    description: Calculated illustration, not measured Spherity performance. Estimate 10.0 mg/L; combined standard uncertainty 0.20 mg/L; k = 2 gives expanded uncertainty 0.40 mg/L and ideal normal coverage 95.45%. This is not a model score or authenticity probability.
+    caption: Calculated illustration, not measured Spherity performance. Estimate 10.0 mg/L; combined standard uncertainty 0.20 mg/L; k = 2 gives expanded uncertainty 0.40 mg/L and ideal normal coverage 95.45%. This is not a model score or authenticity probability.
+    credit_text: Carsten Stöcker / Spherity GmbH
+    copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
+    license: https://creativecommons.org/licenses/by/4.0/
+    creator_type: Person
+    creator_name: Dr. Carsten Stöcker
+    creator_url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    copyright_holder: *a1
+    keywords:
+      - Synthetic normal measurement-uncertainty distribution
+      - verifiable AI lab analysis
+      - evidence graph
+    raster_url: /assets/verifiable-ai-lab-results/figure-10-measurement-uncertainty.png
+    distributions:
+      - url: /assets/verifiable-ai-lab-results/figure-10-measurement-uncertainty.svg
+        label: SVG
+        encoding_format: image/svg+xml
+      - url: /assets/verifiable-ai-lab-results/figure-10-measurement-uncertainty.png
+        label: PNG
+        encoding_format: image/png
+  - id: figure-11-sensitivity-intervals
+    name: Same sensitivity estimate, different validation evidence
+    content_url: /assets/verifiable-ai-lab-results/figure-11-sensitivity-intervals.svg
+    alt: Two horizontal Wilson confidence intervals show 98 of 100 detections with a 95 percent interval of 93.0 to 99.4 percent and 980 of 1000 detections with an interval of 96.9 to 98.7 percent. Both point estimates are 98 percent.
+    width: 1280
+    height: 760
+    description: Synthetic known-positive marker-detection cohorts. Two-sided 95% Wilson intervals assume independent, representative samples. Separate negative samples are needed for false-positive rates; neither interval is a product-authenticity probability.
+    caption: Synthetic known-positive marker-detection cohorts. Two-sided 95% Wilson intervals assume independent, representative samples. Separate negative samples are needed for false-positive rates; neither interval is a product-authenticity probability.
+    credit_text: Carsten Stöcker / Spherity GmbH
+    copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
+    license: https://creativecommons.org/licenses/by/4.0/
+    creator_type: Person
+    creator_name: Dr. Carsten Stöcker
+    creator_url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    copyright_holder: *a1
+    keywords:
+      - Same sensitivity estimate, different validation evidence
+      - verifiable AI lab analysis
+      - evidence graph
+    raster_url: /assets/verifiable-ai-lab-results/figure-11-sensitivity-intervals.png
+    distributions:
+      - url: /assets/verifiable-ai-lab-results/figure-11-sensitivity-intervals.svg
+        label: SVG
+        encoding_format: image/svg+xml
+      - url: /assets/verifiable-ai-lab-results/figure-11-sensitivity-intervals.png
+        label: PNG
+        encoding_format: image/png
+  - id: figure-12-spherity-products
+    name: "How Spherity can help: products and evidence"
+    content_url: /assets/verifiable-ai-lab-results/figure-12-spherity-products.svg
+    alt: A concept chart connects EIDA business wallets to agent identity, AI Service Passports, Trusted AI evidence and policy checks, and VERA product passports. Laboratories and assessors retain responsibility for scientific assurance.
+    width: 1280
+    height: 760
+    description: Conceptual application of Spherity products and capabilities to verifiable laboratory evidence, with an open-standards foundation and active W3C participation.
+    caption: Spherity product concept for this case. EIDA supports organisational identity and delegation; Agent Identity binds the agent; AISP connects service and validation evidence; Trusted AI supports checks and policy; VERA links evidence to products and lots. Arrows show conceptual capability connections, not a deployed laboratory integration or a mandatory protocol sequence.
+    credit_text: Carsten Stöcker / Spherity GmbH
+    copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
+    license: https://creativecommons.org/licenses/by/4.0/
+    creator_type: Person
+    creator_name: Dr. Carsten Stöcker
+    creator_url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    copyright_holder: *a1
+    keywords:
+      - Spherity
+      - VERA
+      - EIDA
+      - AI Service Passport
+      - Agent Identity
+      - Trusted AI
+      - open standards
+    raster_url: /assets/verifiable-ai-lab-results/figure-12-spherity-products.png
+    distributions:
+      - url: /assets/verifiable-ai-lab-results/figure-12-spherity-products.svg
+        label: SVG
+        encoding_format: image/svg+xml
+      - url: /assets/verifiable-ai-lab-results/figure-12-spherity-products.png
+        label: PNG
+        encoding_format: image/png
 robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
 license: https://creativecommons.org/licenses/by/4.0/
-license_scope: This concept note and its original figures
-license_exclusions: Tailorlux, Tailor-Safe, Tailor-Scan, TÜV SÜD and Bundesanzeiger Verlag are names of third parties and their products; they are used as text only and are not covered by this licence. Spherity names and logos are excluded from the research licence.
+license_scope: This concept note, its original figures and the companion carousel PDF, subject to the exclusions below
+license_exclusions: Third-party organisation and product names, including Tailorlux, Tailor-Safe, Tailor-Scan, TÜV SÜD, Bundesanzeiger Verlag, BAM, R-Biopharm, Promega and Hygiena, remain the property of their respective owners. Linked third-party documents retain their own terms. Spherity names and logos are excluded from the research licence.
 image: /assets/preview-verifiable-ai-lab-results.webp
-image_alt: "Conceptual case study: Verifiable AI Lab Results, from scan to certificate, connecting measurement, AI result and verification."
+image_alt: Verifiable AI Lab Analysis — from measurement to evidence, with calibration, validation and business wallets.
 image_mime: image/webp
 image_width: 1200
 image_height: 630
@@ -215,13 +418,37 @@ keywords:
   - forensic laboratory
   - chain of custody
   - digital product passport
-answer_summary: This conceptual case study proposes a verifiable evidence graph for AI-evaluated laboratory results. A certificate binds the result to its model, input, device, object and task authorisation. The worked scenario is marker and NIR material verification, with vehicle-data and forensic variants. Credentials support checks of provenance, integrity and authority; they do not establish scientific correctness. No implementation, deployment or measured outcomes are reported.
+  - verifiable AI lab analysis
+  - Digital Calibration Request
+  - Digital Calibration Certificate
+  - certified reference materials
+  - consumable identity
+  - AI Service Passport
+  - validation profiles
+  - TEVV
+  - measurement uncertainty
+  - Wilson confidence intervals
+  - business wallets
+  - conformity assessment bodies
+  - authentic sources
+  - food testing
+  - product authenticity
+  - cleaning measurement certificate
+  - Spherity VERA
+  - Spherity EIDA
+  - Spherity Trusted AI
+  - Agent Identity
+  - open standards
+answer_summary: This conceptual case study proposes an evidence graph for AI-assisted laboratory analysis. Result credentials link samples, calibration, consumable lots, reference data, AI Service Passports and validation profiles. Business wallets support organisational identity and bounded agent mandates; CABs and recognised issuers provide scoped assurance. Food, product authenticity, cleaning, forensic and automotive examples distinguish provenance and authority from scientific correctness. No deployment or measured outcomes are reported.
 key_takeaways:
-  - Bind the result to evidence about the exact model, input, device, object and permitted task.
+  - Bind each result to the actual sample, device, calibration, material lots, reference release and permitted task.
+  - Link the AI Service Passport to a validation profile and TEVV evidence for the configuration actually used.
+  - Distinguish measurement uncertainty, validation confidence intervals and model scores.
   - Check issuer recognition, action authorisation, evidence integrity, validity and status separately.
   - Keep legal identity, laboratory competence, model-vendor assertions and independent assessment distinct.
   - Offline verification is an as-of check against retained evidence; it cannot discover revocations after its status snapshot.
   - Test failure cases before claiming benefits. This case describes a proposed architecture, with no measured deployment outcomes.
+  - Connect VERA, EIDA, AI Service Passports, Agent Identity and Trusted AI around evidence owners and a receiver’s explicit policy.
 about:
   - AI-evaluated laboratory results
   - Verifiable evidence graphs
@@ -244,6 +471,34 @@ citations:
   - https://eur-lex.europa.eu/eli/dir/2025/25/oj
   - https://www.qi-digital.de/
   - https://netzwerke.bam.de/Netzwerke/Navigation/DE/Netzwerke/QI-Digital/qi-digital.html
+  - https://www.w3.org/TR/2026/WD-vc-recognized-entities-1.0-20261112/
+  - https://www.ptb.de/cms/ptb/fachabteilungen/abt9/fb-94/qi-digital.html
+  - https://www.dakks.de/en/step-1-basics.html
+  - https://www.tailorlux.com/
+  - https://www.tuvsud.com/en/services/management-system-certification/iso-iec-42001
+  - https://www.qi-digital.de/fileadmin/user_upload/website/veranstaltungen/QI-Digital_Forum2023/Praxiswerkst%C3%A4tten_BAM/The_DCC_and_the_DTC_-_One_Norm_family___One_Format.pdf
+  - https://www.ptb.de/dcc/v3.3.0/autogenerated-docs/dcc_xsd.html
+  - https://crm.jrc.ec.europa.eu/en/help-and-support/how-read-our-certificates
+  - https://crm.jrc.ec.europa.eu/en/product/23743
+  - https://food.r-biopharm.com/products/aflaprep-m-wide/
+  - https://webshop.bam.de/media/wysiwyg/Kategorien/Referenzmaterialien/Optische-Eigenschaften/CalibrationKit/Zertifikate/BAM-FCalKit_webpage_certificate.pdf
+  - https://www.promega.com/-/media/files/resources/protocols/technical-manuals/tmd/powerplex-fusion-6c-system-protocol.pdf
+  - https://www.iso.org/standard/62341.html
+  - https://www.gov.uk/government/publications/dna-contamination-controls-laboratory/dna-contamination-controls-laboratory-accessible
+  - https://www.hygiena.com/hygiene-monitoring/atp-cleaning-verification/surface-atp/ultrasnap
+  - https://store.hygiena.com/atp-cleaning-verification/positive-control-kit-asy0218
+  - https://a2a-protocol.org/latest/specification/
+  - https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
+  - https://www.iso.org/sites/JCGM/GUM/JCGM100/C045315e-html/C045315e_FILES/MAIN_C045315e/06_e.html
+  - https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-6-expanded-uncertainty
+  - https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm
+  - https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8503.pdf
+  - https://digital-strategy.ec.europa.eu/en/policies/business-wallets
+  - https://www.spherity.com/digital-product-passport
+  - https://www.spherity.com/european-business-wallet
+  - https://www.spherity.com/agentic-trust
+  - https://www.w3.org/groups/wg/vc/participants/
+  - https://w3c.github.io/vc-dpp-bw/ucr/
 audiences:
   - Laboratory and quality managers
   - Product-protection and anti-counterfeiting teams
@@ -255,7 +510,7 @@ spatial_coverage:
   - European Union
   - Germany
 search_research:
-  reviewed_on: "2026-11-13"
+  reviewed_on: "2026-11-14"
   source: Google Trends
   source_url: https://trends.google.com/trends/explore
   geographies:
@@ -300,59 +555,85 @@ search_research:
       search_type: Web Search
       url: https://trends.google.com/trends/explore?q=verifiable%20credentials,digital%20calibration%20certificate,AI%20in%20laboratories&hl=en
       result: "Observed 13 November 2026: displayed relative averages 52, 2 and 26 respectively. Digital calibration certificate had insufficient related-query data. Unrelated rising queries were excluded from editorial decisions. Values are normalized within this comparison, not absolute volume or directly comparable to Germany."
+    - comparison: AI in laboratories vs digital calibration certificate vs verifiable credentials
+      input_type: Search terms
+      geography: Germany
+      time_range: Past 5 years
+      search_type: Web Search
+      url: https://trends.google.com/trends/explore?date=today%205-y&geo=DE&q=AI%20in%20laboratories,digital%20calibration%20certificate,verifiable%20credentials&hl=en
+      result: "Observed 14 November 2026: displayed relative averages 0, 0 and 2 respectively. Sparse results and insufficient supporting data do not justify a growth or volume claim. Earlier 13 November observations are retained as dated snapshots, not rechecked results."
   editorial_decisions:
     - Use verifiable credentials as established discovery vocabulary, while naming the specific laboratory problem in the title and summary.
     - Retain digital calibration certificate and evidence graph for technical precision despite sparse Trends evidence.
     - Google Trends is directional context only. No search-volume, market-size or growth claim is made; a worldwide twelve-month comparison was also reviewed, but no EU-wide aggregate was reviewed.
 questions_answered:
   - question: Is this a deployed customer case study?
-    answer: "No. It is a conceptual case study: a proposed architecture and validation plan, with no deployment, benchmark or measured business outcome. Third-party names illustrate roles; no endorsement, certificate issuance or commercial relationship is claimed."
+    answer: No. It is a proposed architecture and validation plan, with no deployment or measured outcomes. Named products and organisations are references or illustrative roles; no endorsement or certificate issuance is claimed.
   - question: What does a verifiable AI lab result prove?
-    answer: Cryptographic checks can establish integrity and attribution under the verifier’s trusted keys and policy. An evidence graph connects those checks to the model, input, device, object and task mandate. It does not establish that the measurement or scientific conclusion is correct; method validation, uncertainty, competence and independent assurance remain separate.
-  - question: What is in the evidence graph?
-    answer: "The Verification Certificate hashes the AI result. The result identifies the agent and carries five assertions: task, set-up, object, reader and input. Supporting credentials describe agent identity, task authorisation, object registration, device identity and relevant assessment or calibration. The verifier chooses which issuers and actions to recognise."
-  - question: Can the result be verified offline?
-    answer: An offline verifier needs the proof suite, full credential chain, trusted key material and authenticated status evidence, with an explicit evaluation time and freshness policy. It can verify against that retained snapshot. It cannot discover a later revocation without updated evidence, and should return indeterminate or require an online check when evidence is stale.
-  - question: How could a laboratory start?
-    answer: Start with a signed result that pins input hashes and model and reference versions. Add signed device observations, an Agent Card and bounded Task Authorization, verified legal identity, then suitable independent assurance. Define schemas and test successful and failing verification paths. Issuing a credential alone does not validate its scientific claims.
-  - question: How does the forensic variant differ?
-    answer: It separates the public laboratory’s official identity and authorisation, scope-specific accreditation, the vendor’s model assertions and instrument calibration. The exhibit adds a chain of custody. A Digital Calibration Certificate can carry calibration data; ISO/IEC 17025 does not prescribe that digital format. Re-analysis also needs retained artefacts, data, runtime information and lawful access. Legal admissibility remains a separate decision.
+    answer: Proof checks can establish integrity and attribution under trusted keys and policy. An evidence graph links supporting records about the sample, calibration, materials, references, agent and authority. It does not establish scientific correctness or automatically justify a release decision.
+  - question: What is the difference between DCR and DCC?
+    answer: DCR means Digital Calibration Request; DCC means Digital Calibration Certificate. The request expresses the calibration need, while the certificate records the performed calibration and its results. A DCC is a domain document and is not automatically a W3C verifiable credential.
+  - question: What does the business wallet do?
+    answer: It supports organisational identity, credential presentation and bounded delegation to agents. It does not calibrate devices, accredit laboratories or validate scientific conclusions. The receiver still checks issuer competence, scope, status and applicable policy.
+  - question: What is a verifiable AI Service Passport?
+    answer: Here it is a proposed evidence container linking a verifiable Agent Card, execution configuration, validation profile and TEVV evidence to the actual run. It is not an established certification scheme.
+  - question: How do confidence intervals differ from measurement uncertainty?
+    answer: A measurement-uncertainty interval describes uncertainty attributed to a measurand under a stated model. A Wilson confidence interval describes sampling uncertainty in an estimated detection proportion. Neither is automatically the probability that one product is authentic or that a forensic conclusion is true.
+  - question: Why identify consumables and reference materials?
+    answer: The actual lots, certificate scope, storage, expiry and run controls can affect validity. Authenticity of a material does not alone establish its suitability; consumables, manufacturer certificates and certified reference materials have different assurance roles.
+  - question: Can the evidence be checked offline?
+    answer: Only against retained credentials, trusted keys and authenticated status evidence for an explicit evaluation time and freshness policy. An offline check cannot discover later revocation; stale or missing evidence may require an indeterminate result.
+  - question: How can Spherity products support verifiable laboratory results?
+    answer: VERA links product and lot identity to test evidence; EIDA supports organisational credentials and delegation; Agent Identity binds the acting agent; an AI Service Passport links configuration and validation evidence; Trusted AI supports checks, policy and audit trails. This is a proposed integration for the case. Laboratories and assessors retain responsibility for scientific assurance. Spherity products use open standards, and Spherity participates in W3C.
 related_publications:
   - title: "Proofs over Statements: Verifiable Evidence Graphs"
     url: /proofs-over-statements-evidence-graphs.html
     context: Defines the credential profile and proof inputs for evidence graphs; this note applies the graph to AI-evaluated measurements.
   - title: "Beyond Single-Enterprise ZTA: Multi-Trust Architectures for Authorised Agentic Actors"
     url: /beyond-zero-trust-m-trust-authorised-agentic-actors.html
-    context: Supplies the verifiable-authority chain from legal person to agent mandate that the Agent Card and Task Authorization implement here.
+    context: Proposes the verifiable-authority chain from legal person to agent mandate applied conceptually in this case.
   - title: European Business Wallets as the Legal Control Plane for Zero Trust AI Agents
     url: /ebw-zero-trust-ai-agents.html
     context: Describes the legal-person identity and mandate primitives the issuing lab would present from a Business Wallet.
   - title: Evidence Graphs for Industrial AI
     url: /evidence-graphs-industrial-ai-data-plane.html
     context: Gives the data-plane architecture for provenance, validation and freshness that the certificate's assertions feed.
+  - title: "DPP5.0: Registers, Semantics and Data Spaces"
+    url: /eu-dpp-registry-w3c-dpp5.html
+    context: Explores how registers and shared semantics can help discover and exchange regulated product evidence without making registration a scientific validation.
 toc_items:
   - title: Case study at a glance
     href: "#case-at-a-glance"
   - title: Abstract
     href: "#abstract"
-  - title: 1. Labs are becoming AI pipelines
+  - title: 1. Start with the result, not only a verdict
     href: "#labs-ai-pipelines"
-  - title: 2. One pattern, many labs
+  - title: 2. One evidence pattern, several use cases
     href: "#common-pattern"
-  - title: 3. Use case and requirements
+  - title: 3. Make the physical input and actual run traceable
     href: "#use-case-and-requirements"
-  - title: 4. The design
+  - title: 4. Connect calibration, measurement and matching
+    href: "#calibration-matching"
+  - title: 5. Identify consumables and reference materials
+    href: "#material-assurance"
+  - title: 6. Give the AI service a passport and a validation profile
+    href: "#service-passport"
+  - title: 7. Use the right uncertainty statement
+    href: "#uncertainty"
+  - title: 8. Separate the wallet, the issuer and the authority
+    href: "#wallet-recognition"
+  - title: 9. Assemble and verify the evidence graph
     href: "#design"
-  - title: 5. How to start
-    href: "#how-to-start"
-  - title: 6. Vehicle data variant
-    href: "#vehicle-data"
-  - title: 7. Forensic laboratory variant
+  - title: 10. Apply the pattern to forensic analysis
     href: "#forensic-lab"
-  - title: 8. Outlook
+  - title: 11. Build a small, testable pilot
+    href: "#how-to-start"
+  - title: 12. How Spherity can help
+    href: "#spherity-products"
+  - title: "13. Transfer case: Automotive Driving Labels"
+    href: "#vehicle-data"
+  - title: "14. Outlook: portable evidence with explicit limits"
     href: "#outlook"
-  - title: 9. Validation and evidence gaps
-    href: "#validation-plan"
   - title: References
     href: "#references"
   - title: License and citation
@@ -375,192 +656,297 @@ extra_css:
 <section class="case-at-glance" aria-labelledby="case-at-a-glance">
 <h2 id="case-at-a-glance">Case study at a glance</h2>
 <dl><dt>Evidence level</dt><dd><strong>Conceptual case study.</strong> Proposed architecture; no deployment or measured outcomes are reported.</dd>
-<dt>Setting</dt><dd>Marker and NIR material verification; transferable questions for vehicle data and forensic laboratories.</dd>
-<dt>Challenge</dt><dd>An AI verdict reaches a receiver without portable evidence of its provenance and authority.</dd>
-<dt>Approach</dt><dd>Connect each result to signed evidence about its model, input, device, object and permitted task.</dd>
-<dt>Deliverables</dt><dd>Five architecture figures, a staged implementation path and a validation plan. No executable prototype or PDF accompanies this case.</dd>
-<dt>Main lesson</dt><dd>Verifiable provenance and authority help assess a result; they do not establish scientific correctness.</dd></dl>
+<dt>Use cases</dt><dd>Food testing; textile and pharmaceutical product authenticity; product provenance; milk-tank cleaning measurements; forensic analysis; automotive driving-event labels.</dd>
+<dt>Challenge</dt><dd>A result can travel without the evidence needed to judge its origin, scientific support and permitted use.</dd>
+<dt>Approach</dt><dd>Bind the result to the sample, device, calibration, materials, references, AI service and responsible organisation through an evidence graph.</dd>
+<dt>Deliverables</dt><dd>A 19-slide companion PDF, twelve downloadable figures, worked statistical illustrations and a staged validation plan. This page is a design study, not an executable implementation or a laboratory certificate.</dd>
+<dt>Main lesson</dt><dd>Verifiable provenance and authority support scrutiny. They do not establish scientific correctness.</dd></dl>
 </section>
-
 
 <section class="abstract-box" markdown="1">
 <h2 id="abstract">Abstract</h2>
 
-Laboratory measurements no longer end at the instrument. A raw signal goes to a backend, a model compares it with reference databases, and a portal delivers a verdict to a receiver who was never in the lab. The verdict travels further than the laboratory's accountability: the receiver cannot see which model, input, device or authority stood behind it. This concept note proposes issuing such results as verifiable credentials. The Verification Certificate is the root of an evidence graph: it hashes the AI result, the result pins task, set-up, object, reader and input, each assertion references the credential that backs it, and every credential ends at a public trust anchor. Authority runs along a second chain from a company register through the legal person to an Agent Card and a bounded Task Authorization. The design is worked through on marker and NIR material verification, with a six-step starting guideline, and transferred to vehicle data processing and labelling. It builds on the W3C Verifiable Credentials Data Model 2.0, the W3C Recognized Entities working draft and the digitisation of the quality infrastructure. It is a proposal for discussion, not a description of any vendor's product.
+A laboratory output may be a concentration, a spectrum, a marker match, a cleaning measurement certificate or a forensic analytical finding. A verdict is one possible interpretation of that output. This case study proposes an evidence architecture for **verifiable AI lab analysis**: a result credential links to the particular sample, instrument, calibration, consumable lots, reference data, agent configuration and validation evidence used in an actual run. A business wallet supports organisational identity, credential presentation and bounded delegation. Recognised issuers, conformity assessment bodies and authoritative sources supply different kinds of evidence; they are not interchangeable trust labels.
 
-<p class="keywords"><strong>Keywords:</strong> verifiable AI lab results; verification certificate; verifiable evidence graph; AI agent authorisation; EU Company Certificate; W3C Recognized Entities; NIR spectroscopy; vehicle data provenance</p>
+The page follows the result from physical input to measurement, matching, interpretation and receiver policy. It distinguishes measurement uncertainty from validation confidence intervals and model scores, and shows what an evidence graph can and cannot establish. Food, authenticity, cleaning and forensic examples make the pattern concrete. An automotive driving-label example near the end tests its transfer beyond laboratories. All architectures and numerical illustrations are conceptual; named organisations are references or illustrative role assignments, not evidence of participation, endorsement or certificate issuance.
 </section>
 
-<h2 id="labs-ai-pipelines">1. Labs are becoming AI pipelines</h2>
+<h2 id="labs-ai-pipelines">1. Start with the result, not only a verdict</h2>
 
-A measurement used to end at the instrument: a spectrum, a chromatogram, an image, read by a trained person who signed a report. Today the instrument is the first step of a pipeline. The raw signal goes to a backend, a model compares it with reference databases, software classifies, quantifies or labels, and a portal delivers the result to someone who was never in the lab. This is the same in materials testing, food and pharma quality control, environmental monitoring, medical diagnostics, recycling sorting and vehicle data analysis.
+Laboratories already use quality systems, traceability records and signed reports. The problem examined here is narrower: **what happens when an AI-assisted result leaves that controlled environment?** A recipient may receive a value or label without the evidence needed to assess the sample, method, software version or issuer's competence. A signed PDF can establish attribution, but its supporting records may remain difficult to retrieve and check automatically.
 
-Four forces drive the trend. **Throughput and cost:** automation can reduce evaluation time for suitable, validated tasks, and handheld or inline sensors move the measurement from the lab to the field. **Reference data:** spectral and marker libraries grow with every scan, creating opportunities for automated comparison; accuracy must be established for the intended task. **Demand for machine-readable evidence:** product passports, recycled-content declarations, customs and conformity procedures want results as data, not as PDFs. **Digital quality infrastructure:** calibration certificates, test reports and accreditation symbols are being digitised in initiatives such as QI-Digital, so the surrounding assurance can be checked by software too [7][8].
+An educational way to separate the concepts is to follow four layers:
 
-The trend creates a trust gap. A human-signed report carried its own accountability: a named person, an accredited lab, a calibrated instrument. An AI result arrives as a verdict with a confidence value. The receiver cannot tell which model produced it, on which input, from which device, under whose authority, and whether any of that was still valid at the time. The further the result travels, the larger the gap.
+1. **Observation:** the recorded spectrum, image, chromatogram, sensor reading or sequence data.
+2. **Analysis:** a concentration estimate, detected marker, candidate match or extracted feature, with method and limitations.
+3. **Interpretation:** an authenticity conclusion, threshold assessment, forensic proposition or other claim supported by that analysis.
+4. **Decision:** release a batch, accept a certificate, request another test or refer the result for expert review under a receiver's policy.
 
-<h2 id="common-pattern">2. One pattern, many labs</h2>
+The same credential architecture can carry each layer, but must identify which layer is being asserted. A probability-like model output is not automatically a probability that a product is authentic; a cryptographic verification result is not a laboratory verdict.
 
-The Tailorlux flow is a textbook instance of this pattern. Tailorlux marks materials with Tailor-Safe luminescent pigments and a Tailor-Scan handheld reads the VIS/NIR spectrum; in the set-up considered here, a backend evaluates the spectrum with AI against NIR reference and marker databases and a verification portal returns a verdict to the user. Tailorlux publicly describes on-device checks against a stored verification rule [13]; the backend and portal are taken from the set-up discussed for this note. Replace the nouns and you have a food lab, a metals lab or a vehicle data chain. The identity and evidence pattern can transfer, but each domain needs its own schemas, acceptance policy, scientific validation and governance.
+<h2 id="common-pattern">2. One evidence pattern, several use cases</h2>
 
-<aside class="evidence-callout" aria-label="Scope of this note">
-<h3>Concept only</h3>
-<p>Everything on this page about Tailorlux is a design proposal for discussion. It is not a description of a Tailorlux product, process or commitment, and all identifiers and role assignments are illustrative; no certificate issuance, endorsement or partner relationship is claimed. TÜV SÜD and Bundesanzeiger Verlag appear as examples of the roles a conformity assessment body and a company register play. TÜV SÜD describes certification of AI management systems under ISO/IEC 42001 [14]; a credential that assesses a specific model version, as drawn here, is a role assumed for the concept.</p>
-</aside>
+<div class="table-wrap" markdown="1" role="region" aria-label="Laboratory use cases and evidence requirements" tabindex="0">
 
-<h2 id="use-case-and-requirements">3. Use case and requirements</h2>
+| Use case | Result that could travel | Evidence the receiver needs |
+| --- | --- | --- |
+| Food testing | Measured analyte concentration and uncertainty; a separately stated compliance assessment | Sample and preparation records, validated method, calibration, relevant controls and reference-material certificate |
+| Textile or pharmaceutical authenticity | Detection of an invisible product marker and a comparison with a registered reference | Physical item or lot binding, reader configuration, marker registration, reference-library version, false-match evidence |
+| Product provenance | A scoped claim connecting a tested item to a registered production lot | Manufacturer and lot records, custody events and the limits of what the marker identifies; a marker alone does not prove the whole supply chain |
+| Milk-tank cleaning | Measurement certificate for a specified site and sampling time, with a documented acceptance rule | Sampling location, device, swab or reagent lot, positive and negative controls, procedure and threshold; ATP screening alone does not establish pathogen absence |
+| Forensic / criminal investigation | Analytical findings, candidate matches or an expert interpretation | Exhibit identity, custody, contamination controls, lawful reference access, validated comparison method and review |
 
-**Use case.** Today the verdict of the marker and NIR evaluation is a screen or a report. Whoever receives it has to trust the portal and call the lab to confirm it. This is the trust gap of section 1 in one concrete flow. Figure 1 puts the AI agent in the centre and lists what a verifier would need to trust its result.
-
-{% assign figure_problem = page.figure_objects | first %}
-{% include research-figure.html figure=figure_problem number=1 %}
-
-**Reading Figure 1.** The agent sits between the measurement and the receiver. Everything that would let the receiver judge the result (dashed) stays inside the lab: the mandate, the model and its assessment, the reference versions, the raw spectrum, the device state and the object binding. Only the verdict (solid) travels. The requirements below give each of the six questions a verifiable answer, and the design in section 4 binds those answers to the result.
-
-**Objective.** Turn the result into a **Verifikationszertifikat**, a Verification Certificate, that brand owners, customs, recyclers and auditors can verify on their own, offline if needed, without an account at the issuing lab. Material claims feed into product passports, recycled-content declarations and anti-counterfeiting cases, so an AI verdict has to be accountable: who ran it, under whose authority, with which model, on which input, from which device.
-
-**Requirements.**
-
-1. Issuer identity checked against an authoritative register or official public-body record. An EU Company Certificate under Directive (EU) 2025/25 [10] is a prospective company-identity input, subject to implementation. The figures assign Bundesanzeiger Verlag an illustrative register role, not a confirmed EUCC issuing role. A DID by itself does not establish legal identity.
-2. Verifiable authority for the AI agent: an identity (Agent Card) and a bounded task mandate (Task Authorization).
-3. Traceability: task, set-up, object, reader and input pinned in the result. Reproducibility additionally requires retained model and data artefacts, runtime configuration, access rights and a policy for nondeterministic outputs.
-4. Independent assurance of reader and AI system by a conformity assessment body.
-5. Data minimisation: reference input commitments rather than distributing raw data unnecessarily. Hashes are not encryption; predictable inputs may be guessed. Confidential material needs access controls, encryption and, where appropriate, salted commitments.
-6. Status and revocation per certificate, device, model and reference database.
-7. Standards alignment: W3C Verifiable Credentials Data Model 2.0, with an explicit proof suite and status mechanism. Recognized Entities is a working draft; Agent Card, task and laboratory assertion schemas here are proposed profiles, not established W3C standards.
-
-<h2 id="design">4. The design</h2>
-
-Every event becomes a micro-certificate bound to the scanned object, following the micro-certificate and trusted-release pattern developed for regulated supply chains [1][2]. The certificate is the root of a verifiable evidence graph [3]: it hashes the AI result, the result carries five assertions, each assertion references the credential that backs it, and every credential ends at a public trust anchor. Authority runs along a second chain, EUCC to the legal person to Agent Card to Task Authorization [4], and third-party conformity comes from certificates referenced where they matter. The proposed recognition checks follow the W3C Recognized Entities working draft [5], whose version must be pinned in an implementation.
-
-{% assign figure_system_view = page.figure_objects | where: "id", "figure-2-system-view" | first %}
-{% include research-figure.html figure=figure_system_view number=2 %}
-
-**Reading Figure 2.** Two chains meet at the portal. The operational chain (solid) carries the scan: the reader signs the raw input, the agent issues the result, the portal issues the certificate. The authority chain (dashed) says who is allowed to do what: the register vouches for the lab as a legal person, the lab equips its reader and its agent with credentials and signs the certificate, and the conformity assessment body vouches for the reader type and, with an AI credential bound to the model version, for the AI agent. The verifier's six checks are the six questions of Figure 1. A verifier need not hold an account at the portal. It still needs the complete supporting evidence, trusted keys, proof verification, status information and an acceptance policy. Offline checks rely on a retained snapshot and cannot discover later revocations.
-
-{% assign figure_evidence_graph = page.figure_objects | where: "id", "figure-3-evidence-graph" | first %}
-{% include research-figure.html figure=figure_evidence_graph number=3 %}
-
-**Reading Figure 3.** The graph is what a verifier walks. Each arrow is a cryptographic link, a hash or a signature, with a stated meaning. Walking left to right answers, in order: what was claimed, by which agent, on what task, about which object, from which input and device, under which set-up, backed by which certificates, issued by which legal persons, recognised by which anchors. The chain validation of the W3C Recognized Entities draft gives two answers, `recognized` (the issuer is in a chain to an anchor) and `actionRecognized` (recognised for this specific action, here issuing a Verification Certificate). Both must hold for the recognition check. Proof integrity, status, evidence completeness and the scientific acceptance policy must also pass; recognition alone is not sufficient.
-
-Two choices in the figures are open for revision. The AI credential issued by the conformity assessment body is bound to the model version and referenced from the set-up assertion rather than from the certificate itself, so the chain stays attached to the model actually used. The portal has no identity of its own and signs as the legal person.
-
-<h2 id="how-to-start">5. How to start: simple first, one step at a time</h2>
-
-The following stages provide a migration path. Key management, data retention, schemas and system integration must be planned across stages; existing systems may need changes. The order follows value for the receiver: first make the result tamper-evident, then attributable, then independently assured.
-
-1. **Sign the result.** The portal issues the existing result as a verifiable credential: verdict, time, lot or object identifier, model version, reference-database versions, and the hash of the raw spectrum. Receivers can check integrity and attribution and see the issuer’s claim about the set-up. Establishing that the claimed set-up actually ran requires additional execution or assessment evidence.
-2. **Give the reader a key.** Each reader signs its scans with a device key and reports serial, firmware and calibration date. The input assertion becomes verifiable: the device key signed this spectrum and timestamp. Secure key custody, trusted time and protection of the acquisition path are separate requirements.
-3. **Name the agent and bound its task.** The lab issues an Agent Card for the evaluation service and a Task Authorization per job or per customer. The result now says under whose authority it was produced and for what scope.
-4. **Root the issuer in a register.** The lab obtains a register-backed legal-person identity (an EUCC once available, a register-linked DID until then) and signs certificates with it. A receiver can resolve the legal person without trusting a web page.
-5. **Add independent assurance.** A conformity assessment body certifies the reader type and the AI evaluation system; the certificates are referenced from the reader and set-up assertions. Calibration moves to a Digital Calibration Certificate [8].
-6. **Publish the schemas and a verifier.** Credential schemas, a public verification page and a stapled recognition chain for offline checks: the issuer attaches the recognition credentials up to the trust anchor to the certificate itself, along with trusted keys and authenticated status evidence. Offline validation is an as-of assessment with an explicit maximum evidence age; stale or missing evidence must not silently pass. From here on the certificate can be dropped into a product passport or a customs file as evidence.
-
-Steps 1 and 2 need no external party. Steps 3 and 4 are mostly governance decisions. Steps 5 and 6 depend on partners and standards timelines.
-
-<h2 id="vehicle-data">6. The same set-up for vehicle data processing and labelling</h2>
-
-Vehicle data chains have the same accountability problem as material verification: a downstream consumer receives labelled data and cannot tell which model produced the labels, from which raw frames, on which device, and with what mandate [6]. The evidence graph of Figure 3 supplies a starting structure; vehicle privacy, permissions and dataset acceptance require their own policy.
-
-{% assign figure_vehicle = page.figure_objects | where: "id", "figure-4-vehicle-data-variant" | first %}
-{% include research-figure.html figure=figure_vehicle number=4 %}
-
-**Reading Figure 4.** The object is a vehicle trip instead of a marked lot, the reader is the vehicle gateway, the AI agent labels events instead of verifying a marker, and the certificate attests the provenance of a labelled dataset. Identity, authority, assurance and evidence links are the same as in Figures 2 and 3. The labelling example follows the dangerous-driving detection case in [6]. One addition is specific to vehicle data: the Task Authorization has to carry the data-use mandate of the vehicle owner or OEM next to the processor's own authorisation of the agent.
-
-<div class="table-scroll" role="region" aria-label="Node mapping between material verification and vehicle data labelling" tabindex="0">
-<table class="academic-table">
-<caption>Table 1. The evidence graph of Figure 3 mapped to the three cases.</caption>
-<thead>
-<tr><th scope="col">Node in Figure 3</th><th scope="col">Material verification</th><th scope="col">Vehicle data labelling</th><th scope="col">Forensic laboratory (Figure 5)</th></tr>
-</thead>
-<tbody>
-<tr><th scope="row">Certificate</th><td>Verification Certificate for a lot</td><td>Data Provenance Certificate for a labelled dataset</td><td>Forensic Result Certificate for an exhibit</td></tr>
-<tr><th scope="row">AI result</th><td>AI Analysis Result: marker present, share, confidence</td><td>AI Labelling Result: events and labels with confidence</td><td>AI Analysis Result: substance identified, library match</td></tr>
-<tr><th scope="row">Agent Card</th><td>analysis agent, model version</td><td>labelling agent, model version</td><td>evaluation service running a vendor model</td></tr>
-<tr><th scope="row">Task assertion</th><td>marker verification of one lot</td><td>labelling job for one trip or time window</td><td>analysis order for one exhibit and method</td></tr>
-<tr><th scope="row">Set-up assertion</th><td>model, NIR reference database, marker database, rule</td><td>model, label taxonomy version, pipeline version</td><td>vendor model version, spectral library version, method</td></tr>
-<tr><th scope="row">Object assertion</th><td>lot, product, expected marker</td><td>vehicle pseudonym, trip, sensor set</td><td>exhibit, sample, chain of custody reference</td></tr>
-<tr><th scope="row">Reader assertion</th><td>reader, firmware, calibration</td><td>vehicle gateway, firmware, sensor calibration</td><td>instrument, LIMS gateway, calibration</td></tr>
-<tr><th scope="row">Input assertion</th><td>spectrum hash, time, operator</td><td>frame hashes, time series, trip</td><td>raw-data hashes, time, analyst</td></tr>
-<tr><th scope="row">Task Authorization</th><td>the lab authorises the agent for the lot</td><td>the processor authorises the agent; plus the data-use mandate of owner or OEM</td><td>the laboratory authorises the service; the vendor's model credential covers the model</td></tr>
-<tr><th scope="row">Marker Registration</th><td>marker code to customer product</td><td>gateway onboarding: gateway bound to vehicle</td><td>chain of custody: exhibit bound to case and sample</td></tr>
-<tr><th scope="row">Reader Identity</th><td>reader DID and key</td><td>gateway DID and key</td><td>instrument DID and key</td></tr>
-<tr><th scope="row">Conformity certificates</th><td>reader type and calibration; AI system</td><td>gateway type and calibration; AI labelling system</td><td>DCC for the instrument; vendor model assertions and separately identified independent assessment</td></tr>
-<tr><th scope="row">Anchors</th><td colspan="2">EU Company Certificate from the register operator for the legal person; the conformity assessment body for certificates</td><td>official public-body identity; scope-specific accreditation; vendor identity; traceable calibration</td></tr>
-</tbody>
-</table>
 </div>
 
-<h2 id="forensic-lab">7. Forensic laboratories: lab data enriched by third-party AI models</h2>
+Tailorlux's material-marking and reader products provide a motivating product-authenticity context [13]. The AI analysis and credential integrations described here are **proposed extensions**, not verified capabilities of those products. The revised diagrams use generic roles across the use cases. Transfer to another domain requires a different method, validation profile, terminology and acceptance policy. The architecture should preserve those differences rather than reduce every output to “pass” or “fail”.
 
-Forensic laboratories are the sharpest case of the trend in section 1. Their instruments produce spectra and chromatograms, specialised chemistry models from software vendors enrich the raw data with substance identification, structure proposals or similarity scores, and the result ends up as evidence in criminal proceedings. The receiver is a court, the prosecution and the defence, and the result has to survive a re-analysis years later.
+<h2 id="use-case-and-requirements">3. Make the physical input and actual run traceable</h2>
 
-Three properties make the pattern harder than the material-verification flow, and the evidence graph answers each of them. The AI models are not the laboratory's own: each vendor is a legal person of its own and has to vouch for its model with a model credential that pins version and validation status, so the laboratory's Agent Card and the vendor's model credential are two separate links in the chain. For the public-body scenario, official records establish the laboratory’s identity and authority. Accreditation under ISO/IEC 17025 supports competence for a defined scope; it is a separate assurance input, not a substitute for legal identity [12]. A vendor-issued model credential is an attributed vendor assertion, not independent certification. And the object is an exhibit with a chain of custody, which is itself a credential chain the certificate has to reference. Instrument calibration as a Digital Calibration Certificate is the part that QI-Digital already provides [7][8].
+The first requirement is a credible link between the physical object and the digital record. Assign sample, exhibit, production-lot or equipment identifiers at collection; record who sampled what, when, where and under which procedure. Bind custody transfers, seals and preparation steps to those identifiers. A hash detects changes to a digital file; it cannot establish that the file came from the claimed physical sample.
 
-{% assign figure_forensic = page.figure_objects | where: "id", "figure-5-forensic-laboratory-variant" | first %}
-{% include research-figure.html figure=figure_forensic number=5 %}
+Retain raw data, preprocessing steps, units, timestamps, device and firmware versions, environmental conditions and the configuration used for the run. If an agent retrieves reference records or calls tools, record the selected records, database release, tool versions and relevant execution outputs. Where prompts or retrieval context affect the analysis, pin those too. Protect confidential, proprietary and personal data through controlled evidence access; do not put raw DNA records or secret marker recipes into a public credential.
 
-**Reading Figure 5.** The evidence graph of Figure 3 is unchanged, but the verifier is now a court, which raises the bar on three of the six questions of Figure 1. Question 2 splits in two: the laboratory vouches for the agent (Agent Card, Task Authorization) and the vendor vouches for the model (model credential with version and validation status), so a defence expert can see both without a request to the laboratory. Question 5 points at a Digital Calibration Certificate instead of a type certificate, a proposed machine-readable way to convey calibration data [8]. ISO/IEC 17025 does not require the DCC digital format. Question 6 adds the chain of custody of the exhibit as its own credential chain. Because proceedings run for years, pinned versions support traceability, but re-analysis also needs retained model artefacts, input data, libraries, runtime configuration and lawful access. Nondeterministic inference may prevent bit-for-bit reproduction. Neither a valid credential chain nor accreditation determines legal admissibility.
+<p id="carousel-pdf"><strong>Companion slide deck:</strong> <a href="{{ '/Spherity-Verifiable-AI-Lab-Analysis-Carousel-v12.pdf' | relative_url }}">Download the 19-slide carousel PDF (version 12)</a>. It summarises the use cases, calibration and material assurance, AI validation, statistical illustrations and Spherity products. The page provides the fuller explanation and revised web diagrams.</p>
 
-<aside class="evidence-callout" aria-label="Scope of the forensic variant">
-<h3>Illustrative scenario</h3>
-<p>The forensic variant describes a laboratory such as a federal criminal police laboratory in general terms. It is not a description of any existing platform or project, and all identifiers are illustrative.</p>
-</aside>
+Open any figure for the full-size view, or use its SVG and PNG download links. On a small screen, scroll the comparison tables horizontally.
 
-<h2 id="outlook">8. Outlook</h2>
+{% assign fig = page.figure_objects | where: "id", "figure-1-problem-framing" | first %}
+{% include research-figure.html figure=fig number=1 %}
 
-**Where the pattern pays off for labs.** The pattern is not specific to markers. Any lab that runs an instrument, a model and a reference library can issue its results as certificates with an evidence graph. The gains come from what the receiver no longer has to do.
+The revised problem-framing diagram asks which supporting evidence travels with each type of result. It includes quantitative measurements, analytical findings and optional verdicts, together with the materials and validation evidence needed to assess them. The laboratory retains responsibility for collection and measurement, even when downstream checks become automated.
 
-- **Potentially less duplicate testing.** A receiver may reuse evidence when its quality policy and applicable requirements allow. A valid signature chain alone does not justify skipping measurement or mandatory checks.
-- **More focused audits.** Structured evidence can support review of particular results and assessment scopes. It complements required audits and accreditation rather than replacing them [1][2].
-- **Faster release decisions.** Deviation checks run on structured assertions (model version, calibration date, reference-database version) and the person releasing a batch sees pre-validated inputs, the trusted-release idea applied to lab results.
-- **Reusable evidence.** One certificate feeds a product passport, a customs declaration, a recycled-content claim and an insurance file, with the same hash links, instead of four reports.
-- **Model governance.** Because every result pins the model and reference versions, a complete dependency index can help locate potentially affected results. Notifications, status checks and receiver policies must propagate and act on a recall; revocation is not automatic scientific invalidation.
-- **Applies across domains.** Spectroscopy and marker verification, food and pharma quality control, environmental sampling, diagnostics, recycling sorting lines, inspection robots, vehicle data labelling and forensic laboratories with third-party AI models can reuse the evidence pattern, with domain-specific scientific, privacy and governance requirements.
+<h2 id="calibration-matching">4. Connect calibration, measurement and matching</h2>
 
-**Next steps for this design.**
+Calibration and matching answer different questions. Calibration characterises the relationship between an instrument's indications and reference values, with uncertainty and stated conditions. Matching compares an observation with a reference under a defined algorithm and decision rule. Calibration does not certify every later measurement or validate the matching algorithm.
 
-- **Schemas and a worked verification.** JSON-LD schemas for the seven credential types and one end-to-end chain validation with the Recognized Entities algorithm, including a failing case (expired mandate, revoked model version).
-- **Offline checks.** Staple the recognition chain into the certificate so customs or field inspectors can verify without network access, with a maximum age for the stapled chain.
-- **QI-Digital alignment.** Reader calibration as a Digital Calibration Certificate, conformity assessments as digital conformity statements, accreditation as a recognition credential, so the certificate plugs into the digital quality infrastructure [7][8].
-- **European Business Wallet.** The lab issues from a Business Wallet once the EUCC and the wallet are available; until then a register-backed DID with the same chain.
-- **Product passports.** The certificate becomes an evidence node in the product passport of the tested item, with the same hash links.
-- **AI accountability.** AI Service Passport and test evidence behind the AI conformity certificate; human sign-off for verdicts used in legal disputes.
+In the QI-Digital terminology used here, **DCR means Digital Calibration Request** and **DCC means Digital Calibration Certificate**. A PTB presentation hosted by QI-Digital also distinguishes a Digital Calibration Answer and a Digital Test Certificate [15]. The request expresses the calibration need; the certificate records the performed calibration and its results. A DCR is not itself calibration evidence. PTB publishes a structured DCC schema [16]; it is a domain format, not automatically a W3C verifiable credential. Preserve the original signed document and link its digest, issuer, version and relevant scope into the evidence graph.
 
-<h2 id="validation-plan">9. Validation and evidence gaps</h2>
+QI-Digital brings together BAM, PTB, DAkkS, DIN and DKE. **BAM — Bundesanstalt für Materialforschung und -prüfung —** contributes to digital quality infrastructure and reference-material work [7]. That provides a useful foundation for machine-readable assurance, without implying that BAM operates or endorses the proposed Spherity workflow.
 
-**What this case establishes.** It specifies a proposed evidence structure and the questions a receiver should ask. It supplies no running verifier, issued credentials, benchmark, customer deployment or measured savings. The figures are architecture illustrations, not test results.
+{% assign fig = page.figure_objects | where: "id", "figure-6-calibration-matching" | first %}
+{% include research-figure.html figure=fig number=2 %}
 
-**What a pilot should demonstrate.** Start with a retained scan, a pinned model and reference set, a documented method, test keys and a receiver-owned acceptance policy. Publish synthetic example credentials and a repeatable verifier before using production data. Record proof, recognition, scope, status and scientific acceptance as separate decisions.
+For a marker test, pin the marker registration and authorised reference-library release. For forensic DNA analysis, pin the relevant reference records, search and interpretation method and access authority. Fingerprint comparisons require their own validated procedures and reporting vocabulary; they cannot inherit a DNA likelihood ratio or a product-marker threshold. A database hit is an analytical lead or finding within a method, not an automatic identity, authenticity or guilt determination.
 
-<div class="table-scroll" role="region" aria-label="Proposed validation cases" tabindex="0">
-<table class="academic-table"><caption>Table 2. Proposed acceptance tests — expected decisions, not observed results.</caption>
-<thead><tr><th scope="col">Test input</th><th scope="col">Expected verifier behaviour</th></tr></thead><tbody>
-<tr><td>Complete, valid evidence within the agreed scope</td><td>Pass technical checks; apply the independent scientific and business acceptance policy.</td></tr>
-<tr><td>Changed raw input or result after signing</td><td>Reject the broken hash link or invalid proof.</td></tr>
-<tr><td>Expired mandate, wrong object or unauthorised task</td><td>Reject the scope or time mismatch, even when the signature is valid.</td></tr>
-<tr><td>Revoked credential or disallowed model version</td><td>Reject under the current policy; record evaluation time and status evidence.</td></tr>
-<tr><td>Offline status snapshot beyond its allowed age</td><td>Return indeterminate or require fresh evidence; never infer current validity.</td></tr>
-<tr><td>Accreditation does not cover the claimed method</td><td>Fail the competence-scope check; identity recognition must not hide that failure.</td></tr>
-<tr><td>Valid signatures but an incorrect scientific result</td><td>Show that cryptographic validation can pass while method validation fails.</td></tr>
-</tbody></table></div>
+<h2 id="material-assurance">5. Identify consumables and reference materials</h2>
 
-Measure verification latency, evidence completeness, false acceptance and rejection on labelled test cases, handling of status changes and reviewer effort against the existing workflow. Report sample sizes and limitations. Any claimed reduction in duplicate testing or review effort should be supported by those measurements and receiver acceptance.
+An authentic instrument can produce an unreliable result with the wrong reagent, an expired control or a contaminated sampling device. The proposed run record therefore identifies each relevant consumable and reference material by producer, product, lot or batch, and certificate or declaration revision. Four questions stay separate: **Is it authentic? What property is certified or declared? Was it suitable and in condition at use? Did the run's controls pass?**
+
+{% assign fig = page.figure_objects | where: "id", "figure-7-material-assurance" | first %}
+{% include research-figure.html figure=fig number=3 %}
+
+Concrete examples show why these checks matter:
+
+- **Food analysis:** JRC's ERM-BD284 milk-powder certified reference material supports aflatoxin M1 analysis [17]. Its certificate has a defined property, matrix and use conditions. Immunoaffinity columns used for sample preparation are consumables, not automatically certified reference materials [18]. Bind both lots to the run, but describe their different roles.
+- **Optical marker analysis:** BAM's fluorescence calibration kit provides reference materials for specified optical calibration purposes [19]. This can support an instrument check; it does not certify the identity of a marker-bearing textile or medicine. Marker standards, sample holders and cleaning materials also need method-specific suitability checks.
+- **Forensic DNA:** amplification kits can include master mix, primer mix and control DNA [20]. Sampling swabs, tubes and other covered products may have claims under ISO 18385 concerning minimisation of human DNA contamination [21]. Check the specific scope and lot documentation; this is not a blanket guarantee of sterility, zero contamination or correct interpretation. Laboratory contamination controls remain necessary [22].
+- **Cleaning verification:** ATP sampling devices and their positive controls support a defined cleaning-monitoring procedure [23]. Record the sampling area, storage, expiry, device and threshold as well as the consumable lot. A low ATP reading is not a general food-safety certificate.
+
+For certified reference materials, retain the certified property, uncertainty, metrological traceability, minimum sample intake, storage and stability information where applicable. JRC's certificate guidance explains why these conditions matter [17]. A manufacturer's certificate of analysis, an accredited calibration certificate and a CRM certificate are different assertions. A genuine document alone does not prove fitness for the particular test.
+
+<h2 id="service-passport">6. Give the AI service a passport and a validation profile</h2>
+
+The **verifiable AI Service Passport** is a proposed evidence container in this case study, not an established certification scheme. It identifies the accountable organisation, the service and agent, the permitted task and the versions that define the evaluated configuration. It links four complementary records:
+
+1. **Verifiable Agent Card:** machine-readable identity, interfaces and declared capabilities, bound to the service's authorised key or issuer. The A2A Agent Card is a useful discovery model [24]; a signed card still does not demonstrate scientific competence.
+2. **Execution configuration:** model and software identifiers, preprocessing, tools, prompts where relevant, reference releases, thresholds and change history.
+3. **Validation profile:** intended use, sample matrices, operating range, relevant populations, challenge cases, acceptance criteria and required human review.
+4. **Validation evidence:** who performed test, evaluation, verification and validation (TEVV), with which datasets and procedures, on which version, with what results and limitations.
+
+{% assign fig = page.figure_objects | where: "id", "figure-8-service-passport-validation" | first %}
+{% include research-figure.html figure=fig number=4 %}
+
+A marker-recognition profile should test genuine markers, close non-matches, damaged or aged material, background interference and unknown items. Validation must avoid leakage between training and evaluation data: repeated scans of one lot do not replace independent lots. A biological-evidence profile needs domain-specific contamination, mixture and reference-population considerations. A cleaning profile needs the relevant surfaces, sampling procedure and decision threshold. NIST AI RMF provides broader guidance on measurement and evaluation of AI risks [25]; it does not supply a ready-made laboratory validation protocol.
+
+Report false acceptances and false rejections, uncertainty or confidence intervals, test-cohort composition and exclusions. Specify when the agent must abstain or escalate. Changes to the model, reference database, instrument, preprocessing or material can invalidate the profile's applicability and trigger revalidation. A passport links the actual run to evidence; it must not treat an old assessment of a different configuration as current assurance.
+
+<h2 id="uncertainty">7. Use the right uncertainty statement</h2>
+
+“Confidence” is too ambiguous to stand alone. A credential should name the quantity, method, assumptions and denominator behind each number.
+
+**Measurement uncertainty.** The following synthetic example attributes a normal uncertainty distribution to a concentration measurand. The estimate is 10.0 mg/L and the combined standard uncertainty is 0.20 mg/L. With coverage factor k = 2, expanded uncertainty is 0.40 mg/L and the coverage interval is 9.60–10.40 mg/L. Under the stated ideal normal model, that interval contains approximately 95.45% of the distribution. The y-axis is probability density, in inverse mg/L; a curve height is not a probability [26][27].
+
+{% assign fig = page.figure_objects | where: "id", "figure-10-measurement-uncertainty" | first %}
+{% include research-figure.html figure=fig number=5 %}
+
+This is an **uncertainty distribution**, not an “accuracy curve”. Real uncertainty evaluation needs an appropriate measurement model and contributions such as calibration, sampling, preparation, repeatability and reference values. Normality and k = 2 must be justified; finite degrees of freedom or non-normal models can require another approach. Uncertainty alone also does not specify a conformity decision rule or its guard band.
+
+**Validation confidence interval.** In a separate synthetic marker-detection example, 98 correct detections among 100 known-positive samples and 980 among 1,000 both estimate sensitivity at 98%. Two-sided 95% Wilson intervals are respectively **93.0–99.4%** and **96.9–98.7%** [28]. The larger independent sample gives a tighter interval under the sampling assumptions. It does not establish performance on a different population.
+
+{% assign fig = page.figure_objects | where: "id", "figure-11-sensitivity-intervals" | first %}
+{% include research-figure.html figure=fig number=6 %}
+
+These intervals assume independent, representative positive samples. False-positive rates need a separate negative cohort. Neither interval gives the probability that one product is authentic. A model score requires its own calibration and interpretation; forensic likelihood ratios compare the probability of evidence under explicitly stated competing propositions, not the probability that a suspect is guilty [29]. Higher percentages alone would not make a forensic example more rigorous.
+
+<h2 id="wallet-recognition">8. Separate the wallet, the issuer and the authority</h2>
+
+The business wallet is the organisation's control point for identity credentials, presentations and authorised delegation. In this proposed pattern, a laboratory presents its legal identity and scope-related evidence, then authorises an agent for a bounded task: specified methods, assets, recipients, actions and time limits. Protected keys and execution controls must enforce that mandate. A wallet is not the measurement system, an accreditation body or a substitute for laboratory governance.
+
+The European Commission describes **European Business Wallets as a regulatory proposal** at this review's cutoff [30]. The architecture below is a design pattern, not a claim that a particular legal wallet service or interface has been deployed. An EU Company Certificate can support company-information evidence under the relevant framework [10]; legal identity alone says nothing about competence to perform a particular assay.
+
+{% assign fig = page.figure_objects | where: "id", "figure-9-wallet-recognition" | first %}
+{% include research-figure.html figure=fig number=7 %}
+
+<div class="table-wrap" markdown="1" role="region" aria-label="Wallet, issuer and authority roles" tabindex="0">
+
+| Role | What it contributes | What must still be checked |
+| --- | --- | --- |
+| Authoritative / authentic source | An official register, competent authority record, issuer's original certificate or authenticated manufacturer record | Authenticity of the record; authority for the specific claim; version, time and scope. A genuine vendor assertion is not automatically independent assurance. |
+| Conformity assessment body (CAB) | Testing, calibration, inspection, certification or another defined conformity-assessment activity | The applicable scheme, competence, independence where required, and the precise assessed object and scope |
+| Accreditation body | Recognition of a CAB's competence for a specified accreditation scope | Current status, scope annex, locations, methods and conditions; not a blanket endorsement of every result |
+| Business wallet | Organisational identity, evidence presentation and bounded authority delegation | Key control, mandate chain, revocation, least privilege and actual enforcement |
+| Recognised entity / recognition authority | An ecosystem's scoped statement that an entity may perform particular actions | Who recognises whom, for what action, under which policy and validity period |
+| Receiver / verifier | Proof and status checks, evidence evaluation and an acceptance decision | Its own trust policy, scientific requirements, access rights and responsibility for the resulting decision |
+
+</div>
+
+Testing and calibration laboratories can themselves be CABs. DAkkS distinguishes accreditation activities and applicable standards; ISO/IEC 17025 concerns testing and calibration laboratory competence [12]. Do not conflate accreditation with product certification or with an AI management-system certificate. For example, ISO/IEC 42001 certification concerns an organisation's AI management system [14]; it is not proof that this model classified this sample correctly.
+
+The **W3C Recognized Entities v1.0 Working Draft of 12 November 2026** proposes a way to express ecosystem recognition for specified actions. It is explicitly experimental and not fit for production deployment [5]. It is useful here as a conceptual model, not a production dependency. A pilot can use established registers and trust policies while separately experimenting with the draft. Recognition is scoped and revocable; it is not a universal quality score.
+
+<h2 id="design">9. Assemble and verify the evidence graph</h2>
+
+A result credential should carry the result's essential meaning and link to the evidence supporting it. “Part of the credential” need not mean copying every document into one payload. Use typed, versioned references with digests and access conditions for larger or sensitive artefacts. Hashes establish correspondence with retained bytes; they do not guarantee future availability or establish that a source's assertion is true.
+
+The revised system diagram brings the operational workflow together with three distinct supporting branches: organisational authority, calibration and materials, and validation and assurance. Generic roles replace the first edition’s hypothetical named certificate issuers. The evidence graph then shows how to follow each claim to a scoped source.
+
+{% assign fig = page.figure_objects | where: "id", "figure-2-system-view" | first %}
+{% include research-figure.html figure=fig number=8 %}
+
+{% assign fig = page.figure_objects | where: "id", "figure-3-evidence-graph" | first %}
+{% include research-figure.html figure=fig number=9 %}
+
+A useful result envelope identifies: the result and units; sample or object; actual run; method and decision rule; device and set-up; DCC and relevant calibration conditions; consumed material lots and certificate references; reference-library release; AI Service Passport and validation profile; accountable issuer and task mandate; timestamps, status and evidence-access policy. For W3C credentials, use the Verifiable Credentials Data Model 2.0 with an appropriate securing mechanism [9]. Mapping a DCC or other domain record into the graph requires an explicit profile; a wrapper must preserve the original issuer and semantics.
+
+The receiver then follows an ordered procedure:
+
+1. **Verify the record:** validate its schema, cryptographic proof and intended recipient or presentation binding where required.
+2. **Check attribution and authority:** resolve trusted keys, organisational identity, delegated mandate and recognition for the claimed action.
+3. **Resolve evidence:** verify referenced digests, versions, subject identifiers, validity and status at the relevant times.
+4. **Check applicability:** confirm calibration scope, material condition, reference suitability and validation coverage for this run and sample.
+5. **Apply the decision rule:** evaluate uncertainty, thresholds, required review and missing evidence under the receiver's policy.
+
+Return **accepted, rejected or indeterminate**, with reasons and an audit record. Missing or stale evidence must not silently become acceptance. Offline verification requires retained evidence, trusted keys and authenticated status information for an explicit evaluation time; it cannot discover a later revocation without an update. Not every chain ends at a public register: private reference libraries and contractual trust anchors may be appropriate if the receiver explicitly accepts their scope and governance.
+
+For the underlying architecture, read [Proofs over Statements]({{ '/proofs-over-statements-evidence-graphs.html' | relative_url }}) for evidence graphs, [Multi-Trust Architectures]({{ '/beyond-zero-trust-m-trust-authorised-agentic-actors.html' | relative_url }}) for cross-organisational authority, and [European Business Wallets for Zero Trust AI Agents]({{ '/ebw-zero-trust-ai-agents.html' | relative_url }}) for legal-person mandates. [Evidence Graphs for Industrial AI]({{ '/evidence-graphs-industrial-ai-data-plane.html' | relative_url }}) connects this pattern to the data plane. These are related Spherity research proposals, not independent validation of this case.
+
+<h2 id="forensic-lab">10. Apply the pattern to forensic analysis</h2>
+
+In a criminal investigation, distinguish the laboratory's official identity, its authority to handle the exhibit, its competence for the method, the vendor's software claims and the examiner's interpretation. Public-body identity may come from the relevant official authority rather than a company register. The custody chain records collection, seals, transfers, subsampling, preparation and access. Consumable and control records help investigate contamination; they do not make contamination impossible.
+
+{% assign fig = page.figure_objects | where: "id", "figure-5-forensic-laboratory-variant" | first %}
+{% include research-figure.html figure=fig number=10 %}
+
+The revised forensic diagram includes material lots, measurement assurance, method validation and reference-access evidence alongside the authority chain. Record uncertainty or evidential strength in the terms appropriate to the method. A DNA database search, a fingerprint comparison and a biological-source comparison need distinct profiles. Report the propositions and limitations appropriate to the discipline; a candidate match is not a conclusion about guilt. NIST's scientific review of DNA-mixture interpretation illustrates why interpretation needs its own evidential basis [29].
+
+Re-analysis requires retained samples where feasible, raw data, software and reference versions, runtime information and lawful access. The credential can make the audit trail easier to follow; it cannot establish legal admissibility, cure an invalid method or replace expert scrutiny. Sensitive evidence should be disclosed only to authorised recipients, with minimal public metadata.
+
+<h2 id="how-to-start">11. Build a small, testable pilot</h2>
+
+Start with one method, one result type and one receiver. Choose, for example, a marker-authenticity test or a cleaning measurement certificate; do not claim general laboratory competence from that pilot.
+
+1. Define the intended use, sample population, result semantics and acceptance policy with the receiver and laboratory quality lead.
+2. Map the existing evidence and its owners: LIMS records, calibration provider, material producer, reference-library operator, accreditation register and software supplier.
+3. Issue a minimal signed result that pins sample, raw data, method and actual configuration. Keep the existing controlled laboratory records as sources.
+4. Add the Service Passport, validation profile, wallet identity and bounded agent mandate. Record who assessed each claim and where independent assurance is required.
+5. Link calibration, material and reference evidence. Define retrieval, retention, privacy and offline-status policies before automating acceptance.
+6. Exercise failure paths, compare with qualified human review, and publish the limits of the evaluation before expanding scope.
+
+<h3 id="validation-plan">Validation and evidence gaps</h3>
+
+The following are **expected decisions, not observed results**. They define tests for the proposed pilot.
+
+<div class="table-wrap" markdown="1" role="region" aria-label="Pilot validation conditions and expected decisions" tabindex="0">
+
+| Test condition | Expected response |
+| --- | --- |
+| Valid signature; sample identifier differs from the acquisition record | Reject the evidence binding or require investigation |
+| Authentic DCC; instrument range or conditions do not cover this use | Reject applicability or return indeterminate |
+| Genuine consumable; expired, incorrectly stored or unsupported lot | Block release under the method's material policy |
+| Valid agent identity; mandate expired or task outside its scope | Reject authorisation |
+| Valid assessment; model or reference release changed | Require the applicable change assessment or revalidation |
+| Accredited laboratory; requested method outside the recorded scope | Do not present that result as covered by the accreditation |
+| Valid signatures; scientifically incorrect result | Cryptographic checks can pass; scientific validation must fail |
+| Missing status evidence or unavailable confidential reference | Return indeterminate or request authorised evidence access |
+
+</div>
+
+Measure evidence completeness, verification latency, status handling and reviewer effort against the existing workflow. Evaluate scientific sensitivity, false positives and false negatives separately on appropriately sampled data. Report cohort sizes, intervals and exclusions. Claims about less duplicate testing, improved trust or faster release remain hypotheses until measured with receivers who accept the evidence.
+
+<h2 id="spherity-products">12. How Spherity can help</h2>
+
+Spherity’s products connect **product evidence, organisational authority and accountable AI services**. In this case, the opportunity is to connect existing laboratory records to portable evidence and receiver checks. The chart maps product and capability roles onto the proposed workflow; it does not claim that the complete laboratory integration has already been deployed.
+
+{% assign fig = page.figure_objects | where: "id", "figure-12-spherity-products" | first %}
+{% include research-figure.html figure=fig number=11 %}
+
+<div class="table-wrap" markdown="1" role="region" aria-label="Spherity products and their role in this case" tabindex="0">
+
+| Product / capability | How it helps this case |
+| --- | --- |
+| **DPP / VERA** | Link product and lot identity to test results and supporting lifecycle evidence. A DPP is relevant to the product-facing applications; it is not required for every laboratory or forensic result. |
+| **EBW / EIDA** | Present organisational identity and source credentials; support delegated authority and controlled evidence exchange. |
+| **AI Service Passport (AISP)** | Link service and model versions, configuration, intended-use profiles and TEVV evidence. The laboratory-specific profile proposed here needs implementation and validation. |
+| **Agent Identity** | Bind the acting agent and its keys to an accountable organisation and a bounded mandate. |
+| **Trusted AI** | Support evidence and status checks, access policy, audit trails and referral for review. Scientific acceptance criteria remain method-specific. |
+
+</div>
+
+The public [VERA product description](https://www.spherity.com/digital-product-passport), [EIDA business-wallet description](https://www.spherity.com/european-business-wallet) and [Agentic Trust offering](https://www.spherity.com/agentic-trust) provide the product context. These are complementary capabilities, not five independent certificates of scientific correctness. Integration with the laboratory information management system, device records, calibration providers and reference libraries must establish the bindings described in this study.
+
+**All Spherity products are based on open standards. Spherity is active in W3C**, including the [Verifiable Credentials Working Group](https://www.w3.org/groups/wg/vc/participants/) and contributions to [DPP / Business Wallet use cases and vocabulary work](https://w3c.github.io/vc-dpp-bw/ucr/). Open standards support portability and interoperability; they do not mean that every proposed profile is a final standard, that the software is open source, or that W3C endorses a product. In particular, AISP is not presented here as a completed W3C certification standard.
+
+For a pilot, agree one method and result type, connect the evidence owners, define the credential and validation profiles, then test successful, rejected and indeterminate outcomes with the receiver. Spherity can support the identity and evidence integration; laboratories, CABs and other competent assessors retain responsibility for their scientific and conformity-assessment claims.
+
+<h2 id="vehicle-data">13. Transfer case: Automotive Driving Labels</h2>
+
+The **Automotive Driving Label** case is deliberately placed after the laboratory examples. It shows which concepts transfer and which must change. A vehicle-data pipeline can label a driving event, annotate a scene or classify a trajectory. That label is an analytical output with provenance; it is not automatically a certificate that the vehicle is safe or that a driver behaved unlawfully. Earlier work on data provenance in vehicle data chains provides the background [6].
+
+{% assign fig = page.figure_objects | where: "id", "figure-4-vehicle-data-variant" | first %}
+{% include research-figure.html figure=fig number=12 %}
+
+The laboratory's sample becomes a bounded sensor-data segment; device set-up becomes sensor configuration and time synchronisation; reference material becomes an appropriate calibration or reference source where the measurement requires one. The analysis profile becomes the label taxonomy, operational conditions, ground-truth procedure, dataset release and evaluated software version. Do not relabel a training dataset as a certified reference material or assume that every automotive label needs a DCC.
+
+Bind the label to raw-data hashes, sensor and transformation provenance, model version, annotator or agent mandate and quality-review evidence. Record disagreements and uncertainty rather than hiding them behind one score. The receiver can then decide whether the label is suitable for a particular training, validation or engineering purpose. The reusable lesson is the evidence structure, not a universal cross-domain assurance certificate.
+
+<h2 id="outlook">14. Outlook: portable evidence with explicit limits</h2>
+
+The opportunity is to make laboratory evidence reusable across organisational boundaries while retaining its scientific meaning. A product passport, quality workflow or data space could consume a scoped result and follow its supporting evidence, instead of repeatedly requesting disconnected documents. The [DPP5.0 study]({{ '/eu-dpp-registry-w3c-dpp5.html' | relative_url }}) explores registers, semantics and policy as parts of that wider infrastructure. A register can help discover evidence and its meaning; registration alone does not validate a test result.
+
+Spherity's proposed role in this pattern is the identity, delegation and evidence layer: connect business wallets, agents, recognised issuers and receiver policies. Laboratories, CABs, reference-material producers and competent authorities retain their respective responsibilities. Useful next work is a narrow interoperability pilot with real evidence owners, clearly defined schemas and independent evaluation. Success would mean that a receiver can explain **which result was produced, from what evidence, by whose authority, within which validated limits — and why it was accepted or refused**.
 
 <h2 id="references">References</h2>
 
-1. Stöcker, C., Rüther, M., Jürgens, G. (2020). *Collection of relevant milk quality data "from cow to dairy": Introduction to micro-certificates and the digital twin of milk.* Spherity whitepaper, version 073.
-2. Fritz, D., Stöcker, C., Suichies, B. *Transforming "Release to Market Process" in regulated industries with decentralized micro-certificates.* Primer, version 02.
-3. Stöcker, C. (2026). *Proofs over statements in verifiable evidence graphs for the European Business Wallet*, version 1.3. Spherity Research. <https://spherity.github.io/spherity-research/proofs-over-statements-evidence-graphs.html>
-4. Stöcker, C. (2026). *Beyond single-enterprise ZTA: multi-trust architectures for authorised agentic actors in open, cross-domain ecosystems.* Spherity Research. <https://spherity.github.io/spherity-research/beyond-zero-trust-m-trust-authorised-agentic-actors.html>
-5. W3C Verifiable Credentials Working Group. *Recognized Entities v1.0*, Working Draft, with the Recognized Entities Threat Model. <https://www.w3.org/TR/vc-recognized-entities-1.0/>
-6. Wilms, D., Stoecker, C., Caballero, J. (2021). *Data provenance in vehicle data chains.* IEEE 93rd Vehicular Technology Conference (VTC2021-Spring). <https://doi.org/10.1109/VTC2021-Spring51267.2021.9448697>. Also at [ResearchGate](https://www.researchgate.net/publication/350967194_Data_Provenance_in_Vehicle_Data_Chains).
-7. QI-Digital (BAM, PTB, DAkkS, DIN, DKE). *Qualitätsinfrastruktur Digital.* <https://www.qi-digital.de/> and the [BAM network page on QI-Digital](https://netzwerke.bam.de/Netzwerke/Navigation/DE/Netzwerke/QI-Digital/qi-digital.html).
-8. PTB. *Digital Calibration Certificate (DCC)* and *Digital Certificate of Conformity (D-CoC)* within QI-Digital. [PTB project group on the digitalisation of the quality infrastructure](https://www.ptb.de/cms/ptb/fachabteilungen/abt9/fb-94/qi-digital.html).
-9. W3C. *Verifiable Credentials Data Model v2.0.* <https://www.w3.org/TR/vc-data-model-2.0/>
-10. Directive (EU) 2025/25 of 19 December 2024 as regards the further expansion and upgrading of the use of digital tools and processes in company law (EU Company Certificate). <https://eur-lex.europa.eu/eli/dir/2025/25/oj>
-11. Spherity Research, open-access library. <https://spherity.github.io/spherity-research/>
+1. Stöcker, C., Rüther, M., Jürgens, G. (2020). *Collection of relevant milk quality data “from cow to dairy”*. Spherity whitepaper, version 073. Historical background, not validation of this proposed system.
+2. Fritz, D., Stöcker, C., Suichies, B. *Transforming “Release to Market Process” in regulated industries with decentralized micro-certificates*. Primer, version 02. Historical background.
+3. Spherity Research. [Proofs over Statements]({{ '/proofs-over-statements-evidence-graphs.html' | relative_url }}).
+4. Spherity Research. [Multi-Trust Architectures for Authorised Agentic Actors]({{ '/beyond-zero-trust-m-trust-authorised-agentic-actors.html' | relative_url }}).
+5. W3C. [Recognized Entities v1.0, Working Draft, 12 November 2026](https://www.w3.org/TR/2026/WD-vc-recognized-entities-1.0-20261112/). Experimental; not fit for production deployment.
+6. Wilms, D., Stoecker, C., Caballero, J. (2021). [Data Provenance in Vehicle Data Chains](https://doi.org/10.1109/VTC2021-Spring51267.2021.9448697). IEEE VTC2021-Spring.
+7. BAM. [QI-Digital](https://netzwerke.bam.de/Netzwerke/Navigation/DE/Netzwerke/QI-Digital/qi-digital.html). Bundesanstalt für Materialforschung und -prüfung; initiative with PTB, DAkkS, DIN and DKE.
+8. PTB. [Digitalisation of the quality infrastructure](https://www.ptb.de/cms/ptb/fachabteilungen/abt9/fb-94/qi-digital.html).
+9. W3C. [Verifiable Credentials Data Model v2.0](https://www.w3.org/TR/vc-data-model-2.0/), Recommendation, 15 May 2025.
+10. European Union. [Directive (EU) 2025/25](https://eur-lex.europa.eu/eli/dir/2025/25/oj), including the EU Company Certificate framework.
+11. [Spherity Research library]({{ '/' | relative_url }}); related studies are linked in the text and further-reading section.
+12. DAkkS. [Basics of accreditation](https://www.dakks.de/en/step-1-basics.html).
+13. Tailorlux. [Material marking and verification products](https://www.tailorlux.com/). Product context only; the credential architecture is a separate proposal.
+14. TÜV SÜD. [ISO/IEC 42001 AI management-system certification](https://www.tuvsud.com/en/services/management-system-certification/iso-iec-42001).
+15. Hackel, S., PTB. [The DCC and the DTC — One Norm Family, One Format](https://www.qi-digital.de/fileadmin/user_upload/website/veranstaltungen/QI-Digital_Forum2023/Praxiswerkst%C3%A4tten_BAM/The_DCC_and_the_DTC_-_One_Norm_family___One_Format.pdf), QI-Digital-hosted presentation; DCR/DCA/DCC/DTC terminology.
+16. PTB. [Digital Calibration Certificate schema, v3.3.0](https://www.ptb.de/dcc/v3.3.0/autogenerated-docs/dcc_xsd.html).
+17. European Commission JRC. [How to read our certificates](https://crm.jrc.ec.europa.eu/en/help-and-support/how-read-our-certificates); [ERM-BD284 milk-powder reference material](https://crm.jrc.ec.europa.eu/en/product/23743).
+18. R-Biopharm. [AFLAPREP M WIDE immunoaffinity columns](https://food.r-biopharm.com/products/aflaprep-m-wide/). Illustrative consumable, not an endorsement.
+19. BAM. [Fluorescence Calibration Kit certificate](https://webshop.bam.de/media/wysiwyg/Kategorien/Referenzmaterialien/Optische-Eigenschaften/CalibrationKit/Zertifikate/BAM-FCalKit_webpage_certificate.pdf).
+20. Promega. [PowerPlex Fusion 6C System technical manual](https://www.promega.com/-/media/files/resources/protocols/technical-manuals/tmd/powerplex-fusion-6c-system-protocol.pdf). Illustrative kit components, not an endorsement.
+21. ISO. [ISO 18385:2016](https://www.iso.org/standard/62341.html), minimising human DNA contamination in products used to collect, store and analyse biological material for forensic purposes.
+22. UK Forensic Science Regulator. [DNA contamination controls: laboratory](https://www.gov.uk/government/publications/dna-contamination-controls-laboratory/dna-contamination-controls-laboratory-accessible).
+23. Hygiena. [UltraSnap surface ATP sampling device](https://www.hygiena.com/hygiene-monitoring/atp-cleaning-verification/surface-atp/ultrasnap); [positive-control kit](https://store.hygiena.com/atp-cleaning-verification/positive-control-kit-asy0218). Illustrative products, not endorsements.
+24. A2A Project. [Protocol specification and Agent Card](https://a2a-protocol.org/latest/specification/).
+25. NIST. [AI Risk Management Framework: core functions, including MEASURE](https://airc.nist.gov/airmf-resources/airmf/5-sec-core/).
+26. JCGM / ISO. [Guide to the Expression of Uncertainty in Measurement, section 6](https://www.iso.org/sites/JCGM/GUM/JCGM100/C045315e-html/C045315e_FILES/MAIN_C045315e/06_e.html).
+27. NIST. [Technical Note 1297: expanded uncertainty](https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-6-expanded-uncertainty).
+28. NIST/SEMATECH. [Confidence intervals for a binomial proportion, including Wilson intervals](https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm).
+29. NIST. [DNA Mixture Interpretation: A Scientific Foundation Review, NIST IR 8503](https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8503.pdf).
+30. European Commission. [European Business Wallets](https://digital-strategy.ec.europa.eu/en/policies/business-wallets). Proposal status checked 14 November 2026.
 
-12. DAkkS. *Basics of accreditation: competence and applicable standards.* <https://www.dakks.de/en/step-1-basics.html>
-13. Tailorlux. *Tailor-Scan material verification.* Public product description; the credential architecture in this case is a separate proposal. <https://www.tailorlux.com/>
-14. TÜV SÜD. *ISO/IEC 42001 certification of AI management systems.* <https://www.tuvsud.com/en/services/management-system-certification/iso-iec-42001>
+31. Spherity. [VERA Digital Product Passport](https://www.spherity.com/digital-product-passport), [EIDA European Business Wallet](https://www.spherity.com/european-business-wallet) and [Agentic Trust](https://www.spherity.com/agentic-trust). Product context; the laboratory integration is conceptual.
+32. W3C. [Verifiable Credentials Working Group participants](https://www.w3.org/groups/wg/vc/participants/); [DPP / Business Wallet use cases and requirements](https://w3c.github.io/vc-dpp-bw/ucr/), a work-in-progress contribution, not a W3C endorsement.

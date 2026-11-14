@@ -17,3 +17,4 @@ docs/downloads/** -text whitespace=cr-at-eol
 docs/assets/proofs-over-statements/** -text whitespace=cr-at-eol
 docs/assets/proofs-over-statements-file-catalog.json -text
 research-assets/proofs-over-statements/** -text
+docs/Spherity-Verifiable-AI-Lab-Analysis-Carousel-v12.pdf binary

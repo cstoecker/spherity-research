@@ -2,3 +2,6 @@
 @media(max-width:760px){.case-nav,.case-hub{padding:20px}.case-nav{align-items:flex-start;flex-direction:column;gap:18px}.case-nav nav{gap:18px;font-size:14px}.case-hero{padding:40px 0}.case-hero h1 br{display:none}.case-intro{font-size:18px}.case-card{grid-template-columns:1fr}.case-card-image{padding:18px}.case-card-copy{padding:24px}.case-section-head{align-items:flex-start;flex-direction:column;gap:0;margin-bottom:16px}.case-section-head h2{margin-bottom:0}.case-card h3{font-size:26px}.case-evidence{padding:24px}.case-at-glance dl{grid-template-columns:1fr;gap:5px}.case-at-glance dd{margin-bottom:12px}}
 
 .case-study-page .srespec-main a{overflow-wrap:anywhere}
+.case-study-page .table-wrap{overflow-x:auto;margin:24px 0;padding-bottom:6px}
+.case-study-page .table-wrap table{min-width:660px}
+.case-study-page .table-wrap:focus-visible{outline:3px solid #167d8d;outline-offset:4px}

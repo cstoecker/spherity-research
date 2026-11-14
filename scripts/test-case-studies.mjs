@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
 import {readFileSync, existsSync} from 'node:fs';
 import {parse} from 'yaml';
 
@@ -47,11 +48,28 @@ test('case article has technical article schema, parent breadcrumb and explicit 
   assert.match(article, /no deployment or measured outcomes/i);
   assert.match(article, /expected decisions, not observed results/i);
   assert.match(article, /scientific correctness/i);
-  assert.equal(page.pdf_url, undefined);
+  assert.equal(page.pdf_url, '/Spherity-Verifiable-AI-Lab-Analysis-Carousel-v12.pdf');
 });
 
-test('all five case figures and their actual download formats are embedded and in the full sitemap', () => {
-  assert.equal(page.figure_objects.length, 5);
+test('companion carousel has its own cover, download metadata and sitemap entry', () => {
+  assert.equal(page.associated_media[0].url, page.pdf_url);
+  assert.notEqual(page.cover_image, page.image);
+  assert.ok(existsSync('_site' + page.pdf_url));
+  assert.ok(existsSync('_site' + page.cover_image));
+  assert.ok(article.includes('Download the 19-slide carousel PDF (version 12)'));
+  assert.ok(sitemap.includes(page.pdf_url));
+  assert.ok(existsSync('_site/share/Spherity-Verifiable-AI-Lab-Analysis-Carousel-v12.html'));
+  const audit = JSON.parse(read('scripts/data/case-study-pdf-metadata-provenance.json'));
+  assert.equal(audit.page_count, 19);
+  assert.equal(audit.all_page_pixels_identical, true);
+  assert.equal(audit.source_prefix_preserved, true);
+  const pdf = readFileSync('docs' + page.pdf_url);
+  assert.equal(createHash('sha256').update(pdf).digest('hex'), audit.published_sha256);
+  assert.ok(pdf.includes(Buffer.from('x:xmpmeta')));
+});
+
+test('all twelve case figures and their actual download formats are embedded and in the full sitemap', () => {
+  assert.equal(page.figure_objects.length, 12);
   for (const figure of page.figure_objects) {
     assert.ok(article.includes(figure.id + '-figure'));
     assert.ok(article.includes(figure.content_url));
@@ -65,6 +83,27 @@ test('all five case figures and their actual download formats are embedded and i
     assert.match(svg, /data:font/);
     assert.ok(svg.includes(page.canonical_url));
     assert.match(svg, /creativecommons.org\/licenses\/by\/4.0/);
+  }
+});
+
+test('educational case separates evidence roles and ends applications with automotive before outlook', () => {
+  const source = read('docs/verifiable-ai-lab-results-evidence-graph.md').split(/\r?\n---\r?\n/).slice(1).join('\n');
+  const headings = [...source.matchAll(/<h2 id="([^"]+)"/g)].map(m => m[1]);
+  assert.equal(headings[headings.indexOf('vehicle-data') + 1], 'outlook');
+  for (const term of ['Digital Calibration Request', 'Digital Calibration Certificate', 'verifiable AI Service Passport', 'Verifiable Agent Card', 'conformity assessment', 'consumable', '93.0–99.4%', '96.9–98.7%', '95.45%', 'not fit for production deployment']) assert.ok(source.includes(term), term);
+  assert.ok(headings.indexOf('material-assurance') < headings.indexOf('service-passport'));
+  assert.ok(headings.indexOf('wallet-recognition') < headings.indexOf('design'));
+  assert.equal(new Set(page.figure_objects.map(f => f.id)).size, 12);
+  assert.ok(headings.indexOf('spherity-products') < headings.indexOf('vehicle-data'));
+  assert.match(source, /All Spherity products are based on open standards/);
+  for (const term of ['DPP / VERA', 'EBW / EIDA', 'AI Service Passport (AISP)', 'Agent Identity', 'Trusted AI']) assert.ok(source.includes(term));
+});
+
+test('revised first-edition figures remove unqualified scores and conflated assurance', () => {
+  for (const f of page.figure_objects.slice(0, 5)) {
+    const svg = read('docs' + f.content_url);
+    assert.ok(!/confidence 0\.97|conf 0\.91|share 98\.6|type conformity \+ calibration|today: unknown|any VC verifier|TÜV SÜD AI Certificate/.test(svg));
+    assert.match(svg, /scope|Scope|profile|Profile/);
   }
 });
 

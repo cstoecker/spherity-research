@@ -1,0 +1,207 @@
+{
+  "file": "docs/Spherity-Verifiable-AI-Lab-Analysis-Carousel-v12.pdf",
+  "original_bytes": 1056627,
+  "original_sha256": "f6bf3a81264c6d5c44b1acd6d614869962f4f6ff14c81114feb76f5e71026faf",
+  "before_info": {
+    "format": "PDF 1.4",
+    "title": "Verifiable AI Lab Analysis | Measured. Signed. Trusted?",
+    "author": "Dr. Carsten Stöcker | Spherity GmbH",
+    "subject": "Verifiable test results: material and consumable identity, certificate scope, agent inputs, provenance, AI Service Passports, TEVV and measurement uncertainty. Illustrative food, authenticity, cleaning and forensic investigation applications.",
+    "keywords": "Spherity, verifiable test results, consumable identity, reagent authenticity, certified reference materials, lot traceability, certificate scope, BAM, AI Service Passport, provenance, TEVV, confidence interval, uncertainty, food testing, textile authenticity, pharma authenticity, cleaning measurement certificate, forensic investigation, chain of custody, evidence graph, CC BY 4.0",
+    "creator": "anonymous",
+    "producer": "ReportLab PDF Library - (opensource)",
+    "creationDate": "D:20261114161628+01'00'",
+    "modDate": "D:20261114161628+01'00'",
+    "trapped": "",
+    "encryption": null
+  },
+  "required_updates": [
+    "Info:title",
+    "Info:author",
+    "Info:subject",
+    "Info:keywords",
+    "Info:Copyright",
+    "Info:License",
+    "Info:RightsSource",
+    "Info:EditionDate",
+    "XMP:absent"
+  ],
+  "status": "updated",
+  "published_bytes": 1060813,
+  "published_sha256": "8110d1a9f1cc48c2d32382d6ab1ab380adfdb8b95181a75f5d4b3a3f04342cd8",
+  "source_prefix_preserved": true,
+  "render_dpi": 100,
+  "all_page_pixels_identical": true,
+  "content_streams_identical": true,
+  "geometry_links_bookmarks_identical": true,
+  "page_count": 19,
+  "bookmark_count": 0,
+  "after_info": {
+    "format": "PDF 1.4",
+    "title": "Verifiable AI Lab Analysis: Measured. Signed. Trusted?",
+    "author": "Dr. Carsten Stöcker",
+    "subject": "19-slide conceptual case-study carousel: calibration, materials, AI service validation, evidence graphs and Spherity products.",
+    "keywords": "verifiable AI lab analysis; AI Service Passport; TEVV; calibration; certified reference materials; evidence graph; business wallet; Spherity",
+    "creator": "anonymous",
+    "producer": "ReportLab PDF Library - (opensource)",
+    "creationDate": "D:20261114161628+01'00'",
+    "modDate": "D:20261114154406+00'00'",
+    "trapped": "",
+    "encryption": null
+  },
+  "xmp_present": true,
+  "page_pixel_checks": [
+    {
+      "page": 1,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "66223081f52d7ae6959a6083c6047711205c1dc7fec8d68e39d374a05f123037"
+    },
+    {
+      "page": 2,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "e8f979be1f830619afb6855e6b21019b951807646ee381f190e7b241c6340d1f"
+    },
+    {
+      "page": 3,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "0390b8f01ca11e99339658c5455f3ae340ac32b7b54baa1b517201fe0252abf0"
+    },
+    {
+      "page": 4,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "ed496486d9d88d7043bd533798f983f2a47079f81f87633b516b3fafbba1f339"
+    },
+    {
+      "page": 5,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "a456868cb1d55e483c40c87880c09fda6123d8924383d6d8d5d8151c628c2919"
+    },
+    {
+      "page": 6,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "d7ef25bb3c96e9f65e1d6f258bd921c0f34062ad6b21116937eb6f8f7225555c"
+    },
+    {
+      "page": 7,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "eccd539e61bcda3d158106e1e6a297aaabe38757b640093e77b46e3ffb9aeef1"
+    },
+    {
+      "page": 8,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "728dd5c091135aeefbd3ee1702d0c2822a1bb953b93967087f38b43c1281b06c"
+    },
+    {
+      "page": 9,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "3f048297eb09487f6e9cd5b6d08cac506f8b15e8f33a2c24c7b3b799b1534370"
+    },
+    {
+      "page": 10,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "35ab96ccac23d38fb626e08e718e6b23441d464b6f631838b2f2aeb8c5644673"
+    },
+    {
+      "page": 11,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "a4454714842f9b9fed26533560ac95714f55c533a2f1dcd46600f5881a2f387a"
+    },
+    {
+      "page": 12,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "b9cc9d236f5559eff4589ec26e7967bd96653098cf84025ccba76162a0da8ba0"
+    },
+    {
+      "page": 13,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "4a3d8454b006a522912438faad9139b422b6bda64520b8756f2387df8e89a74a"
+    },
+    {
+      "page": 14,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "0c530b9b61ae9447cf7ed7cf07c2d5ec7fbdf980a98ad2322706e22c7ec65135"
+    },
+    {
+      "page": 15,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "02974510d7dcce03a5ca04048f555b82e1318d32392f59acffe1301d031a6690"
+    },
+    {
+      "page": 16,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "241389f432ee40f4922b6660522983b41d56d9fcc700deec9588fc1e7d49d2df"
+    },
+    {
+      "page": 17,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "02445cbff3b1fb9fc25359abbfabccf523fff8741a557c3e3e5fb43d8c70797d"
+    },
+    {
+      "page": 18,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "2b46010e06fd9e984c855bc9bfb26c29d051f68cee539253ccf35959bb9c5539"
+    },
+    {
+      "page": 19,
+      "size": [
+        1500,
+        1875
+      ],
+      "sha256": "48b1a2a8b3b3a6167e5fde5a1fa608af0051a2c80201c6043723f78c6e185907"
+    }
+  ]
+}

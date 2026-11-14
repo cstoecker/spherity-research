@@ -1,11 +1,14 @@
 - id: verifiable-ai-lab-results
-  title: "Verifiable AI Lab Results: From Scan to Certificate"
+  title: "Verifiable AI Lab Analysis: From Measurement to Evidence"
   url: /case-studies/verifiable-ai-lab-results.html
   status: Conceptual case study
-  sector: Laboratories and material verification
-  summary: "How can a receiver check the model, input, device and authority behind an AI verdict? A proposed evidence graph connects the result to the credentials that support it."
-  learning: "Separate proof of provenance and authority from proof that a scientific conclusion is correct."
+  sector: AI-assisted laboratory analysis
+  summary: "From food and authenticity tests to cleaning and forensic findings: connect calibration, materials, agent validation and organisational authority through a verifiable evidence graph."
+  learning: Distinguish a result, its supporting scientific evidence, issuer authority and the receiver’s decision.
   image: /assets/preview-verifiable-ai-lab-results.webp
-  image_alt: "Verifiable AI Lab Results — from scan to certificate"
+  image_alt: Verifiable AI Lab Analysis — from measurement to evidence, with calibration, validation and business wallets.
   date: "2026-11-13"
-  topics: [Verifiable credentials, Trusted AI, Evidence graphs]
+  topics:
+    - Laboratory evidence
+    - Business wallets
+    - Agent validation
