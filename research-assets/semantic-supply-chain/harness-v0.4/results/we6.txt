@@ -26,8 +26,8 @@ v0.3 stack, all values equal, maxDeepIterations 1:
 
 Unbounded (maxWorkFactor Infinity), all values equal, single runs on this machine:
   50 values: 51 ms
-  100 values: 172 ms
-  200 values: 953 ms
+  100 values: 158 ms
+  200 values: 878 ms
 
 Under the v0.4 admission grammar the list term is excluded (container @list): certified credentials never carry RDF lists,
 so F5 cannot arise in admitted input. Applications that need ordered values model them without @list (for example indexed items).

@@ -1,6 +1,6 @@
 
 WE-5: same legitimate credential, same verifier, different load
 
-time limit = 16 ms (1.5 × idle median); operation bound = maxDeepIterations=1
-idle                                       p50    10.7 ms  max    18.5 ms | time-limit policy: 20/21 accepted | operation-bound policy: 21/21 accepted
-loaded (8 busy threads on 4 CPUs)          p50    25.5 ms  max    46.7 ms | time-limit policy: 0/21 accepted  | operation-bound policy: 21/21 accepted
+time limit = 15.9 ms (1.5 × idle median); operation bound = maxDeepIterations=1
+idle                                       p50    10.6 ms  max    12.6 ms | time-limit policy: 21/21 accepted | operation-bound policy: 21/21 accepted
+loaded (8 busy threads on 4 CPUs)          p50    21.5 ms  max      44 ms | time-limit policy: 1/21 accepted  | operation-bound policy: 21/21 accepted

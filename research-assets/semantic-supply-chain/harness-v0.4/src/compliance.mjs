@@ -36,6 +36,11 @@ export const policyVersion = (version, limits) => {
 export const POLICY_V1 = policyVersion("1", { Hg: 5, Cd: 20, Pb: 100 });
 export const POLICY_V2 = policyVersion("2", { Hg: 5, Cd: 20, Pb: 40 }); // a policy-only correction, closure unchanged
 
+// Map identity is not part of the evidence format: every key is a text identifier.
+// Otherwise distinct object keys can collapse to identical committed source entries.
+const validStatementKeys = (statements) => statements instanceof Map &&
+  [...statements.keys()].every((id) => typeof id === "string" && id.length > 0 && id.isWellFormed());
+
 // ---- evaluation (deterministic) ----------------------------------------------------------------
 /**
  * π_C: GRANT, DENY or UNKNOWN for one consignment.
@@ -48,6 +53,7 @@ export const POLICY_V2 = policyVersion("2", { Hg: 5, Cd: 20, Pb: 40 }); // a pol
 export function evaluate(policy, ev, ctx) {
   const why = [];
   const out = (outcome, reason) => ({ outcome, reason, considered: why });
+  if (!validStatementKeys(ev.statements)) return out("UNKNOWN", "invalid statement map keys");
   const { parties, accreditation, profile, time, mode = "contract" } = ctx;
   const finite = (v) => typeof v === "number" && Number.isFinite(v);
   if (!finite(time) || !finite(profile.maxCoverageAge) || profile.maxCoverageAge < 0) return out("UNKNOWN", "invalid evaluation time or coverage age");
@@ -116,6 +122,7 @@ const iri = (v) => {
 const obj = (v) => (/^(urn|did|https?):/.test(String(v)) ? iri(v) : lit(v));
 const subj = (id) => (/^(urn|did|https?):/.test(id) ? id : `urn:statement:${id}`);
 export async function canonicalGraph(ev, coverage) {
+  if (!validStatementKeys(ev.statements)) throw new Error("invalid statement map keys");
   const lines = [];
   const add = (s, p, o) => lines.push(`${iri(subj(s))} ${iri(V + p)} ${o} .`);
   const statements = [["declaration", "declaration", ev.declaration], ...[...ev.statements].map(([id, st]) => ["statement", id, st]), ...(coverage ? [["coverage", "completeList", coverage.completeList], ["coverage", "status", coverage.status]] : [])];

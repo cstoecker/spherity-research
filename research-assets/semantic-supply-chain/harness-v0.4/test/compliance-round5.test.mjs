@@ -99,3 +99,18 @@ test('graph commits aliased statement multiplicity and role-key associations', a
  const b={...ev,statements:new Map([['urn:a',other],['urn:b',absence]])};
  assert.notEqual(await canonicalGraph(a,a.coverage),await canonicalGraph(b,b.coverage));
 });
+
+test('statement Map keys must be nonempty well-formed text identifiers', async()=>{
+ const f=await fixture(); const ev=f.withCoverage(f.evB8,'B8');
+ assert.equal(evaluate(POLICY_V1,ev,f.ctx()).outcome,'GRANT');
+ await assert.doesNotReject(canonicalGraph(ev,ev.coverage));
+ const id=f.R.B8.body.id+':absence',absence=ev.statements.get(id);
+ for(const key of [{},[],null,undefined,7,'','\ud800']){
+  const bad={...ev,statements:new Map(ev.statements)};
+  bad.statements.delete(id);bad.statements.set(key,absence);
+  const result=evaluate(POLICY_V1,bad,f.ctx());
+  assert.equal(result.outcome,'UNKNOWN');
+  assert.match(result.reason,/invalid statement map keys/);
+  await assert.rejects(canonicalGraph(bad,bad.coverage),/invalid statement map keys/);
+ }
+});

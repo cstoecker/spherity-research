@@ -16,16 +16,16 @@
       ],
       "default": {
         "completes": false,
-        "ms": 2.015383000000014,
+        "ms": 1.8187859999999887,
         "error": "Maximum deep iterations exceeded (2)."
       },
       "maxWorkFactor2": {
         "completes": true,
-        "ms": 0.5228599999999801
+        "ms": 0.46884299999999257
       },
       "pinnedV03": {
         "completes": true,
-        "ms": 5.340600999999992
+        "ms": 5.382972999999993
       }
     },
     {
@@ -37,16 +37,16 @@
       ],
       "default": {
         "completes": false,
-        "ms": 0.3266869999999926,
+        "ms": 0.3160440000000051,
         "error": "Maximum deep iterations exceeded (2)."
       },
       "maxWorkFactor2": {
         "completes": true,
-        "ms": 0.2200029999999913
+        "ms": 0.2230350000000101
       },
       "pinnedV03": {
         "completes": true,
-        "ms": 0.8631599999999935
+        "ms": 0.8187849999999912
       }
     },
     {
@@ -58,16 +58,16 @@
       ],
       "default": {
         "completes": false,
-        "ms": 0.17493300000001,
+        "ms": 0.17643999999998528,
         "error": "Maximum deep iterations exceeded (2)."
       },
       "maxWorkFactor2": {
         "completes": true,
-        "ms": 0.21863700000000108
+        "ms": 0.20613199999999665
       },
       "pinnedV03": {
         "completes": true,
-        "ms": 0.6686550000000011
+        "ms": 0.708203999999995
       }
     },
     {
@@ -81,16 +81,16 @@
       ],
       "default": {
         "completes": false,
-        "ms": 0.18395300000000248,
+        "ms": 0.19638199999999983,
         "error": "Maximum deep iterations exceeded (2)."
       },
       "maxWorkFactor2": {
         "completes": true,
-        "ms": 0.214098000000007
+        "ms": 0.18396000000001322
       },
       "pinnedV03": {
         "completes": true,
-        "ms": 0.5640929999999855
+        "ms": 1.7698039999999935
       }
     },
     {
@@ -104,16 +104,16 @@
       ],
       "default": {
         "completes": false,
-        "ms": 0.3201170000000104,
+        "ms": 0.3372299999999768,
         "error": "Maximum deep iterations exceeded (4)."
       },
       "maxWorkFactor2": {
         "completes": true,
-        "ms": 0.22373799999999733
+        "ms": 0.21135899999998742
       },
       "pinnedV03": {
         "completes": true,
-        "ms": 0.573598000000004
+        "ms": 0.6675840000000051
       }
     },
     {
@@ -125,15 +125,15 @@
       ],
       "default": {
         "completes": true,
-        "ms": 0.08395499999997469
+        "ms": 0.07124600000000214
       },
       "maxWorkFactor2": {
         "completes": true,
-        "ms": 0.04341999999999757
+        "ms": 0.045681999999999334
       },
       "pinnedV03": {
         "completes": true,
-        "ms": 0.3325590000000034
+        "ms": 0.3041820000000257
       }
     },
     {
@@ -146,15 +146,15 @@
       ],
       "default": {
         "completes": true,
-        "ms": 0.10505399999999554
+        "ms": 0.11366399999999999
       },
       "maxWorkFactor2": {
         "completes": true,
-        "ms": 0.08895099999998024
+        "ms": 0.08549700000000371
       },
       "pinnedV03": {
         "completes": true,
-        "ms": 0.2286799999999971
+        "ms": 0.2233929999999873
       }
     },
     {
@@ -167,15 +167,15 @@
       ],
       "default": {
         "completes": true,
-        "ms": 0.11024699999998688
+        "ms": 0.14534899999998174
       },
       "maxWorkFactor2": {
         "completes": true,
-        "ms": 0.08519799999999123
+        "ms": 0.09266200000001845
       },
       "pinnedV03": {
         "completes": true,
-        "ms": 0.22475699999998255
+        "ms": 0.22711900000001606
       }
     },
     {
@@ -187,15 +187,15 @@
       ],
       "default": {
         "completes": true,
-        "ms": 0.04766499999999496
+        "ms": 0.046229000000010956
       },
       "maxWorkFactor2": {
         "completes": true,
-        "ms": 0.03832700000000955
+        "ms": 0.03768999999999778
       },
       "pinnedV03": {
         "completes": true,
-        "ms": 0.3378010000000131
+        "ms": 0.2729709999999841
       }
     },
     {
@@ -206,15 +206,15 @@
       ],
       "default": {
         "completes": true,
-        "ms": 0.037195999999994456
+        "ms": 0.043137000000001535
       },
       "maxWorkFactor2": {
         "completes": true,
-        "ms": 0.03193799999999669
+        "ms": 0.029818000000005895
       },
       "pinnedV03": {
         "completes": true,
-        "ms": 0.15857800000000566
+        "ms": 0.17905400000000782
       }
     },
     {
@@ -226,16 +226,16 @@
       ],
       "default": {
         "completes": false,
-        "ms": 0.11995699999999943,
+        "ms": 0.11788799999999355,
         "error": "Maximum deep iterations exceeded (2)."
       },
       "maxWorkFactor2": {
         "completes": true,
-        "ms": 0.13195300000000998
+        "ms": 0.11511500000000296
       },
       "pinnedV03": {
         "completes": true,
-        "ms": 0.2665849999999921
+        "ms": 0.2548400000000015
       }
     },
     {
@@ -248,16 +248,16 @@
       ],
       "default": {
         "completes": false,
-        "ms": 0.1973130000000083,
+        "ms": 0.1548800000000199,
         "error": "Maximum deep iterations exceeded (3)."
       },
       "maxWorkFactor2": {
         "completes": true,
-        "ms": 0.18877600000001848
+        "ms": 0.18777799999998024
       },
       "pinnedV03": {
         "completes": false,
-        "ms": 0.28709200000000124,
+        "ms": 0.5519149999999797,
         "error": "Maximum deep iterations (1) exceeded."
       }
     }
@@ -287,11 +287,11 @@
     },
     {
       "n": 100,
-      "ms": 172
+      "ms": 158
     },
     {
       "n": 200,
-      "ms": 953
+      "ms": 878
     }
   ],
   "admission": {

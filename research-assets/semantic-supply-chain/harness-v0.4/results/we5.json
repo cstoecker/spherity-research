@@ -3,18 +3,18 @@
   "cpus": 4,
   "input": "labelled tree, 600 blank nodes with unique literals (legitimate)",
   "quads": 1203,
-  "timeLimitMs": 16,
+  "timeLimitMs": 15.9,
   "operationBound": "maxDeepIterations=1",
   "idle": {
-    "p50": 10.7,
-    "max": 18.5,
-    "timePolicy": "20/21 accepted",
+    "p50": 10.6,
+    "max": 12.6,
+    "timePolicy": "21/21 accepted",
     "operationPolicy": "21/21 accepted"
   },
   "loaded": {
-    "p50": 25.5,
-    "max": 46.7,
-    "timePolicy": "0/21 accepted",
+    "p50": 21.5,
+    "max": 44,
+    "timePolicy": "1/21 accepted",
     "operationPolicy": "21/21 accepted"
   }
 }

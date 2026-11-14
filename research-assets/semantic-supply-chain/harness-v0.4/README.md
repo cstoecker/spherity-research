@@ -68,7 +68,7 @@ v0.4.0 implements the corrections that three independent reviews of the formal m
 
 ```bash
 npm ci          # installs exactly the versions in package-lock.json
-npm test        # 121 tests: W3C vectors, the model checker, every scenario and the review regressions; TPM tests skip without swtpm
+npm test        # 122 tests: W3C vectors, the model checker, every scenario and the review regressions; TPM tests skip without swtpm
 npm run we1
 npm run we2
 npm run we3     # needs swtpm and tpm2-tools (for example apt-get install swtpm swtpm-tools tpm2-tools)
@@ -91,7 +91,7 @@ The proof signs **only the proof configuration** (profile `lfsc-g/0.4`). That co
 Verification at ingestion:
 1. **Stage 0**, no JSON-LD: the raw-text I-JSON check (when given bytes), then admission against a signed certificate (`src/admission.mjs`). The v0.3 lexical pre-scan remains available for comparison only.
 2. **Stage 1**, no JSON-LD: proof value format and length, **the key must belong to the issuer the credential names and be authorised for it**, lexical digest, signature.
-3. **Stage 2**: the dependency bytes the verifier holds now are checked against the declaration; canonicalisation runs with a loader that serves **only** declared dependencies; the result is compared with the commitment. A success returns the **immutable authenticated view** (document and N-Quads). The proof must contain a well-formed `created` timestamp; any supplied `validFrom` and `validUntil` must also be well formed, even without `validAt`. A success with `validityChecked: false` establishes cryptographic and semantic verification only. Callers requiring validity at a decision time must supply a current, validated `validAt` and require `validityChecked: true`; interval comparisons run on every use, including cache hits.
+3. **Stage 2**: the dependency bytes the verifier holds now are checked against the declaration; canonicalisation runs with a loader that serves **only** declared dependencies; the result is compared with the commitment. A success returns the **immutable authenticated view** (document and N-Quads). The proof must contain a well-formed `created` timestamp; any supplied `validFrom` and `validUntil` must also be well formed, even without `validAt`. A success with `validityChecked: false` establishes cryptographic and semantic verification only. Callers requiring validity at a decision time must supply a current, validated `validAt` and require `validityChecked: true`; interval comparisons run on every use, including cache hits. The `created` check is syntactic only: this profile does not compare proof creation with `validAt` or trusted current time.
 
 Graph-native re-verification (`verifyFromQuads`) needs the stored quads, the stored configuration and the authenticated issuer; it re-verifies the **whole committed dataset**. Single facts would need a separate membership scheme.
 
@@ -288,10 +288,10 @@ Attacker documents carry forged proofs. Single environment (4 vCPU cloud contain
 
 | Input | Naive verifier, no limit | Naive, default bound (`maxWorkFactor` 1) | LFSC-G 0.4 rejection |
 |---|---|---|---|
-| complete graph K₈ (1.7 kB) | 1.7 s | aborts, ~5 ms | 0.03–0.23 ms |
-| symmetric binary tree, 255 nodes (11 kB) | 3.7 s | aborts, ~15 ms | 0.03–0.33 ms |
-| symmetric binary tree, 511 nodes (22 kB) | > 20 s | aborts, ~30 ms | 0.06–0.86 ms |
-| labelled tree, 1,500 nodes (benign, 79 kB) | ~71 ms | completes (~75 ms) | rejected by size bound (2.0 ms) or the blank-node rule (0.03 ms) |
+| complete graph K₈ (1.7 kB) | 1.5 s | aborts, ~4 ms | 0.04–0.17 ms |
+| symmetric binary tree, 255 nodes (11 kB) | 3.3 s | aborts, ~15 ms | 0.05–0.35 ms |
+| symmetric binary tree, 511 nodes (22 kB) | > 20 s | aborts, ~27 ms | 0.04–0.81 ms |
+| labelled tree, 1,500 nodes (benign, 79 kB) | ~62 ms | completes (~80 ms) | rejected by size bound (2.0 ms) or the blank-node rule (0.05 ms) |
 
 The three LFSC figures are: the document as sent (stage 0, context not allowlisted), the same graph with allowlisted contexts (stage 0, blank nodes), and the same graph without blank nodes and with a forged LFSC 0.4 proof (stage 1, the key is not authorised for the named issuer).
 
@@ -299,11 +299,11 @@ Legitimate market-role credential, p50 over 200 runs:
 
 | Verification | v0.4.0 | v0.3.0 |
 |---|---|---|
-| `ecdsa-rdfc-2019` | 2.03 ms | 1.94 ms |
-| `ecdsa-jcs-2019` | 0.21 ms | 0.20 ms |
-| **LFSC-G, first verification** | **1.42 ms** | 1.09 ms |
-| **LFSC-G, graph-native from stored quads** | **0.25 ms** | 0.18 ms |
-| LFSC-G, cached | 0.41 ms | 0.25 ms |
+| `ecdsa-rdfc-2019` | 1.99 ms | 1.94 ms |
+| `ecdsa-jcs-2019` | 0.22 ms | 0.20 ms |
+| **LFSC-G, first verification** | **1.33 ms** | 1.09 ms |
+| **LFSC-G, graph-native from stored quads** | **0.26 ms** | 0.18 ms |
+| LFSC-G, cached | 0.37 ms | 0.25 ms |
 
 The corrections cost time on the honest path. The dependency digests are now checked on every verification, **before** any cache lookup, which is what closes X13. The issuer binding and the pinned loader add a little more. All figures are single-environment.
 
@@ -313,10 +313,10 @@ A **legitimate** credential (600 blank nodes with unique literals) is canonicali
 
 | Host | p50 | Time-limit policy | Operation-bound policy |
 |---|---|---|---|
-| idle | 10.7 ms | **20/21 accepted** | 21/21 accepted |
-| loaded | 26 ms | **0/21 accepted** | 21/21 accepted |
+| idle | 10.6 ms | **21/21 accepted** | 21/21 accepted |
+| loaded | 21.5 ms | **1/21 accepted** | 21/21 accepted |
 
-In this run the time limit rejected the legitimate credential once even on the idle host. In an earlier run of the same code it accepted 7/21 under load. The share moves with the load; the operation bound does not.
+In this run the time limit accepted the legitimate credential 21/21 on the idle host and 1/21 under load. In earlier runs of the same code it rejected it once on the idle host, and accepted 7/21 under load. The share moves with the load; the operation bound does not.
 
 M19: decide *invalid* only on deterministic operation bounds; let a time limit yield *unknown*, never *invalid*.
 
@@ -335,7 +335,7 @@ Generated graph: a named subject, one `@list` property, literal items, the defau
 
 Further results:
 - **v0.3 stack:** four equal values complete, five fail.
-- **Unbounded runs:** 200 equal values take about 1.0 s.
+- **Unbounded runs:** 200 equal values take about 0.9 s.
 - **Admission:** under the v0.4 grammar `@list` terms are excluded, so F5 cannot arise in admitted input.
 
 ## WE-7: compliance evidence (M31)
@@ -382,7 +382,7 @@ Further results:
 
 **Reading.** Coverage, not the disclosure format, decides whether omitted adverse evidence is caught (A2 vs A3, B3 vs B4). A matching replay shows a consistent computation, not complete evidence (B3).
 
-**Extraction profile.** WE-7 `extraction/v2` commits each signed statement together with its container role and Map key. It requires exactly one matching absence attestation, otherwise returns unknown, and sorts holder-only report identifiers. Equivalent Map iteration orders therefore give the same outcome. The new extraction identifier changes the closure and derived policy digests; older certificates need their original extraction implementation.
+**Extraction profile.** WE-7 `extraction/v2` accepts only nonempty, well-formed string Map keys and commits each signed statement together with its container role and Map key. It requires exactly one matching absence attestation, otherwise returns unknown, and sorts holder-only report identifiers. Equivalent Map iteration orders therefore give the same outcome. The new extraction identifier changes the closure and derived policy digests; older certificates need their original extraction implementation.
 
 **Archive and dispute limits.** The synthetic deposit stores evidence, coverage, salt, policy and time. Code, trust anchors, accreditation, profile and mode remain externally supplied rather than reconstructed from that deposit. `contextReconstructible` reports policy availability, not reconstruction of every decision-context dependency. Certificate acceptance checks the acknowledgement's commitment, certificate identifier, core digest and outcome; it does not independently recompute the archive digest. The dispute report does not separately report authenticity for every evidence item.
 
