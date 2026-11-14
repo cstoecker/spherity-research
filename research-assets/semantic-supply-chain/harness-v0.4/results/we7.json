@@ -206,7 +206,7 @@
       "name": "N12: worlds that differ only in an unseen report give the same transcript and the same output",
       "expected": "same output, wrong in one world",
       "actual": "same output, wrong in one world",
-      "detail": "identical transcript (04dc8d4bade8f725…); output GRANT in both worlds; correct decision in world 1: DENY",
+      "detail": "identical transcript (14356a9dcd14ffe0…); output GRANT in both worlds; correct decision in world 1: DENY",
       "ok": true
     }
   ]

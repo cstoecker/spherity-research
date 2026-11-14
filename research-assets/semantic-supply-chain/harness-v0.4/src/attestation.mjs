@@ -212,9 +212,10 @@ class EngineProcess {
  * `measured: false` starts the engine without the extend (WE-3 F1 only).
  */
 /**
- * The engine's whole environment (review R4-15). Only the tool path and the TPM connection are
- * passed: NODE_OPTIONS (for example --import or --require), NODE_PATH, LD_PRELOAD and every other
- * inherited variable could load unmeasured code into the engine or into the tpm2-tools it calls.
+ * The engine's environment (review R4-15) drops inherited preload/loader variables.
+ * PATH contents, tool binaries/libraries, the Node executable and the supplied TPM endpoint
+ * remain trusted launcher configuration outside the engine-module measurement. This allow-list
+ * prevents the tested inherited-preload path; it does not authenticate those runtime inputs.
  */
 export const engineEnvironment = (tcti) => ({ PATH: process.env.PATH ?? "/usr/local/bin:/usr/bin:/bin", TPM2TOOLS_TCTI: tcti });
 

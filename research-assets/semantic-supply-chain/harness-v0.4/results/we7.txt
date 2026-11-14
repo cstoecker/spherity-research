@@ -53,7 +53,7 @@ as predicted B13  [B] N11: dictionary over two candidate graphs (R3-12): plain d
 as predicted S1   [SD] N12: two authentic views of batch B7 under a policy with an exception
                   -> views disagree ({R1}: GRANT; {R1, R2}: DENY)
 as predicted S2   [SD] N12: worlds that differ only in an unseen report give the same transcript and the same output
-                  -> same output, wrong in one world (identical transcript (04dc8d4bade8f725…); output GRANT in both worlds; correct decision in world 1: DENY)
+                  -> same output, wrong in one world (identical transcript (14356a9dcd14ffe0…); output GRANT in both worlds; correct decision in world 1: DENY)
 
 23 of 23 scenarios as predicted
 

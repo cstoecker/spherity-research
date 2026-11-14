@@ -2,26 +2,26 @@
 WE-4: cost to reject an attacker document with a forged proof (p50 ms)
 
 family          n    bytes |  naive, no limit           |  naive, default bound      | LFSC: as sent / allowlisted ctx + blank nodes / no blank nodes, forged proof
-complete         3      849 |      4.223 verified=false |      4.346 Maximum deep i | 0.055 s0 context not allowlisted / 0.119 s0 blank nodes > 0 / 0.331 s1 verification method not authorised for this issuer
-complete         4      956 |      4.560 verified=false |      3.033 Maximum deep i | 0.035 s0 context not allowlisted / 0.045 s0 blank nodes > 0 / 0.200 s1 verification method not authorised for this issuer
-complete         5     1091 |      9.735 verified=false |      3.328 Maximum deep i | 0.054 s0 context not allowlisted / 0.030 s0 blank nodes > 0 / 0.175 s1 verification method not authorised for this issuer
-complete         6     1254 |     25.330 verified=false |      2.823 Maximum deep i | 0.034 s0 context not allowlisted / 0.025 s0 blank nodes > 0 / 0.182 s1 verification method not authorised for this issuer
-complete         7     1445 |    194.062 verified=false |      4.114 Maximum deep i | 0.053 s0 context not allowlisted / 0.045 s0 blank nodes > 0 / 0.144 s1 verification method not authorised for this issuer
-complete         8     1664 |   1566.120 verified=false |      4.542 Maximum deep i | 0.063 s0 context not allowlisted / 0.033 s0 blank nodes > 0 / 0.166 s1 verification method not authorised for this issuer
-ring             6     1002 |      6.557 verified=false |      3.117 Maximum deep i | 0.054 s0 context not allowlisted / 0.048 s0 blank nodes > 0 / 0.292 s1 verification method not authorised for this issuer
-ring             8     1104 |      6.161 verified=false |      2.945 Maximum deep i | 0.036 s0 context not allowlisted / 0.035 s0 blank nodes > 0 / 0.170 s1 verification method not authorised for this issuer
-ring            10     1205 |      9.802 verified=false |      3.952 Maximum deep i | 0.048 s0 context not allowlisted / 0.037 s0 blank nodes > 0 / 0.153 s1 verification method not authorised for this issuer
-ring            12     1314 |      8.301 verified=false |      2.720 Maximum deep i | 0.099 s0 context not allowlisted / 0.052 s0 blank nodes > 0 / 0.262 s1 verification method not authorised for this issuer
-ring            16     1529 |     16.097 verified=false |      4.100 Maximum deep i | 0.064 s0 context not allowlisted / 0.031 s0 blank nodes > 0 / 0.155 s1 verification method not authorised for this issuer
-binary-tree     63     3151 |     46.920 verified=false |      5.944 Maximum deep i | 0.097 s0 context not allowlisted / 0.028 s0 blank nodes > 0 / 0.149 s1 verification method not authorised for this issuer
-binary-tree    127     5733 |    339.118 verified=false |     11.780 Maximum deep i | 0.195 s0 context not allowlisted / 0.030 s0 blank nodes > 0 / 0.204 s1 verification method not authorised for this issuer
-binary-tree    255    11045 |   3266.615 verified=false |     15.770 Maximum deep i | 0.326 s0 context not allowlisted / 0.029 s0 blank nodes > 0 / 0.154 s1 verification method not authorised for this issuer
-binary-tree    511    21669 |     >20000 exceeded 20 s  |     22.096 Maximum deep i | 0.761 s0 context not allowlisted / 0.040 s0 blank nodes > 0 / 0.331 s1 verification method not authorised for this issuer
-labelled-tree 1500    79102 |     63.943 verified=false |     67.541 verified=false | 2.095 s0 size 79102 > 65536 / 0.028 s0 blank nodes > 0 / 0.168 s1 verification method not authorised for this issuer
+complete         3      849 |      5.608 verified=false |      7.613 Maximum deep i | 0.115 s0 context not allowlisted / 0.062 s0 blank nodes > 0 / 0.746 s1 verification method not authorised for this issuer
+complete         4      956 |      6.298 verified=false |      4.228 Maximum deep i | 0.093 s0 context not allowlisted / 0.138 s0 blank nodes > 0 / 0.255 s1 verification method not authorised for this issuer
+complete         5     1091 |     11.995 verified=false |      4.100 Maximum deep i | 0.045 s0 context not allowlisted / 0.031 s0 blank nodes > 0 / 0.158 s1 verification method not authorised for this issuer
+complete         6     1254 |     28.566 verified=false |      3.559 Maximum deep i | 0.055 s0 context not allowlisted / 0.031 s0 blank nodes > 0 / 0.213 s1 verification method not authorised for this issuer
+complete         7     1445 |    235.843 verified=false |      3.850 Maximum deep i | 0.067 s0 context not allowlisted / 0.035 s0 blank nodes > 0 / 0.154 s1 verification method not authorised for this issuer
+complete         8     1664 |   1672.531 verified=false |      5.134 Maximum deep i | 0.067 s0 context not allowlisted / 0.034 s0 blank nodes > 0 / 0.225 s1 verification method not authorised for this issuer
+ring             6     1002 |      8.528 verified=false |      3.048 Maximum deep i | 0.061 s0 context not allowlisted / 0.055 s0 blank nodes > 0 / 0.418 s1 verification method not authorised for this issuer
+ring             8     1104 |      5.939 verified=false |      2.582 Maximum deep i | 0.041 s0 context not allowlisted / 0.031 s0 blank nodes > 0 / 0.231 s1 verification method not authorised for this issuer
+ring            10     1205 |     10.217 verified=false |      3.113 Maximum deep i | 0.046 s0 context not allowlisted / 0.030 s0 blank nodes > 0 / 0.206 s1 verification method not authorised for this issuer
+ring            12     1314 |     14.043 verified=false |      8.664 Maximum deep i | 0.055 s0 context not allowlisted / 0.035 s0 blank nodes > 0 / 0.172 s1 verification method not authorised for this issuer
+ring            16     1529 |     16.896 verified=false |      3.685 Maximum deep i | 0.085 s0 context not allowlisted / 0.034 s0 blank nodes > 0 / 0.180 s1 verification method not authorised for this issuer
+binary-tree     63     3151 |     45.618 verified=false |      6.696 Maximum deep i | 0.129 s0 context not allowlisted / 0.036 s0 blank nodes > 0 / 0.144 s1 verification method not authorised for this issuer
+binary-tree    127     5733 |    397.871 verified=false |     11.246 Maximum deep i | 0.190 s0 context not allowlisted / 0.028 s0 blank nodes > 0 / 0.149 s1 verification method not authorised for this issuer
+binary-tree    255    11045 |   3704.603 verified=false |     15.422 Maximum deep i | 0.330 s0 context not allowlisted / 0.032 s0 blank nodes > 0 / 0.131 s1 verification method not authorised for this issuer
+binary-tree    511    21669 |     >20000 exceeded 20 s  |     29.545 Maximum deep i | 0.864 s0 context not allowlisted / 0.058 s0 blank nodes > 0 / 0.267 s1 verification method not authorised for this issuer
+labelled-tree 1500    79102 |     71.254 verified=false |     75.471 verified=false | 2.039 s0 size 79102 > 65536 / 0.028 s0 blank nodes > 0 / 0.183 s1 verification method not authorised for this issuer
 
 Legitimate market-role credential (p50 ms over 200 runs)
-  rdfc        1.901  verified=true
-  jcs         0.151  verified=true
-  lfscFirst   1.260  verified=true
-  lfscGraphNative 0.254  verified=true
-  lfscCached  0.364  verified=true
+  rdfc        2.031  verified=true
+  jcs         0.210  verified=true
+  lfscFirst   1.422  verified=true
+  lfscGraphNative 0.245  verified=true
+  lfscCached  0.411  verified=true

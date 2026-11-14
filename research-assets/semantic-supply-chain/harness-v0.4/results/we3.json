@@ -37,11 +37,11 @@
     "keys": {
       "pcrOnly": {
         "handle": "0x81010010",
-        "name": "000b4bf7540c95602930bf2b3ffd26f124857a243a5904fb6acdc6f9fe751664cb45"
+        "name": "000b45a93cda665b42638e3053dd362c2c659d63c9bea9d66a9f55c26b39417c07b4"
       },
       "exclusive": {
         "handle": "0x81010011",
-        "name": "000beda5d34291f28cc7ab84e207ed06101798f964d11c840c03fecf5a43e1d815fc"
+        "name": "000b09c6af71d3cf259b6cfd066851d22d2ddb81d5d88021018cfb406bc66a2a350b"
       }
     },
     "pcrOnlyKeyUnderExclusivePolicy": "key policy is not the approved engine's policy",

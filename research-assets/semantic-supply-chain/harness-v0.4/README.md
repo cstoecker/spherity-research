@@ -1,8 +1,8 @@
 # Semantic supply chain harness (v0.4.0, release candidate)
 
-> **Status: research release accompanying a paper in preparation.** It is published as a dated, public record of the findings and mechanisms it contains. Spherity publishes its research and does not file patents. `ecdsa-lfsc-2026`, the M15 envelope, the admission certificate, replay-validated receipts and the evidence-graph certificate are experimental formats, not standards. Cite via `CITATION.cff`.
+> **Status: release candidate accompanying a paper in preparation; not yet published.** The tagged release is intended to provide a dated public record of the findings and mechanisms it contains. Spherity publishes its research and does not file patents. `ecdsa-lfsc-2026`, the M15 envelope, the admission certificate, replay-validated receipts and the evidence-graph certificate are experimental formats, not standards. Cite via `CITATION.cff`.
 
-Worked examples and the formal model's checker for the paper *Securing the Semantic Supply Chain: Meaning as a Foundation of Trust Infrastructure* (Spherity Research, claims note v0.9.4, in preparation). Apache-2.0.
+Worked examples and the formal model's checker for the paper *Securing the Semantic Supply Chain: Meaning as a Foundation of Trust Infrastructure* (Spherity Research, claims note v0.9.6, in preparation). Apache-2.0.
 
 | WE | Question | Supports |
 |---|---|---|
@@ -17,7 +17,7 @@ Worked examples and the formal model's checker for the paper *Securing the Seman
 
 ## What changed from v0.3.0
 
-**Code review before release.** An independent review of this code (round 4, 13 November 2026) reported 33 findings: 7 critical, 20 major, 6 minor. All were reproduced against the reviewed commit and fixed, and each fix has a regression test that fails on the reviewed code. The critical ones:
+**Code review before release.** An independent review of this code (round 4, 13 November 2026) reported 33 findings: 7 critical, 20 major, 6 minor. Runtime defects were checked with targeted reproductions and regressions where applicable. Test-only findings were checked with failing fixtures or guard mutations, and documentation and release-hygiene findings by direct inspection; the 33 findings do not each have a new test that fails on the original source. The critical ones:
 - an excluded type spelled as an IRI passed admission and produced a blank node;
 - CBOR-LD type tables with duplicate codes decoded differently after reordering, under the same manifest digest;
 - the CBOR-LD issuer check read the compact `issuer` field, not the semantic issuer;
@@ -26,9 +26,19 @@ Worked examples and the formal model's checker for the paper *Securing the Seman
 - WE-7 accepted a genuine report placed under another report's identifier;
 - the soundness cross-check could pass without evaluating any document.
 
-**Formats changed in this round:**
+**Second code review.** A further review (round 5, 14 November 2026) reported 23 findings: 2 critical, 11 major, 10 minor. The code findings are fixed, each with a regression test that fails on the reviewed code:
+- an approval returned to the caller was the co-signer's own record, so editing it could defeat the checks made at signing;
+- the engine-launch test re-stated the launch options instead of launching the engine, and passed even if the engine never started;
+- the receipt v2 parser accepted extra slots, wrong types, non-canonical bytes and a key epoch other than the relying party's;
+- malformed `validFrom`, `validUntil` and `created` values passed when no decision time was supplied;
+- WE-7 accepted a test report dated after the decision, and its evidence graph did not commit which statement sat under which key.
+
+The other findings narrowed claims in this README and in the paper.
+
+**Formats changed in these reviews:**
 - the decoding manifest is now `ssc-decoding-manifest/v2`, binding the graph-processing profile and rejecting duplicate table codes;
-- the replay receipt is now `ssc-replay-receipt/v2`, binding the authority epoch and the status expiry.
+- the replay receipt is now `ssc-replay-receipt/v2`, binding the authority epoch and the status expiry;
+- WE-7 uses `extraction/v2`, binding each signed statement together with its container role and Map key; this changes the closure and derived policy digests.
 
 Earlier v1 artefacts are not accepted.
 
@@ -58,7 +68,7 @@ v0.4.0 implements the corrections that three independent reviews of the formal m
 
 ```bash
 npm ci          # installs exactly the versions in package-lock.json
-npm test        # 103 tests: W3C vectors, the model checker, every scenario and the review regressions; TPM tests skip without swtpm
+npm test        # 121 tests: W3C vectors, the model checker, every scenario and the review regressions; TPM tests skip without swtpm
 npm run we1
 npm run we2
 npm run we3     # needs swtpm and tpm2-tools (for example apt-get install swtpm swtpm-tools tpm2-tools)
@@ -70,6 +80,8 @@ npm run we7
 npm run model   # the SSC-FM model checker, all 66 cases with counterexamples
 ```
 
+**Measurement provenance.** The timing tables below come from the run recorded in `results/` for this version of the code: one 4-vCPU cloud container, Node 22.23.4, `jsonld` 9.0.0 / `rdf-canonize` 5.0.0. They are single-environment measurements, not portable bounds.
+
 ## LFSC-G 0.4: what the experimental `ecdsa-lfsc-2026` does
 
 The proof signs **only the proof configuration** (profile `lfsc-g/0.4`). That configuration carries:
@@ -79,7 +91,7 @@ The proof signs **only the proof configuration** (profile `lfsc-g/0.4`). That co
 Verification at ingestion:
 1. **Stage 0**, no JSON-LD: the raw-text I-JSON check (when given bytes), then admission against a signed certificate (`src/admission.mjs`). The v0.3 lexical pre-scan remains available for comparison only.
 2. **Stage 1**, no JSON-LD: proof value format and length, **the key must belong to the issuer the credential names and be authorised for it**, lexical digest, signature.
-3. **Stage 2**: the dependency bytes the verifier holds now are checked against the declaration; canonicalisation runs with a loader that serves **only** declared dependencies; the result is compared with the commitment. A success returns the **immutable authenticated view** (document and N-Quads). Validity periods are checked on that view at every use only when the caller supplies `validAt`; callers requiring current validity must supply a current, validated time.
+3. **Stage 2**: the dependency bytes the verifier holds now are checked against the declaration; canonicalisation runs with a loader that serves **only** declared dependencies; the result is compared with the commitment. A success returns the **immutable authenticated view** (document and N-Quads). The proof must contain a well-formed `created` timestamp; any supplied `validFrom` and `validUntil` must also be well formed, even without `validAt`. A success with `validityChecked: false` establishes cryptographic and semantic verification only. Callers requiring validity at a decision time must supply a current, validated `validAt` and require `validityChecked: true`; interval comparisons run on every use, including cache hits.
 
 Graph-native re-verification (`verifyFromQuads`) needs the stored quads, the stored configuration and the authenticated issuer; it re-verifies the **whole committed dataset**. Single facts would need a separate membership scheme.
 
@@ -220,7 +232,7 @@ Bundle loads are still extended into the resettable PCR 23, for **monitoring onl
 **Limits:**
 - **Enrolment (E3).** The relying party must pin the engine's key at enrolment, through evidence the host cannot produce, such as a TEE attestation that the key was generated inside the engine. Here that pinning is part of the idealised boundary. This premise is now explicit in T11.
 - **What is not measured or simulated:**
-  - the Node runtime and tpm2-tools are not measured;
+  - the Node runtime and tpm2-tools are not measured. The launcher, PATH contents, tool binaries/libraries and selected TPM endpoint remain trusted configuration; the environment allow-list blocks inherited preload variables, not substitution of that configuration;
   - authorised engine upgrades with rollback protection (`PolicyAuthorize`, MON-5) are not simulated, and an engine restart requires a reboot because PCR 15 only accumulates;
   - a reboot is a TPM reset over swtpm's control channel.
 - **`tpm2_certify` 5.6** sends fixed qualifying data, so certification is not bound to a fresh challenge. It certifies an unchanging key name.
@@ -241,7 +253,7 @@ A receipt key shared between the device engine and an independent co-signer. The
 
 The approvals it keeps pending are bounded in number and time, and re-checked at signing. The example profile allows 1,024 approvals and 2 ticks; these are illustrative choices, not measured.
 
-Receipt v2 binds the authority epoch and the status expiry. The **effect gate** executes only:
+Receipt v2 uses a fixed-length canonical JSON array: nonempty text identifiers and scopes, nonnegative integer epochs, finite numeric tick expiry, and a GRANT or DENY outcome. The parser rejects other shapes, extra slots and inconsistent profile or key-epoch fields. It binds the authority epoch and the status expiry. The **effect gate** executes only:
 - the signed action;
 - once per challenge;
 - while the signed epoch is current and the status has not expired.
@@ -250,7 +262,7 @@ It is an in-memory, single-process illustration. A real external effect needs du
 
 **Two-signature stand-in:** the device and the co-signer each sign identical bytes (ECDSA P-256), and the relying party requires both. This is a 2-of-2 instance of T11′. It does **not** implement or test FROST (RFC 9591) group keys, key generation, nonce rounds or robustness. A FROST variant is planned as a separate release.
 
-**What an accepted receipt establishes:** its *outcome* equals deterministic replay of its committed, admissible context. It does **not** establish which closure the device executed (scenario R10), the truth of device-only observations, or that a signature is ever produced.
+**What receipt verification establishes:** under the honest co-signer premise, its *outcome* equals deterministic replay of its committed context found admissible when the share was produced. `acceptReceipt` checks signatures, schema, request binding and single use; it does not check whether the signed authority epoch or status expiry is current at receipt presentation. Every current reliance, including a use with no external effect, needs its own current epoch, freshness, withdrawal and scope checks; historical verification must be labelled as such. `ProtectedActuator` illustrates epoch and expiry checks at an in-memory effect. The receipt does **not** establish which closure the device executed (scenario R10), the truth of device-only observations, or that a signature is ever produced.
 
 | # | Scenario | Result |
 |---|---|---|
@@ -276,10 +288,10 @@ Attacker documents carry forged proofs. Single environment (4 vCPU cloud contain
 
 | Input | Naive verifier, no limit | Naive, default bound (`maxWorkFactor` 1) | LFSC-G 0.4 rejection |
 |---|---|---|---|
-| complete graph K₈ (1.7 kB) | 1.6 s | aborts, ~5 ms | 0.03–0.17 ms |
-| symmetric binary tree, 255 nodes (11 kB) | 3.3 s | aborts, ~16 ms | 0.03–0.33 ms |
-| symmetric binary tree, 511 nodes (22 kB) | > 20 s | aborts, ~22 ms | 0.04–0.76 ms |
-| labelled tree, 1,500 nodes (benign, 79 kB) | ~64 ms | completes (~68 ms) | rejected by size bound (2.1 ms) or the blank-node rule (0.03 ms) |
+| complete graph K₈ (1.7 kB) | 1.7 s | aborts, ~5 ms | 0.03–0.23 ms |
+| symmetric binary tree, 255 nodes (11 kB) | 3.7 s | aborts, ~15 ms | 0.03–0.33 ms |
+| symmetric binary tree, 511 nodes (22 kB) | > 20 s | aborts, ~30 ms | 0.06–0.86 ms |
+| labelled tree, 1,500 nodes (benign, 79 kB) | ~71 ms | completes (~75 ms) | rejected by size bound (2.0 ms) or the blank-node rule (0.03 ms) |
 
 The three LFSC figures are: the document as sent (stage 0, context not allowlisted), the same graph with allowlisted contexts (stage 0, blank nodes), and the same graph without blank nodes and with a forged LFSC 0.4 proof (stage 1, the key is not authorised for the named issuer).
 
@@ -287,11 +299,11 @@ Legitimate market-role credential, p50 over 200 runs:
 
 | Verification | v0.4.0 | v0.3.0 |
 |---|---|---|
-| `ecdsa-rdfc-2019` | 1.90 ms | 1.94 ms |
-| `ecdsa-jcs-2019` | 0.15 ms | 0.20 ms |
-| **LFSC-G, first verification** | **1.26 ms** | 1.09 ms |
+| `ecdsa-rdfc-2019` | 2.03 ms | 1.94 ms |
+| `ecdsa-jcs-2019` | 0.21 ms | 0.20 ms |
+| **LFSC-G, first verification** | **1.42 ms** | 1.09 ms |
 | **LFSC-G, graph-native from stored quads** | **0.25 ms** | 0.18 ms |
-| LFSC-G, cached | 0.36 ms | 0.25 ms |
+| LFSC-G, cached | 0.41 ms | 0.25 ms |
 
 The corrections cost time on the honest path. The dependency digests are now checked on every verification, **before** any cache lookup, which is what closes X13. The issuer binding and the pinned loader add a little more. All figures are single-environment.
 
@@ -301,8 +313,8 @@ A **legitimate** credential (600 blank nodes with unique literals) is canonicali
 
 | Host | p50 | Time-limit policy | Operation-bound policy |
 |---|---|---|---|
-| idle | 10.2 ms | **20/21 accepted** | 21/21 accepted |
-| loaded | 28 ms | **0/21 accepted** | 21/21 accepted |
+| idle | 10.7 ms | **20/21 accepted** | 21/21 accepted |
+| loaded | 26 ms | **0/21 accepted** | 21/21 accepted |
 
 In this run the time limit rejected the legitimate credential once even on the idle host. In an earlier run of the same code it accepted 7/21 under load. The share moves with the load; the operation bound does not.
 
@@ -341,7 +353,7 @@ Further results:
 - a salted, domain-separated commitment over the RDFC-1.0 canonical evidence graph;
 - a signed certificate core binding outcome, scope, closure, policy, a coverage reference and a private-context binding through the commitment only;
 - an external timestamp over the core;
-- a custodian, provisioned independently with its own evaluator, trust anchors and approved policies, that verifies the deposit by opening it, checking the decision-context binding and replaying it before acknowledging the full certificate core and the outcome; the relying party checks that acknowledgement;
+- a separately instantiated custodian using the same evaluator implementation and trust-context factory as the certifier in this synthetic scenario, with its own configured policy map; it opens the deposit, checks the implemented context binding and replays the decision before acknowledging the certificate core and outcome. This demonstrates refusal of a caller-supplied replay result, not independently administered trust provisioning or a complete archive service;
 - scope-checked reliance;
 - a lifecycle that suspends reliance on a policy-only change;
 - a selection log for one authoritative certificate per scope and epoch;
@@ -370,7 +382,11 @@ Further results:
 
 **Reading.** Coverage, not the disclosure format, decides whether omitted adverse evidence is caught (A2 vs A3, B3 vs B4). A matching replay shows a consistent computation, not complete evidence (B3).
 
-**What WE-7 does not show:** that real data sets suffice for real decisions, a real laboratory or registry, legal admissibility, or performance at scale.
+**Extraction profile.** WE-7 `extraction/v2` commits each signed statement together with its container role and Map key. It requires exactly one matching absence attestation, otherwise returns unknown, and sorts holder-only report identifiers. Equivalent Map iteration orders therefore give the same outcome. The new extraction identifier changes the closure and derived policy digests; older certificates need their original extraction implementation.
+
+**Archive and dispute limits.** The synthetic deposit stores evidence, coverage, salt, policy and time. Code, trust anchors, accreditation, profile and mode remain externally supplied rather than reconstructed from that deposit. `contextReconstructible` reports policy availability, not reconstruction of every decision-context dependency. Certificate acceptance checks the acknowledgement's commitment, certificate identifier, core digest and outcome; it does not independently recompute the archive digest. The dispute report does not separately report authenticity for every evidence item.
+
+**What WE-7 does not show:** that real data sets suffice for real decisions, a real laboratory or registry, independently administered trust provisioning, a complete archive service, legal admissibility, or performance at scale.
 
 ## The model checker
 
@@ -395,7 +411,7 @@ Further results:
   - a complete archival service with periodic reconstruction (DEC-13);
   - certified entropy (KEY-6);
   - enrolment of engine keys to an accountable legal person (MON-8 in the paper).
-- **Nondeterminism:** WE-3, WE-3 R and WE-7 use fresh keys, so identifiers, signatures and transcript digests differ between runs. WE-4, WE-5 and WE-6 report timings, which differ between runs and machines. All verdicts, stages, reasons and scenario outcomes are deterministic.
+- **Nondeterminism:** fresh key or cryptographic-transcript identifiers in WE-3, WE-3 R and WE-7; timing measurements in WE-4, WE-5 and WE-6; WE-5's timing-derived threshold and wall-clock-policy acceptance counts; and run timestamps, runtime versions and CPU metadata may vary. Compare all deterministic input sizes, semantic outcomes, operation-bound outcomes, scenario reasons, manifests and vectors exactly. Capture stdout for scripts that do not rewrite their text result files (WE-1, WE-4 and WE-5).
 
 ## Files
 
@@ -417,5 +433,5 @@ Further results:
 - `we1`–`we7` scripts.
 - `results/`: raw outputs.
 - `crosscheck/`: the v0.3 cross-checks.
-- `test/`: the scenario suites, plus the round-4 review regressions (`*-review.test.mjs`, `cborld-graph-profile`, `compliance-custodian`, `compliance-graph`, `compliance-lifecycle`, `engine-preload`, `lfsc-pass3`, `model-gate`, `replay-effect`).
-- `LICENSE` (Apache-2.0), `NOTICE`, and `LICENSE-W3C` for the copied W3C files.
+- `test/`: the scenario suites, the round-5 regressions, and the round-4 review regressions (`*-review.test.mjs`, `cborld-graph-profile`, `compliance-custodian`, `compliance-graph`, `compliance-lifecycle`, `engine-preload`, `lfsc-pass3`, `model-gate`, `replay-effect`).
+- `LICENSE` (Apache-2.0), `NOTICE`, `LICENSE-W3C`, `LICENSE-W3C-2015` and `LICENSE-CITIZENSHIP`: project and third-party terms, with the unresolved per-file citizenship classification stated in NOTICE.

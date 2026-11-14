@@ -23,9 +23,27 @@ export const RECEIPT_PROFILE = "ssc-replay-receipt/v2";
 const FIELDS = ["profile", "groupKey", "keyEpoch", "authorityEpoch", "statusExpires", "challenge", "audience", "purpose", "decisionId", "action", "scope",
   "outcome", "inputDigest", "semanticClosure", "decisionContext", "admissibilityPolicy"];
 
-/** One injective encoding: a fixed-position JCS array, hashed under its own digest type. */
+// The experimental v2 profile uses nonempty text identifiers/scopes, integer epochs,
+// a finite numeric tick expiry and a definitive outcome. Objects are not text scopes.
+function validateFields(fields) {
+  if (!fields || Object.keys(fields).length !== FIELDS.length ||
+      Object.keys(fields).some((f) => !FIELDS.includes(f))) throw new Error("receipt field set malformed");
+  for (const f of FIELDS) {
+    const value = fields[f];
+    if (f === "keyEpoch" || f === "authorityEpoch") {
+      if (!Number.isSafeInteger(value) || value < 0) throw new Error(`invalid receipt ${f}`);
+    } else if (f === "statusExpires") {
+      if (!Number.isFinite(value)) throw new Error("invalid receipt statusExpires");
+    } else if (typeof value !== "string" || !value.length || !value.isWellFormed()) {
+      throw new Error(`invalid receipt ${f}`);
+    }
+  }
+  if (fields.profile !== RECEIPT_PROFILE || !["GRANT", "DENY"].includes(fields.outcome)) throw new Error("invalid receipt profile or outcome");
+}
+
+/** One injective encoding over the declared v2 field schema, hashed under its own digest type. */
 export function encodeMessage(fields) {
-  for (const f of FIELDS) if (fields[f] === undefined) throw new Error(`receipt field missing: ${f}`);
+  validateFields(fields);
   const bytes = Buffer.from(canonicalize([RECEIPT_PROFILE, ...FIELDS.map((f) => fields[f])]), "utf8");
   return { bytes, digest: typedDigest(DIGEST.receipt, bytes) };
 }
@@ -119,14 +137,16 @@ export class CoSigner {
       decisionContext: typedId(DIGEST.decisionContext, canonicalize({ status: proposal.status, time: proposal.time, closure: proposal.claimedClosure, request: proposal.request })),
       admissibilityPolicy: this.admissibility === "window" ? `window:${this.windowTicks}` : "current-status"
     };
-    const message = encodeMessage(fields);
+    let message;
+    try { message = encodeMessage(fields); } catch (error) { return refuse(error.message); }
     const t = approvedAt ?? this.clock();
     if (!Number.isFinite(t)) return refuse("invalid local clock");
     this.pruneApprovals(t);
     const approval = { digest: message.digest.toString("hex"), fields,
       authorityEpoch: proposal.status.body.epoch, statusIssued: proposal.status.body.issued,
       expiresAt: Math.min(proposal.status.body.expires, t + this.approvalTtlTicks) };
-    this.approvals.set(approval.digest, approval);
+    // Do not return an alias to the record used by the signing-time checks.
+    this.approvals.set(approval.digest, structuredClone(approval));
     while (this.approvals.size > this.maxApprovals) this.approvals.delete(this.approvals.keys().next().value);
     return { ok: true, approval, message };
   }
@@ -163,16 +183,26 @@ export async function produceReceipt({ device, coSigner, proposal, rp, keyEpoch 
 /**
  * Verify both signatures over identical bytes, the binding to this relying party's request, the
  * admissibility policy it requires, and single use of the challenge.
+ * This is receipt verification, not a current-authorisation decision: current epoch,
+ * expiry and withdrawal/scope checks belong at every use point (including non-effect
+ * reliance). ProtectedActuator illustrates only the effect's epoch/expiry checks.
  */
 export function acceptReceipt(receipt, { request, deviceParty, coSignerParty, keyEpoch = 1, consumed, requiredAdmissibility = "current-status" }) {
+  if (!receipt || typeof receipt.message !== "string" || !receipt.keys || !receipt.signatures ||
+      !["device", "coSigner"].every((who) => typeof receipt.signatures[who] === "string")) return { accepted: false, reason: "receipt container malformed" };
   const bytes = Buffer.from(receipt.message, "utf8");
   if (receipt.keys.device !== deviceParty.id || receipt.keys.coSigner !== coSignerParty.id) return { accepted: false, reason: "unexpected keys" };
   for (const [who, party] of [["device", deviceParty], ["coSigner", coSignerParty]]) {
     if (!ecdsaVerify(party.keys.crv, publicOf(party), bytes, Buffer.from(receipt.signatures[who], "base64"))) return { accepted: false, reason: `${who} signature invalid` };
   }
   let fields;
-  try { const parsed = JSON.parse(receipt.message); fields = Object.fromEntries(FIELDS.map((f, i) => [f, parsed[i + 1]])); if (parsed[0] !== RECEIPT_PROFILE) throw new Error(); } catch { return { accepted: false, reason: "receipt message malformed" }; }
-  if (fields.groupKey !== groupKeyId([deviceParty.id, coSignerParty.id], keyEpoch)) return { accepted: false, reason: "group key or epoch mismatch" };
+  try {
+    const parsed = JSON.parse(receipt.message);
+    if (!Array.isArray(parsed) || parsed.length !== FIELDS.length + 1 || parsed[0] !== RECEIPT_PROFILE) throw new Error();
+    fields = Object.fromEntries(FIELDS.map((f, i) => [f, parsed[i + 1]]));
+    if (!encodeMessage(fields).bytes.equals(bytes)) throw new Error();
+  } catch { return { accepted: false, reason: "receipt message malformed" }; }
+  if (fields.keyEpoch !== keyEpoch || fields.groupKey !== groupKeyId([deviceParty.id, coSignerParty.id], keyEpoch)) return { accepted: false, reason: "group key or epoch mismatch" };
   const req = request.body;
   for (const f of ["challenge", "audience", "purpose", "action", "scope"]) if (fields[f] !== req[f]) return { accepted: false, reason: `receipt ${f} does not match the request` };
   if (fields.semanticClosure !== req.authorisedClosure) return { accepted: false, reason: "receipt names another closure" };

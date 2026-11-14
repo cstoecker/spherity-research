@@ -26,7 +26,7 @@ const rdfCanonize = require("rdf-canonize");
 
 export const KEY_CLAIMS = ["consignmentId", "hsCode", "declaredValue", "product", "batch", "manufacturer", "chemistry", "testReport", "conformityDeclaration"];
 export const SUBSTANCES = ["Hg", "Cd", "Pb"];
-export const CLOSURE = typedId(DIGEST.semanticClosure, "compliance-vocabulary/v1 + extraction/v1 + rules/battery-release");
+export const CLOSURE = typedId(DIGEST.semanticClosure, "compliance-vocabulary/v1 + extraction/v2 + rules/battery-release");
 export const DECISION_CLASS = "customs-release-risk-assessment";
 export const policyVersion = (version, limits) => {
   const body = { id: "urn:policy:battery-release", version, limits, closure: CLOSURE, freshness: 30, decisionClass: DECISION_CLASS };
@@ -72,7 +72,7 @@ export function evaluate(policy, ev, ctx) {
     reportIds = list.body.reports;
     const unseen = reportIds.filter((id) => !ev.statements.has(id));
     if (unseen.length) return out("UNKNOWN", `coverage incomplete: reports not obtained (${unseen.join(", ")})`);
-  } else reportIds = [...ev.statements.keys()].filter((id) => ev.statements.get(id).body.type === "TestReport");
+  } else reportIds = [...ev.statements.keys()].filter((id) => ev.statements.get(id).body.type === "TestReport").sort();
   if (!reportIds.includes(k.testReport)) return out("UNKNOWN", "the declared test report is not among the relevant reports");
   const status = ev.coverage?.status;
   if (!status || !verifyObject(status, parties.status)) return out("UNKNOWN", "no authenticated status snapshot");
@@ -85,8 +85,9 @@ export function evaluate(policy, ev, ctx) {
     why.push(`${id}: ${state}`);
     if (state === "revoked") { if (id === k.testReport) return out("DENY", `declared test report ${id} is revoked`); continue; }
     if (state !== "current") return out("UNKNOWN", `status of ${id} unknown`);
+    if (!finite(report.body.date) || report.body.date > time) return out("UNKNOWN", "invalid or future test report date");
     const acc = accreditation.body.labs[report.signer];
-    if (!acc || !acc.methods.includes(report.body.method) || !finite(report.body.date) || !finite(acc.validFrom) || !finite(acc.validUntil) || report.body.date < acc.validFrom || report.body.date > acc.validUntil) {
+    if (!acc || !acc.methods.includes(report.body.method) || !finite(acc.validFrom) || !finite(acc.validUntil) || report.body.date < acc.validFrom || report.body.date > acc.validUntil) {
       return out("UNKNOWN", `method ${report.body.method} outside the laboratory's accreditation`);
     }
     for (const s of SUBSTANCES) {
@@ -95,7 +96,9 @@ export function evaluate(policy, ev, ctx) {
       if (r > policy.limits[s]) return out("DENY", `${id}: ${s} ${r} mg/kg above the limit ${policy.limits[s]}`);
     }
   }
-  const attestation = [...ev.statements.values()].find((x) => x.body.type === "AbsenceAttestation" && x.body.report === k.testReport);
+  const attestations = [...ev.statements.values()].filter((x) => x.body.type === "AbsenceAttestation" && x.body.report === k.testReport);
+  if (attestations.length !== 1) return out("UNKNOWN", "absence attestation missing or ambiguous for the declared report");
+  const [attestation] = attestations;
   if (!attestation || !verifyObject(attestation, parties.lab)) return out("UNKNOWN", "no authenticated absence attestation for the declared report");
   if (attestation.body.product !== product.body.product || attestation.body.batch !== k.batch) return out("UNKNOWN", "absence attestation does not match the product and batch");
   if (!Array.isArray(attestation.body.substances) || !SUBSTANCES.every((s) => attestation.body.substances.includes(s))) return out("UNKNOWN", "absence attestation does not cover every substance in the policy");
@@ -115,10 +118,12 @@ const subj = (id) => (/^(urn|did|https?):/.test(id) ? id : `urn:statement:${id}`
 export async function canonicalGraph(ev, coverage) {
   const lines = [];
   const add = (s, p, o) => lines.push(`${iri(subj(s))} ${iri(V + p)} ${o} .`);
-  const statements = [["declaration", ev.declaration], ...[...ev.statements.entries()], ...(coverage ? [["coverage:completeList", coverage.completeList], ["coverage:status", coverage.status]] : [])];
-  for (const [id, st] of statements) {
+  const statements = [["declaration", "declaration", ev.declaration], ...[...ev.statements].map(([id, st]) => ["statement", id, st]), ...(coverage ? [["coverage", "completeList", coverage.completeList], ["coverage", "status", coverage.status]] : [])];
+  for (const [role, id, st] of statements) {
     if (!st) continue;
     const sid = subj(st.body.id ?? id);
+    // Commit the role/key-to-statement association, not only its RDF-set projection.
+    add(sid, "sourceEntry", lit(canonicalize([role, id, st])));
     add(sid, "signer", lit(st.signer));
     add(sid, "signature", lit(st.signature));
     add(sid, "statement", lit(canonicalize(st.body)));

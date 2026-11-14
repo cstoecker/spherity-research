@@ -202,6 +202,7 @@ export async function verifyLfsc(input, options) {
   if (proof.profile !== PROFILE) return fail1(`unsupported LFSC profile ${proof.profile ?? "(none)"} (must-understand)`);
   if (proof.type !== "DataIntegrityProof") return fail1("unsupported proof type");
   if (proof.proofPurpose !== "assertionMethod") return fail1("proof purpose must be assertionMethod");
+  if (!Number.isFinite(parseTimestamp(proof.created))) return fail1("invalid created");
   if (!proof.semanticCommitment || !proof.lexicalDigest) return fail1("LFSC proof incomplete");
   let key, crv;
   try { ({ key, crv } = resolveVerificationMethod(proof.verificationMethod)); } catch (error) { return fail1(error.message); }
@@ -248,19 +249,19 @@ export async function verifyLfsc(input, options) {
     if (cacheKey) boundedSet(cache, cacheKey, view, maxCacheEntries);
   }
   timings.stage2 = ms(start);
-  // Validity is checked on the authenticated view at every use, never cached.
-  if (validAt !== undefined) {
-    const t = parseTimestamp(validAt);
-    if (!Number.isFinite(t)) return fail2("invalid validAt");
-    for (const field of ["validFrom", "validUntil"]) {
-      if (view.document[field] === undefined) continue;
-      const boundary = parseTimestamp(view.document[field]);
-      if (!Number.isFinite(boundary)) return fail2(`invalid ${field}`);
-      if (field === "validFrom" && t < boundary) return fail2("not yet valid");
-      if (field === "validUntil" && t > boundary) return fail2("expired");
-    }
+  // Schema validity is unconditional; current authorization additionally needs a
+  // caller-supplied decision time. Re-check both on every use, including cache hits.
+  const validityChecked = validAt !== undefined;
+  const t = validityChecked ? parseTimestamp(validAt) : undefined;
+  if (validityChecked && !Number.isFinite(t)) return fail2("invalid validAt");
+  for (const field of ["validFrom", "validUntil"]) {
+    if (view.document[field] === undefined) continue;
+    const boundary = parseTimestamp(view.document[field]);
+    if (!Number.isFinite(boundary)) return fail2(`invalid ${field}`);
+    if (validityChecked && field === "validFrom" && t < boundary) return fail2("not yet valid");
+    if (validityChecked && field === "validUntil" && t > boundary) return fail2("expired");
   }
-  return { verified: true, stage: 2, cached, view, rawChecked, timings };
+  return { verified: true, stage: 2, cached, view, validityChecked, rawChecked, timings };
 }
 
 /**
@@ -276,6 +277,7 @@ export async function verifyFromQuads({ nquads, proof, issuer, bound = DEFAULT_B
   if (config.cryptosuite !== SUITE || config.profile !== PROFILE) return { verified: false, reason: "not an LFSC 0.4 proof" };
   if (config.type !== "DataIntegrityProof") return { verified: false, reason: "unsupported proof type" };
   if (config.proofPurpose !== "assertionMethod") return { verified: false, reason: "proof purpose must be assertionMethod" };
+  if (!Number.isFinite(parseTimestamp(config.created))) return { verified: false, reason: "invalid created" };
   const binding = issuerBinding(issuer, config.verificationMethod, issuers);
   if (binding) return { verified: false, reason: binding };
   let key, crv;

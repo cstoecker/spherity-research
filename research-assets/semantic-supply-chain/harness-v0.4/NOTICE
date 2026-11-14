@@ -2,22 +2,32 @@ Semantic supply chain harness
 Copyright 2026 Spherity GmbH (author: Dr. Carsten Stöcker)
 Licensed under the Apache License, Version 2.0 (see LICENSE).
 
-This product includes third-party material, copied without modification, that is
-distributed under the W3C Software and Document License. Its full text (2023 version,
-in effect for documents published from 1 January 2023) is in LICENSE-W3C.
+This product includes third-party material. The following W3C contexts and
+specification excerpts are distributed under the W3C Software and Document
+License, 2023 version; its full text is in LICENSE-W3C.
 
-- contexts/credentials-v2.jsonld, copied from https://www.w3.org/ns/credentials/v2
-  ("Verifiable Credentials Data Model v2.0"). Copyright © 2025 World Wide Web Consortium.
-- contexts/credentials-examples-v2.jsonld, copied from
+- contexts/credentials-v2.jsonld, copied without modification from
+  https://www.w3.org/ns/credentials/v2 (Verifiable Credentials Data Model v2.0).
+  Copyright © 2025 World Wide Web Consortium.
+- contexts/credentials-examples-v2.jsonld, copied without modification from
   https://www.w3.org/ns/credentials/examples/v2. Copyright © World Wide Web Consortium.
-- test/vector-*.json, test vectors copied from "Data Integrity ECDSA Cryptosuites v1.0"
-  (https://www.w3.org/TR/vc-di-ecdsa/). Copyright © 2025 World Wide Web Consortium.
-  The secret keys in these files are the specification's published test keys, not
-  operational keys.
-- contexts/citizenship-v4rc1.jsonld, copied from https://w3id.org/citizenship/v4rc1
-  (W3C Credentials Community Group, citizenship-vocab). We understand it to be
-  published under the same W3C license; we have not independently verified the terms
-  of this Community Group file.
+- test/vector-*.json includes material copied from or derived from
+  Data Integrity ECDSA Cryptosuites v1.0 (https://www.w3.org/TR/vc-di-ecdsa/).
+  Copyright © 2025 World Wide Web Consortium.
+  https://www.w3.org/copyright/software-license-2023/
+  The harness packages the specification's signed credentials, keys and expected
+  hashes in JSON test wrappers; those extracted values are unchanged.
+  The secret keys in these files are the specification's published test keys,
+  not operational keys.
+
+contexts/citizenship-v4rc1.jsonld was copied without modification from
+https://w3id.org/citizenship/v4rc1, which resolves to
+https://w3c-ccg.github.io/citizenship-vocab/contexts/citizenship-v4rc1.jsonld.
+The upstream repository's licensing notice is reproduced in LICENSE-CITIZENSHIP.
+It distinguishes Reports (W3C Software and Document License, 2015 version,
+reproduced in LICENSE-W3C-2015) from Software (Apache-2.0, reproduced in LICENSE).
+The repository notice does not explicitly classify this individual context file;
+we do not assert that it is covered by the W3C 2023 license.
 
 contexts/energy-roles-v1*.jsonld are fictitious example vocabularies written
 for this harness (https://vocab.example/ is not a real namespace).
