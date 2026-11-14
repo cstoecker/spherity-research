@@ -71,8 +71,8 @@ test('companion carousel has its own cover, download metadata and sitemap entry'
   assert.ok(pdf.includes(Buffer.from('x:xmpmeta')));
 });
 
-test('all twelve case figures and their actual download formats are embedded and in the full sitemap', () => {
-  assert.equal(page.figure_objects.length, 12);
+test('all sixteen case figures and their actual download formats are embedded and in the full sitemap', () => {
+  assert.equal(page.figure_objects.length, 16);
   for (const figure of page.figure_objects) {
     assert.ok(article.includes(figure.id + '-figure'));
     assert.ok(article.includes(figure.content_url));
@@ -96,7 +96,7 @@ test('educational case separates evidence roles and ends applications with autom
   for (const term of ['Digital Calibration Request', 'Digital Calibration Certificate', 'verifiable AI Service Passport', 'Verifiable Agent Card', 'conformity assessment', 'consumable', '93.0–99.4%', '96.9–98.7%', '95.45%', 'not fit for production deployment']) assert.ok(source.includes(term), term);
   assert.ok(headings.indexOf('material-assurance') < headings.indexOf('service-passport'));
   assert.ok(headings.indexOf('wallet-recognition') < headings.indexOf('design'));
-  assert.equal(new Set(page.figure_objects.map(f => f.id)).size, 12);
+  assert.equal(new Set(page.figure_objects.map(f => f.id)).size, 16);
   assert.ok(headings.indexOf('spherity-products') < headings.indexOf('vehicle-data'));
   assert.match(source, /All Spherity products are based on open standards/);
   for (const term of ['DPP / VERA', 'EBW / EIDA', 'AI Service Passport (AISP)', 'Agent Identity', 'Trusted AI']) assert.ok(source.includes(term));
@@ -107,6 +107,21 @@ test('revised first-edition figures remove unqualified scores and conflated assu
     const svg = read('docs' + f.content_url);
     assert.ok(!/confidence 0\.97|conf 0\.91|share 98\.6|type conformity \+ calibration|today: unknown|any VC verifier|TÜV SÜD AI Certificate/.test(svg));
     assert.match(svg, /scope|Scope|profile|Profile/);
+  }
+});
+
+test('concrete use-case appendix preserves proposed scope and the unchanged companion PDF', () => {
+  assert.ok(article.indexOf('id="use-case-appendix"') > article.indexOf('id="outlook"'));
+  assert.ok(article.indexOf('id="use-case-appendix"') < article.indexOf('id="references"'));
+  for (const id of ['appendix-product-authenticity','appendix-evidence-records','appendix-forensic-workflow','appendix-automotive-workflow']) assert.ok(article.includes(`id="${id}"`));
+  assert.match(article, /companion 19-slide PDF is unchanged/);
+  assert.match(article, /not a reconstruction of the exact field-test implementation/);
+  const appendixFigures=page.figure_objects.slice(12);
+  assert.equal(appendixFigures.length,4);
+  for (const f of appendixFigures) {
+    assert.equal(f.width,1600);
+    assert.match(f.caption, /proposed|concrete/i);
+    assert.doesNotMatch(read('docs'+f.content_url), /share 98\.6|confidence 0\.97|conf 0\.91|library match 0\.96|TÜV SÜD AI Certificate/);
   }
 });
 

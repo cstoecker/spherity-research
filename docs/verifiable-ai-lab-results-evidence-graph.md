@@ -386,6 +386,130 @@ figure_objects:
       - url: /assets/verifiable-ai-lab-results/figure-12-spherity-products.png
         label: PNG
         encoding_format: image/png
+  - id: figure-13-product-authenticity-detail
+    name: "Product authenticity: a concrete evidence workflow"
+    content_url: /assets/verifiable-ai-lab-results/figure-13-product-authenticity-detail.svg
+    alt: A marked sample passes through reader capture, AI analysis, an accountable report service and receiver checks. Five linked records retain lot identity, observation provenance, AI configuration, report attribution and acceptance criteria.
+    width: 1600
+    height: 1100
+    description: Concrete product-authenticity workflow adapted from the original Tailorlux-context system view. Product and reader names provide context; the credential integration and example identifiers are proposed. Calibration, material assurance and AI validation remain distinct. Marker detection alone does not establish composition, origin or overall authenticity.
+    caption: Concrete product-authenticity workflow adapted from the original Tailorlux-context system view. Product and reader names provide context; the credential integration and example identifiers are proposed. Calibration, material assurance and AI validation remain distinct. Marker detection alone does not establish composition, origin or overall authenticity.
+    credit_text: Carsten Stöcker / Spherity GmbH
+    copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
+    license: https://creativecommons.org/licenses/by/4.0/
+    creator_type: Person
+    creator_name: Dr. Carsten Stöcker
+    creator_url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    copyright_holder:
+      type: Person
+      name: Dr. Carsten Stöcker
+      url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    keywords:
+      - "Product authenticity: a concrete evidence workflow"
+      - concrete use case
+      - verifiable AI lab analysis
+      - credential evidence graph
+    raster_url: /assets/verifiable-ai-lab-results/figure-13-product-authenticity-detail.png
+    distributions:
+      - url: /assets/verifiable-ai-lab-results/figure-13-product-authenticity-detail.svg
+        label: SVG
+        encoding_format: image/svg+xml
+      - url: /assets/verifiable-ai-lab-results/figure-13-product-authenticity-detail.png
+        label: PNG
+        encoding_format: image/png
+  - id: figure-14-concrete-evidence-graph
+    name: Follow one result through its evidence graph
+    content_url: /assets/verifiable-ai-lab-results/figure-14-concrete-evidence-graph.svg
+    alt: Report REP-17 references analysis run R-8812. Six typed branches link object, input, device, material, service and authority assertions to their respective source records. A receiver checks each source under a scoped trust policy.
+    width: 1600
+    height: 1300
+    description: Worked evidence graph with illustrative identifiers. The six assertion families restore the concrete detail of the first-edition diagram while retaining separate issuers, calibration scope, material records, AI validation and agent authority. These labels illustrate a proposed record structure, not a normative credential vocabulary or a publicly trusted certification chain.
+    caption: Worked evidence graph with illustrative identifiers. The six assertion families restore the concrete detail of the first-edition diagram while retaining separate issuers, calibration scope, material records, AI validation and agent authority. These labels illustrate a proposed record structure, not a normative credential vocabulary or a publicly trusted certification chain.
+    credit_text: Carsten Stöcker / Spherity GmbH
+    copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
+    license: https://creativecommons.org/licenses/by/4.0/
+    creator_type: Person
+    creator_name: Dr. Carsten Stöcker
+    creator_url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    copyright_holder:
+      type: Person
+      name: Dr. Carsten Stöcker
+      url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    keywords:
+      - Follow one result through its evidence graph
+      - concrete use case
+      - verifiable AI lab analysis
+      - credential evidence graph
+    raster_url: /assets/verifiable-ai-lab-results/figure-14-concrete-evidence-graph.png
+    distributions:
+      - url: /assets/verifiable-ai-lab-results/figure-14-concrete-evidence-graph.svg
+        label: SVG
+        encoding_format: image/svg+xml
+      - url: /assets/verifiable-ai-lab-results/figure-14-concrete-evidence-graph.png
+        label: PNG
+        encoding_format: image/png
+  - id: figure-15-forensic-detail
+    name: "Forensic laboratory: custody, analysis and review"
+    content_url: /assets/verifiable-ai-lab-results/figure-15-forensic-detail.svg
+    alt: A sealed exhibit and subsample feed an instrument and LIMS, a spectral-analysis service, an expert report and an authorised recipient. Custody, raw data, material controls, calibration, model references and assessment scope remain traceable.
+    width: 1600
+    height: 1100
+    description: Concrete forensic spectral-analysis workflow adapted from the original laboratory variant. Vendor assertions and independent assessments are separate. DNA and fingerprint workflows need different methods and validation profiles. An analytical candidate is not a legal conclusion, and evidence integrity alone does not establish admissibility.
+    caption: Concrete forensic spectral-analysis workflow adapted from the original laboratory variant. Vendor assertions and independent assessments are separate. DNA and fingerprint workflows need different methods and validation profiles. An analytical candidate is not a legal conclusion, and evidence integrity alone does not establish admissibility.
+    credit_text: Carsten Stöcker / Spherity GmbH
+    copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
+    license: https://creativecommons.org/licenses/by/4.0/
+    creator_type: Person
+    creator_name: Dr. Carsten Stöcker
+    creator_url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    copyright_holder:
+      type: Person
+      name: Dr. Carsten Stöcker
+      url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    keywords:
+      - "Forensic laboratory: custody, analysis and review"
+      - concrete use case
+      - verifiable AI lab analysis
+      - credential evidence graph
+    raster_url: /assets/verifiable-ai-lab-results/figure-15-forensic-detail.png
+    distributions:
+      - url: /assets/verifiable-ai-lab-results/figure-15-forensic-detail.svg
+        label: SVG
+        encoding_format: image/svg+xml
+      - url: /assets/verifiable-ai-lab-results/figure-15-forensic-detail.png
+        label: PNG
+        encoding_format: image/png
+  - id: figure-16-automotive-detail
+    name: "Automotive Driving Labels: from trip to data product"
+    content_url: /assets/verifiable-ai-lab-results/figure-16-automotive-detail.svg
+    alt: A pseudonymous trip segment feeds gateway capture, an AI labelling agent, a signed data-product record and an engineering consumer. Evidence retains sensor timing, transformations, model taxonomy, validation profile, ground truth and data-use permissions.
+    width: 1600
+    height: 1100
+    description: Proposed credential workflow informed by the reported BMW Dangerous Driving field-test context. The example IDs and versioned records do not describe the exact deployed test system or measured results. A gateway signature is not calibration; an event label is not proof of dangerous conduct, liability or vehicle safety.
+    caption: Proposed credential workflow informed by the reported BMW Dangerous Driving field-test context. The example IDs and versioned records do not describe the exact deployed test system or measured results. A gateway signature is not calibration; an event label is not proof of dangerous conduct, liability or vehicle safety.
+    credit_text: Carsten Stöcker / Spherity GmbH
+    copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
+    license: https://creativecommons.org/licenses/by/4.0/
+    creator_type: Person
+    creator_name: Dr. Carsten Stöcker
+    creator_url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    copyright_holder:
+      type: Person
+      name: Dr. Carsten Stöcker
+      url: https://spherity.github.io/spherity-research/#dr-carsten-stoecker
+    keywords:
+      - "Automotive Driving Labels: from trip to data product"
+      - concrete use case
+      - verifiable AI lab analysis
+      - credential evidence graph
+    raster_url: /assets/verifiable-ai-lab-results/figure-16-automotive-detail.png
+    distributions:
+      - url: /assets/verifiable-ai-lab-results/figure-16-automotive-detail.svg
+        label: SVG
+        encoding_format: image/svg+xml
+      - url: /assets/verifiable-ai-lab-results/figure-16-automotive-detail.png
+        label: PNG
+        encoding_format: image/png
 robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
 license: https://creativecommons.org/licenses/by/4.0/
 license_scope: This concept note, its original figures and the companion carousel PDF, subject to the exclusions below
@@ -510,7 +634,7 @@ spatial_coverage:
   - European Union
   - Germany
 search_research:
-  reviewed_on: "2026-11-14"
+  reviewed_on: 2026-11-14
   source: Google Trends
   source_url: https://trends.google.com/trends/explore
   geographies:
@@ -634,6 +758,8 @@ toc_items:
     href: "#vehicle-data"
   - title: "14. Outlook: portable evidence with explicit limits"
     href: "#outlook"
+  - title: "Appendix: concrete use-case architectures"
+    href: "#use-case-appendix"
   - title: References
     href: "#references"
   - title: License and citation
@@ -659,7 +785,7 @@ extra_css:
 <dt>Use cases</dt><dd>Food testing; textile and pharmaceutical product authenticity; product provenance; milk-tank cleaning measurements; forensic analysis; automotive driving-event labels.</dd>
 <dt>Challenge</dt><dd>A result can travel without the evidence needed to judge its origin, scientific support and permitted use.</dd>
 <dt>Approach</dt><dd>Bind the result to the sample, device, calibration, materials, references, AI service and responsible organisation through an evidence graph.</dd>
-<dt>Deliverables</dt><dd>A 19-slide companion PDF, twelve downloadable figures, worked statistical illustrations and a staged validation plan. This page is a design study, not an executable implementation or a laboratory certificate.</dd>
+<dt>Deliverables</dt><dd>A 19-slide companion PDF, sixteen downloadable figures, worked statistical illustrations and a staged validation plan. This page is a design study, not an executable implementation or a laboratory certificate.</dd>
 <dt>Main lesson</dt><dd>Verifiable provenance and authority support scrutiny. They do not establish scientific correctness.</dd></dl>
 <h3>Implementation and testing context</h3>
 <p>The author's implementation update of 14 November 2026 distinguishes the maturity of the contributing activities:</p>
@@ -926,6 +1052,50 @@ Bind the label to raw-data hashes, sensor and transformation provenance, model v
 The opportunity is to make laboratory evidence reusable across organisational boundaries while retaining its scientific meaning. A product passport, quality workflow or data space could consume a scoped result and follow its supporting evidence, instead of repeatedly requesting disconnected documents. The [DPP5.0 study]({{ '/eu-dpp-registry-w3c-dpp5.html' | relative_url }}) explores registers, semantics and policy as parts of that wider infrastructure. A register can help discover evidence and its meaning; registration alone does not validate a test result.
 
 Spherity's proposed role in this pattern is the identity, delegation and evidence layer: connect business wallets, agents, recognised issuers and receiver policies. Laboratories, CABs, reference-material producers and competent authorities retain their respective responsibilities. Useful next work is a narrow interoperability pilot with real evidence owners, clearly defined schemas and independent evaluation. Success would mean that a receiver can explain **which result was produced, from what evidence, by whose authority, within which validated limits — and why it was accepted or refused**.
+
+<h2 id="use-case-appendix">Appendix: concrete use-case architectures</h2>
+
+The main figures introduce the reusable principles. This appendix restores the operational and credential detail of the original case-study charts: **who captures the input, which records an analysis uses, who signs the result and what the receiver checks**. The diagrams use illustrative record IDs to make the relationships concrete. They are proposed implementation patterns; the reported maturity of each contributing activity remains as stated in the evidence-level panel.
+
+Solid arrows show operational hand-offs; dashed arrows show supporting records. In the evidence graph, arrows follow typed references. A source record may be a signed credential, a DCC, a laboratory record or a controlled reference document. Referencing a record does not convert it into a credential or establish the truth of its contents. Sensitive raw data and reference libraries can remain under access control while the result carries identifiers, digests and retrieval policy.
+
+These larger diagrams are best read using the full-size SVG or PNG links. They supplement the educational figures in the main text. The companion 19-slide PDF is unchanged; this appendix is part of the web case study.
+
+<h3 id="appendix-product-authenticity">A1. Product authenticity: sample to signed report</h3>
+
+The original product case used Tailorlux marking and reader products as its concrete context [13]. The revised workflow keeps that physical context without assigning unverified credential-issuance roles to Tailorlux, a register provider or a conformity assessment body. A sample from lot **L-0417** is captured as **SCAN-17**, evaluated in run **R-8812**, and referenced by report **REP-17**. These are illustrative identifiers, not field-test records.
+
+{% assign fig = page.figure_objects | where: "id", "figure-13-product-authenticity-detail" | first %}
+{% include research-figure.html figure=fig number=13 %}
+
+The result should identify the observed marker finding and its method-specific limitations. A broader authenticity conclusion additionally needs a reliable marker-to-product registration, physical sample-to-lot binding, relevant reference data and a justified decision rule. Neither a marker match nor a signed report alone proves fibre composition, geographic origin or the authenticity of every item in a lot. The receiver follows the source records and decides whether their scope supports the claim being made.
+
+<h3 id="appendix-evidence-records">A2. One result, six assertion families</h3>
+
+The first-edition evidence graph usefully distinguished task, object, input, reader and set-up assertions. This worked version keeps those concrete relationships and makes **materials, the AI Service Passport, validation evidence and bounded authority** explicit. The diagram follows the same illustrative run, R-8812, so the workflow and evidence view can be read together.
+
+{% assign fig = page.figure_objects | where: "id", "figure-14-concrete-evidence-graph" | first %}
+{% include research-figure.html figure=fig number=14 %}
+
+Each reference needs enough information to resolve the correct record and check its issuer, version, scope, time and status. A digest binds the referenced bytes; the capture and custody process must establish the physical relationship. The organisation's business wallet presents identity and delegation evidence, while the calibration provider, material producer, laboratory and assessor remain responsible for their own claims. A register's authority over legal identity does not make it a scientific authority. The labels in this example are a proposed structure and can inform the semantic vocabulary work in progress; they are not a completed interoperability specification.
+
+<h3 id="appendix-forensic-workflow">A3. Forensic analysis: preserve custody and interpretation</h3>
+
+The original forensic chart is retained as a **spectral-analysis example**: exhibit **E-0931**, subsample **S-0931-A**, method **M-12** and run **F-12**. It now separates the instrument's observation, the analysis service's candidate finding and the expert's interpretation. The model vendor's declaration is evidence about what the vendor asserts; an independent assessment, where available, is a separate record with its own issuer and scope.
+
+{% assign fig = page.figure_objects | where: "id", "figure-15-forensic-detail" | first %}
+{% include research-figure.html figure=fig number=15 %}
+
+Custody transfers, sample preparation, consumable and reference-material lots, blanks and controls must remain connected to the actual run. A DCC supports calibration within its stated scope; it does not validate the matching method or the expert's conclusion. For DNA or fingerprint comparison, replace the spectral method and library with discipline-specific references, validation profiles and interpretation procedures. Do not transfer a spectral similarity score into a probability of identity or guilt. Access rights and the legal handling of the evidence remain separate decisions.
+
+<h3 id="appendix-automotive-workflow">A4. Automotive Driving Labels: preserve intended use</h3>
+
+The reported **BMW Dangerous Driving field test** supplies practical context for the automotive use case. The diagram below is a proposed credential and provenance pattern, not a reconstruction of the exact field-test implementation. It follows a bounded trip segment through capture, event labelling, a data-product record and an engineering receiver. Its IDs, model version and taxonomy are illustrative.
+
+{% assign fig = page.figure_objects | where: "id", "figure-16-automotive-detail" | first %}
+{% include research-figure.html figure=fig number=16 %}
+
+A braking-event candidate needs a defined taxonomy, ground-truth procedure, operating-domain limits and a review path. Record sensor timing and transformations so a receiver can assess the label's intended use. The data-product record also retains permitted use and evidence-access policy. A signed gateway record establishes attribution and integrity under the relevant keys; it does not substitute for sensor calibration or show that a driver acted dangerously. This distinction matters when the same data moves from collection into training, evaluation or engineering decisions.
 
 <h2 id="references">References</h2>
 

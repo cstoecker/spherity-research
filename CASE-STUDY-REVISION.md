@@ -89,3 +89,38 @@ remain identical to the approved source; the original bytes remain a prefix.
 The audit is recorded in `scripts/data/case-study-pdf-metadata-provenance.json`.
 The PDF and its cover are discovered by the full sitemap pipeline; the noindex
 sharing alias is excluded. The individual case-study social card stays distinct.
+
+## Web-only concrete use-case appendix
+
+The follow-up branch `codex/concrete-use-case-appendix` adds four detailed diagrams
+after the outlook and before the references. The original five charts were
+reviewed against their revised educational versions. The appendix restores the
+useful operational detail of the product-authenticity system, its evidence graph,
+the forensic laboratory and automotive labelling cases. The existing six-question
+problem-framing diagram already covers the first original chart.
+
+The new diagrams use illustrative record IDs, explicit issuer and source roles,
+material lots, calibration scope, AI Service Passports, validation profiles and
+receiver checks. They remove unexplained confidence scores and hypothetical named
+certificate issuers. Operational hand-offs and evidence references have distinct
+arrow styles. The automotive pattern is informed by the reported field-test
+context, not presented as a reconstruction of that implementation.
+
+Regenerate these four masters with
+`node scripts/generate-case-appendix-diagrams.mjs`, then run
+`node scripts/prepare-case-study-assets.mjs` and the normal full build pipeline.
+The diagrams have accessible descriptions, embedded fonts and rights metadata,
+plus SVG and PNG downloads. There are now sixteen figures and 32 figure downloads
+in the full sitemap. The approved 19-slide PDF remains byte-for-byte unchanged.
+
+The complete local preview suite passed: 39 PDF-sharing checks, 74 publication
+checks and 208 Atlas/integration checks (321 total), plus site validation and
+social-card preflight. All four complete canvases were visually reviewed for
+aligned boxes, text bounds, connectors, arrowheads and margins. Production Jekyll
+CI remains required before release; the earlier verification results above
+describe the preceding twelve-figure release.
+
+Responsive browser review covered desktop (1440 px), tablet (769 px) and mobile
+(390 px). The four new figures loaded, captions and download controls wrapped
+without page-level horizontal overflow, and a PNG download completed. Small-screen
+readers can use the full-size figure links for the detailed record fields.
