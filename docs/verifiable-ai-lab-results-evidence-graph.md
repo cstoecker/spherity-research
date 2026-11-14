@@ -8,7 +8,7 @@ og_title: "Verifiable AI Lab Analysis: From Measurement to Evidence"
 og_description: "How verifiable AI lab results connect calibration, materials, validation profiles and business wallets: food, product authenticity, cleaning and forensic use cases."
 subtitle: An educational case study of results, calibration, materials, agent validation and accountable decisions
 description: "How verifiable AI lab results connect calibration, materials, validation profiles and business wallets: food, product authenticity, cleaning and forensic use cases."
-paper_status: Spherity Research · Conceptual case study
+paper_status: Spherity Research · Proof of concept, prototype and initial field testing
 authors:
   - Dr. Carsten Stöcker
 author_entities:
@@ -439,7 +439,7 @@ keywords:
   - Spherity Trusted AI
   - Agent Identity
   - open standards
-answer_summary: This conceptual case study proposes an evidence graph for AI-assisted laboratory analysis. Result credentials link samples, calibration, consumable lots, reference data, AI Service Passports and validation profiles. Business wallets support organisational identity and bounded agent mandates; CABs and recognised issuers provide scoped assurance. Food, product authenticity, cleaning, forensic and automotive examples distinguish provenance and authority from scientific correctness. No deployment or measured outcomes are reported.
+answer_summary: This case study proposes an evidence graph for AI-assisted laboratory analysis, informed by proof-of-concept work, a working AI Lab prototype and initial field testing. Result credentials link samples, calibration, consumable lots, reference data, AI Service Passports and validation profiles. Business wallets support organisational identity and bounded agent mandates; CABs and recognised issuers provide scoped assurance. The author reports BMW Dangerous Driving field testing, QI-Digital DCR/DCC testing and related concept work. The integrated architecture remains proposed; numerical examples are illustrative, not measured performance results.
 key_takeaways:
   - Bind each result to the actual sample, device, calibration, material lots, reference release and permitted task.
   - Link the AI Service Passport to a validation profile and TEVV evidence for the configuration actually used.
@@ -447,7 +447,7 @@ key_takeaways:
   - Check issuer recognition, action authorisation, evidence integrity, validity and status separately.
   - Keep legal identity, laboratory competence, model-vendor assertions and independent assessment distinct.
   - Offline verification is an as-of check against retained evidence; it cannot discover revocations after its status snapshot.
-  - Test failure cases before claiming benefits. This case describes a proposed architecture, with no measured deployment outcomes.
+  - Distinguish evidence maturity by activity. Field testing, a working prototype, vocabulary development and concept work inform the proposed architecture; numerical illustrations are not measured deployment outcomes.
   - Connect VERA, EIDA, AI Service Passports, Agent Identity and Trusted AI around evidence owners and a receiver’s explicit policy.
 about:
   - AI-evaluated laboratory results
@@ -567,8 +567,8 @@ search_research:
     - Retain digital calibration certificate and evidence graph for technical precision despite sparse Trends evidence.
     - Google Trends is directional context only. No search-volume, market-size or growth claim is made; a worldwide twelve-month comparison was also reviewed, but no EU-wide aggregate was reviewed.
 questions_answered:
-  - question: Is this a deployed customer case study?
-    answer: No. It is a proposed architecture and validation plan, with no deployment or measured outcomes. Named products and organisations are references or illustrative roles; no endorsement or certificate issuance is claimed.
+  - question: What is the evidence level of this case study?
+    answer: Proof of concept, working prototype and initial field testing. The author's implementation update includes BMW Dangerous Driving field testing, an AI Lab prototype, a semantic vocabulary in progress, DCR/DCC testing in QI-Digital, Sphin-X concept work, Catena-X Trusted AI concept work and Innovation Challenge work on a dairy use case with Siemens. These activities inform a proposed integrated architecture; they do not establish that every component has been deployed together or independently validated. Numerical examples remain illustrative.
   - question: What does a verifiable AI lab result prove?
     answer: Proof checks can establish integrity and attribution under trusted keys and policy. An evidence graph links supporting records about the sample, calibration, materials, references, agent and authority. It does not establish scientific correctness or automatically justify a release decision.
   - question: What is the difference between DCR and DCC?
@@ -648,19 +648,31 @@ tags:
   - industrial-ai
 publication_type: case-study
 schema_type: TechArticle
-case_study_status: conceptual
+case_study_status: prototype-and-initial-field-testing
 extra_css:
   - /assets/case-studies.css
 ---
 
 <section class="case-at-glance" aria-labelledby="case-at-a-glance">
 <h2 id="case-at-a-glance">Case study at a glance</h2>
-<dl><dt>Evidence level</dt><dd><strong>Conceptual case study.</strong> Proposed architecture; no deployment or measured outcomes are reported.</dd>
+<dl><dt>Evidence level</dt><dd><strong>Proof of concept, working prototype and initial field testing.</strong> Proposed architecture, informed by the activities listed below.</dd>
 <dt>Use cases</dt><dd>Food testing; textile and pharmaceutical product authenticity; product provenance; milk-tank cleaning measurements; forensic analysis; automotive driving-event labels.</dd>
 <dt>Challenge</dt><dd>A result can travel without the evidence needed to judge its origin, scientific support and permitted use.</dd>
 <dt>Approach</dt><dd>Bind the result to the sample, device, calibration, materials, references, AI service and responsible organisation through an evidence graph.</dd>
 <dt>Deliverables</dt><dd>A 19-slide companion PDF, twelve downloadable figures, worked statistical illustrations and a staged validation plan. This page is a design study, not an executable implementation or a laboratory certificate.</dd>
 <dt>Main lesson</dt><dd>Verifiable provenance and authority support scrutiny. They do not establish scientific correctness.</dd></dl>
+<h3>Implementation and testing context</h3>
+<p>The author's implementation update of 14 November 2026 distinguishes the maturity of the contributing activities:</p>
+<ul>
+<li><strong>BMW Dangerous Driving:</strong> field test.</li>
+<li><strong>AI Lab:</strong> working prototype.</li>
+<li><strong>Semantic vocabulary:</strong> work in progress.</li>
+<li><strong>QI-Digital:</strong> DCR/DCC testing within the project.</li>
+<li><strong>Sphin-X:</strong> concept work.</li>
+<li><strong>Catena-X Trusted AI:</strong> concept work.</li>
+<li><strong>Dairy use case with Siemens:</strong> Innovation Challenge work.</li>
+</ul>
+<p>These activities inform the proposed integrated architecture. Their individual maturity does not imply that every component has been deployed together or independently validated. The statistical examples on this page remain calculated illustrations, not measured project results.</p>
 </section>
 
 <section class="abstract-box" markdown="1">
@@ -668,7 +680,7 @@ extra_css:
 
 A laboratory output may be a concentration, a spectrum, a marker match, a cleaning measurement certificate or a forensic analytical finding. A verdict is one possible interpretation of that output. This case study proposes an evidence architecture for **verifiable AI lab analysis**: a result credential links to the particular sample, instrument, calibration, consumable lots, reference data, agent configuration and validation evidence used in an actual run. A business wallet supports organisational identity, credential presentation and bounded delegation. Recognised issuers, conformity assessment bodies and authoritative sources supply different kinds of evidence; they are not interchangeable trust labels.
 
-The page follows the result from physical input to measurement, matching, interpretation and receiver policy. It distinguishes measurement uncertainty from validation confidence intervals and model scores, and shows what an evidence graph can and cannot establish. Food, authenticity, cleaning and forensic examples make the pattern concrete. An automotive driving-label example near the end tests its transfer beyond laboratories. All architectures and numerical illustrations are conceptual; named organisations are references or illustrative role assignments, not evidence of participation, endorsement or certificate issuance.
+The page follows the result from physical input to measurement, matching, interpretation and receiver policy. It distinguishes measurement uncertainty from validation confidence intervals and model scores, and shows what an evidence graph can and cannot establish. Food, authenticity, cleaning and forensic examples make the pattern concrete. An automotive driving-label example near the end explores its transfer beyond laboratories. The proposed integrated architecture draws on the proof-of-concept, prototype, initial field-testing and concept activities identified above. Numerical illustrations are synthetic. The stated project context does not imply organisational endorsement or certificate issuance; generic roles in the diagrams remain illustrative.
 </section>
 
 <h2 id="labs-ai-pipelines">1. Start with the result, not only a verdict</h2>

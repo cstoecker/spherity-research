@@ -1,7 +1,7 @@
 - id: verifiable-ai-lab-results
   title: "Verifiable AI Lab Analysis: From Measurement to Evidence"
   url: /case-studies/verifiable-ai-lab-results.html
-  status: Conceptual case study
+  status: Prototype and initial field testing
   sector: AI-assisted laboratory analysis
   summary: "From food and authenticity tests to cleaning and forensic findings: connect calibration, materials, agent validation and organisational authority through a verifiable evidence graph."
   learning: Distinguish a result, its supporting scientific evidence, issuer authority and the receiver’s decision.

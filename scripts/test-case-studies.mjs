@@ -44,8 +44,11 @@ test('case article has technical article schema, parent breadcrumb and explicit 
   assert.deepEqual(breadcrumbs.map(n => n.position), [1, 2, 3]);
   assert.equal(breadcrumbs[1].name, 'Case studies');
   assert.equal(breadcrumbs[2].item, page.canonical_url);
-  assert.equal(page.case_study_status, 'conceptual');
-  assert.match(article, /no deployment or measured outcomes/i);
+  assert.equal(page.case_study_status, 'prototype-and-initial-field-testing');
+  assert.match(article, /Proof of concept, working prototype and initial field testing/);
+  assert.doesNotMatch(article, /no deployment or measured outcomes/i);
+  for (const activity of ['BMW Dangerous Driving', 'AI Lab', 'Semantic vocabulary', 'QI-Digital', 'Sphin-X', 'Catena-X Trusted AI', 'Dairy use case with Siemens']) assert.ok(article.includes(activity), activity);
+  assert.match(article, /calculated illustrations, not measured project results/);
   assert.match(article, /expected decisions, not observed results/i);
   assert.match(article, /scientific correctness/i);
   assert.equal(page.pdf_url, '/Spherity-Verifiable-AI-Lab-Analysis-Carousel-v12.pdf');
