@@ -124,3 +124,19 @@ Responsive browser review covered desktop (1440 px), tablet (769 px) and mobile
 (390 px). The four new figures loaded, captions and download controls wrapped
 without page-level horizontal overflow, and a PNG download completed. Small-screen
 readers can use the full-size figure links for the detailed record fields.
+
+## Figure 14 connector review and PDF visibility
+
+Figure 14 now connects receiver policy to the report with a labelled dashed
+evaluation arrow. Solid arrows retain their typed-reference meaning. Six staggered
+junctions make each assertion branch independent; the central line ends exactly
+at the final junction. The legend, caption, alt text and explanation distinguish
+policy evaluation from record references and remove apparent links between paired
+cards. The SVG and PNG keep their existing public URLs and metadata.
+
+The already hosted version 12 carousel is now offered in a prominent download
+callout before the case-at-a-glance section, with a navigation entry. Its SHA-256
+matches the PDF uploaded to LinkedIn; the PDF bytes remain unchanged. The button
+was exercised in the browser. Desktop, tablet and mobile review covered the
+callout and revised figure. Full preview checks pass (321 tests), with the complete
+sitemap regenerated; production Jekyll CI must pass before publication.

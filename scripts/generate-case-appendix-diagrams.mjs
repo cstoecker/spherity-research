@@ -38,13 +38,17 @@ flow('figure-13-product-authenticity-detail','A1 · Product authenticity: a conc
  ['Receiver checks','Issuer + task authority','Bound data + versions','Calibration applicability','Material lots + controls','Validation + uncertainty','Accept / refer / reject']
  ],'Marker detection supports a scoped finding; it does not establish composition, origin or authenticity by itself.');
 
-let graph=box(40,135,480,165,'Report REP-17',['Issuer: accountable operator','Subject: lot L-0417 / sample S-17','Interpretation + limits; resultRef: R-8812'],true)+
-box(560,135,480,165,'Analysis run R-8812',['Issuer: authorised analysis service','Finding + method + configuration','Evidence references identify the actual run'])+
-box(1080,135,480,165,'Receiver trust policy',['Check each issuer for the claimed action','Check proof, scope, time and status','Scientific acceptance remains a separate step']);
-graph+=arrow(520,218,560,218);
-graph+=text(40,1165,'Typed references from the run lead to distinct assertions and their source records.',22,'#526273');
-// A central reference spine keeps the six branches outside all cards.
-graph+=`<path d="M800 300 V1130" fill="none" stroke="#167d8d" stroke-width="3"/>`;
+let graph=box(40,175,480,165,'Report REP-17',['Issuer: accountable operator','Subject: lot L-0417 / sample S-17','Interpretation + limits; resultRef: R-8812'],true)+
+box(560,175,480,165,'Analysis run R-8812',['Issuer: authorised analysis service','Finding + method + configuration','Evidence references identify the actual run'])+
+box(1080,175,480,165,'Receiver trust policy',['Evaluate report and linked evidence','Check issuer, proof, scope, time and status','Scientific acceptance is a separate judgment']);
+// Policy evaluates the report; it is not an evidence record issued by the run.
+graph+=`<path id="policy-evaluation" d="M1320 175 V130 H280 V175" fill="none" stroke="#167d8d" stroke-width="3" stroke-dasharray="7 5" stroke-linejoin="round" marker-end="url(#arrow)"/>`;
+graph+=text(500,120,'evaluates the report and its linked evidence',20,'#526273');
+graph+=arrow(520,258,560,258);
+graph+=text(825,390,'Run evidence references',20,'#526273');
+// Staggered junctions distinguish independent references from pairwise links.
+// End the spine exactly at its final junction, without a dangling tail.
+graph+=`<path id="run-reference-spine" d="M800 340 V1085" fill="none" stroke="#167d8d" stroke-width="3" stroke-linecap="round"/>`;
 const nodes=[
  ['objectRef → sample / lot',['L-0417 / S-17 / marker M-4711','Collection + custody + physical binding','Marker registration identifies the claim owner','Sources: collector, operator, marker record']],
  ['inputRef → captured observation',['SCAN-17 / rawDataDigest / capture time','Device key or gateway capture attestation','Preprocessing points back to retained raw data','Source: capture service; access controlled']],
@@ -53,8 +57,8 @@ const nodes=[
  ['serviceRef → AISP and validation',['AISP-03 / model v3.2 / profile P-MARKER-02','Marker DB v9 / library v14 / threshold rule','TEVV evidence: tests, cohorts, limits, assessor','Vendor declaration ≠ independent assessment']],
  ['authorityRef → organisation and mandate',['Agent Card + permitted task / assets / time','Operator wallet presents identity credentials','Register establishes identity within its remit','CAB evidence, if applicable, keeps exact scope']]
 ];
-for(let i=0;i<6;i++){const right=i%2===1,x=right?870:40,y=400+Math.floor(i/2)*260;graph+=box(x,y,690,205,nodes[i][0],nodes[i][1]);graph+=arrow(800,y+100,right?870:730,y+100);}
-graph+=text(40,1200,'Every record retains issuer, identifier, version, scope, time, status, evidence digest and access policy.',25,'#167d8d',700)+
+for(let i=0;i<6;i++){const right=i%2===1,x=right?870:40,y=440+Math.floor(i/2)*260,junctionY=y+(right?125:80);graph+=box(x,y,690,205,nodes[i][0],nodes[i][1]);graph+=arrow(800,junctionY,right?870:730,junctionY);graph+=`<circle cx="800" cy="${junctionY}" r="5" fill="#167d8d"/>`;}
+graph+=text(40,1200,'Solid: typed record references. Dashed: receiver evaluation. Dots: branches from the same run.',24,'#167d8d',700)+
 text(40,1243,'Illustrative identifiers. A reference or valid signature does not prove that its underlying assertion is scientifically correct.',22);
 save('figure-14-concrete-evidence-graph','A2 · Follow one result through its evidence graph','Worked product-authenticity example; proposed record structure, not a normative credential schema.',graph,1300);
 

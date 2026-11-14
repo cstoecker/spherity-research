@@ -60,6 +60,8 @@ test('companion carousel has its own cover, download metadata and sitemap entry'
   assert.ok(existsSync('_site' + page.pdf_url));
   assert.ok(existsSync('_site' + page.cover_image));
   assert.ok(article.includes('Download the 19-slide carousel PDF (version 12)'));
+  assert.ok(article.indexOf('id="carousel-pdf"') < article.indexOf('id="case-at-a-glance"'));
+  assert.ok(page.toc_items.some(item => item.href === '#carousel-pdf'));
   assert.ok(sitemap.includes(page.pdf_url));
   assert.ok(existsSync('_site/share/Spherity-Verifiable-AI-Lab-Analysis-Carousel-v12.html'));
   const audit = JSON.parse(read('scripts/data/case-study-pdf-metadata-provenance.json'));

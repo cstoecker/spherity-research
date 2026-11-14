@@ -420,11 +420,11 @@ figure_objects:
   - id: figure-14-concrete-evidence-graph
     name: Follow one result through its evidence graph
     content_url: /assets/verifiable-ai-lab-results/figure-14-concrete-evidence-graph.svg
-    alt: Report REP-17 references analysis run R-8812. Six typed branches link object, input, device, material, service and authority assertions to their respective source records. A receiver checks each source under a scoped trust policy.
+    alt: Receiver policy evaluates report REP-17 through a dashed connector. The report references run R-8812. A central line with six staggered junctions points independently to sample, input, device, materials, service and authority records; it ends at the final branch.
     width: 1600
     height: 1300
     description: Worked evidence graph with illustrative identifiers. The six assertion families restore the concrete detail of the first-edition diagram while retaining separate issuers, calibration scope, material records, AI validation and agent authority. These labels illustrate a proposed record structure, not a normative credential vocabulary or a publicly trusted certification chain.
-    caption: Worked evidence graph with illustrative identifiers. The six assertion families restore the concrete detail of the first-edition diagram while retaining separate issuers, calibration scope, material records, AI validation and agent authority. These labels illustrate a proposed record structure, not a normative credential vocabulary or a publicly trusted certification chain.
+    caption: Worked evidence graph with illustrative identifiers. Solid arrows follow typed references from the report to its run and from that run to six independent assertion families. Junction dots mark branches, not links between adjacent cards. The dashed arrow shows the receiver evaluating the report and its linked evidence under policy; policy is not evidence issued by the run. The record structure is proposed, not a normative credential vocabulary or certification chain.
     credit_text: Carsten Stöcker / Spherity GmbH
     copyright_notice: © 2026 Carsten Stöcker, Spherity GmbH
     license: https://creativecommons.org/licenses/by/4.0/
@@ -726,6 +726,8 @@ related_publications:
     url: /eu-dpp-registry-w3c-dpp5.html
     context: Explores how registers and shared semantics can help discover and exchange regulated product evidence without making registration a scientific validation.
 toc_items:
+  - title: Download the case-study PDF
+    href: "#carousel-pdf"
   - title: Case study at a glance
     href: "#case-at-a-glance"
   - title: Abstract
@@ -778,6 +780,11 @@ case_study_status: prototype-and-initial-field-testing
 extra_css:
   - /assets/case-studies.css
 ---
+
+<section class="paper-download" id="carousel-pdf" aria-label="Download the case-study PDF">
+<a href="{{ '/Spherity-Verifiable-AI-Lab-Analysis-Carousel-v12.pdf' | relative_url }}" download>Download the 19-slide carousel PDF (version 12)</a>
+<p><strong>Case-study PDF: Verifiable AI Lab Analysis — Measured. Signed. Trusted?</strong><br>The same 19-slide document shared on LinkedIn. Covers use cases, calibration, materials, AI validation, statistical illustrations and Spherity products. The detailed use-case appendix is available on this web page.</p>
+</section>
 
 <section class="case-at-glance" aria-labelledby="case-at-a-glance">
 <h2 id="case-at-a-glance">Case study at a glance</h2>
@@ -843,8 +850,6 @@ Tailorlux's material-marking and reader products provide a motivating product-au
 The first requirement is a credible link between the physical object and the digital record. Assign sample, exhibit, production-lot or equipment identifiers at collection; record who sampled what, when, where and under which procedure. Bind custody transfers, seals and preparation steps to those identifiers. A hash detects changes to a digital file; it cannot establish that the file came from the claimed physical sample.
 
 Retain raw data, preprocessing steps, units, timestamps, device and firmware versions, environmental conditions and the configuration used for the run. If an agent retrieves reference records or calls tools, record the selected records, database release, tool versions and relevant execution outputs. Where prompts or retrieval context affect the analysis, pin those too. Protect confidential, proprietary and personal data through controlled evidence access; do not put raw DNA records or secret marker recipes into a public credential.
-
-<p id="carousel-pdf"><strong>Companion slide deck:</strong> <a href="{{ '/Spherity-Verifiable-AI-Lab-Analysis-Carousel-v12.pdf' | relative_url }}">Download the 19-slide carousel PDF (version 12)</a>. It summarises the use cases, calibration and material assurance, AI validation, statistical illustrations and Spherity products. The page provides the fuller explanation and revised web diagrams.</p>
 
 Open any figure for the full-size view, or use its SVG and PNG download links. On a small screen, scroll the comparison tables horizontally.
 
@@ -1057,7 +1062,7 @@ Spherity's proposed role in this pattern is the identity, delegation and evidenc
 
 The main figures introduce the reusable principles. This appendix restores the operational and credential detail of the original case-study charts: **who captures the input, which records an analysis uses, who signs the result and what the receiver checks**. The diagrams use illustrative record IDs to make the relationships concrete. They are proposed implementation patterns; the reported maturity of each contributing activity remains as stated in the evidence-level panel.
 
-Solid arrows show operational hand-offs; dashed arrows show supporting records. In the evidence graph, arrows follow typed references. A source record may be a signed credential, a DCC, a laboratory record or a controlled reference document. Referencing a record does not convert it into a credential or establish the truth of its contents. Sensitive raw data and reference libraries can remain under access control while the result carries identifiers, digests and retrieval policy.
+In the workflow diagrams, solid arrows show operational hand-offs and dashed arrows show supporting records. Figure 14 is a reference graph: solid arrows follow typed record references, while its dashed connector shows receiver evaluation under policy. Each diagram includes its own legend. A source record may be a signed credential, a DCC, a laboratory record or a controlled reference document. Referencing a record does not convert it into a credential or establish the truth of its contents. Sensitive raw data and reference libraries can remain under access control while the result carries identifiers, digests and retrieval policy.
 
 These larger diagrams are best read using the full-size SVG or PNG links. They supplement the educational figures in the main text. The companion 19-slide PDF is unchanged; this appendix is part of the web case study.
 
@@ -1073,6 +1078,8 @@ The result should identify the observed marker finding and its method-specific l
 <h3 id="appendix-evidence-records">A2. One result, six assertion families</h3>
 
 The first-edition evidence graph usefully distinguished task, object, input, reader and set-up assertions. This worked version keeps those concrete relationships and makes **materials, the AI Service Passport, validation evidence and bounded authority** explicit. The diagram follows the same illustrative run, R-8812, so the workflow and evidence view can be read together.
+
+Read the solid arrows from **report → analysis run → supporting records**. The six marked junctions branch independently from the run; the left and right cards do not point to one another. The dashed connector shows the receiver applying its policy to the report and following its evidence references. It is an evaluation relationship, not a credential issued by the analysis service.
 
 {% assign fig = page.figure_objects | where: "id", "figure-14-concrete-evidence-graph" | first %}
 {% include research-figure.html figure=fig number=14 %}
