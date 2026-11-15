@@ -36,10 +36,13 @@ export const policyVersion = (version, limits) => {
 export const POLICY_V1 = policyVersion("1", { Hg: 5, Cd: 20, Pb: 100 });
 export const POLICY_V2 = policyVersion("2", { Hg: 5, Cd: 20, Pb: 40 }); // a policy-only correction, closure unchanged
 
-// Map identity is not part of the evidence format: every key is a text identifier.
-// Otherwise distinct object keys can collapse to identical committed source entries.
-const validStatementKeys = (statements) => statements instanceof Map &&
-  [...statements.keys()].every((id) => typeof id === "string" && id.length > 0 && id.isWellFormed());
+// Map identity is not part of the evidence format: every key is a text identifier and every value
+// is a statement object with a body. Otherwise distinct object keys can collapse to identical
+// committed source entries, and an entry without a statement would count for coverage in
+// evaluate() (Map.has) without being committed by canonicalGraph().
+const isStatement = (st) => st !== null && typeof st === "object" && st.body !== null && typeof st.body === "object";
+const validStatementMap = (statements) => statements instanceof Map &&
+  [...statements].every(([id, st]) => typeof id === "string" && id.length > 0 && id.isWellFormed() && isStatement(st));
 
 // ---- evaluation (deterministic) ----------------------------------------------------------------
 /**
@@ -53,7 +56,7 @@ const validStatementKeys = (statements) => statements instanceof Map &&
 export function evaluate(policy, ev, ctx) {
   const why = [];
   const out = (outcome, reason) => ({ outcome, reason, considered: why });
-  if (!validStatementKeys(ev.statements)) return out("UNKNOWN", "invalid statement map keys");
+  if (!validStatementMap(ev.statements)) return out("UNKNOWN", "invalid statement map keys or entries");
   const { parties, accreditation, profile, time, mode = "contract" } = ctx;
   const finite = (v) => typeof v === "number" && Number.isFinite(v);
   if (!finite(time) || !finite(profile.maxCoverageAge) || profile.maxCoverageAge < 0) return out("UNKNOWN", "invalid evaluation time or coverage age");
@@ -122,7 +125,7 @@ const iri = (v) => {
 const obj = (v) => (/^(urn|did|https?):/.test(String(v)) ? iri(v) : lit(v));
 const subj = (id) => (/^(urn|did|https?):/.test(id) ? id : `urn:statement:${id}`);
 export async function canonicalGraph(ev, coverage) {
-  if (!validStatementKeys(ev.statements)) throw new Error("invalid statement map keys");
+  if (!validStatementMap(ev.statements)) throw new Error("invalid statement map keys or entries");
   const lines = [];
   const add = (s, p, o) => lines.push(`${iri(subj(s))} ${iri(V + p)} ${o} .`);
   const statements = [["declaration", "declaration", ev.declaration], ...[...ev.statements].map(([id, st]) => ["statement", id, st]), ...(coverage ? [["coverage", "completeList", coverage.completeList], ["coverage", "status", coverage.status]] : [])];
@@ -150,6 +153,7 @@ export class Custodian {
     if (core?.certificateId !== certificateId) return { ok: false, reason: "deposit certificate core mismatch" };
     const expectedCommitment = core.commitment;
     const archive = this.#open(sealed);
+    if (typeof archive?.salt !== "string") return { ok: false, reason: "deposit archive holds no salt" };
     let canonical;
     try { canonical = await canonicalGraph(archive.evidence, archive.coverage); }
     catch (error) { return { ok: false, reason: `deposit evidence outside the extraction domain: ${error.message}` }; }
@@ -195,7 +199,9 @@ export async function certify({ certifier, tsa, custodian, policy, ev, coverage,
   const result = evaluate(policy, { ...ev, coverage }, ctx);
   if (result.outcome === "UNKNOWN") return { ok: false, reason: `indeterminate: ${result.reason}` };
   const salt = randomBytes(32);
-  const canonical = await canonicalGraph(ev, coverage);
+  let canonical;
+  try { canonical = await canonicalGraph(ev, coverage); }
+  catch (error) { return { ok: false, reason: `evidence outside the extraction domain: ${error.message}` }; }
   const commitment = commit(salt, canonical);
   const cov = coverageRef(coverage);
   const core = {
@@ -243,6 +249,7 @@ export async function disputeReport(cert, { custodian, certifiers, ctx, policies
   const report = { certificateAuthentic: !!certifiers.get(core.certifier) && verifyObject(cert.signed, certifiers.get(core.certifier).party) };
   const restored = custodian.restore(core.certificateId);
   if (!restored.ok) return { ...report, opening: "unavailable", detail: restored.reason, attribution: "not determined by this report" };
+  if (typeof restored.archive?.salt !== "string") return { ...report, opening: "invalid", detail: "the archive holds no salt for the certified commitment", attribution: "not determined by this report" };
   let canonical;
   try { canonical = await canonicalGraph(restored.archive.evidence, restored.archive.coverage); }
   catch (error) { return { ...report, opening: "invalid", detail: `archived evidence outside the extraction domain: ${error.message}`, attribution: "not determined by this report" }; }

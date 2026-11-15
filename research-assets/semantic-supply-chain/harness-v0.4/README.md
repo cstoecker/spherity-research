@@ -35,7 +35,7 @@ Worked examples and the formal model's checker for the paper *Securing the Seman
 
 The other findings narrowed claims in this README and in the paper.
 
-**Release-gate review.** A third code review (round 6, 14 November 2026) found one blocking defect: WE-7 accepted non-string statement keys, so one evidence commitment could open to different outcomes. Keys must now be nonempty, well-formed strings, with a regression test that fails on the reviewed code. A follow-up makes a dispute over such an archive report an invalid opening instead of throwing.
+**Release-gate review.** A third code review (round 6, 14 November 2026) found one blocking defect: WE-7 accepted non-string statement keys, so one evidence commitment could open to different outcomes. Keys must now be nonempty, well-formed strings, with a regression test that fails on the reviewed code. A follow-up makes a dispute over such an archive report an invalid opening instead of throwing. The final review (round 7, 15 November 2026, by two independent reviewers) found that a Map entry holding no statement object counted for coverage without being committed; every entry must now hold a statement object, and disputes, deposits and certification return structured refusals for archives or evidence outside the extraction domain.
 
 **Formats changed in these reviews:**
 - the decoding manifest is now `ssc-decoding-manifest/v2`, binding the graph-processing profile and rejecting duplicate table codes;
@@ -70,7 +70,7 @@ v0.4.0 implements the corrections that three independent reviews of the formal m
 
 ```bash
 npm ci          # installs exactly the versions in package-lock.json
-npm test        # 123 tests: W3C vectors, the model checker, every scenario and the review regressions; TPM tests skip without swtpm
+npm test        # 130 tests: W3C vectors, the model checker, every scenario and the review regressions; TPM tests skip without swtpm
 npm run we1
 npm run we2
 npm run we3     # needs swtpm and tpm2-tools (for example apt-get install swtpm swtpm-tools tpm2-tools)
@@ -384,9 +384,9 @@ Further results:
 
 **Reading.** Coverage, not the disclosure format, decides whether omitted adverse evidence is caught (A2 vs A3, B3 vs B4). A matching replay shows a consistent computation, not complete evidence (B3).
 
-**Extraction profile.** WE-7 `extraction/v2` accepts only nonempty, well-formed string Map keys and commits each signed statement together with its container role and Map key. It requires exactly one matching absence attestation, otherwise returns unknown, and sorts holder-only report identifiers. Equivalent Map iteration orders therefore give the same outcome. The new extraction identifier changes the closure and derived policy digests; older certificates need their original extraction implementation.
+**Extraction profile.** WE-7 `extraction/v2` accepts only nonempty, well-formed string Map keys whose values are statement objects, and commits each signed statement together with its container role and Map key. It requires exactly one matching absence attestation, otherwise returns unknown, and sorts holder-only report identifiers. Equivalent Map iteration orders therefore give the same outcome. The new extraction identifier changes the closure and derived policy digests; older certificates need their original extraction implementation.
 
-**Archive and dispute limits.** The synthetic deposit stores evidence, coverage, salt, policy and time. Code, trust anchors, accreditation, profile and mode remain externally supplied rather than reconstructed from that deposit. `contextReconstructible` reports policy availability, not reconstruction of every decision-context dependency. An archive whose evidence falls outside the extraction/v2 key domain is reported as an invalid opening, and such a deposit is refused. Certificate acceptance checks the acknowledgement's commitment, certificate identifier, core digest and outcome; it does not independently recompute the archive digest. The dispute report does not separately report authenticity for every evidence item.
+**Archive and dispute limits.** The synthetic deposit stores evidence, coverage, salt, policy and time. Code, trust anchors, accreditation, profile and mode remain externally supplied rather than reconstructed from that deposit. `contextReconstructible` reports policy availability, not reconstruction of every decision-context dependency. An archive whose evidence falls outside the extraction/v2 domain, or that holds no salt, is reported as an invalid opening, and such a deposit is refused. Certification returns a refusal, not an exception, for evidence the extraction cannot represent. Certificate acceptance checks the acknowledgement's commitment, certificate identifier, core digest and outcome; it does not independently recompute the archive digest. The dispute report does not separately report authenticity for every evidence item.
 
 **What WE-7 does not show:** that real data sets suffice for real decisions, a real laboratory or registry, independently administered trust provisioning, a complete archive service, legal admissibility, or performance at scale.
 

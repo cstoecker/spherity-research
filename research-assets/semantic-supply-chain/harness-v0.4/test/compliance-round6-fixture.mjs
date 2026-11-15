@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-// Shared WE-7 fixture (copied from compliance-round5.test.mjs).
+// Shared WE-7 fixture, imported by the round-5, lifecycle, round-6 and round-7 compliance tests.
 import { canonicalGraph, acceptCertificate, certify, Custodian, DECISION_CLASS, dictionaryTest, disputeReport, evaluate, KEY_CLAIMS, POLICY_V1, POLICY_V2, SelectionLog } from "../src/compliance.mjs";
 import { digest } from "../src/crypto.mjs";
 import { newParty, signObject, verifyObject } from "../src/signed.mjs";
