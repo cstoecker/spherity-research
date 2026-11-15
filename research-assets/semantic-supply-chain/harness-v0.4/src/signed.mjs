@@ -12,5 +12,5 @@ export function newParty(name) {
 export const publicOf = (party) => (party._pub ??= createPublicKey(party.keys.key));
 export const signObject = (party, body) => ({ body, signer: party.id, signature: ecdsaSign(party.keys.crv, party.keys.key, Buffer.from(canonicalize(body))).toString("base64") });
 export const verifyObject = (object, party) =>
-  !!object && !!party && object.signer === party.id &&
+  !!object && !!party && object.signer === party.id && typeof object.signature === "string" && object.body !== undefined &&
   ecdsaVerify(party.keys.crv, publicOf(party), Buffer.from(canonicalize(object.body)), Buffer.from(object.signature, "base64"));

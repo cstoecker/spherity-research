@@ -40,7 +40,11 @@ export const POLICY_V2 = policyVersion("2", { Hg: 5, Cd: 20, Pb: 40 }); // a pol
 // is a statement object with a body. Otherwise distinct object keys can collapse to identical
 // committed source entries, and an entry without a statement would count for coverage in
 // evaluate() (Map.has) without being committed by canonicalGraph().
-const isStatement = (st) => st !== null && typeof st === "object" && st.body !== null && typeof st.body === "object";
+// A body field named sourceEntry is reserved: canonicalGraph() maps body fields to predicates in
+// the namespace of its own sourceEntry predicate and takes the subject from body.id, so such a
+// field would let one statement emit the committed tuple of an entry that is not present.
+const SOURCE_ENTRY = "sourceEntry";
+const isStatement = (st) => st !== null && typeof st === "object" && st.body !== null && typeof st.body === "object" && !Object.hasOwn(st.body, SOURCE_ENTRY);
 const validStatementMap = (statements) => statements instanceof Map &&
   [...statements].every(([id, st]) => typeof id === "string" && id.length > 0 && id.isWellFormed() && isStatement(st));
 
@@ -57,6 +61,7 @@ export function evaluate(policy, ev, ctx) {
   const why = [];
   const out = (outcome, reason) => ({ outcome, reason, considered: why });
   if (!validStatementMap(ev.statements)) return out("UNKNOWN", "invalid statement map keys or entries");
+  if ([ev.declaration, ev.coverage?.completeList, ev.coverage?.status].some((st) => st && !isStatement(st))) return out("UNKNOWN", "invalid declaration or coverage statement");
   const { parties, accreditation, profile, time, mode = "contract" } = ctx;
   const finite = (v) => typeof v === "number" && Number.isFinite(v);
   if (!finite(time) || !finite(profile.maxCoverageAge) || profile.maxCoverageAge < 0) return out("UNKNOWN", "invalid evaluation time or coverage age");
@@ -131,9 +136,10 @@ export async function canonicalGraph(ev, coverage) {
   const statements = [["declaration", "declaration", ev.declaration], ...[...ev.statements].map(([id, st]) => ["statement", id, st]), ...(coverage ? [["coverage", "completeList", coverage.completeList], ["coverage", "status", coverage.status]] : [])];
   for (const [role, id, st] of statements) {
     if (!st) continue;
+    if (!isStatement(st)) throw new Error("invalid declaration or coverage statement");
     const sid = subj(st.body.id ?? id);
     // Commit the role/key-to-statement association, not only its RDF-set projection.
-    add(sid, "sourceEntry", lit(canonicalize([role, id, st])));
+    add(sid, SOURCE_ENTRY, lit(canonicalize([role, id, st])));
     add(sid, "signer", lit(st.signer));
     add(sid, "signature", lit(st.signature));
     add(sid, "statement", lit(canonicalize(st.body)));
@@ -152,13 +158,15 @@ export class Custodian {
     if (!this.ctx || !this.policies) return { ok: false, reason: "custodian replay trust not provisioned" };
     if (core?.certificateId !== certificateId) return { ok: false, reason: "deposit certificate core mismatch" };
     const expectedCommitment = core.commitment;
-    const archive = this.#open(sealed);
+    let archive;
+    try { archive = this.#open(sealed); }
+    catch (error) { return { ok: false, reason: `deposit archive cannot be opened: ${error.message}` }; }
     if (typeof archive?.salt !== "string") return { ok: false, reason: "deposit archive holds no salt" };
     let canonical;
     try { canonical = await canonicalGraph(archive.evidence, archive.coverage); }
     catch (error) { return { ok: false, reason: `deposit evidence outside the extraction domain: ${error.message}` }; }
     if (commit(Buffer.from(archive.salt, "base64"), canonical) !== expectedCommitment) return { ok: false, reason: "deposit does not open the certified commitment" };
-    const policy = this.policies.get(core.policy.digest);
+    const policy = this.policies.get(core.policy?.digest);
     if (!policy || canonicalize(policy) !== canonicalize(archive.policy)) return { ok: false, reason: "archive policy not independently approved" };
     const cov = coverageRef(archive.coverage);
     const binding = typedId(DIGEST.decisionContext, canonicalize({ commitment: expectedCommitment, closure: CLOSURE, policy: policy.digest, coverage: cov, time: archive.time }));
