@@ -318,7 +318,7 @@ A **legitimate** credential (600 blank nodes with unique literals) is canonicali
 | idle | 9.8 ms | **20/21 accepted** | 21/21 accepted |
 | loaded | 25.1 ms | **1/21 accepted** | 21/21 accepted |
 
-In this run the time limit accepted the legitimate credential 20/21 on the idle host and 1/21 under load. In earlier runs of the same code it accepted 21/21 on the idle host, and up to 7/21 under load. The share moves with the load; the operation bound does not.
+In this run the time limit accepted the legitimate credential 20/21 times on the idle host and 1/21 under load, while the operation bound accepted it 21/21 in both. A time limit depends on the host's load, so its acceptance count varies from run to run; the comparison contract below therefore treats it as nondeterministic. The operation bound gives the same result on every run.
 
 M19: decide *invalid* only on deterministic operation bounds; let a time limit yield *unknown*, never *invalid*.
 
