@@ -35,6 +35,8 @@ Worked examples and the formal model's checker for the paper *Securing the Seman
 
 The other findings narrowed claims in this README and in the paper.
 
+**Release-gate review.** A third code review (round 6, 14 November 2026) found one blocking defect: WE-7 accepted non-string statement keys, so one evidence commitment could open to different outcomes. Keys must now be nonempty, well-formed strings, with a regression test that fails on the reviewed code. A follow-up makes a dispute over such an archive report an invalid opening instead of throwing.
+
 **Formats changed in these reviews:**
 - the decoding manifest is now `ssc-decoding-manifest/v2`, binding the graph-processing profile and rejecting duplicate table codes;
 - the replay receipt is now `ssc-replay-receipt/v2`, binding the authority epoch and the status expiry;
@@ -68,7 +70,7 @@ v0.4.0 implements the corrections that three independent reviews of the formal m
 
 ```bash
 npm ci          # installs exactly the versions in package-lock.json
-npm test        # 122 tests: W3C vectors, the model checker, every scenario and the review regressions; TPM tests skip without swtpm
+npm test        # 123 tests: W3C vectors, the model checker, every scenario and the review regressions; TPM tests skip without swtpm
 npm run we1
 npm run we2
 npm run we3     # needs swtpm and tpm2-tools (for example apt-get install swtpm swtpm-tools tpm2-tools)
@@ -288,10 +290,10 @@ Attacker documents carry forged proofs. Single environment (4 vCPU cloud contain
 
 | Input | Naive verifier, no limit | Naive, default bound (`maxWorkFactor` 1) | LFSC-G 0.4 rejection |
 |---|---|---|---|
-| complete graph K₈ (1.7 kB) | 1.5 s | aborts, ~4 ms | 0.04–0.17 ms |
-| symmetric binary tree, 255 nodes (11 kB) | 3.3 s | aborts, ~15 ms | 0.05–0.35 ms |
-| symmetric binary tree, 511 nodes (22 kB) | > 20 s | aborts, ~27 ms | 0.04–0.81 ms |
-| labelled tree, 1,500 nodes (benign, 79 kB) | ~62 ms | completes (~80 ms) | rejected by size bound (2.0 ms) or the blank-node rule (0.05 ms) |
+| complete graph K₈ (1.7 kB) | 1.4 s | aborts, ~4 ms | 0.05–0.22 ms |
+| symmetric binary tree, 255 nodes (11 kB) | 3.3 s | aborts, ~14 ms | 0.03–0.32 ms |
+| symmetric binary tree, 511 nodes (22 kB) | > 20 s | aborts, ~24 ms | 0.07–0.79 ms |
+| labelled tree, 1,500 nodes (benign, 79 kB) | ~77 ms | completes (~62 ms) | rejected by size bound (1.9 ms) or the blank-node rule (0.07 ms) |
 
 The three LFSC figures are: the document as sent (stage 0, context not allowlisted), the same graph with allowlisted contexts (stage 0, blank nodes), and the same graph without blank nodes and with a forged LFSC 0.4 proof (stage 1, the key is not authorised for the named issuer).
 
@@ -299,11 +301,11 @@ Legitimate market-role credential, p50 over 200 runs:
 
 | Verification | v0.4.0 | v0.3.0 |
 |---|---|---|
-| `ecdsa-rdfc-2019` | 1.99 ms | 1.94 ms |
-| `ecdsa-jcs-2019` | 0.22 ms | 0.20 ms |
-| **LFSC-G, first verification** | **1.33 ms** | 1.09 ms |
-| **LFSC-G, graph-native from stored quads** | **0.26 ms** | 0.18 ms |
-| LFSC-G, cached | 0.37 ms | 0.25 ms |
+| `ecdsa-rdfc-2019` | 1.95 ms | 1.94 ms |
+| `ecdsa-jcs-2019` | 0.18 ms | 0.20 ms |
+| **LFSC-G, first verification** | **1.28 ms** | 1.09 ms |
+| **LFSC-G, graph-native from stored quads** | **0.21 ms** | 0.18 ms |
+| LFSC-G, cached | 0.34 ms | 0.25 ms |
 
 The corrections cost time on the honest path. The dependency digests are now checked on every verification, **before** any cache lookup, which is what closes X13. The issuer binding and the pinned loader add a little more. All figures are single-environment.
 
@@ -313,10 +315,10 @@ A **legitimate** credential (600 blank nodes with unique literals) is canonicali
 
 | Host | p50 | Time-limit policy | Operation-bound policy |
 |---|---|---|---|
-| idle | 10.6 ms | **21/21 accepted** | 21/21 accepted |
-| loaded | 21.5 ms | **1/21 accepted** | 21/21 accepted |
+| idle | 9.8 ms | **20/21 accepted** | 21/21 accepted |
+| loaded | 25.1 ms | **1/21 accepted** | 21/21 accepted |
 
-In this run the time limit accepted the legitimate credential 21/21 on the idle host and 1/21 under load. In earlier runs of the same code it rejected it once on the idle host, and accepted 7/21 under load. The share moves with the load; the operation bound does not.
+In this run the time limit accepted the legitimate credential 20/21 on the idle host and 1/21 under load. In earlier runs of the same code it accepted 21/21 on the idle host, and up to 7/21 under load. The share moves with the load; the operation bound does not.
 
 M19: decide *invalid* only on deterministic operation bounds; let a time limit yield *unknown*, never *invalid*.
 
@@ -384,7 +386,7 @@ Further results:
 
 **Extraction profile.** WE-7 `extraction/v2` accepts only nonempty, well-formed string Map keys and commits each signed statement together with its container role and Map key. It requires exactly one matching absence attestation, otherwise returns unknown, and sorts holder-only report identifiers. Equivalent Map iteration orders therefore give the same outcome. The new extraction identifier changes the closure and derived policy digests; older certificates need their original extraction implementation.
 
-**Archive and dispute limits.** The synthetic deposit stores evidence, coverage, salt, policy and time. Code, trust anchors, accreditation, profile and mode remain externally supplied rather than reconstructed from that deposit. `contextReconstructible` reports policy availability, not reconstruction of every decision-context dependency. Certificate acceptance checks the acknowledgement's commitment, certificate identifier, core digest and outcome; it does not independently recompute the archive digest. The dispute report does not separately report authenticity for every evidence item.
+**Archive and dispute limits.** The synthetic deposit stores evidence, coverage, salt, policy and time. Code, trust anchors, accreditation, profile and mode remain externally supplied rather than reconstructed from that deposit. `contextReconstructible` reports policy availability, not reconstruction of every decision-context dependency. An archive whose evidence falls outside the extraction/v2 key domain is reported as an invalid opening, and such a deposit is refused. Certificate acceptance checks the acknowledgement's commitment, certificate identifier, core digest and outcome; it does not independently recompute the archive digest. The dispute report does not separately report authenticity for every evidence item.
 
 **What WE-7 does not show:** that real data sets suffice for real decisions, a real laboratory or registry, independently administered trust provisioning, a complete archive service, legal admissibility, or performance at scale.
 

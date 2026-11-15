@@ -150,7 +150,9 @@ export class Custodian {
     if (core?.certificateId !== certificateId) return { ok: false, reason: "deposit certificate core mismatch" };
     const expectedCommitment = core.commitment;
     const archive = this.#open(sealed);
-    const canonical = await canonicalGraph(archive.evidence, archive.coverage);
+    let canonical;
+    try { canonical = await canonicalGraph(archive.evidence, archive.coverage); }
+    catch (error) { return { ok: false, reason: `deposit evidence outside the extraction domain: ${error.message}` }; }
     if (commit(Buffer.from(archive.salt, "base64"), canonical) !== expectedCommitment) return { ok: false, reason: "deposit does not open the certified commitment" };
     const policy = this.policies.get(core.policy.digest);
     if (!policy || canonicalize(policy) !== canonicalize(archive.policy)) return { ok: false, reason: "archive policy not independently approved" };
@@ -241,7 +243,9 @@ export async function disputeReport(cert, { custodian, certifiers, ctx, policies
   const report = { certificateAuthentic: !!certifiers.get(core.certifier) && verifyObject(cert.signed, certifiers.get(core.certifier).party) };
   const restored = custodian.restore(core.certificateId);
   if (!restored.ok) return { ...report, opening: "unavailable", detail: restored.reason, attribution: "not determined by this report" };
-  const canonical = await canonicalGraph(restored.archive.evidence, restored.archive.coverage);
+  let canonical;
+  try { canonical = await canonicalGraph(restored.archive.evidence, restored.archive.coverage); }
+  catch (error) { return { ...report, opening: "invalid", detail: `archived evidence outside the extraction domain: ${error.message}`, attribution: "not determined by this report" }; }
   report.opening = commit(Buffer.from(restored.archive.salt, "base64"), canonical) === core.commitment ? "valid" : "invalid";
   if (report.opening !== "valid") return { ...report, detail: "the archived evidence does not open the certified commitment", attribution: "not determined by this report" };
   const archive = restored.archive;
