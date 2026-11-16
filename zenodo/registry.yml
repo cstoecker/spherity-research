@@ -1,0 +1,405 @@
+# Zenodo deposit registry for Spherity Research.
+#
+# One entry per citable work (not per web page). Metadata is generated from the
+# page front matter and docs/_data/authors.yml; this file records only archival
+# decisions. Read zenodo/README.md before changing a status or gate.
+#
+# A Zenodo publication is effectively irreversible: files cannot be replaced and
+# the DOI is permanent. Every gate must be "pass" or "n/a" before an entry may
+# move to "cleared". Gates:
+#   confidentiality  no NDA/consortium-internal material
+#   disclosure       public disclosure intended. Spherity publishes and does not
+#                    file patents (decision of 10 Nov 2026); the gate stays open
+#                    only where a consortium or co-author must still agree
+#   coauthors        every co-author approved deposit, author order and licence
+#   rights           CC BY 4.0 grantable for every page, figure, quotation and logo
+#   metadata_review  a person reviewed the generated metadata and a sandbox preview
+#
+# For pages already public on the website, confidentiality and disclosure are
+# "pass": archiving the identical file adds no new disclosure. Rights and
+# metadata review stay "open" until a person has checked the PDF itself.
+
+defaults:
+  publication_type: workingpaper
+  # Add the community identifier after the "Spherity Research" Zenodo community
+  # has been created; Zenodo rejects unknown identifiers.
+  communities: []
+
+entries:
+  # ---- Governing Safe AI That Acts Across Companies (series) ----------------
+  - id: ai-safety-series-executive-brief
+    page: docs/governing-ai-that-acts-across-companies.md
+    files: [/Spherity-AI-Safety-Three-Paper-Series-Executive-Brief.pdf]
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: ai-safety-paper-1-program-equilibria
+    page: docs/resource-bounded-program-equilibria-ai-safety.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: ai-safety-paper-2-runtime-assurance
+    page: docs/risk-bounded-runtime-assurance-multi-agent-systems.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: ai-safety-paper-3-private-verification
+    page: docs/private-verification-action-eligibility-trust-domains.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  # ---- AI agent revocation and containment ---------------------------------
+  # Three documents share one topic page, so each needs its own title and
+  # abstract taken from its PDF before it can be deposited.
+  - id: revocation-mas-executive-brief
+    page: docs/ai-agent-revocation-containment-multi-agent-systems.md
+    files: [/Spherity-Reseach-AI-Agent-Revocation-in-MAS-Executive-Brief.pdf]
+    title: "Revocation and Containment in AI Agent Networks — Executive Brief"
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: revocation-mas-cascading-trust-failures
+    page: docs/ai-agent-revocation-containment-multi-agent-systems.md
+    files: [/Spherity-Reseach-AI-Agent-Cascading-Trust-Failures-in-MAS.pdf]
+    title: "Cascading Trust Failures in AI Agent Networks: A Trust Architecture for Scalable Revocation and Bounded Containment"
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: revocation-mas-runtime-revocation
+    page: docs/ai-agent-revocation-containment-multi-agent-systems.md
+    files: [/Spherity-Reseach-AI-Agent-Runtime-Revocation-in-MAS.pdf]
+    title: "Runtime Revocation in Multi-Agent Systems"
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  # ---- Trusted AI, agents and control plane -------------------------------
+  - id: ebw-legal-control-plane-zero-trust-ai-agents
+    page: docs/ebw-zero-trust-ai-agents.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: beyond-zero-trust-m-trust
+    page: docs/beyond-zero-trust-m-trust-authorised-agentic-actors.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: trusted-agentic-ai-china-eu-us
+    page: docs/trusted-agentic-ai-china-eu-us-comparative-analysis.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: governed-memory-physical-ai
+    page: docs/governed-robot-memory-physical-ai.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: pace-physical-ai-compliance-evidence
+    page: docs/physical-ai-compliance-evidence-pace.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  # ---- Evidence graphs and industrial AI ----------------------------------
+  - id: evidence-graphs-industrial-ai
+    page: docs/evidence-graphs-industrial-ai-data-plane.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: european-industrial-ai-executive-brief
+    page: docs/europes-answer-to-palantir.md
+    files: [/European_Industrial_AI_Executive_Brief_v1.0.pdf]
+    title: "A European Answer to Palantir: A globally collaborative counter model for industrial AI"
+    version: "1.0"
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: global-cooperation-sovereign-industrial-ai
+    page: docs/global-cooperation-sovereign-industrial-ai.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: deutschland-ag-2-0
+    page: docs/deutschland-ag-2-0-industrial-ai-federated-transformation.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: europes-fundamental-ai-opportunity
+    page: docs/europes-fundamental-ai-opportunity.md
+    status: candidate
+    reason: "Co-authored with Bo Harald (Why Advisory Oy); needs his consent and, if available, his ORCID."
+    gates: { confidentiality: pass, disclosure: pass, coauthors: open, rights: open, metadata_review: open }
+
+  # ---- Digital Product Passports ------------------------------------------
+  - id: verifiable-access-controlled-dpp
+    page: docs/verifiable-access-controlled-digital-product-passports.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: cra-capable-dpp
+    page: docs/cra-capable-digital-product-passports.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: global-dpp-regulation
+    page: docs/global-digital-product-passport-regulation.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: eu-dpp-registry-w3c-dpp5
+    page: docs/eu-dpp-registry-w3c-dpp5.md
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: energy-data-x-ebw-market-role-credentials
+    page: docs/energy-data-x-ebw-market-role-credentials-dpp-access-control.md
+    publication_type: report
+    status: candidate
+    reason: "Five co-authors from Amprion, Westnetz, TenneT and Fraunhofer IOSB-AST; each must consent, and their ORCIDs should be added."
+    gates: { confidentiality: pass, disclosure: pass, coauthors: open, rights: open, metadata_review: open }
+
+  # ---- Business wallets and identity --------------------------------------
+  - id: ebw-regulation-roadmap
+    page: docs/ebw-roadmap.md
+    publication_type: report
+    status: candidate
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: quantum-resilient-organizational-identity
+    page: docs/quantum-resilient-organizational-identity.md
+    publication_type: preprint
+    status: existing-record
+    reason: "Already deposited on Zenodo on 2026-05-31 (preprint V1, CC BY 4.0, three ORCID-linked creators). Link the DOI from the website; deposit only a new version of that concept if the website PDF is a true revision."
+    zenodo:
+      doi: 10.5281/zenodo.20474401
+      concept_doi: 10.5281/zenodo.20474400
+      record_id: 20474401
+    gates: { confidentiality: pass, disclosure: pass, coauthors: pass, rights: pass, metadata_review: pass }
+
+  - id: securing-digital-identity-quantum
+    page: docs/Securing-Digital-Identity-Quantum-Vulnerabilities.md
+    status: hold
+    reason: "HTML edition only. Produce a dated PDF version of record before depositing."
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  # ---- Strategy, market and briefing material ------------------------------
+  - id: spherity-dpp-strategy-market-positioning
+    page: docs/spherity-dpp-dbp-strategy-market-positioning.md
+    status: hold
+    reason: "Company strategy paper quoting a Gartner Emerging Market Quadrant. Gartner content-use approval does not automatically extend to a permanent CC BY archive; decide whether this belongs in a scholarly record at all."
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: top-german-technology-companies-2026
+    page: docs/top-german-technology-companies-industrial-ai-agentic-commerce-2026.md
+    publication_type: report
+    status: hold
+    reason: "Dated analytical ranking of named third-party companies; decide whether a permanent archive is wanted and check third-party logos and marks."
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  - id: threat-escalation-model-germany-eu
+    page: docs/threat-escalation-model-germany-eu.md
+    status: hold
+    reason: "HTML infographic only; no PDF version of record."
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: open, metadata_review: open }
+
+  # ---- Software and research assets -----------------------------------------
+  # Build the archive before depositing:
+  #   git archive --format=zip --prefix=ssc-harness-v0.3.0/ -o _zenodo/ssc-harness-v0.3.0.zip \
+  #     257d1c79114532e454736255d127f53e5161f639:research-assets/semantic-supply-chain/harness-v0.3
+  # v0.2.0 (commit 359c9df, timestamped 12:03:59 GMT) stays GitHub-only; v0.3.0 is the first Zenodo version.
+  # Sandbox test: record 640912 published 12 Nov 2026, 16:42 UTC; metadata, ORCID, licence, links and file SHA-256 verified.
+  # Production: record 24168347 published 12 Nov 2026, 16:50 UTC; downloaded file SHA-256 matches; both DOIs resolve.
+  - id: ssc-harness-v0-3-0
+    upload_type: software
+    title: "Semantic supply chain harness: worked examples for securing the meaning of verifiable credentials"
+    creators: ["Dr. Carsten Stöcker"]
+    version: "0.3.0"
+    publication_date: "2026-11-12"
+    license: apache-2.0
+    description: >-
+      Research software accompanying the Spherity Research paper "Securing the Semantic Supply Chain" (in preparation).
+      WE-1 shows that context substitution changes the meaning of credentials secured with ecdsa-jcs-2019 or vc+jwt
+      while signatures stay valid, and that RDFC proofs, relatedResource digests and an experimental lexical-first,
+      semantic-committed cryptosuite (ecdsa-lfsc-2026) detect it. WE-2 shows that a routine context update makes
+      CBOR-LD labels unreadable or silently changes their meaning, and that a codec binding outside the payload with a
+      lifetime archive restores it. WE-3 shows, on a software TPM, that measured semantics (PCR extension with the
+      closure digest of the loaded vocabularies, quote bound to the verification receipt) lets a relying party reject an
+      edge verifier that applied substituted or withdrawn meaning, including a device that forges its event log. WE-4 measures pre-authentication canonicalisation cost, including symmetric acyclic
+      blank-node trees. WE-5 shows that wall-clock limits make verification verdicts load-dependent while operation
+      bounds do not. Includes W3C test vectors, cross-checks against jsonld 9.0.0 / rdf-canonize 5.0.0, PyLD and
+      Digital Bazaar's official ecdsa-jcs-2019 implementation, and a fact-check record. Single-environment measurements.
+    keywords:
+      - verifiable credentials
+      - JSON-LD
+      - RDF canonicalization
+      - Data Integrity
+      - CBOR-LD
+      - semantic supply chain
+      - high assurance
+    related_identifiers:
+      - relation: isSupplementTo
+        identifier: "https://github.com/cstoecker/spherity-research/tree/257d1c79114532e454736255d127f53e5161f639/research-assets/semantic-supply-chain/harness-v0.3"
+      - relation: isIdenticalTo
+        identifier: "https://github.com/cstoecker/spherity-research/releases/tag/ssc-harness-v0.3.0"
+      - relation: references
+        identifier: "https://spherity.github.io/spherity-research/Stoecker-2026-Proofs-over-Statements-v1.3.pdf"
+      - relation: references
+        identifier: "https://arxiv.org/abs/2611.04461"
+      - relation: references
+        identifier: "https://arxiv.org/abs/2611.03493"
+    notes_for_zenodo: >-
+      Contains third-party material under the W3C Software and Document License (contexts and test vectors), listed in
+      NOTICE. The secret keys in the test vectors are the W3C specification's published test keys. RFC 3161 timestamp
+      of SHA256SUMS: FreeTSA, 2026-11-12 12:12:09 GMT (see research-assets/semantic-supply-chain/timestamps). The same
+      archive is attached to the GitHub release ssc-harness-v0.3.0 (sha256 ca79751494f80dfada60e1a8ab9e3892efef595a8312e3a36550b3efa6f3ee76).
+    files: [_zenodo/ssc-harness-v0.3.0.zip]
+    status: published
+    reason: "Public on GitHub since 12 Nov 2026 (v0.2.0 commit 359c9df; v0.3.0 commit 257d1c7; GitHub release ssc-harness-v0.3.0 published 12 Nov 2026 14:45 UTC, tag on ddf09f1). Third-party W3C files are under the W3C Software and Document License, compatible with redistribution; listed in NOTICE."
+    zenodo:
+      doi: 10.5281/zenodo.24168347
+      concept_doi: 10.5281/zenodo.24168346
+      record_id: 24168347
+      published: "2026-11-12T16:50Z"
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: pass, metadata_review: pass }
+
+  # v0.4.0: new version of the harness record (concept DOI 10.5281/zenodo.24168346).
+  # The deposited files are the GitHub release assets, byte for byte (downloaded and verified 16 Nov 2026):
+  #   harness-v0.4.0-source.zip  sha256 0efbbca122a052246b4b59afb6102f105be47bdda3421815f67b512c7bee3f89
+  #   SHA256SUMS.tsr             sha256 4d633b11a2c7d46d5a0c898764b7a7a2daaab2063584e7ddb371e7b07a5d7bed
+  # Reproduce the archive from the tag:
+  #   git archive --format=zip --mtime=2026-11-16T12:25:41+00:00 --prefix=harness-v0.4/ -o _zenodo/harness-v0.4.0-source.zip \
+  #     ssc-harness-v0.4.0:research-assets/semantic-supply-chain/harness-v0.4
+  # Deposit with --new-version: zenodo.record_id below is the latest published version (v0.3.0, production).
+  # Sandbox test 16 Nov 2026: new-version draft 643162 of sandbox record 640912 (concept 640911); metadata, ORCID,
+  # licence, links and both files' SHA-256 verified by read-back; not published.
+  # Production: draft 24281131 verified by read-back; published by the author in the Zenodo interface on 16 Nov 2026,
+  # 12:56 UTC; downloaded files' SHA-256 match; DOI and concept DOI resolve; listed as the latest version.
+  - id: ssc-harness-v0-4-0
+    upload_type: software
+    title: "Semantic supply chain harness: worked examples for securing the meaning of verifiable credentials"
+    creators: ["Dr. Carsten Stöcker"]
+    version: "0.4.0"
+    publication_date: "2026-11-16"
+    license: apache-2.0
+    description: >-
+      Research software accompanying the Spherity Research paper "Securing the Semantic Supply Chain: Meaning as a
+      Foundation of Trust Infrastructure" (in preparation). Version 0.4.0 corrects the v0.3.0 implementations after
+      independent code reviews and release-gate reviews, with regression tests for the defects they found, and adds
+      worked examples. WE-1 shows that context substitution changes the meaning of validly signed
+      credentials and that RDFC proofs and an experimental lexical-first, semantic-committed cryptosuite detect it.
+      WE-2 binds CBOR-LD labels to a full decoding manifest. WE-3 simulates, on a software TPM, an attested decision
+      engine whose receipts record the meaning it applied; WE-3 R adds replay-validated threshold receipts. WE-4
+      measures what an attacker without a key can make a verifier spend before the signature is checked; WE-5 compares
+      operation bounds with wall-clock limits; WE-6 tests canonicalisation of RDF lists with repeated values on two
+      library stacks. WE-7 is a synthetic compliance-evidence example: coverage of a complete report list, a salted
+      commitment to the evidence graph, custodian deposit with independent replay, and dispute reports. A model checker
+      covers 66 cases of the formal model of the semantic supply chain. 136 tests, including W3C test vectors.
+      Hardware isolation is simulated, not demonstrated; WE-7 is synthetic; measurements come from a single environment.
+    keywords:
+      - verifiable credentials
+      - JSON-LD
+      - RDF canonicalization
+      - Data Integrity
+      - CBOR-LD
+      - semantic supply chain
+      - high assurance
+      - formal model
+      - model checking
+      - compliance evidence
+    related_identifiers:
+      - relation: isSupplementTo
+        identifier: "https://github.com/cstoecker/spherity-research/tree/2ee3f966aa99ce96e26c67643ff6ed52a6130bb5/research-assets/semantic-supply-chain/harness-v0.4"
+      - relation: isIdenticalTo
+        identifier: "https://github.com/cstoecker/spherity-research/releases/tag/ssc-harness-v0.4.0"
+      - relation: references
+        identifier: "https://spherity.github.io/spherity-research/Stoecker-2026-Proofs-over-Statements-v1.3.pdf"
+      - relation: references
+        identifier: "https://arxiv.org/abs/2611.04461"
+      - relation: references
+        identifier: "https://arxiv.org/abs/2611.03493"
+    notes_for_zenodo: >-
+      Contains third-party material, listed in NOTICE: W3C contexts and test vectors under the W3C Software and Document
+      License (2023), and a W3C CCG context whose repository licenses reports under the W3C Software and Document License
+      (2015) and software under Apache-2.0. The secret keys in the test vectors are the W3C specification's published
+      test keys. RFC 3161 timestamp of the release manifest SHA256SUMS: FreeTSA, 2026-11-16 12:25:22 GMT; the signed
+      response is the file SHA256SUMS.tsr in this record and in research-assets/semantic-supply-chain/timestamps. The
+      archive is byte-identical to the asset of the GitHub release ssc-harness-v0.4.0 (sha256
+      0efbbca122a052246b4b59afb6102f105be47bdda3421815f67b512c7bee3f89).
+    files: [_zenodo/harness-v0.4.0-source.zip, _zenodo/SHA256SUMS.tsr]
+    status: published
+    reason: "GitHub release ssc-harness-v0.4.0 published 16 Nov 2026 12:35 UTC (tag on 2ee3f966). Deposit as a new version requested by the author on 16 Nov 2026; metadata reviewed and approved by the author on 16 Nov 2026."
+    zenodo:
+      doi: 10.5281/zenodo.24281131
+      concept_doi: 10.5281/zenodo.24168346
+      record_id: 24281131
+      published: "2026-11-16T12:56Z"
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: pass, metadata_review: pass }
+
+  # ---- Planned research (no page yet) ---------------------------------------
+  # Planned works are registered as "hold" without a page. Do not describe
+  # unpublished claims here: this repository is public, and a public commit is
+  # a disclosure in the same way as a Zenodo deposit.
+  # Paper A v1.0: executive brief, research article, supplements S1–S5 and two CSV files, deposited as one work.
+  # Built from the reviewed sources after review round 9 (16 Nov 2026). Sandbox test: draft 643382 (not published),
+  # metadata and 9 files verified by read-back. Production: draft 24293613 created with --reserve-only; the reserved
+  # DOI was stamped on every title page and into the PDF metadata before upload; files verified by read-back;
+  # published on the author's instruction on 16 Nov 2026; DOI and concept DOI resolve; all 9 downloaded files'
+  # SHA-256 match the release checksums.
+  # Metadata edit 16 Nov 2026 (author's request): added isPartOf the series hub
+  # https://spherity.github.io/spherity-research/securing-meaning-in-trust-infrastructure.html; files and DOI unchanged
+  # (9/9 checksums verified after re-publication). New versions derive isPartOf from the page's series_url.
+  - id: planned-semantic-supply-chain-assurance
+    page: docs/securing-semantic-supply-chain.md
+    title: "Securing the Semantic Supply Chain: Meaning as a Foundation of Trust Infrastructure"
+    version: "1.0"
+    publication_date: "2026-11-16"
+    publication_type: workingpaper
+    description: "Verifiable credentials are becoming legal and economic infrastructure. With a trusted binding between the signing key and the issuer, a signature authenticates the signed content; it does not by itself fix what that content means to the party that reads it. Meaning reaches a verifier through a supply chain of its own: JSON-LD contexts, vocabularies, ontologies, validation shapes, crosswalks, rulebooks, Type Metadata and codec tables. Each can be substituted, rolled back, frozen, shown differently to different verifiers, or withdrawn without verifiers noticing. W3C Data Integrity already requires approved contexts, or equivalent protections, at each verifier. We show what this leaves open and propose mechanisms to close it.\n\nIn laboratory tests with an open harness on production libraries, changing mutable, decision-relevant context bytes that the verifier did not authenticate independently changed a credential's meaning without invalidating signatures over its JSON text (JCS) or over an envelope. On one CBOR-LD library, a synthetic compact label became unreadable after a routine vocabulary update and, under a profile that signs the compressed bytes, decoded to a different meaning with a valid signature. Unauthenticated input imposed seconds of computation before the signature check when canonicalisation had no work limit; the tested canonicalisation library's default limit stops such input but rejects some legitimate credentials. A formal model of the semantic supply chain states the core results with proof sketches and model-checks the stateful mechanisms in 66 cases on small instances.\n\nFrom these results we derive 30 mechanisms, among them release engineering for meaning, lexical-first proofs that commit to the semantic graph, codec binding for long-lived carriers, receipts that record the meaning a decision applied, attested decision engines whose receipts the proposed profile requires to be attributable to an accountable legal person, and a profile for compliance evidence. We propose 91 requirements as a baseline for a high-assurance profile of W3C VCDM 2.0; no W3C group has adopted them. The problem is not specific to W3C VCDM: SD-JWT VC and ISO mdoc take their meaning from rulebooks and Type Metadata, and we give a first mapping, by design reasoning, of which mechanisms would transfer; none is specified or tested for those formats. The results bind meaning, not its truth; hardware isolation is simulated, not demonstrated, and enrolment for attribution is specified, not implemented."
+    keywords: ["verifiable credentials", "semantic integrity", "JSON-LD", "RDF canonicalisation", "Data Integrity", "supply-chain security", "formal model", "European Digital Identity Wallet", "European Business Wallet", "digital product passport", "attested decisions", "defensive publication"]
+    files:
+      - /Spherity-Research-Semantic-Supply-Chain-Executive-Brief.pdf
+      - /Spherity-Research-Semantic-Supply-Chain-Article.pdf
+      - /Spherity-Research-Semantic-Supply-Chain-S1-Mechanisms.pdf
+      - /Spherity-Research-Semantic-Supply-Chain-S1-claim-register.csv
+      - /Spherity-Research-Semantic-Supply-Chain-S2-Requirements.pdf
+      - /Spherity-Research-Semantic-Supply-Chain-S2-requirements.csv
+      - /Spherity-Research-Semantic-Supply-Chain-S3-Formal-Model.pdf
+      - /Spherity-Research-Semantic-Supply-Chain-S4-Prior-Art.pdf
+      - /Spherity-Research-Semantic-Supply-Chain-S5-Review-Record.pdf
+    related_identifiers:
+      - relation: isSupplementedBy
+        identifier: "10.5281/zenodo.24281131"
+        resource_type: software
+      - relation: references
+        identifier: "10.5281/zenodo.24168347"
+        resource_type: software
+      - relation: references
+        identifier: "https://spherity.github.io/spherity-research/Stoecker-2026-Proofs-over-Statements-v1.3.pdf"
+      - relation: references
+        identifier: "10.5281/zenodo.19239072"
+      - relation: references
+        identifier: "https://arxiv.org/abs/2611.04461"
+      - relation: references
+        identifier: "https://w3id.org/ebwv"
+    notes_for_zenodo: >-
+      Standards, regulation and implementation evidence reviewed to 15 November 2026. The record holds one work: an
+      executive brief, the research article and its supplements S1–S5, with the requirements (S2) and the claim register
+      (S1) also as CSV. Defensive publication: no patent has been or will be filed on the mechanisms described. The
+      reviews recorded in S5 were carried out by AI models and are not peer review. Software: harness v0.4.0,
+      doi:10.5281/zenodo.24281131.
+    status: published
+    zenodo:
+      doi: 10.5281/zenodo.24293613
+      concept_doi: 10.5281/zenodo.24293612
+      record_id: 24293613
+      published: "2026-11-16T21:56Z"
+    reason: "Paper A v1.0 after review round 9. Metadata review: approved by the author on 16 Nov 2026. Confidentiality: scanned, public sources and own work only, no third-party project context. Rights: own text and figures; CC BY badge used as licensed; short quotations attributed."
+    gates: { confidentiality: pass, disclosure: pass, coauthors: n/a, rights: pass, metadata_review: pass }
+
+  - id: planned-haip-w3c-profile
+    status: hold
+    reason: "Companion profile paper in preparation. Publication policy decided (publish, no patent filing); review by the profile's community contributors pending."
+    gates: { confidentiality: open, disclosure: pass, coauthors: open, rights: open, metadata_review: open }
+
+  - id: planned-agent-key-management-safety-kernel
+    status: hold
+    reason: "Manuscript in preparation. The mechanisms are the author's own IP (confirmed 10 Nov 2026); third-party project context is left out. Publication policy decided (publish, no patent filing)."
+    gates: { confidentiality: open, disclosure: pass, coauthors: open, rights: open, metadata_review: open }

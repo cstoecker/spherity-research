@@ -1,0 +1,52 @@
+WE-3 R: replay-validated receipts (M24 alternative, T11′), harness v0.4.0
+
+Two-signature stand-in: device engine and co-signer each sign identical receipt bytes (ECDSA P-256);
+the relying party requires both. This is a 2-of-2 instance of T11′. It does NOT implement or test
+FROST (RFC 9591) group keys, key generation, nonce rounds or robustness. What an accepted receipt
+establishes: its OUTCOME equals deterministic replay of its committed, admissible context. It does
+NOT establish which closure the device executed (R10), nor device-only observations, nor liveness.
+
+as predicted R1   honest device, TSO credential, strict closure
+                  -> accepted GRANT (receipt binds current-status)
+as predicted R2   honest device, DSO credential, strict closure
+                  -> accepted DENY (receipt binds current-status)
+as predicted R3   outcome lie: device proposes GRANT where replay gives DENY
+                  -> refused by co-signer (replay under the claimed closure gives DENY, proposal says GRANT)
+as predicted R4   input lie (MC-6 input): device edits the credential to TSO
+                  -> refused by co-signer (input not authenticated: lexical digest mismatch)
+as predicted R5   counterfeit status (MC-6 status): 'current' object signed by a forger
+                  -> refused by co-signer (status object not authenticated)
+as predicted R6   older authentic status (MC-6 oldStatus, epoch-bound co-signer): epoch-0 'current' after withdrawal in epoch 1
+                  -> refused by co-signer (status object is from epoch 0, current epoch is 1)
+as predicted R7   same, co-signer with a declared 2-tick window: receipt says window:2; RP requiring current status rejects it
+                  -> rejected by relying party (receipt admissibility window:2, required current-status)
+as predicted R8   same, RP that accepts the declared window policy
+                  -> accepted GRANT (receipt binds window:2)
+as predicted R9   device-chosen approved closure (MC-6 closure): DSO under the lenient closure, request authorises strict
+                  -> refused by co-signer (closure is not the one the request authorises)
+as predicted R10  execution not established (MC-3 V6x): device ran the lenient closure on a TSO credential, claims strict; outcomes agree
+                  -> accepted GRANT (receipt binds current-status)
+as predicted R11  compromised co-signer (MC-3 V6c): signs a DSO GRANT under the strict closure
+                  -> accepted GRANT (receipt binds current-status)
+as predicted R12  unknown outcome: approved closure whose executable rule the co-signer cannot reconstruct
+                  -> refused by co-signer (replay indeterminate: no share for unknown)
+as predicted R13  claimed time outside the declared clock tolerance
+                  -> refused by co-signer (claimed decision time outside the declared clock tolerance)
+as predicted R14  field substitution after signing: outcome changed in the message
+                  -> rejected by relying party (device signature invalid)
+as predicted R15  confused session: approval for message A presented with the bytes of message B
+                  -> refused by co-signer (no approval for these exact bytes)
+as predicted R16  challenge replayed to the same relying party
+                  -> rejected by relying party (challenge already used)
+as predicted R17  receipt presented for another action with the same challenge
+                  -> rejected by relying party (receipt action does not match the request)
+as predicted R18  co-signer offline; device tries to act on its provisional GRANT
+                  -> effect refused (provisional decision: effect deferred until a valid receipt)
+as predicted R19  co-signer offline: no receipt, the action stays unavailable (safe, not a success)
+                  -> refused by co-signer (co-signer unreachable)
+as predicted R20  co-signer back online: receipt produced and the effect passes the commit-point check
+                  -> effect executed (receipt accepted, epoch current)
+as predicted R21  authority epoch advances between receipt and effect
+                  -> effect refused (authority epoch changed since the decision)
+
+21 of 21 scenarios as predicted

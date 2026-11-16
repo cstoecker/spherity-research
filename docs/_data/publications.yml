@@ -1,3 +1,31 @@
+- title: "Securing Meaning in Trust Infrastructure"
+  publication_type: paper
+  type: Research programme · Executive brief, research article, supplements and open harness
+  date_label: Paper A version 1.0 · 16 November 2026
+  date_iso: '2026-11-16'
+  description: How the meaning of verifiable credentials and JSON-LD reaches verifiers, where it fails, and 30 mechanisms and 91 requirements to secure it, with an open test harness.
+  byline: Dr. Carsten Stöcker · Spherity GmbH
+  topics:
+  - Identity
+  - Evidence graphs
+  - Trusted AI
+  filters: identity wallets ai infrastructure dpp
+  search: securing meaning in trust infrastructure securing the semantic supply chain semantic supply chain semantic integrity verifiable credentials w3c verifiable credentials verifiable digital credentials vcdm 2.0 json-ld rdf canonicalisation canonicalization rdfc data integrity cbor-ld yaml-ld context substitution signed is not meant release engineering for meaning high-assurance profile haip w3c community group digital product passport dpp digital product passport eu espr battery passport batteriepass digitaler produktpass eudi wallet business wallet european business wallet know your business kyb beneficial owner knowledge graph graphrag data provenance ai agents software supply chain security formal model model checking defensive publication zenodo carsten stöcker carsten stoecker spherity
+  image: /assets/preview-securing-meaning-in-trust-infrastructure.webp
+  image_alt: Securing Meaning in Trust Infrastructure research programme preview with the executive brief cover.
+  image_width: 1200
+  image_height: 630
+  media_class: card-media-wide
+  format: HTML programme + paper page + 7 PDFs + 2 CSV + open harness
+  links:
+  - label: Explore the programme
+    url: /securing-meaning-in-trust-infrastructure.html
+    arrow: →
+  - label: Research article PDF
+    url: /Spherity-Research-Semantic-Supply-Chain-Article.pdf
+    arrow: ↓
+    secondary: true
+
 - title: "Proofs over Statements: Verifiable Evidence Graphs"
   publication_type: paper
   type: Research paper and executive brief · Credential formats for industrial graphs

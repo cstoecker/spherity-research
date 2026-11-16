@@ -1,0 +1,494 @@
+{
+  "node": "v22.23.4",
+  "platform": "linux/x64",
+  "at": "2026-11-12T10:52:48.352Z",
+  "budgetMs": 20000,
+  "results": [
+    {
+      "family": "complete",
+      "n": 3,
+      "bytes": 849,
+      "naive": {
+        "ms": 5.047807,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 4.614072,
+        "outcome": "verified=false"
+      },
+      "lfsc": {
+        "ms": 0.033411,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.039161,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.082216,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    },
+    {
+      "family": "complete",
+      "n": 4,
+      "bytes": 956,
+      "naive": {
+        "ms": 3.562234,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 3.018308,
+        "outcome": "Maximum deep iterations (1) exceeded."
+      },
+      "lfsc": {
+        "ms": 0.027729,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.022324,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.024706,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    },
+    {
+      "family": "complete",
+      "n": 5,
+      "bytes": 1091,
+      "naive": {
+        "ms": 9.849351,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 3.531274,
+        "outcome": "Maximum deep iterations (1) exceeded."
+      },
+      "lfsc": {
+        "ms": 0.024104,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.021361,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.043516,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    },
+    {
+      "family": "complete",
+      "n": 6,
+      "bytes": 1254,
+      "naive": {
+        "ms": 23.193372,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 4.775247,
+        "outcome": "Maximum deep iterations (1) exceeded."
+      },
+      "lfsc": {
+        "ms": 0.022476,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.019943,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.025415,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    },
+    {
+      "family": "complete",
+      "n": 7,
+      "bytes": 1445,
+      "naive": {
+        "ms": 278.307705,
+        "runs": 1,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 9.418892,
+        "outcome": "Maximum deep iterations (1) exceeded."
+      },
+      "lfsc": {
+        "ms": 0.015223,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.01847,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.023447,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    },
+    {
+      "family": "complete",
+      "n": 8,
+      "bytes": 1664,
+      "naive": {
+        "ms": 1558.331459,
+        "runs": 1,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 5.588221,
+        "outcome": "Maximum deep iterations (1) exceeded."
+      },
+      "lfsc": {
+        "ms": 0.028075,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.041555,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.114301,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    },
+    {
+      "family": "ring",
+      "n": 6,
+      "bytes": 1002,
+      "naive": {
+        "ms": 5.483053,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 3.162884,
+        "outcome": "Maximum deep iterations (1) exceeded."
+      },
+      "lfsc": {
+        "ms": 0.022213,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.020625,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.025733,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    },
+    {
+      "family": "ring",
+      "n": 8,
+      "bytes": 1104,
+      "naive": {
+        "ms": 9.8188,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 2.553772,
+        "outcome": "Maximum deep iterations (1) exceeded."
+      },
+      "lfsc": {
+        "ms": 0.02279,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.026814,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.027696,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    },
+    {
+      "family": "ring",
+      "n": 10,
+      "bytes": 1206,
+      "naive": {
+        "ms": 10.156901,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 4.052247,
+        "outcome": "Maximum deep iterations (1) exceeded."
+      },
+      "lfsc": {
+        "ms": 0.026279,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.03877,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.041524,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    },
+    {
+      "family": "ring",
+      "n": 12,
+      "bytes": 1314,
+      "naive": {
+        "ms": 10.584029,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 3.767718,
+        "outcome": "Maximum deep iterations (1) exceeded."
+      },
+      "lfsc": {
+        "ms": 0.019968,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.019466,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.022328,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    },
+    {
+      "family": "ring",
+      "n": 16,
+      "bytes": 1530,
+      "naive": {
+        "ms": 10.973458,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 4.553844,
+        "outcome": "Maximum deep iterations (1) exceeded."
+      },
+      "lfsc": {
+        "ms": 0.024792,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.021431,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.025877,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    },
+    {
+      "family": "binary-tree",
+      "n": 63,
+      "bytes": 3151,
+      "naive": {
+        "ms": 42.359346,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 12.491934,
+        "outcome": "Maximum deep iterations (1) exceeded."
+      },
+      "lfsc": {
+        "ms": 0.036837,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.037137,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.036173,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    },
+    {
+      "family": "binary-tree",
+      "n": 127,
+      "bytes": 5733,
+      "naive": {
+        "ms": 296.718114,
+        "runs": 1,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 10.16346,
+        "outcome": "Maximum deep iterations (1) exceeded."
+      },
+      "lfsc": {
+        "ms": 0.112599,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.027497,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.02707,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    },
+    {
+      "family": "binary-tree",
+      "n": 255,
+      "bytes": 11045,
+      "naive": {
+        "ms": 2956.274607,
+        "runs": 1,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 11.059742,
+        "outcome": "Maximum deep iterations (1) exceeded."
+      },
+      "lfsc": {
+        "ms": 0.063069,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.021822,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.030395,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    },
+    {
+      "family": "binary-tree",
+      "n": 511,
+      "bytes": 21668,
+      "naive": {
+        "ms": 20000,
+        "runs": 0,
+        "outcome": "exceeded 20 s budget"
+      },
+      "bounded": {
+        "ms": 16.816647,
+        "outcome": "Maximum deep iterations (1) exceeded."
+      },
+      "lfsc": {
+        "ms": 0.109503,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.049746,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.035102,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    },
+    {
+      "family": "labelled-tree",
+      "n": 1500,
+      "bytes": 79102,
+      "naive": {
+        "ms": 73.882973,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 66.630693,
+        "outcome": "verified=false"
+      },
+      "lfsc": {
+        "ms": 0.267546,
+        "stage": 0,
+        "reason": "size 79102 > 65536"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.019515,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.023971,
+        "stage": 1,
+        "reason": "issuer not allowlisted"
+      }
+    }
+  ],
+  "legitimate": {
+    "rdfc": {
+      "ms": 1.93943,
+      "runs": 200
+    },
+    "jcs": {
+      "ms": 0.204239,
+      "runs": 200
+    },
+    "lfscFirst": {
+      "ms": 1.084608,
+      "runs": 200
+    },
+    "lfscGraphNative": {
+      "ms": 0.181685,
+      "runs": 200
+    },
+    "lfscCached": {
+      "ms": 0.247456,
+      "runs": 200
+    }
+  }
+}

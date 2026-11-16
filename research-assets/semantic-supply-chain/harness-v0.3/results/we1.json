@@ -1,0 +1,118 @@
+{
+  "node": "v22.23.4",
+  "at": "2026-11-12T10:52:16.164Z",
+  "rows": [
+    {
+      "id": "A",
+      "scenario": "ecdsa-jcs-2019, context as issued",
+      "signature": true,
+      "meaning": {
+        "marketRole": "https://vocab.example/energy#DistributionSystemOperator",
+        "dataAccessScope": "https://vocab.example/battery#PublicData",
+        "terms": 3
+      },
+      "outcome": "baseline"
+    },
+    {
+      "id": "B",
+      "scenario": "ecdsa-jcs-2019, context substituted behind the same URL",
+      "signature": true,
+      "meaning": {
+        "marketRole": "https://vocab.example/energy#TransmissionSystemOperator",
+        "dataAccessScope": "https://vocab.example/battery#RestrictedData",
+        "terms": 3
+      },
+      "outcome": "GAP: valid signature, different meaning"
+    },
+    {
+      "id": "C",
+      "scenario": "ecdsa-rdfc-2019, context substituted",
+      "signature": false,
+      "meaning": {
+        "marketRole": "https://vocab.example/energy#TransmissionSystemOperator",
+        "dataAccessScope": "https://vocab.example/battery#RestrictedData",
+        "terms": 3
+      },
+      "outcome": "detected: signature fails (meaning is in the signing input)"
+    },
+    {
+      "id": "D",
+      "scenario": "vc+jwt envelope (ES256), context substituted",
+      "signature": true,
+      "meaning": {
+        "marketRole": "https://vocab.example/energy#TransmissionSystemOperator",
+        "dataAccessScope": "https://vocab.example/battery#RestrictedData",
+        "terms": 3
+      },
+      "outcome": "GAP: valid signature, different meaning"
+    },
+    {
+      "id": "E",
+      "scenario": "ecdsa-jcs-2019 + relatedResource digestSRI (HW-S3), context substituted",
+      "signature": true,
+      "meaning": {
+        "marketRole": "https://vocab.example/energy#TransmissionSystemOperator",
+        "dataAccessScope": "https://vocab.example/battery#RestrictedData",
+        "terms": 3
+      },
+      "outcome": "detected: context digest mismatch"
+    },
+    {
+      "id": "F1",
+      "scenario": "LFSC-G (M17), context as issued",
+      "signature": true,
+      "meaning": {
+        "marketRole": "https://vocab.example/energy#DistributionSystemOperator",
+        "dataAccessScope": "https://vocab.example/battery#PublicData",
+        "terms": 3
+      },
+      "outcome": "accepted at stage 2"
+    },
+    {
+      "id": "F2",
+      "scenario": "LFSC-G (M17), context substituted",
+      "signature": false,
+      "meaning": {
+        "marketRole": "https://vocab.example/energy#TransmissionSystemOperator",
+        "dataAccessScope": "https://vocab.example/battery#RestrictedData",
+        "terms": 3
+      },
+      "outcome": "detected at stage 2: context digest mismatch: https://contexts.example/energy-roles/v1"
+    },
+    {
+      "id": "G",
+      "scenario": "ecdsa-jcs-2019 with an undefined term (JSON view has it, RDF view drops it)",
+      "signature": true,
+      "meaning": {
+        "marketRole": "https://vocab.example/energy#DistributionSystemOperator",
+        "dataAccessScope": "https://vocab.example/battery#PublicData",
+        "terms": 3,
+        "note": "JSON terms in subject: 4; RDF terms: 3"
+      },
+      "outcome": "GAP: signed claim invisible to RDF consumers. jsonld safe mode: \"Safe mode validation error.\"; RDFC issuance: \"Safe mode validation error.\""
+    },
+    {
+      "id": "I",
+      "scenario": "context URL pointing at a cloud metadata endpoint",
+      "signature": "n/a",
+      "meaning": {
+        "naiveLoaderRequests": [
+          "http://169.254.169.254/latest/meta-data/"
+        ],
+        "lfscLoaderRequests": []
+      },
+      "outcome": "naive processing asks for the URL; LFSC stage 0 rejects before any request (context not allowlisted: http://169.254.169.254/latest/meta-data/)"
+    },
+    {
+      "id": "H",
+      "scenario": "two loaders with different 'static' copies of one URL in one process (default jsonld.js cache)",
+      "signature": "n/a",
+      "meaning": {
+        "firstLoader": "https://vocab.example/battery#RestrictedData",
+        "secondLoader": "https://vocab.example/battery#RestrictedData",
+        "secondLoaderAskedFor": []
+      },
+      "outcome": "GAP: the honest loader's copy is never consulted; the first resolution wins process-wide"
+    }
+  ]
+}

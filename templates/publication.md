@@ -19,6 +19,11 @@ subtitle: "One-sentence subtitle"
 description: "A specific 100–180 character summary that states the subject, method and practical value of this publication."
 
 paper_status: "Spherity Research Paper"
+# After a Zenodo deposit, add the version DOI (without "https://doi.org/") and the
+# version. The layouts then emit citation_doi, a schema.org sameAs link to the DOI
+# and a "How to cite" line that cites the DOI and version.
+# doi: "10.5281/zenodo.0000000"
+# paper_version: "1.0"
 authors:
   - "Author name"
 author_entities:
@@ -131,6 +136,7 @@ spatial_coverage:
 # hub and every sub-page; set series_position to the matching item position.
 # The layouts emit visible navigation, breadcrumbs and CreativeWorkSeries
 # structured data, while validation prevents incomplete or broken series.
+# series_label: "Research programme"   # optional kicker; defaults to "AI Safety research series"
 # series_name: "Series name"
 # series_description: "One sentence explaining the common research programme."
 # series_url: "/series-hub.html"

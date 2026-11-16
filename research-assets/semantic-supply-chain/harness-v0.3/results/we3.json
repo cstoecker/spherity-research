@@ -1,0 +1,47 @@
+{
+  "node": "v22.23.4",
+  "tpm": "swtpm 0.7.3 / tpm2-tools 5.6",
+  "pcr": 23,
+  "rows": [
+    {
+      "id": "A",
+      "scenario": "Device runs the approved semantic bundle",
+      "deviceVerdict": true,
+      "appliedScope": "https://vocab.example/battery#PublicData",
+      "accepted": true,
+      "reason": "device ran approved closure energy-roles 1.0; receipt verdict: true"
+    },
+    {
+      "id": "B",
+      "scenario": "Device runs a substituted context under the same URL (its JCS verifier still says valid)",
+      "deviceVerdict": true,
+      "appliedScope": "https://vocab.example/battery#RestrictedData",
+      "accepted": false,
+      "reason": "attested semantic closure is not approved (energy-roles 1.0)"
+    },
+    {
+      "id": "C",
+      "scenario": "Compromised device forges its event log and receipt to claim the approved closure",
+      "deviceVerdict": true,
+      "appliedScope": "https://vocab.example/battery#RestrictedData",
+      "accepted": false,
+      "reason": "event log does not replay to the quoted PCR value (device log forged)"
+    },
+    {
+      "id": "D",
+      "scenario": "Old genuine quote replayed against a fresh challenge",
+      "deviceVerdict": true,
+      "appliedScope": "https://vocab.example/battery#PublicData",
+      "accepted": false,
+      "reason": "quote invalid for this nonce and receipt (stale, replayed or swapped)"
+    },
+    {
+      "id": "E",
+      "scenario": "Publisher withdrew the bundle; device still runs it",
+      "deviceVerdict": true,
+      "appliedScope": "https://vocab.example/battery#PublicData",
+      "accepted": false,
+      "reason": "attested semantic closure is withdrawn (energy-roles 1.0)"
+    }
+  ]
+}

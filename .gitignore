@@ -12,3 +12,6 @@ docs/dpp-explorer/
 dpp-explorer/integration/docs/dpp-explorer/
 !dpp-explorer/src/vendor/
 !dpp-explorer/src/vendor/**
+
+# Generated Zenodo review metadata and local deposit ledgers.
+_zenodo/

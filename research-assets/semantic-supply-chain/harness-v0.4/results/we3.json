@@ -1,0 +1,219 @@
+{
+  "harness": "0.4.0",
+  "example": "WE-3",
+  "boundary": "The test exercises receipt construction, policy-gated signing and appraisal under an idealised boundary, in which the test adversary has no access to authorisation secrets, protected memory or bypass paths. Ordinary host root is not excluded by such process boundaries, so isolation is not demonstrated; that requires a TEE or a confidential VM.",
+  "environment": {
+    "node": "v22.23.4",
+    "swtpm": "0.7.3",
+    "tpm2Tools": "5.6",
+    "swtpmIoctl": "0.7.3",
+    "enginePcr": 15,
+    "monitorPcr": 23,
+    "keyAttributes": "fixedtpm|fixedparent|sensitivedataorigin|sign|noda",
+    "engine": {
+      "id": "ssc-decision-engine/0.4.0",
+      "modules": [
+        "engine-process.mjs",
+        "crypto.mjs"
+      ],
+      "codeDigest": "aea904aad628e6fe9879d7ededa0f266eeac1a010329a613385c11a1a9217923",
+      "launchEvent": "fb32f252284de6033e6aa3c23159577adcb4148a53c80ed34d50ec52cfc87fef",
+      "pcrValue": "d17b61d0392bfbf87ce562ab164dad0917031a03a600806a56ff381bfd5a7481"
+    },
+    "modifiedEngine": {
+      "codeDigest": "b7b5aa7bb78208611676d948a03d12bc5bdec961937cd7ba9c66e51daa16f699",
+      "pcrValue": "1e0348396937552258eaff9c3063fba4784f987b531ed306d970520eb56815e3"
+    },
+    "policies": {
+      "trial": {
+        "pcrOnly": "166399d2d97e7095acb035fdc20253130e896d41e1c7aafc5cae94aef1df798b",
+        "exclusive": "4eb92389cbeb1a355edca94e4084e16644bf444e4ceb24d3701dd4355d4b2779"
+      },
+      "computed": {
+        "pcrOnly": "166399d2d97e7095acb035fdc20253130e896d41e1c7aafc5cae94aef1df798b",
+        "exclusive": "4eb92389cbeb1a355edca94e4084e16644bf444e4ceb24d3701dd4355d4b2779"
+      }
+    },
+    "keys": {
+      "pcrOnly": {
+        "handle": "0x81010010",
+        "name": "000b7fe69eea66bf61990387c572e05f48de5c7a52730c8b4949eb1c36b5268ecd66"
+      },
+      "exclusive": {
+        "handle": "0x81010011",
+        "name": "000bd89a1ea37565e6344898a800eb6c4fa7283c0577788aa9b9209d142caf562d73"
+      }
+    },
+    "pcrOnlyKeyUnderExclusivePolicy": "key policy is not the approved engine's policy",
+    "closures": {
+      "approved": "ssc:semantic-closure/v1:sha256-Ywx3H4TNBLDqKUpmybMO/f4SxK49JuY1p7dU0g/8qTo=",
+      "substituted": "ssc:semantic-closure/v1:sha256-YSUBVmKm7UqmPckrwsKt1jYr/dxIhQdUwnIgvfanesQ="
+    },
+    "ruleOutcomes": {
+      "approved": "public",
+      "substituted": "restricted"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "A1",
+      "name": "honest engine, approved closure, exclusive key (V5 appraisal)",
+      "expected": "accepted public",
+      "actual": "accepted public",
+      "detail": "signed by the enrolled MC-3 V5 exclusive key; closure energy-roles 1.0 approved and current",
+      "ok": true
+    },
+    {
+      "id": "A2",
+      "name": "honest engine runs a substituted context under the same URL; its receipt names that closure",
+      "expected": "rejected",
+      "actual": "rejected",
+      "detail": "engine decided 'restricted'; named semantic closure is not approved",
+      "ok": true
+    },
+    {
+      "id": "A3",
+      "name": "honest engine, approved closure, PCR-only key (V4 appraisal; MC-3: V4 holds for an honest device)",
+      "expected": "accepted public",
+      "actual": "accepted public",
+      "detail": "signed by the enrolled MC-3 V4 PCR-only key; closure energy-roles 1.0 approved and current",
+      "ok": true
+    },
+    {
+      "id": "B",
+      "name": "host signs a forged receipt with the PCR-only key: decided under the substituted closure, names the approved one",
+      "expected": "accepted restricted",
+      "actual": "accepted restricted",
+      "detail": "signed by the enrolled MC-3 V4 PCR-only key; closure energy-roles 1.0 approved and current. V4 defect reproduced: PolicyPCR is satisfied for any caller while PCR 15 shows the approved engine; the approved closure gives 'public', the receipt says 'restricted'",
+      "ok": true
+    },
+    {
+      "id": "C1",
+      "name": "host signs the B forgery with the exclusive key: PolicyPCR + PolicyAuthValue, no authorisation value",
+      "expected": "TPM refused: TPM_RC_BAD_AUTH",
+      "actual": "TPM refused: TPM_RC_BAD_AUTH",
+      "detail": "tpm:session(1):authorization failure without DA implications; no forged receipt exists",
+      "ok": true
+    },
+    {
+      "id": "C2",
+      "name": "host signs the B forgery with the exclusive key: PolicyPCR + PolicyAuthValue, guessed 256-bit authorisation value",
+      "expected": "TPM refused: TPM_RC_BAD_AUTH",
+      "actual": "TPM refused: TPM_RC_BAD_AUTH",
+      "detail": "tpm:session(1):authorization failure without DA implications; no forged receipt exists",
+      "ok": true
+    },
+    {
+      "id": "C3",
+      "name": "host signs the B forgery with the exclusive key: PolicyPCR only, omitting PolicyAuthValue",
+      "expected": "TPM refused: TPM_RC_POLICY_FAIL",
+      "actual": "TPM refused: TPM_RC_POLICY_FAIL",
+      "detail": "tpm:session(1):a policy check failed; no forged receipt exists",
+      "ok": true
+    },
+    {
+      "id": "C4",
+      "name": "host signs the B forgery with the exclusive key: plain password authorisation, bypassing the policy",
+      "expected": "TPM refused: TPM_RC_AUTH_UNAVAILABLE",
+      "actual": "TPM refused: TPM_RC_AUTH_UNAVAILABLE",
+      "detail": "tpm:error(2.0): authValue or authPolicy is not available for selected entity: userWithAuth is clear",
+      "ok": true
+    },
+    {
+      "id": "C5",
+      "name": "host alters the outcome of a receipt the engine signed",
+      "expected": "rejected",
+      "actual": "rejected",
+      "detail": "receipt signature invalid under the enrolled engine key",
+      "ok": true
+    },
+    {
+      "id": "D1",
+      "name": "host resets the engine register PCR 15",
+      "expected": "TPM refused: TPM_RC_LOCALITY",
+      "actual": "TPM refused: TPM_RC_LOCALITY",
+      "detail": "tpm:warn(2.0): bad locality (locality 0); the PC Client profile makes PCR 0-15 resettable at no locality; PCR 15 unchanged",
+      "ok": true
+    },
+    {
+      "id": "D2",
+      "name": "host resets the monitoring register PCR 23 and re-extends only the approved bundle event (the v0.3 attack, X6)",
+      "expected": "reset succeeded; register rewritten",
+      "actual": "reset succeeded; register rewritten",
+      "detail": "PCR 23 now replays to the approved bundle event alone, although the engine's log shows it loaded the substituted bundle in A2; bundle-load measurement is monitoring only (M23)",
+      "ok": true
+    },
+    {
+      "id": "E1",
+      "name": "modified engine (holding the authorisation value) signs a receipt naming the approved closure for a substituted-closure decision",
+      "expected": "TPM refused: TPM_RC_POLICY_FAIL",
+      "actual": "TPM refused: TPM_RC_POLICY_FAIL",
+      "detail": "PCR 15 shows the modified code b7b5aa7bb782…, not the approved code aea904aad628…; tpm2_sign: tpm:session(1):a policy check failed",
+      "ok": true
+    },
+    {
+      "id": "E2",
+      "name": "modified engine creates and certifies a new key bound to its own measured state",
+      "expected": "key rejected",
+      "actual": "key rejected",
+      "detail": "key policy is not the approved engine's policy",
+      "ok": true
+    },
+    {
+      "id": "E3",
+      "name": "limit: host creates a key with the approved policy and its own authorisation value",
+      "expected": "certification check passes",
+      "actual": "certification check passes",
+      "detail": "certification proves the key's policy, not who holds its authorisation value; the relying party excludes this key only because it pinned the engine's key at enrolment, and that the engine created that key is part of the idealised boundary",
+      "ok": true
+    },
+    {
+      "id": "F1",
+      "name": "after a reboot, the approved engine (with its authorisation value) before it is measured again",
+      "expected": "TPM refused: TPM_RC_POLICY_FAIL",
+      "actual": "TPM refused: TPM_RC_POLICY_FAIL",
+      "detail": "PCR 15 cleared to zero by TPM2_Startup(CLEAR); tpm2_sign: tpm:session(1):a policy check failed",
+      "ok": true
+    },
+    {
+      "id": "F2",
+      "name": "after a reboot, measured launch of the approved engine: same enrolled key",
+      "expected": "accepted public",
+      "actual": "accepted public",
+      "detail": "signed by the enrolled MC-3 V5 exclusive key; closure energy-roles 1.0 approved and current",
+      "ok": true
+    },
+    {
+      "id": "F3",
+      "name": "receipt A1, signed before the reboot, verified later",
+      "expected": "signature valid",
+      "actual": "signature valid",
+      "detail": "verifies under the enrolled key; its challenge was consumed in A1, so it is evidence of a past decision, not a fresh acceptance: see G1",
+      "ok": true
+    },
+    {
+      "id": "G1",
+      "name": "receipt A1 presented again (replayed challenge)",
+      "expected": "rejected",
+      "actual": "rejected",
+      "detail": "challenge already used: replay",
+      "ok": true
+    },
+    {
+      "id": "G2",
+      "name": "receipt for a challenge the relying party never issued (pre-computed)",
+      "expected": "rejected",
+      "actual": "rejected",
+      "detail": "challenge not issued by this relying party",
+      "ok": true
+    },
+    {
+      "id": "H",
+      "name": "publisher withdrew the approved closure; the engine still runs it",
+      "expected": "rejected",
+      "actual": "rejected",
+      "detail": "named semantic closure is withdrawn",
+      "ok": true
+    }
+  ]
+}

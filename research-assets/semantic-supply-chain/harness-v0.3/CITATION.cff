@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Semantic supply chain harness: worked examples for securing the meaning of verifiable credentials"
+version: 0.3.0
+date-released: 2026-11-12
+license: Apache-2.0
+type: software
+authors:
+  - family-names: "Stöcker"
+    given-names: "Carsten"
+    affiliation: "Spherity GmbH"
+    orcid: "https://orcid.org/0009-0003-7417-8872"
+repository-code: "https://github.com/cstoecker/spherity-research/tree/claude/elegant-babbage-pe1vwn/research-assets/semantic-supply-chain/harness-v0.3"
+keywords:
+  - verifiable credentials
+  - JSON-LD
+  - RDF canonicalization
+  - Data Integrity
+  - CBOR-LD
+  - semantic supply chain
+  - high assurance
+references:
+  - type: report
+    title: "Proofs over Statements in Verifiable Evidence Graphs for the European Business Wallet"
+    authors:
+      - family-names: "Stöcker"
+        given-names: "Carsten"
+    year: 2026
+    url: "https://spherity.github.io/spherity-research/Stoecker-2026-Proofs-over-Statements-v1.3.pdf"
+  - type: article
+    title: "A Security Analysis of Verifiable Credential Verification Pipelines"
+    authors:
+      - family-names: "Fujie"
+        given-names: "Naohiro"
+      - family-names: "Suzuki"
+        given-names: "Shigeya"
+    year: 2026
+    url: "https://arxiv.org/abs/2611.04461"

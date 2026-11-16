@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "@protected": true,
+    "MarketRoleCredential": "https://vocab.example/energy#MarketRoleCredential",
+    "marketRole": { "@id": "https://vocab.example/energy#marketRole", "@type": "@vocab" },
+    "dataAccessScope": { "@id": "https://vocab.example/energy#dataAccessScope", "@type": "@vocab" },
+    "DistributionSystemOperator": "https://vocab.example/energy#DistributionSystemOperator",
+    "TransmissionSystemOperator": "https://vocab.example/energy#TransmissionSystemOperator",
+    "BatteryPassportPublicData": "https://vocab.example/battery#PublicData",
+    "BatteryPassportRestrictedData": "https://vocab.example/battery#RestrictedData"
+  }
+}

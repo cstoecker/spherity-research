@@ -536,3 +536,45 @@
   byline: "Spherity Research · Open access"
   visual_type: case-evidence
   topics: ["Case studies", "Digital identity", "Trusted AI"]
+
+- publication_url: "/securing-meaning-in-trust-infrastructure.html"
+  output: "/assets/preview-securing-meaning-in-trust-infrastructure.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "RESEARCH PROGRAMME · PAPER A + HARNESS"
+  title_size: 44
+  title_lines:
+    - "Securing Meaning in"
+    - "Trust Infrastructure"
+  subtitle_size: 25
+  subtitle_lines:
+    - "The semantic supply chain"
+  deck_lines:
+    - "Verifiable credentials, JSON-LD, knowledge"
+    - "graphs and AI agents."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  visual: "/assets/securing-semantic-supply-chain/v1.0/executive-brief-cover.jpg"
+  visual_fit: "contain"
+
+- publication_url: "/securing-semantic-supply-chain.html"
+  output: "/assets/preview-securing-semantic-supply-chain.webp"
+  style: "research-grid-v1"
+  mode: "generated"
+  format_label: "PAPER A · BRIEF + ARTICLE + S1–S5"
+  title_size: 44
+  title_lines:
+    - "Securing the Semantic"
+    - "Supply Chain"
+  subtitle_size: 25
+  subtitle_lines:
+    - "Meaning as trust infrastructure"
+  deck_lines:
+    - "Why a valid signature is not"
+    - "a valid meaning."
+  byline: "Dr. Carsten Stöcker · Spherity GmbH"
+  topics:
+    - "Identity"
+    - "Evidence graphs"
+    - "Trusted AI"
+  visual: "/assets/securing-semantic-supply-chain/v1.0/article-cover.jpg"
+  visual_fit: "contain"

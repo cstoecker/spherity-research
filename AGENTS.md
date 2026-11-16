@@ -6,6 +6,12 @@ cards, figures, metadata or PDF sharing, read and use
 It routes to the existing template, editorial guidance and validation tools;
 do not duplicate those implementations.
 
+For drafting research content (prior-art gate, claim register, regulatory
+status checks, confidentiality and disclosure), use
+[Spherity Research Authoring](.agents/skills/spherity-research-authoring/SKILL.md).
+Zenodo deposits follow [zenodo/README.md](zenodo/README.md); a deposit is
+irreversible and needs every registry gate passed and an explicit user request.
+
 Keep manuscript production and Word-to-LaTeX conversion separate from website
 publishing. Preserve the user's requested scope and approved content. Publishing
 preparation alone does not authorize a push, merge or deployment.

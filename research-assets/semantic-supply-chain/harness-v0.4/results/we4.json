@@ -1,0 +1,494 @@
+{
+  "node": "v22.23.4",
+  "platform": "linux/x64",
+  "at": "2026-11-15T02:51:02.780Z",
+  "budgetMs": 20000,
+  "results": [
+    {
+      "family": "complete",
+      "n": 3,
+      "bytes": 849,
+      "naive": {
+        "ms": 4.433788,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 4.3091,
+        "outcome": "Maximum deep iterations exceeded (2)."
+      },
+      "lfsc": {
+        "ms": 0.063888,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.047075,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.371189,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    },
+    {
+      "family": "complete",
+      "n": 4,
+      "bytes": 956,
+      "naive": {
+        "ms": 7.566837,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 3.697489,
+        "outcome": "Maximum deep iterations exceeded (3)."
+      },
+      "lfsc": {
+        "ms": 0.046405,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.069344,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.249486,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    },
+    {
+      "family": "complete",
+      "n": 5,
+      "bytes": 1091,
+      "naive": {
+        "ms": 9.869376,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 3.148468,
+        "outcome": "Maximum deep iterations exceeded (4)."
+      },
+      "lfsc": {
+        "ms": 0.044267,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.033712,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.230534,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    },
+    {
+      "family": "complete",
+      "n": 6,
+      "bytes": 1254,
+      "naive": {
+        "ms": 34.623808,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 3.455354,
+        "outcome": "Maximum deep iterations exceeded (5)."
+      },
+      "lfsc": {
+        "ms": 0.045817,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.03397,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.180384,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    },
+    {
+      "family": "complete",
+      "n": 7,
+      "bytes": 1445,
+      "naive": {
+        "ms": 226.543327,
+        "runs": 1,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 3.946588,
+        "outcome": "Maximum deep iterations exceeded (6)."
+      },
+      "lfsc": {
+        "ms": 0.052657,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.031973,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.191516,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    },
+    {
+      "family": "complete",
+      "n": 8,
+      "bytes": 1664,
+      "naive": {
+        "ms": 1447.452215,
+        "runs": 1,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 4.038629,
+        "outcome": "Maximum deep iterations exceeded (7)."
+      },
+      "lfsc": {
+        "ms": 0.04873,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.049185,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.216884,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    },
+    {
+      "family": "ring",
+      "n": 6,
+      "bytes": 1002,
+      "naive": {
+        "ms": 5.225985,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 2.505668,
+        "outcome": "Maximum deep iterations exceeded (5)."
+      },
+      "lfsc": {
+        "ms": 0.123501,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.030114,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.161412,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    },
+    {
+      "family": "ring",
+      "n": 8,
+      "bytes": 1104,
+      "naive": {
+        "ms": 5.45894,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 2.870633,
+        "outcome": "Maximum deep iterations exceeded (7)."
+      },
+      "lfsc": {
+        "ms": 0.042826,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.029722,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.16085,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    },
+    {
+      "family": "ring",
+      "n": 10,
+      "bytes": 1205,
+      "naive": {
+        "ms": 9.98031,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 3.144117,
+        "outcome": "Maximum deep iterations exceeded (9)."
+      },
+      "lfsc": {
+        "ms": 0.05041,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.029908,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.150627,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    },
+    {
+      "family": "ring",
+      "n": 12,
+      "bytes": 1314,
+      "naive": {
+        "ms": 13.114998,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 3.185247,
+        "outcome": "Maximum deep iterations exceeded (11)."
+      },
+      "lfsc": {
+        "ms": 0.051645,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.02864,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.158564,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    },
+    {
+      "family": "ring",
+      "n": 16,
+      "bytes": 1529,
+      "naive": {
+        "ms": 12.498823,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 3.79856,
+        "outcome": "Maximum deep iterations exceeded (15)."
+      },
+      "lfsc": {
+        "ms": 0.062795,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.046764,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.160902,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    },
+    {
+      "family": "binary-tree",
+      "n": 63,
+      "bytes": 3151,
+      "naive": {
+        "ms": 45.228625,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 8.164265,
+        "outcome": "Maximum deep iterations exceeded (62)."
+      },
+      "lfsc": {
+        "ms": 0.104916,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.02773,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.153932,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    },
+    {
+      "family": "binary-tree",
+      "n": 127,
+      "bytes": 5733,
+      "naive": {
+        "ms": 320.23964,
+        "runs": 1,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 8.24867,
+        "outcome": "Maximum deep iterations exceeded (126)."
+      },
+      "lfsc": {
+        "ms": 0.171942,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.031156,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.130153,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    },
+    {
+      "family": "binary-tree",
+      "n": 255,
+      "bytes": 11045,
+      "naive": {
+        "ms": 3336.343138,
+        "runs": 1,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 14.113552,
+        "outcome": "Maximum deep iterations exceeded (254)."
+      },
+      "lfsc": {
+        "ms": 0.318705,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.031382,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.265977,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    },
+    {
+      "family": "binary-tree",
+      "n": 511,
+      "bytes": 21669,
+      "naive": {
+        "ms": 20000,
+        "runs": 0,
+        "outcome": "exceeded 20 s budget"
+      },
+      "bounded": {
+        "ms": 24.199976,
+        "outcome": "Maximum deep iterations exceeded (510)."
+      },
+      "lfsc": {
+        "ms": 0.79397,
+        "stage": 0,
+        "reason": "context not allowlisted: https://www.w3.org/ns/credentials/examples/v2"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.066629,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.195198,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    },
+    {
+      "family": "labelled-tree",
+      "n": 1500,
+      "bytes": 79102,
+      "naive": {
+        "ms": 76.717818,
+        "runs": 5,
+        "outcome": "verified=false"
+      },
+      "bounded": {
+        "ms": 62.167475,
+        "outcome": "verified=false"
+      },
+      "lfsc": {
+        "ms": 1.942242,
+        "stage": 0,
+        "reason": "size 79102 > 65536"
+      },
+      "lfscBlankNodesAllowlistedContexts": {
+        "ms": 0.07218,
+        "stage": 0,
+        "reason": "blank nodes > 0"
+      },
+      "lfscWithoutBlankNodes": {
+        "ms": 0.205375,
+        "stage": 1,
+        "reason": "verification method not authorised for this issuer"
+      }
+    }
+  ],
+  "legitimate": {
+    "rdfc": {
+      "ms": 1.953157,
+      "runs": 200
+    },
+    "jcs": {
+      "ms": 0.181172,
+      "runs": 200
+    },
+    "lfscFirst": {
+      "ms": 1.275015,
+      "runs": 200
+    },
+    "lfscGraphNative": {
+      "ms": 0.210995,
+      "runs": 200
+    },
+    "lfscCached": {
+      "ms": 0.337744,
+      "runs": 200
+    }
+  }
+}

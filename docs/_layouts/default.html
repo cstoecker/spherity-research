@@ -170,6 +170,7 @@
   <meta name="citation_pdf_url" content="{{ page.pdf_url | absolute_url | escape }}">
   {% endif %}
   {% endif %}
+  {% if page.doi and page.citation_metadata != false %}<meta name="citation_doi" content="{{ page.doi | escape }}">{% endif %}
 
   {% if page.case_study_collection %}
   {% include case-study-collection-metadata.html %}
@@ -453,6 +454,7 @@
     "@id": "{{ canonical_url | escape }}#article",
     "url": "{{ canonical_url | escape }}",
     "identifier": "{{ canonical_url | escape }}",
+    {% if page.doi %}"sameAs": "https://doi.org/{{ page.doi }}",{% endif %}
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "{{ canonical_url | escape }}"

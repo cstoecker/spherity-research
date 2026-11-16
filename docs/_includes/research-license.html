@@ -42,7 +42,7 @@
   {% else %}
   <div class="citation-copy">
     <h3>How to cite this work</h3>
-    <p data-citation-text>{{ citation_authors }} ({{ citation_date }}{% if page.publication_state == "draft" %}, unpublished preview{% endif %}). “{% if page.citation_title %}{{ page.citation_title }}{% else %}{{ page.title }}{% if page.subtitle %}: {{ page.subtitle }}{% endif %}{% endif %}.” {{ page.affiliation | default: "Spherity GmbH" }}. {{ citation_url }}. Licensed CC BY 4.0{% if page.publication_type == "atlas" %} for the new explanatory text only; dataset and third-party rights are separate{% endif %}.</p>
+    <p data-citation-text>{{ citation_authors }} ({{ citation_date }}{% if page.publication_state == "draft" %}, unpublished preview{% endif %}). “{% if page.citation_title %}{{ page.citation_title }}{% else %}{{ page.title }}{% if page.subtitle %}: {{ page.subtitle }}{% endif %}{% endif %}.” {% if page.doi and page.paper_version %}Version {{ page.paper_version }}. {% endif %}{{ page.affiliation | default: "Spherity GmbH" }}. {% if page.doi %}https://doi.org/{{ page.doi }}{% else %}{{ citation_url }}{% endif %}. Licensed CC BY 4.0{% if page.publication_type == "atlas" %} for the new explanatory text only; dataset and third-party rights are separate{% endif %}.</p>
     <button type="button" class="citation-copy-button" data-copy-citation>Copy citation</button>
     <p class="share-feedback" data-citation-feedback aria-live="polite"></p>
   </div>

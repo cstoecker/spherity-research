@@ -1,0 +1,27 @@
+
+WE-2 results (@digitalbazaar/cborld 8.1.0, Node v22.23.4); label sizes: CBOR-LD 314 bytes, bound envelope 337 bytes
+
+[S1] Baseline: label decoded with the issuer's registry entry and contexts
+     => proof valid: true
+     decoded: {"topLevelKeys":["credentialSubject","id","issuer","type"],"type":["VerifiableCredential","MarketRoleCredential"],"subject":{"dataAccessScope":"BatteryPassportPublicData","id":"did:example:grid-operator-42","marketRole":"DistributionSystemOperator"},"scope":"BatteryPassportPublicData"}
+
+[S2] Signed label after a routine vocabulary update (one term added under the same URL)
+     => label UNREADABLE: decode error "Improperly formatted bytes "122,173,28,166,94,175,38,44,87,128,76,179," — the reason (codec drift) is not reported; the label stays unusable for its lifetime
+
+[S3] Compact profile signing the CBOR-LD bytes, after the same update
+     => signature valid: true; meaning changed silently (access scope changed)
+     decoded: {"topLevelKeys":["credentialStatus","evidence","id","type"],"type":["VerifiableCredential","DistributionSystemOperator"],"subject":"(missing)","scope":"BatteryPassportRestrictedData"}
+
+[S4] Registry entry substituted at the verifier (context codes swapped)
+     => decode error: Unknown term ID "180" was detected in the CBOR-LD input.
+
+[S5] M15 bound envelope; verifier's context was updated; no archive
+     => rejected before decoding: codec manifest mismatch: local registry entry or its contexts differ from the issuer's, and no archived manifest was found
+
+[S6] M15 bound envelope + lifetime archive of the issuer's manifest
+     => decoded from lifetime archive (resolved by manifest digest); proof valid: true
+     decoded: {"topLevelKeys":["credentialSubject","id","issuer","type"],"type":["VerifiableCredential","MarketRoleCredential"],"subject":{"dataAccessScope":"BatteryPassportPublicData","id":"did:example:grid-operator-42","marketRole":"DistributionSystemOperator"},"scope":"BatteryPassportPublicData"}
+
+[S7] M15 bound envelope; registry entry substituted at the verifier
+     => rejected before decoding: codec manifest mismatch: local registry entry or its contexts differ from the issuer's, and no archived manifest was found
+

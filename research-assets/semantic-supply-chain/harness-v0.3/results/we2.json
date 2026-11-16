@@ -1,0 +1,51 @@
+{
+  "node": "v22.23.4",
+  "sizes": {
+    "cborld": 314,
+    "envelope": 337
+  },
+  "rows": [
+    {
+      "id": "S1",
+      "scenario": "Baseline: label decoded with the issuer's registry entry and contexts",
+      "outcome": "proof valid: true",
+      "detail": "{\"topLevelKeys\":[\"credentialSubject\",\"id\",\"issuer\",\"type\"],\"type\":[\"VerifiableCredential\",\"MarketRoleCredential\"],\"subject\":{\"dataAccessScope\":\"BatteryPassportPublicData\",\"id\":\"did:example:grid-operator-42\",\"marketRole\":\"DistributionSystemOperator\"},\"scope\":\"BatteryPassportPublicData\"}"
+    },
+    {
+      "id": "S2",
+      "scenario": "Signed label after a routine vocabulary update (one term added under the same URL)",
+      "outcome": "label UNREADABLE: decode error \"Improperly formatted bytes \"122,173,28,166,94,175,38,44,87,128,76,179,\" — the reason (codec drift) is not reported; the label stays unusable for its lifetime",
+      "detail": ""
+    },
+    {
+      "id": "S3",
+      "scenario": "Compact profile signing the CBOR-LD bytes, after the same update",
+      "outcome": "signature valid: true; meaning changed silently (access scope changed)",
+      "detail": "{\"topLevelKeys\":[\"credentialStatus\",\"evidence\",\"id\",\"type\"],\"type\":[\"VerifiableCredential\",\"DistributionSystemOperator\"],\"subject\":\"(missing)\",\"scope\":\"BatteryPassportRestrictedData\"}"
+    },
+    {
+      "id": "S4",
+      "scenario": "Registry entry substituted at the verifier (context codes swapped)",
+      "outcome": "decode error: Unknown term ID \"180\" was detected in the CBOR-LD input.",
+      "detail": ""
+    },
+    {
+      "id": "S5",
+      "scenario": "M15 bound envelope; verifier's context was updated; no archive",
+      "outcome": "rejected before decoding: codec manifest mismatch: local registry entry or its contexts differ from the issuer's, and no archived manifest was found",
+      "detail": ""
+    },
+    {
+      "id": "S6",
+      "scenario": "M15 bound envelope + lifetime archive of the issuer's manifest",
+      "outcome": "decoded from lifetime archive (resolved by manifest digest); proof valid: true",
+      "detail": "{\"topLevelKeys\":[\"credentialSubject\",\"id\",\"issuer\",\"type\"],\"type\":[\"VerifiableCredential\",\"MarketRoleCredential\"],\"subject\":{\"dataAccessScope\":\"BatteryPassportPublicData\",\"id\":\"did:example:grid-operator-42\",\"marketRole\":\"DistributionSystemOperator\"},\"scope\":\"BatteryPassportPublicData\"}"
+    },
+    {
+      "id": "S7",
+      "scenario": "M15 bound envelope; registry entry substituted at the verifier",
+      "outcome": "rejected before decoding: codec manifest mismatch: local registry entry or its contexts differ from the issuer's, and no archived manifest was found",
+      "detail": ""
+    }
+  ]
+}

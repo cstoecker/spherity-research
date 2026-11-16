@@ -120,7 +120,7 @@ await cp(path.join(sourceDirectory, "assets"), path.join(outputDirectory, "asset
 await cp(path.join(sourceDirectory, 'dpp-explorer'), path.join(outputDirectory, 'dpp-explorer'), { recursive: true });
 await cp(path.join(sourceDirectory, 'downloads'), path.join(outputDirectory, 'downloads'), { recursive: true });
 
-const passthroughFiles = await glob("*.{html,pdf,txt}", {
+const passthroughFiles = await glob("*.{html,pdf,txt,csv}", {
   cwd: sourceDirectory,
   nodir: true,
   windowsPathsNoEscape: true

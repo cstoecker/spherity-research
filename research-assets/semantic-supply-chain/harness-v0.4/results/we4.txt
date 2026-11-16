@@ -1,0 +1,27 @@
+
+WE-4: cost to reject an attacker document with a forged proof (p50 ms)
+
+family          n    bytes |  naive, no limit           |  naive, default bound      | LFSC: as sent / allowlisted ctx + blank nodes / no blank nodes, forged proof
+complete         3      849 |      4.434 verified=false |      4.309 Maximum deep i | 0.064 s0 context not allowlisted / 0.047 s0 blank nodes > 0 / 0.371 s1 verification method not authorised for this issuer
+complete         4      956 |      7.567 verified=false |      3.697 Maximum deep i | 0.046 s0 context not allowlisted / 0.069 s0 blank nodes > 0 / 0.249 s1 verification method not authorised for this issuer
+complete         5     1091 |      9.869 verified=false |      3.148 Maximum deep i | 0.044 s0 context not allowlisted / 0.034 s0 blank nodes > 0 / 0.231 s1 verification method not authorised for this issuer
+complete         6     1254 |     34.624 verified=false |      3.455 Maximum deep i | 0.046 s0 context not allowlisted / 0.034 s0 blank nodes > 0 / 0.180 s1 verification method not authorised for this issuer
+complete         7     1445 |    226.543 verified=false |      3.947 Maximum deep i | 0.053 s0 context not allowlisted / 0.032 s0 blank nodes > 0 / 0.192 s1 verification method not authorised for this issuer
+complete         8     1664 |   1447.452 verified=false |      4.039 Maximum deep i | 0.049 s0 context not allowlisted / 0.049 s0 blank nodes > 0 / 0.217 s1 verification method not authorised for this issuer
+ring             6     1002 |      5.226 verified=false |      2.506 Maximum deep i | 0.124 s0 context not allowlisted / 0.030 s0 blank nodes > 0 / 0.161 s1 verification method not authorised for this issuer
+ring             8     1104 |      5.459 verified=false |      2.871 Maximum deep i | 0.043 s0 context not allowlisted / 0.030 s0 blank nodes > 0 / 0.161 s1 verification method not authorised for this issuer
+ring            10     1205 |      9.980 verified=false |      3.144 Maximum deep i | 0.050 s0 context not allowlisted / 0.030 s0 blank nodes > 0 / 0.151 s1 verification method not authorised for this issuer
+ring            12     1314 |     13.115 verified=false |      3.185 Maximum deep i | 0.052 s0 context not allowlisted / 0.029 s0 blank nodes > 0 / 0.159 s1 verification method not authorised for this issuer
+ring            16     1529 |     12.499 verified=false |      3.799 Maximum deep i | 0.063 s0 context not allowlisted / 0.047 s0 blank nodes > 0 / 0.161 s1 verification method not authorised for this issuer
+binary-tree     63     3151 |     45.229 verified=false |      8.164 Maximum deep i | 0.105 s0 context not allowlisted / 0.028 s0 blank nodes > 0 / 0.154 s1 verification method not authorised for this issuer
+binary-tree    127     5733 |    320.240 verified=false |      8.249 Maximum deep i | 0.172 s0 context not allowlisted / 0.031 s0 blank nodes > 0 / 0.130 s1 verification method not authorised for this issuer
+binary-tree    255    11045 |   3336.343 verified=false |     14.114 Maximum deep i | 0.319 s0 context not allowlisted / 0.031 s0 blank nodes > 0 / 0.266 s1 verification method not authorised for this issuer
+binary-tree    511    21669 |     >20000 exceeded 20 s  |     24.200 Maximum deep i | 0.794 s0 context not allowlisted / 0.067 s0 blank nodes > 0 / 0.195 s1 verification method not authorised for this issuer
+labelled-tree 1500    79102 |     76.718 verified=false |     62.167 verified=false | 1.942 s0 size 79102 > 65536 / 0.072 s0 blank nodes > 0 / 0.205 s1 verification method not authorised for this issuer
+
+Legitimate market-role credential (p50 ms over 200 runs)
+  rdfc        1.953  verified=true
+  jcs         0.181  verified=true
+  lfscFirst   1.275  verified=true
+  lfscGraphNative 0.211  verified=true
+  lfscCached  0.338  verified=true
