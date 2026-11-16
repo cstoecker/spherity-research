@@ -9,6 +9,9 @@ layout: default
 {% if page.publication_state == "draft" %}
   {% assign this_version = page.url | relative_url %}
   {% assign latest_version = nil %}
+{% elsif page.doi %}
+  {% comment %} A versioned publication with a DOI: "This version" is the version DOI. {% endcomment %}
+  {% assign this_version = "https://doi.org/" | append: page.doi %}
 {% endif %}
 {% if page.authors %}
   {% assign author_name = page.authors | join: ", " %}

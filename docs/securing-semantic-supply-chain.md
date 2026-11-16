@@ -325,7 +325,11 @@ tags:
   <div class="paper-download">
     <h2>Read the research article</h2>
     <a href="{{ page.pdf_url | relative_url }}">Download the research article (PDF, 45 pages)</a>
-    <p><strong>Version 1.0, 16 November 2026.</strong> Archived on Zenodo: <a href="https://doi.org/{{ page.doi }}">doi:{{ page.doi }}</a>. Supplements S1–S5 are <a href="#supplements">listed below</a>.</p>
+    <p><strong>Version 1.0, 16 November 2026.</strong> Archived on Zenodo with supplements S1–S5 and two CSV files.</p>
+    <ol class="paper-download-links" role="list">
+      <li><a href="https://doi.org/{{ page.doi }}">Zenodo record: doi:{{ page.doi }}</a></li>
+      <li><a href="#supplements">Supplements S1–S5 on this page</a></li>
+    </ol>
   </div>
 </section>
 
@@ -400,11 +404,11 @@ The supplements are part of the publication and carry the full record. Numbers i
 
 | Supplement | Content | Download |
 |---|---|---|
-| S1 | Mechanism disclosures M1–M31 with variants, and the full claim register | [PDF, 29 pages]({{ '/Spherity-Research-Semantic-Supply-Chain-S1-Mechanisms.pdf' | relative_url }}) · [claim register, CSV]({{ '/Spherity-Research-Semantic-Supply-Chain-S1-claim-register.csv' | relative_url }}) |
-| S2 | The 91 requirements with profile mapping | [PDF, 32 pages]({{ '/Spherity-Research-Semantic-Supply-Chain-S2-Requirements.pdf' | relative_url }}) · [requirements, CSV]({{ '/Spherity-Research-Semantic-Supply-Chain-S2-requirements.csv' | relative_url }}) |
-| S3 | Formal model SSC-FM v5.2, theorems with proof sketches, model checking | [PDF, 28 pages]({{ '/Spherity-Research-Semantic-Supply-Chain-S3-Formal-Model.pdf' | relative_url }}) |
-| S4 | Prior-art ledger and novelty records | [PDF, 14 pages]({{ '/Spherity-Research-Semantic-Supply-Chain-S4-Prior-Art.pdf' | relative_url }}) |
-| S5 | Method, review and reproducibility record | [PDF, 23 pages]({{ '/Spherity-Research-Semantic-Supply-Chain-S5-Review-Record.pdf' | relative_url }}) |
+| S1 | Mechanism disclosures M1–M31 with variants, and the full claim register | [PDF, 29 pp.]({{ '/Spherity-Research-Semantic-Supply-Chain-S1-Mechanisms.pdf' | relative_url }})<br>[CSV register]({{ '/Spherity-Research-Semantic-Supply-Chain-S1-claim-register.csv' | relative_url }}) |
+| S2 | The 91 requirements with profile mapping | [PDF, 32 pp.]({{ '/Spherity-Research-Semantic-Supply-Chain-S2-Requirements.pdf' | relative_url }})<br>[CSV requirements]({{ '/Spherity-Research-Semantic-Supply-Chain-S2-requirements.csv' | relative_url }}) |
+| S3 | Formal model SSC-FM v5.2, theorems with proof sketches, model checking | [PDF, 28 pp.]({{ '/Spherity-Research-Semantic-Supply-Chain-S3-Formal-Model.pdf' | relative_url }}) |
+| S4 | Prior-art ledger and novelty records | [PDF, 14 pp.]({{ '/Spherity-Research-Semantic-Supply-Chain-S4-Prior-Art.pdf' | relative_url }}) |
+| S5 | Method, review and reproducibility record | [PDF, 23 pp.]({{ '/Spherity-Research-Semantic-Supply-Chain-S5-Review-Record.pdf' | relative_url }}) |
 
 This paper is part of the research programme [Securing Meaning in Trust Infrastructure]({{ '/securing-meaning-in-trust-infrastructure.html' | relative_url }}), which also lists the planned work: a high-assurance profile for W3C VCDM 2.0, verifiable knowledge graphs for AI and key management for AI agents.
 
