@@ -1,8 +1,8 @@
-# Semantic supply chain harness (v0.4.0, release candidate)
+# Semantic supply chain harness (v0.4.0)
 
-> **Status: release candidate accompanying a paper in preparation; not yet published.** The tagged release is intended to provide a dated public record of the findings and mechanisms it contains. Spherity publishes its research and does not file patents. `ecdsa-lfsc-2026`, the M15 envelope, the admission certificate, replay-validated receipts and the evidence-graph certificate are experimental formats, not standards. Cite via `CITATION.cff`.
+> **Status: harness v0.4.0, released 16 November 2026.** This release provides a dated public record of the findings and mechanisms it contains. Release record: https://github.com/cstoecker/spherity-research/releases/tag/ssc-harness-v0.4.0. Spherity publishes its research and does not file patents. `ecdsa-lfsc-2026`, the M15 envelope, the admission certificate, replay-validated receipts and the evidence-graph certificate are experimental formats, not standards. Cite via `CITATION.cff`.
 
-Worked examples and the formal model's checker for the paper *Securing the Semantic Supply Chain: Meaning as a Foundation of Trust Infrastructure* (Spherity Research, claims note v0.9.6, in preparation). Apache-2.0.
+Worked examples and the formal model's checker for the paper *Securing the Semantic Supply Chain: Meaning as a Foundation of Trust Infrastructure* (Spherity Research; manuscript v0.9.13 at the time of this release, publication in preparation). Apache-2.0 with third-party notices.
 
 | WE | Question | Supports |
 |---|---|---|
