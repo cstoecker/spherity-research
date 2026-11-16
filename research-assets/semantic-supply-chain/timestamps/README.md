@@ -4,6 +4,7 @@
 |---|---|---|---|---|
 | v0.2.0 | `359c9df8574a87cccd653357cabac8339dfba19e` | `dfe350db19b2e8a5483512cefa308f863187694f2009ec6ea042144fbc59d7f5` | **12 Nov 2026, 12:03:59 GMT** | `SHA256SUMS.tsq`, `SHA256SUMS.tsr` |
 | v0.3.0 (adds WE-3) | `257d1c79114532e454736255d127f53e5161f639` | `4758835ad30c86f8823a867758a6d1e7fc59e2f3e9ff6b1e3e95b9963c766f6e` | **12 Nov 2026, 12:12:09 GMT** | `harness-v0.3-SHA256SUMS.tsq`, `harness-v0.3-SHA256SUMS.tsr` |
+| v0.4.0 (corrected implementations, WE-6, WE-7, formal-model checker) | `47f258d893c7d15351e927bef0961c1439c3af26` | `bb50b378484d21fcabb314502403bbe00f7645fac1c76ca71f707d6b3049e2db` | **16 Nov 2026, 12:25:22 GMT** | `harness-v0.4-SHA256SUMS.tsq`, `harness-v0.4-SHA256SUMS.tsr` |
 
 Each `SHA256SUMS` lists the SHA-256 digest of every file in its release folder. The TSA certificates are `freetsa-cacert.pem` and `freetsa-tsa.crt`.
 
@@ -46,4 +47,22 @@ The timestamp (12:12:09 GMT) predates the release (14:45:14 UTC). It proves that
 ```bash
 openssl ts -verify -in harness-v0.3-SHA256SUMS.tsr -data ../harness-v0.3/SHA256SUMS -CAfile freetsa-cacert.pem -untrusted freetsa-tsa.crt
 cd ../harness-v0.3 && sha256sum -c SHA256SUMS
+```
+
+## v0.4.0
+
+| Item | Value |
+|---|---|
+| Manifest | `../harness-v0.4/SHA256SUMS`, 98 files, SHA-256 `bb50b378484d21fcabb314502403bbe00f7645fac1c76ca71f707d6b3049e2db`, as committed in `47f258d893c7d15351e927bef0961c1439c3af26` |
+| RFC 3161 time-stamp authority | FreeTSA (freetsa.org); only the manifest's SHA-256 was sent |
+| Time stamp | **16 November 2026, 12:25:22 GMT**, serial `0x0A0F60CE` |
+| Files | `harness-v0.4-SHA256SUMS.tsq` (request), `harness-v0.4-SHA256SUMS.tsr` (signed response) |
+
+The release record (tag, GitHub release, assets and web-archive captures) is added after publication.
+
+Verify v0.4.0 (OpenSSL):
+
+```bash
+openssl ts -verify -in harness-v0.4-SHA256SUMS.tsr -data ../harness-v0.4/SHA256SUMS -CAfile freetsa-cacert.pem -untrusted freetsa-tsa.crt
+cd ../harness-v0.4 && sha256sum -c SHA256SUMS
 ```
