@@ -1,6 +1,6 @@
 # LinkedIn-Post: „Kein Vertrauen, kein Zugang“ (automotiveIT, 19.11.2026)
 
-KI-Entwurf, Review ausstehend. Stimme: Spherity-Unternehmensseite. Tags zum Setzen sind mit @ markiert.
+KI-Entwurf, Review ausstehend. Stimme: Spherity-Unternehmensseite. Jedes @ ist ein Tag, der in LinkedIn aus der Vorschlagsliste gewählt wird.
 Bild: `eyecatcher-kein-vertrauen-kein-zugang.png` (2160 × 2160), Vektorquelle `.svg`.
 
 ## Post
@@ -20,11 +20,11 @@ Die drei Fragen lassen sich beantworten:
 
 Das ist Trusted AI: Ein Ergebnis lässt sich über eine signierte Nachweiskette bis zur Quelle zurückverfolgen. Und es ist Safe AI: Ein Agent handelt nur im Rahmen seines Mandats und wird gestoppt, wenn die Berechtigung entzogen ist.
 
-Carsten Stöcker, Geschäftsführer Spherity: „Catena-X hat geschafft, woran viele Datenraum-Initiativen scheitern: Aus Standards ist Betrieb geworden. Wer vertrauenswürdige KI in die Lieferkette bringen will, muss nicht bei null anfangen. Er kann auf Catena-X aufbauen, und die European Business Wallet gibt diesem Fundament rechtlich belastbare Unternehmensidentitäten.“
+@Carsten Stöcker, Geschäftsführer Spherity: „Catena-X hat geschafft, woran viele Datenraum-Initiativen scheitern: Aus Standards ist Betrieb geworden. Wer vertrauenswürdige KI in die Lieferkette bringen will, muss nicht bei null anfangen. Er kann auf Catena-X aufbauen, und die European Business Wallet gibt diesem Fundament rechtlich belastbare Unternehmensidentitäten.“
 
-Die Bausteine sind da. @Cofinity-X betreibt den Catena-X-Datenraum im Tagesgeschäft. @SCALE-MX bringt Datenraum-Technologie als Transferinitiative von Manufacturing-X in den Mittelstand, also zu vielen der Tier-2- bis Tier-5-Unternehmen aus dem Szenario. Der @Bundesanzeiger Verlag führt das Unternehmensregister und liefert daraus Unternehmensdaten als verifizierbare Nachweise.
+Die Bausteine sind da. @Cofinity-X betreibt den Catena-X-Datenraum im Tagesgeschäft. @SCALE-MX bringt Datenraum-Technologie als Transferinitiative von Manufacturing-X in den Mittelstand, also zu vielen Tier-2- bis Tier-5-Unternehmen. Die @Bundesanzeiger Verlag GmbH führt das Unternehmensregister und liefert daraus Unternehmensdaten als verifizierbare Nachweise.
 
-Unser Beitrag: Unser Business Wallet ist bei energy data-X in einem Datenraum gemeinsam mit dem Bundesanzeiger Verlag im Betrieb. Wir planen, es für weitere Datenräume auf Basis europäischer Standards einsetzbar zu machen. Im W3C arbeiten wir mit Partnern aus Nordamerika und Asien-Pazifik an Standards für Wallets. Sie passen gut zu Datenräumen, weil beide auf dem W3C Verifiable Credentials Data Model (VCDM) aufbauen.
+Unser Business Wallet ist bei @energy data-X in einem Datenraum gemeinsam mit dem Bundesanzeiger Verlag im Betrieb. Wir planen, es für weitere Datenräume auf Basis europäischer Standards einsetzbar zu machen. Im W3C arbeiten wir mit Partnern aus Nordamerika und Asien-Pazifik an Standards für Wallets. Sie passen gut zu Datenräumen, weil beide auf dem W3C Verifiable Credentials Data Model (VCDM) aufbauen.
 
 Danke an Chris Löwer und automotiveIT. Link und Quellen in den Kommentaren.
 
@@ -70,3 +70,11 @@ Die Kette in Kurzform: Der Bundesanzeiger Verlag liefert registerbasierte Untern
 Der Datenraum ist föderiert: Die Daten bleiben bei den Teilnehmern. Das Muster lässt sich auf Digital Product Passports und Batteriepässe übertragen, also auf die Daten, die Physical AI in der Lieferkette braucht.
 
 Die Originalarbeit ist in Energiewirtschaftliche Tagesfragen 76 (2026), Heft 7-8, S. 19–22 erschienen. Autoren: Jan-Niklas Gößling (Amprion), René Hoffmann (Westnetz), Axel Kießling (TenneT), Daniel Rohrbach (Fraunhofer IOSB-AST) und Carsten Stöcker (Spherity).
+
+## Bild: Markierungen und Alt-Text
+
+Markierungen im Bild (in LinkedIn nach dem Hochladen über „Markieren“ setzen, höchstens 30 pro Foto):
+Hanno Focken, Carsten Stöcker, Catena-X, Cofinity-X, SCALE-MX, Bundesanzeiger Verlag GmbH, automotiveIT, energy data-X. Beim Posten vom persönlichen Profil zusätzlich Spherity.
+
+Alt-Text:
+Grafik von Spherity: „Kein Vertrauen. Kein Zugang.“ Der KI-Agent eines OEM erhält bei Tier 1 Zugang, wird bei Tier 2 abgewiesen und erreicht Tier 3 bis 5 nicht. Drei Fragen des Zulieferers, drei prüfbare Antworten. Mit Ausschnitt des automotiveIT-Artikels und Logos der genannten Organisationen.

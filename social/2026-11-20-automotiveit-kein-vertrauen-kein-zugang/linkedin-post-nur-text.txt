@@ -1,0 +1,22 @@
+Kein Vertrauen, kein Zugang: Warum der KI-Agent an Tier 2 scheitert
+
+Ein OEM schickt seinen KI-Agenten los, um Störungsrisiken in der Lieferkette zu bewerten. Bei Tier 2 ist Schluss. Der Zulieferer fragt: Wer hat Sie geschickt? Warum sollte ich Zugang gewähren? Was geschieht mit meinen Daten? Der Agent hat keine überzeugende Antwort. Die Stufen 3 bis 5 bleiben unerreichbar.
+
+Mit diesem Szenario zeigt @Hanno Focken von @Catena-X in @automotiveIT, woran Physical AI in echten Lieferketten hängt: an einer gemeinsamen Vertrauensschicht. Sein Satz dazu: „Catena-X schlägt keinen separaten Weg ein. Wir integrieren die European Business Wallet.“
+
+Warum jetzt: Am 12. und 13. November fiel Microsoft 365 weltweit mehr als 24 Stunden aus, laut Microsoft durch einen Softwarefehler. Am 19. November stufte das BSI die Lage erstmals als „angespannt bis kritisch“ ein. Neue Schwachstellen werden zuletzt nach acht Tagen ausgenutzt (2024: 61), und das BSI erwartet Angriffe durch autonom agierende KI-Agenten. Frontier-KI findet Lücken schneller, als viele Unternehmen patchen können. Wer jetzt Agenten über Unternehmensgrenzen schickt, braucht prüfbare Identität, Delegation und Widerruf.
+
+Die drei Fragen lassen sich beantworten:
+1. Wer? Verifizierte Unternehmensidentität aus der Business Wallet.
+2. Warum? Rolle, Auftrag und Delegation als Verifiable Credentials.
+3. Was passiert mit den Daten? Maschinenlesbare Nutzungsregeln, die Kontrolle bleibt beim Datengeber.
+
+Das ist Trusted AI: Ein Ergebnis lässt sich über eine signierte Nachweiskette bis zur Quelle zurückverfolgen. Und es ist Safe AI: Ein Agent handelt nur im Rahmen seines Mandats und wird gestoppt, wenn die Berechtigung entzogen ist.
+
+@Carsten Stöcker, Geschäftsführer Spherity: „Catena-X hat geschafft, woran viele Datenraum-Initiativen scheitern: Aus Standards ist Betrieb geworden. Wer vertrauenswürdige KI in die Lieferkette bringen will, muss nicht bei null anfangen. Er kann auf Catena-X aufbauen, und die European Business Wallet gibt diesem Fundament rechtlich belastbare Unternehmensidentitäten.“
+
+Die Bausteine sind da. @Cofinity-X betreibt den Catena-X-Datenraum im Tagesgeschäft. @SCALE-MX bringt Datenraum-Technologie als Transferinitiative von Manufacturing-X in den Mittelstand, also zu vielen Tier-2- bis Tier-5-Unternehmen. Die @Bundesanzeiger Verlag GmbH führt das Unternehmensregister und liefert daraus Unternehmensdaten als verifizierbare Nachweise.
+
+Unser Business Wallet ist bei @energy data-X in einem Datenraum gemeinsam mit dem Bundesanzeiger Verlag im Betrieb. Wir planen, es für weitere Datenräume auf Basis europäischer Standards einsetzbar zu machen. Im W3C arbeiten wir mit Partnern aus Nordamerika und Asien-Pazifik an Standards für Wallets. Sie passen gut zu Datenräumen, weil beide auf dem W3C Verifiable Credentials Data Model (VCDM) aufbauen.
+
+Danke an Chris Löwer und automotiveIT. Link und Quellen in den Kommentaren.
