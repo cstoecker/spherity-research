@@ -76,13 +76,13 @@ Die Originalarbeit ist in Energiewirtschaftliche Tagesfragen 76 (2026), Heft 7-8
 Die wissenschaftliche Grundlage dazu: „Trusted AI for the Automotive Industry“ von Carsten Stöcker, erschienen im Mai 2026 als begutachtetes Open-Access-Kapitel bei IntechOpen (CC BY 4.0).
 https://www.intechopen.com/chapters/1241514
 
-Das Kapitel verbindet zwei Vertrauensprobleme, die auch der automotiveIT-Artikel anspricht:
+Das Kapitel verbindet zwei Vertrauensprobleme aus dem automotiveIT-Artikel:
 1. KI-Dienste und Agenten in der Lieferkette. Referenzfall ist das Catena-X AI Service KIT. Die European Business Wallet dient als Identitätsanker der juristischen Person. Eine Vollmacht als Credential bindet den Agenten an das Unternehmen, mit Umfang, Gültigkeit und Widerruf.
 2. Sicherheitsrelevante Fahrzeugdaten. Die Dangerous-Driving-Fallstudie zeigt, wie sich ein KI-Ergebnis über signierte Daten bis zu seinen Eingangsdaten zurückverfolgen lässt.
 
 Neu ist der „AI Service Passport“: ein prüfbarer Nachweis über Betreiber, Modellversion, Tests, Updates und Vorfälle eines KI-Dienstes.
 
-Das Kapitel sagt auch, was offen ist: Standards sind unvollständig, das AI Service KIT steht früh in seinem Lebenszyklus, und die Dangerous-Driving-Arbeit ist eine Referenzimplementierung, kein Produktivsystem.
+Offen bleibt laut Kapitel: Standards sind unvollständig, das AI Service KIT steht früh in seinem Lebenszyklus, und die Dangerous-Driving-Arbeit ist eine Referenzimplementierung, kein Produktivsystem.
 
 Danke an BASF, Fujitsu und die Catena-X Trusted AI Working Group für ihre Beiträge zum KIT-Konzept.
 
