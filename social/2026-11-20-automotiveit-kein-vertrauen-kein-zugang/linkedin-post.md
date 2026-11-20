@@ -78,3 +78,7 @@ Hanno Focken, Carsten Stöcker, Catena-X, Cofinity-X, SCALE-MX, Bundesanzeiger V
 
 Alt-Text:
 Grafik von Spherity: „Kein Vertrauen. Kein Zugang.“ Der KI-Agent eines OEM erhält bei Tier 1 Zugang, wird bei Tier 2 abgewiesen und erreicht Tier 3 bis 5 nicht. Drei Fragen des Zulieferers, drei prüfbare Antworten. Mit Ausschnitt des automotiveIT-Artikels und Logos der genannten Organisationen.
+
+## Bildunterschrift (Caption) für das PNG
+
+Warum scheitern KI-Agenten in der Lieferkette? An fehlendem Vertrauen, nicht an Rechenleistung. Die Grafik von Spherity zeigt das Szenario aus dem automotiveIT-Artikel „Kein Vertrauen, kein Zugang“ vom 19. November 2026: Der KI-Agent eines OEM erhält bei Tier 1 Zugang, wird bei Tier 2 ohne Vertrag abgewiesen und erreicht Tier 3 bis 5 nicht. Hanno Focken von Catena-X nennt die drei Fragen des Zulieferers: Wer hat Sie geschickt? Warum sollte ich Zugang gewähren? Was geschieht mit meinen Daten? Drei prüfbare Antworten: eine verifizierte Unternehmensidentität aus der European Business Wallet, Rolle und Delegation als Verifiable Credentials nach W3C VCDM sowie maschinenlesbare Nutzungsregeln. Im Kontext: Catena-X und Cofinity-X für den Automotive-Datenraum, SCALE-MX für Manufacturing-X im Mittelstand, die Bundesanzeiger Verlag GmbH für das Unternehmensregister, energy data-X für den Energie-Datenraum und Spherity für das Business Wallet. Die Grundlage für Trusted AI, Safe AI und Physical AI in europäischen Datenräumen.
